@@ -1,0 +1,3 @@
+#summary Electronics hardware parts used.
+
+Farnell Order Code: 3111465; Force, differential magnetic min:15G.
