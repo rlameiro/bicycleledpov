@@ -1,5 +1,12 @@
+==2008.05.25==
+Since yesterday I did read the [http://www.fourwalledcubicle.com/wiki/Wikka/MyUSB MyUSB library for USB-enabled AVR microcontrollers] which I will prefer over _Atmel USB Software Library for AT90USBxxx Microcontrollers_.
+
+I did build the Demo of the _USBtoSerial_ of _MyUSB_ library. Will be very easy to receive and send data to the serial port on the PC - _MyUSB_ library code is easy to understand, thanks [http://www.fourwalledcubicle.com/ Dean Camera]!!
+
+I decided to buy the ~25€[http://www.olimex.com/dev/avr-usb-162.html AVR-USB-162 development board from Olimex], since I bought recently a development board from Olimex for about 200€ and I am happy with the service.
+
 ==2008.05.24==
-I started yesterday reading about the Atmel MCU AT90USB162, It's cheap and can be bought on one unit on Farnell. I also find a cheap [http://www.olimex.com/dev/avr-usb-162.html development board from Olimex] - ~25 euros:
+I started yesterday reading about the Atmel MCU AT90USB162, It's cheap and can be bought on one unit on Farnell. I also find a cheap [http://www.olimex.com/dev/avr-usb-162.html development board from Olimex] - ~25€:
 
 [http://www.olimex.com/dev/images/AVR/AVR-USB-162-2.jpg]
 
