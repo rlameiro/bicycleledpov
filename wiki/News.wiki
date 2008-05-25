@@ -1,5 +1,6 @@
 ==2008.05.24==
 I started yesterday reading about the Atmel MCU AT90USB162, It's cheap and can be bought on one unit on Farnell. I also find a cheap development board from Olimex - ~25 euros:
+
 [http://www.olimex.com/dev/images/AVR/AVR-USB-162-2.jpg]
 
 Atmel gives a free code and explains how to make a USB<->RS232 with that MCU. I think that is possible to use AT90USB162 for USB communication between PC + read data from SPI EEPROM and drive LEDs with image frames :-) -- so this project will be just that ;-) :-)
