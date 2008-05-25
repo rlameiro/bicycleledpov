@@ -1,3 +1,20 @@
 #summary Electronics hardware parts used.
 
-Farnell Order Code: 3111465; Force, differential magnetic min:15G.
+=Possible parts to use=
+==MCU==
+[http://pt.farnell.com/1455073/ics-development-tools/product.us0?sku=atmel-at90usb162-16au AVR USB MCU, 16K FLASH, SMD, TQFP32]. 8 bits MCU with 16K FLASH program memory, 512 bytes SRAM data memory, 16MHz and USB, Price for unity: 3,56 €.
+
+==Hall effect sensor==
+[http://pt.farnell.com/jsp/search/productdetail.jsp?SKU=1457117 SWITCH HALL EFFECT, SMD]. Farnell order code: 1455073, 
+
+==EEPROM==
+[http://pt.farnell.com/1099712/ics-development-tools/product.us0?sku=stmicroelectronics-m95256-wmn6p EEPROM SPI 256K, SMD, 95256, SO-8-8]. Farnell order code: 1099712, SPI bus, 256Kb, Price for unity: 1,55 € €.
+
+==Boost DC-DC converter==
+[http://pt.farnell.com/jsp/search/productdetail.jsp?SKU=1460676 DC-DC STEP UP CONVERTER, 5.0V, SMD]. Farnell order code: 1460676, Low Startup Voltage of 0.9 V, High Output Current up to 1000 mA, Price for unity: 0,714 €.
+
+==Serial to parallel latches==
+[http://pt.farnell.com/jsp/search/productdetail.jsp?SKU=1013860 74HC CMOS, SMD, 74HC595, SOIC16]. Farnell order code: 1013860, Vcc min: 2V, Iout max: 30mA, Price for unity: 0,69 €.
+
+==LED==
+[http://pt.farnell.com/jsp/search/productdetail.jsp?SKU=4134369 LED, SMD, PLCC2, RED/ORANGE]. Farnell order code: 4134369, Vf typ:1.9V, If luminous intensity: 20mA, Luminous intensity typ: 200mcd, Price for unity: 0,116 €.
