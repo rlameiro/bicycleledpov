@@ -1,8 +1,8 @@
 The Bicycle LED Pov should be able to show images during a certain time and jump trough a sequence of them. Example:
-- show first image during 1000ms and jump the the second one;
-- show second image during 200ms and jump the the third one;
-- show third image during 100ms and jump the the fourth one;
-- show fourth image during 200ms and jump the the first one;
+  * show first image during 1000ms and jump to the second one;
+  * show second image during 200ms and jump to the third one;
+  * show third image during 100ms and jump to the fourth one;
+  * show fourth image during 200ms and jump to the first one;
 
 The minimum time between frames should be at least 1/25 of second - 40ms. 
 
