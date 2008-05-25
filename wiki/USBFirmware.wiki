@@ -1,11 +1,15 @@
 =Thoughts=
-A USB<->RS232 would be nice because is very easy on PC software to send bytes for a serial port, also very easy to receive the bytes on MCU. Also there is already software made for POV from Ladyada POV project, which can use a serial port.
+Have USB<->RS232 on MCU is nice because is very easy to work with it on PC side and on MCU side. There is also software made for POV from Ladyada POV project, which can use a serial port.
 
 An API should be defined to send data from the PC to the Bicycle LED Pov. On PC, one should send commands to write and read from the EEPROM, to turn on and off any LED and to read the firmware version.
 Bicycle LED Pov should answer to every command with acknowledge messages or error codes.  
 
-=Atmel USB Software Library for AT90USBxxx Microcontrollers=
+=Which USB Software Library use?=
+
+==Atmel USB Software Library for AT90USBxxx Microcontrollers==
 Atmel gives the _AVR272: USB CDC Demonstration UART to USB Bridge_ application note with code which documents a USB<->RS232 on AT90USB MCUs - here the [http://www.atmel.com/dyn/resources/prod_documents/AVR_USB_Software.htm code] and the [http://www.atmel.com/dyn/resources/prod_documents/doc7619.pdf documentation].
 
-=Dean Camera's MyUSB library=
+==Dean Camera's MyUSB library==
 [http://www.fourwalledcubicle.com/wiki/Wikka/MyUSB MyUSB library for USB-enabled AVR microcontrollers]
+
+_Dean Camera's MyUSB library_ is easier to understand for me than the _Atmel USB Software Library for AT90USBxxx Microcontrollers_, also have a lot of Demos and I did build with success the Demo of the _USBtoSerial_ on "my" GNU/Linux Ubuntu I will use MyUSB library :-)
