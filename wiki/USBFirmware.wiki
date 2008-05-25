@@ -12,4 +12,4 @@ Atmel gives the _AVR272: USB CDC Demonstration UART to USB Bridge_ application n
 ==Dean Camera's MyUSB library==
 [http://www.fourwalledcubicle.com/wiki/Wikka/MyUSB MyUSB library for USB-enabled AVR microcontrollers]
 
-_Dean Camera's MyUSB library_ is easier to understand for me than the _Atmel USB Software Library for AT90USBxxx Microcontrollers_, also have a lot of Demos and I did build with success the Demo of the _USBtoSerial_ on "my" GNU/Linux Ubuntu I will use MyUSB library :-)
+_Dean Camera's MyUSB library_ is easier to understand for me than the _Atmel USB Software Library for AT90USBxxx Microcontrollers_, also have a lot of Demos and I did build with success the Demo of the _USBtoSerial_ on "my" GNU/Linux Ubuntu. I also saw that MyUSB library includes two different USB bootloaders, which can be important for future development. I will use MyUSB library :-)
