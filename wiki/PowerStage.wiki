@@ -1,0 +1,7 @@
+[http://farm3.static.flickr.com/2048/2527584688_fa368a22f7_o.jpg]
+
+This is the power stage, with 2,4 volts input from two 1,2 volts NiMh rechargeable batteries in series.
+
+Output is 2,4 volts for LEDs and 5 volts for MCU and others ICs as the serial SPI EEPROM.
+
+I will soon test this schematic - R1 is for having 200mA output current, to simulate the final load of the circuit on the 5 volts line.
