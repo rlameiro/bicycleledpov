@@ -2,6 +2,14 @@
 
 This is the power stage, with 2,4 volts input from two 1,2 volts NiMh rechargeable batteries in series.
 
-Output is 2,4 volts for LEDs and 5 volts for MCU and others ICs as the serial SPI EEPROM.
+Output is 2,4 volts for LEDs and 5 volts for MCU, sensor hall effect and serial EEPROM memory.
 
-I will soon test this schematic - R1 is for having 200mA output current, to simulate the final load of the circuit on the 5 volts line.
+I will soon test this schematic - R1 is 180R - 1/4W, for having 28mA output current, to simulate the final load of the circuit on the 5 volts line.
+
+=Power calculations=
+==Vcc_5V==
+The IC's that will be supplied with 5 volts are the MCU, the sensor hall effect and the serial EEPROM memory.
+
+I estimate no more than 15mA for MCU, 5mA for sensor hall effect and 8mA for serial EEPROM memory -- total of 28mA. The DC-DC should be dimensioned for this 28mA.
+
+==Vcc_2.4V==
