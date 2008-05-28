@@ -1,3 +1,9 @@
+==2008.05.28==
+Today I received the DC-DC IC NPC1450A and I couldn't put It working :-( - I had low voltage output and with a lot of noise... I saw on oscilloscope the PWM output and the inductor signal going to ground... I saw that the DC-DC was in noncontinuous mode and I did put a larger load and saw It going to active region, with duty-cycle of PWM near to 50%.
+
+I also received the sensor hall effect, I will test it in the next days.
+My [http://www.olimex.com/dev/avr-usb-162.html AVR-USB-162 development board from Olimex] is on the road, I hope to receive it in a week or so.
+
 ==2008.05.25==
 Since yesterday I did read the [http://www.fourwalledcubicle.com/wiki/Wikka/MyUSB MyUSB library for USB-enabled AVR microcontrollers] which I will prefer over _Atmel USB Software Library for AT90USBxxx Microcontrollers_.
 
