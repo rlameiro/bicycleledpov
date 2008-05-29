@@ -1,3 +1,10 @@
+==2008.05.29==
+I tested today two different sensor hall effects, the SS411A and the A3213ELHLT-T.
+
+The SS411A turns on with one pole and turns off with other pole from the magnetic field, the minimum distance from the magnetic field is about 1,8 cm.
+
+The A3213ELHLT-T turns on and off with any pole from the magnetic field, the minimum distance from the magnetic field is about 1,5 cm.
+
 ==2008.05.28==
 Today I received the DC-DC IC NPC1450A and I couldn't put It working :-( - I had low voltage output and with a lot of noise... I saw on oscilloscope the PWM output and the inductor signal going to ground... I saw that the DC-DC was in noncontinuous mode and I did put a larger load and saw It going to active region, with duty-cycle of PWM near to 50%.
 
