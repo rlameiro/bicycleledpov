@@ -1,12 +1,13 @@
 ==2008.05.29==
-I tested today two different sensor hall effects, the SS411A and the A3213ELHLT-T.
+I tested today two different sensor hall effects, the SS411A and the A3213ELHLT-T. The SS411A turns on with one pole and turns off with other pole from the magnet. The A3213ELHLT-T turns on and off with any pole from the magnet.
 
-The SS411A turns on with one pole and turns off with other pole from the magnetic field, the minimum distance from the magnetic field is about 1,8 cm.
+With the same magnet, I did measure the distance needed to turn on/off of each sensor: SS411A -> 1,8 cm and A3213ELHLT-T -> 1,5 cm.
 
-The A3213ELHLT-T turns on and off with any pole from the magnetic field, the minimum distance from the magnetic field is about 1,5 cm.
+I also tried the DC-DC IC NCP1450ASN30T1G which have 3 volts fixed output voltage. It worked well, I don't know why the NCP1450ASN50T1G (5 volts version) didn't worked to me last time.
+Now I would like to find a DC-DC IC with embedded switches (the transistor + diode), to have a simpler circuit - probably I will use the [http://www.ladyada.net/make/mintyboost/ Minty Boost]. 
 
 ==2008.05.28==
-Today I received the DC-DC IC NPC1450A and I couldn't put It working :-( - I had low voltage output and with a lot of noise... I saw on oscilloscope the PWM output and the inductor signal going to ground... I saw that the DC-DC was in noncontinuous mode and I did put a larger load and saw It going to active region, with duty-cycle of PWM near to 50%.
+Today I received the DC-DC IC NCP1450ASN50T1G and I couldn't put It working :-( - I had low voltage output and with a lot of noise... I saw on oscilloscope the PWM output and the inductor signal going to ground... I saw that the DC-DC was in noncontinuous mode and I did put a larger load and saw It going to active region, with duty-cycle of PWM near to 50%.
 
 I also received the sensor hall effect, I will test it in the next days.
 My [http://www.olimex.com/dev/avr-usb-162.html AVR-USB-162 development board from Olimex] is on the road, I hope to receive it in a week or so.
