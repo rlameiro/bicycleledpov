@@ -1,3 +1,12 @@
+==2008.06.05==
+I received today my [http://www.olimex.com/dev/avr-usb-162.html AVR-USB-162 development board from Olimex] and I did a few hacks in USBtoSerial program from [http://www.fourwalledcubicle.com/MyUSB.php MyUSB library] and I got it working, but turning on the LED when I send value "1" to serial port and off the LED when I send "0" - It also send back to serial port the same vale sent before. Here some images (from GNU/Linux Ubuntu on my Asus eee pc 701):
+
+[http://farm4.static.flickr.com/3002/2554924956_3a752a78e9_o.png]
+
+[http://farm4.static.flickr.com/3065/2554113355_2e8756dc93_o.png]
+
+It were very quick to install and use the [http://dfu-programmer.sourceforge.net/ dfu-programmer] and [http://www.nongnu.org/avr-libc/ avr-gcc] on GNU/Linux Ubuntu!!
+
 ==2008.05.29==
 I tested today two different sensor hall effects, the SS411A and the A3213ELHLT-T. The SS411A turns on with one pole and turns off with other pole from the magnet. The A3213ELHLT-T turns on and off with any pole from the magnet.
 
@@ -13,7 +22,7 @@ I also received the sensor hall effect, I will test it in the next days.
 My [http://www.olimex.com/dev/avr-usb-162.html AVR-USB-162 development board from Olimex] is on the road, I hope to receive it in a week or so.
 
 ==2008.05.25==
-Since yesterday I did read the [http://www.fourwalledcubicle.com/wiki/Wikka/MyUSB MyUSB library for USB-enabled AVR microcontrollers] which I will prefer over _Atmel USB Software Library for AT90USBxxx Microcontrollers_.
+Since yesterday I did read the [http://www.fourwalledcubicle.com/MyUSB.php MyUSB library for USB-enabled AVR microcontrollers] which I will prefer over _Atmel USB Software Library for AT90USBxxx Microcontrollers_.
 
 I did build the Demo of the _USBtoSerial_ of _MyUSB_ library. Will be very easy to receive and send data to the serial port on the PC - _MyUSB_ library code is easy to understand, thanks [http://www.fourwalledcubicle.com/ Dean Camera]!!
 
