@@ -12,7 +12,7 @@ The C compiler is the [http://www.avrfreaks.net/wiki/index.php/Documentation:AVR
 One of the main reasons to use the Atmel MCUs is because there are very good tools as the AVR-GCC and AVR-LibC freely - both are availably in GNU/Linux Ubuntu repositories. Also Atmel provides good documentation, good example codes and a strong community :-)
 
 ==USB Library==
-I started by reading about [http://www.atmel.com/dyn/resources/prod_documents/AVR_USB_Software.htm Atmel USB Software Library for AT90USBxxx Microcontrollers] but I ended up by choosing the [http://www.fourwalledcubicle.com/wiki/Wikka/MyUSB Dean Camera's MyUSB library].
+I started by reading about [http://www.atmel.com/dyn/resources/prod_documents/AVR_USB_Software.htm Atmel USB Software Library for AT90USBxxx Microcontrollers] but I ended up by choosing the [http://www.fourwalledcubicle.com/MyUSB.php Dean Camera's MyUSB library].
 
 ==IDE==
 I use Anjuta or Quanta Plus, hoever, any text editor should be ok.
