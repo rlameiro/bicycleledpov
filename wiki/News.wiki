@@ -1,3 +1,10 @@
+==2008.06.07==
+I uploaded the first firmware version to SVN server, it can be accessed [http://code.google.com/p/bicycleledpov/source/browse/trunk/BicycleLEDPOV here].
+
+I can't program now the MCU using the dfu-programmer, maybe I erased the bootloader... next Monday I will try to program the bootloader using USBProg. I will try to use the bootloader written by Dean Camera.
+
+In next days I would like to start writing and reading data to SPI EEPROM.
+
 ==2008.06.05==
 I received today my [http://www.olimex.com/dev/avr-usb-162.html AVR-USB-162 development board from Olimex] and I did a few hacks in USBtoSerial program from [http://www.fourwalledcubicle.com/MyUSB.php MyUSB library] and I got it working, but turning on the LED when I send value "1" to serial port and off the LED when I send "0" - It also send back to serial port the same vale sent before. Here some images (from GNU/Linux Ubuntu on my Asus eee pc 701):
 
