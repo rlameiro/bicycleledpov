@@ -1,0 +1,11 @@
+#summary API definition to interact with Bicycle LED POV by communicating by USB
+
+=Write on LEDs: command 1=
+Usage: 1; _byte_1_; _byte_2_; _byte_3_; _byte_4_
+
+_Byte_x_ bits represents each state of LEDs - bit 0 of _byte_1_ represents the state of the first LED.
+
+=Read byte on EEPROM memory: command 2=
+
+=Write byte on EEPROM memory: command 3=
+
