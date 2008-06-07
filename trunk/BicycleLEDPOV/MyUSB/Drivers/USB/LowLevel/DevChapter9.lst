@@ -1,0 +1,683 @@
+   1               		.file	"DevChapter9.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.global __do_copy_data
+   8               		.global __do_clear_bss
+  16               	.Ltext0:
+  17               		.section	.text.USB_Device_ProcessControlPacket,"ax",@progbits
+  18               	.global	USB_Device_ProcessControlPacket
+  20               	USB_Device_ProcessControlPacket:
+  21               	.LFB35:
+  22               	.LSM0:
+  23               	/* prologue: frame size=8 */
+  24 0000 EF92      		push r14
+  25 0002 FF92      		push r15
+  26 0004 0F93      		push r16
+  27 0006 1F93      		push r17
+  28 0008 CF93      		push r28
+  29 000a DF93      		push r29
+  30 000c CDB7      		in r28,__SP_L__
+  31 000e DEB7      		in r29,__SP_H__
+  32 0010 2897      		sbiw r28,8
+  33 0012 0FB6      		in __tmp_reg__,__SREG__
+  34 0014 F894      		cli
+  35 0016 DEBF      		out __SP_H__,r29
+  36 0018 0FBE      		out __SREG__,__tmp_reg__
+  37 001a CDBF      		out __SP_L__,r28
+  38               	/* prologue end (size=14) */
+  39               	.LBB84:
+  40               	.LBB85:
+  41               	.LSM1:
+  42 001c 6091 F100 		lds r22,241
+  43 0020 262F      		mov r18,r22
+  44 0022 3327      		clr r19
+  45               	.LBE85:
+  46               	.LBE84:
+  47               	.LBB86:
+  48               	.LBB87:
+  49 0024 9091 F100 		lds r25,241
+  50               	.LBE87:
+  51               	.LBE86:
+  52               	.LSM2:
+  53 0028 9530      		cpi r25,lo8(5)
+  54 002a 01F4      		brne .+2
+  55 002c 00C0      		rjmp .L5
+  56               	.LSM3:
+  57 002e 9630      		cpi r25,lo8(6)
+  58 0030 00F4      		brsh .L9
+  59 0032 9130      		cpi r25,lo8(1)
+  60 0034 01F4      		brne .+2
+  61 0036 00C0      		rjmp .L4
+  62 0038 9130      		cpi r25,lo8(1)
+  63 003a 00F0      		brlo .L3
+  64 003c 9330      		cpi r25,lo8(3)
+  65 003e 01F0      		breq .+2
+  66 0040 00C0      		rjmp .L2
+  67 0042 00C0      		rjmp .L4
+  68               	.L9:
+  69 0044 9830      		cpi r25,lo8(8)
+  70 0046 01F4      		brne .+2
+  71 0048 00C0      		rjmp .L7
+  72 004a 9930      		cpi r25,lo8(9)
+  73 004c 01F4      		brne .+2
+  74 004e 00C0      		rjmp .L8
+  75 0050 9630      		cpi r25,lo8(6)
+  76 0052 01F0      		breq .+2
+  77 0054 00C0      		rjmp .L2
+  78 0056 00C0      		rjmp .L6
+  79               	.L3:
+  80               	.LSM4:
+  81 0058 822F      		mov r24,r18
+  82 005a 807E      		andi r24,lo8(-32)
+  83 005c 01F0      		breq .+2
+  84 005e 00C0      		rjmp .L2
+  85 0060 2F71      		andi r18,lo8(31)
+  86 0062 3070      		andi r19,hi8(31)
+  87 0064 2330      		cpi r18,3
+  88 0066 3105      		cpc r19,__zero_reg__
+  89 0068 01F4      		brne .+2
+  90 006a 00C0      		rjmp .L2
+  91               	.LBB88:
+  92               	.LBB89:
+  93               	.LBB92:
+  94               	.LBB93:
+  95               	.LSM5:
+  96 006c 8091 F100 		lds r24,241
+  97               	.LVL0:
+  98               	.LSM6:
+  99 0070 8091 F100 		lds r24,241
+ 100               	.LVL1:
+ 101               	.LBE93:
+ 102               	.LBE92:
+ 103               	.LBB90:
+ 104               	.LBB91:
+ 105               	.LSM7:
+ 106 0074 8091 F100 		lds r24,241
+ 107               	.LVL2:
+ 108               	.LBE91:
+ 109               	.LBE90:
+ 110               	.LSM8:
+ 111 0078 2130      		cpi r18,1
+ 112 007a 3105      		cpc r19,__zero_reg__
+ 113 007c 01F0      		breq .L14
+ 114 007e 2230      		cpi r18,2
+ 115 0080 3105      		cpc r19,__zero_reg__
+ 116 0082 01F0      		breq .L15
+ 117 0084 232B      		or r18,r19
+ 118 0086 01F0      		breq .L13
+ 119 0088 00C0      		rjmp .L12
+ 120               	.L14:
+ 121 008a 90E0      		ldi r25,lo8(0)
+ 122               	.LVL3:
+ 123 008c 00C0      		rjmp .L16
+ 124               	.LVL4:
+ 125               	.L13:
+ 126               	.LBE89:
+ 127               	.LSM9:
+ 128 008e 8E01      		movw r16,r28
+ 129 0090 095F      		subi r16,lo8(-(7))
+ 130 0092 1F4F      		sbci r17,hi8(-(7))
+ 131 0094 9E01      		movw r18,r28
+ 132 0096 2F5F      		subi r18,lo8(-(1))
+ 133 0098 3F4F      		sbci r19,hi8(-(1))
+ 134 009a 40E0      		ldi r20,lo8(0)
+ 135 009c 50E0      		ldi r21,hi8(0)
+ 136 009e 6091 0000 		lds r22,USB_ConfigurationNumber
+ 137 00a2 82E0      		ldi r24,lo8(2)
+ 138 00a4 0E94 0000 		call USB_GetDescriptor
+ 139               	.LBB99:
+ 140 00a8 8823      		tst r24
+ 141 00aa 01F4      		brne .+2
+ 142 00ac 00C0      		rjmp .L12
+ 143               	.LBB94:
+ 144               	.LSM10:
+ 145 00ae E981      		ldd r30,Y+1
+ 146 00b0 FA81      		ldd r31,Y+2
+ 147               	.LVL5:
+ 148 00b2 3796      		adiw r30,7
+ 149               	.LVL6:
+ 150               	/* #APP */
+ 151 00b4 E491      		lpm r30, Z
+ 152               		
+ 153               	.LVL7:
+ 154               	/* #NOAPP */
+ 155               	.LBE94:
+ 156               	.LSM11:
+ 157 00b6 FF27      		clr r31
+ 158               	.LVL8:
+ 159 00b8 8E2F      		mov r24,r30
+ 160 00ba 807C      		andi r24,lo8(-64)
+ 161 00bc 01F0      		breq .L18
+ 162 00be 92E0      		ldi r25,lo8(2)
+ 163               	.LVL9:
+ 164 00c0 00C0      		rjmp .L20
+ 165               	.LVL10:
+ 166               	.L18:
+ 167 00c2 90E0      		ldi r25,lo8(0)
+ 168               	.LVL11:
+ 169               	.L20:
+ 170               	.LSM12:
+ 171 00c4 8E2F      		mov r24,r30
+ 172 00c6 807A      		andi r24,lo8(-96)
+ 173 00c8 01F0      		breq .L16
+ 174               	.LSM13:
+ 175 00ca 9160      		ori r25,lo8(1)
+ 176 00cc 00C0      		rjmp .L16
+ 177               	.LVL12:
+ 178               	.L15:
+ 179               	.LSM14:
+ 180 00ce 8770      		andi r24,lo8(7)
+ 181               	.LSM15:
+ 182 00d0 8093 E900 		sts 233,r24
+ 183               	.LSM16:
+ 184 00d4 9091 EB00 		lds r25,235
+ 185               	.LVL13:
+ 186 00d8 9095      		com r25
+ 187 00da 9170      		andi r25,lo8(1)
+ 188               	.LSM17:
+ 189 00dc 1092 E900 		sts 233,__zero_reg__
+ 190               	.L16:
+ 191               	.LSM18:
+ 192 00e0 8091 E800 		lds r24,232
+ 193 00e4 877F      		andi r24,lo8(-9)
+ 194 00e6 8093 E800 		sts 232,r24
+ 195               	.LBB95:
+ 196               	.LBB96:
+ 197               	.LSM19:
+ 198 00ea 9093 F100 		sts 241,r25
+ 199               	.LBE96:
+ 200               	.LBE95:
+ 201               	.LBB97:
+ 202               	.LBB98:
+ 203 00ee 1092 F100 		sts 241,__zero_reg__
+ 204               	.LBE98:
+ 205               	.LBE97:
+ 206               	.LSM20:
+ 207 00f2 8091 E800 		lds r24,232
+ 208 00f6 8E7F      		andi r24,lo8(-2)
+ 209 00f8 8093 E800 		sts 232,r24
+ 210               	.L22:
+ 211               	.LSM21:
+ 212 00fc 8091 E800 		lds r24,232
+ 213 0100 82FF      		sbrs r24,2
+ 214 0102 00C0      		rjmp .L22
+ 215 0104 00C0      		rjmp .L79
+ 216               	.LVL14:
+ 217               	.L4:
+ 218               	.LBE99:
+ 219               	.LBE88:
+ 220               	.LSM22:
+ 221 0106 822F      		mov r24,r18
+ 222 0108 807E      		andi r24,lo8(-32)
+ 223 010a 01F0      		breq .+2
+ 224 010c 00C0      		rjmp .L2
+ 225 010e 2F71      		andi r18,lo8(31)
+ 226 0110 3070      		andi r19,hi8(31)
+ 227 0112 2330      		cpi r18,3
+ 228 0114 3105      		cpc r19,__zero_reg__
+ 229 0116 01F4      		brne .+2
+ 230 0118 00C0      		rjmp .L2
+ 231               	.LBB100:
+ 232               	.LBB101:
+ 233               	.LBB106:
+ 234               	.LBB107:
+ 235               	.LSM23:
+ 236 011a 4091 F100 		lds r20,241
+ 237               	.LBE107:
+ 238               	.LBE106:
+ 239               	.LBB104:
+ 240               	.LBB105:
+ 241               	.LSM24:
+ 242 011e 8091 F100 		lds r24,241
+ 243               	.LVL15:
+ 244               	.LBE105:
+ 245               	.LBE104:
+ 246               	.LBB102:
+ 247               	.LBB103:
+ 248               	.LSM25:
+ 249 0122 8091 F100 		lds r24,241
+ 250               	.LVL16:
+ 251               	.LBE103:
+ 252               	.LBE102:
+ 253               	.LSM26:
+ 254 0126 2230      		cpi r18,2
+ 255 0128 3105      		cpc r19,__zero_reg__
+ 256 012a 01F0      		breq .+2
+ 257 012c 00C0      		rjmp .L12
+ 258               	.LSM27:
+ 259 012e 4423      		tst r20
+ 260 0130 01F0      		breq .+2
+ 261 0132 00C0      		rjmp .L12
+ 262               	.LSM28:
+ 263 0134 282F      		mov r18,r24
+ 264               	.LVL17:
+ 265 0136 2770      		andi r18,lo8(7)
+ 266               	.LSM29:
+ 267 0138 2093 E900 		sts 233,r18
+ 268               	.LSM30:
+ 269 013c 8091 EB00 		lds r24,235
+ 270               	.LBE101:
+ 271 0140 80FF      		sbrs r24,0
+ 272 0142 00C0      		rjmp .L28
+ 273               	.LBB108:
+ 274               	.LSM31:
+ 275 0144 2223      		tst r18
+ 276 0146 01F0      		breq .L30
+ 277               	.LSM32:
+ 278 0148 9130      		cpi r25,lo8(1)
+ 279 014a 01F4      		brne .L32
+ 280               	.LSM33:
+ 281 014c 8091 EB00 		lds r24,235
+ 282 0150 8061      		ori r24,lo8(16)
+ 283 0152 8093 EB00 		sts 235,r24
+ 284               	.LSM34:
+ 285 0156 81E0      		ldi r24,lo8(1)
+ 286 0158 90E0      		ldi r25,hi8(1)
+ 287 015a 00C0      		rjmp 2f
+ 288 015c 880F      	1:	lsl r24
+ 289 015e 991F      		rol r25
+ 290 0160 2A95      	2:	dec r18
+ 291 0162 02F4      		brpl 1b
+ 292 0164 8093 EA00 		sts 234,r24
+ 293 0168 1092 EA00 		sts 234,__zero_reg__
+ 294               	.LSM35:
+ 295 016c 8091 EB00 		lds r24,235
+ 296 0170 8860      		ori r24,lo8(8)
+ 297 0172 00C0      		rjmp .L78
+ 298               	.L32:
+ 299               	.LSM36:
+ 300 0174 8091 EB00 		lds r24,235
+ 301 0178 8062      		ori r24,lo8(32)
+ 302               	.L78:
+ 303 017a 8093 EB00 		sts 235,r24
+ 304               	.L30:
+ 305               	.LSM37:
+ 306 017e 1092 E900 		sts 233,__zero_reg__
+ 307               	.LSM38:
+ 308 0182 8091 E800 		lds r24,232
+ 309 0186 877F      		andi r24,lo8(-9)
+ 310 0188 8093 E800 		sts 232,r24
+ 311               	.LSM39:
+ 312 018c 8091 E800 		lds r24,232
+ 313 0190 8E7F      		andi r24,lo8(-2)
+ 314 0192 8093 E800 		sts 232,r24
+ 315               	.L28:
+ 316               	.LSM40:
+ 317 0196 1092 E900 		sts 233,__zero_reg__
+ 318 019a 00C0      		rjmp .L12
+ 319               	.LVL18:
+ 320               	.L5:
+ 321               	.LBE108:
+ 322               	.LBE100:
+ 323               	.LSM41:
+ 324 019c 6623      		tst r22
+ 325 019e 01F0      		breq .+2
+ 326 01a0 00C0      		rjmp .L2
+ 327               	.LBB109:
+ 328               	.LBB110:
+ 329               	.LBB111:
+ 330               	.LBB112:
+ 331               	.LSM42:
+ 332 01a2 9091 F100 		lds r25,241
+ 333               	.LBE112:
+ 334               	.LBE111:
+ 335               	.LSM43:
+ 336 01a6 8091 E300 		lds r24,227
+ 337 01aa 9F73      		andi r25,lo8(63)
+ 338 01ac 8078      		andi r24,lo8(-128)
+ 339 01ae 982B      		or r25,r24
+ 340 01b0 9093 E300 		sts 227,r25
+ 341               	.LSM44:
+ 342 01b4 8091 E800 		lds r24,232
+ 343 01b8 877F      		andi r24,lo8(-9)
+ 344 01ba 8093 E800 		sts 232,r24
+ 345               	.LSM45:
+ 346 01be 8091 E800 		lds r24,232
+ 347 01c2 8E7F      		andi r24,lo8(-2)
+ 348 01c4 8093 E800 		sts 232,r24
+ 349               	.L35:
+ 350               	.LSM46:
+ 351 01c8 8091 E800 		lds r24,232
+ 352 01cc 80FF      		sbrs r24,0
+ 353 01ce 00C0      		rjmp .L35
+ 354               	.LSM47:
+ 355 01d0 8091 E300 		lds r24,227
+ 356 01d4 8068      		ori r24,lo8(-128)
+ 357 01d6 8093 E300 		sts 227,r24
+ 358 01da 00C0      		rjmp .L12
+ 359               	.L6:
+ 360               	.LBE110:
+ 361               	.LBE109:
+ 362               	.LBB113:
+ 363               	.LBB114:
+ 364               	.LBB122:
+ 365               	.LBB123:
+ 366               	.LSM48:
+ 367 01dc 6091 F100 		lds r22,241
+ 368               	.LBE123:
+ 369               	.LBE122:
+ 370               	.LBB120:
+ 371               	.LBB121:
+ 372 01e0 8091 F100 		lds r24,241
+ 373               	.LBE121:
+ 374               	.LBE120:
+ 375               	.LBB118:
+ 376               	.LBB119:
+ 377               	.LSM49:
+ 378 01e4 2091 F100 		lds r18,241
+ 379               	.LSM50:
+ 380 01e8 4091 F100 		lds r20,241
+ 381               	.LBE119:
+ 382               	.LBE118:
+ 383               	.LBB115:
+ 384               	.LBB116:
+ 385               	.LSM51:
+ 386 01ec E090 F100 		lds r14,241
+ 387               	.LSM52:
+ 388 01f0 F090 F100 		lds r15,241
+ 389               	.LBE116:
+ 390               	.LBE115:
+ 391               	.LBE114:
+ 392               	.LSM53:
+ 393 01f4 5527      		clr r21
+ 394 01f6 542F      		mov r21,r20
+ 395 01f8 4427      		clr r20
+ 396 01fa 3327      		clr r19
+ 397 01fc 422B      		or r20,r18
+ 398 01fe 532B      		or r21,r19
+ 399 0200 8E01      		movw r16,r28
+ 400 0202 095F      		subi r16,lo8(-(7))
+ 401 0204 1F4F      		sbci r17,hi8(-(7))
+ 402 0206 9E01      		movw r18,r28
+ 403 0208 2D5F      		subi r18,lo8(-(3))
+ 404 020a 3F4F      		sbci r19,hi8(-(3))
+ 405 020c 0E94 0000 		call USB_GetDescriptor
+ 406               	.LBB128:
+ 407 0210 8823      		tst r24
+ 408 0212 01F4      		brne .+2
+ 409 0214 00C0      		rjmp .L12
+ 410               	.LSM54:
+ 411 0216 8091 E800 		lds r24,232
+ 412 021a 877F      		andi r24,lo8(-9)
+ 413 021c 8093 E800 		sts 232,r24
+ 414               	.LBB124:
+ 415               	.LBB117:
+ 416               	.LSM55:
+ 417 0220 8F2D      		mov r24,r15
+ 418 0222 9927      		clr r25
+ 419 0224 582F      		mov r21,r24
+ 420 0226 4427      		clr r20
+ 421               	.LVL19:
+ 422 0228 8E2D      		mov r24,r14
+ 423 022a 9927      		clr r25
+ 424 022c 2F81      		ldd r18,Y+7
+ 425 022e 3885      		ldd r19,Y+8
+ 426               	.LVL20:
+ 427 0230 482B      		or r20,r24
+ 428 0232 592B      		or r21,r25
+ 429 0234 2417      		cp r18,r20
+ 430 0236 3507      		cpc r19,r21
+ 431 0238 00F4      		brsh .L38
+ 432               	.LVL21:
+ 433 023a A901      		movw r20,r18
+ 434               	.L38:
+ 435               	.LBE117:
+ 436               	.LBE124:
+ 437               	.LSM56:
+ 438 023c 9091 0000 		lds r25,USB_ControlEndpointSize
+ 439 0240 692F      		mov r22,r25
+ 440 0242 7727      		clr r23
+ 441 0244 AB81      		ldd r26,Y+3
+ 442 0246 BC81      		ldd r27,Y+4
+ 443               	.LVL22:
+ 444 0248 9A01      		movw r18,r20
+ 445               	.LVL23:
+ 446 024a 00C0      		rjmp .L39
+ 447               	.LVL24:
+ 448               	.L63:
+ 449               	.LSM57:
+ 450 024c 8091 E800 		lds r24,232
+ 451 0250 80FD      		sbrc r24,0
+ 452 0252 00C0      		rjmp .L74
+ 453 0254 00C0      		rjmp .L63
+ 454               	.L42:
+ 455 0256 FD01      		movw r30,r26
+ 456               	.LVL25:
+ 457 0258 1196      		adiw r26,1
+ 458               	.LBB125:
+ 459               	.LSM58:
+ 460               	/* #APP */
+ 461 025a E491      		lpm r30, Z
+ 462               		
+ 463               	.LVL26:
+ 464               	/* #NOAPP */
+ 465               	.LBE125:
+ 466               	.LBB126:
+ 467               	.LBB127:
+ 468               	.LSM59:
+ 469 025c E093 F100 		sts 241,r30
+ 470               	.LBE127:
+ 471               	.LBE126:
+ 472               	.LSM60:
+ 473 0260 2150      		subi r18,lo8(-(-1))
+ 474 0262 3040      		sbci r19,hi8(-(-1))
+ 475               	.LSM61:
+ 476 0264 01F0      		breq .L43
+ 477               	.LVL27:
+ 478               	.L74:
+ 479 0266 8091 F200 		lds r24,242
+ 480 026a 8917      		cp r24,r25
+ 481 026c 00F0      		brlo .L42
+ 482               	.L43:
+ 483               	.LSM62:
+ 484 026e 8091 E800 		lds r24,232
+ 485 0272 8E7F      		andi r24,lo8(-2)
+ 486 0274 8093 E800 		sts 232,r24
+ 487               	.L39:
+ 488               	.LSM63:
+ 489 0278 2115      		cp r18,__zero_reg__
+ 490 027a 3105      		cpc r19,__zero_reg__
+ 491 027c 01F0      		breq .L44
+ 492 027e 8091 E800 		lds r24,232
+ 493 0282 82FF      		sbrs r24,2
+ 494 0284 00C0      		rjmp .L63
+ 495               	.L44:
+ 496               	.LSM64:
+ 497 0286 8091 E800 		lds r24,232
+ 498 028a 82FD      		sbrc r24,2
+ 499 028c 00C0      		rjmp .L79
+ 500               	.LSM65:
+ 501 028e CA01      		movw r24,r20
+ 502 0290 0E94 0000 		call __udivmodhi4
+ 503 0294 892B      		or r24,r25
+ 504 0296 01F4      		brne .L65
+ 505               	.LVL28:
+ 506               	.L64:
+ 507               	.LSM66:
+ 508 0298 8091 E800 		lds r24,232
+ 509 029c 80FF      		sbrs r24,0
+ 510 029e 00C0      		rjmp .L64
+ 511               	.LSM67:
+ 512 02a0 8091 E800 		lds r24,232
+ 513 02a4 8E7F      		andi r24,lo8(-2)
+ 514 02a6 8093 E800 		sts 232,r24
+ 515               	.L65:
+ 516               	.LSM68:
+ 517 02aa 8091 E800 		lds r24,232
+ 518 02ae 82FF      		sbrs r24,2
+ 519 02b0 00C0      		rjmp .L65
+ 520 02b2 00C0      		rjmp .L79
+ 521               	.LVL29:
+ 522               	.L7:
+ 523               	.LBE128:
+ 524               	.LBE113:
+ 525               	.LSM69:
+ 526 02b4 6038      		cpi r22,lo8(-128)
+ 527 02b6 01F0      		breq .+2
+ 528 02b8 00C0      		rjmp .L2
+ 529               	.LBB129:
+ 530               	.LBB130:
+ 531               	.LSM70:
+ 532 02ba 8091 E800 		lds r24,232
+ 533 02be 877F      		andi r24,lo8(-9)
+ 534 02c0 8093 E800 		sts 232,r24
+ 535               	.LSM71:
+ 536 02c4 8091 0000 		lds r24,USB_ConfigurationNumber
+ 537               	.LVL30:
+ 538               	.LBB131:
+ 539               	.LBB132:
+ 540               	.LSM72:
+ 541 02c8 8093 F100 		sts 241,r24
+ 542               	.LBE132:
+ 543               	.LBE131:
+ 544               	.LSM73:
+ 545 02cc 8091 E800 		lds r24,232
+ 546               	.LVL31:
+ 547 02d0 8E7F      		andi r24,lo8(-2)
+ 548 02d2 8093 E800 		sts 232,r24
+ 549               	.L53:
+ 550               	.LSM74:
+ 551 02d6 8091 E800 		lds r24,232
+ 552 02da 82FF      		sbrs r24,2
+ 553 02dc 00C0      		rjmp .L53
+ 554               	.LVL32:
+ 555               	.L79:
+ 556               	.LSM75:
+ 557 02de 8091 E800 		lds r24,232
+ 558 02e2 8B7F      		andi r24,lo8(-5)
+ 559 02e4 8093 E800 		sts 232,r24
+ 560 02e8 00C0      		rjmp .L12
+ 561               	.LVL33:
+ 562               	.L8:
+ 563               	.LBE130:
+ 564               	.LBE129:
+ 565               	.LSM76:
+ 566 02ea 6623      		tst r22
+ 567 02ec 01F4      		brne .L2
+ 568               	.LBB133:
+ 569               	.LBB134:
+ 570               	.LBB135:
+ 571               	.LBB136:
+ 572               	.LSM77:
+ 573 02ee F090 F100 		lds r15,241
+ 574               	.LBE136:
+ 575               	.LBE135:
+ 576               	.LSM78:
+ 577 02f2 E090 0000 		lds r14,USB_ConfigurationNumber
+ 578               	.LVL34:
+ 579               	.LBE134:
+ 580               	.LSM79:
+ 581 02f6 8E01      		movw r16,r28
+ 582 02f8 095F      		subi r16,lo8(-(7))
+ 583 02fa 1F4F      		sbci r17,hi8(-(7))
+ 584 02fc 9E01      		movw r18,r28
+ 585 02fe 2B5F      		subi r18,lo8(-(5))
+ 586 0300 3F4F      		sbci r19,hi8(-(5))
+ 587 0302 40E0      		ldi r20,lo8(0)
+ 588 0304 50E0      		ldi r21,hi8(0)
+ 589 0306 81E0      		ldi r24,lo8(1)
+ 590 0308 0E94 0000 		call USB_GetDescriptor
+ 591               	.LBB138:
+ 592 030c 8823      		tst r24
+ 593 030e 01F0      		breq .L12
+ 594               	.LBB137:
+ 595               	.LSM80:
+ 596 0310 ED81      		ldd r30,Y+5
+ 597 0312 FE81      		ldd r31,Y+6
+ 598               	.LVL35:
+ 599 0314 7196      		adiw r30,17
+ 600               	.LVL36:
+ 601               	/* #APP */
+ 602 0316 E491      		lpm r30, Z
+ 603               		
+ 604               	.LVL37:
+ 605               	/* #NOAPP */
+ 606               	.LBE137:
+ 607               	.LSM81:
+ 608 0318 EF15      		cp r30,r15
+ 609 031a 00F0      		brlo .L12
+ 610               	.LSM82:
+ 611 031c F092 0000 		sts USB_ConfigurationNumber,r15
+ 612               	.LSM83:
+ 613 0320 8091 E800 		lds r24,232
+ 614 0324 877F      		andi r24,lo8(-9)
+ 615 0326 8093 E800 		sts 232,r24
+ 616               	.LSM84:
+ 617 032a 8091 E800 		lds r24,232
+ 618 032e 8E7F      		andi r24,lo8(-2)
+ 619 0330 8093 E800 		sts 232,r24
+ 620               	.LSM85:
+ 621 0334 EE20      		tst r14
+ 622 0336 01F4      		brne .L58
+ 623               	.LSM86:
+ 624 0338 0E94 0000 		call Event_USB_DeviceEnumerationComplete
+ 625               	.LVL38:
+ 626               	.L58:
+ 627               	.LSM87:
+ 628 033c 0E94 0000 		call Event_USB_ConfigurationChanged
+ 629               	.LVL39:
+ 630 0340 00C0      		rjmp .L12
+ 631               	.LVL40:
+ 632               	.L2:
+ 633               	.LBE138:
+ 634               	.LBE133:
+ 635               	.LSM88:
+ 636 0342 892F      		mov r24,r25
+ 637 0344 0E94 0000 		call Event_USB_UnhandledControlPacket
+ 638               	.LVL41:
+ 639               	.L12:
+ 640               	.LSM89:
+ 641 0348 8091 E800 		lds r24,232
+ 642 034c 83FF      		sbrs r24,3
+ 643 034e 00C0      		rjmp .L62
+ 644               	.LSM90:
+ 645 0350 8091 EB00 		lds r24,235
+ 646 0354 8062      		ori r24,lo8(32)
+ 647 0356 8093 EB00 		sts 235,r24
+ 648               	.LSM91:
+ 649 035a 8091 E800 		lds r24,232
+ 650 035e 877F      		andi r24,lo8(-9)
+ 651 0360 8093 E800 		sts 232,r24
+ 652               	.L62:
+ 653               	/* epilogue: frame size=8 */
+ 654 0364 2896      		adiw r28,8
+ 655 0366 0FB6      		in __tmp_reg__,__SREG__
+ 656 0368 F894      		cli
+ 657 036a DEBF      		out __SP_H__,r29
+ 658 036c 0FBE      		out __SREG__,__tmp_reg__
+ 659 036e CDBF      		out __SP_L__,r28
+ 660 0370 DF91      		pop r29
+ 661 0372 CF91      		pop r28
+ 662 0374 1F91      		pop r17
+ 663 0376 0F91      		pop r16
+ 664 0378 FF90      		pop r15
+ 665 037a EF90      		pop r14
+ 666 037c 0895      		ret
+ 667               	/* epilogue end (size=13) */
+ 668               	/* function USB_Device_ProcessControlPacket size 463 (436) */
+ 669               	.LFE35:
+ 671               		.comm USB_ConfigurationNumber,1,1
+ 672               		.weak	USB_GetDescriptor
+ 697               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 DevChapter9.c
+     /tmp/cc3J4wKm.s:2      *ABS*:0000003f __SREG__
+     /tmp/cc3J4wKm.s:3      *ABS*:0000003e __SP_H__
+     /tmp/cc3J4wKm.s:4      *ABS*:0000003d __SP_L__
+     /tmp/cc3J4wKm.s:5      *ABS*:00000000 __tmp_reg__
+     /tmp/cc3J4wKm.s:6      *ABS*:00000001 __zero_reg__
+     /tmp/cc3J4wKm.s:20     .text.USB_Device_ProcessControlPacket:00000000 USB_Device_ProcessControlPacket
+                            *COM*:00000001 USB_ConfigurationNumber
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss
+USB_GetDescriptor
+USB_ControlEndpointSize
+__udivmodhi4
+Event_USB_DeviceEnumerationComplete
+Event_USB_ConfigurationChanged
+Event_USB_UnhandledControlPacket
