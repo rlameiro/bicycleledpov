@@ -21,7 +21,7 @@
 		#include "Descriptors.h"
 		
 		#include <MyUSB/Drivers/USB/USB.h>
-		#include <MyUSB/Drivers/Board/LEDs.h>
+//		#include <MyUSB/Drivers/Board/LEDs.h>
 		
 	/* Macros: */
 		#define BOOTLOADER_VERSION_MINOR 1
@@ -112,5 +112,33 @@
 			static void ProcessWriteCommand(void);
 			static void ProcessReadCommand(void);
 		#endif
+
+
+/* Check for SPM Enable bit. */
+#if defined(SPMEN)
+#  define __SPM_ENABLE  SPMEN
+#elif defined(SELFPRGEN)
+#  define __SPM_ENABLE  SELFPRGEN
+#else
+#  error Cannot find SPM Enable bit definition!
+#endif
+
+#define __BOOT_SIGROW_READ (_BV(__SPM_ENABLE) | _BV(SIGRD))
+
+#define boot_signature_byte_get(addr) \
+(__extension__({		      \
+      uint16_t __addr16 = (uint16_t)(addr);	\
+      uint8_t __result;				\
+      __asm__ __volatile__			\
+      (						\
+	"sts %1, %2\n\t"			\
+	"lpm %0, Z" "\n\t"			\
+	: "=r" (__result)			\
+	: "i" (_SFR_MEM_ADDR(__SPM_REG)),	\
+	  "r" ((uint8_t) __BOOT_SIGROW_READ),	\
+	  "z" (__addr16)			\
+      );					\
+      __result;					\
+}))
 		
 #endif
