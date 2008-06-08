@@ -139,7 +139,7 @@ CSTANDARD = -std=gnu99
 
 
 # Starting byte address of the bootloader
-BOOT_START = 0x1E000
+BOOT_START = 0x3E00
 
 
 # Place -D or -U options here for C sources
