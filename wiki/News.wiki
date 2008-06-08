@@ -1,3 +1,8 @@
+==2008.06.08==
+I was trying to build DFU bootloader code from Dean Camera without success, luckily I did used the [http://www.avrfreaks.net/index.php?name=PNphpBB2&file=viewtopic&t=64923&start=0&postdays=0&postorder=asc&highlight= AVRFreaks forum and asked for help], the problem is now resolved and I did commit the changes. I am not really sure the bootloader is working since I have some questions yet and I didn't flash it - just tomorrow.
+
+I started thinking on MemoryOrganization and on FirmwareAPI. I also asked help to [http://code.google.com/u/dziems/ dziems member] for selling me a SPI EEPROM memory, I don't have any as is much expensive for me to buy only that IC from Farnell - I should buy at least 40€ + VAT from Farnell.
+
 ==2008.06.07==
 I uploaded the first firmware version to SVN server, it can be accessed [http://code.google.com/p/bicycleledpov/source/browse/trunk/BicycleLEDPOV here].
 
