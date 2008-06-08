@@ -1,11 +1,44 @@
-#summary API definition to interact with Bicycle LED POV by communicating by USB
+#summary API definition to interact with Bicycle LED POV by communicating using USB
 
-=Write on LEDs: command 1=
-Usage: 1; _byte_1_; _byte_2_; _byte_3_; _byte_4_
+Bicycle LED POV is programmed with a PC software, using a USB connection. On PC will appear a new virtual serial port when connecting Bicycle LED POV.
+
+Commands are sent to the virtual serial port to interact with Bicycle LED POV.
+
+For each command sent, an answer with the value of the same command should be received - this works as a confirmation that command was received on Bicycle LED POV.
+
+=Dummy command: command 1=
+This command do nothing. It's useful for knowing that firmware is answering.
+
+Usage: 1.
+
+=Retrieve Bicycle LED POV firmware version: command 2=
+This command returns the Bicycle LED POV firmware version.
+
+Usage: 2; _byte_1_; _byte_2_; _byte_3_
+  * _byte_1_: major version number;
+  * _byte_2_: minor version number;
+  * _byte_3_: revision version number.
+
+Example: Version 1.0.2
+
+=Test LEDs: command 3=
+This command is useful to test the LEDs hardware, by turning them on and off.
+
+Usage: 3; _byte_1_; _byte_2_; _byte_3_; _byte_4_
 
 _Byte_x_ bits represents each state of LEDs - bit 0 of _byte_1_ represents the state of the first LED.
 
-=Read byte on EEPROM memory: command 2=
+=Test sensor hall effect: command 4=
+This command is useful to test the sensor hall effect, by turning on and off the first LED when sensor hall effect state is on and off respectively.
 
-=Write byte on EEPROM memory: command 3=
+Usage: 4; _byte_1_
 
+_byte_1_ with value 1 to turn on the test and with value 0 to turn off the test.
+
+=Read byte from external EEPROM memory: command 5=
+
+=Write byte to external EEPROM memory: command 6=
+
+=Read image from external EEPROM memory: command 7=
+
+=Write image to external EEPROM memory: command 8=
