@@ -1,3 +1,5 @@
+#summary Description of tools used to develop and hack Bicycle LED POV.
+
 One of the objectives of the project is to use only Free Software tools as possible, since this is a community project does not make sense to share information and use proprietary tools, we want that everyone can use this tools, be able to freely hack Bicycle LED POV.
 
 =Schematic and PCB design=
