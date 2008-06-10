@@ -1,10 +1,14 @@
-One of the objectives of the project is to use only Free Software tools as possible, since this is a community project does not make sense to share information and use proprietary tools, we want that everyone can use this tools, be able to hack Bicycle LED POV.
+One of the objectives of the project is to use only Free Software tools as possible, since this is a community project does not make sense to share information and use proprietary tools, we want that everyone can use this tools, be able to freely hack Bicycle LED POV.
 
 =Schematic and PCB design=
 There are at least two good candidates, [http://geda.seul.org/index.html gEDA] and [http://kicad.sourceforge.net/wiki/index.php/Main_Page KiCad] - both are availably in GNU/Linux Ubuntu repositories.
 
 =Program the MCU=
 The AT90USB162 MCU comes from Atmel with a USB boot loader, it can be programmed by USB. On GNU/Linux the [http://dfu-programmer.sourceforge.net/ dfu-programmer] can be used to program the MCU by USB - dfu-programmer is available on Gnu/Linux Ubuntu repositories.
+
+Here is an screenshot after programming using the dfu-programmer:
+
+[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080610-BicycleLEDPOV-editing_code_and_dfuprogrammer.jpg]
 
 Another way to program the MCU, change it fuses, etc, is using the [http://www.embedded-projects.net/index.php?page_id=165 USBProg] working as AVRISPMK2 clone.
 
