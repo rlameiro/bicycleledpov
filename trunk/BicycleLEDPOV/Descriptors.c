@@ -163,14 +163,14 @@ USB_Descriptor_String_t ManafacturerString PROGMEM =
 {
 	Header:                 {Size: USB_STRING_LEN(11), Type: DTYPE_String},
 		
-	UnicodeString:          L"Dean Camera"
+	UnicodeString:          L"Jorge Pinto aka Casainho"
 };
 
 USB_Descriptor_String_t ProductString PROGMEM =
 {
 	Header:                 {Size: USB_STRING_LEN(20), Type: DTYPE_String},
 		
-	UnicodeString:          L"MyUSB USB-RS232 Demo"
+	UnicodeString:          L"Bicycle LED POV"
 };
 
 USB_Descriptor_String_t SerialNumberString PROGMEM =
