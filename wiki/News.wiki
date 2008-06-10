@@ -6,7 +6,7 @@ While investigating why the cable used to program didn't work, I took some pictu
 
 [http://bicycleledpov.googlecode.com/svn-history/r41/trunk/BicycleLEDPOV/Pictures/20080609-USB_D_minus_line-02.jpg]
 
-This was my first time that I say wave forms from USB data lines. Other pictures can be seen here.
+This was my first time that I say wave forms from USB data lines.
 
 I did wired the sensor hall effect and made code to test it :-) - the FirmwareApi _Dummy command: command 1_ and _Test sensor hall effect: command 4_ is working correctly now. The code is on SVN.
 
