@@ -1,3 +1,32 @@
+==2008.06.10==
+Today I tried to program the bootloader but I couldn't because I had problems on programing cable, I will try again later. While doing this I discovered that the bootloder is working, I didn't erase It.
+I also did read on datasheet that MCU comes configured on fuses to run at Clock/8, so It's running at 1MHz and not at 8 MHz as I was expecting.
+
+While investigating why the cable used to program didn't work, I took some pictures of USB data lines using the oscilosce, here is one from D- data line:
+
+[http://bicycleledpov.googlecode.com/svn-history/r41/trunk/BicycleLEDPOV/Pictures/20080609-USB_D_minus_line-02.jpg]
+
+This was my first time that I say wave forms from USB data lines. Other pictures can be seen here.
+
+I did wired the sensor hall effect and made code to test it :-) - the FirmwareApi _Dummy command: command 1_ and _Test sensor hall effect: command 4_ is working correctly now. The code is on SVN.
+
+I divided the code in parts: the task "PCLink_Task" and 
+the "MakePOV_Task".
+
+PCLink_task starts automatically running when USB is connected while 
+MakePOV_Task stop running -- on this time we can communicate with the 
+hardware to download images on SPI EEPROM and test hardware.
+
+When we disconnect USB, PCLink_Task automatically stop and MakePOV_Task starts 
+running, where it should take data from EEPROM and send to LED's, making the 
+POV :-)
+
+Here is one picture of the development board + sensor hall effect:
+
+[http://bicycleledpov.googlecode.com/svn-history/r41/trunk/BicycleLEDPOV/Pictures/20080610-BicycleLEDPOV-prototype-600x.jpg]
+
+I took some pictures and add them [http://code.google.com/p/bicycleledpov/source/browse/trunk/BicycleLEDPOV/Pictures/ here] on SVN.
+
 ==2008.06.08==
 I was trying to build DFU bootloader code from Dean Camera without success, luckily I did used the [http://www.avrfreaks.net/index.php?name=PNphpBB2&file=viewtopic&t=64923&start=0&postdays=0&postorder=asc&highlight= AVRFreaks forum and asked for help], the problem is now resolved and I did commit the changes. I am not really sure the bootloader is working since I have some questions yet and I didn't flash it - just tomorrow.
 
