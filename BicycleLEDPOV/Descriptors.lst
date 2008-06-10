@@ -228,78 +228,86 @@
  245               	ManafacturerString:
  246 0059 18        		.byte	24
  247 005a 03        		.byte	3
- 248 005b 4400      		.string	"D"
- 249 005d 6500      		.string	"e"
- 250 005f 6100      		.string	"a"
- 251 0061 6E00      		.string	"n"
- 252 0063 2000      		.string	" "
- 253 0065 4300      		.string	"C"
- 254 0067 6100      		.string	"a"
- 255 0069 6D00      		.string	"m"
- 256 006b 6500      		.string	"e"
- 257 006d 7200      		.string	"r"
- 258 006f 6100      		.string	"a"
- 259 0071 00        		.string	""
- 260 0072 00        		.string	""
- 261               	.global	ProductString
- 264               	ProductString:
- 265 0073 2A        		.byte	42
- 266 0074 03        		.byte	3
- 267 0075 4D00      		.string	"M"
- 268 0077 7900      		.string	"y"
- 269 0079 5500      		.string	"U"
- 270 007b 5300      		.string	"S"
- 271 007d 4200      		.string	"B"
- 272 007f 2000      		.string	" "
- 273 0081 5500      		.string	"U"
- 274 0083 5300      		.string	"S"
- 275 0085 4200      		.string	"B"
- 276 0087 2D00      		.string	"-"
- 277 0089 5200      		.string	"R"
- 278 008b 5300      		.string	"S"
- 279 008d 3200      		.string	"2"
- 280 008f 3300      		.string	"3"
- 281 0091 3200      		.string	"2"
- 282 0093 2000      		.string	" "
- 283 0095 4400      		.string	"D"
- 284 0097 6500      		.string	"e"
- 285 0099 6D00      		.string	"m"
- 286 009b 6F00      		.string	"o"
- 287 009d 00        		.string	""
- 288 009e 00        		.string	""
- 289               	.global	SerialNumberString
- 292               	SerialNumberString:
- 293 009f 1A        		.byte	26
- 294 00a0 03        		.byte	3
- 295 00a1 3000      		.string	"0"
- 296 00a3 3000      		.string	"0"
- 297 00a5 3000      		.string	"0"
- 298 00a7 3000      		.string	"0"
- 299 00a9 3000      		.string	"0"
- 300 00ab 3000      		.string	"0"
- 301 00ad 3000      		.string	"0"
- 302 00af 3000      		.string	"0"
+ 248 005b 4A00      		.string	"J"
+ 249 005d 6F00      		.string	"o"
+ 250 005f 7200      		.string	"r"
+ 251 0061 6700      		.string	"g"
+ 252 0063 6500      		.string	"e"
+ 253 0065 2000      		.string	" "
+ 254 0067 5000      		.string	"P"
+ 255 0069 6900      		.string	"i"
+ 256 006b 6E00      		.string	"n"
+ 257 006d 7400      		.string	"t"
+ 258 006f 6F00      		.string	"o"
+ 259 0071 2000      		.string	" "
+ 260 0073 6100      		.string	"a"
+ 261 0075 6B00      		.string	"k"
+ 262 0077 6100      		.string	"a"
+ 263 0079 2000      		.string	" "
+ 264 007b 4300      		.string	"C"
+ 265 007d 6100      		.string	"a"
+ 266 007f 7300      		.string	"s"
+ 267 0081 6100      		.string	"a"
+ 268 0083 6900      		.string	"i"
+ 269 0085 6E00      		.string	"n"
+ 270 0087 6800      		.string	"h"
+ 271 0089 6F00      		.string	"o"
+ 272 008b 00        		.string	""
+ 273 008c 00        		.string	""
+ 274               	.global	ProductString
+ 277               	ProductString:
+ 278 008d 2A        		.byte	42
+ 279 008e 03        		.byte	3
+ 280 008f 4200      		.string	"B"
+ 281 0091 6900      		.string	"i"
+ 282 0093 6300      		.string	"c"
+ 283 0095 7900      		.string	"y"
+ 284 0097 6300      		.string	"c"
+ 285 0099 6C00      		.string	"l"
+ 286 009b 6500      		.string	"e"
+ 287 009d 2000      		.string	" "
+ 288 009f 4C00      		.string	"L"
+ 289 00a1 4500      		.string	"E"
+ 290 00a3 4400      		.string	"D"
+ 291 00a5 2000      		.string	" "
+ 292 00a7 5000      		.string	"P"
+ 293 00a9 4F00      		.string	"O"
+ 294 00ab 5600      		.string	"V"
+ 295 00ad 00        		.string	""
+ 296 00ae 00        		.string	""
+ 297               	.global	SerialNumberString
+ 300               	SerialNumberString:
+ 301 00af 1A        		.byte	26
+ 302 00b0 03        		.byte	3
  303 00b1 3000      		.string	"0"
  304 00b3 3000      		.string	"0"
  305 00b5 3000      		.string	"0"
  306 00b7 3000      		.string	"0"
- 307 00b9 00        		.string	""
- 308 00ba 00        		.string	""
- 333               	.Letext0:
+ 307 00b9 3000      		.string	"0"
+ 308 00bb 3000      		.string	"0"
+ 309 00bd 3000      		.string	"0"
+ 310 00bf 3000      		.string	"0"
+ 311 00c1 3000      		.string	"0"
+ 312 00c3 3000      		.string	"0"
+ 313 00c5 3000      		.string	"0"
+ 314 00c7 3000      		.string	"0"
+ 315 00c9 00        		.string	""
+ 316 00ca 00        		.string	""
+ 341               	.Letext0:
 DEFINED SYMBOLS
                             *ABS*:00000000 Descriptors.c
-     /tmp/ccExAy57.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccExAy57.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccExAy57.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccExAy57.s:5      *ABS*:00000000 __tmp_reg__
-     /tmp/ccExAy57.s:6      *ABS*:00000001 __zero_reg__
-     /tmp/ccExAy57.s:20     .text.USB_GetDescriptor:00000000 USB_GetDescriptor
-     /tmp/ccExAy57.s:153    .progmem.data:00000000 DeviceDescriptor
-     /tmp/ccExAy57.s:238    .progmem.data:00000055 LanguageString
-     /tmp/ccExAy57.s:245    .progmem.data:00000059 ManafacturerString
-     /tmp/ccExAy57.s:264    .progmem.data:00000073 ProductString
-     /tmp/ccExAy57.s:292    .progmem.data:0000009f SerialNumberString
-     /tmp/ccExAy57.s:171    .progmem.data:00000012 ConfigurationDescriptor
+     /tmp/cclAYfVq.s:2      *ABS*:0000003f __SREG__
+     /tmp/cclAYfVq.s:3      *ABS*:0000003e __SP_H__
+     /tmp/cclAYfVq.s:4      *ABS*:0000003d __SP_L__
+     /tmp/cclAYfVq.s:5      *ABS*:00000000 __tmp_reg__
+     /tmp/cclAYfVq.s:6      *ABS*:00000001 __zero_reg__
+     /tmp/cclAYfVq.s:20     .text.USB_GetDescriptor:00000000 USB_GetDescriptor
+     /tmp/cclAYfVq.s:153    .progmem.data:00000000 DeviceDescriptor
+     /tmp/cclAYfVq.s:238    .progmem.data:00000055 LanguageString
+     /tmp/cclAYfVq.s:245    .progmem.data:00000059 ManafacturerString
+     /tmp/cclAYfVq.s:277    .progmem.data:0000008d ProductString
+     /tmp/cclAYfVq.s:300    .progmem.data:000000af SerialNumberString
+     /tmp/cclAYfVq.s:171    .progmem.data:00000012 ConfigurationDescriptor
 
 UNDEFINED SYMBOLS
 __do_copy_data

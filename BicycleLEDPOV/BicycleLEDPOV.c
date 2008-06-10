@@ -44,8 +44,10 @@
 /* Scheduler Task List */
 TASK_LIST
 {
-	{ Task: USB_USBTask          , TaskStatus: TASK_STOP },
-	{ Task: CDC_Task             , TaskStatus: TASK_STOP },
+	{ Task: MakePOV_Task						, TaskStatus: TASK_STOP },	
+	{ Task: USB_USBTask      					, TaskStatus: TASK_STOP },
+	{ Task: PCLink_Task 					    , TaskStatus: TASK_STOP },
+	{ Task: TestSensorHallEffect_Task			, TaskStatus: TASK_STOP },	
 };
 
 /* Globals: */
@@ -53,6 +55,13 @@ CDC_Line_Coding_t LineCoding = { BaudRateBPS: 9600,
                                  CharFormat:  OneStopBit,
                                  ParityType:  Parity_None,
                                  DataBits:    8            };
+
+
+ISR(TIMER0_COMPA_vect, ISR_BLOCK)
+{
+	/* Scheduler test - increment scheduler tick counter once each millisecond */
+	Scheduler_TickCounter++;
+}
 
 int main(void)
 {
@@ -80,13 +89,14 @@ EVENT_HANDLER(USB_Connect)
 {
 	/* Start USB management task */
 	Scheduler_SetTaskMode(USB_USBTask, TASK_RUN);
+	Scheduler_SetTaskMode(MakePOV_Task, TASK_STOP);
 }
 
 EVENT_HANDLER(USB_Disconnect)
 {
-	/* Stop running CDC and USB management tasks */
-	Scheduler_SetTaskMode(CDC_Task, TASK_STOP);
 	Scheduler_SetTaskMode(USB_USBTask, TASK_STOP);
+	Scheduler_SetTaskMode(PCLink_Task, TASK_STOP);
+	Scheduler_SetTaskMode(MakePOV_Task, TASK_RUN);
 }
 
 EVENT_HANDLER(USB_ConfigurationChanged)
@@ -105,7 +115,7 @@ EVENT_HANDLER(USB_ConfigurationChanged)
 	                           ENDPOINT_BANK_DOUBLE);
 
 	/* Start CDC task */
-	Scheduler_SetTaskMode(CDC_Task, TASK_RUN);
+	Scheduler_SetTaskMode(PCLink_Task, TASK_RUN);
 }
 
 EVENT_HANDLER(USB_UnhandledControlPacket)
@@ -163,9 +173,10 @@ EVENT_HANDLER(USB_UnhandledControlPacket)
 	}
 }
 
-TASK(CDC_Task)
+TASK(PCLink_Task)
 {
-	unsigned char ucData = 0;	
+	unsigned char ucDataByte = 0, Flag_IsCommand = false;
+	static unsigned char ucCommand = 0, ucStateMachine = PROCESS_COMMAND;
 		
 	if (USB_IsConnected)
 	{
@@ -176,25 +187,59 @@ TASK(CDC_Task)
 		{
 			/* Read the recieved data endpoint into the transmission buffer */
 			while (Endpoint_BytesInEndpoint())
-			{			
-				/* Test received bytes, looking for 0 to turn off the LED */
-				/* and 1 to turn on the LED, others values are ignored */
-				ucData = Endpoint_Read_Byte();
-				switch(ucData)
+			{
+				ucDataByte = Endpoint_Read_Byte();
+
+				switch(ucStateMachine)
 				{
-					case '0':
-					PORTD &= ~(1<<PD4); /* Turn on LED */
-					break;
+					case PROCESS_COMMAND:
+					ucCommand = ucDataByte; /* Save the command */
 						
-					case '1':	
-					PORTD |= (1<<PD4); /* Turn off LED */
-					break;
+					/* Deferenciate between commands with data and without */
+					/* and sinalize on Flag_IsCommand when a command was sent */
+					if (ucCommand == TEST_SENSOR_HALL_EFFECT)
+					{
+						ucStateMachine = PROCESS_DATA;
+						Flag_IsCommand = true;
+						break;
+					}
 						
-					default: /* Do nothing with other values */
-					break;
-				}
+					else if (ucCommand == DUMMY)
+					{
+						Flag_IsCommand = true;
+					}
+							
+					case PROCESS_DATA:
+					switch (ucCommand)
+					{
+						case DUMMY: /* Do nothing */
+						break;
+								
+						case TEST_SENSOR_HALL_EFFECT:
+						if (ucDataByte)
+						{
+							DDRD |= (1<<PD1); /* Output pin for the sensor hall effect source voltage */
+							PORTD |= (1<<PD1); /* Turn on source voltage for sensor hall effect */
+							Scheduler_SetTaskMode(TestSensorHallEffect_Task, TASK_RUN);
+						}
+								
+						else
+						{
+							Scheduler_SetTaskMode(TestSensorHallEffect_Task, TASK_STOP);
+							DDRD &= ~(1<<PD1); /* Disable output pin for the sensor hall effect source voltage */
+							PORTD &= ~(1<<PD1); /* Turn off source voltage for sensor hall effect */
+						}
+								
+						ucStateMachine = PROCESS_COMMAND;
+						break;
+								
+						default:
+						ucStateMachine = PROCESS_COMMAND;
+						break;
+					}
+				}	
 			}
-			
+						
 			/* Clear the endpoint buffer */
 			Endpoint_ClearCurrentBank();
 			
@@ -208,7 +253,10 @@ TASK(CDC_Task)
 			bool IsFull = (Endpoint_BytesInEndpoint() == CDC_TXRX_EPSIZE);
 			
 			/* Send back the same value by USB */
-			Endpoint_Write_Byte(ucData);
+			if (Flag_IsCommand)	
+			{
+				Endpoint_Write_Byte(ucCommand);
+			}
 			
 			/* Send the data */
 			Endpoint_ClearCurrentBank();
@@ -229,4 +277,28 @@ TASK(CDC_Task)
 void Hardware_Init(void)
 {
 	DDRD |= (1<<PD4); /* Output pin for the LED */
+	
+	/* Millisecond timer initialization, with output compare interrupt enabled */
+	OCR0A  = 0x7D;
+	TCCR0A = (1 << WGM01);
+	TCCR0B = ((1 << CS01) | (1 << CS00));
+	TIMSK0 = (1 << OCIE0A);
+}
+
+TASK(MakePOV_Task)
+{
+	PORTD |= (1<<PD4); /* Turn on LED */
+}
+
+	TASK(TestSensorHallEffect_Task)
+	{
+	if (bit_is_clear(PIND,PD0))
+	{
+		PORTD |= (1<<PD4); /* Turn on LED */
+	}
+	
+	else
+	{
+		PORTD &= ~(1<<PD4); /* Turn off LED */
+	}
 }

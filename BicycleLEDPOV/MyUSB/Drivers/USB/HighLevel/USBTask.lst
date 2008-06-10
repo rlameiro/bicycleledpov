@@ -52,12 +52,12 @@
   85               	.Letext0:
 DEFINED SYMBOLS
                             *ABS*:00000000 USBTask.c
-     /tmp/ccLB19DU.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccLB19DU.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccLB19DU.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccLB19DU.s:5      *ABS*:00000000 __tmp_reg__
-     /tmp/ccLB19DU.s:6      *ABS*:00000001 __zero_reg__
-     /tmp/ccLB19DU.s:20     .text.USB_USBTask:00000000 USB_USBTask
+     /tmp/ccAaRIEz.s:2      *ABS*:0000003f __SREG__
+     /tmp/ccAaRIEz.s:3      *ABS*:0000003e __SP_H__
+     /tmp/ccAaRIEz.s:4      *ABS*:0000003d __SP_L__
+     /tmp/ccAaRIEz.s:5      *ABS*:00000000 __tmp_reg__
+     /tmp/ccAaRIEz.s:6      *ABS*:00000001 __zero_reg__
+     /tmp/ccAaRIEz.s:20     .text.USB_USBTask:00000000 USB_USBTask
                             *COM*:00000001 USB_IsConnected
                             *COM*:00000001 USB_IsInitialized
 

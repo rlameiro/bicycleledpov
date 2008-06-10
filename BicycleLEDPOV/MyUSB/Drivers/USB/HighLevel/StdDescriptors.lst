@@ -31,12 +31,12 @@
   64               	.Letext0:
 DEFINED SYMBOLS
                             *ABS*:00000000 StdDescriptors.c
-     /tmp/cc0RSbJg.s:2      *ABS*:0000003f __SREG__
-     /tmp/cc0RSbJg.s:3      *ABS*:0000003e __SP_H__
-     /tmp/cc0RSbJg.s:4      *ABS*:0000003d __SP_L__
-     /tmp/cc0RSbJg.s:5      *ABS*:00000000 __tmp_reg__
-     /tmp/cc0RSbJg.s:6      *ABS*:00000001 __zero_reg__
-     /tmp/cc0RSbJg.s:20     .text.USB_GetDescriptor:00000000 USB_GetDescriptor
+     /tmp/cclYhzds.s:2      *ABS*:0000003f __SREG__
+     /tmp/cclYhzds.s:3      *ABS*:0000003e __SP_H__
+     /tmp/cclYhzds.s:4      *ABS*:0000003d __SP_L__
+     /tmp/cclYhzds.s:5      *ABS*:00000000 __tmp_reg__
+     /tmp/cclYhzds.s:6      *ABS*:00000001 __zero_reg__
+     /tmp/cclYhzds.s:20     .text.USB_GetDescriptor:00000000 USB_GetDescriptor
 
 UNDEFINED SYMBOLS
 __do_copy_data

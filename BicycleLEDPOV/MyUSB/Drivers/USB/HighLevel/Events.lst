@@ -39,21 +39,21 @@
   72               	.Letext0:
 DEFINED SYMBOLS
                             *ABS*:00000000 Events.c
-     /tmp/cc5HsIri.s:2      *ABS*:0000003f __SREG__
-     /tmp/cc5HsIri.s:3      *ABS*:0000003e __SP_H__
-     /tmp/cc5HsIri.s:4      *ABS*:0000003d __SP_L__
-     /tmp/cc5HsIri.s:5      *ABS*:00000000 __tmp_reg__
-     /tmp/cc5HsIri.s:6      *ABS*:00000001 __zero_reg__
-     /tmp/cc5HsIri.s:19     .text.__stub:00000000 __stub
-     /tmp/cc5HsIri.s:19     .text.__stub:00000000 Event_USB_Connect
-     /tmp/cc5HsIri.s:19     .text.__stub:00000000 Event_USB_Disconnect
-     /tmp/cc5HsIri.s:19     .text.__stub:00000000 Event_USB_DeviceEnumerationComplete
-     /tmp/cc5HsIri.s:19     .text.__stub:00000000 Event_USB_UnhandledControlPacket
-     /tmp/cc5HsIri.s:19     .text.__stub:00000000 Event_USB_ConfigurationChanged
-     /tmp/cc5HsIri.s:19     .text.__stub:00000000 Event_USB_Suspend
-     /tmp/cc5HsIri.s:19     .text.__stub:00000000 Event_USB_WakeUp
-     /tmp/cc5HsIri.s:19     .text.__stub:00000000 Event_USB_Reset
-     /tmp/cc5HsIri.s:19     .text.__stub:00000000 Event_USB_DeviceError
+     /tmp/cciPzWu9.s:2      *ABS*:0000003f __SREG__
+     /tmp/cciPzWu9.s:3      *ABS*:0000003e __SP_H__
+     /tmp/cciPzWu9.s:4      *ABS*:0000003d __SP_L__
+     /tmp/cciPzWu9.s:5      *ABS*:00000000 __tmp_reg__
+     /tmp/cciPzWu9.s:6      *ABS*:00000001 __zero_reg__
+     /tmp/cciPzWu9.s:19     .text.__stub:00000000 __stub
+     /tmp/cciPzWu9.s:19     .text.__stub:00000000 Event_USB_Connect
+     /tmp/cciPzWu9.s:19     .text.__stub:00000000 Event_USB_Disconnect
+     /tmp/cciPzWu9.s:19     .text.__stub:00000000 Event_USB_DeviceEnumerationComplete
+     /tmp/cciPzWu9.s:19     .text.__stub:00000000 Event_USB_UnhandledControlPacket
+     /tmp/cciPzWu9.s:19     .text.__stub:00000000 Event_USB_ConfigurationChanged
+     /tmp/cciPzWu9.s:19     .text.__stub:00000000 Event_USB_Suspend
+     /tmp/cciPzWu9.s:19     .text.__stub:00000000 Event_USB_WakeUp
+     /tmp/cciPzWu9.s:19     .text.__stub:00000000 Event_USB_Reset
+     /tmp/cciPzWu9.s:19     .text.__stub:00000000 Event_USB_DeviceError
 
 UNDEFINED SYMBOLS
 __do_copy_data

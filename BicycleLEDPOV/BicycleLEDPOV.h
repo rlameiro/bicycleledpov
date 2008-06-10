@@ -33,10 +33,17 @@
 		#include <MyUSB/Scheduler/Scheduler.h>             // Simple scheduler for task management
 
 	/* Macros: */
-		#define GET_LINE_CODING              0x21
-		#define SET_LINE_CODING              0x20
-		#define SET_CONTROL_LINE_STATE       0x22
+		#define GET_LINE_CODING				0x21
+		#define SET_LINE_CODING				0x20
+		#define SET_CONTROL_LINE_STATE		0x22
 
+		#define PROCESS_COMMAND				0
+		#define PROCESS_DATA				1		
+		
+		/* Macros for commands */
+		#define DUMMY						1
+		#define TEST_SENSOR_HALL_EFFECT		2
+		 
 	/* Event Handlers: */
 		HANDLES_EVENT(USB_Connect);
 		HANDLES_EVENT(USB_Disconnect);
@@ -73,6 +80,7 @@
 		void Hardware_Init(void);
 
 	/* Tasks: */
-		TASK(CDC_Task);
-
+		TASK(PCLink_Task);
+		TASK(MakePOV_Task);
+		TASK(TestSensorHallEffect_Task);
 #endif
