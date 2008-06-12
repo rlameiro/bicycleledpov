@@ -1,5 +1,7 @@
 [http://farm3.static.flickr.com/2048/2527584688_fa368a22f7_o.jpg]
 
+The DC-DC is the NCP1450A - there is a error on name of the schematic.
+
 This is the power stage, with 2,4 volts input from two 1,2 volts NiMh rechargeable batteries in series.
 
 Output is 2,4 volts for LEDs and 5 volts for MCU, sensor hall effect and serial EEPROM memory.
