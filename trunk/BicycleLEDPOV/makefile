@@ -13,7 +13,7 @@
 # Sander Pool
 # Frederik Rouleau
 # Carlos Lamas
-#
+# Jorge Pinto aka Casainho
 #----------------------------------------------------------------------------
 # On command line:
 #
@@ -27,6 +27,9 @@
 #
 # make program = Download the hex file to the device, using avrdude.
 #                Please customize the avrdude settings below first!
+#
+# make usbprogram = Download the hex file to the device by USB,
+#                   using dfu-programmer. 
 #
 # make debug = Start either simulavr or avarice as specified for debugging, 
 #              with avr-gdb or avr-insight as the front end for debugging.
@@ -85,7 +88,8 @@ OBJDIR = .
 
 # List C source files here. (C dependencies are automatically generated.)
 SRC = $(TARGET).c                                           \
-	  Descriptors.c                                         \
+	  Descriptors.c                                     \
+	  RingBuff.c                                        \
 	  ./MyUSB/Scheduler/Scheduler.c                     \
 	  ./MyUSB/Drivers/USB/LowLevel/LowLevel.c           \
 	  ./MyUSB/Drivers/USB/LowLevel/Endpoint.c           \
@@ -442,8 +446,8 @@ end:
 
 
 # Display size of file.
-HEXSIZE = $(SIZE) --target=$(FORMAT) $(TARGET).hex
-ELFSIZE = $(SIZE) --mcu=$(MCU) --format=avr $(TARGET).elf
+HEXSIZE = $(SIZE) $(TARGET).hex
+ELFSIZE = $(SIZE) $(TARGET).elf
 
 sizebefore:
 	@if test -f $(TARGET).elf; then echo; echo $(MSG_SIZE_BEFORE); $(ELFSIZE); \
@@ -474,9 +478,13 @@ gccversion :
 	@$(CC) --version
 
 
-
 # Program the device.  
 program: $(TARGET).hex $(TARGET).eep
+	$(AVRDUDE) $(AVRDUDE_FLAGS) $(AVRDUDE_WRITE_FLASH) $(AVRDUDE_WRITE_EEPROM)
+
+
+# Program the device by usb using dfu-program.  
+usbprogram: $(TARGET).hex
 	 dfu-programmer $(MCU) flash $(TARGET).hex
 
 

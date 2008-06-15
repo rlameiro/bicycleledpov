@@ -296,18 +296,18 @@
  341               	.Letext0:
 DEFINED SYMBOLS
                             *ABS*:00000000 Descriptors.c
-     /tmp/cclAYfVq.s:2      *ABS*:0000003f __SREG__
-     /tmp/cclAYfVq.s:3      *ABS*:0000003e __SP_H__
-     /tmp/cclAYfVq.s:4      *ABS*:0000003d __SP_L__
-     /tmp/cclAYfVq.s:5      *ABS*:00000000 __tmp_reg__
-     /tmp/cclAYfVq.s:6      *ABS*:00000001 __zero_reg__
-     /tmp/cclAYfVq.s:20     .text.USB_GetDescriptor:00000000 USB_GetDescriptor
-     /tmp/cclAYfVq.s:153    .progmem.data:00000000 DeviceDescriptor
-     /tmp/cclAYfVq.s:238    .progmem.data:00000055 LanguageString
-     /tmp/cclAYfVq.s:245    .progmem.data:00000059 ManafacturerString
-     /tmp/cclAYfVq.s:277    .progmem.data:0000008d ProductString
-     /tmp/cclAYfVq.s:300    .progmem.data:000000af SerialNumberString
-     /tmp/cclAYfVq.s:171    .progmem.data:00000012 ConfigurationDescriptor
+     /tmp/ccmSTNHV.s:2      *ABS*:0000003f __SREG__
+     /tmp/ccmSTNHV.s:3      *ABS*:0000003e __SP_H__
+     /tmp/ccmSTNHV.s:4      *ABS*:0000003d __SP_L__
+     /tmp/ccmSTNHV.s:5      *ABS*:00000000 __tmp_reg__
+     /tmp/ccmSTNHV.s:6      *ABS*:00000001 __zero_reg__
+     /tmp/ccmSTNHV.s:20     .text.USB_GetDescriptor:00000000 USB_GetDescriptor
+     /tmp/ccmSTNHV.s:153    .progmem.data:00000000 DeviceDescriptor
+     /tmp/ccmSTNHV.s:238    .progmem.data:00000055 LanguageString
+     /tmp/ccmSTNHV.s:245    .progmem.data:00000059 ManafacturerString
+     /tmp/ccmSTNHV.s:277    .progmem.data:0000008d ProductString
+     /tmp/ccmSTNHV.s:300    .progmem.data:000000af SerialNumberString
+     /tmp/ccmSTNHV.s:171    .progmem.data:00000012 ConfigurationDescriptor
 
 UNDEFINED SYMBOLS
 __do_copy_data

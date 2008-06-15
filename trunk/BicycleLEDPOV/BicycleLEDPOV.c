@@ -44,9 +44,10 @@
 /* Scheduler Task List */
 TASK_LIST
 {
-	{ Task: MakePOV_Task						, TaskStatus: TASK_STOP },	
 	{ Task: USB_USBTask      					, TaskStatus: TASK_STOP },
+	{ Task: CDC_Task							, TaskStatus: TASK_STOP },
 	{ Task: PCLink_Task 					    , TaskStatus: TASK_STOP },
+	{ Task: MakePOV_Task						, TaskStatus: TASK_STOP },	
 	{ Task: TestSensorHallEffect_Task			, TaskStatus: TASK_STOP },	
 };
 
@@ -56,13 +57,17 @@ CDC_Line_Coding_t LineCoding = { BaudRateBPS: 9600,
                                  ParityType:  Parity_None,
                                  DataBits:    8            };
 
+RingBuff_t        Rx_Buffer;
+RingBuff_t        Tx_Buffer;
+
+unsigned char rxbuff, txbuff, rxbuffele, txbuffele;
 
 ISR(TIMER0_COMPA_vect, ISR_BLOCK)
 {
 	/* Scheduler test - increment scheduler tick counter once each millisecond */
 	Scheduler_TickCounter++;
 }
-
+		
 int main(void)
 {
 	/* Disable watchdog if enabled by bootloader/fuses */
@@ -74,6 +79,10 @@ int main(void)
 
 	/* Hardware Initialization */
 	Hardware_Init();
+	
+	/* Ringbuffer Initialization */
+	Buffer_Initialize(&Rx_Buffer);
+	Buffer_Initialize(&Tx_Buffer);
 
 	/* Initialize Scheduler so that it can be used */
 	Scheduler_Init();
@@ -95,7 +104,9 @@ EVENT_HANDLER(USB_Connect)
 EVENT_HANDLER(USB_Disconnect)
 {
 	Scheduler_SetTaskMode(USB_USBTask, TASK_STOP);
+	Scheduler_SetTaskMode(CDC_Task, TASK_STOP);
 	Scheduler_SetTaskMode(PCLink_Task, TASK_STOP);
+	Scheduler_SetTaskMode(TestSensorHallEffect_Task, TASK_STOP);
 	Scheduler_SetTaskMode(MakePOV_Task, TASK_RUN);
 }
 
@@ -115,7 +126,9 @@ EVENT_HANDLER(USB_ConfigurationChanged)
 	                           ENDPOINT_BANK_DOUBLE);
 
 	/* Start CDC task */
+	Scheduler_SetTaskMode(CDC_Task, TASK_RUN);	
 	Scheduler_SetTaskMode(PCLink_Task, TASK_RUN);
+	PORTD &= ~(1<<PD4); /* Turn off LED */
 }
 
 EVENT_HANDLER(USB_UnhandledControlPacket)
@@ -173,11 +186,8 @@ EVENT_HANDLER(USB_UnhandledControlPacket)
 	}
 }
 
-TASK(PCLink_Task)
+TASK(CDC_Task)
 {
-	unsigned char ucDataByte = 0, Flag_IsCommand = false;
-	static unsigned char ucCommand = 0, ucStateMachine = PROCESS_COMMAND;
-		
 	if (USB_IsConnected)
 	{
 		/* Select the Serial Rx Endpoint */
@@ -188,75 +198,32 @@ TASK(PCLink_Task)
 			/* Read the recieved data endpoint into the transmission buffer */
 			while (Endpoint_BytesInEndpoint())
 			{
-				ucDataByte = Endpoint_Read_Byte();
-
-				switch(ucStateMachine)
-				{
-					case PROCESS_COMMAND:
-					ucCommand = ucDataByte; /* Save the command */
-						
-					/* Deferenciate between commands with data and without */
-					/* and sinalize on Flag_IsCommand when a command was sent */
-					if (ucCommand == TEST_SENSOR_HALL_EFFECT)
-					{
-						ucStateMachine = PROCESS_DATA;
-						Flag_IsCommand = true;
-						break;
-					}
-						
-					else if (ucCommand == DUMMY)
-					{
-						Flag_IsCommand = true;
-					}
-							
-					case PROCESS_DATA:
-					switch (ucCommand)
-					{
-						case DUMMY: /* Do nothing */
-						break;
-								
-						case TEST_SENSOR_HALL_EFFECT:
-						if (ucDataByte)
-						{
-							DDRD |= (1<<PD1); /* Output pin for the sensor hall effect source voltage */
-							PORTD |= (1<<PD1); /* Turn on source voltage for sensor hall effect */
-							Scheduler_SetTaskMode(TestSensorHallEffect_Task, TASK_RUN);
-						}
-								
-						else
-						{
-							Scheduler_SetTaskMode(TestSensorHallEffect_Task, TASK_STOP);
-							DDRD &= ~(1<<PD1); /* Disable output pin for the sensor hall effect source voltage */
-							PORTD &= ~(1<<PD1); /* Turn off source voltage for sensor hall effect */
-						}
-								
-						ucStateMachine = PROCESS_COMMAND;
-						break;
-								
-						default:
-						ucStateMachine = PROCESS_COMMAND;
-						break;
-					}
-				}	
+				/* Wait until the buffer has space for a new character */
+				while (!((BUFF_STATICSIZE - Rx_Buffer.Elements)));
+			
+				/* Store each character from the endpoint */
+				Buffer_StoreElement(&Rx_Buffer, Endpoint_Read_Byte());
 			}
-						
+			
 			/* Clear the endpoint buffer */
 			Endpoint_ClearCurrentBank();
-			
-			/* Select the Serial Tx Endpoint */
-			Endpoint_SelectEndpoint(CDC_TX_EPNUM);
+		}
 
+		/* Select the Serial Tx Endpoint */
+		Endpoint_SelectEndpoint(CDC_TX_EPNUM);
+
+		/* Check if the Tx buffer contains anything to be sent to the host */
+		if (Tx_Buffer.Elements)
+		{
 			/* Wait until Serial Tx Endpoint Ready for Read/Write */
 			while (!(Endpoint_ReadWriteAllowed()));
 			
 			/* Check before sending the data if the endpoint is completely full */
 			bool IsFull = (Endpoint_BytesInEndpoint() == CDC_TXRX_EPSIZE);
 			
-			/* Send back the same value by USB */
-			if (Flag_IsCommand)	
-			{
-				Endpoint_Write_Byte(ucCommand);
-			}
+			/* Write the transmission buffer contents to the recieved data endpoint */
+			while (Tx_Buffer.Elements && (Endpoint_BytesInEndpoint() < CDC_TXRX_EPSIZE))
+			  Endpoint_Write_Byte(Buffer_GetElement(&Tx_Buffer));
 			
 			/* Send the data */
 			Endpoint_ClearCurrentBank();
@@ -274,9 +241,150 @@ TASK(PCLink_Task)
 	}
 }
 
+TASK(PCLink_Task)
+{
+	static unsigned char
+		ucCommand = 0,
+		ucNumberDataBytes = 0;
+	
+	if (Rx_Buffer.Elements)
+	{
+		if (ucNumberDataBytes == 0)
+			ucCommand = Buffer_GetElement (&Rx_Buffer);
+
+		switch (ucCommand)
+		{			
+			case DUMMY:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes <= 0)
+			ucNumberDataBytes = 1;
+				
+			if (Tx_Buffer.Elements < BUFF_STATICSIZE)
+			{
+				Buffer_StoreElement (&Tx_Buffer, ucCommand);
+				ucNumberDataBytes--;
+			}				
+			break;
+				
+			case RETRIEVE_FIRMWARE_VERSION:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes <= 0)
+					ucNumberDataBytes = 4;
+					
+			while (Tx_Buffer.Elements < BUFF_STATICSIZE && ucNumberDataBytes > 0)
+			{
+				switch (ucNumberDataBytes)
+				{
+					case 4:
+					Buffer_StoreElement (&Tx_Buffer, ucCommand);
+					break;
+													
+					case 3:
+					Buffer_StoreElement (&Tx_Buffer, BICYCLELEDPOV_VERSION_MAJOR);
+					break;
+						
+					case 2:
+					Buffer_StoreElement (&Tx_Buffer, BICYCLELEDPOV_VERSION_MINOR);
+					break;
+
+					case 1:
+					Buffer_StoreElement (&Tx_Buffer, BICYCLELEDPOV_VERSION_REVISION);
+					break;
+							
+					default:
+					break;
+				}		
+							
+			ucNumberDataBytes--;
+			}
+			break;
+							
+			case TEST_LEDS:
+			/* First byte of this command, fill the NumberDataBytes */
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 5;
+
+			while (Tx_Buffer.Elements < BUFF_STATICSIZE && ucNumberDataBytes > 0)
+			{	
+				switch (ucNumberDataBytes)
+				{
+					case 5: /* Send back the number of the command */
+					Buffer_StoreElement (&Tx_Buffer, ucCommand);
+					break;					
+
+					case 4:/* Send the 4 bytes to LEDs drivers */
+						/* TODO */
+					break;
+					
+					case 3:
+						/* TODO */					
+					break;
+					
+					case 2:
+						/* TODO */					
+					break;
+					
+					case 1:
+						/* TODO */					
+					break;
+						
+					default:					
+					break;
+				}
+
+			ucNumberDataBytes--;	
+			}
+			break;				
+					
+			case TEST_SENSOR_HALL_EFFECT:					
+			/* First byte of this command, fill the NumberDataBytes */
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 2;		
+			
+			switch (ucNumberDataBytes)
+			{
+				case 2: /* Send back the number of the command */
+				if (Tx_Buffer.Elements < BUFF_STATICSIZE)
+				{
+					Buffer_StoreElement (&Tx_Buffer, ucCommand);
+					ucNumberDataBytes--;
+				}
+				break;					
+
+			 	case 1: /* See If we should turn on or off the test */						
+				if (Buffer_GetElement (&Rx_Buffer) == 1)
+				{
+					Scheduler_SetTaskMode(TestSensorHallEffect_Task, TASK_RUN);
+					
+					/* Turn on the source voltage for sensor hall effect */
+					PORTD |= (1<<PD1);
+				}
+				
+				else
+				{
+					Scheduler_SetTaskMode(TestSensorHallEffect_Task, TASK_STOP);
+					
+					/* Turn off LED and source voltage for sensor hall effect */
+					PORTD &= ~((1<<PD4) | (1<<PD1));
+				}	
+				
+				ucNumberDataBytes--;
+				break;
+					
+				default:
+				break;
+			}
+			
+			default:			
+			break;
+		}		
+	}
+}
+	
 void Hardware_Init(void)
 {
-	DDRD |= (1<<PD4); /* Output pin for the LED */
+	/* Output pin for the LED and sensor heffect ect */
+	DDRD |= ((1<<PD4) | (1<<PD1));
 	
 	/* Millisecond timer initialization, with output compare interrupt enabled */
 	OCR0A  = 0x7D;
@@ -290,8 +398,8 @@ TASK(MakePOV_Task)
 	PORTD |= (1<<PD4); /* Turn on LED */
 }
 
-	TASK(TestSensorHallEffect_Task)
-	{
+TASK(TestSensorHallEffect_Task)
+{
 	if (bit_is_clear(PIND,PD0))
 	{
 		PORTD |= (1<<PD4); /* Turn on LED */

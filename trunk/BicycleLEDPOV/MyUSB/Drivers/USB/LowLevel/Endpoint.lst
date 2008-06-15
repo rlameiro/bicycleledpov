@@ -802,22 +802,22 @@
  927               	.Letext0:
 DEFINED SYMBOLS
                             *ABS*:00000000 Endpoint.c
-     /tmp/ccM8xdDQ.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccM8xdDQ.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccM8xdDQ.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccM8xdDQ.s:5      *ABS*:00000000 __tmp_reg__
-     /tmp/ccM8xdDQ.s:6      *ABS*:00000001 __zero_reg__
-     /tmp/ccM8xdDQ.s:20     .text.Endpoint_ConfigureEndpoint_P:00000000 Endpoint_ConfigureEndpoint_P
-     /tmp/ccM8xdDQ.s:89     .text.Endpoint_ClearEndpoints:00000000 Endpoint_ClearEndpoints
-     /tmp/ccM8xdDQ.s:130    .text.Endpoint_Write_Stream_BE:00000000 Endpoint_Write_Stream_BE
-     /tmp/ccM8xdDQ.s:220    .text.Endpoint_Read_Stream_LE:00000000 Endpoint_Read_Stream_LE
-     /tmp/ccM8xdDQ.s:305    .text.Endpoint_Write_Stream_LE:00000000 Endpoint_Write_Stream_LE
-     /tmp/ccM8xdDQ.s:392    .text.Endpoint_Write_Control_Stream_BE:00000000 Endpoint_Write_Control_Stream_BE
-     /tmp/ccM8xdDQ.s:829    .data:00000000 USB_ControlEndpointSize
-     /tmp/ccM8xdDQ.s:500    .text.Endpoint_Write_Control_Stream_LE:00000000 Endpoint_Write_Control_Stream_LE
-     /tmp/ccM8xdDQ.s:604    .text.Endpoint_Read_Control_Stream_LE:00000000 Endpoint_Read_Control_Stream_LE
-     /tmp/ccM8xdDQ.s:670    .text.Endpoint_Read_Stream_BE:00000000 Endpoint_Read_Stream_BE
-     /tmp/ccM8xdDQ.s:758    .text.Endpoint_Read_Control_Stream_BE:00000000 Endpoint_Read_Control_Stream_BE
+     /tmp/cc3HJDOE.s:2      *ABS*:0000003f __SREG__
+     /tmp/cc3HJDOE.s:3      *ABS*:0000003e __SP_H__
+     /tmp/cc3HJDOE.s:4      *ABS*:0000003d __SP_L__
+     /tmp/cc3HJDOE.s:5      *ABS*:00000000 __tmp_reg__
+     /tmp/cc3HJDOE.s:6      *ABS*:00000001 __zero_reg__
+     /tmp/cc3HJDOE.s:20     .text.Endpoint_ConfigureEndpoint_P:00000000 Endpoint_ConfigureEndpoint_P
+     /tmp/cc3HJDOE.s:89     .text.Endpoint_ClearEndpoints:00000000 Endpoint_ClearEndpoints
+     /tmp/cc3HJDOE.s:130    .text.Endpoint_Write_Stream_BE:00000000 Endpoint_Write_Stream_BE
+     /tmp/cc3HJDOE.s:220    .text.Endpoint_Read_Stream_LE:00000000 Endpoint_Read_Stream_LE
+     /tmp/cc3HJDOE.s:305    .text.Endpoint_Write_Stream_LE:00000000 Endpoint_Write_Stream_LE
+     /tmp/cc3HJDOE.s:392    .text.Endpoint_Write_Control_Stream_BE:00000000 Endpoint_Write_Control_Stream_BE
+     /tmp/cc3HJDOE.s:829    .data:00000000 USB_ControlEndpointSize
+     /tmp/cc3HJDOE.s:500    .text.Endpoint_Write_Control_Stream_LE:00000000 Endpoint_Write_Control_Stream_LE
+     /tmp/cc3HJDOE.s:604    .text.Endpoint_Read_Control_Stream_LE:00000000 Endpoint_Read_Control_Stream_LE
+     /tmp/cc3HJDOE.s:670    .text.Endpoint_Read_Stream_BE:00000000 Endpoint_Read_Stream_BE
+     /tmp/cc3HJDOE.s:758    .text.Endpoint_Read_Control_Stream_BE:00000000 Endpoint_Read_Control_Stream_BE
 
 UNDEFINED SYMBOLS
 __do_copy_data

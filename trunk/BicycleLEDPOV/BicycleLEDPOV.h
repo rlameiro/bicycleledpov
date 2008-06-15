@@ -27,12 +27,18 @@
 		#include <avr/interrupt.h>
 
 		#include "Descriptors.h"
+		#include "RingBuff.h"
 
 		#include <MyUSB/Version.h>                         // Library Version Information
 		#include <MyUSB/Drivers/USB/USB.h>                 // USB Functionality
 		#include <MyUSB/Scheduler/Scheduler.h>             // Simple scheduler for task management
 
 	/* Macros: */
+		/* Version 0.1.0 */
+		#define BICYCLELEDPOV_VERSION_MAJOR		0
+		#define BICYCLELEDPOV_VERSION_MINOR		1
+		#define BICYCLELEDPOV_VERSION_REVISION  0
+						
 		#define GET_LINE_CODING				0x21
 		#define SET_LINE_CODING				0x20
 		#define SET_CONTROL_LINE_STATE		0x22
@@ -42,7 +48,9 @@
 		
 		/* Macros for commands */
 		#define DUMMY						1
-		#define TEST_SENSOR_HALL_EFFECT		2
+		#define RETRIEVE_FIRMWARE_VERSION   2
+		#define TEST_LEDS					3
+		#define TEST_SENSOR_HALL_EFFECT		4
 		 
 	/* Event Handlers: */
 		HANDLES_EVENT(USB_Connect);
@@ -80,6 +88,7 @@
 		void Hardware_Init(void);
 
 	/* Tasks: */
+		TASK(CDC_Task);
 		TASK(PCLink_Task);
 		TASK(MakePOV_Task);
 		TASK(TestSensorHallEffect_Task);
