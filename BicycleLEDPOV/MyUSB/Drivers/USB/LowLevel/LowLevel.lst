@@ -213,14 +213,14 @@
  266               	.Letext0:
 DEFINED SYMBOLS
                             *ABS*:00000000 LowLevel.c
-     /tmp/ccCmtJsE.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccCmtJsE.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccCmtJsE.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccCmtJsE.s:5      *ABS*:00000000 __tmp_reg__
-     /tmp/ccCmtJsE.s:6      *ABS*:00000001 __zero_reg__
-     /tmp/ccCmtJsE.s:20     .text.USB_SetupInterface:00000000 USB_SetupInterface
-     /tmp/ccCmtJsE.s:147    .text.USB_ShutDown:00000000 USB_ShutDown
-     /tmp/ccCmtJsE.s:192    .text.USB_Init:00000000 USB_Init
+     /tmp/ccXpGI1q.s:2      *ABS*:0000003f __SREG__
+     /tmp/ccXpGI1q.s:3      *ABS*:0000003e __SP_H__
+     /tmp/ccXpGI1q.s:4      *ABS*:0000003d __SP_L__
+     /tmp/ccXpGI1q.s:5      *ABS*:00000000 __tmp_reg__
+     /tmp/ccXpGI1q.s:6      *ABS*:00000001 __zero_reg__
+     /tmp/ccXpGI1q.s:20     .text.USB_SetupInterface:00000000 USB_SetupInterface
+     /tmp/ccXpGI1q.s:147    .text.USB_ShutDown:00000000 USB_ShutDown
+     /tmp/ccXpGI1q.s:192    .text.USB_Init:00000000 USB_Init
 
 UNDEFINED SYMBOLS
 __do_copy_data
