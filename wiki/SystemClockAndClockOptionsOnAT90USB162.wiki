@@ -1,0 +1,37 @@
+#summary System clock and clock options on AT90USB162
+
+=Default Clock Source=
+The device is shipped with internal RC oscillator at 8.0 MHz and with the fuse CKDIV8 programmed, resulting in 1.0 MHz system clock. The startup time is set to maximum and time-out period enabled. (CKSEL = "0010", SUT = "10", CKDIV8 = "0"). The default setting ensures that all users can make their desired clock source setting using any available programming interface.
+
+=Clock Switch=
+In the AT90USB82/162 product, the Clock Multiplexer and the System Clock Prescaler can be
+modified by software.
+
+*Example of use*
+
+The modification can occur when the device enters in USB Suspend mode. It then switches from External Clock to Calibrated RC Oscillator in order to reduce consumption. In such a configuration, the External Clock is disabled.
+The firmware can use the watchdog timer to be woken-up from power-down in order to check if there is an event on the application.
+If an event occurs on the application or if the USB controller signals a non-idle state on the USB line (Resume for example), the firmware switches the Clock Multiplexer from the Calibrated RC Oscillator to the External Clock.
+
+=System Clock Prescaler=
+The AT90USB82/162 has a system clock prescaler, and the system clock can be divided by setting the “Clock Prescale Register – CLKPR”. This feature can be used to decrease the system clock frequency and the power consumption when the requirement for processing power is low. This can be used with all clock source options, and it will affect the clock frequency of the CPU and all synchronous peripherals. clkI/O, clkCPU, and clkFLASH are divided by a factor as shown in Table 6-9 (see datasheet).
+
+When switching between prescaler settings, the System Clock Prescaler ensures that no
+glitches occurs in the clock system. It also ensures that no intermediate frequency is higher than neither the clock frequency corresponding to the previous setting, nor the clock frequency corresponding to the new setting.
+
+The ripple counter that implements the prescaler runs at the frequency of the undivided clock, which may be faster than the CPU's clock frequency. Hence, it is not possible to determine the state of the prescaler - even if it were readable, and the exact time it takes to switch from one clock division to the other cannot be exactly predicted. From the time the CLKPS values are written, it takes between T1 + T2 and T1 + 2 `*` T2 before the new clock frequency is active. In this interval, 2 active clock edges are produced. Here, T1 is the previous clock period, and T2 is the period corresponding to the new prescaler setting.
+
+To avoid unintentional changes of clock frequency, a special write procedure must be followed to change the CLKPS bits:
+1. Write the Clock Prescaler Change Enable (CLKPCE) bit to one and all other bits in
+CLKPR to zero.
+2. Within four cycles, write the desired value to CLKPS while writing a zero to CLKPCE.
+Interrupts must be disabled when changing prescaler setting to make sure the write procedure is
+not interrupted.
+
+=USB Clock – clkUSB=
+The USB is provided with a dedicated clock domain. This clock is generated with an on-chip PLL running at 48MHz. The PLL always multiply its input frequency by 6. Thus the PLL clock register should be programmed by software to generate a 8MHz clock on the PLL input.
+
+=Internal PLL for USB interface=
+The internal PLL in AT90USB82/162 generates a clock frequency that is 6x multiplied from nominally 8 MHz input. The source of the 8 MHz PLL input clock is the output of the internal PLL clock prescaler that generates the 8 MHz.
+
+For more information, see the datasheet.
