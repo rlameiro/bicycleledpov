@@ -1,5 +1,5 @@
-=Jorge Pinto aka Casainho=
-I am from Portugal and I have 29 years old. I initiated Bicycle LED POV project on May 2008.
+=JpCasainho aka Casainho=
+My name is Jorge Pinto, I am from Portugal and I have 29 years old. I initiated Bicycle LED POV project on May 2008.
 
 I work on a [http://www.plurirede.pt/ company] doing electronics circuits with LEDs for automotive.
 On my day-to-day work I mainly program Atmel AVR 8 bits microcontrollers.
