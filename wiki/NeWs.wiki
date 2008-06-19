@@ -1,12 +1,22 @@
- ==2008.06.19==
-*News from JpCasainho*
-===New member===
+==2008.06.19==
+News from JpCasainho:
+
+*New member*
+
 RicardoLameiro is the new member, an old friend mine from school. RicardoLameiro is working on SoFtware, using Python.
 
-===LED's + serial data latches working===
-I had done a lot of code on FiRmware and I have now the LED's + the serial data latches working. I add two directories: _Software_ and _Firmware_.
+*LED's + serial data latches working*
 
-I also wrote 
+I wrote 2 new pages: SystemClockAndClockOptionsOnAT90USB162 and LeDs.
+
+I had done a lot of code on FiRmware and I have now the LED's + the serial data latches working, here is 2 images showing that:
+
+[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080619-BicycleLEDPOV-prototype-02.jpg]
+
+
+This image show my Asus EEE PC with GNU/Linux Ubuntu running Cutecom, a program to send information by serial port. Development board is connected to PC by USB cable, I did used the _Test LEDs: command 3_ from FirmwareApi to turn on that LED's -- I did control the LED's using the PC. There are 2 AAA NiMh batteries under the board of the LED's, which give energy to LED's.
+
+[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080619-BicycleLEDPOV-prototype-01.jpg]
 
 ==2008.06.10==
 Today I tried to program the bootloader but I couldn't because I had problems on programing cable, I will try again later. While doing this I discovered that the bootloder is working, I didn't erase It.
