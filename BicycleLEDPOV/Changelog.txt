@@ -1,8 +1,0 @@
-Changelog for Bicycle LED POV:
-=======================================
-
-Version 0.1.0 - Released June 7th, 2008:
---------------------------------------------
-Initial version. Turns ON and OFF the led on the Olimex AVR-USB-162 development board by sending 0 or 1 to virtual serial port on PC. Sends back the value received trought virtual serial port.
-
- 
