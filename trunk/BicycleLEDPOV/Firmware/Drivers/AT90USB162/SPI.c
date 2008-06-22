@@ -1,3 +1,13 @@
+/*
+             Bicycle LED POV
+     Copyright (C) Jorge Pinto aka Casainho, 2008.
+              
+  casainho [at] gmail [dot] com
+      www.casainho.net
+
+ Released under the GPL Licence, Version 3       
+*/
+
 #include "SPI.h"
 
 void SPI_MasterInit(unsigned char DataOrder)
