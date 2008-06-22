@@ -1,3 +1,12 @@
+==2008.06.21==
+News from JpCasainho:
+
+I and DonaldZiems, we have being working on schematic. I was working on some ideas to get the lowest possible power used while system is halt, I hope to test them on my prototype on the next days. Here goes some images from the schematic (schematic files can be found [http://code.google.com/p/bicycleledpov/source/browse/trunk/BicycleLEDPOV/Schematics here]):
+
+[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080622-BicycleLEDPOV-schematic-01.jpg]
+
+[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080622-BicycleLEDPOV-schematic-02.jpg]
+
 ==2008.06.19==
 News from JpCasainho:
 
@@ -55,6 +64,7 @@ News from JpCasainho:
 I was trying to build DFU bootloader code from Dean Camera without success, luckily I did used the [http://www.avrfreaks.net/index.php?name=PNphpBB2&file=viewtopic&t=64923&start=0&postdays=0&postorder=asc&highlight= AVRFreaks forum and asked for help], the problem is now resolved and I did commit the changes. I am not really sure the bootloader is working since I have some questions yet and I didn't flash it - just tomorrow.
 
 I started thinking on MemoryOrganization and on FirmwareApi. I also asked help to [http://code.google.com/u/dziems/ Donald Ziems] for selling me a SPI EEPROM memory, I don't have any as is much expensive for me to buy only that IC from Farnell - I should buy at least 40€ + VAT from Farnell.
+
 
 ==2008.06.07==
 News from JpCasainho:
