@@ -302,52 +302,75 @@ TASK(PCLink_Task)
 			case TEST_LEDS:
 			/* First byte of this command, fill the NumberDataBytes */
 			if (ucNumberDataBytes <= 0)
-				ucNumberDataBytes = 5;
+				ucNumberDataBytes = 9;
 				
-			if (ucNumberDataBytes == 5 && Tx_Buffer.Elements < BUFF_STATICSIZE)
+			if (ucNumberDataBytes == 9 && Tx_Buffer.Elements < BUFF_STATICSIZE)
 			{
 				/* Send back the number of the command */
 				Buffer_StoreElement (&Tx_Buffer, ucCommand);
 				ucNumberDataBytes--;
 			}
 				
-			/* Send the 4 bytes to LEDs drivers on the next 4 cases */
+			/* Send the 8 bytes to LEDs drivers */
 			while (Rx_Buffer.Elements && ucNumberDataBytes > 0)
 			{	
 				switch (ucNumberDataBytes)
 				{	
-					case 4:
-					SPI_MasterInit(DATA_ORDER_MSB);
+					case 8:
+					SPI_MasterInit (DATA_ORDER_MSB);
 					SPI_MasterTransmit (Buffer_GetElement (&Rx_Buffer));
-					SPI_Disable();
-					ucNumberDataBytes--;
+					SPI_Disable ();
+					break;
+					
+					case 7:
+					SPI_MasterInit (DATA_ORDER_MSB);
+					SPI_MasterTransmit (Buffer_GetElement (&Rx_Buffer));
+					SPI_Disable ();
+					break;
+					
+					case 6:
+					SPI_MasterInit (DATA_ORDER_MSB);
+					SPI_MasterTransmit (Buffer_GetElement (&Rx_Buffer));
+					SPI_Disable ();
+					break;
+					
+					case 5:
+					SPI_MasterInit (DATA_ORDER_MSB);
+					SPI_MasterTransmit (Buffer_GetElement (&Rx_Buffer));
+					SPI_Disable ();
+					ClockDataLatches (RIGHT_SIDE_DATA_LATCHES);
+					break;
+					
+					case 4:
+					SPI_MasterInit (DATA_ORDER_MSB);
+					SPI_MasterTransmit (Buffer_GetElement (&Rx_Buffer));
+					SPI_Disable ();
 					break;
 					
 					case 3:
-					SPI_MasterInit(DATA_ORDER_MSB);
+					SPI_MasterInit (DATA_ORDER_MSB);
 					SPI_MasterTransmit (Buffer_GetElement (&Rx_Buffer));
-					SPI_Disable();
-					ucNumberDataBytes--;
+					SPI_Disable ();
 					break;
 					
 					case 2:
-					SPI_MasterInit(DATA_ORDER_MSB);
+					SPI_MasterInit (DATA_ORDER_MSB);
 					SPI_MasterTransmit (Buffer_GetElement (&Rx_Buffer));
-					SPI_Disable();
-					ucNumberDataBytes--;
+					SPI_Disable ();
 					break;
 					
 					case 1:
-					SPI_MasterInit(DATA_ORDER_MSB);
+					SPI_MasterInit (DATA_ORDER_MSB);
 					SPI_MasterTransmit (Buffer_GetElement (&Rx_Buffer));
-					SPI_Disable();
+					SPI_Disable ();
 					ClockDataLatches (LEFT_SIDE_DATA_LATCHES);
-					ucNumberDataBytes--;
 					break;
 						
 					default:					
 					break;
-				}	
+				}
+				
+			ucNumberDataBytes--;	
 			}
 			break;			
 					
@@ -398,14 +421,8 @@ TASK(PCLink_Task)
 	
 void Hardware_Init(void)
 {
-	/* Output pin for the LED and sensor heffect ect */
+	/* Output pin for the LED and sensor hall effect */
 	DDRD |= ((1<<PD4) | (1<<PD1));
-	
-	/* Millisecond timer initialization, with output compare interrupt enabled */
-	OCR0A  = 0x7D;
-	TCCR0A = (1 << WGM01);
-	TCCR0B = ((1 << CS01) | (1 << CS00));
-	TIMSK0 = (1 << OCIE0A);
 }
 
 TASK(MakePOV_Task)
@@ -417,12 +434,20 @@ TASK(TestSensorHallEffect_Task)
 {
 	if (bit_is_clear(PIND,PD0))
 	{
-		PORTD |= (1<<PD4); /* Turn on LED */
+		/* Turn on LED on data latch */
+		SPI_MasterInit (DATA_ORDER_MSB);
+		SPI_MasterTransmit (1);
+		SPI_Disable ();
+		ClockDataLatches (RIGHT_SIDE_DATA_LATCHES);
 	}
 	
 	else
 	{
-		PORTD &= ~(1<<PD4); /* Turn off LED */
+		/* Turn off LED on data latch */
+		SPI_MasterInit (DATA_ORDER_MSB);
+		SPI_MasterTransmit (0);
+		SPI_Disable ();
+		ClockDataLatches (RIGHT_SIDE_DATA_LATCHES);
 	}
 }
 
