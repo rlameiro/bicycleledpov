@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 <svg
-   xmlns:ns="http://creativecommons.org/ns#"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
@@ -14,11 +13,11 @@
    height="1052.3622"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.45.1"
+   inkscape:version="0.46"
    version="1.0"
    sodipodi:docname="diagram.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   inkscape:export-filename="/home/cas/diagram/drawing.png"
+   inkscape:export-filename="/home/cas/diagram/diagram.png"
    inkscape:export-xdpi="150"
    inkscape:export-ydpi="150"
    sodipodi:docbase="C:\Users\jpinto\Documents\01_projectos\90-auto_formacao\BicycleLEDPOV\trunk\BicycleLEDPOV\Pictures\diagram">
@@ -99,24 +98,24 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.74023945"
-     inkscape:cx="744.48698"
-     inkscape:cy="487.64051"
+     inkscape:cx="744.09448"
+     inkscape:cy="526.18109"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1274"
+     inkscape:window-width="1679"
      inkscape:window-height="985"
      inkscape:window-x="0"
-     inkscape:window-y="0" />
+     inkscape:window-y="6" />
   <metadata
      id="metadata7">
     <rdf:RDF>
-      <ns:Work
+      <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </ns:Work>
+      </cc:Work>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
@@ -129,72 +128,77 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <g
-       id="g15871"
-       inkscape:export-filename="C:\Users\jpinto\Documents\01_projectos\90-auto_formacao\BicycleLEDPOV\trunk\BicycleLEDPOV\Pictures\diagram\diagram.png.png"
-       inkscape:export-xdpi="150"
-       inkscape:export-ydpi="150">
-      <rect
-         ry="20.874796"
-         rx="6.8750577"
-         y="513.34741"
-         x="844.32141"
-         height="36.474686"
-         width="0"
-         id="rect3654"
-         style="opacity:1;fill:#00ffb1;fill-opacity:1;stroke:none;stroke-width:13.61600018;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         id="path3987"
-         d="M 573.00398,270.45194 L 666.26327,363.14934"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         sodipodi:nodetypes="cc"
-         id="path3999"
-         d="M 783.01383,361.20749 L 896.42979,276.00216"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         id="path3993"
-         d="M 437.67235,503.74468 L 536.71937,502.41075"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
-      <rect
-         ry="0"
-         rx="5.7648001"
-         y="349.74896"
-         x="533.57874"
-         height="302.44534"
-         width="364.74686"
-         id="rect3652"
-         style="fill:#fddab2;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <image
-         transform="matrix(0.996175,-8.7380414e-2,8.7380414e-2,0.996175,0,0)"
-         xlink:href="at90usb162.jpg"
-         sodipodi:absref="/home/cas/at90usb162.jpg"
-         width="165.02499"
-         height="161"
-         id="image3279"
-         x="581.53931"
-         y="507.68954" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text3658"
-         y="414.39276"
+    <rect
+       style="fill:#00ffb1;fill-opacity:1;stroke:none;stroke-width:13.61600018;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3654"
+       width="0"
+       height="36.474686"
+       x="844.32141"
+       y="513.34741"
+       rx="6.8750577"
+       ry="20.874796" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 606.77684,278.55743 L 666.26327,363.14934"
+       id="path3987"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 772.50618,361.20749 L 852.48872,274.09168"
+       id="path3999"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 437.50349,502.39377 L 536.71937,502.41075"
+       id="path3993"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 846.99087,713.14488 L 1081.3745,578.05345"
+       id="path3997"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="fill:#fddab2;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3652"
+       width="364.74686"
+       height="302.44534"
+       x="533.57874"
+       y="349.74896"
+       rx="5.7648001"
+       ry="0" />
+    <image
+       y="507.68954"
+       x="581.53931"
+       id="image3279"
+       height="161"
+       width="165.02499"
+       sodipodi:absref="/home/cas/at90usb162.jpg"
+       xlink:href="at90usb162.jpg"
+       transform="matrix(0.996175,-8.7380415e-2,8.7380415e-2,0.996175,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-size:36.44535065px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="557.80005"
+       y="414.39276"
+       id="text3658"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3660"
          x="557.80005"
-         style="font-size:36.44535065px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
-         xml:space="preserve"><tspan
-           style="font-size:36.44535065px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Bitstream Vera Sans"
-           y="414.39276"
-           x="557.80005"
-           id="tspan3660"
-           sodipodi:role="line">Microcontroller</tspan></text>
+         y="414.39276"
+         style="font-size:36.44535065px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Bitstream Vera Sans">Microcontroller</tspan></text>
+    <g
+       id="g2517"
+       transform="translate(35.343903,2.8657218)">
       <rect
          ry="0"
          rx="3.1172624"
-         y="135.03331"
-         x="468.7348"
-         height="147.09021"
-         width="197.23347"
+         y="145.49036"
+         x="473.46042"
+         height="132.20555"
+         width="177.27461"
          id="rect3693"
-         style="fill:#c1efff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#c1efff;fill-opacity:1;stroke:#000000;stroke-width:0.89880592;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <image
          xlink:href="memory.jpg"
          sodipodi:absref="/home/cas/memory.jpg"
@@ -210,28 +214,32 @@
          x="560.80011"
          style="font-size:36.44535065px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
          xml:space="preserve"><tspan
-           style="font-size:36.44535065px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans"
+           style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
            y="176.57162"
            x="560.80011"
            id="tspan3699"
            sodipodi:role="line">Memory</tspan></text>
+    </g>
+    <g
+       id="g2510"
+       transform="translate(-40.120105,1.9104813)">
       <rect
          ry="0"
-         rx="3.4802313"
-         y="135.70876"
-         x="788.22614"
-         height="149.04283"
-         width="220.19901"
+         rx="3.480231"
+         y="146.10851"
+         x="818.68591"
+         height="126.71375"
+         width="159.27939"
          id="rect3713"
-         style="fill:#c1efff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#c1efff;fill-opacity:1;stroke:#000000;stroke-width:0.78420287;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <image
          xlink:href="sensor_hall_effect.jpg"
          sodipodi:absref="/home/cas/sensor_hall_effect.jpg"
          width="36.411926"
          height="31.940287"
          id="image3598"
-         x="878.87323"
-         y="241.23232" />
+         x="876.96277"
+         y="228.81419" />
       <text
          sodipodi:linespacing="125%"
          id="text3717"
@@ -239,78 +247,42 @@
          x="898.5434"
          style="font-size:39.08284378px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
          xml:space="preserve"><tspan
-           style="font-size:39.08284378px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans"
+           style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
            y="177.35579"
-           x="898.54339"
+           x="898.5434"
            id="tspan3719"
            sodipodi:role="line">Sensor</tspan><tspan
-           style="font-size:39.08284378px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans"
-           y="226.20934"
+           style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+           y="212.35579"
            x="898.5434"
            sodipodi:role="line"
            id="tspan3721">hall effect</tspan></text>
-      <path
-         id="path4005"
-         d="M 809.64456,349.85619 L 794.721,353.05024 L 800.03817,339.36202 L 809.64456,349.85619 z "
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.24675626px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <g
-         style="stroke:#000000;stroke-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
-         transform="translate(-657.25217,216.00844)"
-         id="g3755">
-        <rect
-           style="fill:#c1efff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect3757"
-           width="205.33896"
-           height="152.49387"
-           x="890.92798"
-           y="207.44505"
-           rx="3.2453692"
-           ry="0" />
-        <text
-           xml:space="preserve"
-           style="font-size:36.44535065px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;stroke-miterlimit:4;stroke-dasharray:none"
-           x="993.80054"
-           y="246.28154"
-           id="text3761"
-           sodipodi:linespacing="125%"><tspan
-             id="tspan3765"
-             sodipodi:role="line"
-             x="993.80054"
-             y="246.28154"
-             style="font-size:36.44535065px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;stroke:#000000;stroke-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">USB</tspan><tspan
-             id="tspan3769"
-             sodipodi:role="line"
-             x="993.80054"
-             y="291.83823"
-             style="font-size:36.44535065px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;stroke:#000000;stroke-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none">connector</tspan></text>
-      </g>
-      <image
-         xlink:href="usb_connector.jpg"
-         sodipodi:absref="/home/cas/usb_connector.jpg"
-         width="61"
-         height="42"
-         id="image3648"
-         x="306.23419"
-         y="522.74841" />
+    </g>
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.24675626px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 793.88309,349.37857 L 778.95953,352.57262 L 784.2767,338.8844 L 793.88309,349.37857 z"
+       id="path4005" />
+    <g
+       id="g2541">
       <rect
          ry="0"
          rx="4.7185965"
-         y="420.75165"
-         x="995.59155"
-         height="167.35391"
-         width="298.55206"
+         y="428.10913"
+         x="997.54535"
+         height="152.63892"
+         width="239.25688"
          id="rect3783"
-         style="fill:#fffebf;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#fffebf;fill-opacity:1;stroke:#000000;stroke-width:0.85494244;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <text
          sodipodi:linespacing="125%"
          id="text3785"
-         y="463.64087"
-         x="1143.0442"
+         y="460.93903"
+         x="1116.7014"
          style="font-size:36.44535065px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
          xml:space="preserve"><tspan
-           style="font-size:36.44535065px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans"
-           y="463.64087"
-           x="1143.0442"
+           style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+           y="460.93903"
+           x="1116.7014"
            sodipodi:role="line"
            id="tspan3789">Drivers + LEDs</tspan></text>
       <image
@@ -319,29 +291,34 @@
          width="42.69854"
          height="44.247189"
          id="image3498"
-         x="1191.0979"
-         y="504.74023" />
+         x="1160.7024"
+         y="501.36295" />
       <image
          xlink:href="serial_latche.jpg"
          sodipodi:absref="/home/cas/serial_latche.jpg"
          width="101.58395"
          height="91.93119"
          id="image3846"
-         x="1043.0956"
-         y="479.26447" />
-      <path
-         id="path3995"
-         d="M 705.10018,715.76087 L 706.54049,652.38683"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+         x="1024.8582"
+         y="475.88718" />
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 706.41364,716.4773 L 706.54049,652.38683"
+       id="path3995"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g2530"
+       transform="translate(5.4317762,-17.358225)">
       <rect
          ry="0"
          rx="6.2131739"
-         y="712.92377"
-         x="509.93774"
-         height="197.67574"
-         width="393.11603"
+         y="730.97321"
+         x="565.24164"
+         height="175.39243"
+         width="283.4635"
          id="rect3872"
-         style="fill:#ffb6b6;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#ffb6b6;fill-opacity:1;stroke:#000000;stroke-width:0.79986542;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <text
          sodipodi:linespacing="125%"
          id="text3876"
@@ -349,11 +326,11 @@
          x="705.36261"
          style="font-size:39.08284378px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
          xml:space="preserve"><tspan
-           style="font-size:39.08284378px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans"
+           style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
            y="761.32538"
            x="705.36261"
            sodipodi:role="line"
-           id="tspan3880">3 x AAA NiMH cells</tspan></text>
+           id="tspan3880">3 x AAA NiMh cells</tspan></text>
       <image
          transform="matrix(0,-1,1,0,0,0)"
          xlink:href="3xnimh.jpg"
@@ -363,46 +340,88 @@
          id="image3945"
          x="-895.13086"
          y="623.74121" />
-      <path
-         id="path3991"
-         d="M 996.9424,510.50775 L 898.32561,511.85866"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
-      <path
-         id="path3997"
-         d="M 846.99087,713.14488 L 1075.2954,586.15894"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
-      <path
-         id="path4003"
-         d="M 582.34957,292.42732 L 578.89744,275.49579 L 593.69163,281.52839 L 582.34957,292.42732 z "
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         id="path4039"
-         d="M 652.35918,335.89642 L 655.81131,352.82795 L 641.01712,346.79535 L 652.35918,335.89642 z "
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         inkscape:transform-center-y="-24.345726"
-         inkscape:transform-center-x="-59.847718"
-         id="path4041"
-         d="M 985.5888,501.6821 L 1000.5037,510.40802 L 986.1391,517.40239 L 985.5888,501.6821 z "
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         id="path4043"
-         d="M 449.79074,512.1106 L 434.87584,503.38469 L 449.24044,496.39032 L 449.79074,512.1106 z "
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         inkscape:transform-center-y="-24.345726"
-         inkscape:transform-center-x="-59.847718"
-         id="path4066"
-         d="M 523.5426,495.50204 L 538.4575,504.22796 L 524.0929,511.22233 L 523.5426,495.50204 z "
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         id="path4072"
-         d="M 1059.2842,587.41719 L 1076.2158,583.96508 L 1070.1832,598.75928 L 1059.2842,587.41719 z "
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <path
-         id="path4074"
-         d="M 697.72429,663.55887 L 707.25567,649.14545 L 713.45105,663.87221 L 697.72429,663.55887 z "
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 996.9424,510.50775 L 898.68383,510.5452"
+       id="path3991"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 608.6924,293.77823 L 605.24027,276.8467 L 620.03446,282.8793 L 608.6924,293.77823 z"
+       id="path4003" />
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 657.76284,339.2737 L 661.21497,356.20523 L 646.42078,350.17263 L 657.76284,339.2737 z"
+       id="path4039" />
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 985.5888,501.6821 L 1000.5037,510.40802 L 986.1391,517.40239 L 985.5888,501.6821 z"
+       id="path4041"
+       inkscape:transform-center-x="-59.847718"
+       inkscape:transform-center-y="-24.345726" />
+    <g
+       id="g2488"
+       transform="translate(-5.7314436,5.7314436)">
+      <g
+         id="g2502"
+         transform="translate(11.462887,0)">
+        <g
+           id="g2499">
+          <rect
+             ry="0"
+             rx="3.2453692"
+             y="428.19406"
+             x="243.19258"
+             height="142.05748"
+             width="190.12639"
+             id="rect3757"
+             style="fill:#c1efff;fill-opacity:1;stroke:#000000;stroke-width:0.92873412;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+        <image
+           y="515.10651"
+           x="304.3237"
+           id="image3648"
+           height="42"
+           width="61"
+           sodipodi:absref="/home/cas/usb_connector.jpg"
+           xlink:href="usb_connector.jpg" />
+        <text
+           xml:space="preserve"
+           style="font-size:39.08284378px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+           x="335.90228"
+           y="458.51007"
+           id="text2478"
+           sodipodi:linespacing="125%"><tspan
+             id="tspan2482"
+             sodipodi:role="line"
+             x="335.90228"
+             y="458.51007"
+             style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">USB</tspan><tspan
+             sodipodi:role="line"
+             x="335.90228"
+             y="493.51007"
+             style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+             id="tspan2486">connector</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 449.79074,511.26628 L 434.87584,502.54037 L 449.24044,495.546 L 449.79074,511.26628 z"
+       id="path4043" />
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 523.5426,494.99545 L 538.4575,503.72137 L 524.0929,510.71574 L 523.5426,494.99545 z"
+       id="path4066"
+       inkscape:transform-center-x="-59.847718"
+       inkscape:transform-center-y="-24.345726" />
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 1061.3106,580.66262 L 1078.2422,577.21051 L 1072.2096,592.00471 L 1061.3106,580.66262 z"
+       id="path4072" />
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 697.72429,663.55887 L 707.25567,649.14545 L 713.45105,663.87221 L 697.72429,663.55887 z"
+       id="path4074" />
   </g>
 </svg>
