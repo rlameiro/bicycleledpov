@@ -1,0 +1,4 @@
+#summary Information about the Hardware.
+
+=Pictures from actual prototype=
+[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080619-BicycleLEDPOV-prototype-02.jpg]
