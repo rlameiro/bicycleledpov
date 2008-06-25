@@ -1,5 +1,5 @@
 ==2008.06.25==
-News from Donald Ziems:
+News from DonaldZiems:
 
 Alright, finally started making some updates to the schematic.
 
@@ -7,23 +7,19 @@ First and foremost, I split it into 3 sheets, one for the microcontroller, one f
 
 Second, I linked all three sheets into a single hierarchy so that data paths from one sheet to another will function when we go to design the PCB.
 
-[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/hierarchy.jpg]
+[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080625-BicycleLEDPOV-schematic.jpg]
 
 Third, the schematic sheet with the LEDs and shift registers should be complete.
 
-==2008.06.25==
 News from RicardoLameiro:
 
 Well, the software to send commands and control the serial port is in development, for now I have a screenshot of a GUI (Graphic User Interface) to the software. I am doing the GUI in Tkinter toolkit, that is built in in python.
 
-
+[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080625-BicycleLEDPOV-software.png]
 
 Explanation:
 to the left will be two listbox. the upper right will contain the available serial ports
 in the bottom left a list of possible commands. to the upper right a scan button to search for serial ports, and to the bottom right a send command button. Prety straight forward I think. Please leave comments in the mailing list.
-
-Ricardo Lameiro
-
 
 ==2008.06.21==
 News from JpCasainho:
