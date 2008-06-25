@@ -1,0 +1,1972 @@
+EESchema Schematic File Version 1
+LIBS:power,device,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,contrib,valves
+EELAYER 23  0
+EELAYER END
+$Descr A4 11700 8267
+Sheet 2 3
+Title "Bicycle LED POV"
+Date "25 jun 2008"
+Rev "0.1.0"
+Comp "http://code.google.com/p/bicycleledpov"
+Comment1 "(c) Jorge Pinto"
+Comment2 "(c) Donald Ziems"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Kmarq B 1050 3300 "Warning Pin input not driven (Net 47)" F=1
+Kmarq B 850  3300 "Warning Pin input Unconnected" F=1
+Kmarq B 1350 3300 "Warning Pin input not driven (Net 45)" F=1
+Kmarq B 6550 3300 "Warning Pin input not driven (Net 44)" F=1
+Connection ~ 6650 2900
+Wire Wire Line
+	6650 2750 6650 2900
+Connection ~ 1150 3000
+Wire Wire Line
+	1150 2750 1150 3000
+Wire Wire Line
+	1050 3300 1050 3000
+Wire Wire Line
+	10650 6600 650  6600
+Connection ~ 9350 6600
+Connection ~ 6750 6600
+Connection ~ 7350 6600
+Connection ~ 4150 6600
+Connection ~ 4750 6600
+Connection ~ 1550 6600
+Connection ~ 2150 6600
+Connection ~ 1450 6600
+Wire Wire Line
+	1550 6600 1550 6050
+Connection ~ 1250 6600
+Wire Wire Line
+	1350 6600 1350 6050
+Connection ~ 1050 6600
+Wire Wire Line
+	1150 6600 1150 6050
+Wire Wire Line
+	950  6600 950  6050
+Wire Wire Line
+	850  6600 850  6350
+Wire Wire Line
+	1450 5850 1450 5500
+Wire Wire Line
+	1250 5850 1250 5500
+Wire Wire Line
+	1150 5550 1150 5200
+Wire Wire Line
+	950  5550 950  5200
+Wire Wire Line
+	850  5850 850  5500
+Wire Wire Line
+	1050 5850 1050 5500
+Wire Wire Line
+	1350 5550 1350 5200
+Wire Wire Line
+	1550 5550 1550 5200
+Wire Wire Line
+	1050 6600 1050 6350
+Connection ~ 950  6600
+Wire Wire Line
+	1250 6600 1250 6350
+Connection ~ 1150 6600
+Wire Wire Line
+	1450 6600 1450 6350
+Connection ~ 1350 6600
+Connection ~ 10550 6600
+Wire Wire Line
+	10650 6600 10650 6050
+Connection ~ 10350 6600
+Wire Wire Line
+	10450 6600 10450 6050
+Connection ~ 10150 6600
+Wire Wire Line
+	10250 6600 10250 6050
+Wire Wire Line
+	10050 6600 10050 6050
+Wire Wire Line
+	9950 6600 9950 6350
+Wire Wire Line
+	10550 5850 10550 5500
+Wire Wire Line
+	10350 5850 10350 5500
+Wire Wire Line
+	10250 5550 10250 5200
+Wire Wire Line
+	10050 5550 10050 5200
+Wire Wire Line
+	9950 5850 9950 5500
+Wire Wire Line
+	10150 5850 10150 5500
+Wire Wire Line
+	10450 5550 10450 5200
+Wire Wire Line
+	10650 5550 10650 5200
+Wire Wire Line
+	10150 6600 10150 6350
+Connection ~ 10050 6600
+Wire Wire Line
+	10350 6600 10350 6350
+Connection ~ 10250 6600
+Wire Wire Line
+	10550 6600 10550 6350
+Connection ~ 10450 6600
+Connection ~ 9250 6600
+Wire Wire Line
+	9350 6600 9350 6050
+Connection ~ 9050 6600
+Wire Wire Line
+	9150 6600 9150 6050
+Connection ~ 8850 6600
+Wire Wire Line
+	8950 6600 8950 6050
+Wire Wire Line
+	8750 6600 8750 6050
+Wire Wire Line
+	8650 6600 8650 6350
+Wire Wire Line
+	9250 5850 9250 5500
+Wire Wire Line
+	9050 5850 9050 5500
+Wire Wire Line
+	8950 5550 8950 5200
+Wire Wire Line
+	8750 5550 8750 5200
+Wire Wire Line
+	8650 5850 8650 5500
+Wire Wire Line
+	8850 5850 8850 5500
+Wire Wire Line
+	9150 5550 9150 5200
+Wire Wire Line
+	9350 5550 9350 5200
+Wire Wire Line
+	8850 6600 8850 6350
+Connection ~ 8750 6600
+Wire Wire Line
+	9050 6600 9050 6350
+Connection ~ 8950 6600
+Wire Wire Line
+	9250 6600 9250 6350
+Connection ~ 9150 6600
+Connection ~ 7950 6600
+Wire Wire Line
+	8050 6600 8050 6050
+Connection ~ 7750 6600
+Wire Wire Line
+	7850 6600 7850 6050
+Connection ~ 7550 6600
+Wire Wire Line
+	7650 6600 7650 6050
+Wire Wire Line
+	7450 6600 7450 6050
+Wire Wire Line
+	7350 6600 7350 6350
+Wire Wire Line
+	7950 5850 7950 5500
+Wire Wire Line
+	7750 5850 7750 5500
+Wire Wire Line
+	7650 5550 7650 5200
+Wire Wire Line
+	7450 5550 7450 5200
+Wire Wire Line
+	7350 5850 7350 5500
+Wire Wire Line
+	7550 5850 7550 5500
+Wire Wire Line
+	7850 5550 7850 5200
+Wire Wire Line
+	8050 5550 8050 5200
+Wire Wire Line
+	7550 6600 7550 6350
+Connection ~ 7450 6600
+Wire Wire Line
+	7750 6600 7750 6350
+Connection ~ 7650 6600
+Wire Wire Line
+	7950 6600 7950 6350
+Connection ~ 7850 6600
+Connection ~ 6650 6600
+Wire Wire Line
+	6750 6600 6750 6050
+Connection ~ 6450 6600
+Wire Wire Line
+	6550 6600 6550 6050
+Connection ~ 6250 6600
+Wire Wire Line
+	6350 6600 6350 6050
+Wire Wire Line
+	6150 6600 6150 6050
+Wire Wire Line
+	6050 6600 6050 6350
+Wire Wire Line
+	6650 5850 6650 5500
+Wire Wire Line
+	6450 5850 6450 5500
+Wire Wire Line
+	6350 5550 6350 5200
+Wire Wire Line
+	6150 5550 6150 5200
+Wire Wire Line
+	6050 5850 6050 5500
+Wire Wire Line
+	6250 5850 6250 5500
+Wire Wire Line
+	6550 5550 6550 5200
+Wire Wire Line
+	6750 5550 6750 5200
+Wire Wire Line
+	6250 6600 6250 6350
+Connection ~ 6150 6600
+Wire Wire Line
+	6450 6600 6450 6350
+Connection ~ 6350 6600
+Wire Wire Line
+	6650 6600 6650 6350
+Connection ~ 6550 6600
+Connection ~ 5350 6600
+Wire Wire Line
+	5450 6600 5450 6050
+Connection ~ 5150 6600
+Wire Wire Line
+	5250 6600 5250 6050
+Connection ~ 4950 6600
+Wire Wire Line
+	5050 6600 5050 6050
+Wire Wire Line
+	4850 6600 4850 6050
+Wire Wire Line
+	4750 6600 4750 6350
+Wire Wire Line
+	5350 5850 5350 5500
+Wire Wire Line
+	5150 5850 5150 5500
+Wire Wire Line
+	5050 5550 5050 5200
+Wire Wire Line
+	4850 5550 4850 5200
+Wire Wire Line
+	4750 5850 4750 5500
+Wire Wire Line
+	4950 5850 4950 5500
+Wire Wire Line
+	5250 5550 5250 5200
+Wire Wire Line
+	5450 5550 5450 5200
+Wire Wire Line
+	4950 6600 4950 6350
+Connection ~ 4850 6600
+Wire Wire Line
+	5150 6600 5150 6350
+Connection ~ 5050 6600
+Wire Wire Line
+	5350 6600 5350 6350
+Connection ~ 5250 6600
+Connection ~ 4050 6600
+Wire Wire Line
+	4150 6600 4150 6050
+Connection ~ 3850 6600
+Wire Wire Line
+	3950 6600 3950 6050
+Connection ~ 3650 6600
+Wire Wire Line
+	3750 6600 3750 6050
+Wire Wire Line
+	3550 6600 3550 6050
+Wire Wire Line
+	3450 6600 3450 6350
+Wire Wire Line
+	4050 5850 4050 5500
+Wire Wire Line
+	3850 5850 3850 5500
+Wire Wire Line
+	3750 5550 3750 5200
+Wire Wire Line
+	3550 5550 3550 5200
+Wire Wire Line
+	3450 5850 3450 5500
+Wire Wire Line
+	3650 5850 3650 5500
+Wire Wire Line
+	3950 5550 3950 5200
+Wire Wire Line
+	4150 5550 4150 5200
+Wire Wire Line
+	3650 6600 3650 6350
+Connection ~ 3550 6600
+Wire Wire Line
+	3850 6600 3850 6350
+Connection ~ 3750 6600
+Wire Wire Line
+	4050 6600 4050 6350
+Connection ~ 3950 6600
+Connection ~ 2750 6600
+Wire Wire Line
+	2850 6600 2850 6050
+Connection ~ 2550 6600
+Wire Wire Line
+	2650 6600 2650 6050
+Connection ~ 2350 6600
+Wire Wire Line
+	2450 6600 2450 6050
+Wire Wire Line
+	2250 6600 2250 6050
+Wire Wire Line
+	2150 6600 2150 6350
+Wire Wire Line
+	2750 5850 2750 5500
+Wire Wire Line
+	2550 5850 2550 5500
+Wire Wire Line
+	2450 5550 2450 5200
+Wire Wire Line
+	2250 5550 2250 5200
+Connection ~ 7850 2900
+Wire Wire Line
+	7850 3300 7850 2900
+Wire Wire Line
+	10450 3300 10450 2900
+Wire Wire Line
+	10450 2900 6550 2900
+Connection ~ 2650 2900
+Wire Wire Line
+	3950 2900 3950 3300
+Wire Wire Line
+	1050 3000 10150 3000
+Wire Wire Line
+	9950 4700 9950 5100
+Wire Wire Line
+	10150 4700 10150 5100
+Wire Wire Line
+	10350 4700 10350 5100
+Wire Wire Line
+	10550 4700 10550 5100
+Connection ~ 10550 3100
+Wire Wire Line
+	10850 3250 10850 3100
+Wire Wire Line
+	10850 3100 1150 3100
+Connection ~ 1450 3100
+Wire Wire Line
+	1450 3300 1450 3100
+Connection ~ 2750 3100
+Wire Wire Line
+	2750 3100 2750 3300
+Connection ~ 4050 3100
+Wire Wire Line
+	4050 3100 4050 3300
+Connection ~ 5350 3100
+Wire Wire Line
+	5350 3100 5350 3300
+Connection ~ 6650 3100
+Wire Wire Line
+	6650 3100 6650 3300
+Connection ~ 7950 3100
+Wire Wire Line
+	7950 3100 7950 3300
+Connection ~ 9250 3100
+Wire Wire Line
+	9250 3100 9250 3300
+Wire Wire Line
+	1150 3100 1150 3300
+Wire Wire Line
+	10550 3100 10550 3300
+Wire Wire Line
+	3450 3300 3450 3200
+Wire Wire Line
+	3450 3200 3250 3200
+Wire Wire Line
+	3250 3200 3250 4800
+Wire Wire Line
+	3250 4800 3050 4800
+Wire Wire Line
+	3050 4800 3050 4700
+Wire Wire Line
+	6050 3300 6050 3200
+Wire Wire Line
+	6050 3200 5850 3200
+Wire Wire Line
+	5850 3200 5850 4800
+Wire Wire Line
+	5850 4800 5650 4800
+Wire Wire Line
+	5650 4800 5650 4700
+Wire Wire Line
+	8650 3300 8650 3200
+Wire Wire Line
+	8650 3200 8450 3200
+Wire Wire Line
+	8250 4700 8250 4800
+Wire Wire Line
+	9550 4700 9550 4800
+Wire Wire Line
+	9550 4800 9750 4800
+Wire Wire Line
+	9750 4800 9750 3200
+Wire Wire Line
+	9750 3200 9950 3200
+Wire Wire Line
+	9950 3200 9950 3300
+Wire Wire Line
+	6950 4700 6950 4800
+Wire Wire Line
+	6950 4800 7150 4800
+Wire Wire Line
+	7150 4800 7150 3200
+Wire Wire Line
+	7150 3200 7350 3200
+Wire Wire Line
+	7350 3200 7350 3300
+Wire Wire Line
+	4350 4700 4350 4800
+Wire Wire Line
+	4350 4800 4550 4800
+Wire Wire Line
+	4550 4800 4550 3200
+Wire Wire Line
+	4550 3200 4750 3200
+Wire Wire Line
+	4750 3200 4750 3300
+Wire Wire Line
+	1750 4700 1750 4800
+Wire Wire Line
+	1750 4800 1950 4800
+Wire Wire Line
+	1950 4800 1950 3200
+Wire Wire Line
+	1950 3200 2150 3200
+Wire Wire Line
+	2150 3200 2150 3300
+Wire Wire Line
+	10250 3100 10250 3300
+Connection ~ 10250 3100
+Wire Wire Line
+	8950 3100 8950 3300
+Connection ~ 8950 3100
+Wire Wire Line
+	7650 3100 7650 3300
+Connection ~ 7650 3100
+Wire Wire Line
+	6350 3100 6350 3300
+Connection ~ 6350 3100
+Wire Wire Line
+	5050 3100 5050 3300
+Connection ~ 5050 3100
+Wire Wire Line
+	3750 3100 3750 3300
+Connection ~ 3750 3100
+Wire Wire Line
+	2450 3100 2450 3300
+Connection ~ 2450 3100
+Wire Wire Line
+	2350 3000 2350 3300
+Connection ~ 2350 3000
+Wire Wire Line
+	3650 3000 3650 3300
+Connection ~ 3650 3000
+Wire Wire Line
+	4950 3000 4950 3300
+Connection ~ 4950 3000
+Wire Wire Line
+	6250 3000 6250 3300
+Connection ~ 6250 3000
+Wire Wire Line
+	10150 3000 10150 3300
+Connection ~ 10150 3000
+Wire Wire Line
+	8850 3000 8850 3300
+Connection ~ 8850 3000
+Wire Wire Line
+	7550 3000 7550 3300
+Connection ~ 7550 3000
+Wire Wire Line
+	10650 4700 10650 4800
+Wire Wire Line
+	10450 4700 10450 4800
+Wire Wire Line
+	10250 4700 10250 4800
+Wire Wire Line
+	10050 4700 10050 4800
+Wire Wire Line
+	8250 4800 8450 4800
+Wire Wire Line
+	8450 4800 8450 3200
+Wire Wire Line
+	8650 4700 8650 5100
+Wire Wire Line
+	8850 4700 8850 5100
+Wire Wire Line
+	9050 4700 9050 5100
+Wire Wire Line
+	9250 4700 9250 5100
+Wire Wire Line
+	9350 4700 9350 4800
+Wire Wire Line
+	9150 4700 9150 4800
+Wire Wire Line
+	8950 4700 8950 4800
+Wire Wire Line
+	8750 4700 8750 4800
+Wire Wire Line
+	7350 4700 7350 5100
+Wire Wire Line
+	7550 4700 7550 5100
+Wire Wire Line
+	7750 4700 7750 5100
+Wire Wire Line
+	7950 4700 7950 5100
+Wire Wire Line
+	8050 4700 8050 4800
+Wire Wire Line
+	7850 4700 7850 4800
+Wire Wire Line
+	7650 4700 7650 4800
+Wire Wire Line
+	7450 4700 7450 4800
+Wire Wire Line
+	6050 4700 6050 5100
+Wire Wire Line
+	6250 4700 6250 5100
+Wire Wire Line
+	6450 4700 6450 5100
+Wire Wire Line
+	6650 4700 6650 5100
+Wire Wire Line
+	6750 4700 6750 4800
+Wire Wire Line
+	6550 4700 6550 4800
+Wire Wire Line
+	6350 4700 6350 4800
+Wire Wire Line
+	6150 4700 6150 4800
+Wire Wire Line
+	4750 4700 4750 5100
+Wire Wire Line
+	4950 4700 4950 5100
+Wire Wire Line
+	5150 4700 5150 5100
+Wire Wire Line
+	5350 4700 5350 5100
+Wire Wire Line
+	5450 4700 5450 4800
+Wire Wire Line
+	5250 4700 5250 4800
+Wire Wire Line
+	5050 4700 5050 4800
+Wire Wire Line
+	4850 4700 4850 4800
+Wire Wire Line
+	3450 4700 3450 5100
+Wire Wire Line
+	3650 4700 3650 5100
+Wire Wire Line
+	3850 4700 3850 5100
+Wire Wire Line
+	4050 4700 4050 5100
+Wire Wire Line
+	4150 4700 4150 4800
+Wire Wire Line
+	3950 4700 3950 4800
+Wire Wire Line
+	3750 4700 3750 4800
+Wire Wire Line
+	3550 4700 3550 4800
+Wire Wire Line
+	2150 4700 2150 5100
+Wire Wire Line
+	2350 4700 2350 5100
+Wire Wire Line
+	2550 4700 2550 5100
+Wire Wire Line
+	2750 4700 2750 5100
+Wire Wire Line
+	2850 4700 2850 4800
+Wire Wire Line
+	2650 4700 2650 4800
+Wire Wire Line
+	2450 4700 2450 4800
+Wire Wire Line
+	2250 4700 2250 4800
+Wire Wire Line
+	850  4700 850  5100
+Wire Wire Line
+	1050 4700 1050 5100
+Wire Wire Line
+	1250 4700 1250 5100
+Wire Wire Line
+	1450 4700 1450 5100
+Wire Wire Line
+	1550 4700 1550 4800
+Wire Wire Line
+	1350 4700 1350 4800
+Wire Wire Line
+	1150 4700 1150 4800
+Wire Wire Line
+	950  4700 950  4800
+Wire Wire Line
+	650  6600 650  6700
+Wire Wire Line
+	1350 3300 1350 2900
+Wire Wire Line
+	2650 2900 2650 3300
+Wire Wire Line
+	1350 2900 5250 2900
+Wire Wire Line
+	5250 2900 5250 3300
+Connection ~ 3950 2900
+Wire Wire Line
+	9150 3300 9150 2900
+Connection ~ 9150 2900
+Wire Wire Line
+	2150 5850 2150 5500
+Wire Wire Line
+	2350 5850 2350 5500
+Wire Wire Line
+	2650 5550 2650 5200
+Wire Wire Line
+	2850 5550 2850 5200
+Wire Wire Line
+	2350 6600 2350 6350
+Connection ~ 2250 6600
+Wire Wire Line
+	2550 6600 2550 6350
+Connection ~ 2450 6600
+Wire Wire Line
+	2750 6600 2750 6350
+Connection ~ 2650 6600
+Connection ~ 850  6600
+Connection ~ 3450 6600
+Connection ~ 2850 6600
+Connection ~ 6050 6600
+Connection ~ 5450 6600
+Connection ~ 8650 6600
+Connection ~ 8050 6600
+Connection ~ 9950 6600
+Wire Wire Line
+	850  3300 850  2750
+Wire Wire Line
+	6550 2900 6550 3300
+Wire Wire Line
+	1450 2750 1450 2900
+Connection ~ 1450 2900
+$Comp
+L R R70
+U 1 1 48628AE6
+P 1550 5800
+F 0 "R70" V 1630 5800 50  0000 C C
+F 1 "R" V 1550 5800 50  0000 C C
+	1    1550 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R69
+U 1 1 48628AE5
+P 1450 6100
+F 0 "R69" V 1530 6100 50  0000 C C
+F 1 "R" V 1450 6100 50  0000 C C
+	1    1450 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R68
+U 1 1 48628AE4
+P 1350 5800
+F 0 "R68" V 1430 5800 50  0000 C C
+F 1 "R" V 1350 5800 50  0000 C C
+	1    1350 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R67
+U 1 1 48628AE3
+P 1250 6100
+F 0 "R67" V 1330 6100 50  0000 C C
+F 1 "R" V 1250 6100 50  0000 C C
+	1    1250 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R66
+U 1 1 48628AE2
+P 1150 5800
+F 0 "R66" V 1230 5800 50  0000 C C
+F 1 "R" V 1150 5800 50  0000 C C
+	1    1150 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R65
+U 1 1 48628AE1
+P 1050 6100
+F 0 "R65" V 1130 6100 50  0000 C C
+F 1 "R" V 1050 6100 50  0000 C C
+	1    1050 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R64
+U 1 1 48628AE0
+P 950 5800
+F 0 "R64" V 1030 5800 50  0000 C C
+F 1 "R" V 950 5800 50  0000 C C
+	1    950  5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R63
+U 1 1 48628ADF
+P 850 6100
+F 0 "R63" V 930 6100 50  0000 C C
+F 1 "R" V 850 6100 50  0000 C C
+	1    850  6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R62
+U 1 1 48628ADE
+P 10650 5800
+F 0 "R62" V 10730 5800 50  0000 C C
+F 1 "R" V 10650 5800 50  0000 C C
+	1    10650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R61
+U 1 1 48628ADD
+P 10550 6100
+F 0 "R61" V 10630 6100 50  0000 C C
+F 1 "R" V 10550 6100 50  0000 C C
+	1    10550 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R60
+U 1 1 48628ADC
+P 10450 5800
+F 0 "R60" V 10530 5800 50  0000 C C
+F 1 "R" V 10450 5800 50  0000 C C
+	1    10450 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R59
+U 1 1 48628ADB
+P 10350 6100
+F 0 "R59" V 10430 6100 50  0000 C C
+F 1 "R" V 10350 6100 50  0000 C C
+	1    10350 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R58
+U 1 1 48628ADA
+P 10250 5800
+F 0 "R58" V 10330 5800 50  0000 C C
+F 1 "R" V 10250 5800 50  0000 C C
+	1    10250 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R57
+U 1 1 48628AD9
+P 10150 6100
+F 0 "R57" V 10230 6100 50  0000 C C
+F 1 "R" V 10150 6100 50  0000 C C
+	1    10150 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R56
+U 1 1 48628AD8
+P 10050 5800
+F 0 "R56" V 10130 5800 50  0000 C C
+F 1 "R" V 10050 5800 50  0000 C C
+	1    10050 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R55
+U 1 1 48628AD7
+P 9950 6100
+F 0 "R55" V 10030 6100 50  0000 C C
+F 1 "R" V 9950 6100 50  0000 C C
+	1    9950 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R54
+U 1 1 48628AD6
+P 9350 5800
+F 0 "R54" V 9430 5800 50  0000 C C
+F 1 "R" V 9350 5800 50  0000 C C
+	1    9350 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R53
+U 1 1 48628AD5
+P 9250 6100
+F 0 "R53" V 9330 6100 50  0000 C C
+F 1 "R" V 9250 6100 50  0000 C C
+	1    9250 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R52
+U 1 1 48628AD4
+P 9150 5800
+F 0 "R52" V 9230 5800 50  0000 C C
+F 1 "R" V 9150 5800 50  0000 C C
+	1    9150 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R51
+U 1 1 48628AD3
+P 9050 6100
+F 0 "R51" V 9130 6100 50  0000 C C
+F 1 "R" V 9050 6100 50  0000 C C
+	1    9050 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R50
+U 1 1 48628AD2
+P 8950 5800
+F 0 "R50" V 9030 5800 50  0000 C C
+F 1 "R" V 8950 5800 50  0000 C C
+	1    8950 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R49
+U 1 1 48628AD1
+P 8850 6100
+F 0 "R49" V 8930 6100 50  0000 C C
+F 1 "R" V 8850 6100 50  0000 C C
+	1    8850 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R48
+U 1 1 48628AD0
+P 8750 5800
+F 0 "R48" V 8830 5800 50  0000 C C
+F 1 "R" V 8750 5800 50  0000 C C
+	1    8750 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R47
+U 1 1 48628ACF
+P 8650 6100
+F 0 "R47" V 8730 6100 50  0000 C C
+F 1 "R" V 8650 6100 50  0000 C C
+	1    8650 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R46
+U 1 1 48628ACE
+P 8050 5800
+F 0 "R46" V 8130 5800 50  0000 C C
+F 1 "R" V 8050 5800 50  0000 C C
+	1    8050 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R45
+U 1 1 48628ACD
+P 7950 6100
+F 0 "R45" V 8030 6100 50  0000 C C
+F 1 "R" V 7950 6100 50  0000 C C
+	1    7950 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R44
+U 1 1 48628ACC
+P 7850 5800
+F 0 "R44" V 7930 5800 50  0000 C C
+F 1 "R" V 7850 5800 50  0000 C C
+	1    7850 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R43
+U 1 1 48628ACB
+P 7750 6100
+F 0 "R43" V 7830 6100 50  0000 C C
+F 1 "R" V 7750 6100 50  0000 C C
+	1    7750 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R42
+U 1 1 48628ACA
+P 7650 5800
+F 0 "R42" V 7730 5800 50  0000 C C
+F 1 "R" V 7650 5800 50  0000 C C
+	1    7650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R41
+U 1 1 48628AC9
+P 7550 6100
+F 0 "R41" V 7630 6100 50  0000 C C
+F 1 "R" V 7550 6100 50  0000 C C
+	1    7550 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R40
+U 1 1 48628AC8
+P 7450 5800
+F 0 "R40" V 7530 5800 50  0000 C C
+F 1 "R" V 7450 5800 50  0000 C C
+	1    7450 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R39
+U 1 1 48628AC7
+P 7350 6100
+F 0 "R39" V 7430 6100 50  0000 C C
+F 1 "R" V 7350 6100 50  0000 C C
+	1    7350 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R38
+U 1 1 48628AC6
+P 6750 5800
+F 0 "R38" V 6830 5800 50  0000 C C
+F 1 "R" V 6750 5800 50  0000 C C
+	1    6750 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R37
+U 1 1 48628AC5
+P 6650 6100
+F 0 "R37" V 6730 6100 50  0000 C C
+F 1 "R" V 6650 6100 50  0000 C C
+	1    6650 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R36
+U 1 1 48628AC4
+P 6550 5800
+F 0 "R36" V 6630 5800 50  0000 C C
+F 1 "R" V 6550 5800 50  0000 C C
+	1    6550 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R35
+U 1 1 48628AC3
+P 6450 6100
+F 0 "R35" V 6530 6100 50  0000 C C
+F 1 "R" V 6450 6100 50  0000 C C
+	1    6450 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R34
+U 1 1 48628AC2
+P 6350 5800
+F 0 "R34" V 6430 5800 50  0000 C C
+F 1 "R" V 6350 5800 50  0000 C C
+	1    6350 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R33
+U 1 1 48628AC1
+P 6250 6100
+F 0 "R33" V 6330 6100 50  0000 C C
+F 1 "R" V 6250 6100 50  0000 C C
+	1    6250 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R32
+U 1 1 48628AC0
+P 6150 5800
+F 0 "R32" V 6230 5800 50  0000 C C
+F 1 "R" V 6150 5800 50  0000 C C
+	1    6150 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R31
+U 1 1 48628ABF
+P 6050 6100
+F 0 "R31" V 6130 6100 50  0000 C C
+F 1 "R" V 6050 6100 50  0000 C C
+	1    6050 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R30
+U 1 1 48628ABE
+P 5450 5800
+F 0 "R30" V 5530 5800 50  0000 C C
+F 1 "R" V 5450 5800 50  0000 C C
+	1    5450 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R29
+U 1 1 48628ABD
+P 5350 6100
+F 0 "R29" V 5430 6100 50  0000 C C
+F 1 "R" V 5350 6100 50  0000 C C
+	1    5350 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R28
+U 1 1 48628ABC
+P 5250 5800
+F 0 "R28" V 5330 5800 50  0000 C C
+F 1 "R" V 5250 5800 50  0000 C C
+	1    5250 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R27
+U 1 1 48628ABB
+P 5150 6100
+F 0 "R27" V 5230 6100 50  0000 C C
+F 1 "R" V 5150 6100 50  0000 C C
+	1    5150 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R26
+U 1 1 48628ABA
+P 5050 5800
+F 0 "R26" V 5130 5800 50  0000 C C
+F 1 "R" V 5050 5800 50  0000 C C
+	1    5050 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R25
+U 1 1 48628AB9
+P 4950 6100
+F 0 "R25" V 5030 6100 50  0000 C C
+F 1 "R" V 4950 6100 50  0000 C C
+	1    4950 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R24
+U 1 1 48628AB8
+P 4850 5800
+F 0 "R24" V 4930 5800 50  0000 C C
+F 1 "R" V 4850 5800 50  0000 C C
+	1    4850 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R23
+U 1 1 48628AB7
+P 4750 6100
+F 0 "R23" V 4830 6100 50  0000 C C
+F 1 "R" V 4750 6100 50  0000 C C
+	1    4750 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R22
+U 1 1 48628AB6
+P 4150 5800
+F 0 "R22" V 4230 5800 50  0000 C C
+F 1 "R" V 4150 5800 50  0000 C C
+	1    4150 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R21
+U 1 1 48628AB5
+P 4050 6100
+F 0 "R21" V 4130 6100 50  0000 C C
+F 1 "R" V 4050 6100 50  0000 C C
+	1    4050 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R20
+U 1 1 48628AB4
+P 3950 5800
+F 0 "R20" V 4030 5800 50  0000 C C
+F 1 "R" V 3950 5800 50  0000 C C
+	1    3950 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R19
+U 1 1 48628AB3
+P 3850 6100
+F 0 "R19" V 3930 6100 50  0000 C C
+F 1 "R" V 3850 6100 50  0000 C C
+	1    3850 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R18
+U 1 1 48628AB2
+P 3750 5800
+F 0 "R18" V 3830 5800 50  0000 C C
+F 1 "R" V 3750 5800 50  0000 C C
+	1    3750 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R17
+U 1 1 48628AB1
+P 3650 6100
+F 0 "R17" V 3730 6100 50  0000 C C
+F 1 "R" V 3650 6100 50  0000 C C
+	1    3650 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R16
+U 1 1 48628AB0
+P 3550 5800
+F 0 "R16" V 3630 5800 50  0000 C C
+F 1 "R" V 3550 5800 50  0000 C C
+	1    3550 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R15
+U 1 1 48628AAF
+P 3450 6100
+F 0 "R15" V 3530 6100 50  0000 C C
+F 1 "R" V 3450 6100 50  0000 C C
+	1    3450 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R14
+U 1 1 48628A63
+P 2850 5800
+F 0 "R14" V 2930 5800 50  0000 C C
+F 1 "R" V 2850 5800 50  0000 C C
+	1    2850 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R13
+U 1 1 48628A62
+P 2750 6100
+F 0 "R13" V 2830 6100 50  0000 C C
+F 1 "R" V 2750 6100 50  0000 C C
+	1    2750 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 48628A61
+P 2650 5800
+F 0 "R12" V 2730 5800 50  0000 C C
+F 1 "R" V 2650 5800 50  0000 C C
+	1    2650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 48628A60
+P 2550 6100
+F 0 "R11" V 2630 6100 50  0000 C C
+F 1 "R" V 2550 6100 50  0000 C C
+	1    2550 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 48628A5C
+P 2450 5800
+F 0 "R10" V 2530 5800 50  0000 C C
+F 1 "R" V 2450 5800 50  0000 C C
+	1    2450 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 48628A5B
+P 2350 6100
+F 0 "R9" V 2430 6100 50  0000 C C
+F 1 "R" V 2350 6100 50  0000 C C
+	1    2350 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 48628A39
+P 2250 5800
+F 0 "R8" V 2330 5800 50  0000 C C
+F 1 "R" V 2250 5800 50  0000 C C
+	1    2250 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 48628A30
+P 2150 6100
+F 0 "R7" V 2230 6100 50  0000 C C
+F 1 "R" V 2150 6100 50  0000 C C
+	1    2150 6100
+	1    0    0    -1  
+$EndComp
+Text Label 1500 3100 0    60   ~
+GND
+Text Label 1500 3000 0    60   ~
+SCKL
+Text Label 1500 2900 0    60   ~
+SS0
+Text Label 9300 3100 0    60   ~
+GND
+Text Label 9300 3000 0    60   ~
+SCKL
+Text Label 9300 2900 0    60   ~
+SS1
+Text Label 6700 3100 0    60   ~
+GND
+Text Label 6700 3000 0    60   ~
+SCKL
+Text Label 6700 2900 0    60   ~
+SS1
+Text Label 4100 3100 0    60   ~
+GND
+Text Label 4100 3000 0    60   ~
+SCKL
+Text Label 4100 2900 0    60   ~
+SS0
+Text GLabel 6650 2750 3    60   Input
+SPI_SS1
+Text GLabel 1450 2750 3    60   Input
+SPI_SS0
+Text GLabel 850  2750 3    60   Input
+SPI_MOSI
+Text GLabel 1150 2750 3    60   Input
+SPI_SCKL
+$Comp
+L GND #PWR013
+U 1 1 485B6135
+P 650 6700
+F 0 "#PWR013" H 650 6700 30  0001 C C
+F 1 "GND" H 650 6630 30  0001 C C
+	1    650  6700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED D69
+U 1 1 485B60DC
+P 1550 5000
+F 0 "D69" H 1550 5100 50  0000 C C
+F 1 "LED" H 1550 4900 50  0000 C C
+	1    1550 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D68
+U 1 1 485B60DB
+P 850 5300
+F 0 "D68" H 850 5400 50  0000 C C
+F 1 "LED" H 850 5200 50  0000 C C
+	1    850  5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D67
+U 1 1 485B60DA
+P 950 5000
+F 0 "D67" H 950 5100 50  0000 C C
+F 1 "LED" H 950 4900 50  0000 C C
+	1    950  5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D66
+U 1 1 485B60D9
+P 1050 5300
+F 0 "D66" H 1050 5400 50  0000 C C
+F 1 "LED" H 1050 5200 50  0000 C C
+	1    1050 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D65
+U 1 1 485B60D8
+P 1150 5000
+F 0 "D65" H 1150 5100 50  0000 C C
+F 1 "LED" H 1150 4900 50  0000 C C
+	1    1150 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D64
+U 1 1 485B60D7
+P 1250 5300
+F 0 "D64" H 1250 5400 50  0000 C C
+F 1 "LED" H 1250 5200 50  0000 C C
+	1    1250 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D63
+U 1 1 485B60D6
+P 1350 5000
+F 0 "D63" H 1350 5100 50  0000 C C
+F 1 "LED" H 1350 4900 50  0000 C C
+	1    1350 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D62
+U 1 1 485B60D5
+P 1450 5300
+F 0 "D62" H 1450 5400 50  0000 C C
+F 1 "LED" H 1450 5200 50  0000 C C
+	1    1450 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D61
+U 1 1 485B60D4
+P 1550 5000
+F 0 "D61" H 1550 5100 50  0000 C C
+F 1 "LED" H 1550 4900 50  0000 C C
+	1    1550 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D60
+U 1 1 485B60D3
+P 2850 5000
+F 0 "D60" H 2850 5100 50  0000 C C
+F 1 "LED" H 2850 4900 50  0000 C C
+	1    2850 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D59
+U 1 1 485B60D2
+P 2150 5300
+F 0 "D59" H 2150 5400 50  0000 C C
+F 1 "LED" H 2150 5200 50  0000 C C
+	1    2150 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D58
+U 1 1 485B60D1
+P 2250 5000
+F 0 "D58" H 2250 5100 50  0000 C C
+F 1 "LED" H 2250 4900 50  0000 C C
+	1    2250 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D57
+U 1 1 485B60D0
+P 2350 5300
+F 0 "D57" H 2350 5400 50  0000 C C
+F 1 "LED" H 2350 5200 50  0000 C C
+	1    2350 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D56
+U 1 1 485B60CF
+P 2450 5000
+F 0 "D56" H 2450 5100 50  0000 C C
+F 1 "LED" H 2450 4900 50  0000 C C
+	1    2450 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D55
+U 1 1 485B60CE
+P 2550 5300
+F 0 "D55" H 2550 5400 50  0000 C C
+F 1 "LED" H 2550 5200 50  0000 C C
+	1    2550 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D54
+U 1 1 485B60CD
+P 2650 5000
+F 0 "D54" H 2650 5100 50  0000 C C
+F 1 "LED" H 2650 4900 50  0000 C C
+	1    2650 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D53
+U 1 1 485B60CC
+P 2750 5300
+F 0 "D53" H 2750 5400 50  0000 C C
+F 1 "LED" H 2750 5200 50  0000 C C
+	1    2750 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D52
+U 1 1 485B60CB
+P 2850 5000
+F 0 "D52" H 2850 5100 50  0000 C C
+F 1 "LED" H 2850 4900 50  0000 C C
+	1    2850 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D51
+U 1 1 485B60CA
+P 4150 5000
+F 0 "D51" H 4150 5100 50  0000 C C
+F 1 "LED" H 4150 4900 50  0000 C C
+	1    4150 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D50
+U 1 1 485B60C9
+P 3450 5300
+F 0 "D50" H 3450 5400 50  0000 C C
+F 1 "LED" H 3450 5200 50  0000 C C
+	1    3450 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D49
+U 1 1 485B60C8
+P 3550 5000
+F 0 "D49" H 3550 5100 50  0000 C C
+F 1 "LED" H 3550 4900 50  0000 C C
+	1    3550 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D48
+U 1 1 485B60C7
+P 3650 5300
+F 0 "D48" H 3650 5400 50  0000 C C
+F 1 "LED" H 3650 5200 50  0000 C C
+	1    3650 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D47
+U 1 1 485B60C6
+P 3750 5000
+F 0 "D47" H 3750 5100 50  0000 C C
+F 1 "LED" H 3750 4900 50  0000 C C
+	1    3750 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D46
+U 1 1 485B60C5
+P 3850 5300
+F 0 "D46" H 3850 5400 50  0000 C C
+F 1 "LED" H 3850 5200 50  0000 C C
+	1    3850 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D45
+U 1 1 485B60C4
+P 3950 5000
+F 0 "D45" H 3950 5100 50  0000 C C
+F 1 "LED" H 3950 4900 50  0000 C C
+	1    3950 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D44
+U 1 1 485B60C3
+P 4050 5300
+F 0 "D44" H 4050 5400 50  0000 C C
+F 1 "LED" H 4050 5200 50  0000 C C
+	1    4050 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D43
+U 1 1 485B60C2
+P 4150 5000
+F 0 "D43" H 4150 5100 50  0000 C C
+F 1 "LED" H 4150 4900 50  0000 C C
+	1    4150 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D42
+U 1 1 485B60C1
+P 5450 5000
+F 0 "D42" H 5450 5100 50  0000 C C
+F 1 "LED" H 5450 4900 50  0000 C C
+	1    5450 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D41
+U 1 1 485B60C0
+P 4750 5300
+F 0 "D41" H 4750 5400 50  0000 C C
+F 1 "LED" H 4750 5200 50  0000 C C
+	1    4750 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D40
+U 1 1 485B60BF
+P 4850 5000
+F 0 "D40" H 4850 5100 50  0000 C C
+F 1 "LED" H 4850 4900 50  0000 C C
+	1    4850 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D39
+U 1 1 485B60BE
+P 4950 5300
+F 0 "D39" H 4950 5400 50  0000 C C
+F 1 "LED" H 4950 5200 50  0000 C C
+	1    4950 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D38
+U 1 1 485B60BD
+P 5050 5000
+F 0 "D38" H 5050 5100 50  0000 C C
+F 1 "LED" H 5050 4900 50  0000 C C
+	1    5050 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D37
+U 1 1 485B60BC
+P 5150 5300
+F 0 "D37" H 5150 5400 50  0000 C C
+F 1 "LED" H 5150 5200 50  0000 C C
+	1    5150 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D36
+U 1 1 485B60BB
+P 5250 5000
+F 0 "D36" H 5250 5100 50  0000 C C
+F 1 "LED" H 5250 4900 50  0000 C C
+	1    5250 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D35
+U 1 1 485B60BA
+P 5350 5300
+F 0 "D35" H 5350 5400 50  0000 C C
+F 1 "LED" H 5350 5200 50  0000 C C
+	1    5350 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D34
+U 1 1 485B60B9
+P 5450 5000
+F 0 "D34" H 5450 5100 50  0000 C C
+F 1 "LED" H 5450 4900 50  0000 C C
+	1    5450 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D33
+U 1 1 485B60B8
+P 6750 5000
+F 0 "D33" H 6750 5100 50  0000 C C
+F 1 "LED" H 6750 4900 50  0000 C C
+	1    6750 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D32
+U 1 1 485B60B7
+P 6050 5300
+F 0 "D32" H 6050 5400 50  0000 C C
+F 1 "LED" H 6050 5200 50  0000 C C
+	1    6050 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D31
+U 1 1 485B60B6
+P 6150 5000
+F 0 "D31" H 6150 5100 50  0000 C C
+F 1 "LED" H 6150 4900 50  0000 C C
+	1    6150 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D30
+U 1 1 485B60B5
+P 6250 5300
+F 0 "D30" H 6250 5400 50  0000 C C
+F 1 "LED" H 6250 5200 50  0000 C C
+	1    6250 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D29
+U 1 1 485B60B4
+P 6350 5000
+F 0 "D29" H 6350 5100 50  0000 C C
+F 1 "LED" H 6350 4900 50  0000 C C
+	1    6350 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D28
+U 1 1 485B60B3
+P 6450 5300
+F 0 "D28" H 6450 5400 50  0000 C C
+F 1 "LED" H 6450 5200 50  0000 C C
+	1    6450 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D27
+U 1 1 485B60B2
+P 6550 5000
+F 0 "D27" H 6550 5100 50  0000 C C
+F 1 "LED" H 6550 4900 50  0000 C C
+	1    6550 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D26
+U 1 1 485B60B1
+P 6650 5300
+F 0 "D26" H 6650 5400 50  0000 C C
+F 1 "LED" H 6650 5200 50  0000 C C
+	1    6650 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D25
+U 1 1 485B60B0
+P 6750 5000
+F 0 "D25" H 6750 5100 50  0000 C C
+F 1 "LED" H 6750 4900 50  0000 C C
+	1    6750 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D24
+U 1 1 485B60AF
+P 7350 5300
+F 0 "D24" H 7350 5400 50  0000 C C
+F 1 "LED" H 7350 5200 50  0000 C C
+	1    7350 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D23
+U 1 1 485B60AE
+P 7450 5000
+F 0 "D23" H 7450 5100 50  0000 C C
+F 1 "LED" H 7450 4900 50  0000 C C
+	1    7450 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D22
+U 1 1 485B60AD
+P 7550 5300
+F 0 "D22" H 7550 5400 50  0000 C C
+F 1 "LED" H 7550 5200 50  0000 C C
+	1    7550 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D21
+U 1 1 485B60AC
+P 7650 5000
+F 0 "D21" H 7650 5100 50  0000 C C
+F 1 "LED" H 7650 4900 50  0000 C C
+	1    7650 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D20
+U 1 1 485B60AB
+P 7750 5300
+F 0 "D20" H 7750 5400 50  0000 C C
+F 1 "LED" H 7750 5200 50  0000 C C
+	1    7750 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D19
+U 1 1 485B60AA
+P 7850 5000
+F 0 "D19" H 7850 5100 50  0000 C C
+F 1 "LED" H 7850 4900 50  0000 C C
+	1    7850 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D18
+U 1 1 485B60A9
+P 7950 5300
+F 0 "D18" H 7950 5400 50  0000 C C
+F 1 "LED" H 7950 5200 50  0000 C C
+	1    7950 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D17
+U 1 1 485B60A8
+P 8050 5000
+F 0 "D17" H 8050 5100 50  0000 C C
+F 1 "LED" H 8050 4900 50  0000 C C
+	1    8050 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D16
+U 1 1 485B6091
+P 8650 5300
+F 0 "D16" H 8650 5400 50  0000 C C
+F 1 "LED" H 8650 5200 50  0000 C C
+	1    8650 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D15
+U 1 1 485B6090
+P 8750 5000
+F 0 "D15" H 8750 5100 50  0000 C C
+F 1 "LED" H 8750 4900 50  0000 C C
+	1    8750 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D14
+U 1 1 485B608F
+P 8850 5300
+F 0 "D14" H 8850 5400 50  0000 C C
+F 1 "LED" H 8850 5200 50  0000 C C
+	1    8850 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D13
+U 1 1 485B608E
+P 8950 5000
+F 0 "D13" H 8950 5100 50  0000 C C
+F 1 "LED" H 8950 4900 50  0000 C C
+	1    8950 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D12
+U 1 1 485B608D
+P 9050 5300
+F 0 "D12" H 9050 5400 50  0000 C C
+F 1 "LED" H 9050 5200 50  0000 C C
+	1    9050 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D11
+U 1 1 485B608C
+P 9150 5000
+F 0 "D11" H 9150 5100 50  0000 C C
+F 1 "LED" H 9150 4900 50  0000 C C
+	1    9150 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D10
+U 1 1 485B608B
+P 9250 5300
+F 0 "D10" H 9250 5400 50  0000 C C
+F 1 "LED" H 9250 5200 50  0000 C C
+	1    9250 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D9
+U 1 1 485B608A
+P 9350 5000
+F 0 "D9" H 9350 5100 50  0000 C C
+F 1 "LED" H 9350 4900 50  0000 C C
+	1    9350 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 485B6034
+P 10850 3250
+F 0 "#PWR014" H 10850 3250 30  0001 C C
+F 1 "GND" H 10850 3180 30  0001 C C
+	1    10850 3250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED D8
+U 1 1 485B5FF1
+P 9950 5300
+F 0 "D8" H 9950 5400 50  0000 C C
+F 1 "LED" H 9950 5200 50  0000 C C
+	1    9950 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D7
+U 1 1 485B5FF0
+P 10050 5000
+F 0 "D7" H 10050 5100 50  0000 C C
+F 1 "LED" H 10050 4900 50  0000 C C
+	1    10050 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D6
+U 1 1 485B5FEF
+P 10150 5300
+F 0 "D6" H 10150 5400 50  0000 C C
+F 1 "LED" H 10150 5200 50  0000 C C
+	1    10150 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D5
+U 1 1 485B5FEE
+P 10250 5000
+F 0 "D5" H 10250 5100 50  0000 C C
+F 1 "LED" H 10250 4900 50  0000 C C
+	1    10250 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D4
+U 1 1 485B5FEB
+P 10350 5300
+F 0 "D4" H 10350 5400 50  0000 C C
+F 1 "LED" H 10350 5200 50  0000 C C
+	1    10350 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D3
+U 1 1 485B5FEA
+P 10450 5000
+F 0 "D3" H 10450 5100 50  0000 C C
+F 1 "LED" H 10450 4900 50  0000 C C
+	1    10450 5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 485B5FCD
+P 10550 5300
+F 0 "D2" H 10550 5400 50  0000 C C
+F 1 "LED" H 10550 5200 50  0000 C C
+	1    10550 5300
+	0    -1   1    0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 485B5FB2
+P 10650 5000
+F 0 "D1" H 10650 5100 50  0000 C C
+F 1 "LED" H 10650 4900 50  0000 C C
+	1    10650 5000
+	0    -1   1    0   
+$EndComp
+NoConn ~ 10850 4700
+$Comp
+L 74LS595 U8
+U 1 1 485B579F
+P 1300 4000
+F 0 "U8" H 1450 4600 70  0000 C C
+F 1 "74LS595" H 1300 3400 70  0000 C C
+	1    1300 4000
+	0    -1   1    0   
+$EndComp
+$Comp
+L 74LS595 U7
+U 1 1 485B5791
+P 2600 4000
+F 0 "U7" H 2750 4600 70  0000 C C
+F 1 "74LS595" H 2600 3400 70  0000 C C
+	1    2600 4000
+	0    -1   1    0   
+$EndComp
+$Comp
+L 74LS595 U6
+U 1 1 485B578A
+P 3900 4000
+F 0 "U6" H 4050 4600 70  0000 C C
+F 1 "74LS595" H 3900 3400 70  0000 C C
+	1    3900 4000
+	0    -1   1    0   
+$EndComp
+$Comp
+L 74LS595 U5
+U 1 1 485B5780
+P 5200 4000
+F 0 "U5" H 5350 4600 70  0000 C C
+F 1 "74LS595" H 5200 3400 70  0000 C C
+	1    5200 4000
+	0    -1   1    0   
+$EndComp
+$Comp
+L 74LS595 U4
+U 1 1 485B5776
+P 6500 4000
+F 0 "U4" H 6650 4600 70  0000 C C
+F 1 "74LS595" H 6500 3400 70  0000 C C
+	1    6500 4000
+	0    -1   1    0   
+$EndComp
+$Comp
+L 74LS595 U3
+U 1 1 485B5769
+P 7800 4000
+F 0 "U3" H 7950 4600 70  0000 C C
+F 1 "74LS595" H 7800 3400 70  0000 C C
+	1    7800 4000
+	0    -1   1    0   
+$EndComp
+$Comp
+L 74LS595 U2
+U 1 1 485B5759
+P 9100 4000
+F 0 "U2" H 9250 4600 70  0000 C C
+F 1 "74LS595" H 9100 3400 70  0000 C C
+	1    9100 4000
+	0    -1   1    0   
+$EndComp
+$Comp
+L 74LS595 U1
+U 1 1 485B5745
+P 10400 4000
+F 0 "U1" H 10550 4600 70  0000 C C
+F 1 "74LS595" H 10400 3400 70  0000 C C
+	1    10400 4000
+	0    -1   1    0   
+$EndComp
+$EndSCHEMATC
