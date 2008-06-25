@@ -1,4 +1,16 @@
 #summary Information about the Hardware.
 
+[http://bicycleledpov.googlecode.com/svn-history/r78/trunk/BicycleLEDPOV/Pictures/diagram/diagram-700x.png]
+
+The microcontroller unit (MCU) is the [http://www.atmel.com/dyn/products/product_card.asp?part_id=4097 Atmel AT90USB162], 8 bits microcontroller with USB functionality.
+
+MCU will be able to determine the velocity of the bicycle wheel by reading impulses of the hall effect sensor.
+
+Knowing the velocity, MCU will read the images from the EEPROM memory using SPI bus, and in the correct timing will send them to the LED drivers using SPI bus, turning on and off the LEDs.
+
+The LED drivers will be composed of 74HC595 IC (Serial to Parallel latch using SPI bus) and a resister in series with LEDs.
+
+The energy for the HaRdware will be from 3 `NiMh` rechargeable cells. The +2,4 volts from the first 2 cells will drive directly the LEDs. The MCU use +3,6 volts (using the third cell).
+
 =Pictures from actual prototype=
 [http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080619-BicycleLEDPOV-prototype-02.jpg]
