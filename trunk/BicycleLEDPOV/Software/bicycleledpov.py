@@ -32,7 +32,7 @@ print """ BicicleLedPOV
           2 - Command 2 - Version number"""
 
 
-ser = serial.Serial(0, timeout = 5)
+ser = serial.Serial('/dev/ttyACM0', timeout = 5)
 
 
 def comm(number):
