@@ -1,5 +1,5 @@
 ==2008.06.25==
-News from ricardolameiro:
+News from RicardoLameiro:
 
 Well, the software to send commands and control the serial port is in development, for now I have a screenshot of a GUI (Graphic User Interface) to the software. I am doing the GUI in Tkinter toolkit, that is built in in python.
 
