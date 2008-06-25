@@ -1,0 +1,106 @@
+# GUIBUILDER FILE Build 146
+# Created: 2008-06-25 19:32:56 by GUI Builder Build 146
+language tkinter 8.4
+widget {Tk frame} f {
+	geometry min_column {165 332 40}
+	geometry min_row {125 129}
+	geometry pad_column {0 0 0}
+	geometry pad_row {0 0}
+	geometry resize_column {0 0 0}
+	geometry resize_row {0 0}
+	geometry weight_column {0 0 0}
+	geometry weight_row {0 0}
+	data GROUP Tk
+	data ID {}
+	data MASTER {}
+	data TYPE {Tk frame}
+	data level 0
+}
+widget {Tk listbox} _listbox_1 {
+	configure -height 0
+	configure -width 0
+	geometry -column 1
+	geometry -columnspan 1
+	geometry -row 1
+	geometry -rowspan 1
+	geometry -sticky news
+	data GROUP Tk
+	data ID serial_listbox
+	data MASTER {}
+	data TYPE {Tk listbox}
+}
+widget {Tk button} _button_1 {
+	configure -text scan
+	geometry -column 3
+	geometry -columnspan 1
+	geometry -row 1
+	geometry -rowspan 1
+	geometry -sticky {}
+	data GROUP Tk
+	data ID b_scan
+	data MASTER {}
+	data TYPE {Tk button}
+}
+widget {Tk label} _label_1 {
+	configure -text {Select the port to use}
+	geometry -column 2
+	geometry -columnspan 1
+	geometry -row 1
+	geometry -rowspan 1
+	geometry -sticky {}
+	data GROUP Tk
+	data ID _label_1
+	data MASTER {}
+	data TYPE {Tk label}
+}
+widget {Tk listbox} _listbox_2 {
+	configure -height 0
+	configure -width 0
+	geometry -column 1
+	geometry -columnspan 1
+	geometry -row 2
+	geometry -rowspan 1
+	geometry -sticky news
+	data GROUP Tk
+	data ID cmd_listbox
+	data MASTER {}
+	data TYPE {Tk listbox}
+}
+widget {Tk button} _button_2 {
+	configure -text {send command}
+	geometry -column 3
+	geometry -columnspan 1
+	geometry -row 2
+	geometry -rowspan 1
+	geometry -sticky {}
+	data GROUP Tk
+	data ID b_send
+	data MASTER {}
+	data TYPE {Tk button}
+}
+widget {Tk label} _label_2 {
+	configure -text {Choose the command to send}
+	geometry -column 2
+	geometry -columnspan 1
+	geometry -row 2
+	geometry -rowspan 1
+	geometry -sticky {}
+	data GROUP Tk
+	data ID _label_2
+	data MASTER {}
+	data TYPE {Tk label}
+}
+menu {Menu menu} MENU {
+	data MASTER {}
+	data level 0
+}
+menu {Menu cascade} menuitem1 {
+	configure -label File
+	data MASTER MENU
+}
+menu {Menu command} menuitem2 {
+	configure -command exit
+	configure -label Exit
+	data MASTER menuitem1
+}
+
