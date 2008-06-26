@@ -1,5 +1,7 @@
 #summary Information about Firmware.
 
+The latest firmware version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/BicycleLEDPOV/Firmware available on SVN].
+
 When connect a USB cable to PC, will appear one new serial port. Sending the images will be a matter of sending bytes to that serial port using a simple FirmwareApi.
 
 [Tools USB will also permit to download a new firmware to MCU]. The AT90USB162 MCU comes from factory with an USB bootloader. To enter in the bootloader, at the power on time, there must be pressed a button and then will be possible to download a new firmware, using a Free Software program on PC.
