@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+A little about me.
 
 = Introduction =
 
@@ -15,4 +15,3 @@ I am a friend and former high school colleague of jpCasainho, where I also studi
   * I like to play with microcontrollers, mostly PICmicro
 
 for now it is enough, if something comes to me later I will add it :)
-
