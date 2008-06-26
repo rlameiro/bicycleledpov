@@ -3,7 +3,7 @@ A little about me.
 = Introduction =
 
 Hi everyone. My name is Ricardo Lameiro. I am a musician (I play the Bassoon).
-I am a friend and former high school colleague of jpCasainho, where I also studied electronics. I love the electronic gadgets and love more to understand it, even make it :), But for now I am giving my extra time to the software programming learning. At this point I am a [http://www.python.org Python] newbie, so excuse me some bad code, lease help me if you like, i would preciate that.
+I am a friend and former high school colleague of [http://code.google.com/p/bicycleledpov/wiki/JpCasainho jpCasainho], where I also studied electronics. I love the electronic gadgets and love more to understand it, even make it :), But for now I am giving my extra time to the software programming learning. At this point I am a [http://www.python.org Python] newbie, so excuse me some bad code, lease help me if you like, i would preciate that.
 
 
 
