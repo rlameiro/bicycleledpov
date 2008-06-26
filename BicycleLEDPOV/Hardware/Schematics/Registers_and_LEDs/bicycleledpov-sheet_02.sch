@@ -1,5 +1,5 @@
 EESchema Schematic File Version 1
-LIBS:power,../KiCAD_library/at90usb162,device,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,contrib,valves,../KiCAD_library/usb-mb-h,./bicycleledpov_base.cache
+LIBS:power,../KiCAD_library/at90usb162,device,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,contrib,valves,../KiCAD_library/usb-mb-h,../KiCAD_library/a3213elhlt,./bicycleledpov_base.cache
 EELAYER 23  0
 EELAYER END
 $Descr A4 11700 8267
@@ -13,10 +13,10 @@ Comment2 "(c) Donald Ziems"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Kmarq B 1050 3300 "Warning Pin input not driven (Net 52)" F=1
-Kmarq B 850  3300 "Warning Pin input Unconnected" F=1
-Kmarq B 1350 3300 "Warning Pin input not driven (Net 50)" F=1
-Kmarq B 6550 3300 "Warning Pin input not driven (Net 49)" F=1
+Kmarq B 1050 3300 "Atenção Pino input não controlado (Net 52)" F=1
+Kmarq B 850  3300 "Atenção Pino input Não conectado" F=1
+Kmarq B 1350 3300 "Atenção Pino input não controlado (Net 50)" F=1
+Kmarq B 6550 3300 "Atenção Pino input não controlado (Net 49)" F=1
 Connection ~ 1550 6600
 Wire Wire Line
 	1550 6100 1550 6600
@@ -1258,10 +1258,10 @@ SPI_MOSI
 Text GLabel 1150 2750 3    60   Input
 SPI_SCKL
 $Comp
-L GND #PWR016
+L GND #PWR017
 U 1 1 485B6135
 P 650 6700
-F 0 "#PWR016" H 650 6700 30  0001 C C
+F 0 "#PWR017" H 650 6700 30  0001 C C
 F 1 "GND" H 650 6630 30  0001 C C
 	1    650  6700
 	-1   0    0    -1  
@@ -1816,10 +1816,10 @@ F 1 "LED" H 9350 4900 50  0000 C C
 	0    -1   1    0   
 $EndComp
 $Comp
-L GND #PWR017
+L GND #PWR018
 U 1 1 485B6034
 P 10850 3250
-F 0 "#PWR017" H 10850 3250 30  0001 C C
+F 0 "#PWR018" H 10850 3250 30  0001 C C
 F 1 "GND" H 10850 3180 30  0001 C C
 	1    10850 3250
 	-1   0    0    -1  

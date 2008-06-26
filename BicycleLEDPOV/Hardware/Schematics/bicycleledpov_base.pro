@@ -63,3 +63,4 @@ LibName26=siliconi
 LibName27=contrib
 LibName28=valves
 LibName29=../KiCAD_library/usb-mb-h
+LibName30=../KiCAD_library/a3213elhlt

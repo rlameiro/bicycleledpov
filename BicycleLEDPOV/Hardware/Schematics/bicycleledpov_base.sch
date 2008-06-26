@@ -1,5 +1,5 @@
 EESchema Schematic File Version 1
-LIBS:power,../KiCAD_library/at90usb162,device,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,contrib,valves,../KiCAD_library/usb-mb-h,./bicycleledpov_base.cache
+LIBS:power,../KiCAD_library/at90usb162,device,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,contrib,valves,../KiCAD_library/usb-mb-h,../KiCAD_library/a3213elhlt,./bicycleledpov_base.cache
 EELAYER 23  0
 EELAYER END
 $Descr A4 11700 8267
@@ -13,51 +13,55 @@ Comment2 "(c) Donald Ziems"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Kmarq B 1860 3855 "Warning Pin passive Unconnected" F=1
-Kmarq B 1301 3654 "Warning Pin BiDi Unconnected" F=1
-Kmarq B 1301 3554 "Warning Pin BiDi Unconnected" F=1
-Kmarq B 997  6468 "Warning Pin passive Unconnected" F=1
-Kmarq B 997  5968 "Warning Pin passive Unconnected" F=1
-Kmarq B 1386 7169 "Warning Pin passive Unconnected" F=1
-Kmarq B 1386 6769 "Warning Pin passive Unconnected" F=1
-Kmarq B 998  6669 "Warning Pin passive Unconnected" F=1
-Kmarq B 998  7269 "Warning Pin passive Unconnected" F=1
-Kmarq B 1608 6565 "Warning Pin passive Unconnected" F=1
-Kmarq B 2108 6565 "Warning Pin passive Unconnected" F=1
-Kmarq B 8350 2400 "Warning Pin 3state Unconnected" F=1
-Kmarq B 8600 2400 "Warning GLabel SENSOR_DATA not connected to SheetLabel" F=1
-Kmarq B 5800 2550 "Warning: Pin unspc connected to Pin passive (net 27)" F=1
-Kmarq B 5800 2450 "Warning: Pin unspc connected to Pin passive (net 26)" F=1
-Kmarq B 1305 2435 "Warning GLabel PC4 not connected to SheetLabel" F=1
-Kmarq B 8600 4300 "Warning GLabel PC4 not connected to SheetLabel" F=1
-Kmarq B 8600 3700 "Warning GLabel SPI_SS1 not connected to SheetLabel" F=1
-Kmarq B 8350 3700 "Warning Pin 3state Unconnected" F=1
-Kmarq B 8600 3500 "Warning GLabel SPI_MOSI not connected to SheetLabel" F=1
-Kmarq B 8350 3500 "Warning Pin 3state Unconnected" F=1
-Kmarq B 8600 3300 "Warning GLabel SPI_SS0 not connected to SheetLabel" F=1
-Kmarq B 8350 3300 "Warning Pin BiDi Unconnected" F=1
-Kmarq B 1075 3030 "Warning Pin passive Unconnected" F=1
-Kmarq B 1301 3854 "Warning Pin BiDi Unconnected" F=1
-Kmarq B 5550 4000 "Warning GLabel D+ not connected to SheetLabel" F=1
-Kmarq B 2525 3855 "Warning GLabel D+ not connected to SheetLabel" F=1
-Kmarq B 5550 3900 "Warning GLabel D- not connected to SheetLabel" F=1
-Kmarq B 2530 3755 "Warning GLabel D- not connected to SheetLabel" F=1
-Kmarq B 1075 1840 "Warning Pin passive Unconnected" F=1
-Kmarq B 1075 1730 "Warning GLabel VBUS not connected to SheetLabel" F=1
-Kmarq B 1540 3655 "Warning GLabel VBUS not connected to SheetLabel" F=1
-Kmarq B 5800 3800 "Warning Pin power_in not driven (Net 11)" F=1
-Kmarq B 2293 6565 "Warning GLabel PD7 not connected to SheetLabel" F=1
-Kmarq B 8600 3100 "Warning GLabel PD7 not connected to SheetLabel" F=1
-Kmarq B 8350 3100 "Warning Pin 3state Unconnected" F=1
-Kmarq B 8600 3400 "Warning GLabel SPI_SCKL not connected to SheetLabel" F=1
-Kmarq B 8350 3400 "Warning Pin 3state Unconnected" F=1
-Kmarq B 8600 3600 "Warning GLabel SPI_MISO not connected to SheetLabel" F=1
-Kmarq B 8350 3600 "Warning Pin 3state Unconnected" F=1
-Kmarq B 8600 3800 "Warning GLabel SPI_SS2 not connected to SheetLabel" F=1
-Kmarq B 8350 3800 "Warning Pin 3state Unconnected" F=1
-Kmarq B 5800 2950 "Error: Pin power_out connected to Pin power_out (net 3)" F=2
-Kmarq B 8350 2500 "Warning Pin 3state Unconnected" F=1
-Kmarq B 8600 2500 "Warning GLabel SENSOR_VCC not connected to SheetLabel" F=1
+Wire Notes Line
+	2620 5625 2620 7525
+Wire Notes Line
+	2620 5625 770  5625
+Kmarq B 1860 3855 "Atenção Pino passive Não conectado" F=1
+Kmarq B 1301 3654 "Atenção Pino BiDi Não conectado" F=1
+Kmarq B 1301 3554 "Atenção Pino BiDi Não conectado" F=1
+Kmarq B 997  6468 "Atenção Pino passive Não conectado" F=1
+Kmarq B 997  5968 "Atenção Pino passive Não conectado" F=1
+Kmarq B 1386 7169 "Atenção Pino passive Não conectado" F=1
+Kmarq B 1386 6769 "Atenção Pino passive Não conectado" F=1
+Kmarq B 998  6669 "Atenção Pino passive Não conectado" F=1
+Kmarq B 998  7269 "Atenção Pino passive Não conectado" F=1
+Kmarq B 1608 6565 "Atenção Pino passive Não conectado" F=1
+Kmarq B 2108 6565 "Atenção Pino passive Não conectado" F=1
+Kmarq B 8350 2400 "Atenção Pino 3state Não conectado" F=1
+Kmarq B 8600 2400 "Atenção: Etiqueta Global SENSOR_DATA não está conectada a Etiqueta da Página" F=1
+Kmarq B 5800 2550 "Atenção: Pino unspc conectado ao Pino passive (ligação 27)" F=1
+Kmarq B 5800 2450 "Atenção: Pino unspc conectado ao Pino passive (ligação 26)" F=1
+Kmarq B 1305 2435 "Atenção: Etiqueta Global PC4 não está conectada a Etiqueta da Página" F=1
+Kmarq B 8600 4300 "Atenção: Etiqueta Global PC4 não está conectada a Etiqueta da Página" F=1
+Kmarq B 8600 3700 "Atenção: Etiqueta Global SPI_SS1 não está conectada a Etiqueta da Página" F=1
+Kmarq B 8350 3700 "Atenção Pino 3state Não conectado" F=1
+Kmarq B 8600 3500 "Atenção: Etiqueta Global SPI_MOSI não está conectada a Etiqueta da Página" F=1
+Kmarq B 8350 3500 "Atenção Pino 3state Não conectado" F=1
+Kmarq B 8600 3300 "Atenção: Etiqueta Global SPI_SS0 não está conectada a Etiqueta da Página" F=1
+Kmarq B 8350 3300 "Atenção Pino BiDi Não conectado" F=1
+Kmarq B 1075 3030 "Atenção Pino passive Não conectado" F=1
+Kmarq B 1301 3854 "Atenção Pino BiDi Não conectado" F=1
+Kmarq B 5550 4000 "Atenção: Etiqueta Global D+ não está conectada a Etiqueta da Página" F=1
+Kmarq B 2525 3855 "Atenção: Etiqueta Global D+ não está conectada a Etiqueta da Página" F=1
+Kmarq B 5550 3900 "Atenção: Etiqueta Global D- não está conectada a Etiqueta da Página" F=1
+Kmarq B 2530 3755 "Atenção: Etiqueta Global D- não está conectada a Etiqueta da Página" F=1
+Kmarq B 1075 1840 "Atenção Pino passive Não conectado" F=1
+Kmarq B 1075 1730 "Atenção: Etiqueta Global VBUS não está conectada a Etiqueta da Página" F=1
+Kmarq B 1540 3655 "Atenção: Etiqueta Global VBUS não está conectada a Etiqueta da Página" F=1
+Kmarq B 5800 3800 "Atenção Pino power_in não controlado (Net 11)" F=1
+Kmarq B 2293 6565 "Atenção: Etiqueta Global PD7 não está conectada a Etiqueta da Página" F=1
+Kmarq B 8600 3100 "Atenção: Etiqueta Global PD7 não está conectada a Etiqueta da Página" F=1
+Kmarq B 8350 3100 "Atenção Pino 3state Não conectado" F=1
+Kmarq B 8600 3400 "Atenção: Etiqueta Global SPI_SCKL não está conectada a Etiqueta da Página" F=1
+Kmarq B 8350 3400 "Atenção Pino 3state Não conectado" F=1
+Kmarq B 8600 3600 "Atenção: Etiqueta Global SPI_MISO não está conectada a Etiqueta da Página" F=1
+Kmarq B 8350 3600 "Atenção Pino 3state Não conectado" F=1
+Kmarq B 8600 3800 "Atenção: Etiqueta Global SPI_SS2 não está conectada a Etiqueta da Página" F=1
+Kmarq B 8350 3800 "Atenção Pino 3state Não conectado" F=1
+Kmarq B 5800 2950 "Erro: Pino power_out conectado ao Pino power_out (ligação 3)" F=2
+Kmarq B 8350 2500 "Atenção Pino 3state Não conectado" F=1
+Kmarq B 8600 2500 "Atenção: Etiqueta Global SENSOR_VCC não está conectada a Etiqueta da Página" F=1
 Wire Wire Line
 	8600 2500 8350 2500
 Connection ~ 5600 3050
@@ -96,8 +100,6 @@ Wire Wire Line
 	8600 3100 8350 3100
 Wire Notes Line
 	770  5675 770  7525
-Wire Notes Line
-	2620 5625 770  5625
 Wire Wire Line
 	2294 6565 2110 6565
 Connection ~ 1390 6569
@@ -153,8 +155,6 @@ Wire Wire Line
 	998  7268 998  7370
 Wire Wire Line
 	1610 6563 1004 6563
-Wire Notes Line
-	2620 5625 2620 7525
 Wire Notes Line
 	2620 7525 770  7525
 Wire Notes Line
