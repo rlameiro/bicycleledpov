@@ -34,7 +34,7 @@ def scan():
             pass
     return available
     
-print scan()+"\n"
+print scan()
 
 a = len(scan())
 
