@@ -1,15 +1,15 @@
 # GUIBUILDER FILE Build 146
-# Created: 2008-06-25 19:32:56 by GUI Builder Build 146
+# Created: 2008-06-26 23:41:06 by GUI Builder Build 146
 language tkinter 8.4
 widget {Tk frame} f {
-	geometry min_column {165 332 40}
-	geometry min_row {125 129}
-	geometry pad_column {0 0 0}
+	geometry min_column {165 8 332 40}
+	geometry min_row {91 73}
+	geometry pad_column {0 0 0 0}
 	geometry pad_row {0 0}
-	geometry resize_column {0 0 0}
-	geometry resize_row {0 0}
-	geometry weight_column {0 0 0}
-	geometry weight_row {0 0}
+	geometry resize_column {0 0 1 0}
+	geometry resize_row {1 2}
+	geometry weight_column {0 0 0 0}
+	geometry weight_row {0 1}
 	data GROUP Tk
 	data ID {}
 	data MASTER {}
@@ -17,8 +17,9 @@ widget {Tk frame} f {
 	data level 0
 }
 widget {Tk listbox} _listbox_1 {
-	configure -height 0
+	configure -height 5
 	configure -width 0
+	configure -yscrollcommand serial_scrollbar.set
 	geometry -column 1
 	geometry -columnspan 1
 	geometry -row 1
@@ -31,7 +32,7 @@ widget {Tk listbox} _listbox_1 {
 }
 widget {Tk button} _button_1 {
 	configure -text scan
-	geometry -column 3
+	geometry -column 4
 	geometry -columnspan 1
 	geometry -row 1
 	geometry -rowspan 1
@@ -43,7 +44,7 @@ widget {Tk button} _button_1 {
 }
 widget {Tk label} _label_1 {
 	configure -text {Select the port to use}
-	geometry -column 2
+	geometry -column 3
 	geometry -columnspan 1
 	geometry -row 1
 	geometry -rowspan 1
@@ -56,6 +57,7 @@ widget {Tk label} _label_1 {
 widget {Tk listbox} _listbox_2 {
 	configure -height 0
 	configure -width 0
+	configure -yscrollcommand cmd_scrollbar.set
 	geometry -column 1
 	geometry -columnspan 1
 	geometry -row 2
@@ -68,7 +70,7 @@ widget {Tk listbox} _listbox_2 {
 }
 widget {Tk button} _button_2 {
 	configure -text {send command}
-	geometry -column 3
+	geometry -column 4
 	geometry -columnspan 1
 	geometry -row 2
 	geometry -rowspan 1
@@ -80,7 +82,7 @@ widget {Tk button} _button_2 {
 }
 widget {Tk label} _label_2 {
 	configure -text {Choose the command to send}
-	geometry -column 2
+	geometry -column 3
 	geometry -columnspan 1
 	geometry -row 2
 	geometry -rowspan 1
@@ -89,6 +91,30 @@ widget {Tk label} _label_2 {
 	data ID _label_2
 	data MASTER {}
 	data TYPE {Tk label}
+}
+widget {Tk scrollbar} _scrollbar_1 {
+	configure -command serial_listbox.yview
+	geometry -column 2
+	geometry -columnspan 1
+	geometry -row 1
+	geometry -rowspan 1
+	geometry -sticky nsew
+	data GROUP Tk
+	data ID serial_scrollbar
+	data MASTER {}
+	data TYPE {Tk scrollbar}
+}
+widget {Tk scrollbar} _scrollbar_2 {
+	configure -command cmd_listbox.yview
+	geometry -column 2
+	geometry -columnspan 1
+	geometry -row 2
+	geometry -rowspan 1
+	geometry -sticky nsew
+	data GROUP Tk
+	data ID cmd_scrollbar
+	data MASTER {}
+	data TYPE {Tk scrollbar}
 }
 menu {Menu menu} MENU {
 	data MASTER {}
