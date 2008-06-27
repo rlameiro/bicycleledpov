@@ -162,7 +162,19 @@ class CustomBledpov(Bledpov):
     #
     # Callback to handle send_cmd2 widget option -command
     def send_cmd2_command(self, *args):
-        pass
+    	serial_selected = self.serial_listbox.curselection()
+        selected_port = self.serial_listbox.get(serial_selected)
+        
+    	ser = serial.Serial(selected_port, timeout = 5)
+    	ser.open
+    	ser.write(cmd2)
+    	rcv = ser.read(3)
+    	ser.close
+    	
+    	if len(rcv) == 3:
+		infomsg("Command sucessful", "FIRMWARE VERSION:" + rcv)
+	else:
+		errormsg()
 
     # send_cmd3_command --
     #
