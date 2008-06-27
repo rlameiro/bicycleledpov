@@ -39,10 +39,13 @@ import serial
 import os
 import tkMessageBox
 
-def botao():
-	msg = tkMessageBox.showinfo("test", "This is a test")
-	return msg
-
+def infomsg():
+	in_msg = tkMessageBox.showinfo("test", "This is a test")
+	return in_msg
+def errormsg():
+	err_msg = tkMessageBox.showerror("ERROR", "Command unsucsessful. \n Check if hardware is connected or \n check the serial port used.") 
+	
+	
 def scan():
 	
 	lista = []
@@ -69,7 +72,28 @@ def scan():
 	return available
 
 
+
+
 ports = scan()
+
+
+
+cmd1 = "\x01"
+cmd2 = "\x02"
+cmd3 = "\x03"
+cmd4 = "\x04"
+
+#def comm(cmd):
+#	ser = serial.Serial(serial_port, timeout = 5)
+#	ser.open
+#	ser.write(cmd)
+	#rsp = ser.read()
+#	ser.close
+	#if rsp == number:
+	#	print "command successful"
+	#else:
+	#	print "Didn't receive a response"
+
 # END USER CODE global
 
 class CustomBledpov(Bledpov):
@@ -111,16 +135,28 @@ class CustomBledpov(Bledpov):
         
         # A loop that inserts the diferent serial port avaiable into the serial_listbox
         
-        for item in ports:
+        for item in scan():
     		self.serial_listbox.insert(END, item)
     		
-    	# A loop that inserts the diferent commands into the cmd_listbox
+    	
 
     # send_cmd1_command --
     #
     # Callback to handle send_cmd1 widget option -command
     def send_cmd1_command(self, *args):
-        botao()
+    	serial_selected = self.serial_listbox.curselection()
+        selected_port = self.serial_listbox.get(serial_selected)
+        
+    	ser = serial.Serial(selected_port, timeout = 5)
+    	ser.open
+    	ser.write(cmd1)
+    	rcv = ser.read()
+    	ser.close
+    	
+    	if rcv == cmd1:
+		infomsg("Command sucessful", "Command sucessful")
+	else:
+		errormsg()
 
     # send_cmd2_command --
     #
@@ -237,7 +273,7 @@ class CustomBledpov(Bledpov):
 	def serial_port(self, *args):
 		serial_selected = self.serial_listbox.curselection()
         selected_port = self.serial_listbox.get(serial_selected)
-        return serial_port
+        return selected_port
     # END USER CODE class
 
 def main():
