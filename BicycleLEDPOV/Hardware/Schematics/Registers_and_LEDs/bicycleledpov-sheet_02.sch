@@ -1,11 +1,11 @@
 EESchema Schematic File Version 1
-LIBS:power,../KiCAD_library/at90usb162,device,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,contrib,valves,../KiCAD_library/usb-mb-h,../KiCAD_library/a3213elhlt,./bicycleledpov_base.cache
+LIBS:power,../KiCAD_library/at90usb162,device,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,contrib,valves,../KiCAD_library/usb-mb-h,../KiCAD_library/a3213elhlt
 EELAYER 23  0
 EELAYER END
 $Descr A4 11700 8267
-Sheet 3 3
+Sheet 2 2
 Title "Bicycle LED POV"
-Date "26 jun 2008"
+Date "27 jun 2008"
 Rev "0.1.0"
 Comp "http://code.google.com/p/bicycleledpov"
 Comment1 "(c) Jorge Pinto"
@@ -13,10 +13,6 @@ Comment2 "(c) Donald Ziems"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Kmarq B 1050 3300 "Atenção Pino input não controlado (Net 52)" F=1
-Kmarq B 850  3300 "Atenção Pino input Não conectado" F=1
-Kmarq B 1350 3300 "Atenção Pino input não controlado (Net 50)" F=1
-Kmarq B 6550 3300 "Atenção Pino input não controlado (Net 49)" F=1
 Connection ~ 1550 6600
 Wire Wire Line
 	1550 6100 1550 6600
@@ -650,505 +646,505 @@ Wire Wire Line
 	7950 6400 7950 6600
 Connection ~ 7950 6600
 $Comp
-L R R71
+L R R70
 U 1 1 48639D85
 P 850 6150
-F 0 "R71" V 930 6150 50  0000 C C
+F 0 "R70" V 930 6150 50  0000 C C
 F 1 "47R" V 850 6150 50  0000 C C
 	1    850  6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R70
+L R R69
 U 1 1 48639D84
 P 950 5850
-F 0 "R70" V 1030 5850 50  0000 C C
+F 0 "R69" V 1030 5850 50  0000 C C
 F 1 "47R" V 950 5850 50  0000 C C
 	1    950  5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R69
+L R R68
 U 1 1 48639D83
 P 1050 6150
-F 0 "R69" V 1130 6150 50  0000 C C
+F 0 "R68" V 1130 6150 50  0000 C C
 F 1 "47R" V 1050 6150 50  0000 C C
 	1    1050 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R68
+L R R67
 U 1 1 48639D82
 P 1150 5850
-F 0 "R68" V 1230 5850 50  0000 C C
+F 0 "R67" V 1230 5850 50  0000 C C
 F 1 "47R" V 1150 5850 50  0000 C C
 	1    1150 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R67
+L R R66
 U 1 1 48639D81
 P 1250 6150
-F 0 "R67" V 1330 6150 50  0000 C C
+F 0 "R66" V 1330 6150 50  0000 C C
 F 1 "47R" V 1250 6150 50  0000 C C
 	1    1250 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R66
+L R R65
 U 1 1 48639D80
 P 1350 5850
-F 0 "R66" V 1430 5850 50  0000 C C
+F 0 "R65" V 1430 5850 50  0000 C C
 F 1 "47R" V 1350 5850 50  0000 C C
 	1    1350 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R65
+L R R64
 U 1 1 48639D7F
 P 1450 6150
-F 0 "R65" V 1530 6150 50  0000 C C
+F 0 "R64" V 1530 6150 50  0000 C C
 F 1 "47R" V 1450 6150 50  0000 C C
 	1    1450 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R64
+L R R63
 U 1 1 48639D7E
 P 1550 5850
-F 0 "R64" V 1630 5850 50  0000 C C
+F 0 "R63" V 1630 5850 50  0000 C C
 F 1 "47R" V 1550 5850 50  0000 C C
 	1    1550 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R63
+L R R62
 U 1 1 48639D7D
 P 2150 6150
-F 0 "R63" V 2230 6150 50  0000 C C
+F 0 "R62" V 2230 6150 50  0000 C C
 F 1 "47R" V 2150 6150 50  0000 C C
 	1    2150 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R62
+L R R61
 U 1 1 48639D7C
 P 2250 5850
-F 0 "R62" V 2330 5850 50  0000 C C
+F 0 "R61" V 2330 5850 50  0000 C C
 F 1 "47R" V 2250 5850 50  0000 C C
 	1    2250 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R61
+L R R60
 U 1 1 48639D7B
 P 2350 6150
-F 0 "R61" V 2430 6150 50  0000 C C
+F 0 "R60" V 2430 6150 50  0000 C C
 F 1 "47R" V 2350 6150 50  0000 C C
 	1    2350 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R60
+L R R59
 U 1 1 48639D7A
 P 2450 5850
-F 0 "R60" V 2530 5850 50  0000 C C
+F 0 "R59" V 2530 5850 50  0000 C C
 F 1 "47R" V 2450 5850 50  0000 C C
 	1    2450 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R59
+L R R58
 U 1 1 48639D79
 P 2550 6150
-F 0 "R59" V 2630 6150 50  0000 C C
+F 0 "R58" V 2630 6150 50  0000 C C
 F 1 "47R" V 2550 6150 50  0000 C C
 	1    2550 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R58
+L R R57
 U 1 1 48639D78
 P 2650 5850
-F 0 "R58" V 2730 5850 50  0000 C C
+F 0 "R57" V 2730 5850 50  0000 C C
 F 1 "47R" V 2650 5850 50  0000 C C
 	1    2650 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R57
+L R R56
 U 1 1 48639D77
 P 2750 6150
-F 0 "R57" V 2830 6150 50  0000 C C
+F 0 "R56" V 2830 6150 50  0000 C C
 F 1 "47R" V 2750 6150 50  0000 C C
 	1    2750 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R56
+L R R55
 U 1 1 48639D76
 P 2850 5850
-F 0 "R56" V 2930 5850 50  0000 C C
+F 0 "R55" V 2930 5850 50  0000 C C
 F 1 "47R" V 2850 5850 50  0000 C C
 	1    2850 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R55
+L R R54
 U 1 1 48639D75
 P 3450 6150
-F 0 "R55" V 3530 6150 50  0000 C C
+F 0 "R54" V 3530 6150 50  0000 C C
 F 1 "47R" V 3450 6150 50  0000 C C
 	1    3450 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R54
+L R R53
 U 1 1 48639D74
 P 3550 5850
-F 0 "R54" V 3630 5850 50  0000 C C
+F 0 "R53" V 3630 5850 50  0000 C C
 F 1 "47R" V 3550 5850 50  0000 C C
 	1    3550 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R53
+L R R52
 U 1 1 48639D73
 P 3650 6150
-F 0 "R53" V 3730 6150 50  0000 C C
+F 0 "R52" V 3730 6150 50  0000 C C
 F 1 "47R" V 3650 6150 50  0000 C C
 	1    3650 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R52
+L R R51
 U 1 1 48639D72
 P 3750 5850
-F 0 "R52" V 3830 5850 50  0000 C C
+F 0 "R51" V 3830 5850 50  0000 C C
 F 1 "47R" V 3750 5850 50  0000 C C
 	1    3750 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R51
+L R R50
 U 1 1 48639D71
 P 3850 6150
-F 0 "R51" V 3930 6150 50  0000 C C
+F 0 "R50" V 3930 6150 50  0000 C C
 F 1 "47R" V 3850 6150 50  0000 C C
 	1    3850 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R50
+L R R49
 U 1 1 48639D70
 P 3950 5850
-F 0 "R50" V 4030 5850 50  0000 C C
+F 0 "R49" V 4030 5850 50  0000 C C
 F 1 "47R" V 3950 5850 50  0000 C C
 	1    3950 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R49
+L R R48
 U 1 1 48639D6F
 P 4050 6150
-F 0 "R49" V 4130 6150 50  0000 C C
+F 0 "R48" V 4130 6150 50  0000 C C
 F 1 "47R" V 4050 6150 50  0000 C C
 	1    4050 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R48
+L R R47
 U 1 1 48639D6E
 P 4150 5850
-F 0 "R48" V 4230 5850 50  0000 C C
+F 0 "R47" V 4230 5850 50  0000 C C
 F 1 "47R" V 4150 5850 50  0000 C C
 	1    4150 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R47
+L R R46
 U 1 1 48639D6D
 P 4750 6150
-F 0 "R47" V 4830 6150 50  0000 C C
+F 0 "R46" V 4830 6150 50  0000 C C
 F 1 "47R" V 4750 6150 50  0000 C C
 	1    4750 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R46
+L R R45
 U 1 1 48639D6C
 P 4850 5850
-F 0 "R46" V 4930 5850 50  0000 C C
+F 0 "R45" V 4930 5850 50  0000 C C
 F 1 "47R" V 4850 5850 50  0000 C C
 	1    4850 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R45
+L R R44
 U 1 1 48639D6B
 P 4950 6150
-F 0 "R45" V 5030 6150 50  0000 C C
+F 0 "R44" V 5030 6150 50  0000 C C
 F 1 "47R" V 4950 6150 50  0000 C C
 	1    4950 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R44
+L R R43
 U 1 1 48639D6A
 P 5050 5850
-F 0 "R44" V 5130 5850 50  0000 C C
+F 0 "R43" V 5130 5850 50  0000 C C
 F 1 "47R" V 5050 5850 50  0000 C C
 	1    5050 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R43
+L R R42
 U 1 1 48639D69
 P 5150 6150
-F 0 "R43" V 5230 6150 50  0000 C C
+F 0 "R42" V 5230 6150 50  0000 C C
 F 1 "47R" V 5150 6150 50  0000 C C
 	1    5150 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R42
+L R R41
 U 1 1 48639D68
 P 5250 5850
-F 0 "R42" V 5330 5850 50  0000 C C
+F 0 "R41" V 5330 5850 50  0000 C C
 F 1 "47R" V 5250 5850 50  0000 C C
 	1    5250 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R41
+L R R40
 U 1 1 48639D67
 P 5350 6150
-F 0 "R41" V 5430 6150 50  0000 C C
+F 0 "R40" V 5430 6150 50  0000 C C
 F 1 "47R" V 5350 6150 50  0000 C C
 	1    5350 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R40
+L R R39
 U 1 1 48639D66
 P 5450 5850
-F 0 "R40" V 5530 5850 50  0000 C C
+F 0 "R39" V 5530 5850 50  0000 C C
 F 1 "47R" V 5450 5850 50  0000 C C
 	1    5450 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R39
+L R R38
 U 1 1 48639D65
 P 6050 6150
-F 0 "R39" V 6130 6150 50  0000 C C
+F 0 "R38" V 6130 6150 50  0000 C C
 F 1 "47R" V 6050 6150 50  0000 C C
 	1    6050 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R38
+L R R37
 U 1 1 48639D64
 P 6150 5850
-F 0 "R38" V 6230 5850 50  0000 C C
+F 0 "R37" V 6230 5850 50  0000 C C
 F 1 "47R" V 6150 5850 50  0000 C C
 	1    6150 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R37
+L R R36
 U 1 1 48639D63
 P 6250 6150
-F 0 "R37" V 6330 6150 50  0000 C C
+F 0 "R36" V 6330 6150 50  0000 C C
 F 1 "47R" V 6250 6150 50  0000 C C
 	1    6250 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R36
+L R R35
 U 1 1 48639D62
 P 6350 5850
-F 0 "R36" V 6430 5850 50  0000 C C
+F 0 "R35" V 6430 5850 50  0000 C C
 F 1 "47R" V 6350 5850 50  0000 C C
 	1    6350 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R35
+L R R34
 U 1 1 48639D61
 P 6450 6150
-F 0 "R35" V 6530 6150 50  0000 C C
+F 0 "R34" V 6530 6150 50  0000 C C
 F 1 "47R" V 6450 6150 50  0000 C C
 	1    6450 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R34
+L R R33
 U 1 1 48639D60
 P 6550 5850
-F 0 "R34" V 6630 5850 50  0000 C C
+F 0 "R33" V 6630 5850 50  0000 C C
 F 1 "47R" V 6550 5850 50  0000 C C
 	1    6550 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R33
+L R R32
 U 1 1 48639D5F
 P 6650 6150
-F 0 "R33" V 6730 6150 50  0000 C C
+F 0 "R32" V 6730 6150 50  0000 C C
 F 1 "47R" V 6650 6150 50  0000 C C
 	1    6650 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R32
+L R R31
 U 1 1 48639D5E
 P 6750 5850
-F 0 "R32" V 6830 5850 50  0000 C C
+F 0 "R31" V 6830 5850 50  0000 C C
 F 1 "47R" V 6750 5850 50  0000 C C
 	1    6750 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R31
+L R R30
 U 1 1 48639D5C
 P 7350 6150
-F 0 "R31" V 7430 6150 50  0000 C C
+F 0 "R30" V 7430 6150 50  0000 C C
 F 1 "47R" V 7350 6150 50  0000 C C
 	1    7350 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R30
+L R R29
 U 1 1 48639D5B
 P 7450 5850
-F 0 "R30" V 7530 5850 50  0000 C C
+F 0 "R29" V 7530 5850 50  0000 C C
 F 1 "47R" V 7450 5850 50  0000 C C
 	1    7450 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R29
+L R R28
 U 1 1 48639D5A
 P 7550 6150
-F 0 "R29" V 7630 6150 50  0000 C C
+F 0 "R28" V 7630 6150 50  0000 C C
 F 1 "47R" V 7550 6150 50  0000 C C
 	1    7550 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R28
+L R R27
 U 1 1 48639D59
 P 7650 5850
-F 0 "R28" V 7730 5850 50  0000 C C
+F 0 "R27" V 7730 5850 50  0000 C C
 F 1 "47R" V 7650 5850 50  0000 C C
 	1    7650 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R27
+L R R26
 U 1 1 48639D58
 P 7750 6150
-F 0 "R27" V 7830 6150 50  0000 C C
+F 0 "R26" V 7830 6150 50  0000 C C
 F 1 "47R" V 7750 6150 50  0000 C C
 	1    7750 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R26
+L R R25
 U 1 1 48639D57
 P 7850 5850
-F 0 "R26" V 7930 5850 50  0000 C C
+F 0 "R25" V 7930 5850 50  0000 C C
 F 1 "47R" V 7850 5850 50  0000 C C
 	1    7850 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R25
+L R R24
 U 1 1 48639D56
 P 7950 6150
-F 0 "R25" V 8030 6150 50  0000 C C
+F 0 "R24" V 8030 6150 50  0000 C C
 F 1 "47R" V 7950 6150 50  0000 C C
 	1    7950 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R24
+L R R23
 U 1 1 48639D55
 P 8050 5850
-F 0 "R24" V 8130 5850 50  0000 C C
+F 0 "R23" V 8130 5850 50  0000 C C
 F 1 "47R" V 8050 5850 50  0000 C C
 	1    8050 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R23
+L R R22
 U 1 1 48639D54
 P 8650 6150
-F 0 "R23" V 8730 6150 50  0000 C C
+F 0 "R22" V 8730 6150 50  0000 C C
 F 1 "47R" V 8650 6150 50  0000 C C
 	1    8650 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R22
+L R R21
 U 1 1 48639D53
 P 8750 5850
-F 0 "R22" V 8830 5850 50  0000 C C
+F 0 "R21" V 8830 5850 50  0000 C C
 F 1 "47R" V 8750 5850 50  0000 C C
 	1    8750 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R21
+L R R20
 U 1 1 48639D52
 P 8850 6150
-F 0 "R21" V 8930 6150 50  0000 C C
+F 0 "R20" V 8930 6150 50  0000 C C
 F 1 "47R" V 8850 6150 50  0000 C C
 	1    8850 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R20
+L R R19
 U 1 1 48639D51
 P 8950 5850
-F 0 "R20" V 9030 5850 50  0000 C C
+F 0 "R19" V 9030 5850 50  0000 C C
 F 1 "47R" V 8950 5850 50  0000 C C
 	1    8950 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R19
+L R R18
 U 1 1 48639D50
 P 9050 6150
-F 0 "R19" V 9130 6150 50  0000 C C
+F 0 "R18" V 9130 6150 50  0000 C C
 F 1 "47R" V 9050 6150 50  0000 C C
 	1    9050 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R18
+L R R17
 U 1 1 48639D4F
 P 9150 5850
-F 0 "R18" V 9230 5850 50  0000 C C
+F 0 "R17" V 9230 5850 50  0000 C C
 F 1 "47R" V 9150 5850 50  0000 C C
 	1    9150 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R17
+L R R16
 U 1 1 48639D4E
 P 9250 6150
-F 0 "R17" V 9330 6150 50  0000 C C
+F 0 "R16" V 9330 6150 50  0000 C C
 F 1 "47R" V 9250 6150 50  0000 C C
 	1    9250 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R16
+L R R15
 U 1 1 48639D4D
 P 9350 5850
-F 0 "R16" V 9430 5850 50  0000 C C
+F 0 "R15" V 9430 5850 50  0000 C C
 F 1 "47R" V 9350 5850 50  0000 C C
 	1    9350 5850
 	1    0    0    -1  
@@ -1258,10 +1254,10 @@ SPI_MOSI
 Text GLabel 1150 2750 3    60   Input
 SPI_SCKL
 $Comp
-L GND #PWR017
+L GND #PWR015
 U 1 1 485B6135
 P 650 6700
-F 0 "#PWR017" H 650 6700 30  0001 C C
+F 0 "#PWR015" H 650 6700 30  0001 C C
 F 1 "GND" H 650 6630 30  0001 C C
 	1    650  6700
 	-1   0    0    -1  
@@ -1816,10 +1812,10 @@ F 1 "LED" H 9350 4900 50  0000 C C
 	0    -1   1    0   
 $EndComp
 $Comp
-L GND #PWR018
+L GND #PWR016
 U 1 1 485B6034
 P 10850 3250
-F 0 "#PWR018" H 10850 3250 30  0001 C C
+F 0 "#PWR016" H 10850 3250 30  0001 C C
 F 1 "GND" H 10850 3180 30  0001 C C
 	1    10850 3250
 	-1   0    0    -1  
