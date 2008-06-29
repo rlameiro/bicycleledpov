@@ -1,4 +1,4 @@
-#summary Description of tools used to develop and hack Bicycle LED POV. 		 
+#summary Description of tools used to develop and hack Bicycle LED POV.
 
 One of the objectives of the project is to use only Free Software tools as possible, since this is a community project does not make sense to share information and use proprietary tools, we want that everyone can use this tools, be able to freely hack Bicycle LED POV. 		 
 
@@ -23,6 +23,22 @@ One of the main reasons to use the Atmel MCUs is because there are very good too
 After reading about [http://www.atmel.com/dyn/resources/prod_documents/AVR_USB_Software.htm Atmel USB Software Library for AT90USBxxx Microcontrollers], was decided to use instead the [http://www.fourwalledcubicle.com/MyUSB.php Dean Camera's MyUSB library] because have better documentation and example applications. 		 
 ==IDE== 		 
 I use Anjuta or Quanta Plus, however, any text editor should be ok. 		 
+
 =Software= 		 
+
+Here I will let a list of software dev tools that I use. Maybe they aren't the best for everyone, but for me is with what I work. All OPEN SOURCE!
+
+==IDE / EDITORS==
+ * Scribes text editor - http://scribes.sourceforge.net/
+ * Geany - http://geany.uvena.de/
+ * IDLE - http://www.python.org/
+ * Gedit - http://www.gnome.org/projects/gedit/
+ * SPE IDE - http://pythonide.stani.be/
+
+==GUI BUILDERS==
+ * GUIBuilder - Tk gui builder - http://spectcl.sourceforge.net/
+
+==Languages/compilers==
+ * Python - http://www.python.org/
 
 
