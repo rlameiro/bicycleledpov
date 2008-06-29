@@ -38,39 +38,67 @@ from bledpov_ui import Bledpov
 import serial
 import os
 import tkMessageBox
+from sys import platform # import the platform object for system platform checking
 
 def infomsg():
+	"""This is the function that calls a Graphic Info message box
+	USAGE : infomsg("title", "text")
+	"""
 	in_msg = tkMessageBox.showinfo("test", "This is a test")
 	return in_msg
 def errormsg():
+	"""This is the function that calls a Graphic error message box
+	USAGE : errormsg("title", "text")
+	"""
 	err_msg = tkMessageBox.showerror("ERROR", "Command unsucsessful. \n Check if hardware is connected or \n check the serial port used.") 
 	
 	
 def scan():
+	"""This Function Searches for active serial port on your computer.
+	Scan() function uses two diferent methods to find the active serial port.
+	One of the methods is for the linux platform (linux kernel 2.x.x +) and the other 
+	for the windows 32bits platform. the choises is made using a conditional statement 
+	comparing the result of sys.platform object.
+	==== This function returns a list ====
+	"""
+	if sys.platform == "linux2": #Check if the system is Linux Kernel  2.x.x
 	
-	lista = []
-	lista = os.listdir('/dev/')
-
-	serial_ls =[]
-
-	for item in lista:
-		a = item[0:3]
-		if a == "tty":
-			serial_ls.append(item)
-	else:
-		pass
-
-	available = []
-
-	for item in serial_ls:
-		try:
-			s = serial.Serial("/dev/"+item)
-			available.append(s.portstr)
-			s.close()   
-		except serial.SerialException:
+		lista = []    
+		lista = os.listdir('/dev/')   #listing the devices present on the /dev folder
+    
+		serial_ls =[]
+    
+		for item in lista:  # Searches for item inside the /dev folder 
+			a = item[0:3]   #with the first "tty" letters (something like "$ ls /dev/tty* "
+			if a == "tty":
+				serial_ls.append(item)
+		else:
 			pass
-	return available
-
+    
+		available = []
+    
+		for item in serial_ls: #search active ports and append the result to a list
+			try:
+				s = serial.Serial("/dev/"+item)
+				available.append(s.portstr)
+				s.close()   
+			except serial.SerialException:
+				pass
+		return available
+	
+	elif sys.platform == "win32": #Check if system platform is Windows 32 bits
+		available = []	#Search active ports and append the result to a list
+		for i in range(1024):
+			try:
+				s = serial.Serial(i)
+				available.append( (i, s.portstr))
+				s.close()   #explicit close 'cause of delayed GC in java
+			except serial.SerialException:
+				pass
+		return available
+		
+	else:    # Shows a graphic error message box 
+		errormsg("Platform Error", "This software can only be runed in: \n Linx 2.xx and Windows 32 bits")
 
 
 
@@ -78,21 +106,12 @@ ports = scan()
 
 
 
-cmd1 = "\x01"
-cmd2 = "\x02"
-cmd3 = "\x03"
-cmd4 = "\x04"
+cmd1 = "\x01" #Firmware API Commands assignement
+cmd2 = "\x02" # |
+cmd3 = "\x03" # |
+cmd4 = "\x04" # |
 
-#def comm(cmd):
-#	ser = serial.Serial(serial_port, timeout = 5)
-#	ser.open
-#	ser.write(cmd)
-	#rsp = ser.read()
-#	ser.close
-	#if rsp == number:
-	#	print "command successful"
-	#else:
-	#	print "Didn't receive a response"
+
 
 # END USER CODE global
 
@@ -143,42 +162,50 @@ class CustomBledpov(Bledpov):
     # send_cmd1_command --
     #
     # Callback to handle send_cmd1 widget option -command
-    def send_cmd1_command(self, *args):
-    	serial_selected = self.serial_listbox.curselection()
-        selected_port = self.serial_listbox.get(serial_selected)
+    
+    
+    def send_cmd1_command(self, *args):   # command 1 button AKA Dummy command
+    	serial_selected = self.serial_listbox.curselection()     # Select the serial port that is 
+        selected_port = self.serial_listbox.get(serial_selected) # Highlighted in the list box
         
-    	ser = serial.Serial(selected_port, timeout = 5)
-    	ser.open
-    	ser.write(cmd1)
-    	rcv = ser.read()
-    	ser.close
+    	ser = serial.Serial(selected_port, timeout = 5)  # configure the serial port
+    	ser.open         # opens the serial port
+    	ser.write(cmd1)  # Send the command 1 to the serial port
+    	rcv = ser.read() # Reads the response (if any) and saves it in rcv var
+    	ser.close        # close the serial port  
     	
-    	if rcv == cmd1:
-		infomsg("Command sucessful", "Command sucessful")
+    	if rcv == cmd1:  # check if the command was sucessful (refer to the firmaware api)
+		infomsg("Command sucessful", "Command sucessful") # sucessful command message
 	else:
-		errormsg()
+		errormsg()                                        # error message     
+		
 
     # send_cmd2_command --
     #
     # Callback to handle send_cmd2 widget option -command
-    def send_cmd2_command(self, *args):
-    	serial_selected = self.serial_listbox.curselection()
-        selected_port = self.serial_listbox.get(serial_selected)
+    
+    
+    def send_cmd2_command(self, *args): #command 2 AKA Firmware version command (not debuged yet)
+    	serial_selected = self.serial_listbox.curselection()     # Select the serial port that is 
+        selected_port = self.serial_listbox.get(serial_selected) # highlighted in the listbox
         
-    	ser = serial.Serial(selected_port, timeout = 5)
-    	ser.open
-    	ser.write(cmd2)
-    	rcv = ser.read(3)
-    	ser.close
+    	ser = serial.Serial(selected_port, timeout = 5) # configure the serial port
+    	ser.open          # open te serial port
+    	ser.write(cmd2)   # send the command 2 to the serial port  
+    	rcv = ser.read(3) # read 3 bytes from serial port (refer to the firmware api)
+    	ser.close         # close the serial port
     	
     	if len(rcv) == 3:
 		infomsg("Command sucessful", "FIRMWARE VERSION:" + rcv)
 	else:
 		errormsg()
+		
 
     # send_cmd3_command --
     #
     # Callback to handle send_cmd3 widget option -command
+    
+    
     def send_cmd3_command(self, *args):
         pass
 
