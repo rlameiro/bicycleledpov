@@ -1,6 +1,10 @@
 #summary Description of tools used to develop and hack Bicycle LED POV.
 
-One of the objectives of the project is to use only Free Software tools as possible, since this is a community project does not make sense to share information and use proprietary tools, we want that everyone can use this tools, be able to freely hack Bicycle LED POV. 		 
+One of the objectives of the project is to use only Free Software tools as possible, since this is a community project does not make sense to share information and use proprietary tools, we want that everyone can use this tools, be able to freely hack Bicycle LED POV. 	
+
+=SVN=
+I founded this little gem that was a relief for me. I couldn't find my way with rapidSVN so I searched for others. The program is SVN Workbench, it is written in python over the pysvn module. Can be found here: http://pysvn.tigris.org/
+It works in GNU/Linux and Windows. Check it out :)	 
 
 =Schematic and PCB design= 		 
 There are at least two good candidates, [http://geda.seul.org/index.html gEDA] and [http://kicad.sourceforge.net/wiki/index.php/Main_Page KiCad] - both are availably in GNU/Linux Ubuntu repositories. 		 
@@ -40,5 +44,3 @@ Here I will let a list of software dev tools that I use. Maybe they aren't the b
 
 ==Languages/compilers==
  * Python - http://www.python.org/
-
-
