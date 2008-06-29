@@ -1,3 +1,20 @@
+==2008.06.29==
+===News from RicardoLameiro:==
+Today I added Some info about software development to the ToOls page and also for the SVN management.
+
+Added also one more function to the Firmware API - the Auto Scan feature.
+
+I made also some improvements to the script/software aimed to improve the cross platform ability, not yet fully tested. Also implemented the dummy command and the firmware version command but they are untested in real hardware :) so maybe it is not working. 
+
+The GUI suffered a major redesign since the last screenshot :). The animation/picture design is stopped, and it will be the most difficult part for me... still thinking how to do it, if anyone with python knowledge and GUI toolkits master knowledge is welcome to help. At this moment the GUI toolkit used is Tk, but I think that wxPython will be better for this purpose. Will see...
+
+I added some comments to the code to improve the readability of the code, it is still ugly but readable (python rocks!!).
+
+Over and out.
+
+RicardoLameiro 
+
+
 ==2008.06.25==
 ===News from DonaldZiems:===
 
