@@ -6,22 +6,15 @@ Commands are sent to the virtual serial port to interact with Bicycle LED POV.
 
 For each command sent, an answer with the value of the same command should be received - this works as a confirmation that command was received on Bicycle LED POV.
 
-=Auto Scan Feature=
-The firmware should have a auto scan feature for simplicity of usage to the end user.
-The implementation of a byte being send in a determined time interval, say for example  400 ms. The value of the byte could be 0xFE.
-
-This feature is needed for the PC software to find the hardware easily, therefore abstracting the user for knowing the port name, and speeding up the software speed at runtime.
-
 =Dummy command: command 1=
-This command do nothing. It's useful for knowing that firmware is answering by sending the same byte that it received (0x01)
+This command do nothing. It's useful for knowing that firmware is answering by sending the same byte that it received - 0x01.
 
-Usage: 1. thismeans send to the hardware 0x01 
-
+Usage: Send the value 0x01 to the hardware.
 
 =Retrieve Bicycle LED POV firmware version: command 2=
 This command returns the Bicycle LED POV firmware version.
 
-Usage: 2 (send to the hardware 0x02);receive: _byte_1_; _byte_2_; _byte_3_
+Usage: 0x02 (send the value 0x02 to the hardware);receive: _byte_1_; _byte_2_; _byte_3_
   * _byte_1_: major version number;
   * _byte_2_: minor version number;
   * _byte_3_: revision version number.
@@ -31,25 +24,30 @@ Example: Version 1.0.2
 =Test LEDs: command 3=
 This command is useful to test the LEDs hardware, by turning them on and off.
 
-Usage: "3" send 0x03 and then the test led number; _byte_1_; _byte_2_; _byte_3_; _byte_4_; _byte_5_; _byte_6_; _byte_7_; _byte_8_
+Usage: 0x03 (send the value 0x03 to the hardware); _byte_1_; _byte_2_; _byte_3_; _byte_4_; _byte_5_; _byte_6_; _byte_7_; _byte_8_
 
 _Byte_x_ bits represents each state of LEDs - bit 0 of _byte_1_ represents the state of the first LED.
 
 =Test sensor hall effect: command 4=
 This command is useful to test the sensor hall effect, by turning on and off the first LED when sensor hall effect state is on and off respectively.
 
-Usage: "4" send 0x04 and then 0x01 for Test ON or 0x00 for test OFF; _byte_1_
+Usage: 0x04 (send the value 0x04 to the hardware); _byte_1_
 
 _byte_1_ with value 1 to turn on the test and with value 0 to turn off the test.
 
 =Read byte from external EEPROM memory: command 5=
-send 0x05
+send 0x05; address high; address low.
 
 =Write byte to external EEPROM memory: command 6=
-send 0x06
+send 0x05; address high; address low; byte.
 
 =Read image from external EEPROM memory: command 7=
 send 0x07
 
 =Write image to external EEPROM memory: command 8=
 send 0x08
+
+=Auto identification=
+The hardware sends periodically on each 300ms the value 0xFE to the serial port. PC Software can look for this 0xFE value to identify a working Bicycle LED POV hardware on the serial port.
+
+If a command is received the Auto identification process is aborted within next 5 seconds.
