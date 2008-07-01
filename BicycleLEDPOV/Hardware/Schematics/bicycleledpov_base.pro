@@ -35,7 +35,7 @@ UseNetN=0
 LabSize=60
 [eeschema/libraries]
 LibName1=power
-LibName2=../KiCAD_library/at90usb162
+LibName2=./KiCAD_library/at90usb162
 LibName3=device
 LibName4=conn
 LibName5=linear
@@ -62,5 +62,5 @@ LibName25=cypress
 LibName26=siliconi
 LibName27=contrib
 LibName28=valves
-LibName29=../KiCAD_library/usb-mb-h
-LibName30=../KiCAD_library/a3213elhlt
+LibName29=./KiCAD_library/usb-mb-h
+LibName30=./KiCAD_library/a3213elhlt
