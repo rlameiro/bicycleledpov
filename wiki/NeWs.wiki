@@ -1,10 +1,14 @@
 ==2008.07.02==
 ===News from JpCasainho:==
-Today I did work on the DC-DC, here is a picture of DC-DC hardware I tested
+Today I did work on the DC-DC, here is a picture of the assembled circuit  - high quality version [http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080702-hardware-dc_dc.jpg here]:
 
 [http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080702-hardware-dc_dc-x600.jpg]
 
-Works very good, I will put more technical details later, as schematic.
+Here are the results on oscilloscope, with 100mA output current - channel 1 on Vout and channel 2 on positive side of schottky diode:
+
+[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/hardware-dc_dc-osciloscope-RL_47R-20080702-02.png]
+
+This DC-DC works very good. DonaldZiems will draw this DC-DC circuit on schematic and I will test it on my working prototype of Bicycle LED POV. See more information on PowerStage page.
 
 ==2008.06.29==
 ===News from RicardoLameiro:==
