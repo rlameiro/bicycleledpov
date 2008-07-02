@@ -1,17 +1,24 @@
-[http://farm3.static.flickr.com/2048/2527584688_fa368a22f7_o.jpg]
-
-The DC-DC is the NCP1450A - there is a error on name of the schematic.
-
-This is the power stage, with 2,4 volts input from two 1,2 volts NiMh rechargeable batteries in series.
-
-Output is 2,4 volts for LEDs and 5 volts for MCU, sensor hall effect and serial EEPROM memory.
-
-I will soon test this schematic - R1 is 180R - 1/4W, for having 28mA output current, to simulate the final load of the circuit on the 5 volts line.
-
 =Power calculations=
-==Vcc_5V==
+==Vcc +5V==
 The IC's that will be supplied with 5 volts are the MCU, the sensor hall effect and the serial EEPROM memory.
 
 I estimate no more than 15mA for MCU, 5mA for sensor hall effect and 8mA for serial EEPROM memory -- total of 28mA. The DC-DC should be dimensioned for this 28mA.
 
-==Vcc_2.4V==
+==Vcc +2.4V==
+LEDs will be drived with this voltage but with a resistor in series.
+
+
+
+
+
+=Development and testing of a DC-DC converter=
+On date 2 of July of 2008, JpCasainho assembled a DC-DC converter that uses 2,4 volts for Vin and outputs 5 volts with at least 100mA.
+
+The idea is to power with 5 volts the control circuit that uses the MCU, EEPROM memory and sensor hall effect, with just two NiMh cells in series (2,4 volts).
+
+Here is the DC-DC circuit at testing:
+
+[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080702-hardware-dc_dc-x600.jpg]
+
+And here is the result on oscilloscope, with RL = 100k:
+[http://code.google.com/p/bicycleledpov/source/browse/trunk/BicycleLEDPOV/Pictures/20080702-hardware-dc_dc-osciloscope-RL_100K-01.bmp]
