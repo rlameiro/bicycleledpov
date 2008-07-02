@@ -1,3 +1,11 @@
+==2008.07.02==
+===News from JpCasainho:==
+Today I did work on the DC-DC, here is a picture of DC-DC hardware I tested
+
+[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080702-hardware-dc_dc-x600.jpg]
+
+Works very good, I will put more technical details later, as schematic.
+
 ==2008.06.29==
 ===News from RicardoLameiro:==
 Today I added Some info about software development to the ToOls page and also for the SVN management.
