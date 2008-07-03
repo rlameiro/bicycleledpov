@@ -8,7 +8,7 @@ I estimate no more than 15mA for MCU, 5mA for sensor hall effect and 8mA for ser
 LEDs will be drived with this voltage but with a resistor in series.
 
 =Development and testing of a DC-DC converter=
-On date 2 of July of 2008, JpCasainho assembled a DC-DC converter that boots his 2,4 volts at input to 5 volts at his output, with at least 100mA of current at output.
+On date 2 of July of 2008, JpCasainho assembled a DC-DC converter that boots his 2,4 volts at input to 5 volts at his output, with at least 100mA of current at output. JpCasainho had as reference the [http://www.ladyada.net/make/mintyboost/ Minty Boost] circuit.
 
 The idea is to power with 5 volts the MCU, EEPROM memory and sensor hall effect, using just two `NiMh` cells in series - 2,4 volts.
 
@@ -16,7 +16,9 @@ Here is the DC-DC circuit at testing - high quality version [http://bicycleledpo
 
 [http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080702-hardware-dc_dc-x600.jpg]
 
-The DC-DC circuit is composed of MAX756 IC, a SGL1-40 schottky diode, a [http://uk.farnell.com/1463486/passives/product.us0?sku=bourns-sdr0805-100ml&_requestid=151361 coil of 10uH], two capacitors of 47uF-16V for Cin and Cout and one capacitor of 100nF.
+And the schematic:
+
+[http://bicycleledpov.googlecode.com/svn-history/r148/trunk/BicycleLEDPOV/Pictures/20080703-hardware-dc_dc_schematic.png]
 
 Two tests were made, using a RL of 100K and 47R to get ~50uA and 100mA respectively.
 
