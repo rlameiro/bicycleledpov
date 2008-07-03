@@ -20,4 +20,7 @@ The latest schematic version is always [http://code.google.com/p/bicycleledpov/s
 The latest PCB version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/BicycleLEDPOV/Hardware/Board available on SVN].
 
 =Pictures from actual prototype=
-[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080619-BicycleLEDPOV-prototype-02.jpg]
+
+[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080703-prototype-600x-01.jpg]
+
+[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080703-prototype-600x-02.jpg]
