@@ -13,6 +13,11 @@ Comment2 "(c) Donald Ziems"
 Comment3 ""
 Comment4 ""
 $EndDescr
+Wire Wire Line
+	9535 5960 9535 6050
+Connection ~ 7785 5080
+Wire Wire Line
+	8130 5080 7785 5080
 Connection ~ 3775 3665
 Wire Wire Line
 	3775 3760 3775 3665
@@ -24,34 +29,30 @@ Connection ~ 8095 2315
 Wire Wire Line
 	8095 2460 8095 2315
 Wire Wire Line
-	7950 2315 8375 2315
-Connection ~ 7785 5110
+	7950 2315 8095 2315
 Wire Wire Line
-	7785 5110 8685 5110
-Wire Wire Line
-	8685 5110 8685 4760
-Wire Wire Line
-	8685 4760 9035 4760
-Connection ~ 9535 6160
-Wire Wire Line
-	9535 6310 9535 5960
+	8095 2315 8375 2315
 Connection ~ 9535 5560
 Wire Wire Line
 	9285 5810 9285 5460
 Wire Wire Line
 	9285 5460 8985 5460
 Wire Wire Line
-	7335 5960 7785 5960
+	7335 5900 7785 5900
 Wire Wire Line
-	7785 5010 7785 5360
+	7785 4930 7785 5080
+Wire Wire Line
+	7785 5080 7785 5360
 Wire Wire Line
 	7785 5360 7885 5360
 Wire Wire Line
-	3640 3665 3915 3665
+	3915 3665 3775 3665
 Wire Wire Line
-	7335 5960 7335 5860
+	3775 3665 3640 3665
 Wire Wire Line
-	7785 5960 7785 5560
+	7335 5900 7335 5860
+Wire Wire Line
+	7785 5900 7785 5560
 Wire Wire Line
 	7785 5560 7885 5560
 Wire Wire Line
@@ -90,11 +91,15 @@ Connection ~ 2200 6320
 Wire Wire Line
 	2200 6320 1410 6320
 Wire Wire Line
-	2065 6775 2065 6050
+	2065 6050 2065 6110
+Wire Wire Line
+	2065 6110 2065 6775
 Wire Wire Line
 	7775 1615 7065 1615
 Wire Wire Line
-	2200 6050 2200 6775
+	2200 6775 2200 6320
+Wire Wire Line
+	2200 6320 2200 6050
 Wire Wire Line
 	1410 6320 1410 6110
 Connection ~ 4315 2265
@@ -103,12 +108,18 @@ Wire Wire Line
 Wire Wire Line
 	3665 2465 3665 2265
 Wire Wire Line
-	3665 2265 4515 2265
+	3665 2265 4315 2265
+Wire Wire Line
+	4315 2265 4515 2265
 Connection ~ 4315 2565
 Wire Wire Line
 	4515 3015 4315 3015
 Wire Wire Line
-	4315 3015 4315 2065
+	4315 3015 4315 2565
+Wire Wire Line
+	4315 2565 4315 2265
+Wire Wire Line
+	4315 2265 4315 2065
 Wire Wire Line
 	3365 2365 3365 2165
 Wire Wire Line
@@ -116,7 +127,9 @@ Wire Wire Line
 Wire Wire Line
 	3315 1515 3315 1615
 Wire Wire Line
-	3315 1115 3315 965 
+	3315 1115 3315 1015
+Wire Wire Line
+	3315 1015 3315 965 
 Wire Wire Line
 	3315 965  3465 965 
 Wire Wire Line
@@ -126,7 +139,9 @@ Wire Wire Line
 Wire Wire Line
 	4415 1665 4415 965 
 Wire Wire Line
-	4415 965  4065 965 
+	4415 965  4215 965 
+Wire Wire Line
+	4215 965  4065 965 
 Wire Wire Line
 	4215 1115 4215 965 
 Connection ~ 4215 965 
@@ -182,7 +197,9 @@ Wire Wire Line
 Wire Wire Line
 	8375 1715 8375 1615
 Wire Wire Line
-	8375 2415 8375 2215
+	8375 2215 8375 2315
+Wire Wire Line
+	8375 2315 8375 2415
 Connection ~ 8375 2315
 Wire Wire Line
 	7065 1815 7715 1815
@@ -195,11 +212,13 @@ Wire Wire Line
 Wire Wire Line
 	5380 5930 6080 5930
 Wire Wire Line
-	7335 5110 7335 5460
+	7335 5260 7335 5460
 Wire Wire Line
 	4415 3665 4515 3665
 Wire Wire Line
-	3775 4560 3775 4360
+	3775 4360 3775 4460
+Wire Wire Line
+	3775 4460 3775 4560
 Connection ~ 3775 4460
 Wire Wire Line
 	3140 3665 3090 3665
@@ -207,27 +226,24 @@ Wire Wire Line
 	3090 3665 3090 3565
 Wire Wire Line
 	7335 5460 7885 5460
-Wire Wire Line
-	7385 5260 7335 5260
 Connection ~ 7335 5260
 Wire Wire Line
 	8985 5660 9135 5660
 Wire Wire Line
 	9135 5660 9135 5810
 Wire Wire Line
-	9885 5960 9885 6160
-Wire Wire Line
-	9885 6160 9535 6160
-Wire Wire Line
 	9485 5360 9535 5360
 Wire Wire Line
 	9535 5360 9535 5560
 Wire Wire Line
-	8985 5360 9085 5360
+	9085 5360 9035 5360
+Wire Wire Line
+	9035 5360 8985 5360
 Connection ~ 9035 5360
 Wire Wire Line
-	10035 5560 8985 5560
-Connection ~ 9885 5560
+	8985 5560 9535 5560
+Wire Wire Line
+	9535 5560 9845 5560
 Wire Wire Line
 	8205 3515 8615 3515
 Wire Wire Line
@@ -236,9 +252,30 @@ Wire Wire Line
 	7580 3610 7580 3515
 Connection ~ 7580 3515
 Wire Wire Line
-	7065 3515 7705 3515
+	7705 3515 7580 3515
+Wire Wire Line
+	7580 3515 7065 3515
 Wire Wire Line
 	3445 3215 4515 3215
+Wire Wire Line
+	8730 5080 9035 5080
+Wire Wire Line
+	9035 5080 9035 5360
+Wire Wire Line
+	7385 5260 7335 5260
+Wire Wire Line
+	7335 5260 7180 5260
+Wire Wire Line
+	7180 5260 7180 5360
+$Comp
+L GND #PWR?
+U 1 1 486D47F9
+P 7180 5360
+F 0 "#PWR?" H 7180 5360 30  0001 C C
+F 1 "GND" H 7180 5290 30  0001 C C
+	1    7180 5360
+	1    0    0    -1  
+$EndComp
 $Comp
 L R R7
 U 1 1 486C773C
@@ -259,19 +296,6 @@ F 1 "330R" V 7700 2315 50  0000 C C
 	1    7700 2315
 	0    1    1    0   
 $EndComp
-Kmarq B 7065 3115 "Warning Pin 3state Unconnected" F=1
-Kmarq B 7065 3215 "Warning Pin 3state Unconnected" F=1
-Kmarq B 7785 5260 "Warning Pin passive Unconnected" F=1
-Kmarq B 8985 5360 "Warning Pin power_in not driven (Net 29)" F=1
-Kmarq B 4515 1765 "Warning: Pin unspc connected to Pin passive (net 19)" F=1
-Kmarq B 4515 1665 "Warning: Pin unspc connected to Pin passive (net 17)" F=1
-Kmarq B 4130 5930 "Warning: Pin output connected to Pin 3state (net 9)" F=1
-Kmarq B 3930 6230 "Warning Pin power_in not driven (Net 8)" F=1
-Kmarq B 5380 5830 "Warning Pin power_in not driven (Net 7)" F=1
-Kmarq B 5380 5830 "Warning: Pin power_in connected to Pin 3state (net 7)" F=1
-Kmarq B 9135 5810 "Warning Pin power_in not driven (Net 4)" F=1
-Kmarq B 4130 6130 "Error: Pin power_out connected to Pin power_out (net 3)" F=2
-Kmarq B 8985 5460 "Error: Pin output connected to Pin power_out (net 3)" F=2
 Text Label 3090 3565 1    60   ~
 5V
 Text Label 4315 2065 1    60   ~
@@ -279,29 +303,20 @@ Text Label 4315 2065 1    60   ~
 $Comp
 L INDUCTOR L1
 U 1 1 486CF54F
-P 9035 5060
-F 0 "L1" V 8985 5060 40  0000 C C
-F 1 "10uH" V 9135 5060 40  0000 C C
-	1    9035 5060
-	1    0    0    -1  
+P 8430 5080
+F 0 "L1" V 8380 5080 40  0000 C C
+F 1 "10uH" V 8530 5080 40  0000 C C
+	1    8430 5080
+	0    -1   -1   0   
 $EndComp
 $Comp
 L GND #PWR01
 U 1 1 486CF4E4
-P 9535 6310
-F 0 "#PWR01" H 9535 6310 30  0001 C C
-F 1 "GND" H 9535 6240 30  0001 C C
-	1    9535 6310
+P 9535 6050
+F 0 "#PWR01" H 9535 6050 30  0001 C C
+F 1 "GND" H 9535 5980 30  0001 C C
+	1    9535 6050
 	1    0    0    -1  
-$EndComp
-$Comp
-L C C10
-U 1 1 486CF4A2
-P 9885 5760
-F 0 "C10" H 9935 5860 50  0000 L C
-F 1 "1uF" H 9935 5660 50  0000 L C
-	1    9885 5760
-	1    0    0    1   
 $EndComp
 $Comp
 L +BATT #PWR02
@@ -351,10 +366,10 @@ $EndComp
 $Comp
 L +BATT #PWR04
 U 1 1 486CEEF7
-P 7785 5010
-F 0 "#PWR04" H 7785 4960 20  0001 C C
-F 1 "+BATT" H 7785 5110 30  0000 C C
-	1    7785 5010
+P 7785 4930
+F 0 "#PWR04" H 7785 4880 20  0001 C C
+F 1 "+BATT" H 7785 5030 30  0000 C C
+	1    7785 4930
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -380,20 +395,11 @@ L C C7
 U 1 1 486C73C2
 P 7335 5660
 F 0 "C7" H 7385 5760 50  0000 L C
-F 1 "1nF" H 7385 5560 50  0000 L C
+F 1 "100nF" H 7385 5560 50  0000 L C
 	1    7335 5660
 	1    0    0    1   
 $EndComp
-$Comp
-L GND #PWR06
-U 1 1 486C739F
-P 7335 5110
-F 0 "#PWR06" H 7335 5110 30  0001 C C
-F 1 "GND" H 7335 5040 30  0001 C C
-	1    7335 5110
-	-1   0    0    1   
-$EndComp
-Text Label 10035 5560 0    60   ~
+Text Label 9845 5560 0    60   ~
 5V
 NoConn ~ 7885 5660
 $Comp
