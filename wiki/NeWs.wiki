@@ -1,4 +1,12 @@
 ==2008.07.02==
+===News from JpCasainho:==
+Today I finish my prototype - it uses now just 2 AAA `NiMh` cells. Well, prototype just have 8 LEDs soldered instead of the 64 it should have - I am not motivated to solder all 64 LEDs.
+
+[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080703-prototype-600x-02.jpg]
+
+In the next 2 days we should release version 1.0 of the schematic. See more info on HaRdware page. 
+
+==2008.07.02==
 ===News from DonaldZiems:==
 Well, I goofed.  I needed to upload something, but not thinking, I used my Windows machine, which apparently uses Subversion 1.5, and automatically upgraded the subversion data to 1.5, which is incompatible with 1.4 (which is what Ubuntu uses in their repositories)  I'm working on downgrading it currently, so hopefully all will be well shortly.
 
