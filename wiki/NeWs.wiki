@@ -5,6 +5,9 @@ Well, I goofed.  I needed to upload something, but not thinking, I used my Windo
 Update:
 Turns out, I can read using subversion 1.4.6 on my Hardy Heron computer, but not using subversion 1.4.4 on my Gutsy Gibbon computer.  Still working on a fix.
 
+Update:
+Should be all fixed now.
+
 
 ===News from JpCasainho:==
 Today I did work on the DC-DC, here is a picture of the assembled circuit  - high quality version [http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080702-hardware-dc_dc.jpg here]:
