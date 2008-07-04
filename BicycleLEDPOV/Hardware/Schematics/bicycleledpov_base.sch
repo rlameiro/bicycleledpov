@@ -5,7 +5,7 @@ EELAYER END
 $Descr A4 11700 8267
 Sheet 1 2
 Title "Bicycle LED POV"
-Date "3 jul 2008"
+Date "4 jul 2008"
 Rev "0.1.0"
 Comp "http://code.google.com/p/bicycleledpov"
 Comment1 "(c) Jorge Pinto"
@@ -13,241 +13,255 @@ Comment2 "(c) Donald Ziems"
 Comment3 ""
 Comment4 ""
 $EndDescr
+Kmarq B 8985 5360 "Warning Pin power_in not driven (Net 26)" F=1
+Kmarq B 9135 5810 "Warning Pin power_in not driven (Net 23)" F=1
+Kmarq B 8985 5460 "Error: Pin output connected to Pin power_out (net 21)" F=2
+Kmarq B 5380 5830 "Warning Pin power_in not driven (Net 20)" F=1
+Kmarq B 5380 5830 "Warning: Pin power_in connected to Pin 3state (net 20)" F=1
+Kmarq B 4130 5930 "Warning: Pin output connected to Pin 3state (net 19)" F=1
+Kmarq B 4515 1765 "Warning: Pin unspc connected to Pin passive (net 13)" F=1
+Kmarq B 4515 1665 "Warning: Pin unspc connected to Pin passive (net 12)" F=1
+Wire Wire Line
+	7265 5900 7785 5900
+Connection ~ 7785 5260
+Wire Wire Line
+	7715 5260 7785 5260
+Wire Wire Line
+	2750 3665 3140 3665
+Wire Wire Line
+	9535 5960 9535 6050
+Connection ~ 7785 5080
+Wire Wire Line
+	8130 5080 7785 5080
+Connection ~ 3775 3665
+Wire Wire Line
+	3775 3760 3775 3665
+Wire Wire Line
+	3445 3115 4515 3115
+Wire Wire Line
+	7065 2315 7450 2315
+Connection ~ 8095 2315
+Wire Wire Line
+	8095 2460 8095 2315
+Wire Wire Line
+	8375 2315 7950 2315
+Connection ~ 9535 5560
+Wire Wire Line
+	9285 5810 9285 5460
+Wire Wire Line
+	9285 5460 8985 5460
+Wire Wire Line
+	7785 4930 7785 5360
+Wire Wire Line
+	7785 5360 7885 5360
+Wire Wire Line
+	3640 3665 3915 3665
+Wire Wire Line
+	7265 5900 7265 5860
+Wire Wire Line
+	7785 5900 7785 5560
+Wire Wire Line
+	7785 5560 7885 5560
+Wire Wire Line
+	4130 5830 3580 5830
+Wire Wire Line
+	4030 6230 4030 6130
+Wire Wire Line
+	4030 6130 4130 6130
+Wire Wire Line
+	5380 6030 5930 6030
+Wire Wire Line
+	5380 6130 5930 6130
+Wire Wire Line
+	5380 5830 6080 5830
+Wire Wire Line
+	8095 2860 8095 2960
+Wire Wire Line
+	8375 3015 8375 3115
+Wire Wire Line
+	7580 4110 7580 4210
+Wire Wire Line
+	2595 3015 2945 3015
+Wire Wire Line
+	2595 3115 2945 3115
+Wire Wire Line
+	7650 6750 7125 6750
+Wire Wire Line
+	9700 6750 9300 6750
+Wire Wire Line
+	7535 2910 7535 2915
+Wire Wire Line
+	7535 2915 7065 2915
+Wire Wire Line
+	7065 2615 7595 2615
+Connection ~ 2200 6320
+Wire Wire Line
+	2200 6320 1410 6320
+Wire Wire Line
+	2065 6775 2065 6050
+Wire Wire Line
+	7775 1615 7065 1615
+Wire Wire Line
+	2200 6050 2200 6775
+Wire Wire Line
+	1410 6320 1410 6110
+Connection ~ 4315 2265
+Wire Wire Line
+	4015 2965 4015 2865
+Wire Wire Line
+	3665 2465 3665 2265
+Wire Wire Line
+	3665 2265 4515 2265
+Connection ~ 4315 2565
+Wire Wire Line
+	4515 3015 4315 3015
+Wire Wire Line
+	4315 3015 4315 2065
+Wire Wire Line
+	3365 2365 3365 2165
+Wire Wire Line
+	3365 2165 4515 2165
+Wire Wire Line
+	3315 1515 3315 1615
+Wire Wire Line
+	3315 1115 3315 965 
+Wire Wire Line
+	3315 965  3465 965 
+Wire Wire Line
+	4215 1515 4215 1615
+Wire Wire Line
+	4515 1665 4415 1665
+Wire Wire Line
+	4415 1665 4415 965 
+Wire Wire Line
+	4415 965  4065 965 
+Wire Wire Line
+	4215 1115 4215 965 
+Connection ~ 4215 965 
+Wire Wire Line
+	4515 1765 3465 1765
+Wire Wire Line
+	3465 1765 3465 1015
+Wire Wire Line
+	3465 1015 3315 1015
+Connection ~ 3315 1015
+Wire Wire Line
+	4315 2565 4515 2565
+Connection ~ 4315 2265
+Wire Wire Line
+	4515 2715 4215 2715
+Wire Wire Line
+	4215 2715 4215 2415
+Wire Wire Line
+	4215 2415 4015 2415
+Wire Wire Line
+	4015 2415 4015 2465
+Wire Wire Line
+	3665 2965 3665 2865
+Wire Wire Line
+	2315 6050 2315 6565
+Wire Wire Line
+	7715 1715 7065 1715
+Wire Wire Line
+	1910 6110 2065 6110
+Connection ~ 2065 6110
+Wire Wire Line
+	7515 2515 7065 2515
+Wire Wire Line
+	7595 2715 7065 2715
+Wire Wire Line
+	7595 2815 7065 2815
+Wire Wire Line
+	7530 3015 7065 3015
+Wire Wire Line
+	9300 6850 9750 6850
+Wire Wire Line
+	7650 6850 7125 6850
+Wire Wire Line
+	2945 3215 2595 3215
+Wire Wire Line
+	2595 2915 2645 2915
+Wire Wire Line
+	2645 2915 2645 2765
+Wire Wire Line
+	2645 2765 2745 2765
+Wire Wire Line
+	2745 2765 2745 2815
+Wire Wire Line
+	8375 2415 8375 2215
+Connection ~ 8375 2315
+Wire Wire Line
+	7065 1815 7715 1815
+Wire Wire Line
+	3580 5930 4130 5930
+Wire Wire Line
+	4130 6030 3930 6030
+Wire Wire Line
+	3930 6030 3930 6230
+Wire Wire Line
+	5380 5930 6080 5930
+Wire Wire Line
+	7265 5260 7265 5460
+Wire Wire Line
+	4415 3665 4515 3665
+Wire Wire Line
+	3775 4560 3775 4360
+Connection ~ 3775 4460
+Connection ~ 7265 5260
+Wire Wire Line
+	8985 5660 9135 5660
+Wire Wire Line
+	9135 5660 9135 5810
+Wire Wire Line
+	9485 5360 9535 5360
+Wire Wire Line
+	9535 5360 9535 5560
+Wire Wire Line
+	8985 5360 9085 5360
+Connection ~ 9035 5360
+Wire Wire Line
+	9845 5560 8985 5560
+Wire Wire Line
+	8205 3515 8615 3515
+Wire Wire Line
+	8615 3515 8615 3520
+Wire Wire Line
+	7580 3610 7580 3515
+Connection ~ 7580 3515
+Wire Wire Line
+	7065 3515 7705 3515
+Wire Wire Line
+	3445 3215 4515 3215
+Wire Wire Line
+	8730 5080 9035 5080
+Wire Wire Line
+	9035 5080 9035 5360
+Wire Wire Line
+	7315 5260 7110 5260
+Wire Wire Line
+	7110 5260 7110 5360
+Wire Wire Line
+	8375 1320 8375 1715
+Wire Wire Line
+	7265 5460 7885 5460
+NoConn ~ 7065 2215
+NoConn ~ 7065 3215
+NoConn ~ 7065 3115
 Text Label 4315 2065 0    60   ~
 VCC_5V
 Text Label 3930 6230 3    60   ~
 VCC_5V
-Wire Wire Line
-	8375 1320 8375 1715
-Wire Wire Line
-	7180 5360 7180 5260
-Wire Wire Line
-	7180 5260 7385 5260
-Wire Wire Line
-	9035 5360 9035 5080
-Wire Wire Line
-	9035 5080 8730 5080
-Wire Wire Line
-	3445 3215 4515 3215
-Wire Wire Line
-	7065 3515 7705 3515
-Connection ~ 7580 3515
-Wire Wire Line
-	7580 3610 7580 3515
-Wire Wire Line
-	8615 3520 8615 3515
-Wire Wire Line
-	8615 3515 8205 3515
-Wire Wire Line
-	9845 5560 8985 5560
-Connection ~ 9035 5360
-Wire Wire Line
-	8985 5360 9085 5360
-Wire Wire Line
-	9535 5560 9535 5360
-Wire Wire Line
-	9535 5360 9485 5360
-Wire Wire Line
-	9135 5810 9135 5660
-Wire Wire Line
-	9135 5660 8985 5660
-Connection ~ 7335 5260
-Wire Wire Line
-	7885 5460 7335 5460
-Connection ~ 3775 4460
-Wire Wire Line
-	3775 4560 3775 4360
-Wire Wire Line
-	4415 3665 4515 3665
-Wire Wire Line
-	7335 5460 7335 5260
-Wire Wire Line
-	5380 5930 6080 5930
-Wire Wire Line
-	3930 6230 3930 6030
-Wire Wire Line
-	3930 6030 4130 6030
-Wire Wire Line
-	3580 5930 4130 5930
-Wire Wire Line
-	7065 1815 7715 1815
-Connection ~ 8375 2315
-Wire Wire Line
-	8375 2415 8375 2215
-Wire Wire Line
-	2745 2815 2745 2765
-Wire Wire Line
-	2745 2765 2645 2765
-Wire Wire Line
-	2645 2765 2645 2915
-Wire Wire Line
-	2645 2915 2595 2915
-Wire Wire Line
-	2945 3215 2595 3215
-Wire Wire Line
-	7650 6850 7125 6850
-Wire Wire Line
-	9300 6850 9750 6850
-Wire Wire Line
-	7530 3015 7065 3015
-Wire Wire Line
-	7595 2815 7065 2815
-Wire Wire Line
-	7595 2715 7065 2715
-Wire Wire Line
-	7515 2515 7065 2515
-Connection ~ 2065 6110
-Wire Wire Line
-	1910 6110 2065 6110
-Wire Wire Line
-	7715 1715 7065 1715
-Wire Wire Line
-	2315 6050 2315 6565
-Wire Wire Line
-	3665 2965 3665 2865
-Wire Wire Line
-	4015 2465 4015 2415
-Wire Wire Line
-	4015 2415 4215 2415
-Wire Wire Line
-	4215 2415 4215 2715
-Wire Wire Line
-	4215 2715 4515 2715
-Connection ~ 4315 2265
-Wire Wire Line
-	4315 2565 4515 2565
-Connection ~ 3315 1015
-Wire Wire Line
-	3315 1015 3465 1015
-Wire Wire Line
-	3465 1015 3465 1765
-Wire Wire Line
-	3465 1765 4515 1765
-Connection ~ 4215 965 
-Wire Wire Line
-	4215 1115 4215 965 
-Wire Wire Line
-	4065 965  4415 965 
-Wire Wire Line
-	4415 965  4415 1665
-Wire Wire Line
-	4415 1665 4515 1665
-Wire Wire Line
-	4215 1515 4215 1615
-Wire Wire Line
-	3465 965  3315 965 
-Wire Wire Line
-	3315 965  3315 1115
-Wire Wire Line
-	3315 1515 3315 1615
-Wire Wire Line
-	4515 2165 3365 2165
-Wire Wire Line
-	3365 2165 3365 2365
-Wire Wire Line
-	4315 2065 4315 3015
-Wire Wire Line
-	4315 3015 4515 3015
-Connection ~ 4315 2565
-Wire Wire Line
-	4515 2265 3665 2265
-Wire Wire Line
-	3665 2265 3665 2465
-Wire Wire Line
-	4015 2965 4015 2865
-Connection ~ 4315 2265
-Wire Wire Line
-	1410 6110 1410 6320
-Wire Wire Line
-	2200 6050 2200 6775
-Wire Wire Line
-	7775 1615 7065 1615
-Wire Wire Line
-	2065 6775 2065 6050
-Wire Wire Line
-	1410 6320 2200 6320
-Connection ~ 2200 6320
-Wire Wire Line
-	7065 2615 7595 2615
-Wire Wire Line
-	7065 2915 7535 2915
-Wire Wire Line
-	7535 2915 7535 2910
-Wire Wire Line
-	9700 6750 9300 6750
-Wire Wire Line
-	7650 6750 7125 6750
-Wire Wire Line
-	2595 3115 2945 3115
-Wire Wire Line
-	2595 3015 2945 3015
-Wire Wire Line
-	7580 4110 7580 4210
-Wire Wire Line
-	8375 3015 8375 3115
-Wire Wire Line
-	8095 2860 8095 2960
-Wire Wire Line
-	5380 5830 6080 5830
-Wire Wire Line
-	5380 6130 5930 6130
-Wire Wire Line
-	5380 6030 5930 6030
-Wire Wire Line
-	4130 6130 4030 6130
-Wire Wire Line
-	4030 6130 4030 6230
-Wire Wire Line
-	4130 5830 3580 5830
-Wire Wire Line
-	7885 5560 7785 5560
-Wire Wire Line
-	7785 5560 7785 5900
-Wire Wire Line
-	7335 5860 7335 5900
-Wire Wire Line
-	3640 3665 3915 3665
-Wire Wire Line
-	7885 5360 7785 5360
-Wire Wire Line
-	7785 5360 7785 4930
-Wire Wire Line
-	7335 5900 7785 5900
-Wire Wire Line
-	8985 5460 9285 5460
-Wire Wire Line
-	9285 5460 9285 5810
-Connection ~ 9535 5560
-Wire Wire Line
-	8375 2315 7950 2315
-Wire Wire Line
-	8095 2460 8095 2315
-Connection ~ 8095 2315
-Wire Wire Line
-	7065 2315 7450 2315
-Wire Wire Line
-	3445 3115 4515 3115
-Wire Wire Line
-	3775 3760 3775 3665
-Connection ~ 3775 3665
-Wire Wire Line
-	8130 5080 7785 5080
-Connection ~ 7785 5080
-Wire Wire Line
-	9535 5960 9535 6050
-Wire Wire Line
-	2750 3665 3140 3665
 Text Label 8375 1715 1    60   ~
 VCC_5V
 Text Label 2750 3665 0    60   ~
 VCC_5V
 $Comp
-L GND #PWR?
+L GND #PWR01
 U 1 1 486D47F9
-P 7180 5360
-F 0 "#PWR?" H 7180 5360 30  0001 C C
-F 1 "GND" H 7180 5290 30  0001 C C
-	1    7180 5360
+P 7110 5360
+F 0 "#PWR01" H 7110 5360 30  0001 C C
+F 1 "GND" H 7110 5290 30  0001 C C
+	1    7110 5360
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -262,10 +276,10 @@ $EndComp
 Text Notes 2515 4110 0    80   ~
 Reset button
 $Comp
-L R R?
+L R R90
 U 1 1 486D41DE
 P 7700 2315
-F 0 "R?" V 7780 2315 50  0000 C C
+F 0 "R90" V 7780 2315 50  0000 C C
 F 1 "330R" V 7700 2315 50  0000 C C
 	1    7700 2315
 	0    1    1    0   
@@ -280,28 +294,28 @@ F 1 "10uH" V 8530 5080 40  0000 C C
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR01
+L GND #PWR02
 U 1 1 486CF4E4
 P 9535 6050
-F 0 "#PWR01" H 9535 6050 30  0001 C C
+F 0 "#PWR02" H 9535 6050 30  0001 C C
 F 1 "GND" H 9535 5980 30  0001 C C
 	1    9535 6050
 	1    0    0    -1  
 $EndComp
 $Comp
-L +BATT #PWR02
+L +BATT #PWR03
 U 1 1 486CF3FB
 P 9135 5810
-F 0 "#PWR02" H 9135 5760 20  0001 C C
+F 0 "#PWR03" H 9135 5760 20  0001 C C
 F 1 "+BATT" H 9135 5910 30  0000 C C
 	1    9135 5810
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR03
+L GND #PWR04
 U 1 1 486CF3F6
 P 9285 5810
-F 0 "#PWR03" H 9285 5810 30  0001 C C
+F 0 "#PWR04" H 9285 5810 30  0001 C C
 F 1 "GND" H 9285 5740 30  0001 C C
 	1    9285 5810
 	1    0    0    -1  
@@ -318,10 +332,10 @@ $EndComp
 $Comp
 L CAPAPOL C8
 U 1 1 486CF147
-P 7585 5260
-F 0 "C8" H 7635 5360 50  0000 L C
-F 1 "47uF" H 7635 5160 50  0000 L C
-	1    7585 5260
+P 7515 5260
+F 0 "C8" H 7565 5360 50  0000 L C
+F 1 "47uF" H 7565 5160 50  0000 L C
+	1    7515 5260
 	0    1    -1   0   
 $EndComp
 $Comp
@@ -334,19 +348,19 @@ F 1 "SGL1-40" H 9540 5425 40  0000 C C
 	1    0    0    -1  
 $EndComp
 $Comp
-L +BATT #PWR04
+L +BATT #PWR05
 U 1 1 486CEEF7
 P 7785 4930
-F 0 "#PWR04" H 7785 4880 20  0001 C C
+F 0 "#PWR05" H 7785 4880 20  0001 C C
 F 1 "+BATT" H 7785 5030 30  0000 C C
 	1    7785 4930
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L GND #PWR06
 U 1 1 486C7724
 P 3775 4560
-F 0 "#PWR05" H 3775 4560 30  0001 C C
+F 0 "#PWR06" H 3775 4560 30  0001 C C
 F 1 "GND" H 3775 4490 30  0001 C C
 	1    3775 4560
 	1    0    0    -1  
@@ -363,10 +377,10 @@ $EndComp
 $Comp
 L C C7
 U 1 1 486C73C2
-P 7335 5660
-F 0 "C7" H 7385 5760 50  0000 L C
-F 1 "100nF" H 7385 5560 50  0000 L C
-	1    7335 5660
+P 7265 5660
+F 0 "C7" H 7315 5760 50  0000 L C
+F 1 "100nF" H 7315 5560 50  0000 L C
+	1    7265 5660
 	1    0    0    1   
 $EndComp
 Text Label 9845 5560 0    60   ~
@@ -395,10 +409,10 @@ EEPROM_VCC
 Text Label 3580 5830 0    60   ~
 SPI_SS2
 $Comp
-L GND #PWR08
+L GND #PWR07
 U 1 1 48657747
 P 4030 6230
-F 0 "#PWR08" H 4030 6230 30  0001 C C
+F 0 "#PWR07" H 4030 6230 30  0001 C C
 F 1 "GND" H 4030 6160 30  0001 C C
 	1    4030 6230
 	1    0    0    -1  
@@ -414,10 +428,10 @@ EEPROM_VCC
 Text Label 7065 1815 0    60   ~
 EEPROM_VCC
 $Comp
-L GND #PWR09
+L GND #PWR08
 U 1 1 486512C8
 P 8095 2960
-F 0 "#PWR09" H 8095 2960 30  0001 C C
+F 0 "#PWR08" H 8095 2960 30  0001 C C
 F 1 "GND" H 8095 2890 30  0001 C C
 	1    8095 2960
 	1    0    0    -1  
@@ -441,18 +455,16 @@ F 1 "10K" V 8375 1965 50  0000 C C
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR011
+L GND #PWR09
 U 1 1 48650F13
 P 7580 4210
-F 0 "#PWR011" H 7580 4210 30  0001 C C
+F 0 "#PWR09" H 7580 4210 30  0001 C C
 F 1 "GND" H 7580 4140 30  0001 C C
 	1    7580 4210
 	1    0    0    -1  
 $EndComp
 Text Label 8340 3515 0    60   ~
 VBUS
-Text Label 7065 3515 0    60   ~
-PC4
 $Comp
 L R R2
 U 1 1 485D5056
@@ -463,10 +475,10 @@ F 1 "47K" V 7955 3515 50  0000 C C
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR012
+L GND #PWR010
 U 1 1 48650E1A
 P 2745 2815
-F 0 "#PWR012" H 2745 2815 30  0001 C C
+F 0 "#PWR010" H 2745 2815 30  0001 C C
 F 1 "GND" H 2745 2745 30  0001 C C
 	1    2745 2815
 	1    0    0    -1  
@@ -530,10 +542,10 @@ F 1 "A3213ELHLT" H 2210 5895 60  0000 C C
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR013
+L GND #PWR011
 U 1 1 4864FB94
 P 2315 6565
-F 0 "#PWR013" H 2315 6565 30  0001 C C
+F 0 "#PWR011" H 2315 6565 30  0001 C C
 F 1 "GND" H 2315 6495 30  0001 C C
 	1    2315 6565
 	1    0    0    -1  
@@ -553,19 +565,19 @@ F 1 "AT25128A" H 4680 6280 60  0000 C C
 $EndComp
 NoConn ~ 4515 3315
 $Comp
-L GND #PWR014
+L GND #PWR012
 U 1 1 4862F407
 P 4015 2965
-F 0 "#PWR014" H 4015 2965 30  0001 C C
+F 0 "#PWR012" H 4015 2965 30  0001 C C
 F 1 "GND" H 4015 2895 30  0001 C C
 	1    4015 2965
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR015
+L GND #PWR013
 U 1 1 4862F403
 P 3665 2965
-F 0 "#PWR015" H 3665 2965 30  0001 C C
+F 0 "#PWR013" H 3665 2965 30  0001 C C
 F 1 "GND" H 3665 2895 30  0001 C C
 	1    3665 2965
 	1    0    0    -1  
@@ -598,28 +610,28 @@ F 1 "AT90USB162" H 5515 2765 60  0000 C C
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR016
+L GND #PWR014
 U 1 1 4862F2EC
 P 3365 2365
-F 0 "#PWR016" H 3365 2365 30  0001 C C
+F 0 "#PWR014" H 3365 2365 30  0001 C C
 F 1 "GND" H 3365 2295 30  0001 C C
 	1    3365 2365
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR017
+L GND #PWR015
 U 1 1 4862F09A
 P 3315 1615
-F 0 "#PWR017" H 3315 1615 30  0001 C C
+F 0 "#PWR015" H 3315 1615 30  0001 C C
 F 1 "GND" H 3315 1545 30  0001 C C
 	1    3315 1615
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR018
+L GND #PWR016
 U 1 1 4862F018
 P 4215 1615
-F 0 "#PWR018" H 4215 1615 30  0001 C C
+F 0 "#PWR016" H 4215 1615 30  0001 C C
 F 1 "GND" H 4215 1545 30  0001 C C
 	1    4215 1615
 	1    0    0    -1  
@@ -634,7 +646,7 @@ NoConn ~ 7065 3815
 $Sheet
 S 7650 6700 1650 200 
 F0 "Registers and LEDs" 60
-F1 "Registers_and_LEDs/bicycleledpov-sheet_02.sch" 60
+F1 "./Registers_and_LEDs/bicycleledpov-sheet_02.sch" 60
 F2 "SPI_SS1" I R 9300 6750 60 
 F3 "SPI_SS0" I R 9300 6850 60 
 F4 "SPI_MOSI" I L 7650 6750 60 
@@ -643,10 +655,10 @@ $EndSheet
 Text Notes 8680 3050 1    80   ~
 Bootloader button
 $Comp
-L GND #PWR019
+L GND #PWR017
 U 1 1 485EAA84
 P 8375 3115
-F 0 "#PWR019" H 8375 3115 30  0001 C C
+F 0 "#PWR017" H 8375 3115 30  0001 C C
 F 1 "GND" H 8375 3045 30  0001 C C
 	1    8375 3115
 	1    0    0    -1  
