@@ -13,6 +13,8 @@ Comment2 "(c) Donald Ziems"
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 4150 1800 0    60   ~
+Vcc of the 74x595 shift registers is VBatt
 Wire Wire Line
 	7900 2150 7900 2500
 Wire Wire Line
