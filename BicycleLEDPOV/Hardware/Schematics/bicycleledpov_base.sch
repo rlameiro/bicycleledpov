@@ -13,26 +13,26 @@ Comment2 "(c) Donald Ziems"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Kmarq B 8985 5360 "Warning Pin power_in not driven (Net 26)" F=1
-Kmarq B 9135 5810 "Warning Pin power_in not driven (Net 23)" F=1
-Kmarq B 8985 5460 "Error: Pin output connected to Pin power_out (net 21)" F=2
-Kmarq B 5380 5830 "Warning Pin power_in not driven (Net 20)" F=1
-Kmarq B 5380 5830 "Warning: Pin power_in connected to Pin 3state (net 20)" F=1
-Kmarq B 4130 5930 "Warning: Pin output connected to Pin 3state (net 19)" F=1
-Kmarq B 4515 1765 "Warning: Pin unspc connected to Pin passive (net 13)" F=1
-Kmarq B 4515 1665 "Warning: Pin unspc connected to Pin passive (net 12)" F=1
 Wire Wire Line
-	7265 5900 7785 5900
-Connection ~ 7785 5260
+	4365 1025 4365 900 
 Wire Wire Line
-	7715 5260 7785 5260
+	4365 900  4065 900 
+Wire Wire Line
+	3335 900  3335 1765
+Wire Wire Line
+	3335 1765 4520 1765
+Wire Wire Line
+	7515 5950 8035 5950
+Connection ~ 8035 5310
+Wire Wire Line
+	8035 5310 7965 5310
 Wire Wire Line
 	2750 3665 3140 3665
 Wire Wire Line
-	9535 5960 9535 6050
-Connection ~ 7785 5080
+	9785 6010 9785 6100
+Connection ~ 8035 5130
 Wire Wire Line
-	8130 5080 7785 5080
+	8380 5130 8035 5130
 Connection ~ 3775 3665
 Wire Wire Line
 	3775 3760 3775 3665
@@ -44,36 +44,36 @@ Connection ~ 8095 2315
 Wire Wire Line
 	8095 2460 8095 2315
 Wire Wire Line
-	8375 2315 7950 2315
-Connection ~ 9535 5560
+	7950 2315 8375 2315
+Connection ~ 9785 5610
 Wire Wire Line
-	9285 5810 9285 5460
+	9535 5860 9535 5510
 Wire Wire Line
-	9285 5460 8985 5460
+	9535 5510 9235 5510
 Wire Wire Line
-	7785 4930 7785 5360
+	8035 4980 8035 5410
 Wire Wire Line
-	7785 5360 7885 5360
+	8035 5410 8135 5410
 Wire Wire Line
 	3640 3665 3915 3665
 Wire Wire Line
-	7265 5900 7265 5860
+	7515 5950 7515 5910
 Wire Wire Line
-	7785 5900 7785 5560
+	8035 5950 8035 5610
 Wire Wire Line
-	7785 5560 7885 5560
+	8035 5610 8135 5610
 Wire Wire Line
-	4130 5830 3580 5830
+	4350 6065 3800 6065
 Wire Wire Line
-	4030 6230 4030 6130
+	4250 6465 4250 6365
 Wire Wire Line
-	4030 6130 4130 6130
+	4250 6365 4350 6365
 Wire Wire Line
-	5380 6030 5930 6030
+	5600 6265 6150 6265
 Wire Wire Line
-	5380 6130 5930 6130
+	5600 6365 6150 6365
 Wire Wire Line
-	5380 5830 6080 5830
+	5600 6065 6300 6065
 Wire Wire Line
 	8095 2860 8095 2960
 Wire Wire Line
@@ -94,17 +94,17 @@ Wire Wire Line
 	7535 2915 7065 2915
 Wire Wire Line
 	7065 2615 7595 2615
-Connection ~ 2200 6320
+Connection ~ 2200 6570
 Wire Wire Line
-	2200 6320 1410 6320
+	2200 6570 1410 6570
 Wire Wire Line
-	2065 6775 2065 6050
+	2065 7025 2065 6300
 Wire Wire Line
 	7775 1615 7065 1615
 Wire Wire Line
-	2200 6050 2200 6775
+	2200 6300 2200 7025
 Wire Wire Line
-	1410 6320 1410 6110
+	1410 6570 1410 6360
 Connection ~ 4315 2265
 Wire Wire Line
 	4015 2965 4015 2865
@@ -122,29 +122,12 @@ Wire Wire Line
 Wire Wire Line
 	3365 2165 4515 2165
 Wire Wire Line
-	3315 1515 3315 1615
+	3161 1450 3161 1550
 Wire Wire Line
-	3315 1115 3315 965 
+	3161 1050 3161 900 
 Wire Wire Line
-	3315 965  3465 965 
-Wire Wire Line
-	4215 1515 4215 1615
-Wire Wire Line
-	4515 1665 4415 1665
-Wire Wire Line
-	4415 1665 4415 965 
-Wire Wire Line
-	4415 965  4065 965 
-Wire Wire Line
-	4215 1115 4215 965 
-Connection ~ 4215 965 
-Wire Wire Line
-	4515 1765 3465 1765
-Wire Wire Line
-	3465 1765 3465 1015
-Wire Wire Line
-	3465 1015 3315 1015
-Connection ~ 3315 1015
+	3161 900  3465 900 
+Connection ~ 3161 950 
 Wire Wire Line
 	4315 2565 4515 2565
 Connection ~ 4315 2265
@@ -159,12 +142,12 @@ Wire Wire Line
 Wire Wire Line
 	3665 2965 3665 2865
 Wire Wire Line
-	2315 6050 2315 6565
+	2315 6300 2315 6815
 Wire Wire Line
 	7715 1715 7065 1715
 Wire Wire Line
-	1910 6110 2065 6110
-Connection ~ 2065 6110
+	1910 6360 2065 6360
+Connection ~ 2065 6360
 Wire Wire Line
 	7515 2515 7065 2515
 Wire Wire Line
@@ -193,34 +176,34 @@ Connection ~ 8375 2315
 Wire Wire Line
 	7065 1815 7715 1815
 Wire Wire Line
-	3580 5930 4130 5930
+	3800 6165 4350 6165
 Wire Wire Line
-	4130 6030 3930 6030
+	4350 6265 4150 6265
 Wire Wire Line
-	3930 6030 3930 6230
+	4150 6265 4150 6465
 Wire Wire Line
-	5380 5930 6080 5930
+	5600 6165 6300 6165
 Wire Wire Line
-	7265 5260 7265 5460
+	7515 5310 7515 5510
 Wire Wire Line
 	4415 3665 4515 3665
 Wire Wire Line
 	3775 4560 3775 4360
 Connection ~ 3775 4460
-Connection ~ 7265 5260
+Connection ~ 7515 5310
 Wire Wire Line
-	8985 5660 9135 5660
+	9235 5710 9385 5710
 Wire Wire Line
-	9135 5660 9135 5810
+	9385 5710 9385 5860
 Wire Wire Line
-	9485 5360 9535 5360
+	9735 5410 9785 5410
 Wire Wire Line
-	9535 5360 9535 5560
+	9785 5410 9785 5610
 Wire Wire Line
-	8985 5360 9085 5360
-Connection ~ 9035 5360
+	9235 5410 9335 5410
+Connection ~ 9285 5410
 Wire Wire Line
-	9845 5560 8985 5560
+	10095 5610 9235 5610
 Wire Wire Line
 	8205 3515 8615 3515
 Wire Wire Line
@@ -233,23 +216,43 @@ Wire Wire Line
 Wire Wire Line
 	3445 3215 4515 3215
 Wire Wire Line
-	8730 5080 9035 5080
+	8980 5130 9285 5130
 Wire Wire Line
-	9035 5080 9035 5360
+	9285 5130 9285 5410
 Wire Wire Line
-	7315 5260 7110 5260
+	7565 5310 7360 5310
 Wire Wire Line
-	7110 5260 7110 5360
+	7360 5310 7360 5410
 Wire Wire Line
 	8375 1320 8375 1715
 Wire Wire Line
-	7265 5460 7885 5460
+	7515 5510 8135 5510
+Connection ~ 3335 900 
+Wire Wire Line
+	4515 1665 4180 1665
+Wire Wire Line
+	4180 1665 4180 900 
+Connection ~ 4180 900 
+Wire Wire Line
+	4365 1425 4365 1550
+Text Notes 2150 3550 1    80   ~
+USB connector
+Text Notes 8450 4700 0    80   ~
+DC-DC
+Kmarq B 9235 5410 "Warning Pin power_in not driven (Net 26)" F=1
+Kmarq B 9385 5860 "Warning Pin power_in not driven (Net 23)" F=1
+Kmarq B 9235 5510 "Error: Pin output connected to Pin power_out (net 21)" F=2
+Kmarq B 5600 6065 "Warning Pin power_in not driven (Net 20)" F=1
+Kmarq B 5600 6065 "Warning: Pin power_in connected to Pin 3state (net 20)" F=1
+Kmarq B 4350 6165 "Warning: Pin output connected to Pin 3state (net 19)" F=1
+Kmarq B 4515 1765 "Warning: Pin unspc connected to Pin passive (net 13)" F=1
+Kmarq B 4515 1665 "Warning: Pin unspc connected to Pin passive (net 12)" F=1
 NoConn ~ 7065 2215
 NoConn ~ 7065 3215
 NoConn ~ 7065 3115
 Text Label 4315 2065 0    60   ~
 VCC_5V
-Text Label 3930 6230 3    60   ~
+Text Label 4150 6465 3    60   ~
 VCC_5V
 Text Label 8375 1715 1    60   ~
 VCC_5V
@@ -258,10 +261,10 @@ VCC_5V
 $Comp
 L GND #PWR01
 U 1 1 486D47F9
-P 7110 5360
-F 0 "#PWR01" H 7110 5360 30  0001 C C
-F 1 "GND" H 7110 5290 30  0001 C C
-	1    7110 5360
+P 7360 5410
+F 0 "#PWR01" H 7360 5410 30  0001 C C
+F 1 "GND" H 7360 5340 30  0001 C C
+	1    7360 5410
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -287,73 +290,73 @@ $EndComp
 $Comp
 L INDUCTOR L1
 U 1 1 486CF54F
-P 8430 5080
-F 0 "L1" V 8380 5080 40  0000 C C
-F 1 "10uH" V 8530 5080 40  0000 C C
-	1    8430 5080
+P 8680 5130
+F 0 "L1" V 8630 5130 40  0000 C C
+F 1 "10uH" V 8780 5130 40  0000 C C
+	1    8680 5130
 	0    -1   -1   0   
 $EndComp
 $Comp
 L GND #PWR02
 U 1 1 486CF4E4
-P 9535 6050
-F 0 "#PWR02" H 9535 6050 30  0001 C C
-F 1 "GND" H 9535 5980 30  0001 C C
-	1    9535 6050
+P 9785 6100
+F 0 "#PWR02" H 9785 6100 30  0001 C C
+F 1 "GND" H 9785 6030 30  0001 C C
+	1    9785 6100
 	1    0    0    -1  
 $EndComp
 $Comp
 L +BATT #PWR03
 U 1 1 486CF3FB
-P 9135 5810
-F 0 "#PWR03" H 9135 5760 20  0001 C C
-F 1 "+BATT" H 9135 5910 30  0000 C C
-	1    9135 5810
+P 9385 5860
+F 0 "#PWR03" H 9385 5810 20  0001 C C
+F 1 "+BATT" H 9385 5960 30  0000 C C
+	1    9385 5860
 	-1   0    0    1   
 $EndComp
 $Comp
 L GND #PWR04
 U 1 1 486CF3F6
-P 9285 5810
-F 0 "#PWR04" H 9285 5810 30  0001 C C
-F 1 "GND" H 9285 5740 30  0001 C C
-	1    9285 5810
+P 9535 5860
+F 0 "#PWR04" H 9535 5860 30  0001 C C
+F 1 "GND" H 9535 5790 30  0001 C C
+	1    9535 5860
 	1    0    0    -1  
 $EndComp
 $Comp
 L CAPAPOL C9
 U 1 1 486CF14F
-P 9535 5760
-F 0 "C9" H 9585 5860 50  0000 L C
-F 1 "47uF" H 9585 5660 50  0000 L C
-	1    9535 5760
+P 9785 5810
+F 0 "C9" H 9835 5910 50  0000 L C
+F 1 "47uF" H 9835 5710 50  0000 L C
+	1    9785 5810
 	1    0    0    -1  
 $EndComp
 $Comp
 L CAPAPOL C8
 U 1 1 486CF147
-P 7515 5260
-F 0 "C8" H 7565 5360 50  0000 L C
-F 1 "47uF" H 7565 5160 50  0000 L C
-	1    7515 5260
+P 7765 5310
+F 0 "C8" H 7815 5410 50  0000 L C
+F 1 "47uF" H 7815 5210 50  0000 L C
+	1    7765 5310
 	0    1    -1   0   
 $EndComp
 $Comp
 L DIODESCH D1
 U 1 1 486CF077
-P 9285 5360
-F 0 "D1" H 9285 5460 40  0000 C C
-F 1 "SGL1-40" H 9540 5425 40  0000 C C
-	1    9285 5360
+P 9535 5410
+F 0 "D1" H 9535 5510 40  0000 C C
+F 1 "SGL1-40" H 9790 5475 40  0000 C C
+	1    9535 5410
 	1    0    0    -1  
 $EndComp
 $Comp
 L +BATT #PWR05
 U 1 1 486CEEF7
-P 7785 4930
-F 0 "#PWR05" H 7785 4880 20  0001 C C
-F 1 "+BATT" H 7785 5030 30  0000 C C
-	1    7785 4930
+P 8035 4980
+F 0 "#PWR05" H 8035 4930 20  0001 C C
+F 1 "+BATT" H 8035 5080 30  0000 C C
+	1    8035 4980
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -377,22 +380,22 @@ $EndComp
 $Comp
 L C C7
 U 1 1 486C73C2
-P 7265 5660
-F 0 "C7" H 7315 5760 50  0000 L C
-F 1 "100nF" H 7315 5560 50  0000 L C
-	1    7265 5660
+P 7515 5710
+F 0 "C7" H 7565 5810 50  0000 L C
+F 1 "100nF" H 7565 5610 50  0000 L C
+	1    7515 5710
 	1    0    0    1   
 $EndComp
-Text Label 9845 5560 0    60   ~
+Text Label 10095 5610 0    60   ~
 VCC_5V
-NoConn ~ 7885 5660
+NoConn ~ 8135 5710
 $Comp
 L MAX756 U4
 U 1 1 486C71BA
-P 8435 5510
-F 0 "U4" H 8235 5210 60  0000 C C
-F 1 "MAX756" H 8385 5810 60  0000 C C
-	1    8435 5510
+P 8685 5560
+F 0 "U4" H 8485 5260 60  0000 C C
+F 1 "MAX756" H 8635 5860 60  0000 C C
+	1    8685 5560
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -404,26 +407,26 @@ F 1 "SW_PUSH" H 3775 3980 50  0000 C C
 	1    3775 4060
 	0    1    1    0   
 $EndComp
-Text Label 5380 5930 0    60   ~
+Text Label 5600 6165 0    60   ~
 EEPROM_VCC
-Text Label 3580 5830 0    60   ~
+Text Label 3800 6065 0    60   ~
 SPI_SS2
 $Comp
 L GND #PWR07
 U 1 1 48657747
-P 4030 6230
-F 0 "#PWR07" H 4030 6230 30  0001 C C
-F 1 "GND" H 4030 6160 30  0001 C C
-	1    4030 6230
+P 4250 6465
+F 0 "#PWR07" H 4250 6465 30  0001 C C
+F 1 "GND" H 4250 6395 30  0001 C C
+	1    4250 6465
 	1    0    0    -1  
 $EndComp
-Text Label 3580 5930 0    60   ~
+Text Label 3800 6165 0    60   ~
 SPI_MISO
-Text Label 5380 6130 0    60   ~
+Text Label 5600 6365 0    60   ~
 SPI_MOSI
-Text Label 5380 6030 0    60   ~
+Text Label 5600 6265 0    60   ~
 SPI_SCKL
-Text Label 5380 5830 0    60   ~
+Text Label 5600 6065 0    60   ~
 EEPROM_VCC
 Text Label 7065 1815 0    60   ~
 EEPROM_VCC
@@ -515,52 +518,52 @@ Text Label 7065 2615 0    60   ~
 SPI_SCKL
 Text Label 7065 2515 0    60   ~
 SPI_SS0
-Text Label 2065 6775 1    60   ~
+Text Label 2065 7025 1    60   ~
 SENSOR_VCC
 Text Label 7065 1715 0    60   ~
 SENSOR_VCC
 Text Label 7065 1615 0    60   ~
 SENSOR_DATA
-Text Label 2200 6775 1    60   ~
+Text Label 2200 7025 1    60   ~
 SENSOR_DATA
 $Comp
 L R R8
 U 1 1 4864FDF1
-P 1660 6110
-F 0 "R8" V 1740 6110 50  0000 C C
-F 1 "R" V 1660 6110 50  0000 C C
-	1    1660 6110
+P 1660 6360
+F 0 "R8" V 1740 6360 50  0000 C C
+F 1 "51K" V 1660 6360 50  0000 C C
+	1    1660 6360
 	0    1    1    0   
 $EndComp
 $Comp
 L A3213ELHLT U1
 U 1 1 4864FC23
-P 2200 5615
-F 0 "U1" H 2205 5990 60  0000 C C
-F 1 "A3213ELHLT" H 2210 5895 60  0000 C C
-	1    2200 5615
+P 2200 5865
+F 0 "U1" H 2205 6240 60  0000 C C
+F 1 "A3213ELHLT" H 2210 6145 60  0000 C C
+	1    2200 5865
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR011
 U 1 1 4864FB94
-P 2315 6565
-F 0 "#PWR011" H 2315 6565 30  0001 C C
-F 1 "GND" H 2315 6495 30  0001 C C
-	1    2315 6565
+P 2315 6815
+F 0 "#PWR011" H 2315 6815 30  0001 C C
+F 1 "GND" H 2315 6745 30  0001 C C
+	1    2315 6815
 	1    0    0    -1  
 $EndComp
-Text Notes 4440 5590 0    80   ~
+Text Notes 4660 5825 0    80   ~
 EEPROM
-Text Notes 1350 5165 0    80   ~
+Text Notes 1350 5415 0    80   ~
 Hall Effect Sensor
 $Comp
 L AT25128A U3
 U 1 1 4864FB37
-P 4730 5980
-F 0 "U3" H 4980 5680 60  0000 C C
-F 1 "AT25128A" H 4680 6280 60  0000 C C
-	1    4730 5980
+P 4950 6215
+F 0 "U3" H 5200 5915 60  0000 C C
+F 1 "AT25128A" H 4900 6515 60  0000 C C
+	1    4950 6215
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4515 3315
@@ -621,19 +624,19 @@ $EndComp
 $Comp
 L GND #PWR015
 U 1 1 4862F09A
-P 3315 1615
-F 0 "#PWR015" H 3315 1615 30  0001 C C
-F 1 "GND" H 3315 1545 30  0001 C C
-	1    3315 1615
+P 3161 1550
+F 0 "#PWR015" H 3161 1550 30  0001 C C
+F 1 "GND" H 3161 1480 30  0001 C C
+	1    3161 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR016
 U 1 1 4862F018
-P 4215 1615
-F 0 "#PWR016" H 4215 1615 30  0001 C C
-F 1 "GND" H 4215 1545 30  0001 C C
-	1    4215 1615
+P 4365 1550
+F 0 "#PWR016" H 4365 1550 30  0001 C C
+F 1 "GND" H 4365 1480 30  0001 C C
+	1    4365 1550
 	1    0    0    -1  
 $EndComp
 NoConn ~ 7065 1915
@@ -675,28 +678,28 @@ $EndComp
 $Comp
 L C C2
 U 1 1 485E9C78
-P 3315 1315
-F 0 "C2" H 3365 1415 50  0000 L C
-F 1 "20pF" H 3365 1215 50  0000 L C
-	1    3315 1315
+P 3161 1250
+F 0 "C2" H 3211 1350 50  0000 L C
+F 1 "20pF" H 3211 1150 50  0000 L C
+	1    3161 1250
 	-1   0    0    -1  
 $EndComp
 $Comp
 L C C6
 U 1 1 485E9B91
-P 4215 1315
-F 0 "C6" H 4265 1415 50  0000 L C
-F 1 "20pF" H 4265 1215 50  0000 L C
-	1    4215 1315
+P 4365 1225
+F 0 "C6" H 4220 1345 50  0000 L C
+F 1 "20pF" H 4105 1125 50  0000 L C
+	1    4365 1225
 	-1   0    0    -1  
 $EndComp
 $Comp
 L CRYSTAL X2
 U 1 1 485E9B2A
-P 3765 965
-F 0 "X2" H 3755 1150 60  0000 C C
-F 1 "8MHz" H 3765 815 60  0000 C C
-	1    3765 965 
+P 3765 900
+F 0 "X2" H 3755 1085 60  0000 C C
+F 1 "8MHz" H 3765 750 60  0000 C C
+	1    3765 900 
 	-1   0    0    1   
 $EndComp
 $Comp
