@@ -1,4 +1,4 @@
-EESchema-DOCLIB  Version 2.0  5/7/2008-08:08:11
+EESchema-DOCLIB  Version 2.0  5/7/2008-16:21:07
 #
 $CMP 74HC595
 D 8 bits serial in // out Shift Register 3 State Out
