@@ -60,7 +60,6 @@ CDC_Line_Coding_t LineCoding = { BaudRateBPS: 9600,
 RingBuff_t        Rx_Buffer;
 RingBuff_t        Tx_Buffer;
 
-unsigned char rxbuff, txbuff, rxbuffele, txbuffele;
 
 ISR(TIMER0_COMPA_vect, ISR_BLOCK)
 {
@@ -257,7 +256,7 @@ TASK(PCLink_Task)
 			case DUMMY:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
-			ucNumberDataBytes = 1;
+				ucNumberDataBytes = 1;
 				
 			if (Tx_Buffer.Elements < BUFF_STATICSIZE)
 			{
@@ -269,7 +268,7 @@ TASK(PCLink_Task)
 			case RETRIEVE_FIRMWARE_VERSION:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
-					ucNumberDataBytes = 4;
+				ucNumberDataBytes = 4;
 					
 			while (Tx_Buffer.Elements < BUFF_STATICSIZE && ucNumberDataBytes > 0)
 			{
@@ -412,6 +411,84 @@ TASK(PCLink_Task)
 				default:
 				break;
 			}
+				
+			case EEPROM_READ_BYTE:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 3;
+				
+			switch (ucNumberDataBytes)
+			{	
+				case 3: /* Send back the number of the command */
+				if (Tx_Buffer.Elements < BUFF_STATICSIZE)
+				{
+					Buffer_StoreElement (&Tx_Buffer, ucCommand);
+					ucNumberDataBytes--;
+				}
+				break;					
+
+			 	case 2: /* Send  */						
+				if (Buffer_GetElement (&Rx_Buffer) == 1)
+				{
+					Scheduler_SetTaskMode(TestSensorHallEffect_Task, TASK_RUN);
+					
+					/* Turn on the source voltage for sensor hall effect */
+					PORTD |= (1<<PD1);
+				}
+				
+				else
+				{
+					Scheduler_SetTaskMode(TestSensorHallEffect_Task, TASK_STOP);
+					
+					/* Turn off LED and source voltage for sensor hall effect */
+					PORTD &= ~((1<<PD4) | (1<<PD1));
+				}	
+				
+				ucNumberDataBytes--;
+				break;
+					
+				default:
+				break;	
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					
+			while (Tx_Buffer.Elements < BUFF_STATICSIZE && ucNumberDataBytes > 0)
+			{
+				switch (ucNumberDataBytes)
+				{
+					case 4:
+					Buffer_StoreElement (&Tx_Buffer, ucCommand);
+					break;
+													
+					case 3:
+					Buffer_StoreElement (&Tx_Buffer, BICYCLELEDPOV_VERSION_MAJOR);
+					break;
+						
+					case 2:
+					Buffer_StoreElement (&Tx_Buffer, BICYCLELEDPOV_VERSION_MINOR);
+					break;
+
+					case 1:
+					Buffer_StoreElement (&Tx_Buffer, BICYCLELEDPOV_VERSION_REVISION);
+					break;
+							
+					default:
+					break;
+				}		
+							
+			ucNumberDataBytes--;
+			}
+			break;
+			
+			
+			
 			
 			default:			
 			break;
@@ -421,8 +498,13 @@ TASK(PCLink_Task)
 	
 void Hardware_Init(void)
 {
-	/* Output pin for the LED and sensor hall effect */
-	DDRD |= ((1<<PD4) | (1<<PD1));
+	/* Configure I/O pins as outputs */ 
+	DDRD	|=  (1<<PD1) /* Vcc for sensor hall effect */
+			|   (1<<PD2)); /* Vcc for EEPROM */
+ 
+	DDRB	|=  (1<<PB0) /* SPI_SS0 */
+			|   (1<<PB4) /* SPI_SS1 */
+			|   (1<<PB5)); /* SPI_SS2 - EEPROM slave select */			
 }
 
 TASK(MakePOV_Task)

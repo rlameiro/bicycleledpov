@@ -88,6 +88,9 @@ OBJDIR = .
 
 # List C source files here. (C dependencies are automatically generated.)
 SRC = $(TARGET).c                                           \
+		./Drivers/EEPROM/AAT25128A.c                      \
+		./Drivers/AT90USB162/SPI.c                        \
+		./Drivers/LEDs/LEDs.c	                          \
 	  Descriptors.c                                     \
 	  RingBuff.c                                        \
 	  ./MyUSB/Scheduler/Scheduler.c                     \
@@ -98,7 +101,6 @@ SRC = $(TARGET).c                                           \
 	  ./MyUSB/Drivers/USB/HighLevel/USBInterrupt.c      \
 	  ./MyUSB/Drivers/USB/HighLevel/Events.c            \
 	  ./MyUSB/Drivers/USB/HighLevel/StdDescriptors.c    \
-	  ./Drivers/AT90USB162/SPI.c	  
 	  
 # List C++ source files here. (C dependencies are automatically generated.)
 CPPSRC = 

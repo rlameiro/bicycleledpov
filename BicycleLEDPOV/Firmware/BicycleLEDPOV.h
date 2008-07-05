@@ -33,6 +33,7 @@
 		#include <MyUSB/Drivers/USB/USB.h>                 // USB Functionality
 		#include <MyUSB/Scheduler/Scheduler.h>             // Simple scheduler for task management
 		#include <Drivers/AT90USB162/SPI.h>					/* SPI drivers */
+		#include <Drivers/EEPROM/AT25128A.h>					/* EEPROM drivers */		
 
 	/* Macros: */
 		/* Version 0.1.0 */
@@ -55,6 +56,8 @@
 		#define RETRIEVE_FIRMWARE_VERSION   2
 		#define TEST_LEDS					3
 		#define TEST_SENSOR_HALL_EFFECT		4
+		#define EEPROM_READ_BYTE			5
+		#define EEPROM_WRITE_BYTE			6
 		 
 	/* Event Handlers: */
 		HANDLES_EVENT(USB_Connect);
