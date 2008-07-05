@@ -1,16 +1,20 @@
-=Power calculations=
+=Power sources=
+==+BATT==
+HaRdware uses 2 AAA `NiMh` cells or alkaline cells.
+
+Assuming the use of `NiMh` cells, +2,4 volts are available for drive LEDs.
+
+Current used by LEDs can be from about 0,5 A to about 1,3 A.
+
 ==Vcc +5V==
-The IC's that will be supplied with 5 volts are the MCU, the sensor hall effect and the serial EEPROM memory.
+MCU needs at least +3,3 volts to have USB peripheral working. Was decided to use an DC-DC circuit to elevate the +BATT voltage to +5 volts. With +5 volts, MCU can run at his maximum speed of 16MHz.
 
-I estimate no more than 15mA for MCU, 5mA for sensor hall effect and 8mA for serial EEPROM memory -- total of 28mA. The DC-DC should be dimensioned for this 28mA.
+EEPROM memory and sensor hall effect are also sourced with +5 volts.
 
-==Vcc +2.4V==
-LEDs will be drived with this voltage but with a resistor in series.
+Current used by MCU, EEPROM memory and sensor hall effect, should be less than 35 mA.
 
 =Development and testing of a DC-DC converter=
-On date 2 of July of 2008, JpCasainho assembled a DC-DC converter that boots his 2,4 volts at input to 5 volts at his output, with at least 100mA of current at output. JpCasainho had as reference the [http://www.ladyada.net/make/mintyboost/ Minty Boost] circuit.
-
-The idea is to power with 5 volts the MCU, EEPROM memory and sensor hall effect, using just two `NiMh` cells in series - 2,4 volts.
+On date 2 of July of 2008, JpCasainho assembled a DC-DC converter that boots his +2,4 volts at input to +5 volts at his output, with at least 100mA of current at output. JpCasainho had as reference the [http://www.ladyada.net/make/mintyboost/ Minty Boost] circuit.
 
 Here is the DC-DC circuit at testing - high quality version [http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080702-hardware-dc_dc.jpg here]:
 
