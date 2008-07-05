@@ -17,6 +17,7 @@ word is transmitted first. */
 #define DATA_ORDER_MSB	  0
 #define DATA_ORDER_LSB	  1
 
+/* Functions prototypes*/
 void SPI_MasterInit(unsigned char DataOrder);
 void SPI_Disable(void);
 void SPI_MasterTransmit(unsigned char cData);
