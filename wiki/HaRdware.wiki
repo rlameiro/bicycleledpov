@@ -1,17 +1,26 @@
 #summary Information about the Hardware.
 
 =Description=
-[http://bicycleledpov.googlecode.com/svn-history/r78/trunk/BicycleLEDPOV/Pictures/diagram/diagram-700x.png]
+[http://bicycleledpov.googlecode.com/svn-history/r157/trunk/BicycleLEDPOV/Pictures/diagram/diagram-700x.png]
 
+==Microcontroller==
 The microcontroller unit (MCU) is the [http://www.atmel.com/dyn/products/product_card.asp?part_id=4097 Atmel AT90USB162], 8 bits microcontroller with USB functionality.
 
-MCU will be able to determine the velocity of the bicycle wheel by reading impulses of the hall effect sensor.
+==Sensor hall effect==
+MCU will be able to determine the velocity of the bicycle wheel by reading impulses of the [http://www.allegromicro.com/en/Products/Part_Numbers/3213/3213.pdf hall effect sensor].
 
+==Memory==
 Knowing the velocity, MCU will read the images from the EEPROM memory using SPI bus, and in the correct timing will send them to the LED drivers using SPI bus, turning on and off the LEDs.
 
-The LED drivers will be composed of 74HC595 IC (Serial to Parallel latch using SPI bus) and a resister in series with LEDs.
+==LEDs and drivers==
+The LED drivers will be composed of [http://www.fairchildsemi.com/ds/MM%2FMM74HC595.pdf 74HC595] IC (Serial to Parallel latch using SPI bus) and a resister in series with LEDs.
 
-The energy for the HaRdware will be from 3 `NiMh` rechargeable cells. The +2,4 volts from the first 2 cells will drive directly the LEDs. The MCU use +3,6 volts (using the third cell).
+==Power source==
+The energy for HaRdware will be source from 2 AAA `NiMh` rechargeable cells or alkaline cells.
+
+The voltage of 2 cells will drive directly the LEDs drivers. +5 volts are available for to use by MCU, EEPROM memory and the hall effect sensor, thanks to DC-DC circuit.
+
+Read more on PowerStage page.
 
 =Schematic=
 The latest schematic version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/BicycleLEDPOV/Hardware/Schematics/ available on SVN].
