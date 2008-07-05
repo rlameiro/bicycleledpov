@@ -24,3 +24,8 @@ The latest PCB version is always [http://code.google.com/p/bicycleledpov/source/
 [http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080703-prototype-600x-01.jpg]
 
 [http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080703-prototype-600x-02.jpg]
+
+=Part list=
+|| *Reference* || *Value* || *Package* || *Price* ||
+|| U1 || A3213ELHLT-T || SOT23W || [http://pt.farnell.com/1457117/semiconductors-integrated-circuits/product.us0?sku=allegro-microsystems-a3213elhlt-t 0,83€] ||
+|| U2 || AT90USB162 || 90USB162-16AU || [http://pt.farnell.com/1455073/semiconductors-integrated-circuits/product.us0?sku=atmel-at90usb162-16au&_requestid=262126 3,56€] ||
