@@ -1,4 +1,4 @@
-EESchema-DOCLIB  Version 2.0  5/7/2008-16:21:07
+EESchema-DOCLIB  Version 2.0  6/7/2008-19:21:42
 #
 $CMP 74HC595
 D 8 bits serial in // out Shift Register 3 State Out
@@ -7,6 +7,16 @@ $ENDCMP
 #
 $CMP C
 D Condensateur non polarise
+$ENDCMP
+#
+$CMP CONN_3X2
+D Symbole general de connecteur
+K CONN
+$ENDCMP
+#
+$CMP CONN_8
+D Symbole general de connecteur
+K CONN
 $ENDCMP
 #
 $CMP CP
