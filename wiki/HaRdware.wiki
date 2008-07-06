@@ -23,9 +23,30 @@ The voltage of 2 cells will drive directly the LEDs drivers. +5 volts are availa
 Read more on PowerStage page.
 
 =Schematic=
+Schematic was drawn using [ToOls KiCAD].
+
+Schematic is divided in two pages. Download full schematic [http://bicycleledpov.googlecode.com/svn-history/r168/trunk/BicycleLEDPOV/Hardware/Schematics/schematic-sheet_01.png schematic-sheet_01.png] and [http://bicycleledpov.googlecode.com/svn-history/r168/trunk/BicycleLEDPOV/Hardware/Schematics/schematic-sheet_02.png schematic-sheet_02.png].
+
+Preview of sheet 1 (incomplete view of schematic):
+
+[http://bicycleledpov.googlecode.com/svn-history/r169/trunk/BicycleLEDPOV/Pictures/20080706-schematic-sheet_01-preview.png]
+
+Preview of sheet 2 (incomplete view of schematic):
+
+[http://bicycleledpov.googlecode.com/svn-history/r169/trunk/BicycleLEDPOV/Pictures/20080706-schematic-sheet_02-preview.png]
+
 The latest schematic version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/BicycleLEDPOV/Hardware/Schematics/ available on SVN].
 
+=Part list=
+Working in progress.
+
+|| *Reference* || *Value* || *Package* || *Price* ||
+|| U1 || A3213ELHLT-T || SOT23W || [http://pt.farnell.com/1457117/semiconductors-integrated-circuits/product.us0?sku=allegro-microsystems-a3213elhlt-t 0,83€] ||
+|| U2 || AT90USB162 || 90USB162-16AU || [http://pt.farnell.com/1455073/semiconductors-integrated-circuits/product.us0?sku=atmel-at90usb162-16au&_requestid=262126 3,56€] ||
+
 =Printed circuit board=
+Working in progress.
+
 The latest PCB version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/BicycleLEDPOV/Hardware/Board available on SVN].
 
 =Pictures from actual prototype=
@@ -33,8 +54,3 @@ The latest PCB version is always [http://code.google.com/p/bicycleledpov/source/
 [http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080703-prototype-600x-01.jpg]
 
 [http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080703-prototype-600x-02.jpg]
-
-=Part list=
-|| *Reference* || *Value* || *Package* || *Price* ||
-|| U1 || A3213ELHLT-T || SOT23W || [http://pt.farnell.com/1457117/semiconductors-integrated-circuits/product.us0?sku=allegro-microsystems-a3213elhlt-t 0,83€] ||
-|| U2 || AT90USB162 || 90USB162-16AU || [http://pt.farnell.com/1455073/semiconductors-integrated-circuits/product.us0?sku=atmel-at90usb162-16au&_requestid=262126 3,56€] ||
