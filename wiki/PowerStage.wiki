@@ -13,27 +13,9 @@ EEPROM memory and sensor hall effect are also sourced with +5 volts.
 
 Current used by MCU, EEPROM memory and sensor hall effect, should be less than 35 mA.
 
-=Development and testing of a DC-DC converter=
-On date 2 of July of 2008, JpCasainho assembled a DC-DC converter that boots his +2,4 volts at input to +5 volts at his output, with at least 100mA of current at output. JpCasainho had as reference the [http://www.ladyada.net/make/mintyboost/ Minty Boost] circuit.
+=Using a DC-DC=
+Tests were made to find a good, simple and cheap DC-DC circuit and IC. Read more about tests made on TestsToDcDcCircuitsAndIcs page.
 
-Here is the DC-DC circuit at testing - high quality version [http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080702-hardware-dc_dc.jpg here]:
-
-[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080702-hardware-dc_dc-x600.jpg]
-
-And the schematic:
+The final schematic is this one:
 
 [http://bicycleledpov.googlecode.com/svn-history/r148/trunk/BicycleLEDPOV/Pictures/20080703-hardware-dc_dc_schematic.png]
-
-Two tests were made, using a RL of 100K and 47R to get ~50uA and 100mA respectively.
-
-Here are the results on oscilloscope, with RL = 100k - channel 1 on Vout and channel 2 on positive side of schottky diode:
-
-[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/hardware-dc_dc-osciloscope-RL_100K-20080702-01.png]
-
-[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/hardware-dc_dc-osciloscope-RL_100K-20080702-02.png]
-
-Here are the results on oscilloscope, with RL = 47R - channel 1 on Vout and channel 2 on positive side of schottky diode:
-
-[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/hardware-dc_dc-osciloscope-RL_47R-20080702-01.png]
-
-[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/hardware-dc_dc-osciloscope-RL_47R-20080702-02.png]
