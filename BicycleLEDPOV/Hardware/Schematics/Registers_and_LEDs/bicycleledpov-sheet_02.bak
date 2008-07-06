@@ -6,7 +6,7 @@ $Descr A4 11700 8267
 Sheet 2 2
 Title "Bicycle LED POV"
 Date "6 jul 2008"
-Rev "0.1.0"
+Rev "1.0.0"
 Comp "http://code.google.com/p/bicycleledpov"
 Comment1 "(c) Jorge Pinto"
 Comment2 "(c) Donald Ziems"
