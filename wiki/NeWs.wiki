@@ -1,3 +1,13 @@
+==2008.07.06==
+===News from JpCasainho:==
+In the last days I tested 3 different ICs for DC-DC circuits. See the tests results with oscilloscope images on page TestsToDcDcCircuitsAndIcs.
+
+Schematic is done :-) To get the full schematic, visit the HaRdware page. Here is a preview:
+
+[http://bicycleledpov.googlecode.com/svn-history/r169/trunk/BicycleLEDPOV/Pictures/20080706-schematic-sheet_01-preview.png]
+
+Now is time to do the part list and going shopping :-) - also work on PCB has started.
+
 ==2008.07.02==
 ===News from JpCasainho:==
 Today I finish my prototype - it uses now just 2 AAA `NiMh` cells. Well, prototype just have 8 LEDs soldered instead of the 64 it should have - I am not motivated to solder all 64 LEDs.
