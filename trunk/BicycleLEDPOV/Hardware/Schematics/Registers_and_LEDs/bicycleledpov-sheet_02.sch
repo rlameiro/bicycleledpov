@@ -5,7 +5,7 @@ EELAYER END
 $Descr A4 11700 8267
 Sheet 2 2
 Title "Bicycle LED POV"
-Date "4 jul 2008"
+Date "6 jul 2008"
 Rev "0.1.0"
 Comp "http://code.google.com/p/bicycleledpov"
 Comment1 "(c) Jorge Pinto"
@@ -14,19 +14,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	1100 2750 1200 2750
-Wire Wire Line
-	1200 2750 2400 2750
+	1100 2750 10200 2750
 Connection ~ 3650 1200
 Connection ~ 3650 1600
 Wire Wire Line
-	3650 1200 3650 1600
+	3650 1600 3650 1200
 Wire Wire Line
 	6100 3050 6100 1600
 Wire Wire Line
-	6100 1600 3650 1600
-Wire Wire Line
-	3650 1600 900  1600
+	6100 1600 900  1600
 Connection ~ 7900 2300
 Connection ~ 2400 1900
 Wire Wire Line
@@ -319,31 +315,13 @@ Wire Wire Line
 	10100 5350 10100 4950
 Connection ~ 6700 2650
 Wire Wire Line
-	1100 3050 1100 2750
+	1100 2750 1100 3050
 Connection ~ 7900 2650
 Wire Wire Line
 	10500 3050 10500 2650
 Wire Wire Line
-	10500 2650 9200 2650
-Wire Wire Line
-	9200 2650 7900 2650
-Wire Wire Line
-	7900 2650 6700 2650
-Wire Wire Line
-	6700 2650 6600 2650
+	10500 2650 6600 2650
 Connection ~ 2700 2650
-Wire Wire Line
-	2400 2750 3700 2750
-Wire Wire Line
-	3700 2750 5000 2750
-Wire Wire Line
-	5000 2750 6300 2750
-Wire Wire Line
-	6300 2750 7600 2750
-Wire Wire Line
-	7600 2750 8900 2750
-Wire Wire Line
-	8900 2750 10200 2750
 Wire Wire Line
 	10000 4450 10000 4850
 Wire Wire Line
@@ -356,37 +334,7 @@ Connection ~ 10600 2850
 Wire Wire Line
 	10900 3000 10900 2850
 Wire Wire Line
-	10900 2850 10600 2850
-Wire Wire Line
-	10600 2850 10300 2850
-Wire Wire Line
-	10300 2850 9300 2850
-Wire Wire Line
-	9300 2850 9000 2850
-Wire Wire Line
-	9000 2850 8000 2850
-Wire Wire Line
-	8000 2850 7700 2850
-Wire Wire Line
-	7700 2850 6700 2850
-Wire Wire Line
-	6700 2850 6400 2850
-Wire Wire Line
-	6400 2850 5400 2850
-Wire Wire Line
-	5400 2850 5100 2850
-Wire Wire Line
-	5100 2850 4100 2850
-Wire Wire Line
-	4100 2850 3800 2850
-Wire Wire Line
-	3800 2850 2800 2850
-Wire Wire Line
-	2800 2850 2500 2850
-Wire Wire Line
-	2500 2850 1500 2850
-Wire Wire Line
-	1500 2850 1200 2850
+	10900 2850 1200 2850
 Connection ~ 1500 2850
 Wire Wire Line
 	1500 3050 1500 2850
@@ -639,13 +587,7 @@ Wire Wire Line
 Wire Wire Line
 	2700 2650 2700 3050
 Wire Wire Line
-	1400 2650 2050 2650
-Wire Wire Line
-	2050 2650 2700 2650
-Wire Wire Line
-	2700 2650 4000 2650
-Wire Wire Line
-	4000 2650 5300 2650
+	1400 2650 5300 2650
 Wire Wire Line
 	5300 2650 5300 3050
 Connection ~ 4000 2650
@@ -655,133 +597,7 @@ Connection ~ 9200 2650
 Wire Wire Line
 	6600 2650 6600 3050
 Wire Wire Line
-	700  6350 900  6350
-Wire Wire Line
-	900  6350 1000 6350
-Wire Wire Line
-	1000 6350 1100 6350
-Wire Wire Line
-	1100 6350 1200 6350
-Wire Wire Line
-	1200 6350 1300 6350
-Wire Wire Line
-	1300 6350 1400 6350
-Wire Wire Line
-	1400 6350 1500 6350
-Wire Wire Line
-	1500 6350 1600 6350
-Wire Wire Line
-	1600 6350 2200 6350
-Wire Wire Line
-	2200 6350 2300 6350
-Wire Wire Line
-	2300 6350 2400 6350
-Wire Wire Line
-	2400 6350 2500 6350
-Wire Wire Line
-	2500 6350 2600 6350
-Wire Wire Line
-	2600 6350 2700 6350
-Wire Wire Line
-	2700 6350 2800 6350
-Wire Wire Line
-	2800 6350 2900 6350
-Wire Wire Line
-	2900 6350 3500 6350
-Wire Wire Line
-	3500 6350 3600 6350
-Wire Wire Line
-	3600 6350 3700 6350
-Wire Wire Line
-	3700 6350 3800 6350
-Wire Wire Line
-	3800 6350 3900 6350
-Wire Wire Line
-	3900 6350 4000 6350
-Wire Wire Line
-	4000 6350 4100 6350
-Wire Wire Line
-	4100 6350 4200 6350
-Wire Wire Line
-	4200 6350 4800 6350
-Wire Wire Line
-	4800 6350 4900 6350
-Wire Wire Line
-	4900 6350 5000 6350
-Wire Wire Line
-	5000 6350 5100 6350
-Wire Wire Line
-	5100 6350 5200 6350
-Wire Wire Line
-	5200 6350 5300 6350
-Wire Wire Line
-	5300 6350 5400 6350
-Wire Wire Line
-	5400 6350 5500 6350
-Wire Wire Line
-	5500 6350 6100 6350
-Wire Wire Line
-	6100 6350 6200 6350
-Wire Wire Line
-	6200 6350 6300 6350
-Wire Wire Line
-	6300 6350 6400 6350
-Wire Wire Line
-	6400 6350 6500 6350
-Wire Wire Line
-	6500 6350 6600 6350
-Wire Wire Line
-	6600 6350 6700 6350
-Wire Wire Line
-	6700 6350 6800 6350
-Wire Wire Line
-	6800 6350 7400 6350
-Wire Wire Line
-	7400 6350 7500 6350
-Wire Wire Line
-	7500 6350 7600 6350
-Wire Wire Line
-	7600 6350 7700 6350
-Wire Wire Line
-	7700 6350 7800 6350
-Wire Wire Line
-	7800 6350 7900 6350
-Wire Wire Line
-	7900 6350 8000 6350
-Wire Wire Line
-	8000 6350 8100 6350
-Wire Wire Line
-	8100 6350 8700 6350
-Wire Wire Line
-	8700 6350 8800 6350
-Wire Wire Line
-	8800 6350 8900 6350
-Wire Wire Line
-	8900 6350 9000 6350
-Wire Wire Line
-	9000 6350 9100 6350
-Wire Wire Line
-	9100 6350 9200 6350
-Wire Wire Line
-	9200 6350 9300 6350
-Wire Wire Line
-	9300 6350 9400 6350
-Wire Wire Line
-	9400 6350 10000 6350
-Wire Wire Line
-	10000 6350 10100 6350
-Wire Wire Line
-	10100 6350 10200 6350
-Wire Wire Line
-	10200 6350 10300 6350
-Wire Wire Line
-	10300 6350 10400 6350
-Wire Wire Line
-	10400 6350 10500 6350
-Wire Wire Line
-	10500 6350 10600 6350
-Wire Wire Line
-	10600 6350 10700 6350
+	700  6350 10700 6350
 Wire Wire Line
 	10700 6350 10700 5850
 Wire Wire Line
@@ -824,9 +640,7 @@ Wire Wire Line
 Wire Wire Line
 	1750 1900 1600 1900
 Wire Wire Line
-	2250 1900 2400 1900
-Wire Wire Line
-	2400 1900 2500 1900
+	2250 1900 2500 1900
 Wire Wire Line
 	3000 1900 3050 1900
 Wire Wire Line
@@ -834,9 +648,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 2300 3200 2300
 Wire Wire Line
-	3850 2300 4000 2300
-Wire Wire Line
-	4000 2300 4100 2300
+	3850 2300 4100 2300
 Wire Wire Line
 	4600 2300 4650 2300
 Wire Wire Line
@@ -844,37 +656,27 @@ Wire Wire Line
 Wire Wire Line
 	7250 2300 7100 2300
 Wire Wire Line
-	8000 2300 7900 2300
-Wire Wire Line
-	7900 2300 7750 2300
+	8000 2300 7750 2300
 Wire Wire Line
 	8500 2300 8550 2300
 Wire Wire Line
 	8550 2300 8550 2450
 Connection ~ 4000 2300
 Wire Wire Line
-	4000 2300 4000 2650
+	4000 2300 4000 3050
 Wire Wire Line
-	4000 2650 4000 3050
+	2400 1900 2400 3050
 Wire Wire Line
-	2400 1900 2400 2750
+	7900 2300 7900 3050
 Wire Wire Line
-	2400 2750 2400 3050
-Wire Wire Line
-	7900 2300 7900 2650
-Wire Wire Line
-	7900 2650 7900 3050
-Wire Wire Line
-	3500 1200 3650 1200
-Wire Wire Line
-	3650 1200 3750 1200
+	3500 1200 3750 1200
 Text Notes 7350 1750 0    60   ~
 Vcc of the 74x595 shift registers is +BATT
 $Comp
-L GND #PWR018
+L GND #PWR021
 U 1 1 486D3E5C
 P 8550 2450
-F 0 "#PWR018" H 8550 2450 30  0001 C C
+F 0 "#PWR021" H 8550 2450 30  0001 C C
 F 1 "GND" H 8550 2380 30  0001 C C
 	1    8550 2450
 	-1   0    0    -1  
@@ -900,10 +702,10 @@ $EndComp
 Text GLabel 7100 2300 0    60   Input
 SPI_SS1
 $Comp
-L GND #PWR019
+L GND #PWR022
 U 1 1 486D3E2D
 P 4650 2450
-F 0 "#PWR019" H 4650 2450 30  0001 C C
+F 0 "#PWR022" H 4650 2450 30  0001 C C
 F 1 "GND" H 4650 2380 30  0001 C C
 	1    4650 2450
 	-1   0    0    -1  
@@ -929,10 +731,10 @@ $EndComp
 Text GLabel 3200 2300 0    60   Input
 SPI_SS0
 $Comp
-L GND #PWR020
+L GND #PWR023
 U 1 1 486D3E26
 P 3050 2050
-F 0 "#PWR020" H 3050 2050 30  0001 C C
+F 0 "#PWR023" H 3050 2050 30  0001 C C
 F 1 "GND" H 3050 1980 30  0001 C C
 	1    3050 2050
 	-1   0    0    -1  
@@ -958,10 +760,10 @@ $EndComp
 Text GLabel 1600 1900 0    60   Input
 SPI_SCKL
 $Comp
-L GND #PWR021
+L GND #PWR024
 U 1 1 486D3D30
 P 4300 1350
-F 0 "#PWR021" H 4300 1350 30  0001 C C
+F 0 "#PWR024" H 4300 1350 30  0001 C C
 F 1 "GND" H 4300 1280 30  0001 C C
 	1    4300 1350
 	-1   0    0    -1  
@@ -1587,10 +1389,10 @@ SS0
 Text GLabel 2850 1200 0    60   Input
 SPI_MOSI
 $Comp
-L GND #PWR022
+L GND #PWR025
 U 1 1 485B6135
 P 700 6450
-F 0 "#PWR022" H 700 6450 30  0001 C C
+F 0 "#PWR025" H 700 6450 30  0001 C C
 F 1 "GND" H 700 6380 30  0001 C C
 	1    700  6450
 	-1   0    0    -1  
@@ -2145,10 +1947,10 @@ F 1 "LED" H 9400 4650 50  0000 C C
 	0    -1   1    0   
 $EndComp
 $Comp
-L GND #PWR023
+L GND #PWR026
 U 1 1 485B6034
 P 10900 3000
-F 0 "#PWR023" H 10900 3000 30  0001 C C
+F 0 "#PWR026" H 10900 3000 30  0001 C C
 F 1 "GND" H 10900 2930 30  0001 C C
 	1    10900 3000
 	-1   0    0    -1  
