@@ -6,13 +6,17 @@ $Descr A4 11700 8267
 Sheet 1 2
 Title "Bicycle LED POV"
 Date "6 jul 2008"
-Rev "0.1.0"
+Rev "1.0.0"
 Comp "http://code.google.com/p/bicycleledpov"
 Comment1 "(c) Jorge Pinto"
 Comment2 "(c) Donald Ziems"
 Comment3 ""
 Comment4 ""
 $EndDescr
+Wire Wire Line
+	3875 6330 4535 6330
+Text Label 3875 6330 0    60   ~
+EEPROM_VCC
 Wire Wire Line
 	9390 3130 9390 3040
 Wire Wire Line
@@ -64,7 +68,9 @@ Wire Wire Line
 Wire Wire Line
 	7610 1555 7610 1950
 Wire Wire Line
-	7325 5395 7530 5395
+	7325 5395 7480 5395
+Wire Wire Line
+	7480 5395 7530 5395
 Wire Wire Line
 	9250 5495 9250 5215
 Wire Wire Line
@@ -72,7 +78,9 @@ Wire Wire Line
 Wire Wire Line
 	2680 3450 3750 3450
 Wire Wire Line
-	6940 3750 6300 3750
+	6940 3750 6815 3750
+Wire Wire Line
+	6815 3750 6300 3750
 Connection ~ 6815 3750
 Wire Wire Line
 	6815 3845 6815 3750
@@ -81,10 +89,14 @@ Wire Wire Line
 Wire Wire Line
 	7850 3750 7440 3750
 Wire Wire Line
-	9200 5695 10060 5695
+	9200 5695 9750 5695
+Wire Wire Line
+	9750 5695 10060 5695
 Connection ~ 9250 5495
 Wire Wire Line
-	9300 5495 9200 5495
+	9300 5495 9250 5495
+Wire Wire Line
+	9250 5495 9200 5495
 Wire Wire Line
 	9750 5695 9750 5495
 Wire Wire Line
@@ -96,7 +108,9 @@ Wire Wire Line
 Connection ~ 7480 5395
 Connection ~ 2565 4695
 Wire Wire Line
-	2565 4595 2565 4795
+	2565 4595 2565 4695
+Wire Wire Line
+	2565 4695 2565 4795
 Wire Wire Line
 	3205 3900 3750 3900
 Wire Wire Line
@@ -104,16 +118,14 @@ Wire Wire Line
 Wire Wire Line
 	5785 6230 6485 6230
 Wire Wire Line
-	4335 6530 4335 6330
-Wire Wire Line
-	4335 6330 4535 6330
-Wire Wire Line
 	3985 6230 4535 6230
 Wire Wire Line
 	6300 2050 6950 2050
 Connection ~ 7610 2550
 Wire Wire Line
-	7610 2450 7610 2650
+	7610 2450 7610 2550
+Wire Wire Line
+	7610 2550 7610 2650
 Wire Wire Line
 	1980 3050 1980 3000
 Wire Wire Line
@@ -158,9 +170,13 @@ Wire Wire Line
 	3550 2800 3750 2800
 Connection ~ 2396 1185
 Wire Wire Line
-	2700 1135 2396 1135
+	2700 1135 2570 1135
 Wire Wire Line
-	2396 1135 2396 1285
+	2570 1135 2396 1135
+Wire Wire Line
+	2396 1135 2396 1185
+Wire Wire Line
+	2396 1185 2396 1285
 Wire Wire Line
 	2396 1685 2396 1785
 Wire Wire Line
@@ -168,12 +184,18 @@ Wire Wire Line
 Wire Wire Line
 	2600 2400 2600 2600
 Wire Wire Line
-	3550 2300 3550 3250
+	3550 2300 3550 2500
+Wire Wire Line
+	3550 2500 3550 2800
+Wire Wire Line
+	3550 2800 3550 3250
 Wire Wire Line
 	3550 3250 3750 3250
 Connection ~ 3550 2800
 Wire Wire Line
-	3750 2500 2900 2500
+	3750 2500 3550 2500
+Wire Wire Line
+	3550 2500 2900 2500
 Wire Wire Line
 	2900 2500 2900 2700
 Wire Wire Line
@@ -182,11 +204,15 @@ Connection ~ 3550 2500
 Wire Wire Line
 	1665 6600 1665 6810
 Wire Wire Line
-	2455 7265 2455 6540
+	2455 7265 2455 6810
+Wire Wire Line
+	2455 6810 2455 6540
 Wire Wire Line
 	7010 1850 6300 1850
 Wire Wire Line
-	2320 6540 2320 7265
+	2320 6540 2320 6600
+Wire Wire Line
+	2320 6600 2320 7265
 Wire Wire Line
 	1665 6810 2455 6810
 Connection ~ 2455 6810
@@ -229,18 +255,26 @@ Wire Wire Line
 Wire Wire Line
 	7480 5995 7480 6035
 Wire Wire Line
-	2705 3900 2430 3900
+	2705 3900 2565 3900
+Wire Wire Line
+	2565 3900 2430 3900
 Wire Wire Line
 	8100 5495 8000 5495
 Wire Wire Line
-	8000 5495 8000 5065
+	8000 5495 8000 5395
+Wire Wire Line
+	8000 5395 8000 5215
+Wire Wire Line
+	8000 5215 8000 5065
 Wire Wire Line
 	9200 5595 9500 5595
 Wire Wire Line
 	9500 5595 9500 5945
 Connection ~ 9750 5695
 Wire Wire Line
-	7610 2550 7185 2550
+	7610 2550 7330 2550
+Wire Wire Line
+	7330 2550 7185 2550
 Wire Wire Line
 	7330 2695 7330 2550
 Connection ~ 7330 2550
@@ -266,7 +300,9 @@ Wire Wire Line
 Wire Wire Line
 	2570 1135 2570 2000
 Wire Wire Line
-	3300 1135 3600 1135
+	3300 1135 3415 1135
+Wire Wire Line
+	3415 1135 3600 1135
 Wire Wire Line
 	3600 1135 3600 1260
 Wire Wire Line
@@ -432,8 +468,6 @@ USB connector
 Text Notes 8380 4770 0    80   ~
 DC-DC
 Text Label 3550 2300 0    60   ~
-VCC_5V
-Text Label 4335 6530 3    60   ~
 VCC_5V
 Text Label 7610 1950 1    60   ~
 VCC_5V
