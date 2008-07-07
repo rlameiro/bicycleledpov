@@ -42,7 +42,11 @@ Working in progress.
 
 || *Reference* || *Value* || *Package* || *Price* ||
 || U1 || A3213ELHLT-T || SOT23W || [http://pt.farnell.com/1457117/semiconductors-integrated-circuits/product.us0?sku=allegro-microsystems-a3213elhlt-t 0,83€] ||
-|| U2 || AT90USB162 || 90USB162-16AU || [http://pt.farnell.com/1455073/semiconductors-integrated-circuits/product.us0?sku=atmel-at90usb162-16au&_requestid=262126 3,56€] ||
+|| U2 || AT90USB162-16AU || TQFP32 || [http://pt.farnell.com/1455073/semiconductors-integrated-circuits/product.us0?sku=atmel-at90usb162-16au&_requestid=262126 3,56€] ||
+|| C1 || 100nF 50V || 0805 || [http://uk.farnell.com/9406387/passives/product.us0?sku=multicomp-u0805r104kct 0,35€] ||
+|| C8 || 47uF 16V || Case C || [http://pt.farnell.com/9695664/passives/product.us0?sku=panasonic-eeefk1c470ur&_requestid=518790 0,35€] ||
+|| C9 || 47uF 16V || Case C || [http://pt.farnell.com/9695664/passives/product.us0?sku=panasonic-eeefk1c470ur&_requestid=518790 0,075€] ||
+|| R1 || 10K 1/8W 10% || 0805 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
 
 =Printed circuit board=
 Working in progress.
