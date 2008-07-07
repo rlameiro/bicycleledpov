@@ -43,6 +43,10 @@ Working in progress.
 || *Reference* || *Value* || *Package* || *Price* ||
 || U1 || A3213ELHLT-T || SOT23W || [http://pt.farnell.com/1457117/semiconductors-integrated-circuits/product.us0?sku=allegro-microsystems-a3213elhlt-t 0,83€] ||
 || U2 || AT90USB162-16AU || TQFP32 || [http://pt.farnell.com/1455073/semiconductors-integrated-circuits/product.us0?sku=atmel-at90usb162-16au&_requestid=262126 3,56€] ||
+|| U4 || MAX756CPA+ || SOIC-8 || [http://www.maxim-ic.com/quick_view2.cfm/qv_pk/1167/t/or $3.38] ||
+|| U5-U8 || 74VHC595 || SOIC-16 || [http://pt.farnell.com/1366184/semiconductors-integrated-circuits/product.us0?sku=fairchild-semiconductor-74vhc595monductors-integrated-circuits/product.us0?sku=fairchild-semiconductor-74vhc595mtcx 0,26€] ||
+|| or ||
+|| U5-U8 || 74VHC595 || TSSOP-16 || [http://pt.farnell.com/1467354/semiconductors-integrated-circuits/product.us0?sku=fairchild-semiconductor-74vhc595mtcx 0,27€] ||
 || C1 || 100nF 50V || 0805 || [http://uk.farnell.com/9406387/passives/product.us0?sku=multicomp-u0805r104kct 0,35€] ||
 || C8 || 47uF 16V || Case C || [http://pt.farnell.com/9695664/passives/product.us0?sku=panasonic-eeefk1c470ur&_requestid=518790 0,35€] ||
 || C9 || 47uF 16V || Case C || [http://pt.farnell.com/9695664/passives/product.us0?sku=panasonic-eeefk1c470ur&_requestid=518790 0,075€] ||
