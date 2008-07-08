@@ -38,28 +38,29 @@ Preview of sheet 2 (incomplete view of schematic):
 The latest schematic version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/BicycleLEDPOV/Hardware/Schematics/ available on SVN].
 
 =Part list=
-Working in progress.
-
 || *Reference* || *Value* || *Package* || *Quantity* || *Price* ||
-|| R1 - R5 || 10K 1/8W 10% || 0805 || 5 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
-|| R6 - R9 || 13K 1/8W 10% || 0805 || 4 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
-|| R10, R11 || 22R 1/8W 10% || 0805 || 2 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
-|| R12, R13  || 330R 1/8W 10% || 0805 || 2 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
-|| R14 - R17  || 47K 1/8W 10% || 0805 || 4 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
-|| R18 - R81  || 56R 1/8W 10% || 0805 || 64 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
-|| C1 - C3 || 100nF 50V || 0805 || 3  || [http://uk.farnell.com/9406387/passives/product.us0?sku=multicomp-u0805r104kct 0,35€] ||
-|| C8, C9 || 47uF 16V || Case C || 2  || [http://pt.farnell.com/9695664/passives/product.us0?sku=panasonic-eeefk1c470ur&_requestid=518790 0,35€] ||
-|| D1 - D69 || Avago Ref: HSMJ-A100-Q00J1 || PLCC2 || 64  || [http://uk.farnell.com/9406387/passives/product.us0?sku=multicomp-u0805r104kct 0,116€] ||
-|| D70 || SGL1-40 || SOD80 || 1 || ?? ||
-|| U1 - U8 || 74VHC595 || SOIC-16 || 8 || [http://pt.farnell.com/1366184/semiconductors-integrated-circuits/product.us0?sku=fairchild-semiconductor-74vhc595monductors-integrated-circuits/product.us0?sku=fairchild-semiconductor-74vhc595mtcx 0,26€] ||
-|| U9 || A3213ELHLT-T || SOT23W || 1 || [http://pt.farnell.com/1457117/semiconductors-integrated-circuits/product.us0?sku=allegro-microsystems-a3213elhlt-t 0,83€] ||
-|| U10 || AT25128A ?? || ?? || 1  || ?? ||
-|| U11 || AT90USB162-16AU || TQFP32 || 1  || [http://pt.farnell.com/1455073/semiconductors-integrated-circuits/product.us0?sku=atmel-at90usb162-16au&_requestid=262126 3,56€] ||
-|| U12 || MAX756CPA+ || SOIC-8 || 1  || [http://www.maxim-ic.com/quick_view2.cfm/qv_pk/1167/t/or $3.38] ||
-|| SW1, SW2  || FSM4JSMA ||  || 2 || [http://pt.farnell.com/jsp/search/productdetail.jsp?SKU=3801305 0,18€] ||
-|| USB-MB-H || Molex Ref: 675031020 ||  || 1 || [http://uk.farnell.com/1125348/connectors/product.us0?sku=molex-675031020 0,76€] ||
-|| X1 || AVX Ref: CX49GFWB08000H0PESZZ ||  || 1 || [http://uk.farnell.com/1368799/passives/product.us0?sku=avx-cx49gfwb08000h0peszz 0,91€] ||
-
+|| R1 - R5 || 10K 1/8W 10% || 0805 || 5 || [http://pt.farnell.com/fixed ~0.035€] ||
+|| R6 - R9 || 13K 1/8W 10% || 0805 || 4 || [http://pt.farnell.com/fixed ~0.035€] ||
+|| R10, R11 || 22R 1/8W 10% || 0805 || 2 || [http://pt.farnell.com/fixed ~0.035€] ||
+|| R12, R13  || 330R 1/8W 10% || 0805 || 2 || [http://pt.farnell.com/fixed ~0.035€] ||
+|| R14 - R17  || 47K 1/8W 10% || 0805 || 4 || [http://pt.farnell.com/fixed ~0.035€] ||
+|| R18 - R81  || 56R 1/8W 10% || 0805 || 64 || [http://pt.farnell.com/fixed ~0.035€] ||
+|| C1 - C3 || 100nF 50V || 0805 || 3  || [http://uk.farnell.com/9406387/passives/product.us0?sku=multicomp-u0805r104kct 0.35€] ||
+|| C8, C9 || 47uF 16V || Case C || 2  || [http://pt.farnell.com/9695664/passives/product.us0?sku=panasonic-eeefk1c470ur&_requestid=518790 0.35€] ||
+|| D1 - D69 || Avago Ref: HSMJ-A100-Q00J1 || PLCC2 || 64  || [http://uk.farnell.com/9406387/passives/product.us0?sku=multicomp-u0805r104kct 0.116€] ||
+|| D70 || BAS85 || SOD80C || 1 || [http://uk.farnell.com/1097282/semiconductors-discretes/product.us0?sku=nxp-bas85 0.24€] ||
+|| L1 || Bourns Ref: SDR0805-100ML ||  || 1 || [http://uk.farnell.com/1463486/passives/product.us0?sku=bourns-sdr0805-100ml&_requestid=647047 0.24€] ||
+|| U1 - U8 || 74VHC595 || SOIC-16 || 8 || [http://pt.farnell.com/1366184/semiconductors-integrated-circuits/product.us0?sku=fairchild-semiconductor-74vhc595monductors-integrated-circuits/product.us0?sku=fairchild-semiconductor-74vhc595mtcx 0.26€] ||
+|| U9 || A3213ELHLT-T || SOT23W || 1 || [http://pt.farnell.com/1457117/semiconductors-integrated-circuits/product.us0?sku=allegro-microsystems-a3213elhlt-t 0.83€] ||
+|| U10 || M95256-WMN6P || SO8 narrow || 1  || [http://uk.farnell.com/1099712/semiconductors-integrated-circuits/product.us0?sku=stmicroelectronics-m95256-wmn6p 1.55€] ||
+|| U11 || AT90USB162-16AU || TQFP32 || 1  || [http://pt.farnell.com/1455073/semiconductors-integrated-circuits/product.us0?sku=atmel-at90usb162-16au&_requestid=262126 3.56€] ||
+|| U12 || MAX756CPA+ || SOIC-8 || 1 || [http://www.maxim-ic.com/quick_view2.cfm/qv_pk/1167/t/or $3.38] ||
+|| SW1, SW2  || FSM4JSMA ||  || 2 || [http://pt.farnell.com/jsp/search/productdetail.jsp?SKU=3801305 0.18€] ||
+|| USB-MB-H || Molex Ref: 675031020 ||  || 1 || [http://uk.farnell.com/1125348/connectors/product.us0?sku=molex-675031020 0.76€] ||
+|| X1 || AVX Ref: CX49GFWB08000H0PESZZ ||  || 1 || [http://uk.farnell.com/1368799/passives/product.us0?sku=avx-cx49gfwb08000h0peszz 0.91€] ||
+|| P1 || Not Assembled ||  || 1 || 0 ||
+|| P2, P3 || Not Assembled ||  || 2 || 0 ||
+||  ||  ||  ||  || Total price: 13,15€ ||
 
 =Printed circuit board=
 Working in progress.
