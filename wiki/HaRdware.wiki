@@ -25,7 +25,7 @@ Read more on PowerStage page.
 =Schematic=
 Schematic was drawn using [ToOls KiCAD].
 
-Schematic is divided in two pages. Download full schematic [http://bicycleledpov.googlecode.com/svn-history/r168/trunk/BicycleLEDPOV/Hardware/Schematics/schematic-sheet_01.png schematic-sheet_01.png] and [http://bicycleledpov.googlecode.com/svn-history/r168/trunk/BicycleLEDPOV/Hardware/Schematics/schematic-sheet_02.png schematic-sheet_02.png].
+Schematic is divided in two pages. Download full schematic [http://bicycleledpov.googlecode.com/svn-history/r175/trunk/BicycleLEDPOV/Hardware/Schematics/schematic-sheet_01.png schematic-sheet_01.png] and [http://bicycleledpov.googlecode.com/svn-history/r175/trunk/BicycleLEDPOV/Hardware/Schematics/schematic-sheet_02.png schematic-sheet_02.png].
 
 Preview of sheet 1 (incomplete view of schematic):
 
@@ -40,23 +40,20 @@ The latest schematic version is always [http://code.google.com/p/bicycleledpov/s
 =Part list=
 Working in progress.
 
-|| *Reference* || *Value* || *Package* || *Price* ||
-|| R1 || 10K 1/8W 10% || 0805 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
-|| R2, R3, R4, R5,  || 1K 1/8W 10% || 0805 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
-|| R6, R7, R8, R9 || 1K3 1/8W 10% || 0805 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
-|| R10, R11 || 22R 1/8W 10% || 0805 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
-|| R12, R13  || 330R 1/8W 10% || 0805 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
-|| R14  || 33K 1/8W 10% || 0805 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
-|| R15, R16  || 47K 1/8W 10% || 0805 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
-|| R17  || 51K 1/8W 10% || 0805 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
-|| R18 - R81  || 56R 1/8W 10% || 0805 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
-|| U1 - U8 || 74VHC595 || SOIC-16 || [http://pt.farnell.com/1366184/semiconductors-integrated-circuits/product.us0?sku=fairchild-semiconductor-74vhc595monductors-integrated-circuits/product.us0?sku=fairchild-semiconductor-74vhc595mtcx 0,26€] ||
-|| U9 || A3213ELHLT-T || SOT23W || [http://pt.farnell.com/1457117/semiconductors-integrated-circuits/product.us0?sku=allegro-microsystems-a3213elhlt-t 0,83€] ||
-|| U10 || AT25128A ?? || ?? ||?? ||
-|| U11 || AT90USB162-16AU || TQFP32 || [http://pt.farnell.com/1455073/semiconductors-integrated-circuits/product.us0?sku=atmel-at90usb162-16au&_requestid=262126 3,56€] ||
-|| U12 || MAX756CPA+ || SOIC-8 || [http://www.maxim-ic.com/quick_view2.cfm/qv_pk/1167/t/or $3.38] ||
-|| C1, C2, C3 || 100nF 50V || 0805 || [http://uk.farnell.com/9406387/passives/product.us0?sku=multicomp-u0805r104kct 0,35€] ||
-|| C8, C9 || 47uF 16V || Case C || [http://pt.farnell.com/9695664/passives/product.us0?sku=panasonic-eeefk1c470ur&_requestid=518790 0,35€] ||
+|| *Reference* || *Value* || *Package* || *Quantity* || *Price* ||
+|| R1 - R5 || 10K 1/8W 10% || 0805 || 5 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
+|| R6 - R9 || 13K 1/8W 10% || 0805 || 4 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
+|| R10, R11 || 22R 1/8W 10% || 0805 || 2 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
+|| R12, R13  || 330R 1/8W 10% || 0805 || 2 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
+|| R14 - R17  || 47K 1/8W 10% || 0805 || 4 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
+|| R18 - R81  || 56R 1/8W 10% || 0805 || 64 || [http://pt.farnell.com/1469856/passives/product.us0?sku=vishay-dale-crcw080510k0fkea&_requestid=521275 0,029€] ||
+|| U1 - U8 || 74VHC595 || SOIC-16 || 8 || [http://pt.farnell.com/1366184/semiconductors-integrated-circuits/product.us0?sku=fairchild-semiconductor-74vhc595monductors-integrated-circuits/product.us0?sku=fairchild-semiconductor-74vhc595mtcx 0,26€] ||
+|| U9 || A3213ELHLT-T || SOT23W || 1 || [http://pt.farnell.com/1457117/semiconductors-integrated-circuits/product.us0?sku=allegro-microsystems-a3213elhlt-t 0,83€] ||
+|| U10 || AT25128A ?? || ?? || 1  || ?? ||
+|| U11 || AT90USB162-16AU || TQFP32 || 1  || [http://pt.farnell.com/1455073/semiconductors-integrated-circuits/product.us0?sku=atmel-at90usb162-16au&_requestid=262126 3,56€] ||
+|| U12 || MAX756CPA+ || SOIC-8 || 1  || [http://www.maxim-ic.com/quick_view2.cfm/qv_pk/1167/t/or $3.38] ||
+|| C1 - C3 || 100nF 50V || 0805 || 3  || [http://uk.farnell.com/9406387/passives/product.us0?sku=multicomp-u0805r104kct 0,35€] ||
+|| C8, C9 || 47uF 16V || Case C || 2  || [http://pt.farnell.com/9695664/passives/product.us0?sku=panasonic-eeefk1c470ur&_requestid=518790 0,35€] ||
 
 =Printed circuit board=
 Working in progress.
