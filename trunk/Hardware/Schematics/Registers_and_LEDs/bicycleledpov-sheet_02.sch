@@ -1,5 +1,5 @@
 EESchema Schematic File Version 1
-LIBS:power,./KiCAD_library/at90usb162,device,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,contrib,valves,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./bicycleledpov_base.cache
+LIBS:power,./KiCAD_library/at90usb162,device,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,contrib,valves,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC
 EELAYER 23  0
 EELAYER END
 $Descr A4 11700 8267
@@ -1831,19 +1831,19 @@ SS0
 Text GLabel 1600 950  0    60   Input
 SPI_MOSI
 $Comp
-L GND #PWR021
+L GND #PWR4
 U 1 1 485B6135
 P 700 6450
-F 0 "#PWR021" H 700 6450 30  0001 C C
+F 0 "#PWR4" H 700 6450 30  0001 C C
 F 1 "GND" H 700 6380 30  0001 C C
 	1    700  6450
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR022
+L GND #PWR3
 U 1 1 485B6034
 P 10900 3000
-F 0 "#PWR022" H 10900 3000 30  0001 C C
+F 0 "#PWR3" H 10900 3000 30  0001 C C
 F 1 "GND" H 10900 2930 30  0001 C C
 	1    10900 3000
 	-1   0    0    -1  
