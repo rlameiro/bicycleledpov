@@ -1,5 +1,5 @@
 EESchema Schematic File Version 1
-LIBS:power,./KiCAD_library/at90usb162,device,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,contrib,valves,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./bicycleledpov_base.cache
+LIBS:power,./KiCAD_library/at90usb162,device,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,contrib,valves,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC
 EELAYER 23  0
 EELAYER END
 $Descr A4 11700 8267
@@ -326,10 +326,10 @@ MEMORY_HOLD
 Text Label 3875 6330 0    60   ~
 MEMORY_VCC
 $Comp
-L GND #PWR01
+L GND #PWR21
 U 1 1 48711A02
 P 9390 3130
-F 0 "#PWR01" H 9390 3130 30  0001 C C
+F 0 "#PWR21" H 9390 3130 30  0001 C C
 F 1 "GND" H 9390 3060 30  0001 C C
 	1    9390 3130
 	1    0    0    -1  
@@ -403,10 +403,10 @@ PB7
 Text Notes 9705 1580 0    60   ~
 ICSP
 $Comp
-L GND #PWR02
+L GND #PWR20
 U 1 1 48711264
 P 10395 2175
-F 0 "#PWR02" H 10395 2175 30  0001 C C
+F 0 "#PWR20" H 10395 2175 30  0001 C C
 F 1 "GND" H 10395 2105 30  0001 C C
 	1    10395 2175
 	1    0    0    -1  
@@ -433,10 +433,10 @@ F 1 "CONN_3X2" V 9845 2030 40  0000 C C
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L GND #PWR19
 U 1 1 486F9B70
 P 3550 3685
-F 0 "#PWR03" H 3550 3685 30  0001 C C
+F 0 "#PWR19" H 3550 3685 30  0001 C C
 F 1 "GND" H 3550 3615 30  0001 C C
 	1    3550 3685
 	1    0    0    -1  
@@ -452,19 +452,19 @@ VCC_3.3V
 Text Label 1400 3900 0    60   ~
 VCC_3.3V
 $Comp
-L GND #PWR04
+L GND #PWR18
 U 1 1 486D47F9
 P 7325 5495
-F 0 "#PWR04" H 7325 5495 30  0001 C C
+F 0 "#PWR18" H 7325 5495 30  0001 C C
 F 1 "GND" H 7325 5425 30  0001 C C
 	1    7325 5495
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R78
+L R R70
 U 1 1 486C773C
 P 2180 3900
-F 0 "R78" V 2260 3900 50  0000 C C
+F 0 "R70" V 2260 3900 50  0000 C C
 F 1 "33K" V 2180 3900 50  0000 C C
 	1    2180 3900
 	0    1    1    0   
@@ -472,10 +472,10 @@ $EndComp
 Text Notes 1305 4345 0    80   ~
 Reset button
 $Comp
-L R R77
+L R R69
 U 1 1 486D41DE
 P 6935 2550
-F 0 "R77" V 7015 2550 50  0000 C C
+F 0 "R69" V 7015 2550 50  0000 C C
 F 1 "330R" V 6935 2550 50  0000 C C
 	1    6935 2550
 	0    1    1    0   
@@ -490,46 +490,46 @@ F 1 "10uH" V 8745 5215 40  0000 C C
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR05
+L GND #PWR17
 U 1 1 486CF4E4
 P 9750 6185
-F 0 "#PWR05" H 9750 6185 30  0001 C C
+F 0 "#PWR17" H 9750 6185 30  0001 C C
 F 1 "GND" H 9750 6115 30  0001 C C
 	1    9750 6185
 	1    0    0    -1  
 $EndComp
 $Comp
-L +BATT #PWR06
+L +BATT #PWR2
 U 1 1 486CF3FB
 P 9350 6135
-F 0 "#PWR06" H 9350 6085 20  0001 C C
+F 0 "#PWR2" H 9350 6085 20  0001 C C
 F 1 "+BATT" H 9350 6235 30  0000 C C
 	1    9350 6135
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR07
+L GND #PWR16
 U 1 1 486CF3F6
 P 9500 5945
-F 0 "#PWR07" H 9500 5945 30  0001 C C
+F 0 "#PWR16" H 9500 5945 30  0001 C C
 F 1 "GND" H 9500 5875 30  0001 C C
 	1    9500 5945
 	1    0    0    -1  
 $EndComp
 $Comp
-L CAPAPOL C8
+L CAPAPOL C7
 U 1 1 486CF14F
 P 9750 5895
-F 0 "C8" H 9800 5995 50  0000 L C
+F 0 "C7" H 9800 5995 50  0000 L C
 F 1 "47uF" H 9800 5795 50  0000 L C
 	1    9750 5895
 	1    0    0    -1  
 $EndComp
 $Comp
-L CAPAPOL C7
+L CAPAPOL C6
 U 1 1 486CF147
 P 7730 5395
-F 0 "C7" H 7780 5495 50  0000 L C
+F 0 "C6" H 7780 5495 50  0000 L C
 F 1 "47uF" H 7780 5295 50  0000 L C
 	1    7730 5395
 	0    1    -1   0   
@@ -544,37 +544,37 @@ F 1 "Schottky" H 9755 5560 40  0000 C C
 	1    0    0    -1  
 $EndComp
 $Comp
-L +BATT #PWR08
+L +BATT #PWR1
 U 1 1 486CEEF7
 P 8000 4855
-F 0 "#PWR08" H 8000 4805 20  0001 C C
+F 0 "#PWR1" H 8000 4805 20  0001 C C
 F 1 "+BATT" H 8000 4955 30  0000 C C
 	1    8000 4855
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L GND #PWR15
 U 1 1 486C7724
 P 2565 4795
-F 0 "#PWR09" H 2565 4795 30  0001 C C
+F 0 "#PWR15" H 2565 4795 30  0001 C C
 F 1 "GND" H 2565 4725 30  0001 C C
 	1    2565 4795
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R76
+L R R68
 U 1 1 486C7698
 P 2955 3900
-F 0 "R76" V 3035 3900 50  0000 C C
+F 0 "R68" V 3035 3900 50  0000 C C
 F 1 "330" V 2955 3900 50  0000 C C
 	1    2955 3900
 	0    1    1    0   
 $EndComp
 $Comp
-L C C3
+L C C2
 U 1 1 486C73C2
 P 7480 5795
-F 0 "C3" H 7530 5895 50  0000 L C
+F 0 "C2" H 7530 5895 50  0000 L C
 F 1 "100nF" H 7530 5695 50  0000 L C
 	1    7480 5795
 	1    0    0    1   
@@ -583,10 +583,10 @@ Text Label 10060 5695 0    60   ~
 VCC_3.3V
 NoConn ~ 8100 5795
 $Comp
-L MAX756 U12
+L MAX756 U11
 U 1 1 486C71BA
 P 8650 5645
-F 0 "U12" H 8450 5345 60  0000 C C
+F 0 "U11" H 8450 5345 60  0000 C C
 F 1 "MAX756" H 8600 5945 60  0000 C C
 	1    8650 5645
 	1    0    0    -1  
@@ -603,10 +603,10 @@ $EndComp
 Text Label 3985 6130 0    60   ~
 SPI_SS2
 $Comp
-L GND #PWR010
+L GND #PWR14
 U 1 1 48657747
 P 4435 6530
-F 0 "#PWR010" H 4435 6530 30  0001 C C
+F 0 "#PWR14" H 4435 6530 30  0001 C C
 F 1 "GND" H 4435 6460 30  0001 C C
 	1    4435 6530
 	1    0    0    -1  
@@ -618,37 +618,37 @@ SPI_MOSI
 Text Label 5785 6330 0    60   ~
 SPI_SCKL
 $Comp
-L GND #PWR011
+L GND #PWR13
 U 1 1 486512C8
 P 7330 3195
-F 0 "#PWR011" H 7330 3195 30  0001 C C
+F 0 "#PWR13" H 7330 3195 30  0001 C C
 F 1 "GND" H 7330 3125 30  0001 C C
 	1    7330 3195
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L C C1
 U 1 1 48651272
 P 7330 2895
-F 0 "C2" H 7380 2995 50  0000 L C
+F 0 "C1" H 7380 2995 50  0000 L C
 F 1 "100nF" H 7410 2785 50  0000 L C
 	1    7330 2895
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R R73
+L R R65
 U 1 1 48651230
 P 7610 2200
-F 0 "R73" V 7690 2200 50  0000 C C
+F 0 "R65" V 7690 2200 50  0000 C C
 F 1 "10K" V 7610 2200 50  0000 C C
 	1    7610 2200
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR012
+L GND #PWR12
 U 1 1 48650F13
 P 6815 4445
-F 0 "#PWR012" H 6815 4445 30  0001 C C
+F 0 "#PWR12" H 6815 4445 30  0001 C C
 F 1 "GND" H 6815 4375 30  0001 C C
 	1    6815 4445
 	1    0    0    -1  
@@ -656,19 +656,19 @@ $EndComp
 Text Label 7575 3750 0    60   ~
 VBUS
 $Comp
-L R R80
+L R R72
 U 1 1 485D5056
 P 7190 3750
-F 0 "R80" V 7270 3750 50  0000 C C
+F 0 "R72" V 7270 3750 50  0000 C C
 F 1 "47K" V 7190 3750 50  0000 C C
 	1    7190 3750
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR013
+L GND #PWR11
 U 1 1 48650E1A
 P 1980 3050
-F 0 "#PWR013" H 1980 3050 30  0001 C C
+F 0 "#PWR11" H 1980 3050 30  0001 C C
 F 1 "GND" H 1980 2980 30  0001 C C
 	1    1980 3050
 	1    0    0    -1  
@@ -714,10 +714,10 @@ SENSOR_DATA
 Text Label 2455 7265 1    60   ~
 SENSOR_DATA
 $Comp
-L R R81
+L R R73
 U 1 1 4864FDF1
 P 1915 6600
-F 0 "R81" V 1995 6600 50  0000 C C
+F 0 "R73" V 1995 6600 50  0000 C C
 F 1 "51K" V 1915 6600 50  0000 C C
 	1    1915 6600
 	0    1    1    0   
@@ -732,10 +732,10 @@ F 1 "A3213ELHLT" H 2465 6385 60  0000 C C
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L GND #PWR10
 U 1 1 4864FB94
 P 2570 7055
-F 0 "#PWR014" H 2570 7055 30  0001 C C
+F 0 "#PWR10" H 2570 7055 30  0001 C C
 F 1 "GND" H 2570 6985 30  0001 C C
 	1    2570 7055
 	1    0    0    -1  
@@ -743,64 +743,64 @@ $EndComp
 Text Notes 1605 5570 0    80   ~
 Hall Effect Sensor
 $Comp
-L AT25128A U10
+L AT25128A U12
 U 1 1 4864FB37
 P 5135 6280
-F 0 "U10" H 5385 5980 60  0000 C C
+F 0 "U12" H 5385 5980 60  0000 C C
 F 1 "MEMORY" H 5085 6580 60  0000 C C
 	1    5135 6280
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR015
+L GND #PWR9
 U 1 1 4862F407
 P 3250 3200
-F 0 "#PWR015" H 3250 3200 30  0001 C C
+F 0 "#PWR9" H 3250 3200 30  0001 C C
 F 1 "GND" H 3250 3130 30  0001 C C
 	1    3250 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L C C3
 U 1 1 485D5327
 P 3250 2900
-F 0 "C4" H 3300 3000 50  0000 L C
+F 0 "C3" H 3300 3000 50  0000 L C
 F 1 "1uF" H 3300 2800 50  0000 L C
 	1    3250 2900
 	-1   0    0    -1  
 $EndComp
 $Comp
-L AT90USB162 U11
+L AT90USB162 U10
 U 1 1 485CC196
 P 4700 2350
-F 0 "U11" H 4900 400 60  0000 C C
+F 0 "U10" H 4900 400 60  0000 C C
 F 1 "AT90USB162" H 4750 3000 60  0000 C C
 	1    4700 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR017
+L GND #PWR8
 U 1 1 4862F2EC
 P 2600 2600
-F 0 "#PWR017" H 2600 2600 30  0001 C C
+F 0 "#PWR8" H 2600 2600 30  0001 C C
 F 1 "GND" H 2600 2530 30  0001 C C
 	1    2600 2600
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR018
+L GND #PWR7
 U 1 1 4862F09A
 P 2396 1785
-F 0 "#PWR018" H 2396 1785 30  0001 C C
+F 0 "#PWR7" H 2396 1785 30  0001 C C
 F 1 "GND" H 2396 1715 30  0001 C C
 	1    2396 1785
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR019
+L GND #PWR6
 U 1 1 4862F018
 P 3600 1785
-F 0 "#PWR019" H 3600 1785 30  0001 C C
+F 0 "#PWR6" H 3600 1785 30  0001 C C
 F 1 "GND" H 3600 1715 30  0001 C C
 	1    3600 1785
 	1    0    0    -1  
@@ -808,7 +808,7 @@ $EndComp
 $Sheet
 S 7650 6700 1650 200 
 F0 "Registers and LEDs" 60
-F1 "/home/don/bicycleledpov/Hardware/Schematics/Registers_and_LEDs/bicycleledpov-sheet_02.sch" 60
+F1 "./Registers_and_LEDs/bicycleledpov-sheet_02.sch" 60
 F2 "SPI_SS1" I R 9300 6750 60 
 F3 "SPI_SS0" I R 9300 6850 60 
 F4 "SPI_MOSI" I L 7650 6750 60 
@@ -817,10 +817,10 @@ $EndSheet
 Text Notes 7915 3285 1    80   ~
 Bootloader button
 $Comp
-L GND #PWR020
+L GND #PWR5
 U 1 1 485EAA84
 P 7610 3350
-F 0 "#PWR020" H 7610 3350 30  0001 C C
+F 0 "#PWR5" H 7610 3350 30  0001 C C
 F 1 "GND" H 7610 3280 30  0001 C C
 	1    7610 3350
 	1    0    0    -1  
@@ -835,19 +835,19 @@ F 1 "SW_PUSH" H 7610 2870 50  0000 C C
 	0    1    1    0   
 $EndComp
 $Comp
-L C C6
+L C C5
 U 1 1 485E9C78
 P 2396 1485
-F 0 "C6" H 2446 1585 50  0000 L C
+F 0 "C5" H 2446 1585 50  0000 L C
 F 1 "20pF" H 2446 1385 50  0000 L C
 	1    2396 1485
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C5
+L C C4
 U 1 1 485E9B91
 P 3600 1460
-F 0 "C5" H 3455 1580 50  0000 L C
+F 0 "C4" H 3455 1580 50  0000 L C
 F 1 "20pF" H 3340 1360 50  0000 L C
 	1    3600 1460
 	-1   0    0    -1  
@@ -862,28 +862,28 @@ F 1 "8MHz" H 3000 985 60  0000 C C
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R75
+L R R67
 U 1 1 485E7E7C
 P 2430 3350
-F 0 "R75" V 2355 3360 50  0000 C C
+F 0 "R67" V 2355 3360 50  0000 C C
 F 1 "22R" V 2430 3350 50  0000 C C
 	1    2430 3350
 	0    1    1    0   
 $EndComp
 $Comp
-L R R74
+L R R66
 U 1 1 485E7E7B
 P 2430 3450
-F 0 "R74" V 2510 3450 50  0000 C C
+F 0 "R66" V 2510 3450 50  0000 C C
 F 1 "22R" V 2430 3450 50  0000 C C
 	1    2430 3450
 	0    1    1    0   
 $EndComp
 $Comp
-L R R79
+L R R71
 U 1 1 485D4F44
 P 6815 4095
-F 0 "R79" V 6895 4095 50  0000 C C
+F 0 "R71" V 6895 4095 50  0000 C C
 F 1 "47K" V 6815 4095 50  0000 C C
 	1    6815 4095
 	1    0    0    -1  
