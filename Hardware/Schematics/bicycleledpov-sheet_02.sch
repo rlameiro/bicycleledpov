@@ -1,5 +1,5 @@
 EESchema Schematic File Version 1
-LIBS:power,./KiCAD_library/at90usb162,device,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,contrib,valves,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC
+LIBS:power,./KiCAD_library/at90usb162,device,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,contrib,valves,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC,./bicycleledpov_base.cache
 EELAYER 23  0
 EELAYER END
 $Descr A4 11700 8267
@@ -730,7 +730,7 @@ L LED D54
 U 1 1 48738EE4
 P 2400 4850
 F 0 "D54" H 2400 4950 50  0000 C C
-F 1 "LED" H 2400 4750 50  0000 C C
+F 1 "LED" H 2400 4750 50  0001 C C
 	1    2400 4850
 	0    1    1    0   
 $EndComp
@@ -748,7 +748,7 @@ L LED D52
 U 1 1 48738EE2
 P 2600 4850
 F 0 "D52" H 2600 4950 50  0000 C C
-F 1 "LED" H 2600 4750 50  0000 C C
+F 1 "LED" H 2600 4750 50  0001 C C
 	1    2600 4850
 	0    1    1    0   
 $EndComp
@@ -757,7 +757,7 @@ L LED D51
 U 1 1 48738EE1
 P 2700 4550
 F 0 "D51" H 2700 4650 50  0000 C C
-F 1 "LED" H 2700 4450 50  0000 C C
+F 1 "LED" H 2700 4450 50  0001 C C
 	1    2700 4550
 	0    1    1    0   
 $EndComp

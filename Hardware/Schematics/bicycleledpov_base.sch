@@ -1,5 +1,5 @@
 EESchema Schematic File Version 1
-LIBS:power,./KiCAD_library/at90usb162,device,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,contrib,valves,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC
+LIBS:power,./KiCAD_library/at90usb162,device,conn,linear,regul,74xx,cmos4000,adc-dac,memory,xilinx,special,microcontrollers,dsp,microchip,analog_switches,motorola,texas,intel,audio,interface,digital-audio,philips,display,cypress,siliconi,contrib,valves,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC,./bicycleledpov_base.cache
 EELAYER 23  0
 EELAYER END
 $Descr A4 11700 8267
@@ -13,55 +13,63 @@ Comment2 "(c) Donald Ziems"
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 4750 6550 0    80   ~
+AAA batteries
 $Comp
 L +BATT #PWR3
 U 1 1 48767F42
-P 4350 5000
-F 0 "#PWR3" H 4350 4950 20  0001 C C
-F 1 "+BATT" H 4350 5100 30  0000 C C
-	1    4350 5000
+P 4600 6850
+F 0 "#PWR3" H 4600 6800 20  0001 C C
+F 1 "+BATT" H 4600 6950 30  0000 C C
+	1    4600 6850
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR23
 U 1 1 48767F3A
-P 5850 5200
-F 0 "#PWR23" H 5850 5200 30  0001 C C
-F 1 "GND" H 5850 5130 30  0001 C C
-	1    5850 5200
+P 6100 7050
+F 0 "#PWR23" H 6100 7050 30  0001 C C
+F 1 "GND" H 6100 6980 30  0001 C C
+	1    6100 7050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 5200 5850 5100
+	6100 7050 6100 6950
 Wire Wire Line
-	5850 5100 5750 5100
+	6100 6950 6000 6950
 Wire Wire Line
-	5150 5100 5050 5100
+	5400 6950 5300 6950
 Wire Wire Line
-	7325 5595 7325 5495
+	1025 6245 1025 6145
 Wire Wire Line
-	7325 5495 7530 5495
-Connection ~ 7480 5495
+	1025 6145 1180 6145
 Wire Wire Line
-	7480 5595 7480 5495
+	1180 6145 1230 6145
+Connection ~ 1180 6145
 Wire Wire Line
-	8100 5495 7930 5495
+	1180 6245 1180 6145
 Wire Wire Line
-	3550 2500 3550 2950
+	1800 6145 1700 6145
+Wire Wire Line
+	1700 6145 1630 6145
+Wire Wire Line
+	3550 2500 3550 2800
+Wire Wire Line
+	3550 2800 3550 2950
 Wire Wire Line
 	3170 2700 3170 2500
 Connection ~ 3550 2500
 Wire Wire Line
 	3550 2950 3750 2950
 Wire Wire Line
-	9350 6060 9350 5795
+	3050 6710 3050 6445
 Wire Wire Line
 	8960 2940 9495 2940
 Wire Wire Line
 	1400 3900 1930 3900
 Wire Wire Line
 	6950 2050 6300 2050
-Connection ~ 8000 5495
+Connection ~ 1700 6145
 Wire Wire Line
 	6500 3350 7050 3350
 Wire Wire Line
@@ -99,16 +107,18 @@ Wire Wire Line
 Wire Wire Line
 	3600 1260 3600 1135
 Wire Wire Line
-	3600 1135 3300 1135
+	3600 1135 3415 1135
+Wire Wire Line
+	3415 1135 3300 1135
 Wire Wire Line
 	2570 2000 2570 1135
 Wire Wire Line
-	7480 6035 8000 6035
+	1180 6685 1700 6685
 Wire Wire Line
-	9750 6095 9750 6185
-Connection ~ 8000 5215
+	3450 6745 3450 6835
+Connection ~ 1700 5865
 Wire Wire Line
-	8000 5215 8345 5215
+	1700 5865 2045 5865
 Connection ~ 2565 3900
 Wire Wire Line
 	2565 3995 2565 3900
@@ -120,32 +130,36 @@ Connection ~ 7330 2550
 Wire Wire Line
 	7330 2695 7330 2550
 Wire Wire Line
-	7610 2550 7185 2550
-Connection ~ 9750 5695
+	7610 2550 7330 2550
 Wire Wire Line
-	9500 5945 9500 5595
+	7330 2550 7185 2550
+Connection ~ 3450 6345
 Wire Wire Line
-	9500 5595 9200 5595
+	3200 6595 3200 6245
 Wire Wire Line
-	2705 3900 2430 3900
+	3200 6245 2900 6245
 Wire Wire Line
-	7480 6035 7480 5995
+	2705 3900 2565 3900
 Wire Wire Line
-	8000 6035 8000 5695
+	2565 3900 2430 3900
 Wire Wire Line
-	8000 5695 8100 5695
+	1180 6685 1180 6645
 Wire Wire Line
-	4535 6130 3985 6130
+	1700 6685 1700 6345
 Wire Wire Line
-	4435 6530 4435 6430
+	1700 6345 1800 6345
 Wire Wire Line
-	4435 6430 4535 6430
+	5385 5330 4835 5330
 Wire Wire Line
-	5785 6330 6335 6330
+	5285 5730 5285 5630
 Wire Wire Line
-	5785 6430 6335 6430
+	5285 5630 5385 5630
 Wire Wire Line
-	5785 6130 6485 6130
+	6635 5530 7185 5530
+Wire Wire Line
+	6635 5630 7185 5630
+Wire Wire Line
+	6635 5330 7335 5330
 Wire Wire Line
 	7330 3095 7330 3195
 Wire Wire Line
@@ -166,17 +180,21 @@ Wire Wire Line
 	6770 3150 6300 3150
 Wire Wire Line
 	6300 2850 6830 2850
-Connection ~ 2455 6810
+Connection ~ 9605 5660
 Wire Wire Line
-	2455 6810 1665 6810
+	9605 5660 8815 5660
 Wire Wire Line
-	2320 6540 2320 7265
+	9470 5390 9470 5450
+Wire Wire Line
+	9470 5450 9470 6115
 Wire Wire Line
 	7010 1850 6300 1850
 Wire Wire Line
-	2455 7265 2455 6540
+	9605 6115 9605 5660
 Wire Wire Line
-	1665 6810 1665 6600
+	9605 5660 9605 5390
+Wire Wire Line
+	8815 5660 8815 5450
 Wire Wire Line
 	3170 3200 3170 3100
 Wire Wire Line
@@ -188,14 +206,16 @@ Wire Wire Line
 Wire Wire Line
 	2396 1285 2396 1135
 Wire Wire Line
-	2396 1135 2700 1135
+	2396 1135 2570 1135
 Wire Wire Line
-	2570 6540 2570 7055
+	2570 1135 2700 1135
+Wire Wire Line
+	9720 5390 9720 5905
 Wire Wire Line
 	6950 1950 6300 1950
 Wire Wire Line
-	2165 6600 2320 6600
-Connection ~ 2320 6600
+	9315 5450 9470 5450
+Connection ~ 9470 5450
 Wire Wire Line
 	6750 2750 6300 2750
 Wire Wire Line
@@ -219,27 +239,35 @@ Wire Wire Line
 Wire Wire Line
 	1980 3000 1980 3050
 Wire Wire Line
-	7610 2450 7610 2650
+	7610 2450 7610 2550
+Wire Wire Line
+	7610 2550 7610 2650
 Connection ~ 7610 2550
 Wire Wire Line
-	3985 6230 4535 6230
+	4835 5430 5385 5430
 Wire Wire Line
-	5785 6230 6485 6230
+	6635 5430 7335 5430
 Wire Wire Line
 	3205 3900 3750 3900
 Wire Wire Line
-	2565 4595 2565 4795
+	2565 4595 2565 4695
+Wire Wire Line
+	2565 4695 2565 4795
 Connection ~ 2565 4695
 Wire Wire Line
-	9350 5795 9200 5795
+	3050 6445 2900 6445
 Wire Wire Line
-	9700 5495 9750 5495
+	3400 6145 3450 6145
 Wire Wire Line
-	9750 5495 9750 5695
+	3450 6145 3450 6345
 Wire Wire Line
-	9300 5495 9200 5495
+	3000 6145 2955 6145
 Wire Wire Line
-	9200 5695 10430 5695
+	2955 6145 2900 6145
+Wire Wire Line
+	2900 6345 3450 6345
+Wire Wire Line
+	3450 6345 4130 6345
 Wire Wire Line
 	7440 3750 7850 3750
 Wire Wire Line
@@ -248,7 +276,9 @@ Wire Wire Line
 	6815 3845 6815 3750
 Connection ~ 6815 3750
 Wire Wire Line
-	6940 3750 6300 3750
+	6940 3750 6815 3750
+Wire Wire Line
+	6815 3750 6300 3750
 Wire Wire Line
 	2680 3450 3750 3450
 Wire Wire Line
@@ -298,72 +328,78 @@ Wire Wire Line
 Wire Wire Line
 	9390 3040 9390 3130
 Wire Wire Line
-	3875 6330 4535 6330
+	4725 5530 5385 5530
 Wire Wire Line
-	8100 5595 8000 5595
+	1800 6245 1700 6245
 Wire Wire Line
 	8765 2640 9495 2640
 Wire Wire Line
 	9495 3760 9245 3760
 Wire Wire Line
-	8000 5595 8000 5085
+	1700 6245 1700 6145
+Wire Wire Line
+	1700 6145 1700 5865
+Wire Wire Line
+	1700 5865 1700 5735
 Wire Wire Line
 	3750 2800 3550 2800
 Connection ~ 3550 2800
 Wire Wire Line
-	3170 2500 3750 2500
+	3170 2500 3550 2500
+Wire Wire Line
+	3550 2500 3750 2500
 Connection ~ 3170 2500
 Wire Wire Line
-	8945 5215 9255 5215
+	2645 5865 2955 5865
 Wire Wire Line
-	9255 5215 9255 5495
-Connection ~ 9255 5495
+	2955 5865 2955 6145
+Connection ~ 2955 6145
 Wire Wire Line
-	4450 5100 4350 5100
+	4700 6950 4600 6950
 Wire Wire Line
-	4350 5100 4350 5000
+	4600 6950 4600 6850
 $Comp
 L BATTERY BT2
 U 1 1 48767F26
-P 5450 5100
-F 0 "BT2" H 5450 5300 50  0000 C C
-F 1 "BATTERY" H 5450 4910 50  0000 C C
-	1    5450 5100
+P 5700 6950
+F 0 "BT2" H 5700 7150 50  0000 C C
+F 1 "BATTERY" H 5700 6760 50  0001 C C
+	1    5700 6950
 	1    0    0    -1  
 $EndComp
 $Comp
 L BATTERY BT1
 U 1 1 48767F24
-P 4750 5100
-F 0 "BT1" H 4750 5300 50  0000 C C
-F 1 "BATTERY" H 4750 4910 50  0000 C C
-	1    4750 5100
+P 5000 6950
+F 0 "BT1" H 5000 7150 50  0000 C C
+F 1 "BATTERY" H 5000 6760 50  0001 C C
+	1    5000 6950
 	1    0    0    -1  
 $EndComp
-Kmarq B 9200 5695 "Erro: Pino power_out conectado ao Pino output (ligação 31)" F=2
-Kmarq B 9350 6060 "Atenção Pino power_in não controlado (Net 29)" F=1
-Kmarq B 4535 6230 "Atenção: Pino output conectado ao Pino 3state (ligação 26)" F=1
-Kmarq B 5785 6130 "Atenção Pino power_in não controlado (Net 20)" F=1
-Kmarq B 5785 6130 "Atenção: Pino power_in conectado ao Pino 3state (ligação 20)" F=1
+Kmarq B 2900 6345 "Erro: Pino power_out conectado ao Pino output (ligação 31)" F=2
+Kmarq B 3050 6710 "Atenção Pino power_in não controlado (Net 29)" F=1
+Kmarq B 5385 5430 "Atenção: Pino output conectado ao Pino 3state (ligação 26)" F=1
+Kmarq B 6635 5330 "Atenção Pino power_in não controlado (Net 20)" F=1
+Kmarq B 6635 5330 "Atenção: Pino power_in conectado ao Pino 3state (ligação 20)" F=1
 Kmarq B 3750 2000 "Atenção: Pino unspc conectado ao Pino passive (ligação 11)" F=1
 Kmarq B 3750 1900 "Atenção: Pino unspc conectado ao Pino passive (ligação 10)" F=1
 Kmarq B 3750 3550 "Erro: Pino power_out conectado ao Pino power_out (ligação 3)" F=2
-Kmarq B 9200 5595 "Erro: Pino output conectado ao Pino power_out (ligação 3)" F=2
-Kmarq B 9200 5495 "Atenção Pino power_in não controlado (Net 1)" F=1
+Kmarq B 2900 6245 "Erro: Pino output conectado ao Pino power_out (ligação 3)" F=2
+Kmarq B 2900 6145 "Atenção Pino power_in não controlado (Net 1)" F=1
 NoConn ~ 3750 3250
 Text Label 8765 2640 0    60   ~
 MEMORY_HOLD
-Text Notes 4970 5850 0    60   ~
+Text Notes 5820 5050 0    60   ~
 MEMORY
-Text Label 5785 6130 0    60   ~
+Text Label 6635 5330 0    60   ~
 MEMORY_VCC
 Text Label 6300 2050 0    60   ~
 MEMORY_VCC
-Text Label 5785 6230 0    60   ~
+Text Label 6635 5430 0    60   ~
 MEMORY_HOLD
 Text Label 6300 3350 0    60   ~
 MEMORY_HOLD
-Text Label 3875 6330 0    60   ~
+Text Label 4725 5530 0    60   ~
 MEMORY_VCC
 $Comp
 L GND #PWR20
@@ -483,7 +519,7 @@ F 1 "GND" H 3550 3615 30  0001 C C
 $EndComp
 Text Notes 1455 3570 1    80   ~
 USB connector
-Text Notes 8380 4770 0    80   ~
+Text Notes 2150 5500 0    80   ~
 DC-DC
 Text Label 3170 2500 0    60   ~
 VCC_3.3V
@@ -494,10 +530,10 @@ VCC_3.3V
 $Comp
 L GND #PWR17
 U 1 1 486D47F9
-P 7325 5595
-F 0 "#PWR17" H 7325 5595 30  0001 C C
-F 1 "GND" H 7325 5525 30  0001 C C
-	1    7325 5595
+P 1025 6245
+F 0 "#PWR17" H 1025 6245 30  0001 C C
+F 1 "GND" H 1025 6175 30  0001 C C
+	1    1025 6245
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -512,10 +548,10 @@ $EndComp
 Text Notes 1440 4330 0    80   ~
 Reset button
 $Comp
-L R R69
+L R R67
 U 1 1 486D41DE
 P 6935 2550
-F 0 "R69" V 6935 2545 50  0000 C C
+F 0 "R67" V 6935 2545 50  0000 C C
 F 1 "R" V 6935 2550 50  0001 C C
 	1    6935 2550
 	0    1    1    0   
@@ -523,73 +559,73 @@ $EndComp
 $Comp
 L INDUCTOR L1
 U 1 1 486CF54F
-P 8645 5215
-F 0 "L1" V 8745 5220 40  0000 C C
-F 1 "L" V 8745 5215 40  0001 C C
-	1    8645 5215
+P 2345 5865
+F 0 "L1" V 2445 5870 40  0000 C C
+F 1 "L" V 2445 5865 40  0001 C C
+	1    2345 5865
 	0    -1   -1   0   
 $EndComp
 $Comp
 L GND #PWR16
 U 1 1 486CF4E4
-P 9750 6185
-F 0 "#PWR16" H 9750 6185 30  0001 C C
-F 1 "GND" H 9750 6115 30  0001 C C
-	1    9750 6185
+P 3450 6835
+F 0 "#PWR16" H 3450 6835 30  0001 C C
+F 1 "GND" H 3450 6765 30  0001 C C
+	1    3450 6835
 	1    0    0    -1  
 $EndComp
 $Comp
 L +BATT #PWR2
 U 1 1 486CF3FB
-P 9350 6060
-F 0 "#PWR2" H 9350 6010 20  0001 C C
-F 1 "+BATT" H 9350 6160 30  0000 C C
-	1    9350 6060
+P 3050 6710
+F 0 "#PWR2" H 3050 6660 20  0001 C C
+F 1 "+BATT" H 3050 6810 30  0000 C C
+	1    3050 6710
 	-1   0    0    1   
 $EndComp
 $Comp
 L GND #PWR15
 U 1 1 486CF3F6
-P 9500 5945
-F 0 "#PWR15" H 9500 5945 30  0001 C C
-F 1 "GND" H 9500 5875 30  0001 C C
-	1    9500 5945
+P 3200 6595
+F 0 "#PWR15" H 3200 6595 30  0001 C C
+F 1 "GND" H 3200 6525 30  0001 C C
+	1    3200 6595
 	1    0    0    -1  
 $EndComp
 $Comp
 L CAPAPOL C7
 U 1 1 486CF14F
-P 9750 5895
-F 0 "C7" H 9800 5995 50  0000 L C
-F 1 "C" H 9800 5795 50  0001 L C
-	1    9750 5895
+P 3450 6545
+F 0 "C7" H 3500 6645 50  0000 L C
+F 1 "C" H 3500 6445 50  0001 L C
+	1    3450 6545
 	1    0    0    -1  
 $EndComp
 $Comp
 L CAPAPOL C6
 U 1 1 486CF147
-P 7730 5495
-F 0 "C6" V 7865 5495 50  0000 L C
-F 1 "C" H 7780 5395 50  0001 L C
-	1    7730 5495
+P 1430 6145
+F 0 "C6" V 1565 6145 50  0000 L C
+F 1 "C" H 1480 6045 50  0001 L C
+	1    1430 6145
 	0    1    -1   0   
 $EndComp
 $Comp
 L DIODESCH D65
 U 1 1 486CF077
-P 9500 5495
-F 0 "D65" H 9500 5595 40  0000 C C
-F 1 "Schottky" H 9755 5560 40  0001 C C
-	1    9500 5495
+P 3200 6145
+F 0 "D65" H 3200 6245 40  0000 C C
+F 1 "Schottky" H 3455 6210 40  0001 C C
+	1    3200 6145
 	1    0    0    -1  
 $EndComp
 $Comp
 L +BATT #PWR1
 U 1 1 486CEEF7
-P 8000 5085
-F 0 "#PWR1" H 8000 5035 20  0001 C C
-F 1 "+BATT" H 8000 5185 30  0000 C C
-	1    8000 5085
+P 1700 5735
+F 0 "#PWR1" H 1700 5685 20  0001 C C
+F 1 "+BATT" H 1700 5835 30  0000 C C
+	1    1700 5735
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -613,22 +649,22 @@ $EndComp
 $Comp
 L C C2
 U 1 1 486C73C2
-P 7480 5795
-F 0 "C2" H 7530 5895 50  0000 L C
-F 1 "C" H 7530 5695 50  0001 L C
-	1    7480 5795
+P 1180 6445
+F 0 "C2" H 1230 6545 50  0000 L C
+F 1 "C" H 1230 6345 50  0001 L C
+	1    1180 6445
 	1    0    0    1   
 $EndComp
-Text Label 9910 5695 0    60   ~
+Text Label 3610 6345 0    60   ~
 VCC_3.3V
-NoConn ~ 8100 5795
+NoConn ~ 1800 6445
 $Comp
 L MAX756 U11
 U 1 1 486C71BA
-P 8650 5645
-F 0 "U11" H 8650 5960 60  0000 C C
-F 1 "MAX756" H 8600 5945 60  0001 C C
-	1    8650 5645
+P 2350 6295
+F 0 "U11" H 2350 6610 60  0000 C C
+F 1 "MAX756" H 2300 6595 60  0001 C C
+	1    2350 6295
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -640,22 +676,22 @@ F 1 "SW_PUSH" H 2565 4215 50  0001 C C
 	1    2565 4295
 	0    1    1    0   
 $EndComp
-Text Label 3985 6130 0    60   ~
+Text Label 4835 5330 0    60   ~
 SPI_SS2
 $Comp
 L GND #PWR13
 U 1 1 48657747
-P 4435 6530
-F 0 "#PWR13" H 4435 6530 30  0001 C C
-F 1 "GND" H 4435 6460 30  0001 C C
-	1    4435 6530
+P 5285 5730
+F 0 "#PWR13" H 5285 5730 30  0001 C C
+F 1 "GND" H 5285 5660 30  0001 C C
+	1    5285 5730
 	1    0    0    -1  
 $EndComp
-Text Label 3985 6230 0    60   ~
+Text Label 4835 5430 0    60   ~
 SPI_MISO
-Text Label 5785 6430 0    60   ~
+Text Label 6635 5630 0    60   ~
 SPI_MOSI
-Text Label 5785 6330 0    60   ~
+Text Label 6635 5530 0    60   ~
 SPI_SCKL
 $Comp
 L GND #PWR12
@@ -676,10 +712,10 @@ F 1 "C" H 7410 2785 50  0001 L C
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R R65
+L R R69
 U 1 1 48651230
 P 7610 2200
-F 0 "R65" V 7610 2210 50  0000 C C
+F 0 "R69" V 7610 2210 50  0000 C C
 F 1 "R" V 7610 2200 50  0001 C C
 	1    7610 2200
 	1    0    0    -1  
@@ -745,50 +781,50 @@ Text Label 6300 2850 0    60   ~
 SPI_SCKL
 Text Label 6300 2750 0    60   ~
 SPI_SS0
-Text Label 2320 7265 1    60   ~
+Text Label 9470 6115 1    60   ~
 SENSOR_VCC
 Text Label 6300 1950 0    60   ~
 SENSOR_VCC
 Text Label 6300 1850 0    60   ~
 SENSOR_DATA
-Text Label 2455 7265 1    60   ~
+Text Label 9605 6115 1    60   ~
 SENSOR_DATA
 $Comp
 L R R73
 U 1 1 4864FDF1
-P 1915 6600
-F 0 "R73" V 1910 6595 50  0000 C C
-F 1 "R" V 1915 6600 50  0001 C C
-	1    1915 6600
+P 9065 5450
+F 0 "R73" V 9060 5445 50  0000 C C
+F 1 "R" V 9065 5450 50  0001 C C
+	1    9065 5450
 	0    1    1    0   
 $EndComp
 $Comp
 L A3213ELHLT U9
 U 1 1 4864FC23
-P 2455 6105
-F 0 "U9" H 2440 6380 60  0000 C C
-F 1 "Hall Sensor" H 2465 6385 60  0001 C C
-	1    2455 6105
+P 9605 4955
+F 0 "U9" H 9590 5230 60  0000 C C
+F 1 "Hall Sensor" H 9615 5235 60  0001 C C
+	1    9605 4955
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR9
 U 1 1 4864FB94
-P 2570 7055
-F 0 "#PWR9" H 2570 7055 30  0001 C C
-F 1 "GND" H 2570 6985 30  0001 C C
-	1    2570 7055
+P 9720 5905
+F 0 "#PWR9" H 9720 5905 30  0001 C C
+F 1 "GND" H 9720 5835 30  0001 C C
+	1    9720 5905
 	1    0    0    -1  
 $EndComp
-Text Notes 1590 5700 0    80   ~
+Text Notes 8740 4550 0    80   ~
 Hall Effect Sensor
 $Comp
 L AT25128A U12
 U 1 1 4864FB37
-P 5135 6280
-F 0 "U12" H 5165 6595 60  0000 C C
-F 1 "DataFlash" H 5160 6590 60  0001 C C
-	1    5135 6280
+P 5985 5480
+F 0 "U12" H 6015 5795 60  0000 C C
+F 1 "DataFlash" H 6010 5790 60  0001 C C
+	1    5985 5480
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -902,10 +938,10 @@ F 1 "X" H 3000 985 60  0001 C C
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R67
+L R R65
 U 1 1 485E7E7C
 P 2430 3350
-F 0 "R67" V 2430 3355 50  0000 C C
+F 0 "R65" V 2430 3355 50  0000 C C
 F 1 "R" V 2430 3350 50  0001 C C
 	1    2430 3350
 	0    1    1    0   
