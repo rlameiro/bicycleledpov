@@ -5,7 +5,7 @@ EELAYER END
 $Descr A4 11700 8267
 Sheet 2 2
 Title "Bicycle LED POV"
-Date "9 jul 2008"
+Date "10 jul 2008"
 Rev "1.0.0"
 Comp "http://code.google.com/p/bicycleledpov"
 Comment1 "(c) Jorge Pinto"
@@ -1798,19 +1798,19 @@ $EndComp
 Text GLabel 900  2200 3    60   Input
 SPI_MOSI
 $Comp
-L GND #PWR020
+L GND #PWR22
 U 1 1 485B6135
 P 700 6250
-F 0 "#PWR020" H 700 6250 30  0001 C C
+F 0 "#PWR22" H 700 6250 30  0001 C C
 F 1 "GND" H 700 6180 30  0001 C C
 	1    700  6250
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR021
+L GND #PWR21
 U 1 1 485B6034
 P 10900 2800
-F 0 "#PWR021" H 10900 2800 30  0001 C C
+F 0 "#PWR21" H 10900 2800 30  0001 C C
 F 1 "GND" H 10900 2730 30  0001 C C
 	1    10900 2800
 	-1   0    0    -1  
