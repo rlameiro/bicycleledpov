@@ -1,7 +1,7 @@
 #summary Information about the Hardware.
 
 =Description=
-[http://bicycleledpov.googlecode.com/svn-history/r157/trunk/Pictures/diagram/diagram-700x.png]
+[http://bicycleledpov.googlecode.com/svn/trunk/Pictures/diagram/diagram-700x.png]
 
 ==Microcontroller==
 The microcontroller unit (MCU) is the [http://www.atmel.com/dyn/products/product_card.asp?part_id=4097 Atmel AT90USB162], 8 bits microcontroller with USB functionality.
