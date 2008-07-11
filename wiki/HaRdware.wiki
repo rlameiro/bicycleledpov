@@ -1,7 +1,7 @@
 #summary Information about the Hardware.
 
 =Description=
-[http://bicycleledpov.googlecode.com/svn-history/r157/trunk/BicycleLEDPOV/Pictures/diagram/diagram-700x.png]
+[http://bicycleledpov.googlecode.com/svn-history/r157/trunk/Pictures/diagram/diagram-700x.png]
 
 ==Microcontroller==
 The microcontroller unit (MCU) is the [http://www.atmel.com/dyn/products/product_card.asp?part_id=4097 Atmel AT90USB162], 8 bits microcontroller with USB functionality.
@@ -29,11 +29,11 @@ Schematic is divided in two pages. Download full schematic [http://bicycleledpov
 
 Preview of sheet 1 (incomplete view of schematic):
 
-[http://bicycleledpov.googlecode.com/svn-history/r169/trunk/BicycleLEDPOV/Pictures/20080706-schematic-sheet_01-preview.png]
+[http://bicycleledpov.googlecode.com/svn-history/r169/trunk/Pictures/20080706-schematic-sheet_01-preview.png]
 
 Preview of sheet 2 (incomplete view of schematic):
 
-[http://bicycleledpov.googlecode.com/svn-history/r169/trunk/BicycleLEDPOV/Pictures/20080706-schematic-sheet_02-preview.png]
+[http://bicycleledpov.googlecode.com/svn-history/r169/trunk/Pictures/20080706-schematic-sheet_02-preview.png]
 
 The latest schematic version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/BicycleLEDPOV/Hardware/Schematics/ available on SVN].
 
@@ -69,6 +69,6 @@ The latest PCB version is always [http://code.google.com/p/bicycleledpov/source/
 
 =Pictures from actual prototype=
 
-[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080703-prototype-600x-01.jpg]
+[http://bicycleledpov.googlecode.com/svn/trunk/Pictures/20080703-prototype-600x-01.jpg]
 
-[http://bicycleledpov.googlecode.com/svn/trunk/BicycleLEDPOV/Pictures/20080703-prototype-600x-02.jpg]
+[http://bicycleledpov.googlecode.com/svn/trunk/Pictures/20080703-prototype-600x-02.jpg]
