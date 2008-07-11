@@ -13,6 +13,7 @@ Only one question, this memory works between 2,7 to 3,6 volts Vcc - we decided t
 MCU now runs with Vcc 3,3 volts which means that will not be able to run at 16MHz, just at 8MHz.
 
 *PCB and Part list*
+
 Since schematic is stable now, we started working on Part list and PCB. We hope to have a working V1.0 hardware in next 3 weeks.
 
 ==2008.07.06==
