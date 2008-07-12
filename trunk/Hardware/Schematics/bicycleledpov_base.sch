@@ -83,19 +83,19 @@ Wire Wire Line
 Wire Wire Line
 	3750 2000 2570 2000
 Wire Wire Line
-	9240 3660 9495 3660
+	9240 3690 9495 3690
 Wire Wire Line
-	9240 3460 9495 3460
+	9240 3490 9495 3490
 Wire Wire Line
-	9495 3360 9240 3360
+	9495 3390 9240 3390
 Wire Wire Line
-	9495 3560 9240 3560
+	9495 3590 9240 3590
 Wire Wire Line
-	9240 3960 9495 3960
+	9240 3990 9495 3990
 Wire Wire Line
-	9495 4060 9240 4060
+	9495 4090 9240 4090
 Wire Wire Line
-	9495 3860 9240 3860
+	9495 3890 9240 3890
 Wire Wire Line
 	9495 2740 9240 2740
 Wire Wire Line
@@ -334,7 +334,7 @@ Wire Wire Line
 Wire Wire Line
 	8765 2640 9495 2640
 Wire Wire Line
-	9495 3760 9245 3760
+	9495 3790 9245 3790
 Wire Wire Line
 	1700 6245 1700 6145
 Wire Wire Line
@@ -449,29 +449,29 @@ Text Label 6310 2150 0    60   ~
 PD3
 Text Label 6310 2250 0    60   ~
 PD4
-Text Label 9240 3660 0    60   ~
+Text Label 9240 3690 0    60   ~
 PD6
-Text Label 9240 3560 0    60   ~
+Text Label 9240 3590 0    60   ~
 PD5
-Text Label 9240 3360 0    60   ~
+Text Label 9240 3390 0    60   ~
 PD3
-Text Label 9240 3460 0    60   ~
+Text Label 9240 3490 0    60   ~
 PD4
-Text Label 9240 4060 0    60   ~
+Text Label 9240 4090 0    60   ~
 PC7
-Text Label 9240 3960 0    60   ~
+Text Label 9240 3990 0    60   ~
 PC6
-Text Label 9240 3860 0    60   ~
+Text Label 9240 3890 0    60   ~
 PC5
-Text Label 9245 3760 0    60   ~
+Text Label 9245 3790 0    60   ~
 PC2
 $Comp
 L CONN_8 P3
 U 1 1 4871137A
-P 9845 3710
-F 0 "P3" V 9845 3715 60  0000 C C
-F 1 "CONN_8" V 9895 3710 60  0001 C C
-	1    9845 3710
+P 9845 3740
+F 0 "P3" V 9845 3745 60  0000 C C
+F 1 "CONN_8" V 9895 3740 60  0001 C C
+	1    9845 3740
 	1    0    0    -1  
 $EndComp
 Text Label 9240 2740 0    60   ~
