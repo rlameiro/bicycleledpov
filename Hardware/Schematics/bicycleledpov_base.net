@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  10/7/2008-22:28:38
+# EESchema Netlist Version 1.1 created  12/7/2008-02:12:32
 (
  ( 48767F24 $noname$ BT1 BATTERY
   ( 1 +BATT )
@@ -300,7 +300,7 @@
   ( 1 +BATT )
   ( 2 N-000031 )
  )
- ( 4871098E $noname$ P1 CONN_3X2
+ ( 4871098E pin_array_3x2 P1 CONN_3X2
   ( 1 SPI_MISO_1 )
   ( 2 VCC_3.3V_1 )
   ( 3 SPI_SCKL_1 )
@@ -308,7 +308,7 @@
   ( 5 RESET_1 )
   ( 6 GND )
  )
- ( 48711307 $noname$ P2 CONN_8
+ ( 48711307 SIL-8 P2 CONN_8
   ( 1 SPI_SCKL_1 )
   ( 2 SPI_MOSI_1 )
   ( 3 SPI_MISO_1 )
@@ -318,7 +318,7 @@
   ( 7 VCC_3.3V_1 )
   ( 8 GND )
  )
- ( 4871137A $noname$ P3 CONN_8
+ ( 4871137A SIL-8 P3 CONN_8
   ( 1 PD3_1 )
   ( 2 PD4_1 )
   ( 3 PD5_1 )
@@ -328,295 +328,295 @@
   ( 7 PC6_1 )
   ( 8 PC7_1 )
  )
- ( 48628ADF $noname$ R1 R
+ ( 48628ADF SM0805 R1 R
   ( 1 N-000042 )
   ( 2 GND )
  )
- ( 48628AE0 $noname$ R2 R
+ ( 48628AE0 SM0805 R2 R
   ( 1 N-000084 )
   ( 2 GND )
  )
- ( 48628AE1 $noname$ R3 R
+ ( 48628AE1 SM0805 R3 R
   ( 1 N-000119 )
   ( 2 GND )
  )
- ( 48628AE2 $noname$ R4 R
+ ( 48628AE2 SM0805 R4 R
   ( 1 N-000085 )
   ( 2 GND )
  )
- ( 48628AE3 $noname$ R5 R
+ ( 48628AE3 SM0805 R5 R
   ( 1 N-000044 )
   ( 2 GND )
  )
- ( 48628AE4 $noname$ R6 R
+ ( 48628AE4 SM0805 R6 R
   ( 1 N-000086 )
   ( 2 GND )
  )
- ( 48628AE5 $noname$ R7 R
+ ( 48628AE5 SM0805 R7 R
   ( 1 N-000117 )
   ( 2 GND )
  )
- ( 48628AE6 $noname$ R8 R
+ ( 48628AE6 SM0805 R8 R
   ( 1 N-000087 )
   ( 2 GND )
  )
- ( 48639D4D $noname$ R9 R
+ ( 48639D4D SM0805 R9 R
   ( 1 N-000121 )
   ( 2 GND )
  )
- ( 48639D4E $noname$ R10 R
+ ( 48639D4E SM0805 R10 R
   ( 1 N-000088 )
   ( 2 GND )
  )
- ( 48639D4F $noname$ R11 R
+ ( 48639D4F SM0805 R11 R
   ( 1 N-000127 )
   ( 2 GND )
  )
- ( 48639D50 $noname$ R12 R
+ ( 48639D50 SM0805 R12 R
   ( 1 N-000089 )
   ( 2 GND )
  )
- ( 48639D51 $noname$ R13 R
+ ( 48639D51 SM0805 R13 R
   ( 1 N-000123 )
   ( 2 GND )
  )
- ( 48639D52 $noname$ R14 R
+ ( 48639D52 SM0805 R14 R
   ( 1 N-000090 )
   ( 2 GND )
  )
- ( 48639D53 $noname$ R15 R
+ ( 48639D53 SM0805 R15 R
   ( 1 N-000125 )
   ( 2 GND )
  )
- ( 48639D54 $noname$ R16 R
+ ( 48639D54 SM0805 R16 R
   ( 1 N-000091 )
   ( 2 GND )
  )
- ( 48639D55 $noname$ R17 R
+ ( 48639D55 SM0805 R17 R
   ( 1 N-000129 )
   ( 2 GND )
  )
- ( 48639D56 $noname$ R18 R
+ ( 48639D56 SM0805 R18 R
   ( 1 N-000092 )
   ( 2 GND )
  )
- ( 48639D57 $noname$ R19 R
+ ( 48639D57 SM0805 R19 R
   ( 1 N-000135 )
   ( 2 GND )
  )
- ( 48639D58 $noname$ R20 R
+ ( 48639D58 SM0805 R20 R
   ( 1 N-000093 )
   ( 2 GND )
  )
- ( 48639D59 $noname$ R21 R
+ ( 48639D59 SM0805 R21 R
   ( 1 N-000131 )
   ( 2 GND )
  )
- ( 48639D5A $noname$ R22 R
+ ( 48639D5A SM0805 R22 R
   ( 1 N-000094 )
   ( 2 GND )
  )
- ( 48639D5B $noname$ R23 R
+ ( 48639D5B SM0805 R23 R
   ( 1 N-000133 )
   ( 2 GND )
  )
- ( 48639D5C $noname$ R24 R
+ ( 48639D5C SM0805 R24 R
   ( 1 N-000095 )
   ( 2 GND )
  )
- ( 48639D5E $noname$ R25 R
+ ( 48639D5E SM0805 R25 R
   ( 1 N-000137 )
   ( 2 GND )
  )
- ( 48639D5F $noname$ R26 R
+ ( 48639D5F SM0805 R26 R
   ( 1 N-000096 )
   ( 2 GND )
  )
- ( 48639D60 $noname$ R27 R
+ ( 48639D60 SM0805 R27 R
   ( 1 N-000143 )
   ( 2 GND )
  )
- ( 48639D61 $noname$ R28 R
+ ( 48639D61 SM0805 R28 R
   ( 1 N-000097 )
   ( 2 GND )
  )
- ( 48639D62 $noname$ R29 R
+ ( 48639D62 SM0805 R29 R
   ( 1 N-000139 )
   ( 2 GND )
  )
- ( 48639D63 $noname$ R30 R
+ ( 48639D63 SM0805 R30 R
   ( 1 N-000098 )
   ( 2 GND )
  )
- ( 48639D64 $noname$ R31 R
+ ( 48639D64 SM0805 R31 R
   ( 1 N-000141 )
   ( 2 GND )
  )
- ( 48639D65 $noname$ R32 R
+ ( 48639D65 SM0805 R32 R
   ( 1 N-000099 )
   ( 2 GND )
  )
- ( 48639D66 $noname$ R33 R
+ ( 48639D66 SM0805 R33 R
   ( 1 N-000145 )
   ( 2 GND )
  )
- ( 48639D67 $noname$ R34 R
+ ( 48639D67 SM0805 R34 R
   ( 1 N-000100 )
   ( 2 GND )
  )
- ( 48639D68 $noname$ R35 R
+ ( 48639D68 SM0805 R35 R
   ( 1 N-000151 )
   ( 2 GND )
  )
- ( 48639D69 $noname$ R36 R
+ ( 48639D69 SM0805 R36 R
   ( 1 N-000101 )
   ( 2 GND )
  )
- ( 48639D6A $noname$ R37 R
+ ( 48639D6A SM0805 R37 R
   ( 1 N-000147 )
   ( 2 GND )
  )
- ( 48639D6B $noname$ R38 R
+ ( 48639D6B SM0805 R38 R
   ( 1 N-000102 )
   ( 2 GND )
  )
- ( 48639D6C $noname$ R39 R
+ ( 48639D6C SM0805 R39 R
   ( 1 N-000149 )
   ( 2 GND )
  )
- ( 48639D6D $noname$ R40 R
+ ( 48639D6D SM0805 R40 R
   ( 1 N-000103 )
   ( 2 GND )
  )
- ( 48639D6E $noname$ R41 R
+ ( 48639D6E SM0805 R41 R
   ( 1 N-000153 )
   ( 2 GND )
  )
- ( 48639D6F $noname$ R42 R
+ ( 48639D6F SM0805 R42 R
   ( 1 N-000104 )
   ( 2 GND )
  )
- ( 48639D70 $noname$ R43 R
+ ( 48639D70 SM0805 R43 R
   ( 1 N-000159 )
   ( 2 GND )
  )
- ( 48639D71 $noname$ R44 R
+ ( 48639D71 SM0805 R44 R
   ( 1 N-000105 )
   ( 2 GND )
  )
- ( 48639D72 $noname$ R45 R
+ ( 48639D72 SM0805 R45 R
   ( 1 N-000155 )
   ( 2 GND )
  )
- ( 48639D73 $noname$ R46 R
+ ( 48639D73 SM0805 R46 R
   ( 1 N-000106 )
   ( 2 GND )
  )
- ( 48639D74 $noname$ R47 R
+ ( 48639D74 SM0805 R47 R
   ( 1 N-000157 )
   ( 2 GND )
  )
- ( 48639D75 $noname$ R48 R
+ ( 48639D75 SM0805 R48 R
   ( 1 N-000107 )
   ( 2 GND )
  )
- ( 48639D76 $noname$ R49 R
+ ( 48639D76 SM0805 R49 R
   ( 1 N-000161 )
   ( 2 GND )
  )
- ( 48639D77 $noname$ R50 R
+ ( 48639D77 SM0805 R50 R
   ( 1 N-000108 )
   ( 2 GND )
  )
- ( 48639D78 $noname$ R51 R
+ ( 48639D78 SM0805 R51 R
   ( 1 N-000167 )
   ( 2 GND )
  )
- ( 48639D79 $noname$ R52 R
+ ( 48639D79 SM0805 R52 R
   ( 1 N-000109 )
   ( 2 GND )
  )
- ( 48639D7A $noname$ R53 R
+ ( 48639D7A SM0805 R53 R
   ( 1 N-000163 )
   ( 2 GND )
  )
- ( 48639D7B $noname$ R54 R
+ ( 48639D7B SM0805 R54 R
   ( 1 N-000110 )
   ( 2 GND )
  )
- ( 48639D7C $noname$ R55 R
+ ( 48639D7C SM0805 R55 R
   ( 1 N-000165 )
   ( 2 GND )
  )
- ( 48639D7D $noname$ R56 R
+ ( 48639D7D SM0805 R56 R
   ( 1 N-000111 )
   ( 2 GND )
  )
- ( 48639D7E $noname$ R57 R
+ ( 48639D7E SM0805 R57 R
   ( 1 N-000169 )
   ( 2 GND )
  )
- ( 48639D7F $noname$ R58 R
+ ( 48639D7F SM0805 R58 R
   ( 1 N-000112 )
   ( 2 GND )
  )
- ( 48639D80 $noname$ R59 R
+ ( 48639D80 SM0805 R59 R
   ( 1 N-000175 )
   ( 2 GND )
  )
- ( 48639D81 $noname$ R60 R
+ ( 48639D81 SM0805 R60 R
   ( 1 N-000113 )
   ( 2 GND )
  )
- ( 48639D82 $noname$ R61 R
+ ( 48639D82 SM0805 R61 R
   ( 1 N-000171 )
   ( 2 GND )
  )
- ( 48639D83 $noname$ R62 R
+ ( 48639D83 SM0805 R62 R
   ( 1 N-000114 )
   ( 2 GND )
  )
- ( 48639D84 $noname$ R63 R
+ ( 48639D84 SM0805 R63 R
   ( 1 N-000173 )
   ( 2 GND )
  )
- ( 48639D85 $noname$ R64 R
+ ( 48639D85 SM0805 R64 R
   ( 1 N-000115 )
   ( 2 GND )
  )
- ( 485E7E7C $noname$ R65 R
+ ( 485E7E7C SM0805 R65 R
   ( 1 N-000011 )
   ( 2 N-000015 )
  )
- ( 485E7E7B $noname$ R66 R
+ ( 485E7E7B SM0805 R66 R
   ( 1 N-000022 )
   ( 2 N-000020 )
  )
- ( 486D41DE $noname$ R67 R
+ ( 486D41DE SM0805 R67 R
   ( 1 N-000012 )
   ( 2 PD7_1 )
  )
- ( 486C7698 $noname$ R68 R
+ ( 486C7698 SM0805 R68 R
   ( 1 RESET_1 )
   ( 2 N-000010 )
  )
- ( 48651230 $noname$ R69 R
+ ( 48651230 SM0805 R69 R
   ( 1 VCC_3.3V_1 )
   ( 2 N-000012 )
  )
- ( 486C773C $noname$ R70 R
+ ( 486C773C SM0805 R70 R
   ( 1 N-000010 )
   ( 2 VCC_3.3V_1 )
  )
- ( 485D4F44 $noname$ R71 R
+ ( 485D4F44 SM0805 R71 R
   ( 1 GND )
   ( 2 N-000021 )
  )
- ( 485D5056 $noname$ R72 R
+ ( 485D5056 SM0805 R72 R
   ( 1 VBUS_1 )
   ( 2 N-000021 )
  )
- ( 4864FDF1 $noname$ R73 R
+ ( 4864FDF1 SM0805 R73 R
   ( 1 SENSOR_VCC_1 )
   ( 2 SENSOR_DATA_1 )
  )
