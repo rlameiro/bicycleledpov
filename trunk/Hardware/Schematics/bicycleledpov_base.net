@@ -1,10 +1,18 @@
-# EESchema Netlist Version 1.1 created  13/7/2008-09:38:23
+# EESchema Netlist Version 1.1 created  13/7/2008-16:02:27
 (
- ( 48767F24 $noname$ BT1 BATTERY
+ ( 485EA9C8 Switch - Tyco
+  ( 1 N-000012 )
+  ( 2 GND )
+ )
+ ( 4865832A Switch - Tyco
+  ( 1 N-000010 )
+  ( 2 GND )
+ )
+ ( 48767F24 battery_clip BT1 BATTERY
   ( 1 +BATT )
   ( 2 N-000002 )
  )
- ( 48767F26 $noname$ BT2 BATTERY
+ ( 48767F26 battery_clip BT2 BATTERY
   ( 1 N-000002 )
   ( 2 GND )
  )
@@ -28,11 +36,11 @@
   ( 1 N-000008 )
   ( 2 GND )
  )
- ( 486CF147 $noname$ C6 C
+ ( 486CF147 c_case C6 C
   ( 1 +BATT )
   ( 2 GND )
  )
- ( 486CF14F $noname$ C7 C
+ ( 486CF14F c_case C7 C
   ( 1 VCC_3.3V_1 )
   ( 2 GND )
  )
@@ -300,7 +308,7 @@
   ( 1 +BATT )
   ( 2 N-000031 )
  )
- ( 4871098E pin_array_3x2 P1 CONN_3X2
+ ( 4871098E PIN_ARRAY_6X2 P1 CONN_3X2
   ( 1 SPI_MISO_1 )
   ( 2 VCC_3.3V_1 )
   ( 3 SPI_SCKL_1 )
@@ -626,15 +634,7 @@
   ( 1 SENSOR_VCC_1 )
   ( 2 SENSOR_DATA_1 )
  )
- ( 485EA9C8 $noname$ SW1 SW_PUSH
-  ( 1 N-000012 )
-  ( 2 GND )
- )
- ( 4865832A $noname$ SW2 SW_PUSH
-  ( 1 N-000010 )
-  ( 2 GND )
- )
- ( 485B5745 $noname$ U1 74x595
+ ( 485B5745 SO16N U1 74x595
   ( 1 N-000076 )
   ( 2 N-000118 )
   ( 3 N-000077 )
@@ -652,7 +652,7 @@
   ( 15 N-000046 )
   ( 16 VCC )
  )
- ( 485B5759 $noname$ U2 74x595
+ ( 485B5759 SO16N U2 74x595
   ( 1 N-000071 )
   ( 2 N-000126 )
   ( 3 N-000072 )
@@ -670,7 +670,7 @@
   ( 15 N-000124 )
   ( 16 VCC )
  )
- ( 485B5769 $noname$ U3 74x595
+ ( 485B5769 SO16N U3 74x595
   ( 1 N-000067 )
   ( 2 N-000134 )
   ( 3 N-000068 )
@@ -688,7 +688,7 @@
   ( 15 N-000132 )
   ( 16 VCC )
  )
- ( 485B5776 $noname$ U4 74x595
+ ( 485B5776 SO16N U4 74x595
   ( 1 N-000063 )
   ( 2 N-000142 )
   ( 3 N-000064 )
@@ -706,7 +706,7 @@
   ( 15 N-000140 )
   ( 16 VCC )
  )
- ( 485B5780 $noname$ U5 74x595
+ ( 485B5780 SO16N U5 74x595
   ( 1 N-000059 )
   ( 2 N-000150 )
   ( 3 N-000060 )
@@ -724,7 +724,7 @@
   ( 15 N-000148 )
   ( 16 VCC )
  )
- ( 485B578A $noname$ U6 74x595
+ ( 485B578A SO16N U6 74x595
   ( 1 N-000055 )
   ( 2 N-000158 )
   ( 3 N-000056 )
@@ -742,7 +742,7 @@
   ( 15 N-000156 )
   ( 16 VCC )
  )
- ( 485B5791 $noname$ U7 74x595
+ ( 485B5791 SO16N U7 74x595
   ( 1 N-000051 )
   ( 2 N-000166 )
   ( 3 N-000052 )
@@ -760,7 +760,7 @@
   ( 15 N-000164 )
   ( 16 VCC )
  )
- ( 485B579F $noname$ U8 74x595
+ ( 485B579F SO16N U8 74x595
   ( 1 N-000047 )
   ( 2 N-000174 )
   ( 3 N-000048 )
@@ -778,7 +778,7 @@
   ( 15 N-000172 )
   ( 16 VCC )
  )
- ( 4864FC23 SOT23-5 U9 A3213ELHLT-T
+ ( 4864FC23 SOT23W U9 A3213ELHLT-T
   ( 1 SENSOR_VCC_1 )
   ( 2 SENSOR_DATA_1 )
   ( 3 GND )
@@ -817,7 +817,7 @@
   ( 31 ? )
   ( 32 VCC_3.3V_1 )
  )
- ( 486C71BA $noname$ U11 MAX756
+ ( 486C71BA SO8N U11 MAX756
   ( 1 +BATT )
   ( 2 +BATT )
   ( 3 N-000009 )
@@ -827,7 +827,7 @@
   ( 7 GND )
   ( 8 N-000031 )
  )
- ( 4864FB37 $noname$ U12 AT26DF081A-SU
+ ( 4864FB37 SOIC-8S2 U12 AT26DF081A-SU
   ( 1 SPI_SS2_1 )
   ( 2 SPI_MISO_1 )
   ( 3 MEMORY_VCC_1 )
@@ -837,7 +837,7 @@
   ( 7 MEMORY_HOLD_1 )
   ( 8 MEMORY_VCC_1 )
  )
- ( 485E9B2A $noname$ X1 CRYSTAL
+ ( 485E9B2A xtal X1 CRYSTAL
   ( 1 N-000023 )
   ( 2 N-000008 )
  )

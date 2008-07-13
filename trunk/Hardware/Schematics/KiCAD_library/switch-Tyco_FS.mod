@@ -1,11 +1,12 @@
-PCBNEW-LibModule-V1  13/7/2008-13:08:13
+PCBNEW-LibModule-V1  13/7/2008-16:08:25
 $INDEX
 Switch - Tyco FS
+Switch
 $EndINDEX
-$MODULE Switch - Tyco FS
-Po 0 0 0 15 4879FE17 4879FDE2 ~~
-Li Switch - Tyco FS
-Sc 4879FDE2
+$MODULE Switch
+Po 0 0 0 15 487A2874 00000000 ~~
+Li Switch
+Sc 00000000
 Op 0 0 0
 T0 400 -3100 600 394 0 118 N I 21 "Switch - Tyco FS"
 T1 150 3400 600 600 0 120 N V 21 "VAL**"
@@ -17,29 +18,29 @@ $PAD
 Sh "1" R 512 1142 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 0 "1"
 Po -850 -1650
-$EndPAD
-$PAD
-Sh "3" R 512 1142 0 0 0
-Dr 0 0 0
-At SMD N 00888000
-Ne 0 ""
-Po 843 -1650
 $EndPAD
 $PAD
 Sh "2" R 512 1142 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 0 "2"
+Po 843 -1650
+$EndPAD
+$PAD
+Sh "1" R 512 1142 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 "1"
 Po -850 1933
 $EndPAD
 $PAD
-Sh "4" R 512 1142 0 0 0
+Sh "2" R 512 1142 0 0 0
 Dr 0 0 0
 At SMD N 00888000
-Ne 0 ""
+Ne 0 "2"
 Po 843 1933
 $EndPAD
-$EndMODULE  Switch - Tyco FS
+$EndMODULE  Switch
 $EndLIBRARY
