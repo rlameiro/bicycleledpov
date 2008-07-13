@@ -1,17 +1,31 @@
-Cmp-Mod V01 Created by Cvpcb (2007-11-29-a) date = 13/7/2008-09:38:23
+Cmp-Mod V01 Created by Cvpcb (2007-11-29-a) date = 13/7/2008-16:02:27
+
+BeginCmp
+TimeStamp = 485EA9C8;
+Reference = -;
+ValeurCmp = Tyco;
+IdModule  = Switch;
+EndCmp
+
+BeginCmp
+TimeStamp = 4865832A;
+Reference = -;
+ValeurCmp = Tyco;
+IdModule  = Switch;
+EndCmp
 
 BeginCmp
 TimeStamp = 48767F24;
 Reference = BT1;
 ValeurCmp = BATTERY;
-IdModule  = ;
+IdModule  = battery_clip;
 EndCmp
 
 BeginCmp
 TimeStamp = 48767F26;
 Reference = BT2;
 ValeurCmp = BATTERY;
-IdModule  = ;
+IdModule  = battery_clip;
 EndCmp
 
 BeginCmp
@@ -53,14 +67,14 @@ BeginCmp
 TimeStamp = 486CF147;
 Reference = C6;
 ValeurCmp = C;
-IdModule  = ;
+IdModule  = c_case;
 EndCmp
 
 BeginCmp
 TimeStamp = 486CF14F;
 Reference = C7;
 ValeurCmp = C;
-IdModule  = ;
+IdModule  = c_case;
 EndCmp
 
 BeginCmp
@@ -529,7 +543,7 @@ BeginCmp
 TimeStamp = 4871098E;
 Reference = P1;
 ValeurCmp = CONN_3X2;
-IdModule  = pin_array_3x2;
+IdModule  = PIN_ARRAY_6X2;
 EndCmp
 
 BeginCmp
@@ -1065,80 +1079,66 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = 485EA9C8;
-Reference = SW1;
-ValeurCmp = SW_PUSH;
-IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = 4865832A;
-Reference = SW2;
-ValeurCmp = SW_PUSH;
-IdModule  = ;
-EndCmp
-
-BeginCmp
 TimeStamp = 485B5745;
 Reference = U1;
 ValeurCmp = 74x595;
-IdModule  = ;
+IdModule  = SO16N;
 EndCmp
 
 BeginCmp
 TimeStamp = 485B5759;
 Reference = U2;
 ValeurCmp = 74x595;
-IdModule  = ;
+IdModule  = SO16N;
 EndCmp
 
 BeginCmp
 TimeStamp = 485B5769;
 Reference = U3;
 ValeurCmp = 74x595;
-IdModule  = ;
+IdModule  = SO16N;
 EndCmp
 
 BeginCmp
 TimeStamp = 485B5776;
 Reference = U4;
 ValeurCmp = 74x595;
-IdModule  = ;
+IdModule  = SO16N;
 EndCmp
 
 BeginCmp
 TimeStamp = 485B5780;
 Reference = U5;
 ValeurCmp = 74x595;
-IdModule  = ;
+IdModule  = SO16N;
 EndCmp
 
 BeginCmp
 TimeStamp = 485B578A;
 Reference = U6;
 ValeurCmp = 74x595;
-IdModule  = ;
+IdModule  = SO16N;
 EndCmp
 
 BeginCmp
 TimeStamp = 485B5791;
 Reference = U7;
 ValeurCmp = 74x595;
-IdModule  = ;
+IdModule  = SO16N;
 EndCmp
 
 BeginCmp
 TimeStamp = 485B579F;
 Reference = U8;
 ValeurCmp = 74x595;
-IdModule  = ;
+IdModule  = SO16N;
 EndCmp
 
 BeginCmp
 TimeStamp = 4864FC23;
 Reference = U9;
 ValeurCmp = A3213ELHLT-T;
-IdModule  = SOT23-5;
+IdModule  = SOT23W;
 EndCmp
 
 BeginCmp
@@ -1152,21 +1152,21 @@ BeginCmp
 TimeStamp = 486C71BA;
 Reference = U11;
 ValeurCmp = MAX756;
-IdModule  = ;
+IdModule  = SO8N;
 EndCmp
 
 BeginCmp
 TimeStamp = 4864FB37;
 Reference = U12;
 ValeurCmp = AT26DF081A-SU;
-IdModule  = ;
+IdModule  = SOIC-8S2;
 EndCmp
 
 BeginCmp
 TimeStamp = 485E9B2A;
 Reference = X1;
 ValeurCmp = CRYSTAL;
-IdModule  = ;
+IdModule  = xtal;
 EndCmp
 
 EndListe
