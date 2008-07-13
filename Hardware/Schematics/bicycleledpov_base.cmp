@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2007-11-29-a) date = 12/7/2008-02:12:32
+Cmp-Mod V01 Created by Cvpcb (2007-11-29-a) date = 13/7/2008-09:38:23
 
 BeginCmp
 TimeStamp = 48767F24;
@@ -515,14 +515,14 @@ BeginCmp
 TimeStamp = 486CF077;
 Reference = D65;
 ValeurCmp = Schottky;
-IdModule  = ;
+IdModule  = MiniMelf;
 EndCmp
 
 BeginCmp
 TimeStamp = 486CF54F;
 Reference = L1;
 ValeurCmp = L;
-IdModule  = ;
+IdModule  = Bourns_inductor;
 EndCmp
 
 BeginCmp
@@ -544,6 +544,13 @@ TimeStamp = 4871137A;
 Reference = P3;
 ValeurCmp = CONN_8;
 IdModule  = SIL-8;
+EndCmp
+
+BeginCmp
+TimeStamp = 48650DBD;
+Reference = P4;
+ValeurCmp = USB-MB-H;
+IdModule  = USB-MB-H;
 EndCmp
 
 BeginCmp
@@ -1130,15 +1137,15 @@ EndCmp
 BeginCmp
 TimeStamp = 4864FC23;
 Reference = U9;
-ValeurCmp = Hall_Sensor;
-IdModule  = ;
+ValeurCmp = A3213ELHLT-T;
+IdModule  = SOT23-5;
 EndCmp
 
 BeginCmp
 TimeStamp = 485CC196;
 Reference = U10;
-ValeurCmp = USB_AVR;
-IdModule  = ;
+ValeurCmp = AT90USB162-16AU;
+IdModule  = TQFP32;
 EndCmp
 
 BeginCmp
@@ -1151,22 +1158,15 @@ EndCmp
 BeginCmp
 TimeStamp = 4864FB37;
 Reference = U12;
-ValeurCmp = DataFlash;
+ValeurCmp = AT26DF081A-SU;
 IdModule  = ;
 EndCmp
 
 BeginCmp
 TimeStamp = 485E9B2A;
 Reference = X1;
-ValeurCmp = X;
+ValeurCmp = CRYSTAL;
 IdModule  = ;
-EndCmp
-
-BeginCmp
-TimeStamp = 48650DBD;
-Reference = X2;
-ValeurCmp = USB-MB-H;
-IdModule  = con-usb-3-USB-MB-H;
 EndCmp
 
 EndListe
