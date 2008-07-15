@@ -1,14 +1,14 @@
-Cmp-Mod V01 Created by Cvpcb (2007-11-29-a) date = 14/7/2008-22:22:36
+Cmp-Mod V01 Created by Cvpcb (2007-11-29-a) date = 15/7/2008-20:54:42
 
 BeginCmp
-TimeStamp = 4865832A;
+TimeStamp = 485EA9C8;
 Reference = -;
 ValeurCmp = Tyco;
 IdModule  = Switch;
 EndCmp
 
 BeginCmp
-TimeStamp = 485EA9C8;
+TimeStamp = 4865832A;
 Reference = -;
 ValeurCmp = Tyco;
 IdModule  = Switch;
@@ -67,14 +67,14 @@ BeginCmp
 TimeStamp = 486CF147;
 Reference = C6;
 ValeurCmp = C;
-IdModule  = c_case;
+IdModule  = capacitor-c_case;
 EndCmp
 
 BeginCmp
 TimeStamp = 486CF14F;
 Reference = C7;
 ValeurCmp = C;
-IdModule  = c_case;
+IdModule  = capacitor-c_case;
 EndCmp
 
 BeginCmp
@@ -536,7 +536,7 @@ BeginCmp
 TimeStamp = 486CF54F;
 Reference = L1;
 ValeurCmp = L;
-IdModule  = Bourns_inductor-SDR0805;
+IdModule  = Bourns_inductor;
 EndCmp
 
 BeginCmp

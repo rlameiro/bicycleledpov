@@ -1,13 +1,14 @@
-PCBNEW-LibModule-V1  14/7/2008-15:23:23
+PCBNEW-LibModule-V1  15/7/2008-11:15:33
 $INDEX
-Bourns_inductor-SDR0805
+Bourns_inductor
 $EndINDEX
-$MODULE Bourns_inductor-SDR0805
-Po 0 0 0 15 487B6F46 487B6E30 ~~
-Li Bourns_inductor-SDR0805
+$MODULE Bourns_inductor
+Po 0 0 0 15 487C86CA 487B6E30 ~~
+Li Bourns_inductor
 Sc 487B6E30
+AR 
 Op 0 0 0
-T0 1050 -2240 600 600 0 120 N V 21 "Bourns_inductor-"
+T0 394 -1969 394 394 0 1 N V 21 "Bourns_inductor"
 T1 135 2295 600 600 0 120 N V 21 "L"
 $PAD
 Sh "1" R 1378 2756 0 0 0
@@ -29,5 +30,5 @@ Sc 1.000000 1.000000 1.000000
 Of 0.000000 0.000000 0.000000
 Ro 0.000000 0.000000 0.000000
 $EndSHAPE3D
-$EndMODULE  Bourns_inductor-SDR0805
+$EndMODULE  Bourns_inductor
 $EndLIBRARY
