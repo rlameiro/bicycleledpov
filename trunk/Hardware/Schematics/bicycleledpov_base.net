@@ -1,11 +1,11 @@
-# EESchema Netlist Version 1.1 created  14/7/2008-22:22:36
+# EESchema Netlist Version 1.1 created  15/7/2008-20:54:42
 (
- ( 4865832A Switch - Tyco
-  ( 1 N-000010 )
-  ( 2 GND )
- )
  ( 485EA9C8 Switch - Tyco
   ( 1 N-000012 )
+  ( 2 GND )
+ )
+ ( 4865832A Switch - Tyco
+  ( 1 N-000010 )
   ( 2 GND )
  )
  ( 48767F24 battery_clip BT1 BATTERY
@@ -36,11 +36,11 @@
   ( 1 N-000008 )
   ( 2 GND )
  )
- ( 486CF147 c_case C6 C
+ ( 486CF147 capacitor-c_case C6 C
   ( 1 +BATT )
   ( 2 GND )
  )
- ( 486CF14F c_case C7 C
+ ( 486CF14F capacitor-c_case C7 C
   ( 1 VCC_3.3V_1 )
   ( 2 GND )
  )
@@ -304,7 +304,7 @@
   ( 1 N-000031 )
   ( 2 VCC_3.3V_1 )
  )
- ( 486CF54F Bourns_inductor-SDR0805 L1 L
+ ( 486CF54F Bourns_inductor L1 L
   ( 1 +BATT )
   ( 2 N-000031 )
  )
