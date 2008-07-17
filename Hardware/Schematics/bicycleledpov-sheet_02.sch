@@ -1,5 +1,5 @@
 EESchema Schematic File Version 1
-LIBS:./KiCAD_library/at90usb162,device,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC,./bicycleledpov_base.cache
+LIBS:./KiCAD_library/at90usb162,power,dsp,digital-audio,device,cypress,contrib,conn,cmos_ieee,cmos4000,brooktre,audio,analog_switches,adc-dac,74xx,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC
 EELAYER 23  0
 EELAYER END
 $Descr A4 11700 8267
