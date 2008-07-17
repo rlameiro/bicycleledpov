@@ -1,11 +1,11 @@
 EESchema Schematic File Version 1
-LIBS:./KiCAD_library/at90usb162,power,dsp,digital-audio,device,cypress,contrib,conn,cmos_ieee,cmos4000,brooktre,audio,analog_switches,adc-dac,74xx,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC
+LIBS:./KiCAD_library/at90usb162,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC,./bicycleledpov_base.cache
 EELAYER 23  0
 EELAYER END
 $Descr A4 11700 8267
 Sheet 1 2
 Title "Bicycle LED POV"
-Date "13 jul 2008"
+Date "17 jul 2008"
 Rev "1.0.0"
 Comp "http://code.google.com/p/bicycleledpov"
 Comment1 "(c) Jorge Pinto"

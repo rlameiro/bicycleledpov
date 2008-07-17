@@ -1,11 +1,11 @@
 EESchema Schematic File Version 1
-LIBS:./KiCAD_library/at90usb162,power,dsp,digital-audio,device,cypress,contrib,conn,cmos_ieee,cmos4000,brooktre,audio,analog_switches,adc-dac,74xx,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC
+LIBS:./KiCAD_library/at90usb162,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC,./bicycleledpov_base.cache
 EELAYER 23  0
 EELAYER END
 $Descr A4 11700 8267
 Sheet 2 2
 Title "Bicycle LED POV"
-Date "13 jul 2008"
+Date "17 jul 2008"
 Rev "1.0.0"
 Comp "http://code.google.com/p/bicycleledpov"
 Comment1 "(c) Jorge Pinto"
@@ -13,27 +13,16 @@ Comment2 "(c) Donald Ziems"
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L R R56
-U 1 1 48639D7D
-P 2200 5700
-F 0 "R56" V 2200 5700 50  0000 C C
-F 1 "R" V 2200 5700 50  0001 C C
-	1    2200 5700
-	1    0    0    -1  
-$EndComp
-Kmarq B 800  3250 "Atenção Pino power_in não controlado (Net 177)" F=1
-Kmarq B 6100 2850 "Atenção Pino input Não conectado" F=1
+Wire Wire Line
+	1400 2850 1400 2200
+Connection ~ 900  2350
+Wire Wire Line
+	900  2850 900  2200
 Connection ~ 1100 2550
 Connection ~ 1400 2450
 Connection ~ 6600 2450
-NoConn ~ 5700 4250
 Wire Wire Line
 	4000 2850 4000 2450
-Wire Wire Line
-	1400 2200 1400 2850
-Wire Wire Line
-	900  2200 900  2850
 Wire Wire Line
 	10700 5150 10700 4750
 Wire Wire Line
@@ -644,6 +633,18 @@ Wire Wire Line
 	2400 2550 2400 2850
 Wire Wire Line
 	7900 2450 7900 2850
+$Comp
+L R R56
+U 1 1 48639D7D
+P 2200 5700
+F 0 "R56" V 2200 5700 50  0000 C C
+F 1 "R" V 2200 5700 50  0001 C C
+	1    2200 5700
+	1    0    0    -1  
+$EndComp
+Kmarq B 800  3250 "Atenção Pino power_in não controlado (Net 177)" F=1
+Kmarq B 6100 2850 "Atenção Pino input Não conectado" F=1
+NoConn ~ 5700 4250
 $Comp
 L LED D64
 U 1 1 48738EEE
