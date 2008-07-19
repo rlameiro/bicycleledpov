@@ -5,7 +5,7 @@ EELAYER END
 $Descr A4 11700 8267
 Sheet 2 2
 Title "Bicycle LED POV"
-Date "17 jul 2008"
+Date "19 jul 2008"
 Rev "1.0.0"
 Comp "http://code.google.com/p/bicycleledpov"
 Comment1 "(c) Jorge Pinto"
@@ -13,6 +13,69 @@ Comment2 "(c) Donald Ziems"
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L +BATT #PWR022
+U 1 1 48822E19
+P 9900 3250
+F 0 "#PWR022" H 9900 3200 20  0001 C C
+F 1 "+BATT" H 9900 3350 30  0000 C C
+	1    9900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR023
+U 1 1 48822E17
+P 8600 3250
+F 0 "#PWR023" H 8600 3200 20  0001 C C
+F 1 "+BATT" H 8600 3350 30  0000 C C
+	1    8600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR024
+U 1 1 48822E13
+P 7300 3250
+F 0 "#PWR024" H 7300 3200 20  0001 C C
+F 1 "+BATT" H 7300 3350 30  0000 C C
+	1    7300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR025
+U 1 1 48822E0A
+P 6000 3250
+F 0 "#PWR025" H 6000 3200 20  0001 C C
+F 1 "+BATT" H 6000 3350 30  0000 C C
+	1    6000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR026
+U 1 1 48822E06
+P 4700 3250
+F 0 "#PWR026" H 4700 3200 20  0001 C C
+F 1 "+BATT" H 4700 3350 30  0000 C C
+	1    4700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR027
+U 1 1 48822E00
+P 2100 3250
+F 0 "#PWR027" H 2100 3200 20  0001 C C
+F 1 "+BATT" H 2100 3350 30  0000 C C
+	1    2100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR028
+U 1 1 48822DF7
+P 800 3250
+F 0 "#PWR028" H 800 3200 20  0001 C C
+F 1 "+BATT" H 800 3350 30  0000 C C
+	1    800  3250
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
 	1400 2850 1400 2200
 Connection ~ 900  2350
@@ -642,8 +705,6 @@ F 1 "R" V 2200 5700 50  0001 C C
 	1    2200 5700
 	1    0    0    -1  
 $EndComp
-Kmarq B 800  3250 "Atenção Pino power_in não controlado (Net 177)" F=1
-Kmarq B 6100 2850 "Atenção Pino input Não conectado" F=1
 NoConn ~ 5700 4250
 $Comp
 L LED D64
@@ -1799,19 +1860,19 @@ $EndComp
 Text GLabel 900  2200 3    60   Input
 SPI_MOSI
 $Comp
-L GND #PWR022
+L GND #PWR029
 U 1 1 485B6135
 P 700 6250
-F 0 "#PWR022" H 700 6250 30  0001 C C
+F 0 "#PWR029" H 700 6250 30  0001 C C
 F 1 "GND" H 700 6180 30  0001 C C
 	1    700  6250
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR023
+L GND #PWR030
 U 1 1 485B6034
 P 10900 2800
-F 0 "#PWR023" H 10900 2800 30  0001 C C
+F 0 "#PWR030" H 10900 2800 30  0001 C C
 F 1 "GND" H 10900 2730 30  0001 C C
 	1    10900 2800
 	-1   0    0    -1  

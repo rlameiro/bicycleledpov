@@ -5,7 +5,7 @@ EELAYER END
 $Descr A4 11700 8267
 Sheet 1 2
 Title "Bicycle LED POV"
-Date "17 jul 2008"
+Date "19 jul 2008"
 Rev "1.0.0"
 Comp "http://code.google.com/p/bicycleledpov"
 Comment1 "(c) Jorge Pinto"
@@ -13,6 +13,16 @@ Comment2 "(c) Donald Ziems"
 Comment3 ""
 Comment4 ""
 $EndDescr
+Kmarq B 4600 6850 "Warning Pin power_in not driven (Net 32)" F=1
+Kmarq B 2900 6145 "Warning Pin power_in not driven (Net 31)" F=1
+Kmarq B 3750 1900 "Warning: Pin unspc connected to Pin passive (net 23)" F=1
+Kmarq B 6635 5330 "Warning Pin power_in not driven (Net 14)" F=1
+Kmarq B 6635 5330 "Warning: Pin power_in connected to Pin 3state (net 14)" F=1
+Kmarq B 3750 2000 "Warning: Pin unspc connected to Pin passive (net 8)" F=1
+Kmarq B 5385 5430 "Warning: Pin output connected to Pin 3state (net 7)" F=1
+Kmarq B 2900 6345 "Error: Pin power_out connected to Pin output (net 3)" F=2
+Kmarq B 3750 3550 "Error: Pin power_out connected to Pin power_out (net 1)" F=2
+Kmarq B 2900 6245 "Error: Pin output connected to Pin power_out (net 1)" F=2
 Text Notes 4750 6550 0    80   ~
 AAA batteries
 $Comp
@@ -342,16 +352,6 @@ F 1 "BATTERY" H 5000 6760 50  0001 C C
 	1    5000 6950
 	1    0    0    -1  
 $EndComp
-Kmarq B 2900 6345 "Erro: Pino power_out conectado ao Pino output (ligação 31)" F=2
-Kmarq B 3050 6710 "Atenção Pino power_in não controlado (Net 29)" F=1
-Kmarq B 5385 5430 "Atenção: Pino output conectado ao Pino 3state (ligação 26)" F=1
-Kmarq B 6635 5330 "Atenção Pino power_in não controlado (Net 20)" F=1
-Kmarq B 6635 5330 "Atenção: Pino power_in conectado ao Pino 3state (ligação 20)" F=1
-Kmarq B 3750 2000 "Atenção: Pino unspc conectado ao Pino passive (ligação 11)" F=1
-Kmarq B 3750 1900 "Atenção: Pino unspc conectado ao Pino passive (ligação 10)" F=1
-Kmarq B 3750 3550 "Erro: Pino power_out conectado ao Pino power_out (ligação 3)" F=2
-Kmarq B 2900 6245 "Erro: Pino output conectado ao Pino power_out (ligação 3)" F=2
-Kmarq B 2900 6145 "Atenção Pino power_in não controlado (Net 1)" F=1
 NoConn ~ 3750 3250
 Text Label 8765 2640 0    60   ~
 MEMORY_HOLD
