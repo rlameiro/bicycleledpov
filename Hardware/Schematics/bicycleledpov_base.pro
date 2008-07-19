@@ -1,5 +1,5 @@
-update=13/7/2008-15:17:48
-last_client=pcbnew
+update=18/7/2008-06:10:00
+last_client=kicad
 [eeschema]
 version=1
 LibDir=
@@ -118,4 +118,8 @@ LibName13=./KiCAD_library/SOIC-8S2
 LibName14=./KiCAD_library/xtal
 LibName15=./KiCAD_library/capacitor-c_case
 LibName16=./KiCAD_library/battery_clip
+[general]
+version=1
+RootSch=
+BoardNm=
 
