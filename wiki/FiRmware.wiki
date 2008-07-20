@@ -1,7 +1,29 @@
 #summary Information about Firmware.
 
+=Description=
+[http://bicycleledpov.googlecode.com/svn-history/r232/trunk/Pictures/firmware_diagram/firmware-diagram.png]
+
+The firmware have two main distinct tasks - making the POV and communicating with PC SoFtware, implementing the FirmwareApi. They never happen at same time.
+
+MCU stop/start running each one of this two tasks when USB cable is connected. MCU detects USB cable connection/disconnection by monitoring the +5 volts USB voltage present on cable - when USB cable is disconnected that voltage is 0 volts while connected is +5 volts.
+
+==Communications with PC Software==
+When hardware is connected to PC by USB, a new serial port will appear on PC, because we are using [http://www.fourwalledcubicle.com/MyUSB.php Dean Camera's MyUSB library] to implement a kind of "USB-RS232 Device".
+
+Inside the MCU we get the data that should be outputted to RS232 BUS, but instead of that, we use it directly. When we need to send data to PC we send it as if it did come from RS232 BUS. We used as working base the "USB-RS232 Device demo" of [http://www.fourwalledcubicle.com/MyUSB.php MyUSB library] - thanks Dean!!
+
+The data received/sent from/to PC is always putted on two ring buffers called "Rx_Buffer" and "Tx_Buffer".
+
+Soon as Rx_Buffer have some data, MCU read it and implements the FirmwareApi.
+
+==Making POV==
+Making POV task are not yet implemented however it should be not much difficult.
+
+This task should measure the time between impulses of sensor hall effect and divide that time in 256 equal parts. On each that part time, MCU should read 64 bits from DataFlash memory and send them to LEDs drivers.
+
+=Download firmware to hardware=
+Firmware is download by connecting hardware to PC by USB.
+
+The AT90USB162 MCU comes from factory with an USB bootloader. To enter in the bootloader, at the power on time, there must be pressed a button and then will be possible to download a new firmware, using a Free Software program on PC.
+
 The latest firmware version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/BicycleLEDPOV/Firmware available on SVN].
-
-When connect a USB cable to PC, will appear one new serial port. Sending the images will be a matter of sending bytes to that serial port using a simple FirmwareApi.
-
-[Tools USB will also permit to download a new firmware to MCU]. The AT90USB162 MCU comes from factory with an USB bootloader. To enter in the bootloader, at the power on time, there must be pressed a button and then will be possible to download a new firmware, using a Free Software program on PC.
