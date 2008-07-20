@@ -35,16 +35,16 @@ Usage: 0x04 (send the value 0x04 to the hardware); _byte_1_
 
 _byte_1_ with value 1 to turn on the test and with value 0 to turn off the test.
 
-=Read byte from external EEPROM memory: command 5=
+=Read byte from DataFlash memory: command 5=
 send 0x05; address high; address low.
 
-=Write byte to external EEPROM memory: command 6=
+=Write byte to DataFlash memory: command 6=
 send 0x05; address high; address low; byte.
 
-=Read image from external EEPROM memory: command 7=
+=Read image from DataFlash memory: command 7=
 send 0x07
 
-=Write image to external EEPROM memory: command 8=
+=Write image to DataFlash memory: command 8=
 send 0x08
 
 =Auto identification=
