@@ -14,11 +14,11 @@
    sodipodi:version="0.32"
    inkscape:version="0.46"
    version="1.0"
-   sodipodi:docname="diagram.svg"
+   sodipodi:docname="firmware-diagram.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   inkscape:export-filename="/media/data/05_assembly/project-BicycleLEDPOV/svn_code.google/trunk/BicycleLEDPOV/Pictures/diagram/diagram.png"
-   inkscape:export-xdpi="150"
-   inkscape:export-ydpi="150"
+   inkscape:export-filename="/media/data/05_assembly/project-BicycleLEDPOV/svn_code.google/Pictures/firmware_diagram/firmware-diagram.png"
+   inkscape:export-xdpi="53.504494"
+   inkscape:export-ydpi="53.504494"
    sodipodi:docbase="C:\Users\jpinto\Documents\01_projectos\90-auto_formacao\BicycleLEDPOV\trunk\BicycleLEDPOV\Pictures\diagram">
   <defs
      id="defs4">
@@ -192,22 +192,22 @@
        xml:space="preserve"
        style="font-size:45.86645126px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
        id="text3303"
-       y="133.22487"
-       x="627.18188"><tspan
+       y="131.31439"
+       x="575.59888"><tspan
          sodipodi:role="line"
          id="tspan3305"
-         x="627.18188"
-         y="133.22487">USB connect</tspan></text>
+         x="575.59888"
+         y="131.31439">USB disconnect</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:45.86645126px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
        id="text3323"
-       y="931.28143"
-       x="542.24646"><tspan
+       y="921.72906"
+       x="567.08276"><tspan
          sodipodi:role="line"
          id="tspan3325"
-         x="542.24646"
-         y="931.28143">USB disconnect</tspan></text>
+         x="567.08276"
+         y="921.72906">USB connect</tspan></text>
     <path
        style="fill:#555555;fill-opacity:1;fill-rule:evenodd;stroke:#696969;stroke-width:2.77741909;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="M 1049.1452,211.01423 L 1080.943,257.84576 L 1081.0233,258.72652 L 1026.3328,238.40258 L 1049.1452,211.01423 z"
