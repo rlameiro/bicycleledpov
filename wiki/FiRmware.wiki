@@ -12,9 +12,9 @@ When hardware is connected to PC by USB, a new serial port will appear on PC, be
 
 Inside the MCU we get the data that should be outputted to RS232 BUS, but instead of that, we use it directly. When we need to send data to PC we send it as if it did come from RS232 BUS. We used as working base the "USB-RS232 Device demo" of [http://www.fourwalledcubicle.com/MyUSB.php MyUSB library] - thanks Dean!!
 
-The data received/sent from/to PC is always putted on two ring buffers called "Rx_Buffer" and "Tx_Buffer".
+The data received/sent from/to PC is always putted on two ring buffers called "`Rx_Buffer`" and "`Tx_Buffer`".
 
-Soon as Rx_Buffer have some data, MCU read it and implements the FirmwareApi.
+As soon as Rx_Buffer have some data, MCU will read it and implement the FirmwareApi.
 
 ==Making POV==
 Making POV task are not yet implemented however it should be not much difficult.
