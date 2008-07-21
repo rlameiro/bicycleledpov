@@ -1,5 +1,5 @@
-EESchema Schematic File Version 1
-LIBS:./KiCAD_library/at90usb162,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC,./bicycleledpov_base.cache
+EESchema Schematic File Version 2
+LIBS:./KiCAD_library/at90usb162,./KiCAD_library/74xx,./KiCAD_library/conn,./KiCAD_library/power,./KiCAD_library/device,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC
 EELAYER 23  0
 EELAYER END
 $Descr A4 11700 8267
@@ -13,34 +13,36 @@ Comment2 "(c) Donald Ziems"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Kmarq B 4600 6850 "Warning Pin power_in not driven (Net 32)" F=1
-Kmarq B 2900 6145 "Warning Pin power_in not driven (Net 31)" F=1
-Kmarq B 3750 1900 "Warning: Pin unspc connected to Pin passive (net 23)" F=1
-Kmarq B 6635 5330 "Warning Pin power_in not driven (Net 14)" F=1
-Kmarq B 6635 5330 "Warning: Pin power_in connected to Pin 3state (net 14)" F=1
-Kmarq B 3750 2000 "Warning: Pin unspc connected to Pin passive (net 8)" F=1
-Kmarq B 5385 5430 "Warning: Pin output connected to Pin 3state (net 7)" F=1
-Kmarq B 2900 6345 "Error: Pin power_out connected to Pin output (net 3)" F=2
-Kmarq B 3750 3550 "Error: Pin power_out connected to Pin power_out (net 1)" F=2
-Kmarq B 2900 6245 "Error: Pin output connected to Pin power_out (net 1)" F=2
-Text Notes 4750 6550 0    80   ~
-AAA batteries
+Kmarq B 4600 6850 "Atenção Pino power_in não controlado (Net 32)" F=1
+Kmarq B 2900 6145 "Atenção Pino power_in não controlado (Net 31)" F=1
+Kmarq B 3750 1900 "Atenção: Pino unspc conectado ao Pino passive (ligação 23)" F=1
+Kmarq B 6635 5330 "Atenção Pino power_in não controlado (Net 14)" F=1
+Kmarq B 6635 5330 "Atenção: Pino power_in conectado ao Pino 3state (ligação 14)" F=1
+Kmarq B 3750 2000 "Atenção: Pino unspc conectado ao Pino passive (ligação 8)" F=1
+Kmarq B 5385 5430 "Atenção: Pino output conectado ao Pino 3state (ligação 7)" F=1
+Kmarq B 2900 6345 "Erro: Pino power_out conectado ao Pino output (ligação 3)" F=2
+Kmarq B 3750 3550 "Erro: Pino power_out conectado ao Pino power_out (ligação 1)" F=2
+Kmarq B 2900 6245 "Erro: Pino output conectado ao Pino power_out (ligação 1)" F=2
+Wire Wire Line
+	2565 4595 2565 4695
 $Comp
-L +BATT #PWR01
-U 1 1 48767F42
-P 4600 6850
-F 0 "#PWR01" H 4600 6800 20  0001 C C
-F 1 "+BATT" H 4600 6950 30  0000 C C
-	1    4600 6850
+L GND #PWR01
+U 1 1 4884F46F
+P 2565 4695
+F 0 "#PWR01" H 2565 4695 30  0001 C C
+F 1 "GND" H 2565 4625 30  0001 C C
+	1    2565 4695
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6815 4345 6815 4445
 $Comp
 L GND #PWR02
-U 1 1 48767F3A
-P 6100 7050
-F 0 "#PWR02" H 6100 7050 30  0001 C C
-F 1 "GND" H 6100 6980 30  0001 C C
-	1    6100 7050
+U 1 1 48650F13
+P 6815 4445
+F 0 "#PWR02" H 6815 4445 30  0001 C C
+F 1 "GND" H 6815 4375 30  0001 C C
+	1    6815 4445
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -163,15 +165,13 @@ Wire Wire Line
 Wire Wire Line
 	7610 3250 7610 3350
 Wire Wire Line
-	6815 4345 6815 4445
-Wire Wire Line
 	1830 3250 2180 3250
 Wire Wire Line
 	1830 3350 2180 3350
 Wire Wire Line
-	7650 6750 7125 6750
+	7650 6550 7125 6550
 Wire Wire Line
-	9700 6750 9300 6750
+	9700 6550 9300 6550
 Wire Wire Line
 	6770 3145 6770 3150
 Wire Wire Line
@@ -217,9 +217,9 @@ Wire Wire Line
 Wire Wire Line
 	6765 3250 6300 3250
 Wire Wire Line
-	9300 6850 9750 6850
+	9300 6650 9750 6650
 Wire Wire Line
-	7650 6850 7125 6850
+	7650 6650 7125 6650
 Wire Wire Line
 	2180 3450 1830 3450
 Wire Wire Line
@@ -239,9 +239,6 @@ Wire Wire Line
 	6635 5430 7335 5430
 Wire Wire Line
 	3205 3900 3750 3900
-Wire Wire Line
-	2565 4595 2565 4795
-Connection ~ 2565 4695
 Wire Wire Line
 	3050 6445 2900 6445
 Wire Wire Line
@@ -334,6 +331,26 @@ Wire Wire Line
 	4700 6950 4600 6950
 Wire Wire Line
 	4600 6950 4600 6850
+Text Notes 4750 6550 0    80   ~
+AAA batteries
+$Comp
+L +BATT #PWR03
+U 1 1 48767F42
+P 4600 6850
+F 0 "#PWR03" H 4600 6800 20  0001 C C
+F 1 "+BATT" H 4600 6950 30  0000 C C
+	1    4600 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 48767F3A
+P 6100 7050
+F 0 "#PWR04" H 6100 7050 30  0001 C C
+F 1 "GND" H 6100 6980 30  0001 C C
+	1    6100 7050
+	1    0    0    -1  
+$EndComp
 $Comp
 L BATTERY BT2
 U 1 1 48767F26
@@ -368,10 +385,10 @@ MEMORY_HOLD
 Text Label 4725 5530 0    60   ~
 MEMORY_VCC
 $Comp
-L GND #PWR03
+L GND #PWR05
 U 1 1 48711A02
 P 9390 3130
-F 0 "#PWR03" H 9390 3130 30  0001 C C
+F 0 "#PWR05" H 9390 3130 30  0001 C C
 F 1 "GND" H 9390 3060 30  0001 C C
 	1    9390 3130
 	1    0    0    -1  
@@ -445,10 +462,10 @@ PB7
 Text Notes 9705 1635 0    60   ~
 ICSP
 $Comp
-L GND #PWR04
+L GND #PWR06
 U 1 1 48711264
 P 10395 2175
-F 0 "#PWR04" H 10395 2175 30  0001 C C
+F 0 "#PWR06" H 10395 2175 30  0001 C C
 F 1 "GND" H 10395 2105 30  0001 C C
 	1    10395 2175
 	1    0    0    -1  
@@ -475,10 +492,10 @@ F 1 "CONN_3X2" V 9845 2030 40  0001 C C
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L GND #PWR07
 U 1 1 486F9B70
 P 3550 3685
-F 0 "#PWR05" H 3550 3685 30  0001 C C
+F 0 "#PWR07" H 3550 3685 30  0001 C C
 F 1 "GND" H 3550 3615 30  0001 C C
 	1    3550 3685
 	1    0    0    -1  
@@ -494,10 +511,10 @@ VCC_3.3V
 Text Label 1400 3900 0    60   ~
 VCC_3.3V
 $Comp
-L GND #PWR06
+L GND #PWR08
 U 1 1 486D47F9
 P 1025 6245
-F 0 "#PWR06" H 1025 6245 30  0001 C C
+F 0 "#PWR08" H 1025 6245 30  0001 C C
 F 1 "GND" H 1025 6175 30  0001 C C
 	1    1025 6245
 	1    0    0    -1  
@@ -532,28 +549,28 @@ F 1 "L" V 2445 5865 40  0001 C C
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR07
+L GND #PWR09
 U 1 1 486CF4E4
 P 3450 6835
-F 0 "#PWR07" H 3450 6835 30  0001 C C
+F 0 "#PWR09" H 3450 6835 30  0001 C C
 F 1 "GND" H 3450 6765 30  0001 C C
 	1    3450 6835
 	1    0    0    -1  
 $EndComp
 $Comp
-L +BATT #PWR08
+L +BATT #PWR010
 U 1 1 486CF3FB
 P 3050 6710
-F 0 "#PWR08" H 3050 6660 20  0001 C C
+F 0 "#PWR010" H 3050 6660 20  0001 C C
 F 1 "+BATT" H 3050 6810 30  0000 C C
 	1    3050 6710
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR09
+L GND #PWR011
 U 1 1 486CF3F6
 P 3200 6595
-F 0 "#PWR09" H 3200 6595 30  0001 C C
+F 0 "#PWR011" H 3200 6595 30  0001 C C
 F 1 "GND" H 3200 6525 30  0001 C C
 	1    3200 6595
 	1    0    0    -1  
@@ -586,21 +603,12 @@ F 1 "Schottky" H 3455 6210 40  0001 C C
 	1    0    0    -1  
 $EndComp
 $Comp
-L +BATT #PWR010
+L +BATT #PWR012
 U 1 1 486CEEF7
 P 1700 5735
-F 0 "#PWR010" H 1700 5685 20  0001 C C
+F 0 "#PWR012" H 1700 5685 20  0001 C C
 F 1 "+BATT" H 1700 5835 30  0000 C C
 	1    1700 5735
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR011
-U 1 1 486C7724
-P 2565 4795
-F 0 "#PWR011" H 2565 4795 30  0001 C C
-F 1 "GND" H 2565 4725 30  0001 C C
-	1    2565 4795
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -645,10 +653,10 @@ $EndComp
 Text Label 4835 5330 0    60   ~
 SPI_SS2
 $Comp
-L GND #PWR012
+L GND #PWR013
 U 1 1 48657747
 P 5285 5730
-F 0 "#PWR012" H 5285 5730 30  0001 C C
+F 0 "#PWR013" H 5285 5730 30  0001 C C
 F 1 "GND" H 5285 5660 30  0001 C C
 	1    5285 5730
 	1    0    0    -1  
@@ -660,10 +668,10 @@ SPI_MOSI
 Text Label 6635 5530 0    60   ~
 SPI_SCKL
 $Comp
-L GND #PWR013
+L GND #PWR014
 U 1 1 486512C8
 P 7330 3195
-F 0 "#PWR013" H 7330 3195 30  0001 C C
+F 0 "#PWR014" H 7330 3195 30  0001 C C
 F 1 "GND" H 7330 3125 30  0001 C C
 	1    7330 3195
 	1    0    0    -1  
@@ -684,15 +692,6 @@ P 7610 2200
 F 0 "R69" V 7610 2210 50  0000 C C
 F 1 "R" V 7610 2200 50  0001 C C
 	1    7610 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR014
-U 1 1 48650F13
-P 6815 4445
-F 0 "#PWR014" H 6815 4445 30  0001 C C
-F 1 "GND" H 6815 4375 30  0001 C C
-	1    6815 4445
 	1    0    0    -1  
 $EndComp
 Text Label 7575 3750 0    60   ~
@@ -727,13 +726,13 @@ F 2 "usb-mb-h" H 1880 3600 50  0001 C C
 	1    1730 3150
 	-1   0    0    1   
 $EndComp
-Text Label 7125 6850 0    60   ~
+Text Label 7125 6650 0    60   ~
 SPI_SCKL
-Text Label 7125 6750 0    60   ~
+Text Label 7125 6550 0    60   ~
 SPI_MOSI
-Text Label 9300 6850 0    60   ~
+Text Label 9300 6650 0    60   ~
 SPI_SS0
-Text Label 9300 6750 0    60   ~
+Text Label 9300 6550 0    60   ~
 SPI_SS1
 Text Label 6300 3250 0    60   ~
 SPI_SS2
@@ -848,13 +847,14 @@ F 1 "GND" H 3600 1715 30  0001 C C
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 7650 6700 1650 200 
+S 7650 6500 1650 200 
+U 4884F3B7
 F0 "Registers and LEDs" 60
 F1 "./bicycleledpov-sheet_02.sch" 60
-F2 "SPI_SS1" I R 9300 6750 60 
-F3 "SPI_SS0" I R 9300 6850 60 
-F4 "SPI_MOSI" I L 7650 6750 60 
-F5 "SPI_SCKL" I L 7650 6850 60 
+F2 "SPI_SS1" I R 9300 6550 60 
+F3 "SPI_SS0" I R 9300 6650 60 
+F4 "SPI_MOSI" I L 7650 6550 60 
+F5 "SPI_SCKL" I L 7650 6650 60 
 $EndSheet
 Text Notes 7915 3285 1    80   ~
 Bootloader button

@@ -1,18 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2007-05-25) date = 17/7/2008-16:29:53
-
-BeginCmp
-TimeStamp = 4865832A;
-Reference = -;
-ValeurCmp = Tyco;
-IdModule  = Switch;
-EndCmp
-
-BeginCmp
-TimeStamp = 485EA9C8;
-Reference = -;
-ValeurCmp = Tyco;
-IdModule  = Switch;
-EndCmp
+Cmp-Mod V01 Created by Cvpcb (20080718 SVN-R1166) date = 21/7/2008-20:43:30
 
 BeginCmp
 TimeStamp = 48767F24;
@@ -1076,6 +1062,20 @@ TimeStamp = 4864FDF1;
 Reference = R73;
 ValeurCmp = R;
 IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 485EA9C8;
+Reference = SW1;
+ValeurCmp = SW_PUSH;
+IdModule  = Switch;
+EndCmp
+
+BeginCmp
+TimeStamp = 4865832A;
+Reference = SW2;
+ValeurCmp = SW_PUSH;
+IdModule  = Switch;
 EndCmp
 
 BeginCmp

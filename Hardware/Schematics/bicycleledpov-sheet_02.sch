@@ -1,5 +1,5 @@
-EESchema Schematic File Version 1
-LIBS:./KiCAD_library/at90usb162,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC,./bicycleledpov_base.cache
+EESchema Schematic File Version 2
+LIBS:./KiCAD_library/at90usb162,./KiCAD_library/74xx,./KiCAD_library/conn,./KiCAD_library/power,./KiCAD_library/device,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC
 EELAYER 23  0
 EELAYER END
 $Descr A4 11700 8267
@@ -1284,11 +1284,11 @@ F 1 "LED" H 10700 4450 50  0001 C C
 $EndComp
 Text Notes 7300 2250 0    60   ~
 Vcc of the 74x595 shift registers is +BATT
-Text GLabel 6600 2200 3    60   Input
+Text HLabel 6600 2200 3    60   Input
 SPI_SS1
-Text GLabel 1400 2200 3    60   Input
+Text HLabel 1400 2200 3    60   Input
 SPI_SS0
-Text GLabel 1100 2200 3    60   Input
+Text HLabel 1100 2200 3    60   Input
 SPI_SCKL
 $Comp
 L R R64
@@ -1857,7 +1857,7 @@ F 1 "R" V 10700 5400 50  0001 C C
 	1    10700 5400
 	1    0    0    -1  
 $EndComp
-Text GLabel 900  2200 3    60   Input
+Text HLabel 900  2200 3    60   Input
 SPI_MOSI
 $Comp
 L GND #PWR029
