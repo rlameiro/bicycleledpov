@@ -1,0 +1,7 @@
+#summary About software.
+
+Actual software has been worked by RicardoLameiro. He is using Python. Here is some images:
+
+[http://bicycleledpov.googlecode.com/svn/trunk/Pictures/20080625-BicycleLEDPOV-software.png]
+
+The latest software version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/Software/ available on SVN].
