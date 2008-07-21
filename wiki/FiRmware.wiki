@@ -26,4 +26,4 @@ Firmware is download by connecting hardware to PC by USB.
 
 The AT90USB162 MCU comes from factory with an USB bootloader. To enter in the bootloader, at the power on time, there must be pressed a button and then will be possible to download a new firmware, using a Free Software program on PC.
 
-The latest firmware version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/BicycleLEDPOV/Firmware available on SVN].
+The latest firmware version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/Firmware available on SVN].
