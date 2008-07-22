@@ -11,13 +11,7 @@ There are at least two good candidates, [http://geda.seul.org/index.html gEDA] a
 
 We are using [http://kicad.sourceforge.net/wiki/index.php/Main_Page KiCAD].
 
-=Program the MCU= 		 
-The AT90USB162 MCU comes from Atmel with a USB boot loader, it can be programmed by USB.  		 
-
-	 
-
-=Download firmware to hardware=
-==On GNU/Linux Ubuntu==
+=Download firmware to MCU=
 The AT90USB162 MCU comes from Atmel factory with an USB bootloader which permits to download firmware to internal flash memory off MCU.
 The [http://dfu-programmer.sourceforge.net/ dfu-programmer] is available on Gnu/Linux Ubuntu repositories.
 
