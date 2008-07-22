@@ -22,7 +22,7 @@ Making POV task are not yet implemented however it should be not much difficult.
 This task should measure the time between impulses of sensor hall effect and divide that time in 256 equal parts. On each that part time, MCU should read 64 bits from DataFlash memory and send them to LEDs drivers.
 
 =Download the latest firmware version=
-The latest firmware version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/Firmware available on SVN].
+The latest firmware version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/Firmware available on SVN server] - [http://code.google.com/p/bicycleledpov/source/checkout read here how to download it].
 
 =Build the firmware=
 ==On GNU/Linux Ubuntu==
@@ -33,17 +33,17 @@ The latest firmware version is always [http://code.google.com/p/bicycleledpov/so
 make clean
 make
 }}}
-The firmware should be build without errors, a new file with name "BicycleLEDPOV.hex" should appear on actual directory.
+A new file with name "BicycleLEDPOV.hex" should appear on actual directory.
 
 =Download firmware to hardware=
 ==On GNU/Linux Ubuntu==
 The AT90USB162 MCU comes from factory with an USB bootloader which permits to download firmware to internal flash memory on MCU.
 
-To enter in the bootloader mode, there must be pressed the bootloader button and then the reset button.
+To enter in the bootloader mode, there must be hold the bootloader button and then press the reset button.
 
   # Use Synaptic Package Manager to install the following package: dfu-programmer;
   # Go to Firmware directory using shell and issue the following commands:
 {{{
 sudo make usbprogram
 }}}
-The firmware should be download without errors - finally just hit reset button to leave bootloader mode and firmware will start running.
+The firmware should be downloaded without errors - finally just hit reset button to leave bootloader mode and firmware will start running.
