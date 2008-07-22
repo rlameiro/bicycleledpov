@@ -1,3 +1,10 @@
+==2008.07.22==
+===News from RicardoLameiro:==
+
+Well I updated the SoFtware page with recent screenshots to people have an insight. Please look at the usability and say what you do think. also I am saying goodbye for 2 weeks, I am going on vacations, will be contactable, but i think I will not programm or update things.
+Happy summer to everyone!!!!
+
+
 ==2008.07.17==
 ===News from JpCasainho:==
 I bought and received components from Farnell - I will assembly 3 units of Bicycle LED POV, one for each actual developers: JpCasainho, DonaldZiems and RicardoLameiro.
