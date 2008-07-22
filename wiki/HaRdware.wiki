@@ -25,17 +25,15 @@ Read more on PowerStage page.
 =Schematic=
 Schematic was drawn using [ToOls KiCAD].
 
-NOT UPDATED - Schematic is divided in two pages. Download full schematic [http://bicycleledpov.googlecode.com/svn-history/r175/trunk/BicycleLEDPOV/Hardware/Schematics/schematic-sheet_01.png schematic-sheet_01.png] and [http://bicycleledpov.googlecode.com/svn-history/r175/trunk/BicycleLEDPOV/Hardware/Schematics/schematic-sheet_02.png schematic-sheet_02.png].
+Preview of [http://bicycleledpov.googlecode.com/svn-history/r248/trunk/Pictures/20080722-schematic-bicycleledpov-sheet_01.png 20080722-schematic-bicycleledpov-sheet_01.png]:
 
-Preview of sheet 1 (incomplete view of schematic):
+[http://bicycleledpov.googlecode.com/svn-history/r248/trunk/Pictures/20080722-schematic-bicycleledpov-sheet_01-preview.png]
 
-[http://bicycleledpov.googlecode.com/svn-history/r169/trunk/Pictures/20080706-schematic-sheet_01-preview.png]
+Preview of [http://bicycleledpov.googlecode.com/svn-history/r248/trunk/Pictures/20080722-schematic-bicycleledpov-sheet_02.png 20080722-schematic-bicycleledpov-sheet_02.png]:
 
-Preview of sheet 2 (incomplete view of schematic):
+[http://bicycleledpov.googlecode.com/svn-history/r248/trunk/Pictures/20080722-schematic-bicycleledpov-sheet_02-preview.png]
 
-[http://bicycleledpov.googlecode.com/svn-history/r169/trunk/Pictures/20080706-schematic-sheet_02-preview.png]
-
-The latest schematic version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/Hardware/Schematics/ available on SVN].
+The latest version of schematic source files are always [http://code.google.com/p/bicycleledpov/source/browse/trunk/Hardware/Schematics/ available on SVN server].
 
 =Part list=
 || *Reference* || *Value* || *Quantity* || *Unity price* ||
@@ -65,7 +63,7 @@ The latest schematic version is always [http://code.google.com/p/bicycleledpov/s
 =Printed circuit board=
 Working in progress.
 
-The latest PCB version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/Hardware available on SVN].
+The latest PCB version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/Hardware available on SVN server].
 
 =Pictures from actual prototype=
 
