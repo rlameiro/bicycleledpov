@@ -14,16 +14,36 @@ Inside the MCU we get the data that should be outputted to RS232 BUS, but instea
 
 The data received/sent from/to PC is always putted on two ring buffers called "`Rx_Buffer`" and "`Tx_Buffer`".
 
-As soon as Rx_Buffer have some data, MCU will read it and implement the FirmwareApi.
+As soon as `Rx_Buffer` have some data, MCU will read it and implement the FirmwareApi.
 
 ==Making POV==
 Making POV task are not yet implemented however it should be not much difficult.
 
 This task should measure the time between impulses of sensor hall effect and divide that time in 256 equal parts. On each that part time, MCU should read 64 bits from DataFlash memory and send them to LEDs drivers.
 
-=Download firmware to hardware=
-Firmware is download by connecting hardware to PC by USB.
-
-The AT90USB162 MCU comes from factory with an USB bootloader. To enter in the bootloader, at the power on time, there must be pressed a button and then will be possible to download a new firmware, using a Free Software program on PC.
-
+=Download the latest firmware version=
 The latest firmware version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/Firmware available on SVN].
+
+=Build the firmware=
+==On GNU/Linux Ubuntu==
+  # [http://code.google.com/p/bicycleledpov/source/checkout Download the latest version from SVN];
+  # Use Synaptic Package Manager to install the following packages: avr-libc; binutils-avr; gcc-avr.
+  # Go to Firmware directory using shell and issue the following commands:
+{{{
+make clean
+make
+}}}
+The firmware should be build without errors, a new file with name "BicycleLEDPOV.hex" should appear on actual directory.
+
+=Download firmware to hardware=
+==On GNU/Linux Ubuntu==
+The AT90USB162 MCU comes from factory with an USB bootloader which permits to download firmware to internal flash memory on MCU.
+
+To enter in the bootloader mode, there must be pressed the bootloader button and then the reset button.
+
+  # Use Synaptic Package Manager to install the following package: dfu-programmer;
+  # Go to Firmware directory using shell and issue the following commands:
+{{{
+sudo make usbprogram
+}}}
+The firmware should be download without errors - finally just hit reset button to leave bootloader mode and firmware will start running.
