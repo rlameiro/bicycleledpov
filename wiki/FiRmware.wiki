@@ -46,4 +46,9 @@ To enter in the bootloader mode, there must be hold the bootloader button and th
 {{{
 sudo make usbprogram
 }}}
+
+Example:
+
+[http://bicycleledpov.googlecode.com/svn-history/r244/trunk/Pictures/20080722-using_dfu_programmer.png]
+
 The firmware should be downloaded without errors - finally just hit reset button to leave bootloader mode and firmware will start running.
