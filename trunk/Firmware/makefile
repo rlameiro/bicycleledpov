@@ -88,19 +88,18 @@ OBJDIR = .
 
 # List C source files here. (C dependencies are automatically generated.)
 SRC = $(TARGET).c                                           \
-		./Drivers/EEPROM/AAT25128A.c                      \
+		./Drivers/EEPROM/AT25128A.c		\
 		./Drivers/AT90USB162/SPI.c                        \
-		./Drivers/LEDs/LEDs.c	                          \
-	  Descriptors.c                                     \
-	  RingBuff.c                                        \
-	  ./MyUSB/Scheduler/Scheduler.c                     \
-	  ./MyUSB/Drivers/USB/LowLevel/LowLevel.c           \
-	  ./MyUSB/Drivers/USB/LowLevel/Endpoint.c           \
-	  ./MyUSB/Drivers/USB/LowLevel/DevChapter9.c        \
-	  ./MyUSB/Drivers/USB/HighLevel/USBTask.c           \
-	  ./MyUSB/Drivers/USB/HighLevel/USBInterrupt.c      \
-	  ./MyUSB/Drivers/USB/HighLevel/Events.c            \
-	  ./MyUSB/Drivers/USB/HighLevel/StdDescriptors.c    \
+		./Descriptors.c                                     \
+		./RingBuff.c                                        \
+		./MyUSB/Scheduler/Scheduler.c                     \
+	  	./MyUSB/Drivers/USB/LowLevel/LowLevel.c           \
+	  	./MyUSB/Drivers/USB/LowLevel/Endpoint.c           \
+	  	./MyUSB/Drivers/USB/LowLevel/DevChapter9.c        \
+	  	./MyUSB/Drivers/USB/HighLevel/USBTask.c           \
+	  	./MyUSB/Drivers/USB/HighLevel/USBInterrupt.c      \
+	  	./MyUSB/Drivers/USB/HighLevel/Events.c            \
+	  	./MyUSB/Drivers/USB/HighLevel/StdDescriptors.c    \
 	  
 # List C++ source files here. (C dependencies are automatically generated.)
 CPPSRC = 

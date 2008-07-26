@@ -8,7 +8,9 @@
  Released under the GPL Licence, Version 3      
 */
 
-#include <AT25128A.h>
+#include <avr/io.h>
+#include <./Drivers/EEPROM/AT25128A.h>
+#include <./Drivers/AT90USB162/SPI.h>
 
 unsigned char AT25128A_ReadByte (unsigned short int Address)
 {
@@ -63,9 +65,7 @@ void AT25128A_WriteByte(unsigned short int Address, unsigned char DataByte)
 
 	/* Deselect EEPROM on SPI bus */
 	EEPROM_SLAVE_DESELECT;
-	
-	delay_ms(2);
-	
+
 	/* Select EEPROM on SPI bus */
 	EEPROM_SLAVE_SELECT;
 	
@@ -100,6 +100,7 @@ void AT25128A_WriteByte(unsigned short int Address, unsigned char DataByte)
 		EEPROM_SLAVE_DESELECT;
 	}
 	while (!(SPI_MasterReceive() & READY))
+		;
 		
 	/* Disable SPI pheripherial */
 	SPI_Disable();
