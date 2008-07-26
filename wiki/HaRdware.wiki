@@ -61,7 +61,25 @@ The latest version of schematic source files are always [http://code.google.com/
 ||  ||  ||  || Total price: 26,41€ ||
 
 =Printed circuit board=
-Working in progress.
+Schematic was drawn using [ToOls KiCAD].
+
+Image of components disposed on front side:
+
+[http://bicycleledpov.googlecode.com/svn-history/r255/trunk/Pictures/20080726-BicycleLEDPOV-pcb-04.png]
+
+Image of components disposed on back side:
+
+[http://bicycleledpov.googlecode.com/svn-history/r255/trunk/Pictures/20080726-BicycleLEDPOV-pcb-03.png]
+
+Image of front side superimposed on back side, with components and tracks:
+
+[http://bicycleledpov.googlecode.com/svn-history/r255/trunk/Pictures/20080726-BicycleLEDPOV-pcb-02.png]
+
+Image of front side superimposed on back side, with components, tracks and ground signals zones on each side:
+
+[http://bicycleledpov.googlecode.com/svn-history/r255/trunk/Pictures/20080726-BicycleLEDPOV-pcb-01.png]
+
+The board have about 149cm x 47cm.
 
 The latest PCB version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/Hardware available on SVN server].
 
