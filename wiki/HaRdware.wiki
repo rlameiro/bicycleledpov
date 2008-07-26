@@ -79,7 +79,7 @@ Image of front side superimposed on back side, with components, tracks and groun
 
 [http://bicycleledpov.googlecode.com/svn-history/r255/trunk/Pictures/20080726-BicycleLEDPOV-pcb-01.png]
 
-The board have about 149cm x 47cm.
+The board have about 14,9cm x 4,7cm.
 
 The latest PCB version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/Hardware available on SVN server].
 
