@@ -119,7 +119,7 @@ UseNetN=0
 LabSize=60
 [eeschema/libraries]
 LibName1=./KiCAD_library/at90usb162
-LibName2=./KiCAD_library/74xx
+LibName2=./KiCAD_library/74HC595
 LibName3=./KiCAD_library/conn
 LibName4=./KiCAD_library/power
 LibName5=./KiCAD_library/device

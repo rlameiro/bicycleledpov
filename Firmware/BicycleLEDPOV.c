@@ -412,6 +412,7 @@ TASK(PCLink_Task)
 				break;
 			}
 				
+#if 0
 			case EEPROM_READ_BYTE:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
@@ -487,7 +488,7 @@ TASK(PCLink_Task)
 			}
 			break;
 			
-			
+#endif			
 			
 			
 			default:			
@@ -499,10 +500,10 @@ TASK(PCLink_Task)
 void Hardware_Init(void)
 {
 	/* Configure I/O pins as outputs */ 
-	DDRD	|=  (1<<PD1) /* Vcc for sensor hall effect */
+	DDRD	|=  ((1<<PD1) /* Vcc for sensor hall effect */
 			|   (1<<PD2)); /* Vcc for EEPROM */
  
-	DDRB	|=  (1<<PB0) /* SPI_SS0 */
+	DDRB	|=  ((1<<PB0) /* SPI_SS0 */
 			|   (1<<PB4) /* SPI_SS1 */
 			|   (1<<PB5)); /* SPI_SS2 - EEPROM slave select */			
 }

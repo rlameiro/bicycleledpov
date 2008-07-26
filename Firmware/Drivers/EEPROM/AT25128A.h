@@ -8,8 +8,6 @@
  Released under the GPL Licence, Version 3       
 */
 
-#include <../AT90USB162/SPI.h>
-
 /* Instruction Set for the AT25128A */
 #define SET_WRITE_ENABLE_LATCHE		0b00000110
 #define RESET_WRITE_ENABLE_LATCHE   0b00000100
