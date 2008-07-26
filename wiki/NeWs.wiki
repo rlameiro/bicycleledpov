@@ -1,9 +1,18 @@
+==2008.07.26==
+===News from JpCasainho:==
+PCB is finished. Next Monday I should be able to drill one on a CNC machine. I will assembly just a few components and see if i can program the MCU, then i will send it to DonaldZiems. My PCB and the one for RicardoLameiro will follow as soon as possible - I will be on holidays since day 2 until day 12 of August.
+
+Image of front side superimposed on back side, with components, tracks and ground signals zones on each side:
+
+[http://bicycleledpov.googlecode.com/svn-history/r255/trunk/Pictures/20080726-BicycleLEDPOV-pcb-01.png]
+
+The board have about 149cm x 47cm. See more information o HaRdware page.
+
 ==2008.07.22==
 ===News from RicardoLameiro:==
 
 Well I updated the SoFtware page with recent screenshots to people have an insight. Please look at the usability and say what you do think. also I am saying goodbye for 2 weeks, I am going on vacations, will be contactable, but i think I will not programm or update things.
 Happy summer to everyone!!!!
-
 
 ==2008.07.17==
 ===News from JpCasainho:==
