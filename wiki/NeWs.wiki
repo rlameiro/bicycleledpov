@@ -6,7 +6,7 @@ Image of front side superimposed on back side, with components, tracks and groun
 
 [http://bicycleledpov.googlecode.com/svn-history/r255/trunk/Pictures/20080726-BicycleLEDPOV-pcb-01.png]
 
-The board have about 149cm x 47cm. See more information o HaRdware page.
+The board have about 14,9cm x 4,7cm. See more information o HaRdware page.
 
 ==2008.07.22==
 ===News from RicardoLameiro:==
