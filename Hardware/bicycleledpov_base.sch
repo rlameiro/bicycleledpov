@@ -1,5 +1,5 @@
 EESchema Schematic File Version 2
-LIBS:./KiCAD_library/at90usb162,./KiCAD_library/74HC595,./KiCAD_library/conn,./KiCAD_library/power,./KiCAD_library/device,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC,./bicycleledpov_base.cache
+LIBS:./KiCAD_library/at90usb162,./KiCAD_library/74HC595,./KiCAD_library/conn,./KiCAD_library/power,./KiCAD_library/device,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC
 EELAYER 23  0
 EELAYER END
 $Descr A4 11700 8267
@@ -13,6 +13,13 @@ Comment2 "(c) Donald Ziems"
 Comment3 ""
 Comment4 ""
 $EndDescr
+NoConn ~ 6250 2650
+NoConn ~ 6250 2550
+NoConn ~ 6250 2450
+NoConn ~ 6250 3850
+NoConn ~ 6250 4050
+NoConn ~ 6250 4150
+NoConn ~ 6250 4250
 NoConn ~ 6250 2950
 NoConn ~ 6250 3350
 Wire Wire Line
@@ -22,9 +29,9 @@ Text Label 8000 6550 0    60   ~
 Wire Wire Line
 	6250 3650 6950 3650
 Wire Wire Line
-	2515 4795 2515 4895
+	2765 4795 2765 4895
 Wire Wire Line
-	6765 4545 6765 4645
+	6615 4545 6615 4645
 Wire Wire Line
 	2800 6450 2800 6350
 Wire Wire Line
@@ -34,14 +41,20 @@ Wire Wire Line
 Wire Wire Line
 	3725 6195 3725 6095
 Wire Wire Line
-	3725 6095 3930 6095
+	3725 6095 3880 6095
+Wire Wire Line
+	3880 6095 3930 6095
 Connection ~ 3880 6095
 Wire Wire Line
 	3880 6195 3880 6095
 Wire Wire Line
-	4500 6095 4330 6095
+	4500 6095 4400 6095
 Wire Wire Line
-	3500 2700 3500 3150
+	4400 6095 4330 6095
+Wire Wire Line
+	3500 2700 3500 3000
+Wire Wire Line
+	3500 3000 3500 3150
 Wire Wire Line
 	3120 2900 3120 2700
 Connection ~ 3500 2700
@@ -50,14 +63,16 @@ Wire Wire Line
 Wire Wire Line
 	5750 6660 5750 6395
 Wire Wire Line
-	1350 4100 1880 4100
+	1600 4100 2130 4100
 Connection ~ 4400 6095
 Wire Wire Line
 	3700 2200 2520 2200
 Wire Wire Line
 	3550 1460 3550 1335
 Wire Wire Line
-	3550 1335 3250 1335
+	3550 1335 3365 1335
+Wire Wire Line
+	3365 1335 3250 1335
 Wire Wire Line
 	2520 2200 2520 1335
 Wire Wire Line
@@ -67,25 +82,29 @@ Wire Wire Line
 Connection ~ 4400 5815
 Wire Wire Line
 	4400 5815 4745 5815
-Connection ~ 2515 4100
+Connection ~ 2765 4100
 Wire Wire Line
-	2515 4195 2515 4100
+	2765 4195 2765 4100
 Wire Wire Line
-	2630 3550 3700 3550
+	2930 3550 4000 3550
 Wire Wire Line
 	6250 2750 6635 2750
 Connection ~ 7280 2750
 Wire Wire Line
 	7280 2895 7280 2750
 Wire Wire Line
-	7135 2750 7560 2750
+	7135 2750 7280 2750
+Wire Wire Line
+	7280 2750 7560 2750
 Connection ~ 6150 6295
 Wire Wire Line
 	5900 6545 5900 6195
 Wire Wire Line
 	5900 6195 5600 6195
 Wire Wire Line
-	2655 4100 2380 4100
+	2905 4100 2765 4100
+Wire Wire Line
+	2765 4100 2630 4100
 Wire Wire Line
 	3880 6635 3880 6595
 Wire Wire Line
@@ -109,9 +128,9 @@ Wire Wire Line
 Wire Wire Line
 	7560 3450 7560 3550
 Wire Wire Line
-	1780 3450 2130 3450
+	2080 3450 2430 3450
 Wire Wire Line
-	1780 3550 2130 3550
+	2080 3550 2430 3550
 Wire Wire Line
 	8350 6350 7825 6350
 Wire Wire Line
@@ -126,11 +145,15 @@ Connection ~ 9755 2960
 Wire Wire Line
 	9755 2960 8965 2960
 Wire Wire Line
-	9620 2690 9620 3415
+	9620 2690 9620 2750
+Wire Wire Line
+	9620 2750 9620 3415
 Wire Wire Line
 	6960 2050 6250 2050
 Wire Wire Line
-	9755 3415 9755 2690
+	9755 3415 9755 2960
+Wire Wire Line
+	9755 2960 9755 2690
 Wire Wire Line
 	8965 2960 8965 2750
 Wire Wire Line
@@ -144,7 +167,9 @@ Wire Wire Line
 Wire Wire Line
 	2346 1485 2346 1335
 Wire Wire Line
-	2346 1335 2650 1335
+	2346 1335 2520 1335
+Wire Wire Line
+	2520 1335 2650 1335
 Wire Wire Line
 	9870 2690 9870 3205
 Wire Wire Line
@@ -165,24 +190,26 @@ Wire Wire Line
 Wire Wire Line
 	8350 6450 7825 6450
 Wire Wire Line
-	2130 3650 1780 3650
+	2430 3650 2080 3650
 Wire Wire Line
-	1780 3350 1830 3350
+	2080 3350 2130 3350
 Wire Wire Line
-	1830 3350 1830 3200
+	2130 3350 2130 3200
 Wire Wire Line
-	1830 3200 1930 3200
+	2130 3200 2230 3200
 Wire Wire Line
-	1930 3200 1930 3250
+	2230 3200 2230 3250
 Wire Wire Line
-	7560 2650 7560 2850
+	7560 2650 7560 2750
+Wire Wire Line
+	7560 2750 7560 2850
 Connection ~ 7560 2750
 Wire Wire Line
 	8035 5030 8585 5030
 Wire Wire Line
 	9835 5030 10535 5030
 Wire Wire Line
-	3155 4100 3700 4100
+	3405 4100 3950 4100
 Wire Wire Line
 	5750 6395 5600 6395
 Wire Wire Line
@@ -190,20 +217,26 @@ Wire Wire Line
 Wire Wire Line
 	6150 6095 6150 6295
 Wire Wire Line
-	5700 6095 5600 6095
+	5700 6095 5655 6095
 Wire Wire Line
-	5600 6295 6830 6295
+	5655 6095 5600 6095
 Wire Wire Line
-	7390 3950 7800 3950
+	5600 6295 6150 6295
 Wire Wire Line
-	7800 3950 7800 3955
+	6150 6295 6830 6295
 Wire Wire Line
-	6765 4045 6765 3950
-Connection ~ 6765 3950
+	7240 3950 7650 3950
 Wire Wire Line
-	6890 3950 6250 3950
+	7650 3950 7650 3955
 Wire Wire Line
-	2630 3650 3700 3650
+	6615 4045 6615 3950
+Connection ~ 6615 3950
+Wire Wire Line
+	6740 3950 6615 3950
+Wire Wire Line
+	6615 3950 6250 3950
+Wire Wire Line
+	2930 3650 4000 3650
 Wire Wire Line
 	7560 1755 7560 2150
 Connection ~ 2520 1335
@@ -219,30 +252,22 @@ Wire Wire Line
 Wire Wire Line
 	3500 3750 3500 3885
 Wire Wire Line
-	6250 2650 6455 2650
-Wire Wire Line
-	6250 2450 6455 2450
-Wire Wire Line
-	6455 2550 6250 2550
-Wire Wire Line
-	6445 3850 6250 3850
-Wire Wire Line
-	6445 4050 6250 4050
-Wire Wire Line
-	6445 4150 6250 4150
-Wire Wire Line
-	6445 4250 6250 4250
-Wire Wire Line
 	7925 5130 8585 5130
 Wire Wire Line
 	4500 6195 4400 6195
 Wire Wire Line
-	4400 6195 4400 5685
+	4400 6195 4400 6095
+Wire Wire Line
+	4400 6095 4400 5815
+Wire Wire Line
+	4400 5815 4400 5685
 Wire Wire Line
 	3700 3000 3500 3000
 Connection ~ 3500 3000
 Wire Wire Line
-	3120 2700 3700 2700
+	3120 2700 3500 2700
+Wire Wire Line
+	3500 2700 3700 2700
 Connection ~ 3120 2700
 Wire Wire Line
 	5345 5815 5655 5815
@@ -255,32 +280,24 @@ Wire Wire Line
 	1300 6350 1300 6250
 Wire Wire Line
 	6250 3550 6950 3550
-Kmarq B 1300 6250 "Atenção Pino power_in não controlado (Net 32)" F=1
-Kmarq B 5600 6095 "Atenção Pino power_in não controlado (Net 31)" F=1
-Kmarq B 9835 4930 "Atenção Pino power_in não controlado (Net 14)" F=1
-Kmarq B 9835 4930 "Atenção: Pino power_in conectado ao Pino 3state (ligação 14)" F=1
-Kmarq B 8585 5030 "Atenção: Pino output conectado ao Pino 3state (ligação 7)" F=1
-Kmarq B 5600 6295 "Erro: Pino power_out conectado ao Pino output (ligação 3)" F=2
-Kmarq B 3700 3750 "Erro: Pino power_out conectado ao Pino power_out (ligação 1)" F=2
-Kmarq B 5600 6195 "Erro: Pino output conectado ao Pino power_out (ligação 1)" F=2
 $Comp
 L GND #PWR01
 U 1 1 4884F46F
-P 2515 4895
+P 2765 4895
 AR Path="/4884F46F" Ref="#PWR01" 
-F 0 "#PWR01" H 2515 4895 30  0001 C C
-F 1 "GND" H 2515 4825 30  0001 C C
-	1    2515 4895
+F 0 "#PWR01" H 2765 4895 30  0001 C C
+F 1 "GND" H 2765 4825 30  0001 C C
+	1    2765 4895
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR02
 U 1 1 48650F13
-P 6765 4645
+P 6615 4645
 AR Path="/48650F13" Ref="#PWR02" 
-F 0 "#PWR02" H 6765 4645 30  0001 C C
-F 1 "GND" H 6765 4575 30  0001 C C
-	1    6765 4645
+F 0 "#PWR02" H 6615 4645 30  0001 C C
+F 1 "GND" H 6615 4575 30  0001 C C
+	1    6615 4645
 	1    0    0    -1  
 $EndComp
 Text Notes 1450 5950 0    80   ~
@@ -338,24 +355,6 @@ Text Label 6250 3650 0    60   ~
 MEMORY_HOLD
 Text Label 7925 5130 0    60   ~
 MEMORY_VCC
-Text Label 6250 4250 0    60   ~
-PC7
-Text Label 6250 4150 0    60   ~
-PC6
-Text Label 6250 4050 0    60   ~
-PC5
-Text Label 6250 3850 0    60   ~
-PC2
-Text Label 6260 2750 0    60   ~
-PD7
-Text Label 6260 2650 0    60   ~
-PD6
-Text Label 6260 2550 0    60   ~
-PD5
-Text Label 6260 2450 0    60   ~
-PD4
-Text Label 3280 4100 0    60   ~
-RESET
 $Comp
 L GND #PWR05
 U 1 1 486F9B70
@@ -366,7 +365,7 @@ F 1 "GND" H 3500 3815 30  0001 C C
 	1    3500 3885
 	1    0    0    -1  
 $EndComp
-Text Notes 1405 3770 1    80   ~
+Text Notes 1705 3770 1    80   ~
 USB connector
 Text Notes 4850 5450 0    80   ~
 DC-DC
@@ -374,7 +373,7 @@ Text Label 3120 2700 0    60   ~
 VCC_3.3V
 Text Label 7560 2150 1    60   ~
 VCC_3.3V
-Text Label 1350 4100 0    60   ~
+Text Label 1600 4100 0    60   ~
 VCC_3.3V
 $Comp
 L GND #PWR06
@@ -389,14 +388,14 @@ $EndComp
 $Comp
 L R R70
 U 1 1 486C773C
-P 2130 4100
+P 2380 4100
 AR Path="/486C773C" Ref="R70" 
-F 0 "R70" V 2130 4100 50  0000 C C
-F 1 "R" V 2130 4100 50  0001 C C
-	1    2130 4100
+F 0 "R70" V 2380 4100 50  0000 C C
+F 1 "R" V 2380 4100 50  0001 C C
+	1    2380 4100
 	0    1    1    0   
 $EndComp
-Text Notes 1390 4530 0    80   ~
+Text Notes 1640 4530 0    80   ~
 Reset button
 $Comp
 L R R67
@@ -491,11 +490,11 @@ $EndComp
 $Comp
 L R R68
 U 1 1 486C7698
-P 2905 4100
+P 3155 4100
 AR Path="/486C7698" Ref="R68" 
-F 0 "R68" V 2905 4105 50  0000 C C
-F 1 "R" V 2905 4100 50  0001 C C
-	1    2905 4100
+F 0 "R68" V 3155 4105 50  0000 C C
+F 1 "R" V 3155 4100 50  0001 C C
+	1    3155 4100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -524,11 +523,11 @@ $EndComp
 $Comp
 L SW_PUSH SW2
 U 1 1 4865832A
-P 2515 4495
+P 2765 4495
 AR Path="/4865832A" Ref="SW2" 
-F 0 "SW2" H 2515 4655 50  0000 C C
-F 1 "SW_PUSH" H 2515 4415 50  0001 C C
-	1    2515 4495
+F 0 "SW2" H 2765 4655 50  0000 C C
+F 1 "SW_PUSH" H 2765 4415 50  0001 C C
+	1    2765 4495
 	0    1    1    0   
 $EndComp
 Text Label 8035 4930 0    60   ~
@@ -579,39 +578,39 @@ F 1 "R" V 7560 2400 50  0001 C C
 	1    7560 2400
 	1    0    0    -1  
 $EndComp
-Text Label 7525 3950 0    60   ~
+Text Label 7375 3950 0    60   ~
 VBUS
 $Comp
 L R R72
 U 1 1 485D5056
-P 7140 3950
+P 6990 3950
 AR Path="/485D5056" Ref="R72" 
-F 0 "R72" V 7140 3950 50  0000 C C
-F 1 "R" V 7140 3950 50  0001 C C
-	1    7140 3950
+F 0 "R72" V 6990 3950 50  0000 C C
+F 1 "R" V 6990 3950 50  0001 C C
+	1    6990 3950
 	0    1    1    0   
 $EndComp
 $Comp
 L GND #PWR013
 U 1 1 48650E1A
-P 1930 3250
+P 2230 3250
 AR Path="/48650E1A" Ref="#PWR013" 
-F 0 "#PWR013" H 1930 3250 30  0001 C C
-F 1 "GND" H 1930 3180 30  0001 C C
-	1    1930 3250
+F 0 "#PWR013" H 2230 3250 30  0001 C C
+F 1 "GND" H 2230 3180 30  0001 C C
+	1    2230 3250
 	1    0    0    -1  
 $EndComp
-Text Label 1880 3450 0    60   ~
+Text Label 2180 3450 0    60   ~
 VBUS
 $Comp
 L USB-MB-H P4
 U 1 1 48650DBD
-P 1680 3350
+P 1980 3350
 AR Path="/48650DBD" Ref="P4" 
-F 0 "P4" V 1790 3430 50  0000 L B
-F 1 "USB-MB-H" V 1915 3280 50  0001 L B
-F 2 "usb-mb-h" H 1830 3800 50  0001 C C
-	1    1680 3350
+F 0 "P4" V 2090 3430 50  0000 L B
+F 1 "USB-MB-H" V 2215 3280 50  0001 L B
+F 2 "usb-mb-h" H 2130 3800 50  0001 C C
+	1    1980 3350
 	-1   0    0    1   
 $EndComp
 Text Label 7825 6450 0    60   ~
@@ -810,31 +809,31 @@ $EndComp
 $Comp
 L R R65
 U 1 1 485E7E7C
-P 2380 3550
+P 2680 3550
 AR Path="/485E7E7C" Ref="R65" 
-F 0 "R65" V 2380 3555 50  0000 C C
-F 1 "R" V 2380 3550 50  0001 C C
-	1    2380 3550
+F 0 "R65" V 2680 3555 50  0000 C C
+F 1 "R" V 2680 3550 50  0001 C C
+	1    2680 3550
 	0    1    1    0   
 $EndComp
 $Comp
 L R R66
 U 1 1 485E7E7B
-P 2380 3650
+P 2680 3650
 AR Path="/485E7E7B" Ref="R66" 
-F 0 "R66" V 2380 3645 50  0000 C C
-F 1 "R" V 2380 3650 50  0001 C C
-	1    2380 3650
+F 0 "R66" V 2680 3645 50  0000 C C
+F 1 "R" V 2680 3650 50  0001 C C
+	1    2680 3650
 	0    1    1    0   
 $EndComp
 $Comp
 L R R71
 U 1 1 485D4F44
-P 6765 4295
+P 6615 4295
 AR Path="/485D4F44" Ref="R71" 
-F 0 "R71" V 6770 4285 50  0000 C C
-F 1 "R" V 6765 4295 50  0001 C C
-	1    6765 4295
+F 0 "R71" V 6620 4285 50  0000 C C
+F 1 "R" V 6615 4295 50  0001 C C
+	1    6615 4295
 	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
