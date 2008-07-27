@@ -1,5 +1,5 @@
 EESchema Schematic File Version 2
-LIBS:./KiCAD_library/at90usb162,./KiCAD_library/74HC595,./KiCAD_library/conn,./KiCAD_library/power,./KiCAD_library/device,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC
+LIBS:./KiCAD_library/at90usb162,./KiCAD_library/74HC595,./KiCAD_library/conn,./KiCAD_library/power,./KiCAD_library/device,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC,./bicycleledpov_base.cache
 EELAYER 23  0
 EELAYER END
 $Descr A4 11700 8267
@@ -326,7 +326,7 @@ F 1 "BATTERY" H 1700 6160 50  0001 C C
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3700 3450
-Text Notes 8920 4650 0    60   ~
+Text Notes 9050 4650 0    60   ~
 MEMORY
 Text Label 9835 4930 0    60   ~
 MEMORY_VCC
