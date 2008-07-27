@@ -35,8 +35,12 @@ make
 }}}
 A new file with name "BicycleLEDPOV.hex" should appear on actual directory.
 
+==On MS Windows==
+You should install [http://winavr.sourceforge.net/ WinAVR] and you may use AVRStudio.
+
 =Download firmware to hardware=
 ==On GNU/Linux Ubuntu==
+===Using dfu-programmer (recommended)===
 The AT90USB162 MCU comes from factory with an USB bootloader which permits to download firmware to internal flash memory on MCU.
 
 To enter in the bootloader mode, there must be hold the bootloader button and then press the reset button.
@@ -52,3 +56,10 @@ Example:
 [http://bicycleledpov.googlecode.com/svn-history/r244/trunk/Pictures/20080722-using_dfu_programmer.png]
 
 The firmware should be downloaded without errors - finally just hit reset button to leave bootloader mode and firmware will start running.
+
+===Using FLIP===
+[http://www.atmel.com/dyn/products/tools_card.asp?tool_id=3886 FLIP] is a GUI tool from Atmel, it needs Java Runtime Environment.
+
+==On MS Windows==
+===Using FLIP===
+[http://www.atmel.com/dyn/products/tools_card.asp?tool_id=3886 FLIP] is a GUI tool from Atmel, it needs Java Runtime Environment.
