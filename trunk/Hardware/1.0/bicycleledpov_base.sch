@@ -1,0 +1,839 @@
+EESchema Schematic File Version 2
+LIBS:./KiCAD_library/at90usb162,./KiCAD_library/74HC595,./KiCAD_library/conn,./KiCAD_library/power,./KiCAD_library/device,./KiCAD_library/usb-mb-h,./KiCAD_library/a3213elhlt,./KiCAD_library/DC-DC
+EELAYER 23  0
+EELAYER END
+$Descr A4 11700 8267
+Sheet 1 1
+Title "Bicycle LED POV"
+Date "26 jul 2008"
+Rev "1.0.0"
+Comp "http://code.google.com/p/bicycleledpov"
+Comment1 "(c) Jorge Pinto"
+Comment2 "(c) Donald Ziems"
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 6250 2650
+NoConn ~ 6250 2550
+NoConn ~ 6250 2450
+NoConn ~ 6250 3850
+NoConn ~ 6250 4050
+NoConn ~ 6250 4150
+NoConn ~ 6250 4250
+NoConn ~ 6250 2950
+NoConn ~ 6250 3350
+Wire Wire Line
+	8350 6550 8000 6550
+Text Label 8000 6550 0    60   ~
++BATT
+Wire Wire Line
+	6250 3650 6950 3650
+Wire Wire Line
+	2765 4795 2765 4895
+Wire Wire Line
+	6615 4545 6615 4645
+Wire Wire Line
+	2800 6450 2800 6350
+Wire Wire Line
+	2800 6350 2700 6350
+Wire Wire Line
+	2100 6350 2000 6350
+Wire Wire Line
+	3725 6195 3725 6095
+Wire Wire Line
+	3725 6095 3880 6095
+Wire Wire Line
+	3880 6095 3930 6095
+Connection ~ 3880 6095
+Wire Wire Line
+	3880 6195 3880 6095
+Wire Wire Line
+	4500 6095 4400 6095
+Wire Wire Line
+	4400 6095 4330 6095
+Wire Wire Line
+	3500 2700 3500 3000
+Wire Wire Line
+	3500 3000 3500 3150
+Wire Wire Line
+	3120 2900 3120 2700
+Connection ~ 3500 2700
+Wire Wire Line
+	3500 3150 3700 3150
+Wire Wire Line
+	5750 6660 5750 6395
+Wire Wire Line
+	1600 4100 2130 4100
+Connection ~ 4400 6095
+Wire Wire Line
+	3700 2200 2520 2200
+Wire Wire Line
+	3550 1460 3550 1335
+Wire Wire Line
+	3550 1335 3365 1335
+Wire Wire Line
+	3365 1335 3250 1335
+Wire Wire Line
+	2520 2200 2520 1335
+Wire Wire Line
+	3880 6635 4400 6635
+Wire Wire Line
+	6150 6695 6150 6785
+Connection ~ 4400 5815
+Wire Wire Line
+	4400 5815 4745 5815
+Connection ~ 2765 4100
+Wire Wire Line
+	2765 4195 2765 4100
+Wire Wire Line
+	2930 3550 4000 3550
+Wire Wire Line
+	6250 2750 6635 2750
+Connection ~ 7280 2750
+Wire Wire Line
+	7280 2895 7280 2750
+Wire Wire Line
+	7135 2750 7280 2750
+Wire Wire Line
+	7280 2750 7560 2750
+Connection ~ 6150 6295
+Wire Wire Line
+	5900 6545 5900 6195
+Wire Wire Line
+	5900 6195 5600 6195
+Wire Wire Line
+	2905 4100 2765 4100
+Wire Wire Line
+	2765 4100 2630 4100
+Wire Wire Line
+	3880 6635 3880 6595
+Wire Wire Line
+	4400 6635 4400 6295
+Wire Wire Line
+	4400 6295 4500 6295
+Wire Wire Line
+	8585 4930 8035 4930
+Wire Wire Line
+	8485 5330 8485 5230
+Wire Wire Line
+	8485 5230 8585 5230
+Wire Wire Line
+	9835 5130 10385 5130
+Wire Wire Line
+	9835 5230 10385 5230
+Wire Wire Line
+	9835 4930 10535 4930
+Wire Wire Line
+	7280 3295 7280 3395
+Wire Wire Line
+	7560 3450 7560 3550
+Wire Wire Line
+	2080 3450 2430 3450
+Wire Wire Line
+	2080 3550 2430 3550
+Wire Wire Line
+	8350 6350 7825 6350
+Wire Wire Line
+	10400 6350 10000 6350
+Wire Wire Line
+	6720 2345 6720 2350
+Wire Wire Line
+	6720 2350 6250 2350
+Wire Wire Line
+	6250 3050 6780 3050
+Connection ~ 9755 2960
+Wire Wire Line
+	9755 2960 8965 2960
+Wire Wire Line
+	9620 2690 9620 2750
+Wire Wire Line
+	9620 2750 9620 3415
+Wire Wire Line
+	6960 2050 6250 2050
+Wire Wire Line
+	9755 3415 9755 2960
+Wire Wire Line
+	9755 2960 9755 2690
+Wire Wire Line
+	8965 2960 8965 2750
+Wire Wire Line
+	3120 3400 3120 3300
+Wire Wire Line
+	2825 2800 2825 2600
+Wire Wire Line
+	2825 2600 3700 2600
+Wire Wire Line
+	2346 1885 2346 1985
+Wire Wire Line
+	2346 1485 2346 1335
+Wire Wire Line
+	2346 1335 2520 1335
+Wire Wire Line
+	2520 1335 2650 1335
+Wire Wire Line
+	9870 2690 9870 3205
+Wire Wire Line
+	6900 2150 6250 2150
+Wire Wire Line
+	9465 2750 9620 2750
+Connection ~ 9620 2750
+Wire Wire Line
+	6700 2250 6250 2250
+Wire Wire Line
+	6780 3150 6250 3150
+Wire Wire Line
+	6780 3250 6250 3250
+Wire Wire Line
+	6715 3450 6250 3450
+Wire Wire Line
+	10000 6450 10450 6450
+Wire Wire Line
+	8350 6450 7825 6450
+Wire Wire Line
+	2430 3650 2080 3650
+Wire Wire Line
+	2080 3350 2130 3350
+Wire Wire Line
+	2130 3350 2130 3200
+Wire Wire Line
+	2130 3200 2230 3200
+Wire Wire Line
+	2230 3200 2230 3250
+Wire Wire Line
+	7560 2650 7560 2750
+Wire Wire Line
+	7560 2750 7560 2850
+Connection ~ 7560 2750
+Wire Wire Line
+	8035 5030 8585 5030
+Wire Wire Line
+	9835 5030 10535 5030
+Wire Wire Line
+	3405 4100 3950 4100
+Wire Wire Line
+	5750 6395 5600 6395
+Wire Wire Line
+	6100 6095 6150 6095
+Wire Wire Line
+	6150 6095 6150 6295
+Wire Wire Line
+	5700 6095 5655 6095
+Wire Wire Line
+	5655 6095 5600 6095
+Wire Wire Line
+	5600 6295 6150 6295
+Wire Wire Line
+	6150 6295 6830 6295
+Wire Wire Line
+	7240 3950 7650 3950
+Wire Wire Line
+	7650 3950 7650 3955
+Wire Wire Line
+	6615 4045 6615 3950
+Connection ~ 6615 3950
+Wire Wire Line
+	6740 3950 6615 3950
+Wire Wire Line
+	6615 3950 6250 3950
+Wire Wire Line
+	2930 3650 4000 3650
+Wire Wire Line
+	7560 1755 7560 2150
+Connection ~ 2520 1335
+Wire Wire Line
+	3700 2100 3365 2100
+Wire Wire Line
+	3365 2100 3365 1335
+Connection ~ 3365 1335
+Wire Wire Line
+	3550 1860 3550 1985
+Wire Wire Line
+	3700 3750 3500 3750
+Wire Wire Line
+	3500 3750 3500 3885
+Wire Wire Line
+	7925 5130 8585 5130
+Wire Wire Line
+	4500 6195 4400 6195
+Wire Wire Line
+	4400 6195 4400 6095
+Wire Wire Line
+	4400 6095 4400 5815
+Wire Wire Line
+	4400 5815 4400 5685
+Wire Wire Line
+	3700 3000 3500 3000
+Connection ~ 3500 3000
+Wire Wire Line
+	3120 2700 3500 2700
+Wire Wire Line
+	3500 2700 3700 2700
+Connection ~ 3120 2700
+Wire Wire Line
+	5345 5815 5655 5815
+Wire Wire Line
+	5655 5815 5655 6095
+Connection ~ 5655 6095
+Wire Wire Line
+	1400 6350 1300 6350
+Wire Wire Line
+	1300 6350 1300 6250
+Wire Wire Line
+	6250 3550 6950 3550
+$Comp
+L GND #PWR01
+U 1 1 4884F46F
+P 2765 4895
+AR Path="/4884F46F" Ref="#PWR01" 
+F 0 "#PWR01" H 2765 4895 30  0001 C C
+F 1 "GND" H 2765 4825 30  0001 C C
+	1    2765 4895
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 48650F13
+P 6615 4645
+AR Path="/48650F13" Ref="#PWR02" 
+F 0 "#PWR02" H 6615 4645 30  0001 C C
+F 1 "GND" H 6615 4575 30  0001 C C
+	1    6615 4645
+	1    0    0    -1  
+$EndComp
+Text Notes 1450 5950 0    80   ~
+AAA batteries
+$Comp
+L +BATT #PWR03
+U 1 1 48767F42
+P 1300 6250
+AR Path="/48767F42" Ref="#PWR03" 
+F 0 "#PWR03" H 1300 6200 20  0001 C C
+F 1 "+BATT" H 1300 6350 30  0000 C C
+	1    1300 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 48767F3A
+P 2800 6450
+AR Path="/48767F3A" Ref="#PWR04" 
+F 0 "#PWR04" H 2800 6450 30  0001 C C
+F 1 "GND" H 2800 6380 30  0001 C C
+	1    2800 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L BATTERY BT2
+U 1 1 48767F26
+P 2400 6350
+AR Path="/48767F26" Ref="BT2" 
+F 0 "BT2" H 2400 6550 50  0000 C C
+F 1 "BATTERY" H 2400 6160 50  0001 C C
+	1    2400 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L BATTERY BT1
+U 1 1 48767F24
+P 1700 6350
+AR Path="/48767F24" Ref="BT1" 
+F 0 "BT1" H 1700 6550 50  0000 C C
+F 1 "BATTERY" H 1700 6160 50  0001 C C
+	1    1700 6350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3700 3450
+Text Notes 9050 4650 0    60   ~
+MEMORY
+Text Label 9835 4930 0    60   ~
+MEMORY_VCC
+Text Label 6250 3550 0    60   ~
+MEMORY_VCC
+Text Label 9835 5030 0    60   ~
+MEMORY_HOLD
+Text Label 6250 3650 0    60   ~
+MEMORY_HOLD
+Text Label 7925 5130 0    60   ~
+MEMORY_VCC
+$Comp
+L GND #PWR05
+U 1 1 486F9B70
+P 3500 3885
+AR Path="/486F9B70" Ref="#PWR05" 
+F 0 "#PWR05" H 3500 3885 30  0001 C C
+F 1 "GND" H 3500 3815 30  0001 C C
+	1    3500 3885
+	1    0    0    -1  
+$EndComp
+Text Notes 1705 3770 1    80   ~
+USB connector
+Text Notes 4850 5450 0    80   ~
+DC-DC
+Text Label 3120 2700 0    60   ~
+VCC_3.3V
+Text Label 7560 2150 1    60   ~
+VCC_3.3V
+Text Label 1600 4100 0    60   ~
+VCC_3.3V
+$Comp
+L GND #PWR06
+U 1 1 486D47F9
+P 3725 6195
+AR Path="/486D47F9" Ref="#PWR06" 
+F 0 "#PWR06" H 3725 6195 30  0001 C C
+F 1 "GND" H 3725 6125 30  0001 C C
+	1    3725 6195
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R70
+U 1 1 486C773C
+P 2380 4100
+AR Path="/486C773C" Ref="R70" 
+F 0 "R70" V 2380 4100 50  0000 C C
+F 1 "R" V 2380 4100 50  0001 C C
+	1    2380 4100
+	0    1    1    0   
+$EndComp
+Text Notes 1640 4530 0    80   ~
+Reset button
+$Comp
+L R R67
+U 1 1 486D41DE
+P 6885 2750
+AR Path="/486D41DE" Ref="R67" 
+F 0 "R67" V 6885 2745 50  0000 C C
+F 1 "R" V 6885 2750 50  0001 C C
+	1    6885 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 486CF54F
+P 5045 5815
+AR Path="/486CF54F" Ref="L1" 
+F 0 "L1" V 5145 5820 40  0000 C C
+F 1 "L" V 5145 5815 40  0001 C C
+	1    5045 5815
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 486CF4E4
+P 6150 6785
+AR Path="/486CF4E4" Ref="#PWR07" 
+F 0 "#PWR07" H 6150 6785 30  0001 C C
+F 1 "GND" H 6150 6715 30  0001 C C
+	1    6150 6785
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR08
+U 1 1 486CF3FB
+P 5750 6660
+AR Path="/486CF3FB" Ref="#PWR08" 
+F 0 "#PWR08" H 5750 6610 20  0001 C C
+F 1 "+BATT" H 5750 6760 30  0000 C C
+	1    5750 6660
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 486CF3F6
+P 5900 6545
+AR Path="/486CF3F6" Ref="#PWR09" 
+F 0 "#PWR09" H 5900 6545 30  0001 C C
+F 1 "GND" H 5900 6475 30  0001 C C
+	1    5900 6545
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAPAPOL C7
+U 1 1 486CF14F
+P 6150 6495
+AR Path="/486CF14F" Ref="C7" 
+F 0 "C7" H 6200 6595 50  0000 L C
+F 1 "C" H 6200 6395 50  0001 L C
+	1    6150 6495
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAPAPOL C6
+U 1 1 486CF147
+P 4130 6095
+AR Path="/486CF147" Ref="C6" 
+F 0 "C6" V 4265 6095 50  0000 L C
+F 1 "C" H 4180 5995 50  0001 L C
+	1    4130 6095
+	0    1    -1   0   
+$EndComp
+$Comp
+L DIODESCH D65
+U 1 1 486CF077
+P 5900 6095
+AR Path="/486CF077" Ref="D65" 
+F 0 "D65" H 5900 6195 40  0000 C C
+F 1 "Schottky" H 6155 6160 40  0001 C C
+	1    5900 6095
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR010
+U 1 1 486CEEF7
+P 4400 5685
+AR Path="/486CEEF7" Ref="#PWR010" 
+F 0 "#PWR010" H 4400 5635 20  0001 C C
+F 1 "+BATT" H 4400 5785 30  0000 C C
+	1    4400 5685
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R68
+U 1 1 486C7698
+P 3155 4100
+AR Path="/486C7698" Ref="R68" 
+F 0 "R68" V 3155 4105 50  0000 C C
+F 1 "R" V 3155 4100 50  0001 C C
+	1    3155 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 486C73C2
+P 3880 6395
+AR Path="/486C73C2" Ref="C2" 
+F 0 "C2" H 3930 6495 50  0000 L C
+F 1 "C" H 3930 6295 50  0001 L C
+	1    3880 6395
+	1    0    0    1   
+$EndComp
+Text Label 6310 6295 0    60   ~
+VCC_3.3V
+NoConn ~ 4500 6395
+$Comp
+L MAX756 U11
+U 1 1 486C71BA
+P 5050 6245
+AR Path="/486C71BA" Ref="U11" 
+F 0 "U11" H 5050 6560 60  0000 C C
+F 1 "MAX756" H 5000 6545 60  0001 C C
+	1    5050 6245
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW2
+U 1 1 4865832A
+P 2765 4495
+AR Path="/4865832A" Ref="SW2" 
+F 0 "SW2" H 2765 4655 50  0000 C C
+F 1 "SW_PUSH" H 2765 4415 50  0001 C C
+	1    2765 4495
+	0    1    1    0   
+$EndComp
+Text Label 8035 4930 0    60   ~
+SPI_SS2
+$Comp
+L GND #PWR011
+U 1 1 48657747
+P 8485 5330
+AR Path="/48657747" Ref="#PWR011" 
+F 0 "#PWR011" H 8485 5330 30  0001 C C
+F 1 "GND" H 8485 5260 30  0001 C C
+	1    8485 5330
+	1    0    0    -1  
+$EndComp
+Text Label 8035 5030 0    60   ~
+SPI_MISO
+Text Label 9835 5230 0    60   ~
+SPI_MOSI
+Text Label 9835 5130 0    60   ~
+SPI_SCKL
+$Comp
+L GND #PWR012
+U 1 1 486512C8
+P 7280 3395
+AR Path="/486512C8" Ref="#PWR012" 
+F 0 "#PWR012" H 7280 3395 30  0001 C C
+F 1 "GND" H 7280 3325 30  0001 C C
+	1    7280 3395
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 48651272
+P 7280 3095
+AR Path="/48651272" Ref="C1" 
+F 0 "C1" H 7330 3195 50  0000 L C
+F 1 "C" H 7360 2985 50  0001 L C
+	1    7280 3095
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R69
+U 1 1 48651230
+P 7560 2400
+AR Path="/48651230" Ref="R69" 
+F 0 "R69" V 7560 2410 50  0000 C C
+F 1 "R" V 7560 2400 50  0001 C C
+	1    7560 2400
+	1    0    0    -1  
+$EndComp
+Text Label 7375 3950 0    60   ~
+VBUS
+$Comp
+L R R72
+U 1 1 485D5056
+P 6990 3950
+AR Path="/485D5056" Ref="R72" 
+F 0 "R72" V 6990 3950 50  0000 C C
+F 1 "R" V 6990 3950 50  0001 C C
+	1    6990 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 48650E1A
+P 2230 3250
+AR Path="/48650E1A" Ref="#PWR013" 
+F 0 "#PWR013" H 2230 3250 30  0001 C C
+F 1 "GND" H 2230 3180 30  0001 C C
+	1    2230 3250
+	1    0    0    -1  
+$EndComp
+Text Label 2180 3450 0    60   ~
+VBUS
+$Comp
+L USB-MB-H P4
+U 1 1 48650DBD
+P 1980 3350
+AR Path="/48650DBD" Ref="P4" 
+F 0 "P4" V 2090 3430 50  0000 L B
+F 1 "USB-MB-H" V 2215 3280 50  0001 L B
+F 2 "usb-mb-h" H 2130 3800 50  0001 C C
+	1    1980 3350
+	-1   0    0    1   
+$EndComp
+Text Label 7825 6450 0    60   ~
+SPI_SCKL
+Text Label 7825 6350 0    60   ~
+SPI_MOSI
+Text Label 10000 6450 0    60   ~
+SPI_SS0
+Text Label 10000 6350 0    60   ~
+SPI_SS1
+Text Label 6250 3450 0    60   ~
+SPI_SS2
+Text Label 6250 2350 0    60   ~
+SPI_SS1
+Text Label 6250 3250 0    60   ~
+SPI_MISO
+Text Label 6250 3150 0    60   ~
+SPI_MOSI
+Text Label 6250 3050 0    60   ~
+SPI_SCKL
+Text Label 6250 2250 0    60   ~
+SPI_SS0
+Text Label 9620 3415 1    60   ~
+SENSOR_VCC
+Text Label 6250 2150 0    60   ~
+SENSOR_VCC
+Text Label 6250 2050 0    60   ~
+SENSOR_DATA
+Text Label 9755 3415 1    60   ~
+SENSOR_DATA
+$Comp
+L R R73
+U 1 1 4864FDF1
+P 9215 2750
+AR Path="/4864FDF1" Ref="R73" 
+F 0 "R73" V 9210 2745 50  0000 C C
+F 1 "R" V 9215 2750 50  0001 C C
+	1    9215 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L A3213ELHLT U9
+U 1 1 4864FC23
+P 9755 2255
+AR Path="/4864FC23" Ref="U9" 
+F 0 "U9" H 9740 2530 60  0000 C C
+F 1 "A3213ELHLT-T" H 9765 2535 60  0001 C C
+	1    9755 2255
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 4864FB94
+P 9870 3205
+AR Path="/4864FB94" Ref="#PWR014" 
+F 0 "#PWR014" H 9870 3205 30  0001 C C
+F 1 "GND" H 9870 3135 30  0001 C C
+	1    9870 3205
+	1    0    0    -1  
+$EndComp
+Text Notes 8890 1850 0    80   ~
+Hall Effect Sensor
+$Comp
+L AT25128A U12
+U 1 1 4864FB37
+P 9185 5080
+AR Path="/4864FB37" Ref="U12" 
+F 0 "U12" H 9215 5395 60  0000 C C
+F 1 "AT26DF081A-SU" H 9210 5390 60  0001 C C
+	1    9185 5080
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 4862F407
+P 3120 3400
+AR Path="/4862F407" Ref="#PWR015" 
+F 0 "#PWR015" H 3120 3400 30  0001 C C
+F 1 "GND" H 3120 3330 30  0001 C C
+	1    3120 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 485D5327
+P 3120 3100
+AR Path="/485D5327" Ref="C3" 
+F 0 "C3" H 3170 3200 50  0000 L C
+F 1 "C" H 3170 3000 50  0001 L C
+	1    3120 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L AT90USB162 U10
+U 1 1 485CC196
+P 4650 2550
+AR Path="/485CC196" Ref="U10" 
+F 0 "U10" H 4960 3215 60  0000 C C
+F 1 "AT90USB162-16AU" H 4700 3200 60  0001 C C
+	1    4650 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 4862F2EC
+P 2825 2800
+AR Path="/4862F2EC" Ref="#PWR016" 
+F 0 "#PWR016" H 2825 2800 30  0001 C C
+F 1 "GND" H 2825 2730 30  0001 C C
+	1    2825 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 4862F09A
+P 2346 1985
+AR Path="/4862F09A" Ref="#PWR017" 
+F 0 "#PWR017" H 2346 1985 30  0001 C C
+F 1 "GND" H 2346 1915 30  0001 C C
+	1    2346 1985
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 4862F018
+P 3550 1985
+AR Path="/4862F018" Ref="#PWR018" 
+F 0 "#PWR018" H 3550 1985 30  0001 C C
+F 1 "GND" H 3550 1915 30  0001 C C
+	1    3550 1985
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 8350 6300 1650 300 
+U 4884F3B7
+F0 "Registers and LEDs" 60
+F1 "./bicycleledpov-sheet_02.sch" 60
+F2 "SPI_SS1" I R 10000 6350 60 
+F3 "SPI_SS0" I R 10000 6450 60 
+F4 "SPI_MOSI" I L 8350 6350 60 
+F5 "SPI_SCKL" I L 8350 6450 60 
+F6 "+BATT" I L 8350 6550 60 
+$EndSheet
+Text Notes 7865 3485 1    80   ~
+Bootloader button
+$Comp
+L GND #PWR019
+U 1 1 485EAA84
+P 7560 3550
+AR Path="/485EAA84" Ref="#PWR019" 
+F 0 "#PWR019" H 7560 3550 30  0001 C C
+F 1 "GND" H 7560 3480 30  0001 C C
+	1    7560 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 485EA9C8
+P 7560 3150
+AR Path="/485EA9C8" Ref="SW1" 
+F 0 "SW1" H 7565 3290 50  0000 C C
+F 1 "SW_PUSH" H 7560 3070 50  0001 C C
+	1    7560 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L C C5
+U 1 1 485E9C78
+P 2346 1685
+AR Path="/485E9C78" Ref="C5" 
+F 0 "C5" H 2396 1785 50  0000 L C
+F 1 "C" H 2396 1585 50  0001 L C
+	1    2346 1685
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 485E9B91
+P 3550 1660
+AR Path="/485E9B91" Ref="C4" 
+F 0 "C4" H 3600 1760 50  0000 L C
+F 1 "C" H 3600 1560 50  0001 L C
+	1    3550 1660
+	1    0    0    -1  
+$EndComp
+$Comp
+L CRYSTAL X1
+U 1 1 485E9B2A
+P 2950 1335
+AR Path="/485E9B2A" Ref="X1" 
+F 0 "X1" H 2940 1520 60  0000 C C
+F 1 "CRYSTAL" H 2950 1185 60  0001 C C
+	1    2950 1335
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R65
+U 1 1 485E7E7C
+P 2680 3550
+AR Path="/485E7E7C" Ref="R65" 
+F 0 "R65" V 2680 3555 50  0000 C C
+F 1 "R" V 2680 3550 50  0001 C C
+	1    2680 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R66
+U 1 1 485E7E7B
+P 2680 3650
+AR Path="/485E7E7B" Ref="R66" 
+F 0 "R66" V 2680 3645 50  0000 C C
+F 1 "R" V 2680 3650 50  0001 C C
+	1    2680 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R71
+U 1 1 485D4F44
+P 6615 4295
+AR Path="/485D4F44" Ref="R71" 
+F 0 "R71" V 6620 4285 50  0000 C C
+F 1 "R" V 6615 4295 50  0001 C C
+	1    6615 4295
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
