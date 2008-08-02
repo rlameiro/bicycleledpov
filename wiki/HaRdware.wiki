@@ -1,90 +1,10 @@
 #summary Information about the Hardware.
+Pictures of actual V1.0 hardware:
 
-=Description=
-[http://bicycleledpov.googlecode.com/svn/trunk/Pictures/hardware_diagram/diagram-700x.png]
+[http://bicycleledpov.googlecode.com/svn/tags/Hardware-V1.0/20080802-bicycleledpov-hardware-v1.0-02-700x.jpg]
 
-==Microcontroller==
-The microcontroller unit (MCU) is the [http://www.atmel.com/dyn/products/product_card.asp?part_id=4097 Atmel AT90USB162], 8 bits microcontroller with USB functionality.
+[http://bicycleledpov.googlecode.com/svn/tags/Hardware-V1.0/20080802-bicycleledpov-hardware-v1.0-01-700x.jpg]
 
-==Sensor hall effect==
-MCU will be able to determine the velocity of the bicycle wheel by reading impulses of the [http://www.allegromicro.com/en/Products/Part_Numbers/3213/3213.pdf hall effect sensor].
+More information, with download  of schematics source files, PCB source files, PCB gerber files, can be found on page HardwareV1point0.
 
-==Memory==
-Knowing the velocity, MCU will read the images from the DataFlash memory using SPI bus, and in the correct timing will send them to the LED drivers using SPI bus, turning on and off the LEDs.
-
-==LEDs and drivers==
-The LED drivers will be composed of [http://www.fairchildsemi.com/ds/MM%2FMM74HC595.pdf 74HC595] IC (Serial to Parallel latch using SPI bus) and a resister in series with LEDs.
-
-==Power source==
-The energy for HaRdware will be source from 2 AAA `NiMh` rechargeable cells or alkaline cells.
-
-The voltage of 2 cells will drive directly the LEDs drivers. +3.3 volts are available for to use by MCU, DataFlash memory and the hall effect sensor, thanks to DC-DC circuit.
-
-Read more on PowerStage page.
-
-=Schematic=
-Schematic was drawn using [ToOls KiCAD].
-
-Preview of [http://bicycleledpov.googlecode.com/svn-history/r248/trunk/Pictures/20080722-schematic-bicycleledpov-sheet_01.png 20080722-schematic-bicycleledpov-sheet_01.png]:
-
-[http://bicycleledpov.googlecode.com/svn-history/r248/trunk/Pictures/20080722-schematic-bicycleledpov-sheet_01-preview.png]
-
-Preview of [http://bicycleledpov.googlecode.com/svn-history/r248/trunk/Pictures/20080722-schematic-bicycleledpov-sheet_02.png 20080722-schematic-bicycleledpov-sheet_02.png]:
-
-[http://bicycleledpov.googlecode.com/svn-history/r248/trunk/Pictures/20080722-schematic-bicycleledpov-sheet_02-preview.png]
-
-The latest version of schematic source files are always [http://code.google.com/p/bicycleledpov/source/browse/trunk/Hardware/Schematics/ available on SVN server].
-
-=Part list=
-|| *Reference* || *Value* || *Quantity* || *Unity price* ||
-|| `R1 - R64` || 56R 1/8W 5% || 64 || [http://pt.farnell.com/fixed ~0.035€] ||
-|| `R65, R66` || 22R 1/8W 1% || 2 || [http://pt.farnell.com/fixed ~0.035€] ||
-|| `R67, R68`  || 330R 1/8W 5% || 2 || [http://pt.farnell.com/fixed ~0.035€] ||
-|| `R69 - R73`  || 51K 1/8W 5% || 5 || [http://pt.farnell.com/fixed ~0.035€] ||
-|| `C1 - C3` || 100nF 50V || 3 || [http://uk.farnell.com/9406387/passives/product.us0?sku=multicomp-u0805r104kct 0.075€] ||
-|| C4, C5 || 22pF 50V || 2 || [http://pt.farnell.com/1362555/passives/product.us0?sku=phycomp-223886115229 0.031€] ||
-|| C7, C6 || 47uF 16V || 2 || [http://pt.farnell.com/9695664/passives/product.us0?sku=panasonic-eeefk1c470ur 0.35€] ||
-|| D1 - D64 || Avago Ref: HSMJ-A100-Q00J1 || 64 || [http://pt.farnell.com/jsp/search/productdetail.jsp?SKU=4134369 0.116€] ||
-|| D65 || BAS85 || 1 || [http://uk.farnell.com/1097282/semiconductors-discretes/product.us0?sku=nxp-bas85 0.24€] ||
-|| L1 || Bourns Ref: SDR0805-100ML || 1 || [http://uk.farnell.com/1463486/passives/product.us0?sku=bourns-sdr0805-100ml 0.24€] ||
-|| U1 - U8 || 74VHC595 || 8 || [http://pt.farnell.com/1607849/semiconductors-integrated-circuits/product.us0?sku=texas-instruments-sn74hc595dr 0.29€] ||
-|| U9 || A3213ELHLT-T || 1 || [http://pt.farnell.com/1457117/semiconductors-integrated-circuits/product.us0?sku=allegro-microsystems-a3213elhlt-t 0.83€] ||
-|| U10 || AT90USB162-16AU || 1 || [http://pt.farnell.com/1455073/semiconductors-integrated-circuits/product.us0?sku=atmel-at90usb162-16au 3.56€] ||
-|| U11 || MAX756CSA+ || 1 || [http://www.maxim-ic.com/quick_view2.cfm/qv_pk/1167/t/or $3.38] ||
-|| U12 || AT26DF081A-SU || 1 || [http://pt.farnell.com/1455015/semiconductors-integrated-circuits/product.us0?sku=atmel-at26df081a-su 1.42€] ||
-|| SW1, SW2  || FSM4JSMA || 2 || [http://pt.farnell.com/jsp/search/productdetail.jsp?SKU=3801305 0.18€] ||
-|| USB-MB-H || Molex Ref: 675031020 || 1 || [http://uk.farnell.com/1125348/connectors/product.us0?sku=molex-675031020 0.76€] ||
-|| X1 || AVX Ref: CX49GFWB08000H0PESZZ || 1 || [http://uk.farnell.com/1368799/passives/product.us0?sku=avx-cx49gfwb08000h0peszz 0.91€] ||
-|| BT1, BT2 || AAA battery clip || 4 || [http://uk.farnell.com/908721/electrical-circuit-protection/product.us0?sku=keystone-82 2,14€ for 5 units] ||
-|| P1 || Not Assembled || 1 || 0 ||
-|| P2, P3 || Not Assembled || 2 || 0 ||
-||  ||  ||  || Total price: 26,41€ ||
-
-=Printed circuit board=
-Schematic was drawn using [ToOls KiCAD].
-
-Image of components disposed on front side:
-
-[http://bicycleledpov.googlecode.com/svn-history/r255/trunk/Pictures/20080726-BicycleLEDPOV-pcb-04.png]
-
-Image of components disposed on back side:
-
-[http://bicycleledpov.googlecode.com/svn-history/r255/trunk/Pictures/20080726-BicycleLEDPOV-pcb-03.png]
-
-Image of front side superimposed on back side, with components and tracks:
-
-[http://bicycleledpov.googlecode.com/svn-history/r255/trunk/Pictures/20080726-BicycleLEDPOV-pcb-02.png]
-
-Image of front side superimposed on back side, with components, tracks and ground signals zones on each side:
-
-[http://bicycleledpov.googlecode.com/svn-history/r255/trunk/Pictures/20080726-BicycleLEDPOV-pcb-01.png]
-
-The board have about 14,9cm x 4,7cm.
-
-The latest PCB version is always [http://code.google.com/p/bicycleledpov/source/browse/trunk/Hardware available on SVN server].
-
-=Pictures from actual prototype=
-
-[http://bicycleledpov.googlecode.com/svn/trunk/Pictures/20080703-prototype-600x-01.jpg]
-
-[http://bicycleledpov.googlecode.com/svn/trunk/Pictures/20080703-prototype-600x-02.jpg]
+There are ongoing efforts to build the V1.1 hardware, read about on page HardwareV1point1.
