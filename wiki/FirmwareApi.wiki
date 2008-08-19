@@ -10,7 +10,7 @@ This command is useful for knowing that hardware is answering by sending the sam
 
 Usage: send the value 1.
 
-=Retrieve Bicycle LED POV firmware version: command 2=
+==Retrieve Bicycle LED POV firmware version: command 2==
 This command returns the Bicycle LED POV firmware version.
 
 Usage: send the value 2 and 3 bytes will be received: _byte_1_; _byte_2_; _byte_3_
@@ -23,31 +23,81 @@ Example: Version 1.0.2; byte_1 = 1, byte_2 = 0 and byte_3 = 2.
 =SPI commands=
 This commands permits the control of SS lines of devices attached on SPI bus: data latches ICs and DataFlash memory IC. This commands also permits to send/receive data to SPI bus.
 
-=Enable SS0: command 3=
-This command is useful to test the LEDs hardware, by turning them on and off.
+==Enable SS0: command 3==
+This command will put SS0 line at logic high value.
 
-Usage: 0x03 (send the value 0x03 to the hardware); _byte_1_; _byte_2_; _byte_3_; _byte_4_; _byte_5_; _byte_6_; _byte_7_; _byte_8_
+Usage: send value 3.
 
-_Byte_x_ bits represents each state of LEDs - bit 0 of _byte_1_ represents the state of the first LED.
+==Disable SS0: command 4==
+This command will put SS0 line at logic low value.
 
-=Test sensor hall effect: command 4=
-This command is useful to test the sensor hall effect, by turning on and off the first LED when sensor hall effect state is on and off respectively.
+Usage: send value 4.
 
-Usage: 0x04 (send the value 0x04 to the hardware); _byte_1_
+==Enable SS1: command 5==
+This command will put SS1 line at logic high value.
 
-_byte_1_ with value 1 to turn on the test and with value 0 to turn off the test.
+Usage: send value 5.
 
-=Read byte from DataFlash memory: command 5=
-send 0x05; address high; address low.
+==Disable SS1: command 6==
+This command will put SS0 line at logic low value.
 
-=Write byte to DataFlash memory: command 6=
-send 0x05; address high; address low; byte.
+Usage: send value 6.
 
-=Read image from DataFlash memory: command 7=
-send 0x07
+==Enable SS2: command 7==
+This command will put SS0 line at logic high value.
 
-=Write image to DataFlash memory: command 8=
-send 0x08
+Usage: send value 7.
+
+==Disable SS2: command 8==
+This command will put SS2 line at logic low value.
+
+Usage: send value 8.
+
+==SPI master transmit: command 9==
+This command will send a byte to SPI bus. Since the MCU AT90USB162 is acting as a master on SPI bus, at the end of transmission MCU will receive one byte from the slave, that byte is therefore sent to PC.
+
+Usage: send value 9 and one byte will be received - the byte received is the one received from the slave. 
+
+=Sensor hall effect commands=
+This commands controls the Vcc line of the sensor and reads is data output.
+
+==Sensor hall effect - enable Vcc: command 10==
+This command enable the Vcc of the sensor.
+
+Usage: send value 10.
+
+==Sensor hall effect - disable Vcc: command 11==
+This command disable the Vcc of the sensor.
+
+Usage: send value 11.
+
+==Sensor hall effect - read data: command 12==
+This command will read the data line of the sensor, will return one byte with value 1 if data line is at high logic level value and 0 if data line is at low logic level value.
+
+Usage: send value 12 and 1 byte will be received.
+
+=DataFlash memory commands=
+This commands controls the Vcc and hold lines of the DataFlash memory.
+
+==DataFlash memory - enable Vcc: command 13==
+This command enable the Vcc of the DataFlash memory.
+
+Usage: send value 13.
+
+==DataFlash memory - disable Vcc: command 14==
+This command disable the Vcc of the DataFlash memory.
+
+Usage: send value 14.
+
+==DataFlash memory - enable hold: command 15==
+This command enable the Vcc of the DataFlash memory.
+
+Usage: send value 15.
+
+==DataFlash memory - disable hold: command 16==
+This command disable the Vcc of the DataFlash memory.
+
+Usage: send value 16.
 
 =Auto identification=
 The hardware sends periodically on each 300ms the value 0xFE to the serial port. PC Software can look for this 0xFE value to identify a working Bicycle LED POV hardware on the serial port.
