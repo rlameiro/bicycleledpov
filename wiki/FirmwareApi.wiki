@@ -1,27 +1,29 @@
 #summary API definition to interact with Bicycle LED POV by communicating using USB
 
-Bicycle LED POV is programmed with a PC software, using a USB connection. On PC will appear a new virtual serial port when connecting Bicycle LED POV.
-
-Commands are sent to the virtual serial port to interact with Bicycle LED POV.
+Connecting Bicycle LED POV hardware to PC using a USB cable, a new virtual serial port will appear on PC. Commands are sent to the virtual serial port to interact with Bicycle LED POV hardware.
 
 For each command sent, an answer with the value of the same command should be received - this works as a confirmation that command was received on Bicycle LED POV.
 
-=Dummy command: command 1=
-This command do nothing. It's useful for knowing that firmware is answering by sending the same byte that it received - 0x01.
+=General commands=
+==Dummy command: command 1==
+This command is useful for knowing that hardware is answering by sending the same byte that it received - 0x01.
 
-Usage: Send the value 0x01 to the hardware.
+Usage: send the value 1.
 
 =Retrieve Bicycle LED POV firmware version: command 2=
 This command returns the Bicycle LED POV firmware version.
 
-Usage: 0x02 (send the value 0x02 to the hardware);receive: _byte_1_; _byte_2_; _byte_3_
+Usage: send the value 2 and 3 bytes will be received: _byte_1_; _byte_2_; _byte_3_
   * _byte_1_: major version number;
   * _byte_2_: minor version number;
   * _byte_3_: revision version number.
 
-Example: Version 1.0.2
+Example: Version 1.0.2; byte_1 = 1, byte_2 = 0 and byte_3 = 2.
 
-=Test LEDs: command 3=
+=SPI commands=
+This commands permits the control of SS lines of devices attached on SPI bus: data latches ICs and DataFlash memory IC. This commands also permits to send/receive data to SPI bus.
+
+=Enable SS0: command 3=
 This command is useful to test the LEDs hardware, by turning them on and off.
 
 Usage: 0x03 (send the value 0x03 to the hardware); _byte_1_; _byte_2_; _byte_3_; _byte_4_; _byte_5_; _byte_6_; _byte_7_; _byte_8_
