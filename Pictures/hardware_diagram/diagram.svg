@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1488.189"
+   height="1052.3622"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docname="diagram.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/media/data/05_assembly/project-BicycleLEDPOV/svn_code.google/trunk/BicycleLEDPOV/Pictures/diagram/diagram.png"
+   inkscape:export-xdpi="150"
+   inkscape:export-ydpi="150"
+   sodipodi:docbase="C:\Users\jpinto\Documents\01_projectos\90-auto_formacao\BicycleLEDPOV\trunk\BicycleLEDPOV\Pictures\diagram">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="6.123234e-14 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective3277"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3412"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3496"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3546"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3596"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3646"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3844"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3943"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2625"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.74023945"
+     inkscape:cx="744.09448"
+     inkscape:cy="523.99602"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1679"
+     inkscape:window-height="985"
+     inkscape:window-x="0"
+     inkscape:window-y="6" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#00ffb1;fill-opacity:1;stroke:none;stroke-width:13.61600018;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3654"
+       width="0"
+       height="36.474686"
+       x="844.32141"
+       y="513.34741"
+       rx="6.8750577"
+       ry="20.874796" />
+    <text
+       id="text2436"
+       y="738.08801"
+       x="697.32562"
+       style="font-size:12px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         y="738.08801"
+         x="697.32562"
+         id="tspan2438"
+         sodipodi:role="line"></tspan></text>
+    <g
+       id="g3470"
+       transform="translate(-31.071027,-39.176513)"
+       inkscape:export-filename="/media/data/05_assembly/project-BicycleLEDPOV/svn_code.google/trunk/BicycleLEDPOV/Pictures/diagram/diagram.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150">
+      <path
+         sodipodi:nodetypes="cc"
+         id="path3987"
+         d="M 606.77684,278.55743 L 666.26327,363.14934"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         id="path3999"
+         d="M 772.50618,361.20749 L 852.48872,274.09168"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         id="path3993"
+         d="M 437.50349,502.39377 L 536.71937,502.41075"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         ry="0"
+         rx="5.7648001"
+         y="349.74896"
+         x="533.57874"
+         height="302.44534"
+         width="364.74686"
+         id="rect3652"
+         style="fill:#fddab2;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <image
+         transform="matrix(0.996175,-8.7380415e-2,8.7380415e-2,0.996175,0,0)"
+         xlink:href="at90usb162.jpg"
+         sodipodi:absref="/home/cas/at90usb162.jpg"
+         width="165.02499"
+         height="161"
+         id="image3279"
+         x="581.53931"
+         y="507.68954" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3658"
+         y="414.39276"
+         x="557.80005"
+         style="font-size:36.44535065px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:36.44535065px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Bitstream Vera Sans"
+           y="414.39276"
+           x="557.80005"
+           id="tspan3660"
+           sodipodi:role="line">Microcontroller</tspan></text>
+      <g
+         id="g2650">
+        <rect
+           style="fill:#c1efff;fill-opacity:1;stroke:#000000;stroke-width:0.89880592;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect3693"
+           width="177.27461"
+           height="132.20555"
+           x="508.80432"
+           y="148.35608"
+           rx="3.1172624"
+           ry="0" />
+        <image
+           y="193.65201"
+           x="551.59326"
+           id="image3548"
+           height="74.364975"
+           width="91.468918"
+           sodipodi:absref="/home/cas/memory.jpg"
+           xlink:href="memory.jpg" />
+        <text
+           xml:space="preserve"
+           style="font-size:36.44535065px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+           x="596.14404"
+           y="179.43735"
+           id="text3697"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3699"
+             x="596.14404"
+             y="179.43735"
+             style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">Memory</tspan></text>
+      </g>
+      <g
+         transform="translate(-40.120105,1.9104813)"
+         id="g2510">
+        <rect
+           style="fill:#c1efff;fill-opacity:1;stroke:#000000;stroke-width:0.78420287;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect3713"
+           width="159.27939"
+           height="126.71375"
+           x="818.68591"
+           y="146.10851"
+           rx="3.480231"
+           ry="0" />
+        <image
+           y="228.81419"
+           x="876.96277"
+           id="image3598"
+           height="31.940287"
+           width="36.411926"
+           sodipodi:absref="/home/cas/sensor_hall_effect.jpg"
+           xlink:href="sensor_hall_effect.jpg" />
+        <text
+           xml:space="preserve"
+           style="font-size:39.08284378px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+           x="898.5434"
+           y="177.35579"
+           id="text3717"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3719"
+             x="898.5434"
+             y="177.35579"
+             style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">Sensor</tspan><tspan
+             id="tspan3721"
+             sodipodi:role="line"
+             x="898.5434"
+             y="212.35579"
+             style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">hall effect</tspan></text>
+      </g>
+      <path
+         id="path4005"
+         d="M 793.88309,349.37857 L 778.95953,352.57262 L 784.2767,338.8844 L 793.88309,349.37857 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.24675626px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <g
+         id="g2541">
+        <rect
+           style="fill:#fffebf;fill-opacity:1;stroke:#000000;stroke-width:0.85494244;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect3783"
+           width="239.25688"
+           height="152.63892"
+           x="997.54535"
+           y="428.10913"
+           rx="4.7185965"
+           ry="0" />
+        <text
+           xml:space="preserve"
+           style="font-size:36.44535065px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+           x="1116.7014"
+           y="460.93903"
+           id="text3785"
+           sodipodi:linespacing="125%"><tspan
+             id="tspan3789"
+             sodipodi:role="line"
+             x="1116.7014"
+             y="460.93903"
+             style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">Drivers + LEDs</tspan></text>
+        <image
+           y="501.36295"
+           x="1160.7024"
+           id="image3498"
+           height="44.247189"
+           width="42.69854"
+           sodipodi:absref="/home/cas/led.jpg"
+           xlink:href="led.jpg" />
+        <image
+           y="475.88718"
+           x="1024.8582"
+           id="image3846"
+           height="91.93119"
+           width="101.58395"
+           sodipodi:absref="/home/cas/serial_latche.jpg"
+           xlink:href="serial_latche.jpg" />
+      </g>
+      <rect
+         ry="0"
+         rx="6.2131739"
+         y="702.65601"
+         x="585.31384"
+         height="285.78033"
+         width="280.80524"
+         id="rect3872"
+         style="fill:#ffb6b6;fill-opacity:1;stroke:#000000;stroke-width:1.01620603;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         id="path3995"
+         d="M 678.23282,724.59808 L 678.83974,653.34084"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         id="path2696"
+         d="M 684.35446,865.88031 L 684.48131,801.78984"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         id="path3997"
+         d="M 777.24669,852.62163 L 1080.9085,578.51946"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         transform="translate(11.994335,-17.330105)"
+         id="g2683">
+        <rect
+           style="fill:#ffe4e1;fill-opacity:1;stroke:#000000;stroke-width:0.7317766;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2678"
+           width="271.11346"
+           height="153.48996"
+           x="578.48566"
+           y="847.61493"
+           rx="6.2131739"
+           ry="0" />
+        <text
+           xml:space="preserve"
+           style="font-size:39.08284378px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+           x="713.6601"
+           y="876.74561"
+           id="text3876"
+           sodipodi:linespacing="125%"><tspan
+             id="tspan3880"
+             sodipodi:role="line"
+             x="713.6601"
+             y="876.74561"
+             style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">2 x AAA NiMh cells</tspan></text>
+        <g
+           id="g2680">
+          <image
+             y="635.33325"
+             x="-994.50958"
+             id="image2627"
+             height="145"
+             width="104"
+             sodipodi:absref="/media/data/05_assembly/project-BicycleLEDPOV/svn_code.google/trunk/BicycleLEDPOV/Pictures/diagram/2xnimh.jpg"
+             xlink:href="2xnimh.jpg"
+             transform="matrix(0,-1,1,0,0,0)" />
+        </g>
+      </g>
+      <path
+         sodipodi:nodetypes="cc"
+         id="path3991"
+         d="M 996.9424,510.50775 L 898.68383,510.5452"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path4003"
+         d="M 608.6924,293.77823 L 605.24027,276.8467 L 620.03446,282.8793 L 608.6924,293.77823 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         id="path4039"
+         d="M 657.76284,339.2737 L 661.21497,356.20523 L 646.42078,350.17263 L 657.76284,339.2737 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:transform-center-y="-24.345726"
+         inkscape:transform-center-x="-59.847718"
+         id="path4041"
+         d="M 985.5888,501.6821 L 1000.5037,510.40802 L 986.1391,517.40239 L 985.5888,501.6821 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <g
+         transform="translate(-5.7314436,5.7314436)"
+         id="g2488">
+        <g
+           transform="translate(11.462887,0)"
+           id="g2502">
+          <g
+             id="g2499">
+            <rect
+               style="fill:#c1efff;fill-opacity:1;stroke:#000000;stroke-width:0.92873412;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               id="rect3757"
+               width="190.12639"
+               height="142.05748"
+               x="243.19258"
+               y="428.19406"
+               rx="3.2453692"
+               ry="0" />
+          </g>
+          <image
+             xlink:href="usb_connector.jpg"
+             sodipodi:absref="/home/cas/usb_connector.jpg"
+             width="61"
+             height="42"
+             id="image3648"
+             x="304.3237"
+             y="515.10651" />
+          <text
+             sodipodi:linespacing="125%"
+             id="text2478"
+             y="458.51007"
+             x="335.90228"
+             style="font-size:39.08284378px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+             xml:space="preserve"><tspan
+               style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+               y="458.51007"
+               x="335.90228"
+               sodipodi:role="line"
+               id="tspan2482">USB</tspan><tspan
+               id="tspan2486"
+               style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+               y="493.51007"
+               x="335.90228"
+               sodipodi:role="line">connector</tspan></text>
+        </g>
+      </g>
+      <path
+         id="path4043"
+         d="M 449.79074,511.26628 L 434.87584,502.54037 L 449.24044,495.546 L 449.79074,511.26628 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:transform-center-y="-24.345726"
+         inkscape:transform-center-x="-59.847718"
+         id="path4066"
+         d="M 523.5426,494.99545 L 538.4575,503.72137 L 524.0929,510.71574 L 523.5426,494.99545 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         id="path4072"
+         d="M 1065.6092,580.66262 L 1082.5408,577.21051 L 1076.5082,592.00471 L 1065.6092,580.66262 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         id="path4074"
+         d="M 670.49993,663.08125 L 680.03131,648.66783 L 686.22669,663.39459 L 670.49993,663.08125 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <g
+         transform="translate(35.87535,-5.8672174)"
+         id="g2690">
+        <rect
+           style="fill:#ffe4e1;fill-opacity:1;stroke:#000000;stroke-width:0.37920368;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2666"
+           width="115.76183"
+           height="96.528107"
+           x="600.27991"
+           y="714.66016"
+           rx="6.2131739"
+           ry="0" />
+        <text
+           xml:space="preserve"
+           style="font-size:39.08284378px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+           x="656.87061"
+           y="740.88458"
+           id="text2440"
+           sodipodi:linespacing="125%"><tspan
+             id="tspan2442"
+             sodipodi:role="line"
+             x="656.87061"
+             y="740.88458"
+             style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">DC-DC</tspan></text>
+        <image
+           y="752.48853"
+           x="625.79974"
+           id="image2648"
+           height="50.483959"
+           width="62.095268"
+           sodipodi:absref="/home/cas/memory.jpg"
+           xlink:href="memory.jpg" />
+      </g>
+      <path
+         id="path2698"
+         d="M 675.18749,817.97689 L 684.71887,803.56347 L 690.91425,818.29023 L 675.18749,817.97689 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27324501px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
