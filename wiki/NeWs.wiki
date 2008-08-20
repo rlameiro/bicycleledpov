@@ -1,5 +1,18 @@
+==2008.08.20==
+===News from JpCasainho:===
+*New member*
+
+HerbertoSmith is the new member!, he lives at my city, Águeda. He likes Arduino and Python. Welcome Herberto, let's start hacking on Python!! :-)
+
+The first PCB of HaRdware V1.0 were assembled, a few weeks ago:
+http://bicycleledpov.googlecode.com/svn/tags/Hardware-V1.0/20080802-bicycleledpov-hardware-v1.0-02-700x.jpg
+
+The FirmwareAPI were changed to give more control to SoFtware on HaRdware.
+
+I were talking with RicardoLameiro and HerbertoSmith, maybe we will start using wxPython instead of Tkinter. 
+
 ==2008.07.26==
-===News from JpCasainho:==
+===News from JpCasainho:===
 PCB is finished. Next Monday I should be able to drill one on a CNC machine. I will assembly just a few components and see if i can program the MCU, then i will send it to DonaldZiems. My PCB and the one for RicardoLameiro will follow as soon as possible - I will be on holidays since day 2 until day 12 of August.
 
 Image of front side superimposed on back side, with components, tracks and ground signals zones on each side:
@@ -204,6 +217,7 @@ In next days I would like to start writing and reading data to SPI EEPROM.
 
 ==2008.06.05==
 News from JpCasainho:
+
 
 I received today my [http://www.olimex.com/dev/avr-usb-162.html AVR-USB-162 development board from Olimex] and I did a few hacks in USBtoSerial program from [http://www.fourwalledcubicle.com/MyUSB.php MyUSB library] and I got it working, but turning on the LED when I send value "1" to serial port and off the LED when I send "0" - It also send back to serial port the same vale sent before. Here some images (from GNU/Linux Ubuntu on my Asus eee pc 701):
 
