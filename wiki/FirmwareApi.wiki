@@ -56,7 +56,7 @@ Usage: send value 8.
 ==SPI master transmit: command 9==
 This command will send a byte to SPI bus. Since the MCU AT90USB162 is acting as a master on SPI bus, at the end of transmission MCU will receive one byte from the slave, that byte is therefore sent to PC.
 
-Usage: send value 9 and one byte will be received - the byte received is the one received from the slave. 
+Usage: send two bytes - send the value 9 (first byte - the command); send the value to SPI bus (one byte). Receive one byte - the byte received is the one received from the slave. 
 
 =Sensor hall effect commands=
 This commands controls the Vcc line of the sensor and reads is data output.
@@ -100,6 +100,6 @@ This command disable the Vcc of the DataFlash memory.
 Usage: send value 16.
 
 =Auto identification=
-The hardware sends periodically on each 300ms the value 0xFE to the serial port. PC Software can look for this 0xFE value to identify a working Bicycle LED POV hardware on the serial port.
+The hardware sends periodically on each 300ms the value 254 to the serial port. PC Software can look for this value to identify a working Bicycle LED POV hardware on the serial port.
 
-If a command is received the Auto identification process is aborted within next 5 seconds.
+If a command is received while on Auto identification state, this state is aborted during next 5 seconds.
