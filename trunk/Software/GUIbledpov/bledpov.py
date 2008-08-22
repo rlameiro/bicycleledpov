@@ -38,19 +38,25 @@ from bledpov_ui import Bledpov
 import serial
 import os
 import tkMessageBox
-from sys import platform # import the platform object for system platform checking
+from sys import platform # import the platform object for system platform checkin
 
-def infomsg():
+def hex2dec(s):
+	return(s, 16)
+
+def dec2hex(n):
+	return "%X" %n
+
+def infomsg(title = "test", text = "this is a test"):
 	"""This is the function that calls a Graphic Info message box
 	USAGE : infomsg("title", "text")
 	"""
-	in_msg = tkMessageBox.showinfo("test", "This is a test")
+	in_msg = tkMessageBox.showinfo(title, text)
 	return in_msg
-def errormsg():
+def errormsg(title = "ERROR", text = "Command unsucsessful. \n Check if hardware is connected or \n check the serial port used." ):
 	"""This is the function that calls a Graphic error message box
 	USAGE : errormsg("title", "text")
 	"""
-	err_msg = tkMessageBox.showerror("ERROR", "Command unsucsessful. \n Check if hardware is connected or \n check the serial port used.") 
+	err_msg = tkMessageBox.showerror(title, text ) 
 	
 	
 def scan():
@@ -106,11 +112,10 @@ ports = scan()
 
 
 
-cmd1 = "\x01" #Firmware API Commands assignement
-cmd2 = "\x02" # |
+cmd1 = chr(0x01) #Firmware API Commands assignement
+cmd2 = chr(0x02) # |
 cmd3 = "\x03" # |
-cmd4 = "\x04" # |
-
+cmd4 = "\x04" # |ch
 
 
 # END USER CODE global
@@ -189,16 +194,21 @@ class CustomBledpov(Bledpov):
     	serial_selected = self.serial_listbox.curselection()     # Select the serial port that is 
         selected_port = self.serial_listbox.get(serial_selected) # highlighted in the listbox
         
+        teste = []
     	ser = serial.Serial(selected_port, timeout = 5) # configure the serial port
     	ser.open          # open te serial port
     	ser.write(cmd2)   # send the command 2 to the serial port  
-    	rcv = ser.read(3) # read 3 bytes from serial port (refer to the firmware api)
+		# read 4 bytes from serial port (refer to the firmware api)
+    	a = 4
+    	while a != 0:
+    		a = a-1
+    		teste.append(ser.read(1))
     	ser.close         # close the serial port
-    	
-    	if len(rcv) == 3:
-		infomsg("Command sucessful", "FIRMWARE VERSION:" + rcv)
-	else:
-		errormsg()
+    	rcv = str(ord("".join(teste[0:1])))
+        if rcv == "2":
+			infomsg("Command sucessful","FIRMWARE VERSION: " + str(ord("".join(teste[1:2]))) + "." + str(ord("".join(teste[2:3]))) + "." + str(ord("".join(teste[3:4]))))
+        else:
+			errormsg()
 		
 
     # send_cmd3_command --
