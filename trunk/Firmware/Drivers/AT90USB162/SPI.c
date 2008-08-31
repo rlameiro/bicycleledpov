@@ -13,9 +13,11 @@
 void SPI_MasterInit(unsigned char ucDataOrder)
 {
 	/* Put I/Os as outputs for SPI MOSI and SCK */
-	DDRB	|=  ((1<<PB0) /* SPI_SS - this line should be input to SPI works ok */
-			|   (1<<PB1) /* SPI_SCK */
+	DDRB	|=   ((1<<PB1) /* SPI_SCK */
 			|   (1<<PB2)); /* SPI_MOSI */
+
+	PORTB |= (1<<PB0);  /* SPI_SS - this line should be high to SPI works ok */
+						/* puting this I/O with internall pull-up */
 	
 	/* Disable the Power Reduction on Serial Peripheral Interface */
 	PRR0 &= ~(1<<PRSPI);

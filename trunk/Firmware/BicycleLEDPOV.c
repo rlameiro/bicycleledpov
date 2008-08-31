@@ -253,19 +253,20 @@ TASK(PCLink_Task)
 
 		switch (ucCommand)
 		{			
-			case DUMMY:
+			case FIRMWARE_API_COMMAND_DUMMY:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
 				ucNumberDataBytes = 1;
 				
 			if (Tx_Buffer.Elements < BUFF_STATICSIZE)
 			{
+				/* Send back the value of the command */
 				Buffer_StoreElement (&Tx_Buffer, ucCommand);
 				ucNumberDataBytes--;
 			}		
 			break;
 				
-			case RETRIEVE_FIRMWARE_VERSION:
+			case FIRMWARE_API_COMMAND_RETRIEVE_FIRMWARE_VERSION:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
 				ucNumberDataBytes = 4;
@@ -275,6 +276,7 @@ TASK(PCLink_Task)
 				switch (ucNumberDataBytes)
 				{
 					case 4:
+					/* Send back the value of the command */
 					Buffer_StoreElement (&Tx_Buffer, ucCommand);
 					break;
 													
@@ -298,199 +300,245 @@ TASK(PCLink_Task)
 			}
 			break;
 							
-			case TEST_LEDS:
-			/* First byte of this command, fill the NumberDataBytes */
+			case FIRMWARE_API_COMMAND_SS0_ENABLE:
+			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
-				ucNumberDataBytes = 9;
+				ucNumberDataBytes = 1;
 				
-			if (ucNumberDataBytes == 9 && Tx_Buffer.Elements < BUFF_STATICSIZE)
+			if (Tx_Buffer.Elements < BUFF_STATICSIZE)
 			{
-				/* Send back the number of the command */
+				/* Enable SS0 line */
+				SS0_ENABLE;
+				
+				/* Send back the value of the command */
+				Buffer_StoreElement (&Tx_Buffer, ucCommand);
+				ucNumberDataBytes--;
+			}		
+			break;			
+
+			case FIRMWARE_API_COMMAND_SS0_DISABLE:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 1;
+				
+			if (Tx_Buffer.Elements < BUFF_STATICSIZE)
+			{
+				/* Disable SS0 line */
+				SS0_DISABLE;
+				
+				/* Send back the value of the command */
+				Buffer_StoreElement (&Tx_Buffer, ucCommand);
+				ucNumberDataBytes--;
+			}		
+			break;			
+
+			case FIRMWARE_API_COMMAND_SS1_ENABLE:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 1;
+				
+			if (Tx_Buffer.Elements < BUFF_STATICSIZE)
+			{
+				/* Enable SS1 line */
+				SS1_ENABLE;
+			
+				/* Send back the value of the command */
+				Buffer_StoreElement (&Tx_Buffer, ucCommand);
+				ucNumberDataBytes--;
+			}		
+			break;			
+
+			case FIRMWARE_API_COMMAND_SS1_DISABLE:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 1;
+				
+			if (Tx_Buffer.Elements < BUFF_STATICSIZE)
+			{
+				/* Disable SS1 line */
+				SS1_DISABLE;
+				
+				/* Send back the value of the command */
+				Buffer_StoreElement (&Tx_Buffer, ucCommand);
+				ucNumberDataBytes--;
+			}		
+			break;
+
+			case FIRMWARE_API_COMMAND_SS2_ENABLE:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 1;
+				
+			if (Tx_Buffer.Elements < BUFF_STATICSIZE)
+			{
+				/* Enable SS2 line */
+				SS2_ENABLE;
+				
+				/* Send back the value of the command */
+				Buffer_StoreElement (&Tx_Buffer, ucCommand);
+				ucNumberDataBytes--;
+			}		
+			break;			
+
+			case FIRMWARE_API_COMMAND_SS2_DISABLE:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 1;
+				
+			if (Tx_Buffer.Elements < BUFF_STATICSIZE)
+			{
+				/* Disable SS2 line */
+				SS2_DISABLE;
+				
+				/* Send back the value of the command */
+				Buffer_StoreElement (&Tx_Buffer, ucCommand);
+				ucNumberDataBytes--;
+			}		
+			break;				
+
+			case FIRMWARE_API_COMMAND_SPI_MASTER_TRANSMIT:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 2;
+				
+			if (Tx_Buffer.Elements < BUFF_STATICSIZE && ucNumberDataBytes == 2)
+			{	
+				/* Send back the value of the command */
 				Buffer_StoreElement (&Tx_Buffer, ucCommand);
 				ucNumberDataBytes--;
 			}
 				
-			/* Send the 8 bytes to LEDs drivers */
-			while (Rx_Buffer.Elements && ucNumberDataBytes > 0)
+			if (Rx_Buffer.Elements && Tx_Buffer.Elements < BUFF_STATICSIZE)
 			{	
-				switch (ucNumberDataBytes)
-				{	
-					case 8:
-					SPI_MasterInit (DATA_ORDER_MSB);
-					SPI_MasterTransmit (Buffer_GetElement (&Rx_Buffer));
-					SPI_Disable ();
-					break;
-					
-					case 7:
-					SPI_MasterInit (DATA_ORDER_MSB);
-					SPI_MasterTransmit (Buffer_GetElement (&Rx_Buffer));
-					SPI_Disable ();
-					break;
-					
-					case 6:
-					SPI_MasterInit (DATA_ORDER_MSB);
-					SPI_MasterTransmit (Buffer_GetElement (&Rx_Buffer));
-					SPI_Disable ();
-					break;
-					
-					case 5:
-					SPI_MasterInit (DATA_ORDER_MSB);
-					SPI_MasterTransmit (Buffer_GetElement (&Rx_Buffer));
-					SPI_Disable ();
-					ClockDataLatches (RIGHT_SIDE_DATA_LATCHES);
-					break;
-					
-					case 4:
-					SPI_MasterInit (DATA_ORDER_MSB);
-					SPI_MasterTransmit (Buffer_GetElement (&Rx_Buffer));
-					SPI_Disable ();
-					break;
-					
-					case 3:
-					SPI_MasterInit (DATA_ORDER_MSB);
-					SPI_MasterTransmit (Buffer_GetElement (&Rx_Buffer));
-					SPI_Disable ();
-					break;
-					
-					case 2:
-					SPI_MasterInit (DATA_ORDER_MSB);
-					SPI_MasterTransmit (Buffer_GetElement (&Rx_Buffer));
-					SPI_Disable ();
-					break;
-					
-					case 1:
-					SPI_MasterInit (DATA_ORDER_MSB);
-					SPI_MasterTransmit (Buffer_GetElement (&Rx_Buffer));
-					SPI_Disable ();
-					ClockDataLatches (LEFT_SIDE_DATA_LATCHES);
-					break;
-						
-					default:					
-					break;
-				}
-				
-			ucNumberDataBytes--;	
-			}
-			break;			
-					
-			case TEST_SENSOR_HALL_EFFECT:					
-			/* First byte of this command, fill the NumberDataBytes */
-			if (ucNumberDataBytes <= 0)
-				ucNumberDataBytes = 2;		
-			
-			switch (ucNumberDataBytes)
-			{
-				case 2: /* Send back the number of the command */
-				if (Tx_Buffer.Elements < BUFF_STATICSIZE)
-				{
-					Buffer_StoreElement (&Tx_Buffer, ucCommand);
-					ucNumberDataBytes--;
-				}
-				break;					
-
-			 	case 1: /* See If we should turn on or off the test */						
-				if (Buffer_GetElement (&Rx_Buffer) == 1)
-				{
-					Scheduler_SetTaskMode(TestSensorHallEffect_Task, TASK_RUN);
-					
-					/* Turn on the source voltage for sensor hall effect */
-					PORTD |= (1<<PD1);
-				}
-				
-				else
-				{
-					Scheduler_SetTaskMode(TestSensorHallEffect_Task, TASK_STOP);
-					
-					/* Turn off LED and source voltage for sensor hall effect */
-					PORTD &= ~((1<<PD4) | (1<<PD1));
-				}	
-				
-				ucNumberDataBytes--;
-				break;
-					
-				default:
-				break;
-			}
-				
-#if 0
-			case EEPROM_READ_BYTE:
-			/* First byte of this command, fill the NumberDataBytes */			
-			if (ucNumberDataBytes <= 0)
-				ucNumberDataBytes = 3;
-				
-			switch (ucNumberDataBytes)
-			{	
-				case 3: /* Send back the number of the command */
-				if (Tx_Buffer.Elements < BUFF_STATICSIZE)
-				{
-					Buffer_StoreElement (&Tx_Buffer, ucCommand);
-					ucNumberDataBytes--;
-				}
-				break;					
-
-			 	case 2: /* Send  */						
-				if (Buffer_GetElement (&Rx_Buffer) == 1)
-				{
-					Scheduler_SetTaskMode(TestSensorHallEffect_Task, TASK_RUN);
-					
-					/* Turn on the source voltage for sensor hall effect */
-					PORTD |= (1<<PD1);
-				}
-				
-				else
-				{
-					Scheduler_SetTaskMode(TestSensorHallEffect_Task, TASK_STOP);
-					
-					/* Turn off LED and source voltage for sensor hall effect */
-					PORTD &= ~((1<<PD4) | (1<<PD1));
-				}	
-				
-				ucNumberDataBytes--;
-				break;
-					
-				default:
-				break;	
-				
-				
-				
-				
-				
-				
-				
-				
-				
-					
-			while (Tx_Buffer.Elements < BUFF_STATICSIZE && ucNumberDataBytes > 0)
-			{
-				switch (ucNumberDataBytes)
-				{
-					case 4:
-					Buffer_StoreElement (&Tx_Buffer, ucCommand);
-					break;
-													
-					case 3:
-					Buffer_StoreElement (&Tx_Buffer, BICYCLELEDPOV_VERSION_MAJOR);
-					break;
-						
-					case 2:
-					Buffer_StoreElement (&Tx_Buffer, BICYCLELEDPOV_VERSION_MINOR);
-					break;
-
-					case 1:
-					Buffer_StoreElement (&Tx_Buffer, BICYCLELEDPOV_VERSION_REVISION);
-					break;
+				/* Send the byte data to SPI bus */
+				SPI_MasterTransmit (Buffer_GetElement(&Rx_Buffer));
 							
-					default:
-					break;
-				}		
-							
-			ucNumberDataBytes--;
+				/* Send the byte received from slave on SPI bus, to PC */	
+				Buffer_StoreElement (&Tx_Buffer, SPI_MasterReceive ());
+				
+				ucNumberDataBytes--;	
 			}
 			break;
-			
-#endif			
-			
-			
+				
+			case FIRMWARE_API_COMMAND_SENSOR_HALL_EFFECT_VCC_ENABLE:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 1;
+				
+			if (Tx_Buffer.Elements < BUFF_STATICSIZE)
+			{
+				/* Enable Vcc on sensor hall effect */
+				SENSOR_HALL_EFFECT_VCC_ENABLE;
+				
+				/* Send back the value of the command */
+				Buffer_StoreElement (&Tx_Buffer, ucCommand);
+				
+				ucNumberDataBytes--;
+			}		
+			break;
+
+			case FIRMWARE_API_COMMAND_SENSOR_HALL_EFFECT_VCC_DISABLE:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 1;
+				
+			if (Tx_Buffer.Elements < BUFF_STATICSIZE)
+			{
+				/* Disable Vcc on sensor hall effect */
+				SENSOR_HALL_EFFECT_VCC_DISABLE;
+				
+				/* Send back the value of the command */
+				Buffer_StoreElement (&Tx_Buffer, ucCommand);
+				
+				ucNumberDataBytes--;
+			}		
+			break;
+				
+			case FIRMWARE_API_COMMAND_SENSOR_HALL_EFFECT_READ_DATA:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 1;
+				
+			if ( (Tx_Buffer.Elements + 1) < BUFF_STATICSIZE)
+			{
+				/* Send back the value of the command */
+				Buffer_StoreElement (&Tx_Buffer, ucCommand);
+				
+				/* Send one byte with values 1 or 0 accordinly of sensor hall effect data */
+				Buffer_StoreElement (&Tx_Buffer, SENSOR_HALL_EFFECT_IS_SET);
+				
+				ucNumberDataBytes--;
+			}
+			break;
+
+			case FIRMWARE_API_COMMAND_DATAFLASH_VCC_ENABLE:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 1;
+				
+			if (Tx_Buffer.Elements < BUFF_STATICSIZE)
+			{
+				/* Enable Vcc on DataFlash memory */
+				DATAFLASH_VCC_ENABLE;
+				
+				/* Send back the value of the command */
+				Buffer_StoreElement (&Tx_Buffer, ucCommand);
+				
+				ucNumberDataBytes--;
+			}		
+			break;
+
+			case FIRMWARE_API_COMMAND_DATAFLASH_VCC_DISABLE:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 1;
+				
+			if (Tx_Buffer.Elements < BUFF_STATICSIZE)
+			{
+				/* Disable Vcc on DataFlash memory */
+				DATAFLASH_VCC_DISABLE;
+				
+				/* Send back the value of the command */
+				Buffer_StoreElement (&Tx_Buffer, ucCommand);
+				
+				ucNumberDataBytes--;
+			}		
+			break;				
+
+			case FIRMWARE_API_COMMAND_DATAFLASH_HOLD_ENABLE:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 1;
+				
+			if (Tx_Buffer.Elements < BUFF_STATICSIZE)
+			{
+				/* Enable hold on DataFlash memory */
+				DATAFLASH_HOLD_ENABLE;
+				
+				/* Send back the value of the command */
+				Buffer_StoreElement (&Tx_Buffer, ucCommand);
+				
+				ucNumberDataBytes--;
+			}		
+			break;
+
+			case FIRMWARE_API_COMMAND_DATAFLASH_HOLD_DISABLE:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 1;
+				
+			if (Tx_Buffer.Elements < BUFF_STATICSIZE)
+			{
+				/* Disable hold on DataFlash memory */
+				DATAFLASH_HOLD_DISABLE;
+				
+				/* Send back the value of the command */
+				Buffer_StoreElement (&Tx_Buffer, ucCommand);
+				
+				ucNumberDataBytes--;
+			}		
+			break;				
+				
 			default:			
 			break;
 		}
@@ -499,18 +547,16 @@ TASK(PCLink_Task)
 	
 void Hardware_Init(void)
 {
-	/* Configure I/O pins as outputs */ 
-	DDRD	|=  ((1<<PD1) /* Vcc for sensor hall effect */
-			|   (1<<PD2)); /* Vcc for EEPROM */
- 
-	DDRB	|=  ((1<<PB0) /* SPI_SS0 */
-			|   (1<<PB4) /* SPI_SS1 */
-			|   (1<<PB5)); /* SPI_SS2 - EEPROM slave select */			
+	SensorHallEffect_Init();
+	DataLatches_Init();
+	DataFlash_Init();
+	SPI_MasterInit (DATA_ORDER_MSB);
 }
 
 TASK(MakePOV_Task)
 {
-	PORTD |= (1<<PD4); /* Turn on LED */
+	SPI_MasterTransmit (1);
+	DataLatches_Clock (RIGHT_SIDE_DATA_LATCHES);
 }
 
 TASK(TestSensorHallEffect_Task)
@@ -521,7 +567,7 @@ TASK(TestSensorHallEffect_Task)
 		SPI_MasterInit (DATA_ORDER_MSB);
 		SPI_MasterTransmit (1);
 		SPI_Disable ();
-		ClockDataLatches (RIGHT_SIDE_DATA_LATCHES);
+		DataLatches_Clock (RIGHT_SIDE_DATA_LATCHES);
 	}
 	
 	else
@@ -530,25 +576,6 @@ TASK(TestSensorHallEffect_Task)
 		SPI_MasterInit (DATA_ORDER_MSB);
 		SPI_MasterTransmit (0);
 		SPI_Disable ();
-		ClockDataLatches (RIGHT_SIDE_DATA_LATCHES);
-	}
-}
-
-void ClockDataLatches(unsigned char SideDataLatches)
-{
-	switch (SideDataLatches)
-	{
-		case LEFT_SIDE_DATA_LATCHES:
-		PORTB |= (1<<PB4);
-		PORTB &= ~(1<<PB4);
-		break;
-		
-		case RIGHT_SIDE_DATA_LATCHES:
-		PORTB |= (1<<PB0);
-		PORTB &= ~(1<<PB0);
-		break;				
-
-		default:
-		break;
+		DataLatches_Clock (RIGHT_SIDE_DATA_LATCHES);
 	}
 }

@@ -87,11 +87,13 @@ OBJDIR = .
 
 
 # List C source files here. (C dependencies are automatically generated.)
-SRC = $(TARGET).c                                           \
-		./Drivers/EEPROM/AT25128A.c		\
-		./Drivers/AT90USB162/SPI.c                        \
-		./Descriptors.c                                     \
-		./RingBuff.c                                        \
+SRC = $(TARGET).c             							\
+		./Drivers/AT90USB162/SPI.c						\
+		./Drivers/SensorHallEffect/A3213ELHLT.c			\
+		./Drivers/DataLatches/595.c						\
+		./Drivers/DataFlash/AT26DF081A.c				\
+		./Descriptors.c                 				\
+		./RingBuff.c                            		\
 		./MyUSB/Scheduler/Scheduler.c                     \
 	  	./MyUSB/Drivers/USB/LowLevel/LowLevel.c           \
 	  	./MyUSB/Drivers/USB/LowLevel/Endpoint.c           \
@@ -316,7 +318,7 @@ AVRDUDE_WRITE_FLASH = -U flash:w:$(TARGET).hex
 #AVRDUDE_NO_VERIFY = -V
 
 # Increase verbosity level.  Please use this when submitting bug
-# reports about avrdude. See <http://savannah.nongnu.org/projects/avrdude> 
+# reports about avrdude. See <http://savannah.nongnu.org/projects/avrdude> make 
 # to submit bug reports.
 #AVRDUDE_VERBOSE = -v -v
 
@@ -486,9 +488,15 @@ program: $(TARGET).hex $(TARGET).eep
 
 
 # Program the device by usb using dfu-program.  
-usbprogram: $(TARGET).hex
-	 dfu-programmer $(MCU) flash $(TARGET).hex
+usbprogram:
+	@echo 1: Erase the MCU.
+	dfu-programmer $(MCU) erase
+	
+	@echo 2: Flash the $(TARGET).hex file to MCU.
+	dfu-programmer $(MCU) flash $(TARGET).hex
 
+	@echo 3: Make the MCU jump to the user application - the Bicycle LED POV application.
+	dfu-programmer $(MCU) start
 
 # Generate avr-gdb config/init file which does the following:
 #     define the reset signal, load the target file, connect to target, and set 
