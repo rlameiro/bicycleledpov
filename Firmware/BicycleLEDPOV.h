@@ -33,7 +33,10 @@
 		#include <MyUSB/Drivers/USB/USB.h>                 // USB Functionality
 		#include <MyUSB/Scheduler/Scheduler.h>             // Simple scheduler for task management
 		#include <Drivers/AT90USB162/SPI.h>					/* SPI drivers */
-		#include <Drivers/EEPROM/AT25128A.h>					/* EEPROM drivers */		
+		#include <Drivers/SensorHallEffect/A3213ELHLT.h>	/* Sensor hall effect drivers */		
+		#include <Drivers/DataLatches/595.h>				/* Data latches drivers */
+		#include <Drivers/DataFlash/AT26DF081A.h>			/* DataFlash memory drivers */
+		
 
 	/* Macros: */
 		/* Version 0.1.0 */
@@ -46,19 +49,36 @@
 		#define SET_CONTROL_LINE_STATE		0x22
 
 		#define PROCESS_COMMAND				0
-		#define PROCESS_DATA				1
+		#define PROCESS_DATA				1		
 		
-		#define LEFT_SIDE_DATA_LATCHES		0
-		#define RIGHT_SIDE_DATA_LATCHES		1		
-		
+
 		/* Macros for commands */
-		#define DUMMY						1
-		#define RETRIEVE_FIRMWARE_VERSION   2
-		#define TEST_LEDS					3
-		#define TEST_SENSOR_HALL_EFFECT		4
-		#define EEPROM_READ_BYTE			5
-		#define EEPROM_WRITE_BYTE			6
-		 
+		
+		/* General commands */
+		#define FIRMWARE_API_COMMAND_DUMMY							1
+		#define FIRMWARE_API_COMMAND_RETRIEVE_FIRMWARE_VERSION		2
+		
+		/* SPI commands */
+		#define FIRMWARE_API_COMMAND_SS0_ENABLE						3
+		#define FIRMWARE_API_COMMAND_SS0_DISABLE					4
+		#define FIRMWARE_API_COMMAND_SS1_ENABLE						5
+		#define FIRMWARE_API_COMMAND_SS1_DISABLE					6
+		#define FIRMWARE_API_COMMAND_SS2_ENABLE						7
+		#define FIRMWARE_API_COMMAND_SS2_DISABLE					8
+		#define FIRMWARE_API_COMMAND_SPI_MASTER_TRANSMIT			9
+		
+		/* Sensor hall effect commands */
+		#define FIRMWARE_API_COMMAND_SENSOR_HALL_EFFECT_VCC_ENABLE	10
+		#define FIRMWARE_API_COMMAND_SENSOR_HALL_EFFECT_VCC_DISABLE	11
+		#define FIRMWARE_API_COMMAND_SENSOR_HALL_EFFECT_READ_DATA	12		
+		
+		/* DataFlash memory commands */
+		#define FIRMWARE_API_COMMAND_DATAFLASH_VCC_ENABLE			13
+		#define FIRMWARE_API_COMMAND_DATAFLASH_VCC_DISABLE			14
+		#define FIRMWARE_API_COMMAND_DATAFLASH_HOLD_ENABLE			15
+		#define FIRMWARE_API_COMMAND_DATAFLASH_HOLD_DISABLE			16
+		
+		
 	/* Event Handlers: */
 		HANDLES_EVENT(USB_Connect);
 		HANDLES_EVENT(USB_Disconnect);
