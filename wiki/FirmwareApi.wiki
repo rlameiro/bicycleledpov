@@ -11,7 +11,6 @@ The FiRmwareAPI allow to control the following parts of the HaRdware:
 
   * SPI BUS
     * Send/receive one data byte to SPI BUS;
-    * Define and get the state of each SS0, SS1 and SS2 lines.
 
   * LEDs
     * Each LED can be turned on or off, by sending data bytes to SPI BUS and controlling the SS0 and SS1 lines of the data latches ICs.
@@ -20,7 +19,6 @@ The FiRmwareAPI allow to control the following parts of the HaRdware:
     * DataFlash memory can be read and write by sending data bytes to SPI BUS and controlling the SS2 line.
     * Enable/disable Vcc and get his state;
     * Enable/disable Hold line and get his state;
-
 
 =General commands=
 ==Dummy command: command 1==
