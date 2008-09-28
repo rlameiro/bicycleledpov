@@ -4,44 +4,58 @@ Connecting Bicycle LED POV hardware to PC using an USB cable, a new virtual seri
 
 The API have two parts, the “base” one should always be implemented on each hardware and provides minimum functionality while the “extended” part differs on each hardware and is not necessary to be implement.
 
+Each command should return always value 0 for an implemented command and value 1 for one not implemented command.
+
 =Base API=
 ==Hardware==
-*Command 1: Get hardware version*. Hardware returns three bytes indicating his version.
+*Command 1: Get hardware properties*. Hardware returns fifteen bytes indicating the following informations:
+
+API version: byte_1; byte_2; byte_3
+
+Firmware version: byte_4; byte_5; byte_6
+
+Number of radial lines: byte_7; byte_8
+
+Number of LEDs per radial line: byte_9; byte_10
+
+Animations images colors properties: byte_11; byte_12; byte_13;  byte_14. Byte_11 value is the number of bits per channel of a monochrome image, if image is a color one, the value should be 0. Byte_12, byte_13 and byte_14 have the values of bits of each R, G, B channels, respectively. If image is a monochrome one, this three bytes have values of 0.
+
+Different animations of wheel sides: byte_11
 
 Example:
    * values sent to hardware: `[`1`]`
-   * values received from hardware: `[`1`]` `[`1`]` `[`0`]` `[`0`]`  -> the hardware version is 1.0.0.
+   * values received from hardware: `[`0`]`- `[`0`]` `[`1`]` `[`0`]` - `[`0`]` `[`1`]` `[`0`]` - `[`0`]``[`255`]`- `[`0`]` `[`32`]`- `[`1`]` `[`0`]` `[`0`]``[`0`]` - `[`0`]`-> the API version is 1.0.0; the FiRmware version is 1.0.0; 255 radial lines; 32 LEDs per radial line; monochrome image of 1 bit; animation is the same for both wheel sides.
 
 ==Memory==
 *Command 10: Get memory size*. Hardware returns the value of memory in multiples of kB, using three bytes in form: byte_1 = `<0-7>bits; byte_2 = <8-15>bits and byte _3 = <16-23>`.
 
 Example:
    * values sent to hardware: `[`10`]`
-   * values received from hardware: `[`10`]` `[`0`]` `[`4`]` `[`4`]` -> memory of 1MB, `(0 * 2^16) + (4 * 2^8) + (4 * 2^0)` = 1024 kB.
+   * values received from hardware: `[`0`]` `[`0`]` `[`4`]` `[`4`]` -> memory of 1MB, `(0 * 2^16) + (4 * 2^8) + (4 * 2^0)` = 1024 kB.
 
 *Command 11: Read memory byte*. The address is sent to hardware and the number of bytes to be used for the address depends on memory size – should be the less possible number of bytes.
 
 Example:
    * values sent to hardware: `[`11`]` `[`0`]` `[`0`]` `[`55`]` – read byte number 55 of a memory with at least 2GB.
-   * values received from hardware: `[`11`]` `[`120`]` – the value on address 55 is 120.
+   * values received from hardware: `[`0`]` `[`120`]` – the value on address 55 is 120.
 
 *Command 12: Read next byte*. This command should just be used after “Command 11: Read memory byte”. 
 
 Example:
    * values sent to hardware: `[`12`]`
-   * values received from hardware: `[`12`]` `[`74`]` – Assuming that last address used on the value on “Command 11: Read memory byte” were 55, 74 is the value stored on address 56.
+   * values received from hardware: `[`0`]` `[`74`]` – Assuming that last address used on the value on “Command 11: Read memory byte” were 55, 74 is the value stored on address 56.
 
 *Command 13: Write memory byte*. The address is sent to hardware and the number of bytes to be used for the address depends on memory size – should be the less possible number of bytes. The data byte is the last byte sent to hardware.
 
 Example:
    * values sent to hardware: `[`13`]` `[`0`]` `[`0`]` `[`55`]` `[`60`]` – write value 60 on address number 55, on a memory with at least 2GB.
-   * values received from hardware: `[`13`]`
+   * values received from hardware: `[`0`]`
 
 *Command 14: Write next byte*. This command should just be used after “Command 13: Write memory byte”.
 
 Example:
    * values sent to hardware: `[`14`]` `[`61`]` - Assuming that last address used on the value on “Command 13: Write memory byte” were 55, 61 is the value that will be stored on address 56. 
-   * values received from hardware: `[`14`]`
+   * values received from hardware: `[`0`]`
 
 =Extended API=
 *Hardware Version 1.0.0*
@@ -52,7 +66,7 @@ This extended part of API is implemente on hadware version 1.0.0.
 
 Example:
    * values sent to hardware: `[`100`]`
-   * values received from hardware: `[`100`]` `[`1`]` - in this case sensor detects a magnetic field.
+   * values received from hardware: `[`0`]` `[`1`]` - in this case sensor detects a magnetic field.
 
 *Command xxx: Get state of sensor hall effect Vcc line*.
 
@@ -67,7 +81,7 @@ The number of bytes to be sent indicating the state of LEDs depends on each hard
 
 Example:
    * values sent to hardware: `[`101`]` `[`byte_1`]` `[`byte_2`]` `[`...`]`
-   * values received from hardware: `[`101`]`
+   * values received from hardware: `[`0`]`
 
 *Command xxx: Get state of SS0 line*.
 
