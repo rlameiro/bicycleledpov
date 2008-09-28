@@ -20,18 +20,18 @@ Number of LEDs per radial line: byte_5; byte_6
 
 Animations images colors properties: byte_7; byte_8; byte_9;  byte_10. Byte_7 value is the number of bits per channel of a monochrome image type (hardware-supported), if hardware-supported image type is a color one, the value should be 0. Byte_8, byte_9 and byte_10 have the values of bits of each R, G, B channels, respectively. If hardware-supported image type is a monochrome one, this three bytes have values of 0.
 
-Different animations of wheel sides (number of independent LED-strips): byte_11
+Number of independent LED-strips: byte_11
 
 Example:
    * values sent to hardware: `[`1`]`
-   * values received from hardware: `[`0`]` - `[`8`]` - `[`8`]` - `[`0`]` `[`255`]`- `[`0`]` `[`32`]` - `[`1`]` `[`0`]` `[`0`]` `[`0`]` - `[`0`]` -> the API version is 1.0; the FiRmware version is 1.0; 255 radial lines; 32 LEDs per radial line; monochrome image of 1 bit; animation is the same for both wheel sides.
+   * values received from hardware: `[`0`]` - `[`8`]` - `[`8`]` - `[`1`]` `[`0`]`- `[`0`]` `[`32`]` - `[`1`]` `[`0`]` `[`0`]` `[`0`]` - `[`1`]` -> the API version is 1.0; the FiRmware version is 1.0; 256 radial lines; 32 LEDs per radial line; monochrome image of 1 bit; animation is the same for both wheel sides.
 
 ==Memory==
 *Command 10: Get memory size*. Hardware returns the value of memory in multiples of kB, using three bytes in form: byte_1 = `<0-7>bits; byte_2 = <8-15>bits and byte _3 = <16-23>`.
 
 Example:
    * values sent to hardware: `[`10`]`
-   * values received from hardware: `[`0`]` `[`0`]` `[`4`]` `[`4`]` -> memory of 1MB, `(0 * 2^16) + (4 * 2^8) + (4 * 2^0)` = 1024 kB.
+   * values received from hardware: `[`0`]` - `[`0`]` `[`4`]` `[`0`]` -> memory of 1MB, `(0 * 2^16) + (4 * 2^8) + (0 * 2^0)` = 1024 kB.
 
 *Command 11: Read memory byte*. The address is sent to hardware and the number of bytes to be used for the address depends on memory size – should be the less possible number of bytes.
 
