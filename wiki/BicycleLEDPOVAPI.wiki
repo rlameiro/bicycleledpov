@@ -18,7 +18,7 @@ Number of radial lines: byte_7; byte_8
 
 Number of LEDs per radial line: byte_9; byte_10
 
-Animations images colors properties: byte_11; byte_12; byte_13;  byte_14. Byte_11 value is the number of bits per channel of a monochrome image, if image is a color one, the value should be 0. Byte_12, byte_13 and byte_14 have the values of bits of each R, G, B channels, respectively. If image is a monochrome one, this three bytes have values of 0.
+Animations images colors properties: byte_11; byte_12; byte_13;  byte_14. Byte_11 value is the number of bits per channel of a monochrome image type (hardware-supported), if hardware-supported image type is a color one, the value should be 0. Byte_12, byte_13 and byte_14 have the values of bits of each R, G, B channels, respectively. If hardware-supported image type is a monochrome one, this three bytes have values of 0.
 
 Different animations of wheel sides: byte_11
 
