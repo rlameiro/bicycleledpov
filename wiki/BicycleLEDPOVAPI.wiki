@@ -8,23 +8,23 @@ Each command should return always value 0 for an implemented command and value 1
 
 =Base API=
 ==Hardware==
-*Command 1: Get hardware properties*. Hardware returns fifteen bytes indicating the following informations:
+*Command 1: Get hardware properties*. Hardware returns eleven bytes indicating the following informations:
 
-API version: byte_1; byte_2; byte_3
+API version: byte_1
 
-Firmware version: byte_4; byte_5; byte_6
+Firmware version: byte_2
 
-Number of radial lines: byte_7; byte_8
+Number of radial lines: byte_3; byte_4
 
-Number of LEDs per radial line: byte_9; byte_10
+Number of LEDs per radial line: byte_5; byte_6
 
-Animations images colors properties: byte_11; byte_12; byte_13;  byte_14. Byte_11 value is the number of bits per channel of a monochrome image type (hardware-supported), if hardware-supported image type is a color one, the value should be 0. Byte_12, byte_13 and byte_14 have the values of bits of each R, G, B channels, respectively. If hardware-supported image type is a monochrome one, this three bytes have values of 0.
+Animations images colors properties: byte_7; byte_8; byte_9;  byte_10. Byte_7 value is the number of bits per channel of a monochrome image type (hardware-supported), if hardware-supported image type is a color one, the value should be 0. Byte_8, byte_9 and byte_10 have the values of bits of each R, G, B channels, respectively. If hardware-supported image type is a monochrome one, this three bytes have values of 0.
 
-Number of independent LED-strips: byte_15
+Different animations of wheel sides (number of independent LED-strips): byte_11
 
 Example:
    * values sent to hardware: `[`1`]`
-   * values received from hardware: `[`0`]`- `[`0`]` `[`1`]` `[`0`]` - `[`0`]` `[`1`]` `[`0`]` - `[`1`]``[`0`]`- `[`0`]` `[`32`]`- `[`1`]` `[`0`]` `[`0`]``[`0`]` - `[`1`]`-> the API version is 1.0.0; the FiRmware version is 1.0.0; 256 radial lines; 32 LEDs per radial line; monochrome image of 1 bit; animation is the same for both wheel sides.
+   * values received from hardware: `[`0`]` - `[`8`]` - `[`8`]` - `[`0`]` `[`255`]`- `[`0`]` `[`32`]` - `[`1`]` `[`0`]` `[`0`]` `[`0`]` - `[`0`]` -> the API version is 1.0; the FiRmware version is 1.0; 255 radial lines; 32 LEDs per radial line; monochrome image of 1 bit; animation is the same for both wheel sides.
 
 ==Memory==
 *Command 10: Get memory size*. Hardware returns the value of memory in multiples of kB, using three bytes in form: byte_1 = `<0-7>bits; byte_2 = <8-15>bits and byte _3 = <16-23>`.
