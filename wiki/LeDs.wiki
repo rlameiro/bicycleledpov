@@ -3,7 +3,7 @@
 =Packages=
 JpCasainho works in automotive LED lightning and in the company where he works the most used package for LEDs is PLCC4.
 
-=Comparition of 2 LEDs=
+=Comparison of 2 LEDs=
   * LED 1 caracteristics: AVAGO TECHNOLOGIES #HSMJ-A100-Q00J1; 200 mcd at 20mA; Vf = 2,2V; [http://pt.farnell.com/jsp/search/productdetail.jsp?SKU=4134369 cost 0,116 euros unity on Farnell].
   * LED 2 caracteristics: Osram Power Top LED #LAE65B: Bin: BB-3-3A-50; 2520 mcd at 50mA; Vf = 2V; [http://pt.farnell.com/1226385RL/optoelectronics/product.us0?sku=osram-lae65f-cada-24-1-z cost 0,85 euros unity on Farnell].
 
