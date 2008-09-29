@@ -15,4 +15,4 @@ The power used by LED 1 is 0.044W (2,2V `*` 20mA) and by the LED 2, 0.0091W (1,8
 
 In conclusion, using LED 2 instead of using LED 1 would give a save of 4,84 times in power, however, LED 2 is more expensive 7,32 times.
 
-If we use 64 LEDs, the total current used is 1,28A for LED 1 and 3,2A for LED 2.
+If we use 64 LEDs, the total current used is 1,28A for LED 1 and 0,32A for LED 2.
