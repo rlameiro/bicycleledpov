@@ -1,4 +1,4 @@
-The Bicycle LED Pov should be able to show images during a certain time and jump trough a sequence of them. Example:
+The Bicycle LED Pov should be able to show images during a certain time and jump through a sequence of them. Example:
   * show first image during 1000ms and jump to the second one;
   * show second image during 200ms and jump to the third one;
   * show third image during 100ms and jump to the fourth one;
