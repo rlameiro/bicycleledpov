@@ -4,7 +4,7 @@ Have USB<->RS232 on MCU is nice because is very easy to work with it on PC side 
 An API should be defined to send data from the PC to the Bicycle LED Pov. On PC, one should send commands to write and read from the EEPROM, to turn on and off any LED, to test the sensor hall effect (for example: torn on and off the 1st LED as there sensor turns on/off) and to read the firmware version.
 Bicycle LED Pov should answer to every command with acknowledge messages or error codes.  
 
-=Which USB Software Library use?=
+=Which USB Software Library to use?=
 
 ==Atmel USB Software Library for AT90USBxxx Microcontrollers==
 Atmel gives the _AVR272: USB CDC Demonstration UART to USB Bridge_ application note with code which documents a USB<->RS232 on AT90USB MCUs - here the [http://www.atmel.com/dyn/resources/prod_documents/AVR_USB_Software.htm code] and the [http://www.atmel.com/dyn/resources/prod_documents/doc7619.pdf documentation].
