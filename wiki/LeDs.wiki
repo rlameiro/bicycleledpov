@@ -11,8 +11,8 @@ LED 1 was tested at 20mA and gives a good amount of light for this project. LED 
 
 With some math and reading datasheet of booth LEDs, turns out that LED 2 needs just about 5mA to give the 200 mcd as LED 1 at 20mA.
 
-The power used by LED 1 is 0.044W (2,2V `*` 20mA) and by the LED 2, 0.006W (1,82V `*` 5mA).
+The power used by LED 1 is 0.044W (2,2V `*` 20mA) and by the LED 2, 0.091W (1,82V `*` 50mA).
 
 In conclusion, using LED 2 instead of using LED 1 would give a save of 7,33 times in power, however, LED 2 is more expensive 7,32 times.
 
-If we use 64 LEDs, the total current used is 1,28A for LED 1 and 0,32A for LED 2.
+If we use 64 LEDs, the total current used is 1,28A for LED 1 and 3,2A for LED 2.
