@@ -1,7 +1,7 @@
 =Thoughts=
 Have USB<->RS232 on MCU is nice because is very easy to work with it on PC side and on MCU side. There is also software made for POV from Ladyada POV project, which can use a serial port.
 
-An API should be defined to send data from the PC to the Bicycle LED Pov. On PC, one should send commands to write and read from the EEPROM, to turn on and off any LED, to test the sensor hall effect (for example: torn on and off the 1st LED as there sensor turns on/off) and to read the firmware version.
+An API should be defined to send data from the PC to the Bicycle LED POV. On PC, one should send commands to write and read from the EEPROM, to turn on and off any LED, to test the sensor hall effect (for example: turn on and off the 1st LED as soon as sensor turns on/off) and to read the firmware version.
 Bicycle LED Pov should answer to every command with acknowledge messages or error codes.  
 
 =Which USB Software Library to use?=
