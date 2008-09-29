@@ -1,6 +1,6 @@
 #summary Extended API definition - differs for each hardware.
 
-Se also the BicycleLEDPOVAPI related page.
+Se also the [BicycleLEDPOVAPI] related page.
 
 =Extended API=
 *Hardware Version 1.0.0*
