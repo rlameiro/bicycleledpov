@@ -2,29 +2,31 @@
 
 Connecting Bicycle LED POV hardware to PC using an USB cable, a new virtual serial port will appear on PC. Commands are sent to the virtual serial port to interact with Bicycle LED POV HaRdware.
 
-The API have two parts, the “base” one should always be implemented on each hardware and provides minimum functionality while the “extended” part differs on each hardware and is not necessary to be implement.
+The API have two parts, the “base” one should always be implemented on each hardware and provides minimum functionality while the BicycleLEDPOVExtendedAPI part differs on each hardware and is not necessary to be implement.
 
 Each command should return always value 0 for an implemented command and value 1 for one not implemented command.
 
 =Base API=
 ==Hardware==
-*Command 1: Get hardware properties*. Hardware returns thirteen bytes indicating the following informations:
+*Command 1: Get hardware properties*. Hardware returns fifteen bytes indicating the following informations:
 
 API version: byte_1; byte_2
 
-Firmware version: byte_3; byte_4
+Extended API version: byte_3; byte_4. Hardware returns value 0 if do not support any [BicycleLEDPOVExtendedAPI extended API], otherwise returns the version of [BicycleLEDPOVExtendedAPI extended API].
 
-Number of radial lines: byte_5; byte_6
+Firmware version: byte_5; byte_6
 
-Number of LEDs per radial line: byte_7; byte_8
+Number of radial lines: byte_7; byte_8
 
-Animations images colors properties: byte_9; byte_10; byte_11;  byte_12. Byte_9 value is the number of bits per channel of a monochrome image type (hardware-supported), if hardware-supported image type is a color one, the value should be 0. Byte_10, byte_11 and byte_12 have the values of bits of each R, G, B channels, respectively. If hardware-supported image type is a monochrome one, this three bytes have values of 0.
+Number of LEDs per radial line: byte_9; byte_10
 
-Number of independent LED-strips: byte_13
+Animations images colors properties: byte_11; byte_12; byte_13; byte_14. Byte_11 value is the number of bits per channel of a monochrome image type (hardware-supported), if hardware-supported image type is a color one, the value should be 0. Byte_12, byte_13 and byte_14 have the values of bits of each R, G, B channels, respectively. If hardware-supported image type is a monochrome one, this three bytes have values of 0.
+
+Number of independent LED-strips: byte_15
 
 Example:
    * values sent to hardware: `[`1`]`
-   * values received from hardware: `[`0`]` - `[`8`]` - `[`8`]` - `[`1`]` `[`0`]`- `[`0`]` `[`32`]` - `[`1`]` `[`0`]` `[`0`]` `[`0`]` - `[`2`]` -> the API version is 1.0; the FiRmware version is 1.0; 256 radial lines; 32 LEDs per radial line; monochrome image of 1 bit; images can be different for each of two wheel sides.
+   * values received from hardware: `[`0`]` - `[`16`]` - `[`16`]` - `[`8`]` - `[`1`]` `[`0`]`- `[`0`]` `[`32`]` - `[`1`]` `[`0`]` `[`0`]` `[`0`]` - `[`2`]` -> the API version is 1.0; the FiRmware version is 1.0; 256 radial lines; 32 LEDs per radial line; monochrome image of 1 bit; images can be different for each of two wheel sides.
 
 ==Memory==
 *Command 10: Get memory size*. Hardware returns the value of memory in multiples of kB, using three bytes in form: byte_1 = `<0-7>bits; byte_2 = <8-15>bits and byte _3 = <16-23>`.
@@ -56,80 +58,3 @@ Example:
 Example:
    * values sent to hardware: `[`14`]` `[`61`]` - Assuming that last address used on the value on “Command 13: Write memory byte” were 55, 61 is the value that will be stored on address 56. 
    * values received from hardware: `[`0`]`
-
-=Extended API=
-*Hardware Version 1.0.0*
-This extended part of API is implemente on hadware version 1.0.0.
-
-==Sensor hall effect==
-*Command 100: Get sensor state*. Hardware returns one byte with value 1 if sensor detects a magnectic field, otherwise returns 0.
-
-Example:
-   * values sent to hardware: `[`100`]`
-   * values received from hardware: `[`0`]` `[`1`]` - in this case sensor detects a magnetic field.
-
-*Command xxx: Get state of sensor hall effect Vcc line*.
-
-*Command xxx: Enable sensor hall effect Vcc line*.
-
-*Command xxx: Disable sensor hall effect Vcc line*.
-
-==LEDs==
-*Command 101: Write LEDs states*. A sequence of bytes are sent to hardware, where which bit indicates the state of each LED, being value 1 LED ON state and 0 LED off state. First bit of the first byte respresents the value of LED number 1.
-
-The number of bytes to be sent indicating the state of LEDs depends on each hardware version.
-
-Example:
-   * values sent to hardware: `[`101`]` `[`byte_1`]` `[`byte_2`]` `[`...`]`
-   * values received from hardware: `[`0`]`
-
-*Command xxx: Get state of SS0 line*.
-
-*Command xxx: Set SS0 line*.
-
-*Command xxx: Clear SS0 line*.
-
-*Command xxx: Get state of SS1 line*.
-
-*Command xxx: Set SS1 line*.
-
-*Command xxx: Clear SS1 line*.
-
-==DataFlash memory==
-*Command xxx: Get state of DataFlash Vcc line*.
-
-*Command xxx: Enable DataFlash Vcc line*.
-
-*Command xxx: Disable DataFlash Vcc line*.
-
-*Command xxx: Get state of hold line*.
-
-
-*Command xxx: Set hold line*.
-
-*Command xxx: Clear hold line*.
-
-*Command xxx: Get state of SS2 line*.
-
-*Command xxx: Set SS2 line*.
-
-*Command xxx: Clear SS2 line*.
-
-==SPI BUS==
-*Command xxx: Get state of MOSI line*.
-
-*Command xxx: Set MOSI line*.
-
-*Command xxx: Clear MOSI line*.
-
-*Command xxx: Get state of MISO line*.
-
-*Command xxx: Set MISO line*.
-
-*Command xxx: Clear MISO line*.
-
-*Command xxx: Get state of SCLK line*.
-
-*Command xxx: Set SCLK line*.
-
-*Command xxx: Clear SCLK line*.
