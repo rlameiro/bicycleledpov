@@ -35,26 +35,22 @@ Example:
    * values sent to hardware: `[`10`]`
    * values received from hardware: `[`0`]` - `[`0`]` `[`4`]` `[`0`]` -> memory of 1MB, `(0 * 2^16) + (4 * 2^8) + (0 * 2^0)` = 1024 kB.
 
-*Command 11: Read memory byte*. The address is sent to hardware and the number of bytes to be used for the address depends on memory size – should be the less possible number of bytes.
+*Command 11: Clear all memory*. Hardware returns the value of memory in multiples of kB, using three bytes in form: byte_1 = `<0-7>bits; byte_2 = <8-15>bits and byte _3 = <16-23>`.
+
+Example:
+   * values sent to hardware: `[`10`]`
+   * values received from hardware: `[`0`]` - `[`0`]` `[`4`]` `[`0`]` -> memory of 1MB, `(0 * 2^16) + (4 * 2^8) + (0 * 2^0)` = 1024 kB.
+
+*Command 12: Read memory byte*. The address is sent to hardware and the number of bytes to be used for the address depends on memory size – should be the less possible number of bytes. After send the first command, the next ones don't send the address.
 
 Example:
    * values sent to hardware: `[`11`]` `[`0`]` `[`0`]` `[`55`]` – read byte number 55 of a memory with at least 2GB.
    * values received from hardware: `[`0`]` `[`120`]` – the value on address 55 is 120.
 
-*Command 12: Read next byte*. This command should just be used after “Command 11: Read memory byte”. 
+*Command 13: Write memory byte*. The address is sent to hardware and the number of bytes to be used for the address depends on memory size – should be the less possible number of bytes. The data byte is the last byte sent to hardware. After send the first command, the next ones don't send the address.
 
-Example:
-   * values sent to hardware: `[`12`]`
-   * values received from hardware: `[`0`]` `[`74`]` – Assuming that last address used on the value on “Command 11: Read memory byte” were 55, 74 is the value stored on address 56.
-
-*Command 13: Write memory byte*. The address is sent to hardware and the number of bytes to be used for the address depends on memory size – should be the less possible number of bytes. The data byte is the last byte sent to hardware.
+Warning: Before write any data to memory, memory must be all cleared, issuing the "Command 11: Clear all memory".
 
 Example:
    * values sent to hardware: `[`13`]` `[`0`]` `[`0`]` `[`55`]` `[`60`]` – write value 60 on address number 55, on a memory with at least 2GB.
-   * values received from hardware: `[`0`]`
-
-*Command 14: Write next byte*. This command should just be used after “Command 13: Write memory byte”.
-
-Example:
-   * values sent to hardware: `[`14`]` `[`61`]` - Assuming that last address used on the value on “Command 13: Write memory byte” were 55, 61 is the value that will be stored on address 56. 
    * values received from hardware: `[`0`]`
