@@ -663,14 +663,14 @@
  672               		.weak	USB_GetDescriptor
  697               	.Letext0:
 DEFINED SYMBOLS
-                            *ABS*:0000000000000000 DevChapter9.c
-     /tmp/ccKrIY8j.s:2      *ABS*:000000000000003f __SREG__
-     /tmp/ccKrIY8j.s:3      *ABS*:000000000000003e __SP_H__
-     /tmp/ccKrIY8j.s:4      *ABS*:000000000000003d __SP_L__
-     /tmp/ccKrIY8j.s:5      *ABS*:0000000000000000 __tmp_reg__
-     /tmp/ccKrIY8j.s:6      *ABS*:0000000000000001 __zero_reg__
-     /tmp/ccKrIY8j.s:20     .text.USB_Device_ProcessControlPacket:0000000000000000 USB_Device_ProcessControlPacket
-                            *COM*:0000000000000001 USB_ConfigurationNumber
+                            *ABS*:00000000 DevChapter9.c
+     /tmp/cciwsabw.s:2      *ABS*:0000003f __SREG__
+     /tmp/cciwsabw.s:3      *ABS*:0000003e __SP_H__
+     /tmp/cciwsabw.s:4      *ABS*:0000003d __SP_L__
+     /tmp/cciwsabw.s:5      *ABS*:00000000 __tmp_reg__
+     /tmp/cciwsabw.s:6      *ABS*:00000001 __zero_reg__
+     /tmp/cciwsabw.s:20     .text.USB_Device_ProcessControlPacket:00000000 USB_Device_ProcessControlPacket
+                            *COM*:00000001 USB_ConfigurationNumber
 
 UNDEFINED SYMBOLS
 __do_copy_data
