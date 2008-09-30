@@ -8,21 +8,21 @@ Each command should return always value 0 for an implemented command and value 1
 
 =Base API=
 ==Hardware==
-*Command 1: Get hardware properties*. Hardware returns fifteen bytes indicating the following informations:
+*Command 1: Get hardware properties*. Hardware returns twelve bytes indicating the following informations:
 
-API version: byte_1; byte_2
+API version: byte_1
 
-Extended API version: byte_3; byte_4. Hardware returns value 0 if do not support any [BicycleLEDPOVExtendedAPI extended API], otherwise returns the version of [BicycleLEDPOVExtendedAPI extended API].
+Extended API version: byte_2. Hardware returns value 0 if do not support any [BicycleLEDPOVExtendedAPI extended API], otherwise returns the version of [BicycleLEDPOVExtendedAPI extended API].
 
-Firmware version: byte_5; byte_6
+Firmware version: byte_3
 
-Number of radial lines: byte_7; byte_8
+Number of radial lines: byte_4; byte_5
 
-Number of LEDs per radial line: byte_9; byte_10
+Number of LEDs per radial line: byte_6; byte_7
 
-Animations images colors properties: byte_11; byte_12; byte_13; byte_14. Byte_11 value is the number of bits per channel of a monochrome image type (hardware-supported), if hardware-supported image type is a color one, the value should be 0. Byte_12, byte_13 and byte_14 have the values of bits of each R, G, B channels, respectively. If hardware-supported image type is a monochrome one, this three bytes have values of 0.
+Animations images colors properties: byte_8; byte_9; byte_10; byte_11. Byte_8 value is the number of bits per channel of a monochrome image type (hardware-supported), if hardware-supported image type is a color one, the value should be 0. Byte_9, byte_10 and byte_11 have the values of bits of each R, G, B channels, respectively. If hardware-supported image type is a monochrome one, this three bytes have values of 0.
 
-Number of independent LED-strips: byte_15
+Number of independent LED-strips: byte_12
 
 Example:
    * values sent to hardware: `[`1`]`
