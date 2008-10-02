@@ -21,7 +21,7 @@ PCB is finished. Next Monday I should be able to drill one on a CNC machine. I w
 
 Image of front side superimposed on back side, with components, tracks and ground signals zones on each side:
 
-[http://bicycleledpov.googlecode.com/svn-history/r255/trunk/Pictures/20080726-BicycleLEDPOV-pcb-01.png]
+[http://bicycleledpov.googlecode.com/svn-history/r255/trunk/docs/pictures/20080726-BicycleLEDPOV-pcb-01.png]
 
 The board have about 14,9cm x 4,7cm. See more information o HaRdware page.
 
@@ -39,7 +39,7 @@ DonaldZiems and me, we are working on PCB, I hope to have it ready until the end
 
 Here is one image of actual PCB on early stage:
 
-[http://bicycleledpov.googlecode.com/svn-history/r219/trunk/Pictures/20080717-BicycleLEDPOV-pcb.jpg]
+[http://bicycleledpov.googlecode.com/svn-history/r219/trunk/docs/pictures/20080717-BicycleLEDPOV-pcb.jpg]
 
 ==2008.07.11==
 ===News from JpCasainho:==
@@ -65,7 +65,7 @@ In the last days I tested 3 different ICs for DC-DC circuits. See the tests resu
 
 Schematic is done :-) To get the full schematic, visit the HaRdware page. Here is a preview:
 
-[http://bicycleledpov.googlecode.com/svn-history/r169/trunk/Pictures/20080706-schematic-sheet_01-preview.png]
+[http://bicycleledpov.googlecode.com/svn-history/r169/trunk/docs/pictures/20080706-schematic-sheet_01-preview.png]
 
 Now is time to do the part list and going shopping :-) - also work on PCB has started.
 
@@ -73,7 +73,7 @@ Now is time to do the part list and going shopping :-) - also work on PCB has st
 ===News from JpCasainho:==
 Today I finish my prototype - it uses now just 2 AAA `NiMh` cells. Well, prototype just have 8 LEDs soldered instead of the 64 it should have - I am not motivated to solder all 64 LEDs.
 
-[http://bicycleledpov.googlecode.com/svn/trunk/Pictures/20080703-prototype-600x-02.jpg]
+[http://bicycleledpov.googlecode.com/svn/trunk/docs/pictures/20080703-prototype-600x-02.jpg]
 
 In the next 2 days we should release version 1.0 of the schematic. See more info on HaRdware page. 
 
@@ -89,13 +89,13 @@ Should be all fixed now.
 
 
 ===News from JpCasainho:==
-Today I did work on the DC-DC, here is a picture of the assembled circuit  - high quality version [http://bicycleledpov.googlecode.com/svn/trunk/Pictures/20080702-hardware-dc_dc.jpg here]:
+Today I did work on the DC-DC, here is a picture of the assembled circuit  - high quality version [http://bicycleledpov.googlecode.com/svn/trunk/docs/pictures/20080702-hardware-dc_dc.jpg here]:
 
-[http://bicycleledpov.googlecode.com/svn/trunk/Pictures/20080702-hardware-dc_dc-x600.jpg]
+[http://bicycleledpov.googlecode.com/svn/trunk/docs/pictures/20080702-hardware-dc_dc-x600.jpg]
 
 Here are the results on oscilloscope, with 100mA output current - channel 1 on Vout and channel 2 on positive side of schottky diode:
 
-[http://bicycleledpov.googlecode.com/svn/trunk/Pictures/hardware-dc_dc-osciloscope-RL_47R-20080702-02.png]
+[http://bicycleledpov.googlecode.com/svn/trunk/docs/pictures/hardware-dc_dc-osciloscope-RL_47R-20080702-02.png]
 
 This DC-DC works very good. DonaldZiems will draw this DC-DC circuit on schematic and I will test it on my working prototype of Bicycle LED POV. See more information on PowerStage page.
 
@@ -125,7 +125,7 @@ First and foremost, I split it into 3 sheets, one for the microcontroller, one f
 
 Second, I linked all three sheets into a single hierarchy so that data paths from one sheet to another will function when we go to design the PCB.
 
-[http://bicycleledpov.googlecode.com/svn/trunk/Pictures/20080625-BicycleLEDPOV-schematic.jpg]
+[http://bicycleledpov.googlecode.com/svn/trunk/docs/pictures/20080625-BicycleLEDPOV-schematic.jpg]
 
 Third, the schematic sheet with the LEDs and shift registers should be complete.
 
@@ -136,7 +136,7 @@ Third, the schematic sheet with the LEDs and shift registers should be complete.
 
 Well, the software to send commands and control the serial port is in development, for now I have a screenshot of a GUI (Graphic User Interface) to the software. I am doing the GUI in Tkinter toolkit, that is built in in python.
 
-[http://bicycleledpov.googlecode.com/svn/trunk/Pictures/20080625-BicycleLEDPOV-software.png]
+[http://bicycleledpov.googlecode.com/svn/trunk/docs/pictures/20080625-BicycleLEDPOV-software.png]
 
 Explanation:
 to the left will be two listbox. the upper right will contain the available serial ports
@@ -147,9 +147,9 @@ News from JpCasainho:
 
 I and DonaldZiems, we have being working on schematic. I was working on some ideas to get the lowest possible power used while system is halt, I hope to test them on my prototype on the next days. Here goes some images from the schematic (schematic files can be found [http://code.google.com/p/bicycleledpov/source/browse/trunk/Schematics here]):
 
-[http://bicycleledpov.googlecode.com/svn/trunk/Pictures/20080622-BicycleLEDPOV-schematic-01.jpg]
+[http://bicycleledpov.googlecode.com/svn/trunk/docs/pictures/20080622-BicycleLEDPOV-schematic-01.jpg]
 
-[http://bicycleledpov.googlecode.com/svn/trunk/Pictures/20080622-BicycleLEDPOV-schematic-02.jpg]
+[http://bicycleledpov.googlecode.com/svn/trunk/docs/pictures/20080622-BicycleLEDPOV-schematic-02.jpg]
 
 ==2008.06.19==
 News from JpCasainho:
@@ -164,12 +164,12 @@ I wrote 2 new pages: SystemClockAndClockOptionsOnAT90USB162 and LeDs.
 
 I had done a lot of code on FiRmware and I have now the LED's + the serial data latches working, here is 2 images showing that:
 
-[http://bicycleledpov.googlecode.com/svn/trunk/Pictures/20080619-BicycleLEDPOV-prototype-02.jpg]
+[http://bicycleledpov.googlecode.com/svn/trunk/docs/pictures/20080619-BicycleLEDPOV-prototype-02.jpg]
 
 
 This image show my Asus EEE PC with GNU/Linux Ubuntu running Cutecom, a program to send information by serial port. Development board is connected to PC by USB cable, I did used the _Test LEDs: command 3_ from FirmwareApi to turn on that LED's -- I did control the LED's using the PC. There are 2 AAA NiMh batteries under the board of the LED's, which give energy to LED's.
 
-[http://bicycleledpov.googlecode.com/svn/trunk/Pictures/20080619-BicycleLEDPOV-prototype-01.jpg]
+[http://code.google.com/p/bicycleledpov/source/browse/trunk/docs/pictures/20080619-BicycleLEDPOV-prototype-01.jpg]
 
 ==2008.06.10==
 News from JpCasainho:
@@ -179,7 +179,7 @@ I also did read on datasheet that MCU comes configured on fuses to run at Clock/
 
 While investigating why the cable used to program didn't work, I took some pictures of USB data lines using the oscilosce, here is one from D- data line:
 
-[http://bicycleledpov.googlecode.com/svn-history/r41/trunk/Pictures/20080609-USB_D_minus_line-02.jpg]
+[http://bicycleledpov.googlecode.com/svn-history/r41/trunk/docs/pictures/20080609-USB_D_minus_line-02.jpg]
 
 This was my first time that I say wave forms from USB data lines.
 
@@ -198,9 +198,9 @@ POV :-)
 
 Here is one picture of the development board + sensor hall effect:
 
-[http://bicycleledpov.googlecode.com/svn-history/r41/trunk/Pictures/20080610-BicycleLEDPOV-prototype-600x.jpg]
+[http://bicycleledpov.googlecode.com/svn-history/r41/trunk/docs/pictures/20080610-BicycleLEDPOV-prototype-600x.jpg]
 
-I took some pictures and add them [http://code.google.com/p/bicycleledpov/source/browse/trunk/Pictures/ here] on SVN.
+I took some pictures and add them [http://code.google.com/p/bicycleledpov/source/browse/trunk/docs/pictures/ here] on SVN.
 
 ==2008.06.08==
 News from JpCasainho:
