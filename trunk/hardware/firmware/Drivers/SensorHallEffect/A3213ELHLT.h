@@ -14,9 +14,9 @@
 #define SENSOR_HALL_EFFECT_IS_VCC_ENABLE	bit_is_set(PORTD, PD1)
 #define SENSOR_HALL_EFFECT_IS_VCC_DISABLE	bit_is_clear(PORTD, PD1)
 
-/* Control the data output line of sensor hall effect */
-#define SENSOR_HALL_EFFECT_IS_SET			bit_is_set(PORTD, PD0)
-#define SENSOR_HALL_EFFECT_IS_CLEAR			bit_is_clear(PORTD, PD0)
+/* Get status of data output line of sensor hall effect */
+#define SENSOR_HALL_EFFECT_IS_SET			bit_is_set(PIND, PD0)
+#define SENSOR_HALL_EFFECT_IS_CLEAR			bit_is_clear(PIND, PD0)
 
 /* Functions prototypes */
 void SensorHallEffect_Init(void);

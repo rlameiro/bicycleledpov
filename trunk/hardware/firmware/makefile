@@ -91,7 +91,7 @@ SRC = $(TARGET).c             							\
 		./Drivers/AT90USB162/SPI.c						\
 		./Drivers/SensorHallEffect/A3213ELHLT.c			\
 		./Drivers/DataLatches/595.c						\
-		./Drivers/DataFlash/AT26DF081A.c				\
+		./Drivers/eeprom/AT25128A.c						 \
 		./Descriptors.c                 				\
 		./RingBuff.c                            		\
 		./MyUSB/Scheduler/Scheduler.c                     \

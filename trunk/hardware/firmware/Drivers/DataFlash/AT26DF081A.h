@@ -28,6 +28,6 @@
 
 /* Functions prototypes */
 void DataFlash_Init (void);
-void DataFlash_EraseAll (void);
+unsigned char DataFlash_EraseAll (void);
 unsigned char DataFlash_ReadByte (unsigned long int uliAddress);
-void DataFlash_WriteByte (unsigned long int uliAddress, unsigned char ucData);
+unsigned char DataFlash_WriteByte (unsigned long int uliAddress, unsigned char ucData);

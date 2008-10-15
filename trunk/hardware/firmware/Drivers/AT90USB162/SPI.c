@@ -22,8 +22,8 @@ void SPI_MasterInit(unsigned char ucDataOrder)
 	/* Disable the Power Reduction on Serial Peripheral Interface */
 	PRR0 &= ~(1<<PRSPI);
 	
-	/* Enable SPI, Master, set clock rate fck/2 */
-	SPCR |= ((1<<SPE) | (1<<MSTR) | (1<<SPI2X));
+	/* Enable SPI, Master, set clock rate fck/128 */
+	SPCR |= ((1<<SPE) | (1<<MSTR) | (1<<SPR1) | (1<<SPR0));
 
 	/* Configure the Data Order of first be to be transmited */
 	if (ucDataOrder)

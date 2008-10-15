@@ -35,8 +35,9 @@
 		#include <Drivers/AT90USB162/SPI.h>					/* SPI drivers */
 		#include <Drivers/SensorHallEffect/A3213ELHLT.h>	/* Sensor hall effect drivers */		
 		#include <Drivers/DataLatches/595.h>				/* Data latches drivers */
-		#include <Drivers/DataFlash/AT26DF081A.h>			/* DataFlash memory drivers */
-		
+		#include <Drivers/eeprom/AT25128A.h>				/* EEPROM memory drivers */
+		#include <Drivers/button/button.h>					/* Button drivers */
+		#include <util/delay.h>		
 
 	/* Macros: */
 		/* Version 0.1.0 */
@@ -55,7 +56,7 @@
 		/* Macros for commands */
 		
 		/* General commands */
-		#define FIRMWARE_API_COMMAND_DUMMY							1
+		#define API_COMMAND_DUMMY							1
 		#define FIRMWARE_API_COMMAND_RETRIEVE_FIRMWARE_VERSION		2
 		
 		/* SPI commands */

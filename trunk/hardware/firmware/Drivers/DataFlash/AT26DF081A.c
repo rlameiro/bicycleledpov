@@ -9,6 +9,7 @@
 */
 
 #include <avr/io.h>
+#include <util/delay.h>
 #include <Drivers/AT90USB162/SPI.h> /* SPI drivers */
 
 /* Control the Vcc of DataFlash */
@@ -41,6 +42,7 @@
 
 /* DataFlash status register bit definitions */
 #define STATUS_REGISTER_BUSY				1
+#define STATUS_REGISTER_ERASE_PROGRAM_ERROR 5
 
 
 void DataFlash_Init (void)
@@ -71,9 +73,10 @@ unsigned char _DataFlash_SendData (unsigned char ucData)
 
 /**************************************************************
 * This function erases all memory and holds untill it's done.
-*
+* Value 1 is returned if there is some error otherwise is
+* returned 0 value.
 ***************************************************************/
-void DataFlash_EraseAll (void)
+unsigned char DataFlash_EraseAll (void)
 {
 	/* Put memory on write enable state */
 	SS2_DISABLE;
@@ -89,11 +92,24 @@ void DataFlash_EraseAll (void)
 	SS2_DISABLE;
 	_DataFlash_SendData (COMMAND_READ_STATUS_REGISTER);
 
-	while ((_DataFlash_SendData (COMMAND_DUMMY)) & (1 << STATUS_REGISTER_BUSY))
-	{
-		;
-	}
+	while ((_DataFlash_SendData (COMMAND_DUMMY)) & (1 << STATUS_REGISTER_BUSY)) ;
 	SS2_ENABLE;
+
+	/* Verify that memory were erased succefull */
+	SS2_DISABLE;
+	_DataFlash_SendData (COMMAND_READ_STATUS_REGISTER);
+
+	if ((_DataFlash_SendData (COMMAND_DUMMY)) & (1 << STATUS_REGISTER_ERASE_PROGRAM_ERROR))
+	{	
+		SS2_ENABLE;
+		return (1); /* Signal error */
+	}
+
+	else
+	{
+		SS2_ENABLE;
+		return (0); /* Erase went sucessefull */
+	}
 }
 
 /**************************************************************
@@ -106,9 +122,8 @@ unsigned char DataFlash_ReadByte (unsigned long int uliAddress)
 {
 	unsigned char ucData;
 
-	SS2_DISABLE;
-
 	/* Send Chip Read array command */
+	SS2_DISABLE;
 	_DataFlash_SendData (COMMAND_READ_ARRAY_LOW_FREQUENCY);
 
 	/* Send the address */
@@ -118,23 +133,26 @@ unsigned char DataFlash_ReadByte (unsigned long int uliAddress)
 
 	/* Send dummy data to send 8 clock bits, to receive the data byte */
 	ucData = _DataFlash_SendData (COMMAND_DUMMY);
-
 	SS2_ENABLE;
 
 	return(ucData);
 }
 
 /**************************************************************
-* This function reads one byte.
-* Arguments: Address
-* Returns: Byte readed.
-*
+* This function writes one byte.
+* Arguments: Address and data byte.
+* Returns: Value 1 if there is error writing the byte, otherwise
+* returns value 0.
 ***************************************************************/
-void DataFlash_WriteByte (unsigned long int uliAddress, unsigned char ucData)
+unsigned char DataFlash_WriteByte (unsigned long int uliAddress, unsigned char ucData)
 {
+	/* Put memory on write enable state */
 	SS2_DISABLE;
+	_DataFlash_SendData (COMMAND_WRITE_ENABLE);
+	SS2_ENABLE;
 
 	/* Send Byte/Page Program command */
+	SS2_DISABLE;
 	_DataFlash_SendData (COMMAND_BYTE_PAGE_PROGRAM);
 
 	/* Send the address */
@@ -144,6 +162,21 @@ void DataFlash_WriteByte (unsigned long int uliAddress, unsigned char ucData)
 
 	/* Send data byte to be written */
 	_DataFlash_SendData (ucData);
-
 	SS2_ENABLE;
+
+	/* Verify that byte were written succefull */
+	SS2_DISABLE;
+	_DataFlash_SendData (COMMAND_READ_STATUS_REGISTER);
+
+	if ((_DataFlash_SendData (COMMAND_DUMMY)) & (1 << STATUS_REGISTER_ERASE_PROGRAM_ERROR))
+	{	
+		SS2_ENABLE;
+		return (1); /* Signal error */
+	}
+
+	else
+	{
+		SS2_ENABLE;
+		return (0); /* Write went sucessefull */
+	}
 }
