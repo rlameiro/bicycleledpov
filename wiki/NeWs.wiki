@@ -198,7 +198,7 @@ POV :-)
 
 Here is one picture of the development board + sensor hall effect:
 
-[http://bicycleledpov.googlecode.com/svn-history/r41/trunk/docs/pictures/20080610-BicycleLEDPOV-prototype-600x.jpg]
+[http://bicycleledpov.googlecode.com/svn/trunk/docs/pictures/20080610-BicycleLEDPOV-prototype-600x.jpg]
 
 I took some pictures and add them [http://code.google.com/p/bicycleledpov/source/browse/trunk/docs/pictures/ here] on SVN.
 
