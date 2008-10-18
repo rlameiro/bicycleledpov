@@ -26,17 +26,12 @@
 		#include <avr/wdt.h>
 		#include <avr/interrupt.h>
 
-		#include "Descriptors.h"
-		#include "RingBuff.h"
 
-		#include <MyUSB/Version.h>                         // Library Version Information
-		#include <MyUSB/Drivers/USB/USB.h>                 // USB Functionality
-		#include <MyUSB/Scheduler/Scheduler.h>             // Simple scheduler for task management
-		#include <Drivers/AT90USB162/SPI.h>					/* SPI drivers */
-		#include <Drivers/SensorHallEffect/A3213ELHLT.h>	/* Sensor hall effect drivers */		
-		#include <Drivers/DataLatches/595.h>				/* Data latches drivers */
-		#include <Drivers/eeprom/AT25128A.h>				/* EEPROM memory drivers */
-		#include <Drivers/button/button.h>					/* Button drivers */
+		#include <../MyUSB/Version.h>                         // Library Version Information
+		#include <../MyUSB/Scheduler/Scheduler.h>             // Simple scheduler for task management
+		#include <../Drivers/AT90USB162/SPI.h>					/* SPI drivers */
+		#include <../Drivers/DataLatches/595.h>				/* Data latches drivers */
+		#include <../Drivers/button/button.h>					/* Button drivers */
 		#include <util/delay.h>		
 
 	/* Macros: */
@@ -85,45 +80,9 @@
 		#define FIRMWARE_API_COMMAND_DATAFLASH_HOLD_DISABLE			16
 		
 		
-	/* Event Handlers: */
-		HANDLES_EVENT(USB_Connect);
-		HANDLES_EVENT(USB_Disconnect);
-		HANDLES_EVENT(USB_ConfigurationChanged);
-		HANDLES_EVENT(USB_UnhandledControlPacket);
-		
-	/* Type Defines: */
-		typedef struct
-		{
-			uint32_t BaudRateBPS;
-			uint8_t  CharFormat;
-			uint8_t  ParityType;
-			uint8_t  DataBits;
-		} CDC_Line_Coding_t;
-		
-	/* Enums: */
-		enum CDC_Line_Coding_Format_t
-		{
-			OneStopBit          = 0,
-			OneAndAHalfStopBits = 1,
-			TwoStopBits         = 2,
-		};
-		
-		enum CDC_Line_Codeing_Parity_t
-		{
-			Parity_None         = 0,
-			Parity_Odd          = 1,
-			Parity_Even         = 2,
-			Parity_Mark         = 3,
-			Parity_Space        = 4,
-		};
-
 	/* Function Prototypes: */
 		void Hardware_Init(void);
-		void ClockDataLatches(unsigned char SideDataLatches);
 
 	/* Tasks: */
-		TASK(CDC_Task);
-		TASK(PCLink_Task);
-		TASK(MakePOV_Task);
-		TASK(TestSensorHallEffect_Task);
+		TASK(BicycleLEDPOV_Mini);
 #endif

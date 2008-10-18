@@ -78,50 +78,6 @@ int main(void)
 	/* Hardware Initialization */
 	Hardware_Init();
 
-
-
-//PLLCSR &= ~(1<<PLLE);
-//CKSEL0 |= (1<<RCE);
-//while (bit_is_clear(CKSTA, RCON));
-//CKSEL0 &= ~(1<<CLKS); /* Enable internal RC Clock */
-//CKSEL0 &= ~(1<<RCE); /* Disable internal RC Clock */
-
-//CKSEL0 &= ~(1<<EXTE); /* Disable external Clock */
-
-
-while (1)
-{
-	if (SENSOR_HALL_EFFECT_IS_SET)
-	{
-
-			SPI_MasterTransmit (255);
-			SPI_MasterTransmit (255);
-			SPI_MasterTransmit (255);
-			SPI_MasterTransmit (255);
-			DataLatches_Clock(LEFT_SIDE_DATA_LATCHES);
-			DataLatches_Clock(RIGHT_SIDE_DATA_LATCHES);
-	}
-		
-	else
-	{
-		SPI_MasterTransmit (0);
-		SPI_MasterTransmit (0);
-		SPI_MasterTransmit (0);
-		SPI_MasterTransmit (0);
-		DataLatches_Clock(LEFT_SIDE_DATA_LATCHES);
-		DataLatches_Clock(RIGHT_SIDE_DATA_LATCHES);
-	}
-}
-
-
-
-
-
-
-
-
-
-
 	/* Ringbuffer Initialization */
 	Buffer_Initialize(&Rx_Buffer);
 	Buffer_Initialize(&Tx_Buffer);
@@ -286,70 +242,9 @@ TASK(CDC_Task)
 TASK(PCLink_Task)
 {
 	static unsigned char
-		ucCommand = 0,
-		ucNumberDataBytes = 0;
-	
+	ucCommand = 0,
+	ucNumberDataBytes = 0;
 
-
-/* DEBUG */
-
-	/* Enable I/Os as outputs for SPI SS0 and SS1 that are used for */
-	/* comunicate with data latches ICs */
-	DDRD	|=  ((1<<PD2) /* SPI_SS0 */
-			|   (1<<PD3)); /* SPI_SS1 */
-
-
-
-DDRC |= ((1<<PC6) | (1<<PC7));
-PORTC |= ((1<<PC6) | (1<<PC7));
-
-DDRB |= ((1<<PB0) | (1<<PB1) | (1<<PB2) | (1<<PB4));
-PORTB |= ((1<<PB0) | (1<<PB1) | (1<<PB2) | (1<<PB4));
-
-
-#if 0
-if (bit_is_clear(PIND,PD7))
-{
-	Buffer_StoreElement (&Tx_Buffer, 0xaa);
-
-static char counter;
-
-if (++counter > 3)
-	counter = 0;
-
-// SPI Data
-if (counter ==0)
-{
-	PORTB	|=  (1<<PB2);
-}
-
-else
-{
-	PORTB	&=  ~(1<<PB2);
-}
-
-
-// SPI Clock
-if (bit_is_set(PINB,PB1))
-{
-	PORTB	|=  (1<<PB1);
-}
-
-else
-{
-	PORTB	&=  ~(1<<PB1);
-}
-
-// DataLatches Clock
-DataLatches_Clock (RIGHT_SIDE_DATA_LATCHES);
-
-}
-#endif
-
-
-
-
-#if 0
 
 	if (Rx_Buffer.Elements)
 	{
@@ -357,21 +252,8 @@ DataLatches_Clock (RIGHT_SIDE_DATA_LATCHES);
 			ucCommand = Buffer_GetElement (&Rx_Buffer);
 
 		switch (ucCommand)
-		{			
-			case API_COMMAND_DUMMY:
-			/* First byte of this command, fill the NumberDataBytes */			
-			if (ucNumberDataBytes <= 0)
-				ucNumberDataBytes = 1;
-				
-			if (Tx_Buffer.Elements < BUFF_STATICSIZE)
-			{
-				/* Send back the value of the command */
-				Buffer_StoreElement (&Tx_Buffer, ucCommand);
-				ucNumberDataBytes--;
-			}		
-			break;
-				
-			case FIRMWARE_API_COMMAND_RETRIEVE_FIRMWARE_VERSION:
+		{							
+			case API_COMMAND_GET_HARDWARE_PROPERTIES:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
 				ucNumberDataBytes = 4;
@@ -404,7 +286,80 @@ DataLatches_Clock (RIGHT_SIDE_DATA_LATCHES);
 			ucNumberDataBytes--;
 			}
 			break;
+					
+			
+			case API_COMMAND_GET_MEMORY_SIZE:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 4;
+
+			while (Tx_Buffer.Elements < BUFF_STATICSIZE && ucNumberDataBytes > 0)
+			{
+				switch (ucNumberDataBytes)
+				{
+					case 4:
+					/* Report that this command is implemented */
+					Buffer_StoreElement (&Tx_Buffer, 0);
+					break;
+													
+					case 3:
+					Buffer_StoreElement (&Tx_Buffer, MEMORY_SIZE_BYTE_1);
+					break;
+						
+					case 2:
+					Buffer_StoreElement (&Tx_Buffer, MEMORY_SIZE_BYTE_2);
+					break;
+
+					case 1:
+					Buffer_StoreElement (&Tx_Buffer, MEMORY_SIZE_BYTE_3);
+					break;
 							
+					default:
+					break;
+				}		
+							
+			ucNumberDataBytes--;
+			}
+			break;
+
+
+			/*****************************************************************/
+			/* EEPROM memory don't need to be cleared before writing on it,	 */
+			/* so we do nothing.											 */
+			/*																 */
+			case API_COMMAND_CLEAR_ALL_MEMORY:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 1;
+
+			while (Tx_Buffer.Elements < BUFF_STATICSIZE && ucNumberDataBytes > 0)
+			{
+				switch (ucNumberDataBytes)
+				{
+					case 1:
+					/* Report that this command is implemented */
+					Buffer_StoreElement (&Tx_Buffer, 0);
+					break;
+							
+					default:
+					break;
+				}		
+							
+			ucNumberDataBytes--;
+			}
+			break;
+
+
+
+			/* Command Read memory byte */
+
+			/* Command Write memory size */
+
+
+			
+			/* Estended API	*/
+			/* Next commands are from extended API */ 
+
 			case FIRMWARE_API_COMMAND_SS0_ENABLE:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
@@ -665,25 +620,4 @@ TASK(MakePOV_Task)
 	SPI_MasterTransmit (0xaa);
 	DataLatches_Clock (RIGHT_SIDE_DATA_LATCHES);
 
-}   
-
-TASK(TestSensorHallEffect_Task)
-{
-	if (bit_is_clear(PIND,PD0))
-	{
-		/* Turn on LED on data latch */
-		SPI_MasterInit (DATA_ORDER_MSB);
-		SPI_MasterTransmit (1);
-		SPI_Disable ();
-		DataLatches_Clock (RIGHT_SIDE_DATA_LATCHES);
-	}
-	
-	else
-	{
-		/* Turn off LED on data latch */
-		SPI_MasterInit (DATA_ORDER_MSB);
-		SPI_MasterTransmit (0);
-		SPI_Disable ();
-		DataLatches_Clock (RIGHT_SIDE_DATA_LATCHES);
-	}
 }

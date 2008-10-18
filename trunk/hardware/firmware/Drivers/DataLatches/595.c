@@ -9,7 +9,7 @@
 */
 
 #include <avr/io.h>
-#include <Drivers/DataLatches/595.h> /* Data latches drivers */
+#include "595.h" /* Data latches drivers */
 
 #define LEFT_SIDE_DATA_LATCHES		0
 #define RIGHT_SIDE_DATA_LATCHES		1
