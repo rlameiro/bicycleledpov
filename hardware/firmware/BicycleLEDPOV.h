@@ -39,13 +39,27 @@
 		#include <Drivers/button/button.h>					/* Button drivers */
 		#include <util/delay.h>		
 
-	/* Macros: */
-		/* Version 0.1.0 */
-		#define BICYCLELEDPOV_VERSION_MAJOR		0
-		#define BICYCLELEDPOV_VERSION_MINOR		1
-		#define BICYCLELEDPOV_VERSION_REVISION  0
-		
-		/* Memory of 32kB */
+/* Macros: */
+#define REPORT_COMMAND_IMPLEMENTED				0
+#define REPORT_COMMAND_UNIMPLEMENTED			1
+
+
+/* Get hardware properties command		*/
+/*										*/		
+#define API_VERSION								16 /* V 1.0 */
+#define API_EXTENDED_VERSION					0 /* Not extended API implemented */
+#define FIRMWARE_VERSION						16 /* V 1.0 */
+#define NUMBER_OF_RADIAL_LINES_BYTE_01			1
+#define NUMBER_OF_RADIAL_LINES_BYTE_02			0 /* 1;0 => 1*256+0 = 256 radial lines */
+#define NUMBER_OF_LED_PER_RADIAL_LINE_BYTE_01	0
+#define NUMBER_OF_LED_PER_RADIAL_LINE_BYTE_02	32 /* 0;32 => 0*256+32 = 32 LED per radial line */
+#define IMAGE_COLOUR_PROPERTIES_BYTE_01			1 /* Monochrome image of 1 bit */
+#define IMAGE_COLOUR_PROPERTIES_BYTE_02			0
+#define IMAGE_COLOUR_PROPERTIES_BYTE_03			0
+#define IMAGE_COLOUR_PROPERTIES_BYTE_04			0
+#define NUMBER_OF_INDEPENDENT_LED_STRIPS		1
+	
+		/* Size of memory of 32kB */
 		#define MEMORY_SIZE_BYTE_1				32
 		#define MEMORY_SIZE_BYTE_2				0
 		#define MEMORY_SIZE_BYTE_3				0	  
@@ -60,9 +74,13 @@
 
 		/* Macros for commands */
 		
-		/* General commands */
-		#define API_COMMAND_DUMMY							1
-		#define FIRMWARE_API_COMMAND_RETRIEVE_FIRMWARE_VERSION		2
+/* API commands */
+#define API_COMMAND_GET_HARDWARE_PROPERTIES					1
+#define API_COMMAND_GET_MEMORY_SIZE							10
+#define API_COMMAND_CLEAR_ALL_MEMORY						11
+#define API_COMMAND_READ_MEMORY_BYTE						12
+#define API_COMMAND_WRITE_MEMORY_BYTE						13
+
 		
 		/* SPI commands */
 		#define FIRMWARE_API_COMMAND_SS0_ENABLE						3

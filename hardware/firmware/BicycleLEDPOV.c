@@ -47,8 +47,7 @@ TASK_LIST
 	{ Task: USB_USBTask      					, TaskStatus: TASK_STOP },
 	{ Task: CDC_Task							, TaskStatus: TASK_STOP },
 	{ Task: PCLink_Task 					    , TaskStatus: TASK_STOP },
-	{ Task: MakePOV_Task						, TaskStatus: TASK_STOP },
-	{ Task: TestSensorHallEffect_Task			, TaskStatus: TASK_STOP },	
+	{ Task: MakePOV_Task						, TaskStatus: TASK_STOP },	
 };
 
 /* Globals: */
@@ -104,7 +103,6 @@ EVENT_HANDLER(USB_Disconnect)
 	Scheduler_SetTaskMode(USB_USBTask, TASK_STOP);
 	Scheduler_SetTaskMode(CDC_Task, TASK_STOP);
 	Scheduler_SetTaskMode(PCLink_Task, TASK_STOP);
-	Scheduler_SetTaskMode(TestSensorHallEffect_Task, TASK_STOP);
 	Scheduler_SetTaskMode(MakePOV_Task, TASK_RUN);
 }
 
@@ -243,7 +241,18 @@ TASK(PCLink_Task)
 {
 	static unsigned char
 	ucCommand = 0,
-	ucNumberDataBytes = 0;
+	ucNumberDataBytes = 0,
+	ucAddressByte01,
+	ucAddressByte02,
+	ucAddressByte03;
+
+	/* Clear all LED */
+	SPI_MasterTransmit (0);
+	SPI_MasterTransmit (0);
+	SPI_MasterTransmit (0);
+	SPI_MasterTransmit (0);
+	DataLatches_Clock (LEFT_SIDE_DATA_LATCHES);
+	DataLatches_Clock (RIGHT_SIDE_DATA_LATCHES);
 
 
 	if (Rx_Buffer.Elements)
@@ -253,32 +262,71 @@ TASK(PCLink_Task)
 
 		switch (ucCommand)
 		{							
+			/****************************************************************/
+			/* API_COMMAND_GET_HARDWARE_PROPERTIES							*/
+			/*																*/
 			case API_COMMAND_GET_HARDWARE_PROPERTIES:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
-				ucNumberDataBytes = 4;
+				ucNumberDataBytes = 13;
 					
 			while (Tx_Buffer.Elements < BUFF_STATICSIZE && ucNumberDataBytes > 0)
 			{
 				switch (ucNumberDataBytes)
 				{
-					case 4:
-					/* Send back the value of the command */
-					Buffer_StoreElement (&Tx_Buffer, ucCommand);
+					case 13:
+					/* Report that this command is implemented */
+					Buffer_StoreElement (&Tx_Buffer, REPORT_COMMAND_IMPLEMENTED);
 					break;
 													
-					case 3:
-					Buffer_StoreElement (&Tx_Buffer, BICYCLELEDPOV_VERSION_MAJOR);
+					case 12:
+					Buffer_StoreElement (&Tx_Buffer, API_VERSION);
 					break;
 						
+					case 11:
+					Buffer_StoreElement (&Tx_Buffer, API_EXTENDED_VERSION);
+					break;
+
+					case 10:
+					Buffer_StoreElement (&Tx_Buffer, FIRMWARE_VERSION);
+					break;
+
+					case 9:
+					Buffer_StoreElement (&Tx_Buffer, NUMBER_OF_RADIAL_LINES_BYTE_01);
+					break;
+
+					case 8:
+					Buffer_StoreElement (&Tx_Buffer, NUMBER_OF_RADIAL_LINES_BYTE_02);
+					break;
+							
+					case 7:
+					Buffer_StoreElement (&Tx_Buffer, NUMBER_OF_LED_PER_RADIAL_LINE_BYTE_01);
+					break;
+
+					case 6:
+					Buffer_StoreElement (&Tx_Buffer, NUMBER_OF_LED_PER_RADIAL_LINE_BYTE_02);
+					break;
+
+					case 5:
+					Buffer_StoreElement (&Tx_Buffer, IMAGE_COLOUR_PROPERTIES_BYTE_01);
+					break;
+
+					case 4:
+					Buffer_StoreElement (&Tx_Buffer, IMAGE_COLOUR_PROPERTIES_BYTE_02);
+					break;
+
+					case 3:
+					Buffer_StoreElement (&Tx_Buffer, IMAGE_COLOUR_PROPERTIES_BYTE_03);
+					break;
+
 					case 2:
-					Buffer_StoreElement (&Tx_Buffer, BICYCLELEDPOV_VERSION_MINOR);
+					Buffer_StoreElement (&Tx_Buffer, IMAGE_COLOUR_PROPERTIES_BYTE_04);
 					break;
 
 					case 1:
-					Buffer_StoreElement (&Tx_Buffer, BICYCLELEDPOV_VERSION_REVISION);
+					Buffer_StoreElement (&Tx_Buffer, NUMBER_OF_INDEPENDENT_LED_STRIPS);
 					break;
-							
+
 					default:
 					break;
 				}		
@@ -287,7 +335,9 @@ TASK(PCLink_Task)
 			}
 			break;
 					
-			
+			/****************************************************************/
+			/* API_COMMAND_GET_MEMORY_SIZE									*/
+			/*																*/			
 			case API_COMMAND_GET_MEMORY_SIZE:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
@@ -299,7 +349,7 @@ TASK(PCLink_Task)
 				{
 					case 4:
 					/* Report that this command is implemented */
-					Buffer_StoreElement (&Tx_Buffer, 0);
+					Buffer_StoreElement (&Tx_Buffer, REPORT_COMMAND_IMPLEMENTED);
 					break;
 													
 					case 3:
@@ -322,11 +372,11 @@ TASK(PCLink_Task)
 			}
 			break;
 
-
-			/*****************************************************************/
-			/* EEPROM memory don't need to be cleared before writing on it,	 */
-			/* so we do nothing.											 */
-			/*																 */
+			/****************************************************************/
+			/* API_COMMAND_CLEAR_ALL_MEMORY									*/
+			/* EEPROM memory don't need to be cleared before writing on it,	*/
+			/* so we do nothing.											*/
+			/*																*/
 			case API_COMMAND_CLEAR_ALL_MEMORY:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
@@ -338,7 +388,7 @@ TASK(PCLink_Task)
 				{
 					case 1:
 					/* Report that this command is implemented */
-					Buffer_StoreElement (&Tx_Buffer, 0);
+					Buffer_StoreElement (&Tx_Buffer, REPORT_COMMAND_IMPLEMENTED);
 					break;
 							
 					default:
@@ -349,18 +399,90 @@ TASK(PCLink_Task)
 			}
 			break;
 
+			/****************************************************************/
+			/* API_COMMAND_READ_MEMORY_BYTE									*/
+			/*																*/			
 
+			case API_COMMAND_READ_MEMORY_BYTE:
+			/* First byte of this command, fill the NumberDataBytes */
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 4;
 
-			/* Command Read memory byte */
+//			while (Tx_Buffer.Elements < BUFF_STATICSIZE && ucNumberDataBytes > 0 && Rx_Buffer.Elements > 0)
+//			{
+				switch (ucNumberDataBytes)
+				{
+					case 4:
+					/* Report that this command is implemented */
+					Buffer_StoreElement (&Tx_Buffer, REPORT_COMMAND_IMPLEMENTED);
+					break;
+													
+					case 3:
+					ucAddressByte01 = Buffer_GetElement (&Rx_Buffer);
+					break;
+						
+					case 2:
+					ucAddressByte02 = Buffer_GetElement (&Rx_Buffer);
+					break;
 
-			/* Command Write memory size */
+					case 1:
+					Buffer_StoreElement (&Tx_Buffer, (EEPROM_ReadByte (ucAddressByte01*256*256 + ucAddressByte02*256 + Buffer_GetElement (&Rx_Buffer))));
+					break;
+							
+					default:
+					break;
+				}		
+							
+			ucNumberDataBytes--;
+//			}
+			break;
 
+			/****************************************************************/
+			/* API_COMMAND_WRITE_MEMORY_BYTE								*/
+			/*																*/			
+			case API_COMMAND_WRITE_MEMORY_BYTE:
+			/* First byte of this command, fill the NumberDataBytes */
+			if (ucNumberDataBytes <= 0)
+				ucNumberDataBytes = 5;
 
-			
+//			while (Tx_Buffer.Elements < BUFF_STATICSIZE && ucNumberDataBytes > 0)
+//			{
+				switch (ucNumberDataBytes)
+				{
+					case 5:
+					/* Report that this command is implemented */
+					Buffer_StoreElement (&Tx_Buffer, REPORT_COMMAND_IMPLEMENTED);
+					break;
+													
+					case 4:
+					ucAddressByte01 = Buffer_GetElement (&Rx_Buffer);
+					break;
+						
+					case 3:
+					ucAddressByte02 = Buffer_GetElement (&Rx_Buffer);
+					break;
+
+					case 2:
+					ucAddressByte03 = Buffer_GetElement (&Rx_Buffer);
+					break;
+
+					case 1:
+					EEPROM_WriteByte ( (ucAddressByte01*256*256 + ucAddressByte02*256 + ucAddressByte03), Buffer_GetElement (&Rx_Buffer));
+					break;
+							
+					default:
+					break;
+				}		
+							
+			ucNumberDataBytes--;
+//			}
+			break;
+
+#if 0
 			/* Estended API	*/
 			/* Next commands are from extended API */ 
 
-			case FIRMWARE_API_COMMAND_SS0_ENABLE:
+			case API_COMMAND_SS0_ENABLE:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
 				ucNumberDataBytes = 1;
@@ -376,7 +498,7 @@ TASK(PCLink_Task)
 			}		
 			break;			
 
-			case FIRMWARE_API_COMMAND_SS0_DISABLE:
+			case API_COMMAND_SS0_DISABLE:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
 				ucNumberDataBytes = 1;
@@ -392,7 +514,7 @@ TASK(PCLink_Task)
 			}		
 			break;			
 
-			case FIRMWARE_API_COMMAND_SS1_ENABLE:
+			case COMMAND_SS1_ENABLE:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
 				ucNumberDataBytes = 1;
@@ -408,7 +530,7 @@ TASK(PCLink_Task)
 			}		
 			break;			
 
-			case FIRMWARE_API_COMMAND_SS1_DISABLE:
+			case API_COMMAND_SS1_DISABLE:
 			/* First byte of this command, fill the NumberDataBytes */
 			if (ucNumberDataBytes <= 0)
 				ucNumberDataBytes = 1;
@@ -424,7 +546,7 @@ TASK(PCLink_Task)
 			}		
 			break;
 
-			case FIRMWARE_API_COMMAND_SS2_ENABLE:
+			case API_COMMAND_SS2_ENABLE:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
 				ucNumberDataBytes = 1;
@@ -440,7 +562,7 @@ TASK(PCLink_Task)
 			}		
 			break;			
 
-			case FIRMWARE_API_COMMAND_SS2_DISABLE:
+			case API_COMMAND_SS2_DISABLE:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
 				ucNumberDataBytes = 1;
@@ -456,29 +578,6 @@ TASK(PCLink_Task)
 			}		
 			break;				
 
-			case FIRMWARE_API_COMMAND_SPI_MASTER_TRANSMIT:
-			/* First byte of this command, fill the NumberDataBytes */			
-			if (ucNumberDataBytes <= 0)
-				ucNumberDataBytes = 2;
-				
-			if (Tx_Buffer.Elements < BUFF_STATICSIZE && ucNumberDataBytes == 2)
-			{	
-				/* Send back the value of the command */
-				Buffer_StoreElement (&Tx_Buffer, ucCommand);
-				ucNumberDataBytes--;
-			}
-				
-			if (Rx_Buffer.Elements && Tx_Buffer.Elements < BUFF_STATICSIZE)
-			{	
-				/* Send the byte data to SPI bus */
-				SPI_MasterTransmit (Buffer_GetElement(&Rx_Buffer));
-							
-				/* Send the byte received from slave on SPI bus, to PC */	
-				Buffer_StoreElement (&Tx_Buffer, SPI_MasterReceive ());
-				
-				ucNumberDataBytes--;	
-			}
-			break;
 				
 			case FIRMWARE_API_COMMAND_SENSOR_HALL_EFFECT_VCC_ENABLE:
 			/* First byte of this command, fill the NumberDataBytes */			
@@ -497,7 +596,7 @@ TASK(PCLink_Task)
 			}		
 			break;
 
-			case FIRMWARE_API_COMMAND_SENSOR_HALL_EFFECT_VCC_DISABLE:
+			case API_COMMAND_SENSOR_HALL_EFFECT_VCC_DISABLE:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
 				ucNumberDataBytes = 1;
@@ -514,7 +613,7 @@ TASK(PCLink_Task)
 			}		
 			break;
 				
-			case FIRMWARE_API_COMMAND_SENSOR_HALL_EFFECT_READ_DATA:
+			case API_COMMAND_SENSOR_HALL_EFFECT_READ_DATA:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
 				ucNumberDataBytes = 1;
@@ -531,7 +630,7 @@ TASK(PCLink_Task)
 			}
 			break;
 
-			case FIRMWARE_API_COMMAND_DATAFLASH_VCC_ENABLE:
+			case API_COMMAND_DATAFLASH_VCC_ENABLE:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
 				ucNumberDataBytes = 1;
@@ -548,7 +647,7 @@ TASK(PCLink_Task)
 			}		
 			break;
 
-			case FIRMWARE_API_COMMAND_DATAFLASH_VCC_DISABLE:
+			case API_COMMAND_DATAFLASH_VCC_DISABLE:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
 				ucNumberDataBytes = 1;
@@ -565,7 +664,7 @@ TASK(PCLink_Task)
 			}		
 			break;				
 
-			case FIRMWARE_API_COMMAND_DATAFLASH_HOLD_ENABLE:
+			case API_COMMAND_DATAFLASH_HOLD_ENABLE:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
 				ucNumberDataBytes = 1;
@@ -582,7 +681,7 @@ TASK(PCLink_Task)
 			}		
 			break;
 
-			case FIRMWARE_API_COMMAND_DATAFLASH_HOLD_DISABLE:
+			case API_COMMAND_DATAFLASH_HOLD_DISABLE:
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes <= 0)
 				ucNumberDataBytes = 1;
@@ -598,12 +697,13 @@ TASK(PCLink_Task)
 				ucNumberDataBytes--;
 			}		
 			break;				
+
+#endif
 				
 			default:			
 			break;
 		}
 	}
-#endif
 }
 	
 void Hardware_Init(void)
@@ -618,6 +718,9 @@ void Hardware_Init(void)
 TASK(MakePOV_Task)
 {
 	SPI_MasterTransmit (0xaa);
+	SPI_MasterTransmit (0xaa);
+	SPI_MasterTransmit (0xaa);
+	SPI_MasterTransmit (0xaa);
+	DataLatches_Clock (LEFT_SIDE_DATA_LATCHES);
 	DataLatches_Clock (RIGHT_SIDE_DATA_LATCHES);
-
 }
