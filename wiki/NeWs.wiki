@@ -1,3 +1,13 @@
+==2008.10.18==
+===News from JpCasainho:===
+I had found one error on actual schematic. Also I found that sensor hall effect have "noise" at his output, as if it is detecting any magnet without any near - I resolved this using a simple low pass RC filter.
+
+I decided to make a simple MiniPOV with actual hardware. It is using just MyUSB scheduler to do delays of 3ms. Firmware is very simple, you can get it [http://code.google.com/p/bicycleledpov/source/browse/trunk/hardware/firmware/minipov?spec=svn331&r=331 here].
+
+Me rotating the hardware and taking a picture on a dark room:
+
+[http://bicycleledpov.googlecode.com/svn-history/r331/trunk/docs/pictures/20081018-bicycleledpov-minipov.jpg]
+
 ==2008.09.23==
 ===News from JpCasainho:===
 I started re-writing the API - [BicycleLEDPOVAPI]. The API will permit that different hardwares works with the same software, which is great because people will be able to build hardwares with different memories, sizes, with different number of LEDs, RGB, etc, and software will continue to work on that hardwares.
