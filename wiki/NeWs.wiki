@@ -4,6 +4,8 @@ I had found one error on actual schematic. Also I found that sensor hall effect 
 
 I decided to make a simple MiniPOV with actual hardware. It is using just MyUSB scheduler to do delays of 3ms. Firmware is very simple, you can get it [http://code.google.com/p/bicycleledpov/source/browse/trunk/hardware/firmware/minipov?spec=svn331&r=331 here].
 
+On that image, just 8 LEDs are used to write that message. The message are stored in RAM of MCU, sensor hall effect and external memory are not used.
+
 Me rotating the hardware and taking a picture on a dark room:
 
 [http://bicycleledpov.googlecode.com/svn-history/r331/trunk/docs/pictures/20081018-bicycleledpov-minipov.jpg]
