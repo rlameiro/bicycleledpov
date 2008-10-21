@@ -41,6 +41,12 @@ void EEPROM_Init (void)
 
 	/* Disable hold state */
 	EEPROM_HOLD_ENABLE;
+	
+	/* Send one byte just to init ok the EEPROM -- tested on practice */
+	/* Without this, the command will not work, be it read or writting */
+    EEPROM_SLAVE_SELECT;
+    SPI_MasterTransmit (0);
+    EEPROM_SLAVE_DESELECT;
 }
 
 unsigned char EEPROM_ReadByte (unsigned short int Address)

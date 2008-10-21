@@ -25,6 +25,7 @@
 		#include <avr/io.h>
 		#include <avr/wdt.h>
 		#include <avr/interrupt.h>
+		#include <avr/eeprom.h>
 
 		#include "Descriptors.h"
 		#include "RingBuff.h"
