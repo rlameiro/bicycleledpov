@@ -232,7 +232,7 @@ TASK(CDC_Task)
 
 				/* Send an empty packet to terminate the transfer */
 				Endpoint_ClearCurrentBank();
-			}
+			}	EEPROM_Init();
 		}
 	}
 }
@@ -241,25 +241,22 @@ TASK(PCLink_Task)
 {
 	static unsigned char
 	ucCommand = 0,
+	ucLastCommand = 0,
 	ucNumberDataBytes = 0,
-	ucAddressByte01,
-	ucAddressByte02,
-	ucAddressByte03;
+	ucFlagNextByte = false;
 
-	/* Clear all LED */
-	SPI_MasterTransmit (0);
-	SPI_MasterTransmit (0);
-	SPI_MasterTransmit (0);
-	SPI_MasterTransmit (0);
-	DataLatches_Clock (LEFT_SIDE_DATA_LATCHES);
-	DataLatches_Clock (RIGHT_SIDE_DATA_LATCHES);
-
+	static unsigned long int
+	uliAddress;
 
 	if (Rx_Buffer.Elements)
 	{
 		if (ucNumberDataBytes == 0)
-			ucCommand = Buffer_GetElement (&Rx_Buffer);
+		{
+			ucLastCommand = ucCommand; /* Save the last command */
+			ucCommand = Buffer_GetElement (&Rx_Buffer); /* Store the new command */
+		}
 
+		/* Process the commands */
 		switch (ucCommand)
 		{							
 			/****************************************************************/
@@ -267,7 +264,7 @@ TASK(PCLink_Task)
 			/*																*/
 			case API_COMMAND_GET_HARDWARE_PROPERTIES:
 			/* First byte of this command, fill the NumberDataBytes */			
-			if (ucNumberDataBytes <= 0)
+			if (ucNumberDataBytes < 1)
 				ucNumberDataBytes = 13;
 					
 			while (Tx_Buffer.Elements < BUFF_STATICSIZE && ucNumberDataBytes > 0)
@@ -275,7 +272,7 @@ TASK(PCLink_Task)
 				switch (ucNumberDataBytes)
 				{
 					case 13:
-					/* Report that this command is implemented */
+					/* Report this command as implemented */
 					Buffer_StoreElement (&Tx_Buffer, REPORT_COMMAND_IMPLEMENTED);
 					break;
 													
@@ -340,7 +337,7 @@ TASK(PCLink_Task)
 			/*																*/			
 			case API_COMMAND_GET_MEMORY_SIZE:
 			/* First byte of this command, fill the NumberDataBytes */			
-			if (ucNumberDataBytes <= 0)
+			if (ucNumberDataBytes < 1)
 				ucNumberDataBytes = 4;
 
 			while (Tx_Buffer.Elements < BUFF_STATICSIZE && ucNumberDataBytes > 0)
@@ -348,7 +345,7 @@ TASK(PCLink_Task)
 				switch (ucNumberDataBytes)
 				{
 					case 4:
-					/* Report that this command is implemented */
+					/* Report this command as implemented */
 					Buffer_StoreElement (&Tx_Buffer, REPORT_COMMAND_IMPLEMENTED);
 					break;
 													
@@ -378,104 +375,156 @@ TASK(PCLink_Task)
 			/* so we do nothing.											*/
 			/*																*/
 			case API_COMMAND_CLEAR_ALL_MEMORY:
-			/* First byte of this command, fill the NumberDataBytes */			
-			if (ucNumberDataBytes <= 0)
-				ucNumberDataBytes = 1;
 
-			while (Tx_Buffer.Elements < BUFF_STATICSIZE && ucNumberDataBytes > 0)
+			/* Report this command as implemented */
+			if (Tx_Buffer.Elements < BUFF_STATICSIZE)
 			{
-				switch (ucNumberDataBytes)
-				{
-					case 1:
-					/* Report that this command is implemented */
-					Buffer_StoreElement (&Tx_Buffer, REPORT_COMMAND_IMPLEMENTED);
-					break;
-							
-					default:
-					break;
-				}		
-							
-			ucNumberDataBytes--;
+				Buffer_StoreElement (&Tx_Buffer, REPORT_COMMAND_IMPLEMENTED);
 			}
 			break;
 
 			/****************************************************************/
 			/* API_COMMAND_READ_MEMORY_BYTE									*/
 			/*																*/			
-
 			case API_COMMAND_READ_MEMORY_BYTE:
-			/* First byte of this command, fill the NumberDataBytes */
-			if (ucNumberDataBytes <= 0)
+			
+			/* Find if it's a sequencial read byte */
+			/* It's a sequencial read byte */
+			if (ucLastCommand == API_COMMAND_READ_MEMORY_BYTE)
+				ucFlagNextByte = true;
+			
+			/* It's a read only byte */
+			else
+				ucFlagNextByte = false;
+				
+            /* First byte of this command, fill the NumberDataBytes */
+            if (ucNumberDataBytes < 1)
+			{
 				ucNumberDataBytes = 4;
+			}
 
-//			while (Tx_Buffer.Elements < BUFF_STATICSIZE && ucNumberDataBytes > 0 && Rx_Buffer.Elements > 0)
-//			{
-				switch (ucNumberDataBytes)
+			/* Process the first byte of the command */	
+			if (ucNumberDataBytes == 4 && Tx_Buffer.Elements < BUFF_STATICSIZE)
+			{
+				/* Report this command as implemented */
+				Buffer_StoreElement (&Tx_Buffer, REPORT_COMMAND_IMPLEMENTED);
+				ucNumberDataBytes--;
+			}
+				
+			/* Read the next sequencial byte */
+			if (ucFlagNextByte)
+			{
+				if (Tx_Buffer.Elements < BUFF_STATICSIZE)
 				{
-					case 4:
-					/* Report that this command is implemented */
-					Buffer_StoreElement (&Tx_Buffer, REPORT_COMMAND_IMPLEMENTED);
-					break;
-													
-					case 3:
-					ucAddressByte01 = Buffer_GetElement (&Rx_Buffer);
-					break;
-						
-					case 2:
-					ucAddressByte02 = Buffer_GetElement (&Rx_Buffer);
-					break;
+					uliAddress++;
+					Buffer_StoreElement (&Tx_Buffer, (EEPROM_ReadByte (uliAddress)));
+					
+					ucNumberDataBytes = 0;
+				}
+			}
 
-					case 1:
-					Buffer_StoreElement (&Tx_Buffer, (EEPROM_ReadByte (ucAddressByte01*256*256 + ucAddressByte02*256 + Buffer_GetElement (&Rx_Buffer))));
-					break;
+			/* Read the byte of the given address */
+			else
+			{
+				while (Rx_Buffer.Elements > 0)
+				{
+					switch (ucNumberDataBytes)
+					{
+						case 3:
+						uliAddress = (Buffer_GetElement (&Rx_Buffer)) * 256 * 256;
+						break;
+						
+						case 2:
+						uliAddress += (Buffer_GetElement (&Rx_Buffer)) * 256;
+						break;
+
+						case 1:
+						if (Tx_Buffer.Elements < BUFF_STATICSIZE)
+						{
+							uliAddress += Buffer_GetElement (&Rx_Buffer);
+							Buffer_StoreElement (&Tx_Buffer, (EEPROM_ReadByte (uliAddress)));				
+						}						
+						break;
 							
-					default:
-					break;
-				}		
-							
-			ucNumberDataBytes--;
-//			}
+						default:
+						break;
+					}	
+
+				ucNumberDataBytes--;	
+				}
+			}
 			break;
 
 			/****************************************************************/
 			/* API_COMMAND_WRITE_MEMORY_BYTE								*/
 			/*																*/			
 			case API_COMMAND_WRITE_MEMORY_BYTE:
-			/* First byte of this command, fill the NumberDataBytes */
-			if (ucNumberDataBytes <= 0)
+			
+			/* Find if it's a sequencial write byte */
+			/* It's a sequencial write byte */
+			if (ucLastCommand == API_COMMAND_WRITE_MEMORY_BYTE)
+				ucFlagNextByte = true;
+			
+			/* It's a write only byte */
+			else
+				ucFlagNextByte = false;				
+				
+            /* First byte of this command, fill the NumberDataBytes */
+            if (ucNumberDataBytes < 1)
+			{
 				ucNumberDataBytes = 5;
-
-//			while (Tx_Buffer.Elements < BUFF_STATICSIZE && ucNumberDataBytes > 0)
-//			{
-				switch (ucNumberDataBytes)
+			}
+			
+			/* Process the first byte of the command */	
+			if (ucNumberDataBytes == 5 && Tx_Buffer.Elements < BUFF_STATICSIZE)
+			{
+				/* Report this command as implemented */
+				Buffer_StoreElement (&Tx_Buffer, REPORT_COMMAND_IMPLEMENTED);
+				ucNumberDataBytes--;
+			}
+				
+			/* Write the next sequencial byte */
+			if (ucFlagNextByte)
+			{
+				if (Rx_Buffer.Elements > 0)
 				{
-					case 5:
-					/* Report that this command is implemented */
-					Buffer_StoreElement (&Tx_Buffer, REPORT_COMMAND_IMPLEMENTED);
-					break;
-													
-					case 4:
-					ucAddressByte01 = Buffer_GetElement (&Rx_Buffer);
-					break;
+					uliAddress++;
+					EEPROM_WriteByte (uliAddress, Buffer_GetElement (&Rx_Buffer));
+					
+					ucNumberDataBytes = 0;
+				}
+			}
+
+			/* Write the byte of the given address */
+			else
+			{
+				while (Rx_Buffer.Elements > 0)
+				{
+					switch (ucNumberDataBytes)
+					{
+						case 4:
+						uliAddress = Buffer_GetElement (&Rx_Buffer) * 256 * 256;
+						break;
 						
-					case 3:
-					ucAddressByte02 = Buffer_GetElement (&Rx_Buffer);
-					break;
+						case 3:
+						uliAddress += Buffer_GetElement (&Rx_Buffer) * 256;
+						break;
 
-					case 2:
-					ucAddressByte03 = Buffer_GetElement (&Rx_Buffer);
-					break;
+						case 2:
+						uliAddress += Buffer_GetElement (&Rx_Buffer);
+						break;
 
-					case 1:
-					EEPROM_WriteByte ( (ucAddressByte01*256*256 + ucAddressByte02*256 + ucAddressByte03), Buffer_GetElement (&Rx_Buffer));
-					break;
+						case 1:
+						EEPROM_WriteByte (uliAddress, Buffer_GetElement (&Rx_Buffer));
+						break;
 							
-					default:
-					break;
-				}		
-							
-			ucNumberDataBytes--;
-//			}
+						default:
+						break;
+					}	
+
+				ucNumberDataBytes--;	
+				}
+			}
 			break;
 
 #if 0
@@ -698,8 +747,7 @@ TASK(PCLink_Task)
 			}		
 			break;				
 
-#endif
-				
+#endif		
 			default:			
 			break;
 		}
@@ -711,16 +759,21 @@ void Hardware_Init(void)
 	BUTTON_INIT;
 	SensorHallEffect_Init();
 	DataLatches_Init();
-	EEPROM_Init();
 	SPI_MasterInit (DATA_ORDER_MSB);
+	EEPROM_Init(); /* EEPROM must be initialized after SPI! */
 }
 
 TASK(MakePOV_Task)
 {
-	SPI_MasterTransmit (0xaa);
-	SPI_MasterTransmit (0xaa);
-	SPI_MasterTransmit (0xaa);
-	SPI_MasterTransmit (0xaa);
+	SPI_MasterTransmit (0x00);
+	SPI_MasterTransmit (0x80);
+	SPI_MasterTransmit (0x01);
+	SPI_MasterTransmit (0x00);
 	DataLatches_Clock (LEFT_SIDE_DATA_LATCHES);
+
+	SPI_MasterTransmit (0x00);
+	SPI_MasterTransmit (0x00);
+	SPI_MasterTransmit (0x00);
+	SPI_MasterTransmit (0x00);
 	DataLatches_Clock (RIGHT_SIDE_DATA_LATCHES);
 }

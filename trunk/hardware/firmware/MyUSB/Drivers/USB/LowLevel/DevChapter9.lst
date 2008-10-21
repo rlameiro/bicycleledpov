@@ -664,12 +664,12 @@
  697               	.Letext0:
 DEFINED SYMBOLS
                             *ABS*:00000000 DevChapter9.c
-     /tmp/ccCYL1s9.s:2      *ABS*:0000003f __SREG__
-     /tmp/ccCYL1s9.s:3      *ABS*:0000003e __SP_H__
-     /tmp/ccCYL1s9.s:4      *ABS*:0000003d __SP_L__
-     /tmp/ccCYL1s9.s:5      *ABS*:00000000 __tmp_reg__
-     /tmp/ccCYL1s9.s:6      *ABS*:00000001 __zero_reg__
-     /tmp/ccCYL1s9.s:20     .text.USB_Device_ProcessControlPacket:00000000 USB_Device_ProcessControlPacket
+     /tmp/ccdbbW8X.s:2      *ABS*:0000003f __SREG__
+     /tmp/ccdbbW8X.s:3      *ABS*:0000003e __SP_H__
+     /tmp/ccdbbW8X.s:4      *ABS*:0000003d __SP_L__
+     /tmp/ccdbbW8X.s:5      *ABS*:00000000 __tmp_reg__
+     /tmp/ccdbbW8X.s:6      *ABS*:00000001 __zero_reg__
+     /tmp/ccdbbW8X.s:20     .text.USB_Device_ProcessControlPacket:00000000 USB_Device_ProcessControlPacket
                             *COM*:00000001 USB_ConfigurationNumber
 
 UNDEFINED SYMBOLS
