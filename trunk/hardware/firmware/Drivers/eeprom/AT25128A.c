@@ -43,7 +43,7 @@ void EEPROM_Init (void)
 	EEPROM_HOLD_ENABLE;
 	
 	/* Send one byte just to init ok the EEPROM -- tested on practice */
-	/* Without this, the command will not work, be it read or writting */
+	/* Without this, the first command will not work, be it read or write */
     EEPROM_SLAVE_SELECT;
     SPI_MasterTransmit (0);
     EEPROM_SLAVE_DESELECT;

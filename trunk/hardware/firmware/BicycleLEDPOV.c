@@ -748,7 +748,13 @@ TASK(PCLink_Task)
 			break;				
 
 #endif		
-			default:			
+			default:
+			/* Report this command as unimplemented */
+			if (Tx_Buffer.Elements < BUFF_STATICSIZE)
+			{
+				Buffer_StoreElement (&Tx_Buffer, REPORT_COMMAND_UNIMPLEMENTED);
+			}			
+			
 			break;
 		}
 	}
