@@ -4,11 +4,51 @@ Connecting Bicycle LED POV hardware to PC using an USB cable, a new virtual seri
 
 The API have two parts, the “base” one should always be implemented on each hardware and provides minimum functionality while the BicycleLEDPOVExtendedAPI part differs on each hardware and is not necessary to be implement.
 
-Each command should return always value 0 for an implemented command and value 1 for one not implemented command.
-
 =Base API=
+===Command not implemented===
+
+Input value(s):
+|| *byte number* || *content* ||
+|| 01 || xx ||
+
+Output value(s):
+|| *byte number* || *content* ||
+|| 01 || lenght of the next string. ||
+|| 02 and following bytes || "command not implemented". The string must be terminated with a null char. ||
+
 ==Hardware==
-*Command 1: Get hardware properties*. Hardware returns twelve bytes indicating the following informations:
+===Command 1: Get identificacion string===
+
+Input value(s):
+|| *byte number* || *content* ||
+|| 01 || 01 ||
+
+Output value(s):
+|| *byte number* || *content* ||
+|| 01 || lenght of the next string. ||
+|| 02 and following bytes || Example string: "Bicycle LED POV r1.1 fw1.0 20081022". The string must be terminated with a null char. ||
+
+===Command 2: Get hardware properties===
+
+Input value(s):
+|| *byte number* || *content* ||
+|| 02 || 02 ||
+
+Output value(s):
+|| *byte number* || *content* ||
+|| 01 || lenght of the next following bytes. ||
+|| 02 || API version. ||
+|| 03 || extended API version. ||
+|| 04 || firmware version. ||
+|| 05 || byte 01 of number of radial lines. ||
+|| 06 || byte 02 of number of radial lines. ||
+|| 07 || byte 01 of number of LEDs per radial line. ||
+|| 08 || byte 02 of number of LEDs per radial line. ||
+|| 09 || byte 01 of number of animations images colors properties. ||
+|| 10 || byte 02 of number of animations images colors properties. ||
+|| 11 || byte 03 of number of animations images colors properties. ||
+|| 12 || byte 04 of number of animations images colors properties. ||
+|| 13 || byte 01 of number of number of independent LED-strips. ||
 
 API version: byte_1
 
