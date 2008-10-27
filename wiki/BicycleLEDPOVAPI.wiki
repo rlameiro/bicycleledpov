@@ -50,47 +50,53 @@ Output value(s):
 || 12 || byte 04 of number of animations images colors properties. ||
 || 13 || byte 01 of number of number of independent LED-strips. ||
 
-API version: byte_1
-
-Extended API version: byte_2. Hardware returns value 0 if do not support any [BicycleLEDPOVExtendedAPI extended API], otherwise returns the version of [BicycleLEDPOVExtendedAPI extended API].
-
-Firmware version: byte_3
-
-Number of radial lines: byte_4; byte_5
-
-Number of LEDs per radial line: byte_6; byte_7
-
-Animations images colors properties: byte_8; byte_9; byte_10; byte_11. Byte_8 value is the number of bits per channel of a monochrome image type (hardware-supported), if hardware-supported image type is a color one, the value should be 0. Byte_9, byte_10 and byte_11 have the values of bits of each R, G, B channels, respectively. If hardware-supported image type is a monochrome one, this three bytes have values of 0.
-
-Number of independent LED-strips: byte_12
-
-Example:
-   * values sent to hardware: `[`1`]`
-   * values received from hardware: `[`0`]` - `[`16`]` - `[`16`]` - `[`8`]` - `[`1`]` `[`0`]`- `[`0`]` `[`32`]` - `[`1`]` `[`0`]` `[`0`]` `[`0`]` - `[`2`]` -> the API version is 1.0; the FiRmware version is 1.0; 256 radial lines; 32 LEDs per radial line; monochrome image of 1 bit; images can be different for each of two wheel sides.
-
 ==Memory==
-*Command 10: Get memory size*. Hardware returns the value of memory in multiples of kB, using three bytes in form: byte_1 = `<0-7>bits; byte_2 = <8-15>bits and byte _3 = <16-23>`.
+===Command 10: Clear all memory===
 
-Example:
-   * values sent to hardware: `[`10`]`
-   * values received from hardware: `[`0`]` - `[`0`]` `[`4`]` `[`0`]` -> memory of 1MB, `(0 * 2^16) + (4 * 2^8) + (0 * 2^0)` = 1024 kB.
+Input value(s):
+|| *byte number* || *content* ||
+|| 01 || 10 ||
 
-*Command 11: Clear all memory*. Hardware returns the value of memory in multiples of kB, using three bytes in form: byte_1 = `<0-7>bits; byte_2 = <8-15>bits and byte _3 = <16-23>`.
+Output value(s):
+|| *byte number* || *content* ||
+|| 01 || lenght of the next following bytes. ||
+|| 02 || byte 01 of lenght of cleared bytes. ||
+|| 03 || byte 02 of lenght of cleared bytes. ||
 
-Example:
-   * values sent to hardware: `[`10`]`
-   * values received from hardware: `[`0`]` - `[`0`]` `[`4`]` `[`0`]` -> memory of 1MB, `(0 * 2^16) + (4 * 2^8) + (0 * 2^0)` = 1024 kB.
+===Command 11: Read a stream of bytes from memory===
 
-*Command 12: Read memory byte*. The address is sent to hardware and the number of bytes to be used for the address depends on memory size – should be the less possible number of bytes. After send the first command, the next ones don't send the address.
+Input value(s):
+|| *byte number* || *content* ||
+|| 01 || 11 ||
+|| 02 || byte 01 of number of bytes of the stream to read. ||
+|| 03 || byte 02 of number of bytes of the stream to read. ||
+|| 04 || byte 01 of address of memory, of the beguining of the stream to read. ||
+|| 05 || byte 02 of address of memory, of the beguining of the stream to read. ||
+|| 06 || byte 03 of address of memory, of the beguining of the stream to read. ||
+|| 07 || byte 04 of address of memory, of the beguining of the stream to read. ||
 
-Example:
-   * values sent to hardware: `[`11`]` `[`0`]` `[`0`]` `[`55`]` – read byte number 55 of a memory with at least 2GB.
-   * values received from hardware: `[`0`]` `[`120`]` – the value on address 55 is 120.
+Output value(s):
+|| *byte number* || *content* ||
+|| 01 || lenght of the next following bytes. ||
+|| 02 || byte 01 of lenght of stream to read. ||
+|| 03 || byte 02 of lenght of stream to read. ||
+|| 04 and following bytes || byte of stream readed. ||
 
-*Command 13: Write memory byte*. The address is sent to hardware and the number of bytes to be used for the address depends on memory size – should be the less possible number of bytes. The data byte is the last byte sent to hardware. After send the first command, the next ones don't send the address.
+===Command 12: Write a stream of bytes to memory===
 
-Warning: Before write any data to memory, memory must be all cleared, issuing the "Command 11: Clear all memory".
+Input value(s):
+|| *byte number* || *content* ||
+|| 01 || 12 ||
+|| 02 || byte 01 of lenght of stream to write. ||
+|| 03 || byte 02 of lenght of stream to write. ||
+|| 04 || byte 01 of address of memory, of the beguining of the stream to write. ||
+|| 05 || byte 02 of address of memory, of the beguining of the stream to write. ||
+|| 06 || byte 03 of address of memory, of the beguining of the stream to write. ||
+|| 07 || byte 04 of address of memory, of the beguining of the stream to write. ||
+|| 08 and following bytes || byte of stream to write. ||
 
-Example:
-   * values sent to hardware: `[`13`]` `[`0`]` `[`0`]` `[`55`]` `[`60`]` – write value 60 on address number 55, on a memory with at least 2GB.
-   * values received from hardware: `[`0`]`
+Output value(s):
+|| *byte number* || *content* ||
+|| 01 || lenght of the next following bytes. ||
+|| 02 || byte 01 of lenght of written bytes. ||
+|| 03 || byte 02 of lenght of written bytes. ||
