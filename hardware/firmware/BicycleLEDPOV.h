@@ -45,6 +45,8 @@
 #define REPORT_COMMAND_UNIMPLEMENTED			1
 
 
+char IdentificationString [] = "Bicycle LED POV r1.1 fw1.0 20090101";
+
 /* Get hardware properties command		*/
 /*										*/		
 #define API_VERSION								16 /* V 1.0 */
@@ -60,23 +62,24 @@
 #define IMAGE_COLOUR_PROPERTIES_BYTE_04			0
 #define NUMBER_OF_INDEPENDENT_LED_STRIPS		1
 	
-		/* Size of memory of 32kB */
-		#define MEMORY_SIZE_BYTE_1				32
-		#define MEMORY_SIZE_BYTE_2				0
-		#define MEMORY_SIZE_BYTE_3				0	  
+/* Size of memory of 32kB */
+#define MEMORY_SIZE_BYTE_1				32
+#define MEMORY_SIZE_BYTE_2				0
+#define MEMORY_SIZE_BYTE_3				0	  
 						
-		#define GET_LINE_CODING				0x21
-		#define SET_LINE_CODING				0x20
-		#define SET_CONTROL_LINE_STATE		0x22
+#define GET_LINE_CODING				0x21
+#define SET_LINE_CODING				0x20
+#define SET_CONTROL_LINE_STATE		0x22
 
-		#define PROCESS_COMMAND				0
-		#define PROCESS_DATA				1		
+#define PROCESS_COMMAND				0
+#define PROCESS_DATA				1		
 		
 
 		/* Macros for commands */
 		
 /* API commands */
-#define API_COMMAND_GET_HARDWARE_PROPERTIES					1
+#define API_COMMAND_GET_IDENTIFICATION_STRING				1
+#define API_COMMAND_GET_HARDWARE_PROPERTIES					2
 #define API_COMMAND_GET_MEMORY_SIZE							10
 #define API_COMMAND_CLEAR_ALL_MEMORY						11
 #define API_COMMAND_READ_MEMORY_BYTE						12
