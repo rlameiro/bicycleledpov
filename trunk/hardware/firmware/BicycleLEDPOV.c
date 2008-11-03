@@ -59,12 +59,6 @@ CDC_Line_Coding_t LineCoding = { BaudRateBPS: 9600,
 RingBuff_t        Rx_Buffer;
 RingBuff_t        Tx_Buffer;
 
-
-ISR(TIMER0_COMPA_vect, ISR_BLOCK)
-{
-	/* Scheduler test - increment scheduler tick counter once each millisecond */
-	Scheduler_TickCounter++;
-}
 		
 int main(void)
 {
@@ -240,15 +234,17 @@ TASK(CDC_Task)
 TASK(PCLink_Task)
 {
 	static unsigned char
+	ucCounter = 0,
 	ucCommand = 0,
 	ucLastCommand = 0,
 	ucNumberDataBytes = 0,
-	ucFlagNextByte = false;
+	ucFlagNextByte = false,
+	ucFlagProcessingCommand = false;
 
 	static unsigned long int
 	uliAddress;
 
-	if (Rx_Buffer.Elements)
+	if (Rx_Buffer.Elements || ucFlagProcessingCommand)
 	{
 		if (ucNumberDataBytes == 0)
 		{
@@ -258,7 +254,39 @@ TASK(PCLink_Task)
 
 		/* Process the commands */
 		switch (ucCommand)
-		{							
+		{
+			/****************************************************************/
+			/* API_COMMAND_GET_IDENTIFICATION_STRING			*/
+			/*								*/
+			case API_COMMAND_GET_IDENTIFICATION_STRING:
+			/* First byte of this command, fill the NumberDataBytes */			
+			if (ucNumberDataBytes < 1)
+			{
+				ucNumberDataBytes = 1;
+				ucCounter = 0; /* Initialize the counter, that is used for index the Identification string */
+			}			
+			
+			/* Fill the Tx_Buffer while there is available space and chars of string to send */
+			while (Tx_Buffer.Elements < BUFF_STATICSIZE && IdentificationString [ucCounter] != NULL)
+			{
+				Buffer_StoreElement (&Tx_Buffer, IdentificationString [ucCounter++]);
+			}
+
+			/* If there is available space on Tx_Buffer and string ends, send NULL char and finish the command */
+			if (Tx_Buffer.Elements < BUFF_STATICSIZE && IdentificationString [ucCounter] == NULL)
+			{
+				Buffer_StoreElement (&Tx_Buffer, NULL);
+				ucFlagProcessingCommand = false;
+				ucNumberDataBytes = 0;
+			}
+
+			else
+			{
+				ucFlagProcessingCommand = true;
+			}
+			break;
+				
+			
 			/****************************************************************/
 			/* API_COMMAND_GET_HARDWARE_PROPERTIES							*/
 			/*																*/
