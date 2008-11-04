@@ -1,4 +1,4 @@
-#summary API definition to interaction between HaRdware and SoFtware.
+#summary API definition for interaction between HaRdware and SoFtware.
 
 Connecting Bicycle LED POV hardware to PC using an USB cable, a new virtual serial port will appear on PC. Commands are sent to the virtual serial port to interact with Bicycle LED POV HaRdware.
 
