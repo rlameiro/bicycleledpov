@@ -51,6 +51,7 @@ Output value(s):
 || 13 || byte 01 for number of independent LED-strips. ||
 
 '
+|| byte number || content ||
 || 09 || byte 01 for number of supported monochrome shades (grayscale design) in bits. ||
 || 10 || byte 02 for number of supported red shades (tricolor design) in bits. ||
 || 11 || byte 03 for number of supported green shades (tricolor design) in bits. ||
