@@ -70,7 +70,7 @@ Output value(s):
 || 02 || byte 01 for length of cleared bytes. ||
 || 03 || byte 02 for length of cleared bytes. ||
 
-(i.e. maximum memory size for all BicycleLEDPOV hardware designs can't be more than 64MB)
+(i.e. maximum memory size for all BicycleLEDPOV hardware designs can't be more than 64KB)
 
 ===Command 11: Read a stream of bytes from memory===
 
