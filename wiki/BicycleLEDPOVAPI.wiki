@@ -32,7 +32,7 @@ Output value(s):
 
 Input value(s):
 || *byte number* || *content* ||
-|| 02 || 02 ||
+|| 01 || 02 ||
 
 Output value(s):
 || *byte number* || *content* ||
