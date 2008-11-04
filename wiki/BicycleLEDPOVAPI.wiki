@@ -44,13 +44,13 @@ Output value(s):
 || 06 || byte 02 for number of radial lines. ||
 || 07 || byte 01 for number of LEDs per radial line. ||
 || 08 || byte 02 for number of LEDs per radial line. ||
-|| 09 || byte 01 for color properties.* ||
-|| 10 || byte 02 for color properties.* ||
-|| 11 || byte 03 for color properties.* ||
-|| 12 || byte 04 for color properties.* ||
+|| 09 || byte 01 for color properties.' ||
+|| 10 || byte 02 for color properties.' ||
+|| 11 || byte 03 for color properties.' ||
+|| 12 || byte 04 for color properties.' ||
 || 13 || byte 01 for number of independent LED-strips. ||
 
-*
+'
 || 09 || byte 01 for number of supported monochrome shades (grayscale design) in bits. ||
 || 10 || byte 02 for number of supported red shades (tricolor design) in bits. ||
 || 11 || byte 03 for number of supported green shades (tricolor design) in bits. ||
