@@ -262,7 +262,14 @@ TASK(PCLink_Task)
 			/* First byte of this command, fill the NumberDataBytes */			
 			if (ucNumberDataBytes < 1)
 			{
-				ucNumberDataBytes = 1;
+				ucNumberDataBytes = 1 + sizeof IdentificationString;
+			}
+
+			/* Send the lenght of the next string */
+			if (Tx_Buffer.Elements < BUFF_STATICSIZE && ucNumberDataBytes == (1 + sizeof IdentificationString))
+			{
+				Buffer_StoreElement (&Tx_Buffer, sizeof IdentificationString);
+				ucNumberDataBytes--;
 				ucCounter = 0; /* Initialize the counter, that is used for index the Identification string */
 			}			
 			
@@ -270,19 +277,16 @@ TASK(PCLink_Task)
 			while (Tx_Buffer.Elements < BUFF_STATICSIZE && IdentificationString [ucCounter] != NULL)
 			{
 				Buffer_StoreElement (&Tx_Buffer, IdentificationString [ucCounter++]);
+				ucNumberDataBytes--;
+				ucFlagProcessingCommand = true;
 			}
 
 			/* If there is available space on Tx_Buffer and string ends, send NULL char and finish the command */
 			if (Tx_Buffer.Elements < BUFF_STATICSIZE && IdentificationString [ucCounter] == NULL)
 			{
 				Buffer_StoreElement (&Tx_Buffer, NULL);
-				ucFlagProcessingCommand = false;
 				ucNumberDataBytes = 0;
-			}
-
-			else
-			{
-				ucFlagProcessingCommand = true;
+				ucFlagProcessingCommand = false;
 			}
 			break;
 				
