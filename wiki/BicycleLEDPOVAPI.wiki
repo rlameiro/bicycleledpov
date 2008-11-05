@@ -44,18 +44,18 @@ Output value(s):
 || 06 || byte 02 for number of radial lines. ||
 || 07 || byte 01 for number of LEDs per radial line. ||
 || 08 || byte 02 for number of LEDs per radial line. ||
-|| 09 || byte 01 for color properties.' (see below) ||
-|| 10 || byte 02 for color properties.' (see below) ||
-|| 11 || byte 03 for color properties.' (see below) ||
-|| 12 || byte 04 for color properties.' (see below) ||
+|| 09 || byte 01 for color depth properties.' (see below) ||
+|| 10 || byte 02 for color depth properties.' (see below) ||
+|| 11 || byte 03 for color depth properties.' (see below) ||
+|| 12 || byte 04 for color depth properties.' (see below) ||
 || 13 || byte 01 for number of independent LED-strips. ||
 
 '
 || byte number || content ||
-|| 09 || byte 01 for number of supported monochrome shades (grayscale design) in bits. ||
-|| 10 || byte 02 for number of supported red shades (tricolor design) in bits. ||
-|| 11 || byte 03 for number of supported green shades (tricolor design) in bits. ||
-|| 12 || byte 04 for number of supported blue shades (tricolor design) in bits. ||
+|| 09 || byte 01 for depth of supported monochrome shades (grayscale design) in bits. ||
+|| 10 || byte 02 for depth of supported red shades (tricolor design) in bits. ||
+|| 11 || byte 03 for depth of supported green shades (tricolor design) in bits. ||
+|| 12 || byte 04 for depth of supported blue shades (tricolor design) in bits. ||
 
 ==Memory==
 ===Command 10: Clear all memory===
