@@ -79,10 +79,10 @@ Input value(s):
 || 01 || 11 ||
 || 02 || byte 01 for number of bytes of the stream to read. ||
 || 03 || byte 02 for number of bytes of the stream to read. ||
-|| 04 || byte 01 for address of memory, of the beginning of the stream to read. ||
-|| 05 || byte 02 for address of memory, of the beginning of the stream to read. ||
-|| 06 || byte 03 for address of memory, of the beginning of the stream to read. ||
-|| 07 || byte 04 for address of memory, of the beginning of the stream to read. ||
+|| 04 || byte 01 for address of memory for the beginning of the stream to read. ||
+|| 05 || byte 02 for address of memory for the beginning of the stream to read. ||
+|| 06 || byte 03 for address of memory for the beginning of the stream to read. ||
+|| 07 || byte 04 for address of memory for the beginning of the stream to read. ||
 
 Output value(s):
 || *byte number* || *content* ||
@@ -98,10 +98,10 @@ Input value(s):
 || 01 || 12 ||
 || 02 || byte 01 for length of stream to write. ||
 || 03 || byte 02 for length of stream to write. ||
-|| 04 || byte 01 for address of memory, of the beginning of the stream to write. ||
-|| 05 || byte 02 for address of memory, of the beginning of the stream to write. ||
-|| 06 || byte 03 for address of memory, of the beginning of the stream to write. ||
-|| 07 || byte 04 for address of memory, of the beginning of the stream to write. ||
+|| 04 || byte 01 for address of memory for the beginning of the stream to write. ||
+|| 05 || byte 02 for address of memory for the beginning of the stream to write. ||
+|| 06 || byte 03 for address of memory for the beginning of the stream to write. ||
+|| 07 || byte 04 for address of memory for the beginning of the stream to write. ||
 || 08 and following bytes || byte of stream to write. ||
 
 Output value(s):
