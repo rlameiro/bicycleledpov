@@ -107,5 +107,5 @@ Input value(s):
 Output value(s):
 || *byte number* || *content* ||
 || 01 || number of the next bytes. ||
-|| 02 || byte 01 for length of written bytes. ||
-|| 03 || byte 02 for length of written bytes. ||
+|| 02 || byte 01 for number of written bytes. ||
+|| 03 || byte 02 for number of written bytes. ||
