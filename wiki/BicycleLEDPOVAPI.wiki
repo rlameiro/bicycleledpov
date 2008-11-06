@@ -8,49 +8,50 @@ The API have two parts, the “base” one should always be implemented on each 
 ===Command not implemented===
 
 Input value(s):
-|| *byte number* || *content* ||
+|| *byte number* || *value* ||
 || 01 || xx ||
 
 Output value(s):
-|| *byte number* || *content* ||
-|| 01 || length of the next string in bytes. ||
-|| 02 and following bytes || "command not implemented". The string must be terminated with a null char. ||
+|| *byte number* || *value* || *description* ||
+|| 01 || 24 || Length of the next string in bytes. ||
+|| 02 and following bytes || String: "command not implemented". || The string must be terminated with a null char. ||
 
 ==Hardware==
 ===Command 1: Get identification string===
 
 Input value(s):
-|| *byte number* || *content* ||
+|| *byte number* || *value* ||
 || 01 || 01 ||
 
 Output value(s):
-|| *byte number* || *content* ||
-|| 01 || length of the next string in bytes. ||
-|| 02 and following bytes || Example string: "Bicycle LED POV r1.1 fw1.0 20081022". The string must be terminated with a null char. ||
+|| *byte number* || *value* || *description* ||
+|| 01 || 35 || Length of the next string in bytes. 35 is the value of the next example string. ||
+|| 02 and following bytes || Example string: "Bicycle LED POV r1.1 fw1.0 20081022". || This is an example string, and it must be terminated with a null char. ||
 
 ===Command 2: Get hardware properties===
 
 Input value(s):
-|| *byte number* || *content* ||
+|| *byte number* || *value* ||
 || 01 || 02 ||
 
 Output value(s):
-|| *byte number* || *content* ||
-|| 01 || number of the next bytes. ||
-|| 02 || byte for API version. ||
-|| 03 || byte for extended API version. ||
-|| 04 || byte for firmware version. ||
-|| 05 || byte 01 for number of radial lines. ||
-|| 06 || byte 02 for number of radial lines. ||
-|| 07 || byte 01 for number of LEDs per radial line. ||
-|| 08 || byte 02 for number of LEDs per radial line. ||
-|| 09 || byte 01 for color depth properties.' (see below) ||
-|| 10 || byte 02 for color depth properties.' (see below) ||
-|| 11 || byte 03 for color depth properties.' (see below) ||
-|| 12 || byte 04 for color depth properties.' (see below) ||
-|| 13 || byte 01 for number of independent LED-strips. ||
+|| *byte number* || *value* || *description* ||
+|| 01 ||  14 || Number of the next bytes. ||
+|| 02 || Example: 16  || Byte for API version. ||
+|| 03 || Example: 16 || Byte for extended API version. ||
+|| 04 || Example: 16 || Byte for firmware version. ||
+|| 05 || Example: 0 || Byte 01 for memory size in kb. ||
+|| 06 || Example: 32 || Byte 02 for memory size in kb. In this example, memory have 32 kbytes. ||
+|| 07 || Example: 1 || byte 01 for number of radial lines. ||
+|| 08 || Example: 0 ||byte 02 for number of radial lines. In this example, 256 radial lines. ||
+|| 09 || Example: 0 || byte 01 for number of LEDs per radial line. In this example, 32 LED per radial line. ||
+|| 10 || Example: 32 || byte 02 for number of LEDs per radial line. ||
+|| 11 || Example:  || byte 01 for color depth properties.' (see below) ||
+|| 12 || byte 02 for color depth properties.' (see below) ||
+|| 13 || byte 03 for color depth properties.' (see below) ||
+|| 14 || byte 04 for color depth properties.' (see below) ||
+|| 15 || byte 01 for number of independent LED-strips. ||
 
-'
 || byte number || content ||
 || 09 || byte 01 for depth of supported monochrome shades (grayscale design) in bits. ||
 || 10 || byte 02 for depth of supported red shades (tricolor design) in bits. ||
