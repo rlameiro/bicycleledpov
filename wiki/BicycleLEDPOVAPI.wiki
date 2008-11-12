@@ -2,7 +2,9 @@
 
 Connecting Bicycle LED POV hardware to PC using an USB cable, a new virtual serial port will appear on PC. Commands are sent to the virtual serial port to interact with Bicycle LED POV HaRdware.
 
-The API have two parts, the “base” one should always be implemented on each hardware and provides minimum functionality while the BicycleLEDPOVeXtendedAPI part may differs on each hardware and is not necessary to be implement.
+The API have two parts, the “base” one should always be implemented on each hardware and provides minimum functionality while the BiCycleLEDPOVExtendedAPI part may differs on each hardware and is not necessary to be implement.
+
+<wiki:toc max_depth="4" />
 
 =Base API=
 ===Command not implemented===
