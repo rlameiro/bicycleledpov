@@ -21,22 +21,22 @@ Output value(s):
 ==Hardware==
 ===Command 1: Get identification string===
 
-Input value(s):
+Input value:
 || *byte number* || *value* ||
 || 01 || 01 ||
 
-Output value(s):
+Output values:
 || *byte number* || *value* || *description* ||
 || 01 || 35 || Length of the next string in bytes. 35 is the value of the next example string. ||
 || 02 and following bytes || Example string: "Bicycle LED POV r1.1 fw1.0 20081022". || This is an example string, and it must be terminated with a null char. ||
 
 ===Command 2: Get hardware properties===
 
-Input value(s):
+Input value:
 || *byte number* || *value* ||
 || 01 || 02 ||
 
-Output value(s):
+Output values:
 || *byte number* || *value* || *description* ||
 || 01 ||  14 || Number of the next bytes. ||
 || 02 || Example: 16  || Byte for API version. ||
@@ -54,7 +54,7 @@ Output value(s):
 || 14 || Example: 0 || byte 04 for color depth properties (CDP).' (see below) ||
 || 15 || Example: 2 || byte 01 for number of independent LED-strips. ||
 
-CDP bytes:
+CDP bytes description:
 || byte number || content ||
 || 11 || byte 01 for depth of supported monochrome shades (grayscale design) in bits. ||
 || 12 || byte 02 for depth of supported red shades (tricolor design) in bits. ||
