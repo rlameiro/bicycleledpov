@@ -46,8 +46,8 @@ Output values:
 || 06 || Example: 32 || Byte 02 for memory size in kb. In this example, memory have 32 kbytes. ||
 || 07 || Example: 1 || byte 01 for number of radial lines. ||
 || 08 || Example: 0 ||byte 02 for number of radial lines. In this example, 256 radial lines. ||
-|| 09 || Example: 0 || byte 01 for number of LEDs per radial line. In this example, 32 LED per radial line. ||
-|| 10 || Example: 32 || byte 02 for number of LEDs per radial line. ||
+|| 09 || Example: 0 || byte 01 for number of LEDs per radial line. ||
+|| 10 || Example: 32 || byte 02 for number of LEDs per radial line. In this example, 32 LED per radial line. ||
 || 11 || Example: 1 || byte 01 for color depth properties (CDP).' (see below) ||
 || 12 || Example: 0 || byte 02 for color depth properties (CDP).' (see below) ||
 || 13 || Example: 0 || byte 03 for color depth properties (CDP).' (see below) ||
