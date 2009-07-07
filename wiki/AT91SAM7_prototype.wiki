@@ -1,0 +1,16 @@
+#summary One-sentence summary of this page.
+#labels Featured
+
+= Introduction =
+
+
+= Details =
+==ARM7 AT91SAM7==
+5,7€ 1 unit [http://pt.mouser.com/Search/ProductDetail.aspx?qs=sGAEpiMZZMvu0Nwh4cA1wUVlLgw9m2DPOAuN%2fkRafsE%3d AT91SAM7S128 on Mouser].
+
+Flash memory 128K; SRAM memory 32K; [http://atmel.com/dyn/products/product_card.asp?part_id=3523 link].
+
+==DataFlash memory==
+0,792€ 1 unit [http://pt.mouser.com/Search/ProductDetail.aspx?qs=sGAEpiMZZMtI%252bQ06EiAoGxJeM8oM5UapI7YP3jM0uYE%3d AT25DF041A on Mouser].
+
+500kBytes memory [http://www.atmel.com/dyn/products/product_card.asp?part_id=4113 link].
