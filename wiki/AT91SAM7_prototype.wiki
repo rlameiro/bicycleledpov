@@ -14,3 +14,21 @@ Flash memory 128K; SRAM memory 32K; [http://atmel.com/dyn/products/product_card.
 0,792€ 1 unit [http://pt.mouser.com/Search/ProductDetail.aspx?qs=sGAEpiMZZMtI%252bQ06EiAoGxJeM8oM5UapI7YP3jM0uYE%3d AT25DF041A on Mouser].
 
 500kBytes memory [http://www.atmel.com/dyn/products/product_card.asp?part_id=4113 link].
+
+==General components==
+Cristall 18.432MHZ 0,29€
+[http://pt.mouser.com/Search/ProductDetail.aspx?qs=sGAEpiMZZMtg8rPr%252bGIKJmkxQqIPZPL8TJGrQJFSwsU%3d on mouser].
+
+USB mini connector 0,309 €
+[http://pt.mouser.com/Search/ProductDetail.aspx?qs=sGAEpiMZZMtu1lVYwezud%252bAqjFRq6x6R on mouser].
+
+Sensor hall effect ??
+
+Linear Low Drop Out voltage regulator ??
+- We can use 3 AAA NiMh cells where we will get about 1,2*3 = 3,6 volts. We can use a LDO regulator which is cheap and will power on the ARM7 and DataFlash memory at about 3,3 volts.
+
+LED
+We may use 5mm discrete LED. We will control the current of the LED with a series resistor. Energy for the LED will come directly from the batteries.
+
+==PCB==
+We can buy the PCB at  [http://www.goldphoenixpcb.biz/quote2.php goldphoenixpcb].
