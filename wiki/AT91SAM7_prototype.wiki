@@ -20,6 +20,7 @@ For energy we can use 3 X AAA NiMh batteries. Both ARM7 and DataFlash memory run
 DataFlash memory should have FAT32 file system and for that we can use [http://elm-chan.org/fsw/ff/00index_e.html FatFs]. DataFlash memory can be found in many projects, we can just reuse the ones on the LUFA project - this projects implements an USB flash disk using an AVR 8 bits and a DataFlash memory.
 
 We should use Atmel USB drivers for having the system working as an USB flash disk.
+Atmel have an application note with title "[http://www.atmel.com/dyn/resources/prod_documents/doc6283.pdf USB Mass Storage Device Driver Implementation]" - the [http://www.atmel.com/dyn/resources/prod_documents/at91sam7x-ek.zip source code].
 
 Images should be stored on BMP files of 32x32 pixels, and then converted to black and white to be sent to the LED.
 
