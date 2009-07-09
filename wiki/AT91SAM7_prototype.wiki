@@ -1,8 +1,29 @@
 #summary One-sentence summary of this page.
 #labels Featured
 
-= Introduction =
+= The concept =
 
+We can have a Bicycle LED POV that when connected by USB to PC will appear as a USB flash disk. The user can then copy image files from computer to Bicycle LED POV just like if it is a USB flash disk.
+
+The images stored on Bicycle LED POV will then be displayed on LED suequencially, making the POV while the bicycle wheel runs.
+
+
+Hardware tecnhical explanation
+
+Thy system will use an ARM7(Atmel AT91SAM7S128) of 32 bits running at 60MHz. All this processing power will make possible the system behaves as an USB flash disk.
+
+The memory is an DataFlash memory of 500kBytes, which should be enough to hold at least 300 images of 32X32 pixels.
+
+For energy we can use 3 X AAA NiMh batteries. Both ARM7 and DataFlash memory runs at 3,3 volts, we can use an cheap LDO linear regulator to power the 3,3 volts. LED and his drivers can use directly the voltage of the batteries.
+
+
+Firmware tecnhical explanation
+
+DataFlash memory should have FAT32 file system and for that we can use ??TinyFS??. DataFlash memory can be found in many projects, we can just reuse the ones on the LUFA project - this projects implements an USB flash disk using an AVR 8 bits and a DataFlash memory.
+
+We should use Atmel USB drivers for having the system working as an USB flash disk.
+
+Images should be stored on BMP files of 32x32 pixels, and then converted to black and white to be sent to the LED.
 
 = Details =
 ==ARM7 AT91SAM7==
