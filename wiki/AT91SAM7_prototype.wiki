@@ -19,7 +19,7 @@ For energy we can use 3 X AAA NiMh batteries. Both ARM7 and DataFlash memory run
 
 Firmware tecnhical explanation
 
-DataFlash memory should have FAT32 file system and for that we can use ??TinyFS??. DataFlash memory can be found in many projects, we can just reuse the ones on the LUFA project - this projects implements an USB flash disk using an AVR 8 bits and a DataFlash memory.
+DataFlash memory should have FAT32 file system and for that we can use [http://elm-chan.org/fsw/ff/00index_e.html FatFs]. DataFlash memory can be found in many projects, we can just reuse the ones on the LUFA project - this projects implements an USB flash disk using an AVR 8 bits and a DataFlash memory.
 
 We should use Atmel USB drivers for having the system working as an USB flash disk.
 
