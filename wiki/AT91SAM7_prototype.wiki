@@ -24,29 +24,8 @@ Atmel have an application note with title "[http://www.atmel.com/dyn/resources/p
 
 Images should be stored on BMP files of 32x32 pixels, and then converted to black and white to be sent to the LED.
 
-= Details =
-==ARM7 AT91SAM7==
-5,7€ 1 unit [http://pt.mouser.com/Search/ProductDetail.aspx?qs=sGAEpiMZZMvu0Nwh4cA1wUVlLgw9m2DPOAuN%2fkRafsE%3d AT91SAM7S128 on Mouser].
 
-Flash memory 128K; SRAM memory 32K; [http://atmel.com/dyn/products/product_card.asp?part_id=3523 link].
-
-==DataFlash memory==
-0,792€ 1 unit [http://pt.mouser.com/Search/ProductDetail.aspx?qs=sGAEpiMZZMtI%252bQ06EiAoGxJeM8oM5UapI7YP3jM0uYE%3d AT25DF041A on Mouser].
-
-500kBytes memory [http://www.atmel.com/dyn/products/product_card.asp?part_id=4113 link].
-
-==General components==
-Cristall 18.432MHZ 0,29€
-[http://pt.mouser.com/Search/ProductDetail.aspx?qs=sGAEpiMZZMtg8rPr%252bGIKJmkxQqIPZPL8TJGrQJFSwsU%3d on mouser].
-
-USB mini connector 0,309 €
-[http://pt.mouser.com/Search/ProductDetail.aspx?qs=sGAEpiMZZMtu1lVYwezud%252bAqjFRq6x6R on mouser].
-
-Sensor hall effect ??
-
-Magnet 0,97€ on Digikey [http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=HE153-ND link]
-
-Linear Low Drop Out voltage regulator ??
+Linear Low Drop Out voltage regulator
 - We can use 3 AAA NiMh cells where we will get about 1,2*3 = 3,6 volts. We can use a LDO regulator which is cheap and will power on the ARM7 and DataFlash memory at about 3,3 volts.
 
 LED
@@ -54,3 +33,20 @@ We may use 5mm discrete LED. We will control the current of the LED with a serie
 
 ==PCB==
 We can buy the PCB at  [http://www.goldphoenixpcb.biz/quote2.php goldphoenixpcb].
+
+
+=Part list=
+
+TODO: update the list.
+
+|| *Reference* || *Value* || *Quantity* || *Unity price* ||
+||  || AT91SAM7S128 (ARM7 32bits 128Kbytes_flash 32KBytes_ram 64LQFP) || 1 || [http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=AT91SAM7S128AU001-ND digikey]; [http://pt.mouser.com/Search/ProductDetail.aspx?qs=sGAEpiMZZMvu0Nwh4cA1wUVlLgw9m2DPOAuN%2fkRafsE%3d mouser] ||
+||  || AT45DB011D (DataFlash 1MBit 8-SOIC || 1 || [http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=AT45DB011D-SH-B-ND digikey] ||
+||  || CRYSTAL 18.432MHZ 18PF HC49/US || 1 || [http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=535-9072-1-ND digikey] ||
+||  || 74VHC595 || 8 || [http://pt.farnell.com/1607849/semiconductors-integrated-circuits/product.us0?sku=texas-instruments-sn74hc595dr 0.29€] ||
+||  || A3213ELHLT-T || 1 || [http://pt.farnell.com/1457117/semiconductors-integrated-circuits/product.us0?sku=allegro-microsystems-a3213elhlt-t 0.83€] ||
+||  || Magnet || 1 || [[http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=HE153-ND digikey] ||
+||  || AT26DF081A-SU || 1 || [http://pt.farnell.com/1455015/semiconductors-integrated-circuits/product.us0?sku=atmel-at26df081a-su 1.42€] ||
+||  || Molex Ref: 675031020 || 1 || [http://uk.farnell.com/1125348/connectors/product.us0?sku=molex-675031020 0.76€] ||
+||  || AAA battery clip || ? ||  ||
+||  ||  ||  || Total price: 26,41€ ||
