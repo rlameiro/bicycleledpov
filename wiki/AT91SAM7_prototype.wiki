@@ -44,6 +44,8 @@ USB mini connector 0,309 €
 
 Sensor hall effect ??
 
+Magnet 0,97€ on Digikey [http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=HE153-ND link]
+
 Linear Low Drop Out voltage regulator ??
 - We can use 3 AAA NiMh cells where we will get about 1,2*3 = 3,6 volts. We can use a LDO regulator which is cheap and will power on the ARM7 and DataFlash memory at about 3,3 volts.
 
