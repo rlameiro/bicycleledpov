@@ -45,8 +45,7 @@ TODO: update the list.
 ||  || CRYSTAL 18.432MHZ 18PF HC49/US || 1 || [http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=535-9072-1-ND digikey] ||
 ||  || 74VHC595 || 8 || [http://pt.farnell.com/1607849/semiconductors-integrated-circuits/product.us0?sku=texas-instruments-sn74hc595dr 0.29€] ||
 ||  || A3213ELHLT-T || 1 || [http://pt.farnell.com/1457117/semiconductors-integrated-circuits/product.us0?sku=allegro-microsystems-a3213elhlt-t 0.83€] ||
-||  || Magnet || 1 || [[http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=HE153-ND digikey] ||
-||  || AT26DF081A-SU || 1 || [http://pt.farnell.com/1455015/semiconductors-integrated-circuits/product.us0?sku=atmel-at26df081a-su 1.42€] ||
+||  || Magnet || 1 || [http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=HE153-ND digikey] ||
 ||  || Molex Ref: 675031020 || 1 || [http://uk.farnell.com/1125348/connectors/product.us0?sku=molex-675031020 0.76€] ||
 ||  || AAA battery clip || ? ||  ||
 ||  ||  ||  || Total price: 26,41€ ||
