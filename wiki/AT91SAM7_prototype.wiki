@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Prototype based on Atmel ARM7 AT91SAM7
 #labels Featured
 
 = The concept =
@@ -43,6 +43,7 @@ TODO: update the list.
 ||  || AT91SAM7S128 (ARM7 32bits 128Kbytes_flash 32KBytes_ram 64LQFP) || 1 || [http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=AT91SAM7S128AU001-ND digikey]; [http://pt.mouser.com/Search/ProductDetail.aspx?qs=sGAEpiMZZMvu0Nwh4cA1wUVlLgw9m2DPOAuN%2fkRafsE%3d mouser] ||
 ||  || AT45DB011D (DataFlash 1MBit 8-SOIC || 1 || [http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=AT45DB011D-SH-B-ND digikey] ||
 ||  || CRYSTAL 18.432MHZ 18PF HC49/US || 1 || [http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=535-9072-1-ND digikey] ||
+|| || USB - mini B || 1 || [http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=H2959CT-ND digikey] ||
 ||  || 74VHC595 || 8 || [http://pt.farnell.com/1607849/semiconductors-integrated-circuits/product.us0?sku=texas-instruments-sn74hc595dr 0.29€] ||
 ||  || A3213ELHLT-T || 1 || [http://pt.farnell.com/1457117/semiconductors-integrated-circuits/product.us0?sku=allegro-microsystems-a3213elhlt-t 0.83€] ||
 ||  || Magnet || 1 || [http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=HE153-ND digikey] ||
