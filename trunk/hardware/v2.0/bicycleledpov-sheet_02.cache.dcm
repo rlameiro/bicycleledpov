@@ -1,0 +1,17 @@
+EESchema-DOCLIB  Version 2.0  Dom 16 Ago 2009 13:20:51 WEST
+#
+$CMP 74HC595
+D 8 bits serial in // out Shift Register 3 State Out
+K HCMOS SR 3State
+$ENDCMP
+#
+$CMP LED
+K LED
+$ENDCMP
+#
+$CMP R
+D Resistance
+K R DEV
+$ENDCMP
+#
+#End Doc Library
