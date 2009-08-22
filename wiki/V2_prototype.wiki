@@ -1,4 +1,4 @@
-#summary Prototype based on Atmel ARM7 AT91SAM7
+#summary Prototype V2.
 #labels Featured
 
 = The concept =
@@ -9,31 +9,30 @@ The images stored on Bicycle LED POV will then be displayed on LED sequentially,
 
 = Hardware technical explanation =
 
-Thy system will use an ARM7(Atmel AT91SAM7S128) of 32 bits running at 60MHz. All this processing power will make possible the system behaves as an USB flash disk.
+The system will use an ARM Cortex-M3 of 32 bits running at 100MHz (Phillips NXP LPC1758) . All this processing power will make possible the system behaves as an USB flash disk.
 
-The memory is an DataFlash memory of 500kBytes, which should be enough to hold at least 300 images of 32X32 pixels.
+The memory is an DataFlash memory of 500kBytes, which should be enough to hold at least 250 images of 32X256 pixels.
 
-For energy we can use 3 X AAA NiMh batteries. Both ARM7 and DataFlash memory runs at 3,3 volts, we can use an cheap LDO linear regulator to power the 3,3 volts. LED and his drivers can use directly the voltage of the batteries.
+For energy we can use 3 X AAA NiMh batteries. Both ARM MCU and DataFlash memory runs at 3,3 volts, we can use an cheap LDO linear regulator to power the 3,3 volts. LED and his drivers can use directly the voltage of the batteries.
 
 = Firmware tecnhical explanation =
 
 DataFlash memory should have FAT32 file system and for that we can use [http://elm-chan.org/fsw/ff/00index_e.html FatFs]. DataFlash memory can be found in many projects, we can just reuse the ones on the LUFA project - this projects implements an USB flash disk using an AVR 8 bits and a DataFlash memory.
 
-We should use Atmel USB drivers for having the system working as an USB flash disk.
-Atmel have an application note with title "[http://www.atmel.com/dyn/resources/prod_documents/doc6283.pdf USB Mass Storage Device Driver Implementation]" - the [http://www.atmel.com/dyn/resources/prod_documents/at91sam7x-ek.zip source code].
+We should use NXP example code "LPC17xxSampleSoftware.001/keil/USBMem" USB drivers for having the system working as an USB flash disk.
 
-Images should be stored on BMP files of 32x32 pixels, and then converted to black and white to be sent to the LED.
+Images should be stored on BMP files of 32x256 pixels, and then converted to black and white to be sent to the LED.
 
-
-Linear Low Drop Out voltage regulator
+*Linear Low Drop Out voltage regulator*
 - We can use 3 AAA NiMh cells where we will get about 1,2*3 = 3,6 volts. We can use a LDO regulator which is cheap and will power on the ARM7 and DataFlash memory at about 3,3 volts.
 
-LED
+*LED*
 We may use 5mm discrete LED. We will control the current of the LED with a series resistor. Energy for the LED will come directly from the batteries.
 
 ==PCB==
-We can buy the PCB at  [http://www.goldphoenixpcb.biz/quote2.php goldphoenixpcb].
+For a prototype we can use [http://code.google.com/p/cortopendous/ Cortopendous Open Hardware boards].
 
+After we design our own PCB, we can buy it at  [http://www.goldphoenixpcb.biz/quote2.php goldphoenixpcb].
 
 =Part list=
 
