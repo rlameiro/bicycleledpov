@@ -1,0 +1,47 @@
+#summary Prototype V2.
+#labels Featured
+
+= The concept =
+
+We can have a Bicycle LED POV that uses a micro SDCard to store the image files. User will be able to quickly change the image files by simple copy them to micro SDCard, using a PC.
+
+The images stored on micro SDCard will then be displayed on LED sequentially, making the POV while the bicycle wheel runs.
+
+= Hardware technical explanation =
+
+The system will use an ARM Cortex-M3 of 32 bits running at 50MHz (Phillips NXP LPC1343) . All this processing power will make possible the system to read and process JPEG and BMP files from the micro SDCard.
+
+For energy we can use one 3.7V 2000mAh lithium battery. The system runs at 3,3 volts, we can use an cheap LDO linear regulator to power the 3,3 volts. LED and his drivers can use directly the voltage of the batteries.
+
+= Firmware tecnhical explanation =
+
+Micro SDCard should have FAT32 file system and for that we can use [http://elm-chan.org/fsw/ff/00index_e.html FatFs]. Casainho already used this SDCard and FatFs [http://code.google.com/p/casainho-projects/wiki/SdCardBathroomScale on this project].
+
+Images should be stored on JPEG and/or BMP files of 32x256 pixels, and then converted to black and white to be sent to the LED.
+
+*Linear Low Drop Out voltage regulator*
+- We can use 3 AAA NiMh cells where we will get about 1,2*3 = 3,6 volts. We can use a LDO regulator which is cheap and will power the system to 3,3 volts.
+
+*LED*
+We may use 5mm discrete LED. We will control the current of the LED with a series resistor. Energy for the LED will come directly from the batteries.
+
+
+TODO: UPDATE NEXT
+
+==PCB==
+For a prototype we can use [http://code.google.com/p/cortopendous/ Cortopendous DIP Open Hardware board].
+
+After we design our own PCB, we can buy it at  [http://www.goldphoenixpcb.biz/quote2.php goldphoenixpcb].
+
+=Part list=
+
+TODO: update the list.
+
+|| *Reference* || *Value* || *Quantity* || *Unity price* ||
+||  || LPC1756 || 1 || [http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=568-4790-ND digikey] ||
+||  || AT45DB011D (DataFlash 1MBit 8-SOIC || 1 || [http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=AT45DB011D-SH-B-ND digikey] ||
+||  || CRYSTAL 12MHZ || 1 || [http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=535-9067-2-ND digikey] ||
+|| || USB - mini B || 1 || [http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=H2959CT-ND digikey] ||
+||  || 74VHC595 || 4 || [http://pt.farnell.com/1607849/semiconductors-integrated-circuits/product.us0?sku=texas-instruments-sn74hc595dr 0.29€] ||
+||  || A3213ELHLT-T || 1 || [http://pt.farnell.com/1457117/semiconductors-integrated-circuits/product.us0?sku=allegro-microsystems-a3213elhlt-t 0.83€] ||
+||  || Magnet || 1 || [http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=HE153-ND digikey] ||
