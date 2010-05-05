@@ -1,0 +1,534 @@
+EESchema Schematic File Version 2  date Qua 05 Mai 2010 11:45:33 WEST
+LIBS:device
+LIBS:at91sam7sxxx-au
+LIBS:opendous
+LIBS:conn
+LIBS:power
+LIBS:Bicycle_LED_POV-V2-cache
+EELAYER 24  0
+EELAYER END
+$Descr A4 11700 8267
+Sheet 1 1
+Title "Bicycle LED POV"
+Date "4 may 2010"
+Rev "V2"
+Comp "Hardware BOX"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L AT91SAM7S512/256/128/64/321-AU IC?
+U 1 1 4BE14C5A
+P 5500 3700
+F 0 "IC?" H 4500 6000 50  0000 L BNN
+F 1 "AT91SAM7S512/256/128/64/321-AU" H 4500 1300 50  0000 L BNN
+F 2 "at91sam7sxxx-au-LQFP64" H 5500 3850 50  0001 C CNN
+	1    5500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4BE14C59
+P 4150 6000
+F 0 "#PWR?" H 4150 6000 30  0001 C CNN
+F 1 "GND" H 4150 5930 30  0001 C CNN
+	1    4150 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_MINI C?
+U 1 1 4BE14C58
+P 3900 5550
+F 0 "C?" V 3850 5590 30  0000 C CNN
+F 1 "100nF" V 3950 5620 25  0000 C CNN
+	1    3900 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4BE14C57
+P 3900 5750
+F 0 "#PWR?" H 3900 5750 30  0001 C CNN
+F 1 "GND" H 3900 5680 30  0001 C CNN
+	1    3900 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4BE14C56
+P 3700 5750
+F 0 "#PWR?" H 3700 5750 30  0001 C CNN
+F 1 "GND" H 3700 5680 30  0001 C CNN
+	1    3700 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_MINI C?
+U 1 1 4BE14C55
+P 3700 5550
+F 0 "C?" V 3650 5590 30  0000 C CNN
+F 1 "100nF" V 3750 5620 25  0000 C CNN
+	1    3700 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L C_MINI C?
+U 1 1 4BE14C54
+P 3500 5550
+F 0 "C?" V 3450 5590 30  0000 C CNN
+F 1 "100nF" V 3550 5620 25  0000 C CNN
+	1    3500 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4BE14C53
+P 3500 5750
+F 0 "#PWR?" H 3500 5750 30  0001 C CNN
+F 1 "GND" H 3500 5680 30  0001 C CNN
+	1    3500 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4BE14C52
+P 2900 5750
+F 0 "#PWR?" H 2900 5750 30  0001 C CNN
+F 1 "GND" H 2900 5680 30  0001 C CNN
+	1    2900 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_MINI C?
+U 1 1 4BE14C51
+P 2900 5550
+F 0 "C?" V 2850 5590 30  0000 C CNN
+F 1 "1nF" V 2950 5620 25  0000 C CNN
+	1    2900 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L C_MINI C?
+U 1 1 4BE14C50
+P 3100 5550
+F 0 "C?" V 3050 5590 30  0000 C CNN
+F 1 "2.2uF" V 3150 5620 25  0000 C CNN
+	1    3100 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4BE14C4F
+P 3100 5750
+F 0 "#PWR?" H 3100 5750 30  0001 C CNN
+F 1 "GND" H 3100 5680 30  0001 C CNN
+	1    3100 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4BE14C4E
+P 3300 5750
+F 0 "#PWR?" H 3300 5750 30  0001 C CNN
+F 1 "GND" H 3300 5680 30  0001 C CNN
+	1    3300 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_MINI C?
+U 1 1 4BE14C4D
+P 3300 5550
+F 0 "C?" V 3250 5590 30  0000 C CNN
+F 1 "100nF" V 3350 5620 25  0000 C CNN
+	1    3300 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L C_MINI C?
+U 1 1 4BE14C4C
+P 3050 4400
+F 0 "C?" V 3000 4440 30  0000 C CNN
+F 1 "100nF" V 3100 4470 25  0000 C CNN
+	1    3050 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4BE14C4B
+P 3050 4600
+F 0 "#PWR?" H 3050 4600 30  0001 C CNN
+F 1 "GND" H 3050 4530 30  0001 C CNN
+	1    3050 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4BE14C4A
+P 2850 4600
+F 0 "#PWR?" H 2850 4600 30  0001 C CNN
+F 1 "GND" H 2850 4530 30  0001 C CNN
+	1    2850 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_MINI C?
+U 1 1 4BE14C49
+P 2850 4400
+F 0 "C?" V 2800 4440 30  0000 C CNN
+F 1 "2.2uF" V 2900 4470 25  0000 C CNN
+	1    2850 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L C_MINI C?
+U 1 1 4BE14C48
+P 2650 4400
+F 0 "C?" V 2600 4440 30  0000 C CNN
+F 1 "100nF" V 2700 4470 25  0000 C CNN
+	1    2650 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4BE14C47
+P 2650 4600
+F 0 "#PWR?" H 2650 4600 30  0001 C CNN
+F 1 "GND" H 2650 4530 30  0001 C CNN
+	1    2650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4BE14C46
+P 3250 4600
+F 0 "#PWR?" H 3250 4600 30  0001 C CNN
+F 1 "GND" H 3250 4530 30  0001 C CNN
+	1    3250 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_MINI C?
+U 1 1 4BE14C45
+P 3250 4400
+F 0 "C?" V 3200 4440 30  0000 C CNN
+F 1 "100nF" V 3300 4470 25  0000 C CNN
+	1    3250 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L C_MINI C?
+U 1 1 4BE14C44
+P 3450 4400
+F 0 "C?" V 3400 4440 30  0000 C CNN
+F 1 "100nF" V 3500 4470 25  0000 C CNN
+	1    3450 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4BE14C43
+P 3450 4600
+F 0 "#PWR?" H 3450 4600 30  0001 C CNN
+F 1 "GND" H 3450 4530 30  0001 C CNN
+	1    3450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4BE14C42
+P 3650 4600
+F 0 "#PWR?" H 3650 4600 30  0001 C CNN
+F 1 "GND" H 3650 4530 30  0001 C CNN
+	1    3650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_MINI C?
+U 1 1 4BE14C41
+P 3650 4400
+F 0 "C?" V 3600 4440 30  0000 C CNN
+F 1 "100nF" V 3700 4470 25  0000 C CNN
+	1    3650 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L R_MINI R?
+U 1 1 4BE14C40
+P 3950 3800
+F 0 "R?" H 3880 3850 25  0000 C CNN
+F 1 "1K5" H 4020 3850 20  0000 C CNN
+	1    3950 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_MINI C?
+U 1 1 4BE14C3F
+P 3600 3800
+F 0 "C?" V 3550 3840 30  0000 C CNN
+F 1 "10nF" V 3650 3870 25  0000 C CNN
+	1    3600 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4BE14C3E
+P 3250 3850
+F 0 "#PWR?" H 3250 3850 30  0001 C CNN
+F 1 "GND" H 3250 3780 30  0001 C CNN
+	1    3250 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CRYSTAL_Mini X?
+U 1 1 4BE14C3D
+P 3900 3250
+F 0 "X?" H 3900 3150 35  0000 C CNN
+F 1 "18.432 MHz" H 3900 3350 25  0000 C CNN
+	1    3900 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_MINI C?
+U 1 1 4BE14C3C
+P 3650 3450
+F 0 "C?" V 3600 3490 30  0000 C CNN
+F 1 "10pF" V 3700 3520 25  0000 C CNN
+	1    3650 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_MINI C?
+U 1 1 4BE14C3B
+P 3650 3050
+F 0 "C?" V 3600 3090 30  0000 C CNN
+F 1 "10pF" V 3700 3120 25  0000 C CNN
+	1    3650 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4BE14C3A
+P 3250 3400
+F 0 "#PWR?" H 3250 3400 30  0001 C CNN
+F 1 "GND" H 3250 3330 30  0001 C CNN
+	1    3250 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3250 3250 3400
+Wire Wire Line
+	3400 3050 3550 3050
+Wire Wire Line
+	3400 3250 3400 3050
+Wire Wire Line
+	3400 3450 3400 3250
+Wire Wire Line
+	3550 3450 3400 3450
+Wire Wire Line
+	4200 3450 3750 3450
+Wire Wire Line
+	4200 3400 4200 3450
+Wire Wire Line
+	4300 3400 4200 3400
+Connection ~ 4150 3700
+Wire Wire Line
+	4300 3700 4150 3700
+Wire Wire Line
+	3850 3800 3700 3800
+Connection ~ 4150 4000
+Wire Wire Line
+	2850 4000 2850 4300
+Wire Wire Line
+	3250 4150 3250 4300
+Wire Wire Line
+	3950 4150 3250 4150
+Wire Wire Line
+	3950 4400 3950 4150
+Wire Wire Line
+	4150 4400 3950 4400
+Wire Wire Line
+	4300 4400 4150 4400
+Connection ~ 4150 4600
+Wire Wire Line
+	3650 4250 3650 4300
+Wire Wire Line
+	3850 4250 3650 4250
+Wire Wire Line
+	3850 4600 3850 4250
+Wire Wire Line
+	4150 4600 3850 4600
+Wire Wire Line
+	4300 4600 4150 4600
+Connection ~ 4150 4400
+Wire Wire Line
+	4150 4500 4150 4600
+Wire Wire Line
+	4150 4400 4150 4500
+Wire Wire Line
+	4150 4200 4150 4400
+Wire Wire Line
+	4150 4000 4150 4200
+Wire Wire Line
+	3300 5000 3300 5450
+Wire Wire Line
+	4150 5000 3300 5000
+Wire Wire Line
+	4300 5000 4150 5000
+Wire Wire Line
+	3500 5650 3500 5750
+Wire Wire Line
+	3700 5300 3700 5450
+Wire Wire Line
+	4150 5300 3700 5300
+Wire Wire Line
+	4300 5300 4150 5300
+Connection ~ 4150 5400
+Connection ~ 4150 5200
+Wire Wire Line
+	4150 5000 4150 4800
+Wire Wire Line
+	4150 5200 4150 5000
+Wire Wire Line
+	4150 5300 4150 5200
+Wire Wire Line
+	4150 5400 4150 5300
+Connection ~ 4150 5800
+Wire Wire Line
+	4150 5800 4300 5800
+Wire Wire Line
+	4150 5900 4150 6000
+Wire Wire Line
+	4150 5800 4150 5900
+Wire Wire Line
+	4150 5700 4150 5800
+Wire Wire Line
+	4150 5600 4150 5700
+Wire Wire Line
+	4300 5600 4150 5600
+Wire Wire Line
+	4300 5700 4150 5700
+Connection ~ 4150 5700
+Wire Wire Line
+	4150 5900 4300 5900
+Connection ~ 4150 5900
+Connection ~ 4150 5300
+Connection ~ 4150 5000
+Wire Wire Line
+	4150 5400 4300 5400
+Wire Wire Line
+	3900 5400 4150 5400
+Wire Wire Line
+	3900 5450 3900 5400
+Wire Wire Line
+	3900 5650 3900 5750
+Wire Wire Line
+	3700 5650 3700 5750
+Wire Wire Line
+	4150 5200 4300 5200
+Wire Wire Line
+	3500 5200 4150 5200
+Wire Wire Line
+	3500 5450 3500 5200
+Wire Wire Line
+	3100 5650 3100 5750
+Wire Wire Line
+	3300 5650 3300 5750
+Wire Wire Line
+	2900 5650 2900 5750
+Wire Wire Line
+	3100 4800 3100 5450
+Connection ~ 4150 4800
+Wire Wire Line
+	4150 4800 4300 4800
+Wire Wire Line
+	3100 4800 4150 4800
+Wire Wire Line
+	2900 4800 3100 4800
+Wire Wire Line
+	2900 5450 2900 4800
+Connection ~ 3100 4800
+Connection ~ 4150 4500
+Connection ~ 4150 4200
+Wire Wire Line
+	2650 4500 2650 4600
+Wire Wire Line
+	3050 4500 3050 4600
+Wire Wire Line
+	2850 4500 2850 4600
+Wire Wire Line
+	3450 4500 3450 4600
+Wire Wire Line
+	3650 4500 3650 4600
+Wire Wire Line
+	3250 4500 3250 4600
+Wire Wire Line
+	4150 4500 4300 4500
+Wire Wire Line
+	3900 4500 4150 4500
+Wire Wire Line
+	3900 4200 3900 4500
+Wire Wire Line
+	3450 4200 3900 4200
+Wire Wire Line
+	3450 4300 3450 4200
+Wire Wire Line
+	4150 4200 4300 4200
+Wire Wire Line
+	4000 4200 4150 4200
+Wire Wire Line
+	4000 4100 4000 4200
+Wire Wire Line
+	3050 4100 4000 4100
+Wire Wire Line
+	3050 4300 3050 4100
+Wire Wire Line
+	4150 4000 4300 4000
+Wire Wire Line
+	2850 4000 4150 4000
+Wire Wire Line
+	2650 4000 2850 4000
+Wire Wire Line
+	2650 4300 2650 4000
+Connection ~ 2850 4000
+Wire Wire Line
+	4150 3800 4050 3800
+Wire Wire Line
+	4150 3700 4150 3800
+Wire Wire Line
+	4150 3600 4150 3700
+Wire Wire Line
+	3850 3600 4150 3600
+Wire Wire Line
+	3400 3800 3500 3800
+Wire Wire Line
+	3400 3700 3400 3800
+Wire Wire Line
+	3400 3600 3400 3700
+Wire Wire Line
+	3650 3600 3400 3600
+Wire Wire Line
+	3250 3700 3250 3850
+Wire Wire Line
+	3400 3700 3250 3700
+Connection ~ 3400 3700
+Wire Wire Line
+	4200 3200 4300 3200
+Wire Wire Line
+	4200 3050 4200 3200
+Wire Wire Line
+	3750 3050 4200 3050
+Wire Wire Line
+	3400 3250 3250 3250
+Connection ~ 3400 3250
+$Comp
+L C_MINI C?
+U 1 1 4BE14C39
+P 3750 3600
+F 0 "C?" V 3700 3640 30  0000 C CNN
+F 1 "1nF" V 3800 3670 25  0000 C CNN
+	1    3750 3600
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
