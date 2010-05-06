@@ -1,4 +1,4 @@
-update=Qua 05 Mai 2010 11:09:26 WEST
+update=Qui 06 Mai 2010 23:00:57 WEST
 last_client=eeschema
 [general]
 version=1
@@ -41,3 +41,4 @@ LibName2=at91sam7sxxx-au
 LibName3=opendous
 LibName4=conn
 LibName5=power
+LibName6=kicad_libs/74HC595
