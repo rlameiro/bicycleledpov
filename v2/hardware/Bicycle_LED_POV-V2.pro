@@ -1,10 +1,10 @@
-update=Qui 06 Mai 2010 23:00:57 WEST
+update=Sex 07 Mai 2010 16:30:30 WEST
 last_client=eeschema
 [general]
 version=1
 [eeschema]
 version=1
-LibDir=/home/cas/Documentos/bicycle_led_pov/schematic_v2/kicad_libs
+LibDir=./kicad_libs
 NetFmt=1
 HPGLSpd=20
 HPGLDm=15
@@ -36,9 +36,10 @@ SimCmd=
 UseNetN=0
 LabSize=60
 [eeschema/libraries]
-LibName1=device
-LibName2=at91sam7sxxx-au
-LibName3=opendous
-LibName4=conn
-LibName5=power
-LibName6=kicad_libs/74HC595
+LibName1=kicad_libs/switch_FSM2JSMA
+LibName2=device
+LibName3=at91sam7sxxx-au
+LibName4=opendous
+LibName5=conn
+LibName6=power
+LibName7=kicad_libs/74HC595
