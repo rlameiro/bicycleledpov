@@ -1,0 +1,44 @@
+EESchema-DOCLIB  Version 2.0  Date: 09-05-2010 4:56:22
+#
+$CMP 2N2002K
+D 2N7002K
+K NXP MOSFET-N Logic 60V 340mA SOT23
+F X:/Dropbox/Hardware_Box/componentes/NXP/DS_2N7002K_NXP_MOSFET-N_Logic_60V_340mA SOT23.pdf
+$ENDCMP
+#
+$CMP BC237
+F transistors/bipolar/bc237.pdf
+$ENDCMP
+#
+$CMP BC307
+F transistors/bipolar/bc307.pdf
+$ENDCMP
+#
+$CMP BSH207
+D BSH207 - SOT457
+F X:/Dropbox/Hardware_Box/componentes/NXP/DS_BSH207_NXP_MOSFET P_12V_1A52_SOT457_ Rds120.pdf
+$ENDCMP
+#
+$CMP BSH207-SOT457
+D BSH207
+F X:/Dropbox/Hardware_Box/componentes/NXP/DS_BSH207_NXP_MOSFET P_12V_1A52_SOT457_ Rds120.pdf
+$ENDCMP
+#
+$CMP MAT02
+F transistors/bipolar/bc237.pdf
+$ENDCMP
+#
+$CMP MOSN-SO8
+D BSH207 - SOT457
+F X:/Dropbox/Hardware_Box/componentes/NXP/DS_BSH207_NXP_MOSFET P_12V_1A52_SOT457_ Rds120.pdf
+$ENDCMP
+#
+$CMP MPSA42
+F transistors/bipolar/MPSA42.pdf
+$ENDCMP
+#
+$CMP MPSA92
+F transistors/bipolar/mpsa92.pdf
+$ENDCMP
+#
+#End Doc Library
