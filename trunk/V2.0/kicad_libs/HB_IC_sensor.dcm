@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0  Date: 09/05/2010 17:14:43
+#
+$CMP AH173
+D AH173
+K Hall Effect Sensor
+F X:/Dropbox/Hardware_Box/componentes/Diodes/DS_AH173_INTERNAL_PULL-UP_HALL_EFFECT_LATCH_FOR_HIGH_TEMPERATURE.pdf
+$ENDCMP
+#
+#End Doc Library

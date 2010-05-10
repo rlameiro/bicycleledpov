@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0  Date: 09/05/2010 10:44:31
+#
+$CMP FAN2502-XX
+D FAN2502-xx
+K LDO 3.3V 150mA
+F X:/Dropbox/Hardware_Box/componentes/Fairchild/DS_FAN2502_Fairchild_150_mA_CMOS LDO.pdf
+$ENDCMP
+#
+#End Doc Library
