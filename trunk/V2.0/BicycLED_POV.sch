@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 09/05/2010 18:20:24
+EESchema Schematic File Version 2  date 11/05/2010 05:32:32
 LIBS:regul
 LIBS:switch_FSM2JSMA
 LIBS:transistors
@@ -18,7 +18,7 @@ EELAYER END
 $Descr A4 11700 8267
 Sheet 1 2
 Title "BicycLED POV"
-Date "9 may 2010"
+Date "11 may 2010"
 Rev "v 2.0"
 Comp "Hardware BOX"
 Comment1 ""
