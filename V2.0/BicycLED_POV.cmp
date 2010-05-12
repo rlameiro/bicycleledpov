@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (20100406 SVN-R2508)-final date = 12-05-2010 9:37:51
+Cmp-Mod V01 Created by CvPCB (20100406 SVN-R2508)-final date = 12/05/2010 10:50:47
 
 BeginCmp
 TimeStamp = /4BE64992;
@@ -1264,7 +1264,7 @@ BeginCmp
 TimeStamp = /4BE64991;
 Reference = U3;
 ValeurCmp = CONN_JTAG_ARM;
-IdModule  = CONN_5x2_1.27mm_0.5_inch;
+IdModule  = DIL-20-10x2_Opendous;
 EndCmp
 
 BeginCmp
