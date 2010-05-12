@@ -1,4 +1,4 @@
-update=12/05/2010 08:41:40
+update=12-05-2010 8:58:15
 last_client=pcbnew
 [eeschema]
 version=1
@@ -86,3 +86,4 @@ LibName7=valves
 LibName8=divers
 LibName9=led
 LibName10=dip_sockets
+LibName11=opendous
