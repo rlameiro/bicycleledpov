@@ -1,5 +1,5 @@
-update=09/05/2010 17:05:42
-last_client=eeschema
+update=Qua 12 Mai 2010 00:49:29 WEST
+last_client=cvpcb
 [eeschema]
 version=1
 LibDir=
@@ -49,3 +49,11 @@ LibName10=kicad_libs\\device
 LibName11=kicad_libs\\LDO
 LibName12=kicad_libs\\HB_IC
 LibName13=kicad_libs\\HB_IC_sensor
+[pcbnew]
+[pcbnew/libraries]
+LibName1=kicad_libs/at91sam7sxxx-au
+LibName2=kicad_libs/opendous
+LibDir=
+[cvpcb]
+version=1
+NetIExt=net
