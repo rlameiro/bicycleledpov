@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  12/05/2010 08:39:04
+# EESchema Netlist Version 1.1 created  12-05-2010 9:37:51
 (
  ( /4BE64992 Battery_Clips_AAA BT1 Rechar._Lithium_batt_3.7V_900mAh
   ( 1 N-000038 )
@@ -372,7 +372,7 @@
   ( 1 N-000038 )
   ( 2 +BATT )
  )
- ( /4BE6496E SOT23-6_Opendous IC1 AT45DBXX1
+ ( /4BE6496E SO8E_4x5mm_Opendous IC1 AT45DBXX1
   ( 1 N-000057 )
   ( 2 N-000058 )
   ( 3 +3.3V )
