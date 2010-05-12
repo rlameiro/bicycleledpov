@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 12/05/2010 07:05:01
+EESchema Schematic File Version 2  date 12-05-2010 9:03:47
 LIBS:regul
 LIBS:switch_FSM2JSMA
 LIBS:transistors

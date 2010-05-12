@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (20100406 SVN-R2508)-final date = 12/05/2010 08:39:04
+Cmp-Mod V01 Created by CvPCB (20100406 SVN-R2508)-final date = 12-05-2010 9:37:51
 
 BeginCmp
 TimeStamp = /4BE64992;
@@ -655,7 +655,7 @@ BeginCmp
 TimeStamp = /4BE6496E;
 Reference = IC1;
 ValeurCmp = AT45DBXX1;
-IdModule  = SOT23-6_Opendous;
+IdModule  = SO8E_4x5mm_Opendous;
 EndCmp
 
 BeginCmp
