@@ -1,4 +1,4 @@
-update=Qua 12 Mai 2010 00:49:29 WEST
+update=12/05/2010 01:38:21
 last_client=cvpcb
 [eeschema]
 version=1
@@ -53,7 +53,11 @@ LibName13=kicad_libs\\HB_IC_sensor
 [pcbnew/libraries]
 LibName1=kicad_libs/at91sam7sxxx-au
 LibName2=kicad_libs/opendous
-LibDir=
+LibName3=connect
+LibName4=discret
+LibName5=led
+LibName6=sockets
+LibDir=kicad_libs
 [cvpcb]
 version=1
 NetIExt=net

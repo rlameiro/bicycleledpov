@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 11/05/2010 05:53:48
+EESchema Schematic File Version 2  date 12/05/2010 01:20:40
 LIBS:regul
 LIBS:switch_FSM2JSMA
 LIBS:transistors
@@ -18,7 +18,7 @@ EELAYER END
 $Descr A4 11700 8267
 Sheet 1 2
 Title "BicycLED POV"
-Date "11 may 2010"
+Date "12 may 2010"
 Rev "v 2.0"
 Comp "Hardware BOX"
 Comment1 ""
@@ -2456,7 +2456,7 @@ L C C6
 U 1 1 4BE6493E
 P 4750 2050
 F 0 "C6" H 4800 2150 50  0000 L CNN
-F 1 "2.2uF" H 4800 1950 50  0000 L CNN
+F 1 "4.7uF" H 4800 1950 50  0000 L CNN
 F 4 "" H 4750 2050 60  0001 C CNN "Campo1"
 F 5 "" H 4750 2050 60  0001 C CNN "Campo2"
 F 6 "" H 4750 2050 60  0001 C CNN "Campo3"
@@ -2507,7 +2507,7 @@ L C C11
 U 1 1 4BE6493B
 P 6000 2050
 F 0 "C11" H 6050 2150 50  0000 L CNN
-F 1 "2.2uF" H 6050 1950 50  0000 L CNN
+F 1 "4.7uF" H 6050 1950 50  0000 L CNN
 F 4 "" H 6000 2050 60  0001 C CNN "Campo1"
 F 5 "" H 6000 2050 60  0001 C CNN "Campo2"
 F 6 "" H 6000 2050 60  0001 C CNN "Campo3"

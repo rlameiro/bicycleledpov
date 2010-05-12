@@ -1,1021 +1,1011 @@
-# EESchema Netlist Version 1.1 created  12/05/2010 01:20:57
+# EESchema Netlist Version 1.1 created  12/05/2010 01:52:19
 (
- ( /4BE6DD62 $noname  U5 AH173 {Lib=AH173}
-  (    1 +3.3V )
-  (    2 GND )
-  (    3 N-000066 )
- )
- ( /4BE6DB2D at91sam7sxxx-au-LQFP64  IC2 AT91SAM7S512/256/128/64/321-AU {Lib=AT91SAM7S512/256/128/64/321-AU}
-  (    1 ? )
-  (    2 GND )
-  (    3 ? )
-  (    4 ? )
-  (    5 ? )
-  (    6 ? )
-  (    7 +3.3V )
-  (    8 VDD )
-  (    9 N-000044 )
-  (   10 N-000064 )
-  (   11 ? )
-  (   12 VDD )
-  (   13 ? )
-  (   14 ? )
-  (   15 ? )
-  (   16 ? )
-  (   17 GND )
-  (   18 +3.3V )
-  (   19 N-000069 )
-  (   20 N-000043 )
-  (   21 N-000048 )
-  (   22 N-000042 )
-  (   23 ? )
-  (   24 VDD )
-  (   25 ? )
-  (   26 ? )
-  (   27 N-000049 )
-  (   28 N-000047 )
-  (   29 ? )
-  (   30 ? )
-  (   31 ? )
-  (   32 ? )
-  (   33 /JTAG_TDI )
-  (   34 ? )
-  (   35 N-000066 )
-  (   36 N-000039 )
-  (   37 ? )
-  (   38 ? )
-  (   39 /RESET )
-  (   40 N-000065 )
-  (   41 ? )
-  (   42 ? )
-  (   43 N-000040 )
-  (   44 ? )
-  (   45 +3.3V )
-  (   46 GND )
-  (   47 ? )
-  (   48 ? )
-  (   49 /JTAG_TDO )
-  (   50 ? )
-  (   51 /JTAG_TMS )
-  (   52 ? )
-  (   53 /JTAG_TCK )
-  (   54 VDD )
-  (   55 ? )
-  (   56 N-000057 )
-  (   57 N-000068 )
-  (   58 +3.3V )
-  (   59 +3.3V )
-  (   60 GND )
-  (   61 N-000051 )
-  (   62 N-000050 )
-  (   63 N-000062 )
-  (   64 VDD )
- )
- ( /4BE6A09E $noname  F1 2A {Lib=FUSE}
-  (    1 N-000041 )
-  (    2 +BATT )
- )
- ( /4BE69CBF $noname  R1 2K {Lib=R}
-  (    1 VCC_USB )
-  (    2 GND )
- )
- ( /4BE69C20 $noname  U2 MCP73811/2 {Lib=MCP73811/2}
-  (    1 VCC_USB )
-  (    2 GND )
-  (    3 +BATT )
-  (    4 VCC_USB )
-  (    5 VCC_USB )
- )
- ( /4BE684E1 $noname  U4 USBCONN {Lib=USBCONN}
-  (    1 VCC_USB )
-  (    2 N-000056 )
-  (    3 N-000061 )
-  (    4 GND )
-  (    5 N-000037 )
- )
- ( /4BE6498E $noname  U1 CONN_MICROSD {Lib=CONN_microSD}
-  (    1 ? )
-  (    2 N-000047 )
-  (    3 N-000042 )
-  (    4 +3.3V )
-  (    5 N-000048 )
-  (    6 GND )
-  (    7 N-000049 )
-  (    8 ? )
-  (    9 GND )
-  (   10 ? )
- )
- ( /4BE64997 $noname  P1 CONN_2 {Lib=CONN_2}
-  (    1 +3.3V )
-  (    2 N-000065 )
- )
- ( /4BE64994 $noname  SW1 bootloader {Lib=SW_PUSH}
-  (    1 N-000039 )
-  (    2 N-000039 )
-  (    3 N-000046 )
-  (    4 N-000046 )
- )
- ( /4BE64992 $noname  BT1 Rechar._Lithium_batt_3.7V_900mAh {Lib=BATTERY}
-  (    1 N-000041 )
-  (    2 GND )
- )
- ( /4BE64991 $noname  U3 CONN_JTAG_ARM {Lib=CONN_JTAG_ARM}
-  (    1 +3.3V )
-  (    2 +3.3V )
-  (    3 N-000059 )
-  (    4 GND )
-  (    5 /JTAG_TDI )
-  (    6 GND )
-  (    7 /JTAG_TMS )
-  (    8 GND )
-  (    9 /JTAG_TCK )
-  (   10 GND )
-  (   11 /JTAG_TCK )
-  (   12 GND )
-  (   13 /JTAG_TDO )
-  (   14 GND )
-  (   15 /RESET )
-  (   16 GND )
-  (   17 ? )
-  (   18 GND )
-  (   19 ? )
-  (   20 GND )
- )
- ( /4BE6498B $noname  C3 47uF_low_ESR {Lib=C_MINI}
-  (    1 +3.3V )
-  (    2 GND )
- )
- ( /4BE64987 $noname  C2 4.7uF {Lib=C_MINI}
-  (    1 +3.3V )
-  (    2 GND )
- )
- ( /4BE64985 $noname  R7 47K {Lib=R_MINI}
-  (    1 /JTAG_TDO )
-  (    2 +3.3V )
- )
- ( /4BE64984 $noname  R6 47K {Lib=R_MINI}
-  (    1 /JTAG_TCK )
-  (    2 +3.3V )
- )
- ( /4BE64983 $noname  R4 47K {Lib=R_MINI}
-  (    1 /JTAG_TMS )
-  (    2 +3.3V )
- )
- ( /4BE64982 $noname  R3 47K {Lib=R_MINI}
-  (    1 /JTAG_TDI )
-  (    2 +3.3V )
- )
- ( /4BE64981 $noname  R2 47K {Lib=R_MINI}
-  (    1 N-000059 )
-  (    2 +3.3V )
- )
- ( /4BE6497E $noname  C5 10nF {Lib=C_MINI}
-  (    1 GND )
-  (    2 N-000037 )
- )
- ( /4BE6497B $noname  R9 1K5 {Lib=R_MINI}
-  (    1 N-000061 )
-  (    2 +3.3V )
- )
- ( /4BE64979 $noname  C7 33pF {Lib=C_MINI}
-  (    1 N-000061 )
-  (    2 N-000056 )
- )
- ( /4BE64978 $noname  R11 27R {Lib=R_MINI}
-  (    1 N-000061 )
-  (    2 N-000068 )
- )
- ( /4BE64977 $noname  R10 27R {Lib=R_MINI}
-  (    1 N-000056 )
-  (    2 N-000057 )
- )
- ( /4BE64976 $noname  R12 300K {Lib=R_MINI}
-  (    1 GND )
-  (    2 N-000057 )
- )
- ( /4BE64975 $noname  C8 15pF {Lib=C_MINI}
-  (    1 GND )
-  (    2 N-000057 )
- )
- ( /4BE64970 $noname  C10 15pF {Lib=C_MINI}
-  (    1 GND )
-  (    2 N-000068 )
- )
- ( /4BE6496F $noname  R13 300K {Lib=R_MINI}
-  (    1 GND )
-  (    2 N-000068 )
- )
- ( /4BE6496E $noname  IC1 AT45DBXX1 {Lib=AT45DBXX1}
-  (    1 N-000049 )
-  (    2 N-000048 )
-  (    3 +3.3V )
-  (    4 N-000047 )
-  (    5 +3.3V )
-  (    6 +3.3V )
-  (    7 GND )
-  (    8 N-000042 )
- )
- ( /4BE6496A $noname  C27 100nF {Lib=C_MINI}
-  (    1 VDD )
-  (    2 GND )
- )
- ( /4BE64967 $noname  C26 100nF {Lib=C_MINI}
-  (    1 VDD )
-  (    2 GND )
- )
- ( /4BE64966 $noname  C25 100nF {Lib=C_MINI}
-  (    1 VDD )
-  (    2 GND )
- )
- ( /4BE64963 $noname  C22 1nF {Lib=C_MINI}
-  (    1 VDD )
-  (    2 GND )
- )
- ( /4BE64962 $noname  C23 2.2uF {Lib=C_MINI}
-  (    1 VDD )
-  (    2 GND )
- )
- ( /4BE6495F $noname  C24 100nF {Lib=C_MINI}
-  (    1 VDD )
-  (    2 GND )
- )
- ( /4BE6495E $noname  C18 100nF {Lib=C_MINI}
-  (    1 +3.3V )
-  (    2 GND )
- )
- ( /4BE6495B $noname  C17 2.2uF {Lib=C_MINI}
-  (    1 +3.3V )
-  (    2 GND )
- )
- ( /4BE6495A $noname  C16 100nF {Lib=C_MINI}
-  (    1 +3.3V )
-  (    2 GND )
- )
- ( /4BE64957 $noname  C19 100nF {Lib=C_MINI}
-  (    1 +3.3V )
-  (    2 GND )
- )
- ( /4BE64956 $noname  C20 100nF {Lib=C_MINI}
-  (    1 +3.3V )
-  (    2 GND )
- )
- ( /4BE64953 $noname  C21 100nF {Lib=C_MINI}
-  (    1 +3.3V )
-  (    2 GND )
- )
- ( /4BE64952 $noname  R14 1K5 {Lib=R_MINI}
-  (    1 N-000062 )
-  (    2 N-000052 )
- )
- ( /4BE64951 $noname  C15 10nF {Lib=C_MINI}
-  (    1 N-000052 )
-  (    2 GND )
- )
- ( /4BE6494F $noname  X1 18.432_MHz {Lib=CRYSTAL_Mini}
-  (    1 N-000050 )
-  (    2 N-000051 )
- )
- ( /4BE6494E $noname  C13 10pF {Lib=C_MINI}
-  (    1 N-000050 )
-  (    2 GND )
- )
- ( /4BE6494D $noname  C12 10pF {Lib=C_MINI}
-  (    1 N-000051 )
-  (    2 GND )
- )
- ( /4BE6494B $noname  C14 1nF {Lib=C_MINI}
-  (    1 N-000062 )
-  (    2 GND )
- )
- ( /4BE6494A SOT457  Q1 BSH207 {Lib=BSH207-SOT457}
-  (    1 +BATT )
-  (    2 +BATT )
-  (    3 GND )
-  (    4 N-000055 )
-  (    5 +BATT )
-  (    6 +BATT )
- )
- ( /4BE64949 SOT457  Q2 BSH207 {Lib=BSH207-SOT457}
-  (    1 N-000054 )
-  (    2 N-000054 )
-  (    3 N-000039 )
-  (    4 N-000055 )
-  (    5 N-000054 )
-  (    6 N-000054 )
- )
- ( /4BE64947 SOT23  Q3 2N2002K {Lib=2N2002K}
-  (    1 N-000040 )
-  (    2 GND )
-  (    3 N-000039 )
- )
- ( /4BE64946 $noname  R5 1M {Lib=R}
-  (    1 N-000055 )
-  (    2 N-000039 )
- )
- ( /4BE64945 $noname  R8 1M {Lib=R}
-  (    1 N-000054 )
-  (    2 N-000040 )
- )
- ( /4BE64942 $noname  C4 100nF {Lib=C}
-  (    1 N-000039 )
-  (    2 GND )
- )
- ( /4BE64940 $noname  U6 FAN2502-XX {Lib=FAN2502-XX}
-  (    1 N-000054 )
-  (    2 GND )
-  (    3 N-000054 )
-  (    4 N-000053 )
-  (    5 +3.3V )
- )
- ( /4BE6493E $noname  C6 4.7uF {Lib=C}
-  (    1 N-000054 )
-  (    2 GND )
- )
- ( /4BE6493C $noname  C9 10nF {Lib=C}
-  (    1 N-000053 )
-  (    2 GND )
- )
- ( /4BE6493B $noname  C11 4.7uF {Lib=C}
-  (    1 +3.3V )
-  (    2 GND )
- )
- ( /4BE64937 $noname  C1 100uF {Lib=C}
-  (    1 N-000054 )
-  (    2 GND )
- )
- ( /4BE64AE4/4BE66246 $noname  U7 74x595 {Lib=74HC595}
-  (    1 /pag2/Pixel_02 )
-  (    2 /pag2/Pixel_03 )
-  (    3 /pag2/Pixel_04 )
-  (    4 /pag2/Pixel_05 )
-  (    5 /pag2/Pixel_06 )
-  (    6 /pag2/Pixel_07 )
-  (    7 /pag2/Pixel_08 )
-  (    8 GND )
-  (    9 N-000073 )
-  (   10 +3.3V )
-  (   11 N-000069 )
-  (   12 N-000043 )
-  (   13 GND )
-  (   14 N-000044 )
-  (   15 /pag2/Pixel_01 )
-  (   16 +3.3V )
- )
- ( /4BE64AE4/4BE66245 $noname  U8 74x595 {Lib=74HC595}
-  (    1 /pag2/Pixel_10 )
-  (    2 /pag2/Pixel_11 )
-  (    3 /pag2/Pixel_12 )
-  (    4 /pag2/Pixel_13 )
-  (    5 /pag2/Pixel_14 )
-  (    6 /pag2/Pixel_15 )
-  (    7 /pag2/Pixel_16 )
-  (    8 GND )
-  (    9 N-000173 )
-  (   10 +3.3V )
-  (   11 N-000069 )
-  (   12 N-000043 )
-  (   13 GND )
-  (   14 N-000073 )
-  (   15 /pag2/Pixel_09 )
-  (   16 +3.3V )
- )
- ( /4BE64AE4/4BE66244 $noname  U9 74x595 {Lib=74HC595}
-  (    1 /pag2/Pixel_18 )
-  (    2 /pag2/Pixel_19 )
-  (    3 /pag2/Pixel_20 )
-  (    4 /pag2/Pixel_21 )
-  (    5 /pag2/Pixel_22 )
-  (    6 /pag2/Pixel_23 )
-  (    7 /pag2/Pixel_24 )
-  (    8 GND )
-  (    9 N-000072 )
-  (   10 +3.3V )
-  (   11 N-000069 )
-  (   12 N-000043 )
-  (   13 GND )
-  (   14 N-000173 )
-  (   15 /pag2/Pixel_17 )
-  (   16 +3.3V )
- )
- ( /4BE64AE4/4BE66243 $noname  U10 74x595 {Lib=74HC595}
-  (    1 /pag2/Pixel_26 )
-  (    2 /pag2/Pixel_27 )
-  (    3 /pag2/Pixel_28 )
-  (    4 /pag2/Pixel_29 )
-  (    5 /pag2/Pixel_30 )
-  (    6 /pag2/Pixel_31 )
-  (    7 /pag2/Pixel_32 )
-  (    8 GND )
-  (    9 ? )
-  (   10 +3.3V )
-  (   11 N-000069 )
-  (   12 N-000043 )
-  (   13 GND )
-  (   14 N-000072 )
-  (   15 /pag2/Pixel_25 )
-  (   16 +3.3V )
- )
- ( /4BE64AE4/4BE66242 $noname  U11 74x595 {Lib=74HC595}
-  (    1 /pag2/Pixel_31 )
-  (    2 /pag2/Pixel_30 )
-  (    3 /pag2/Pixel_29 )
-  (    4 /pag2/Pixel_28 )
-  (    5 /pag2/Pixel_27 )
-  (    6 /pag2/Pixel_26 )
-  (    7 /pag2/Pixel_25 )
-  (    8 GND )
-  (    9 N-000076 )
-  (   10 +3.3V )
-  (   11 N-000069 )
-  (   12 N-000064 )
-  (   13 GND )
-  (   14 N-000044 )
-  (   15 /pag2/Pixel_32 )
-  (   16 +3.3V )
- )
- ( /4BE64AE4/4BE66241 $noname  U12 74x595 {Lib=74HC595}
-  (    1 /pag2/Pixel_23 )
-  (    2 /pag2/Pixel_22 )
-  (    3 /pag2/Pixel_21 )
-  (    4 /pag2/Pixel_20 )
-  (    5 /pag2/Pixel_19 )
-  (    6 /pag2/Pixel_18 )
-  (    7 /pag2/Pixel_17 )
-  (    8 GND )
-  (    9 N-000174 )
-  (   10 +3.3V )
-  (   11 N-000069 )
-  (   12 N-000064 )
-  (   13 GND )
-  (   14 N-000076 )
-  (   15 /pag2/Pixel_24 )
-  (   16 +3.3V )
- )
- ( /4BE64AE4/4BE66240 $noname  U13 74x595 {Lib=74HC595}
-  (    1 /pag2/Pixel_15 )
-  (    2 /pag2/Pixel_14 )
-  (    3 /pag2/Pixel_13 )
-  (    4 /pag2/Pixel_12 )
-  (    5 /pag2/Pixel_11 )
-  (    6 /pag2/Pixel_10 )
-  (    7 /pag2/Pixel_09 )
-  (    8 GND )
-  (    9 N-000075 )
-  (   10 +3.3V )
-  (   11 N-000069 )
-  (   12 N-000064 )
-  (   13 GND )
-  (   14 N-000174 )
-  (   15 /pag2/Pixel_16 )
-  (   16 +3.3V )
- )
- ( /4BE64AE4/4BE6623F $noname  U14 74x595 {Lib=74HC595}
-  (    1 /pag2/Pixel_07 )
-  (    2 /pag2/Pixel_06 )
-  (    3 /pag2/Pixel_05 )
-  (    4 /pag2/Pixel_04 )
-  (    5 /pag2/Pixel_03 )
-  (    6 /pag2/Pixel_02 )
-  (    7 /pag2/Pixel_01 )
-  (    8 GND )
-  (    9 ? )
-  (   10 +3.3V )
-  (   11 N-000069 )
-  (   12 N-000064 )
-  (   13 GND )
-  (   14 N-000075 )
-  (   15 /pag2/Pixel_08 )
-  (   16 +3.3V )
- )
- ( /4BE64AE4/4BE6623E $noname  R47 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000164 )
- )
- ( /4BE64AE4/4BE6623D $noname  R48 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000163 )
- )
- ( /4BE64AE4/4BE6623C $noname  R50 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000161 )
- )
- ( /4BE64AE4/4BE6623B $noname  R49 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000162 )
- )
- ( /4BE64AE4/4BE6623A $noname  R53 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000158 )
- )
- ( /4BE64AE4/4BE66239 $noname  R54 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000157 )
- )
- ( /4BE64AE4/4BE66238 $noname  R52 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000159 )
- )
- ( /4BE64AE4/4BE66237 $noname  R51 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000160 )
- )
- ( /4BE64AE4/4BE66236 $noname  R59 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000120 )
- )
- ( /4BE64AE4/4BE66235 $noname  R60 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000078 )
- )
- ( /4BE64AE4/4BE66234 $noname  R62 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000077 )
- )
- ( /4BE64AE4/4BE66233 $noname  R61 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000118 )
- )
- ( /4BE64AE4/4BE66232 $noname  R57 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000122 )
- )
- ( /4BE64AE4/4BE66231 $noname  R58 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000079 )
- )
- ( /4BE64AE4/4BE66230 $noname  R56 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000080 )
- )
- ( /4BE64AE4/4BE6622F $noname  R55 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000155 )
- )
- ( /4BE64AE4/4BE6622E $noname  R71 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000106 )
- )
- ( /4BE64AE4/4BE6622D $noname  R72 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000105 )
- )
- ( /4BE64AE4/4BE6622C $noname  R74 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000135 )
- )
- ( /4BE64AE4/4BE6622B $noname  R73 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000136 )
- )
- ( /4BE64AE4/4BE6622A $noname  R77 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000132 )
- )
- ( /4BE64AE4/4BE66229 $noname  R78 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000131 )
- )
- ( /4BE64AE4/4BE66228 $noname  R76 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000133 )
- )
- ( /4BE64AE4/4BE66227 $noname  R75 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000134 )
- )
- ( /4BE64AE4/4BE66226 $noname  R67 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000111 )
- )
- ( /4BE64AE4/4BE66225 $noname  R68 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000110 )
- )
- ( /4BE64AE4/4BE66224 $noname  R70 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000107 )
- )
- ( /4BE64AE4/4BE66223 $noname  R69 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000109 )
- )
- ( /4BE64AE4/4BE66222 $noname  R65 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000113 )
- )
- ( /4BE64AE4/4BE66221 $noname  R66 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000112 )
- )
- ( /4BE64AE4/4BE66220 $noname  R64 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000114 )
- )
- ( /4BE64AE4/4BE6621F $noname  R63 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000116 )
- )
- ( /4BE64AE4/4BE6621E $noname  R31 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000152 )
- )
- ( /4BE64AE4/4BE6621D $noname  R32 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000151 )
- )
- ( /4BE64AE4/4BE6621C $noname  R34 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000149 )
- )
- ( /4BE64AE4/4BE6621B $noname  R33 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000150 )
- )
- ( /4BE64AE4/4BE6621A $noname  R37 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000146 )
- )
- ( /4BE64AE4/4BE66219 $noname  R38 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000145 )
- )
- ( /4BE64AE4/4BE66218 $noname  R36 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000147 )
- )
- ( /4BE64AE4/4BE66217 $noname  R35 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000148 )
- )
- ( /4BE64AE4/4BE66216 $noname  R43 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000171 )
- )
- ( /4BE64AE4/4BE66215 $noname  R44 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000169 )
- )
- ( /4BE64AE4/4BE66214 $noname  R46 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000165 )
- )
- ( /4BE64AE4/4BE66213 $noname  R45 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000167 )
- )
- ( /4BE64AE4/4BE66212 $noname  R41 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000139 )
- )
- ( /4BE64AE4/4BE66211 $noname  R42 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000137 )
- )
- ( /4BE64AE4/4BE66210 $noname  R40 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000141 )
- )
- ( /4BE64AE4/4BE6620F $noname  R39 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000143 )
- )
- ( /4BE64AE4/4BE6620E $noname  R23 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000094 )
- )
- ( /4BE64AE4/4BE6620D $noname  R24 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000092 )
- )
- ( /4BE64AE4/4BE6620C $noname  R26 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000088 )
- )
- ( /4BE64AE4/4BE6620B $noname  R25 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000090 )
- )
- ( /4BE64AE4/4BE6620A $noname  R29 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000083 )
- )
- ( /4BE64AE4/4BE66209 $noname  R30 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000153 )
- )
- ( /4BE64AE4/4BE66208 $noname  R28 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000084 )
- )
- ( /4BE64AE4/4BE66207 $noname  R27 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000086 )
- )
- ( /4BE64AE4/4BE66206 $noname  R19 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000123 )
- )
- ( /4BE64AE4/4BE66205 $noname  R20 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000124 )
- )
- ( /4BE64AE4/4BE66204 $noname  R22 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000125 )
- )
- ( /4BE64AE4/4BE66203 $noname  R21 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000126 )
- )
- ( /4BE64AE4/4BE66202 $noname  R17 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000127 )
- )
- ( /4BE64AE4/4BE66201 $noname  R18 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000128 )
- )
- ( /4BE64AE4/4BE66200 $noname  R16 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000129 )
- )
- ( /4BE64AE4/4BE661FF $noname  R15 R_MINI {Lib=R_MINI}
-  (    1 +BATT )
-  (    2 N-000130 )
- )
- ( /4BE64AE4/4BE661FE $noname  D64 LED {Lib=LED}
-  (    1 N-000131 )
-  (    2 /pag2/Pixel_01 )
- )
- ( /4BE64AE4/4BE661FD $noname  D63 LED {Lib=LED}
-  (    1 N-000132 )
-  (    2 /pag2/Pixel_02 )
- )
- ( /4BE64AE4/4BE661FC $noname  D62 LED {Lib=LED}
-  (    1 N-000133 )
-  (    2 /pag2/Pixel_03 )
- )
- ( /4BE64AE4/4BE661FB $noname  D61 LED {Lib=LED}
-  (    1 N-000134 )
-  (    2 /pag2/Pixel_04 )
- )
- ( /4BE64AE4/4BE661FA $noname  D60 LED {Lib=LED}
-  (    1 N-000135 )
-  (    2 /pag2/Pixel_05 )
- )
- ( /4BE64AE4/4BE661F9 $noname  D59 LED {Lib=LED}
-  (    1 N-000136 )
-  (    2 /pag2/Pixel_06 )
- )
- ( /4BE64AE4/4BE661F8 $noname  D58 LED {Lib=LED}
-  (    1 N-000105 )
-  (    2 /pag2/Pixel_07 )
- )
- ( /4BE64AE4/4BE661F7 $noname  D57 LED {Lib=LED}
-  (    1 N-000106 )
-  (    2 /pag2/Pixel_08 )
- )
- ( /4BE64AE4/4BE661F6 $noname  D56 LED {Lib=LED}
-  (    1 N-000107 )
-  (    2 /pag2/Pixel_09 )
- )
- ( /4BE64AE4/4BE661F5 $noname  D55 LED {Lib=LED}
-  (    1 N-000109 )
-  (    2 /pag2/Pixel_10 )
- )
- ( /4BE64AE4/4BE661F4 $noname  D54 LED {Lib=LED}
-  (    1 N-000110 )
-  (    2 /pag2/Pixel_11 )
- )
- ( /4BE64AE4/4BE661F3 $noname  D53 LED {Lib=LED}
-  (    1 N-000111 )
-  (    2 /pag2/Pixel_12 )
- )
- ( /4BE64AE4/4BE661F2 $noname  D52 LED {Lib=LED}
-  (    1 N-000112 )
-  (    2 /pag2/Pixel_13 )
- )
- ( /4BE64AE4/4BE661F1 $noname  D51 LED {Lib=LED}
-  (    1 N-000113 )
-  (    2 /pag2/Pixel_14 )
- )
- ( /4BE64AE4/4BE661F0 $noname  D50 LED {Lib=LED}
-  (    1 N-000114 )
-  (    2 /pag2/Pixel_15 )
- )
- ( /4BE64AE4/4BE661EF $noname  D49 LED {Lib=LED}
-  (    1 N-000116 )
-  (    2 /pag2/Pixel_16 )
- )
- ( /4BE64AE4/4BE661EE $noname  D47 LED {Lib=LED}
-  (    1 N-000118 )
-  (    2 /pag2/Pixel_18 )
- )
- ( /4BE64AE4/4BE661ED $noname  D45 LED {Lib=LED}
-  (    1 N-000120 )
-  (    2 /pag2/Pixel_20 )
- )
- ( /4BE64AE4/4BE661EC $noname  D43 LED {Lib=LED}
-  (    1 N-000122 )
-  (    2 /pag2/Pixel_22 )
- )
- ( /4BE64AE4/4BE661EB $noname  D41 LED {Lib=LED}
-  (    1 N-000155 )
-  (    2 /pag2/Pixel_24 )
- )
- ( /4BE64AE4/4BE661EA $noname  D40 LED {Lib=LED}
-  (    1 N-000157 )
-  (    2 /pag2/Pixel_25 )
- )
- ( /4BE64AE4/4BE661E9 $noname  D39 LED {Lib=LED}
-  (    1 N-000158 )
-  (    2 /pag2/Pixel_26 )
- )
- ( /4BE64AE4/4BE661E8 $noname  D38 LED {Lib=LED}
-  (    1 N-000159 )
-  (    2 /pag2/Pixel_27 )
- )
- ( /4BE64AE4/4BE661E7 $noname  D37 LED {Lib=LED}
-  (    1 N-000160 )
-  (    2 /pag2/Pixel_28 )
- )
- ( /4BE64AE4/4BE661E6 $noname  D36 LED {Lib=LED}
-  (    1 N-000161 )
-  (    2 /pag2/Pixel_29 )
- )
- ( /4BE64AE4/4BE661E5 $noname  D35 LED {Lib=LED}
-  (    1 N-000162 )
-  (    2 /pag2/Pixel_30 )
- )
- ( /4BE64AE4/4BE661E4 $noname  D34 LED {Lib=LED}
-  (    1 N-000163 )
-  (    2 /pag2/Pixel_31 )
- )
- ( /4BE64AE4/4BE661E3 $noname  D33 LED {Lib=LED}
-  (    1 N-000164 )
-  (    2 /pag2/Pixel_32 )
- )
- ( /4BE64AE4/4BE661E2 $noname  D32 LED {Lib=LED}
-  (    1 N-000165 )
-  (    2 /pag2/Pixel_32 )
- )
- ( /4BE64AE4/4BE661E1 $noname  D31 LED {Lib=LED}
-  (    1 N-000167 )
-  (    2 /pag2/Pixel_31 )
- )
- ( /4BE64AE4/4BE661E0 $noname  D30 LED {Lib=LED}
-  (    1 N-000169 )
-  (    2 /pag2/Pixel_30 )
- )
- ( /4BE64AE4/4BE661DF $noname  D29 LED {Lib=LED}
-  (    1 N-000171 )
-  (    2 /pag2/Pixel_29 )
- )
- ( /4BE64AE4/4BE661DE $noname  D28 LED {Lib=LED}
-  (    1 N-000137 )
-  (    2 /pag2/Pixel_28 )
- )
- ( /4BE64AE4/4BE661DD $noname  D27 LED {Lib=LED}
-  (    1 N-000139 )
-  (    2 /pag2/Pixel_27 )
- )
- ( /4BE64AE4/4BE661DC $noname  D26 LED {Lib=LED}
-  (    1 N-000141 )
-  (    2 /pag2/Pixel_26 )
- )
- ( /4BE64AE4/4BE661DB $noname  D25 LED {Lib=LED}
-  (    1 N-000143 )
-  (    2 /pag2/Pixel_25 )
- )
- ( /4BE64AE4/4BE661DA $noname  D24 LED {Lib=LED}
-  (    1 N-000145 )
-  (    2 /pag2/Pixel_24 )
- )
- ( /4BE64AE4/4BE661D9 $noname  D23 LED {Lib=LED}
-  (    1 N-000146 )
-  (    2 /pag2/Pixel_23 )
- )
- ( /4BE64AE4/4BE661D8 $noname  D22 LED {Lib=LED}
-  (    1 N-000147 )
-  (    2 /pag2/Pixel_22 )
- )
- ( /4BE64AE4/4BE661D7 $noname  D21 LED {Lib=LED}
-  (    1 N-000148 )
-  (    2 /pag2/Pixel_21 )
- )
- ( /4BE64AE4/4BE661D6 $noname  D20 LED {Lib=LED}
-  (    1 N-000149 )
-  (    2 /pag2/Pixel_20 )
- )
- ( /4BE64AE4/4BE661D5 $noname  D19 LED {Lib=LED}
-  (    1 N-000150 )
-  (    2 /pag2/Pixel_19 )
- )
- ( /4BE64AE4/4BE661D4 $noname  D18 LED {Lib=LED}
-  (    1 N-000151 )
-  (    2 /pag2/Pixel_18 )
- )
- ( /4BE64AE4/4BE661D3 $noname  D17 LED {Lib=LED}
-  (    1 N-000152 )
-  (    2 /pag2/Pixel_17 )
- )
- ( /4BE64AE4/4BE661D2 $noname  D16 LED {Lib=LED}
-  (    1 N-000153 )
-  (    2 /pag2/Pixel_16 )
- )
- ( /4BE64AE4/4BE661D1 $noname  D15 LED {Lib=LED}
-  (    1 N-000083 )
-  (    2 /pag2/Pixel_15 )
- )
- ( /4BE64AE4/4BE661D0 $noname  D14 LED {Lib=LED}
-  (    1 N-000084 )
-  (    2 /pag2/Pixel_14 )
- )
- ( /4BE64AE4/4BE661CF $noname  D13 LED {Lib=LED}
-  (    1 N-000086 )
-  (    2 /pag2/Pixel_13 )
- )
- ( /4BE64AE4/4BE661CE $noname  D12 LED {Lib=LED}
-  (    1 N-000088 )
-  (    2 /pag2/Pixel_12 )
- )
- ( /4BE64AE4/4BE661CD $noname  D11 LED {Lib=LED}
-  (    1 N-000090 )
-  (    2 /pag2/Pixel_11 )
- )
- ( /4BE64AE4/4BE661CC $noname  D10 LED {Lib=LED}
-  (    1 N-000092 )
-  (    2 /pag2/Pixel_10 )
- )
- ( /4BE64AE4/4BE661CB $noname  D9 LED {Lib=LED}
-  (    1 N-000094 )
-  (    2 /pag2/Pixel_09 )
- )
- ( /4BE64AE4/4BE661CA $noname  D8 LED {Lib=LED}
-  (    1 N-000125 )
-  (    2 /pag2/Pixel_08 )
- )
- ( /4BE64AE4/4BE661C9 $noname  D7 LED {Lib=LED}
-  (    1 N-000126 )
-  (    2 /pag2/Pixel_07 )
- )
- ( /4BE64AE4/4BE661C8 $noname  D6 LED {Lib=LED}
-  (    1 N-000124 )
-  (    2 /pag2/Pixel_06 )
- )
- ( /4BE64AE4/4BE661C7 $noname  D5 LED {Lib=LED}
-  (    1 N-000123 )
-  (    2 /pag2/Pixel_05 )
- )
- ( /4BE64AE4/4BE661C6 $noname  D4 LED {Lib=LED}
-  (    1 N-000128 )
-  (    2 /pag2/Pixel_04 )
- )
- ( /4BE64AE4/4BE661C5 $noname  D3 LED {Lib=LED}
-  (    1 N-000127 )
-  (    2 /pag2/Pixel_03 )
- )
- ( /4BE64AE4/4BE661C4 $noname  D2 LED {Lib=LED}
-  (    1 N-000129 )
-  (    2 /pag2/Pixel_02 )
- )
- ( /4BE64AE4/4BE661C3 $noname  D1 LED {Lib=LED}
-  (    1 N-000130 )
-  (    2 /pag2/Pixel_01 )
- )
- ( /4BE64AE4/4BE661C2 $noname  D48 LED {Lib=LED}
-  (    1 N-000077 )
-  (    2 /pag2/Pixel_17 )
- )
- ( /4BE64AE4/4BE661C1 $noname  D46 LED {Lib=LED}
-  (    1 N-000078 )
-  (    2 /pag2/Pixel_19 )
- )
- ( /4BE64AE4/4BE661C0 $noname  D44 LED {Lib=LED}
-  (    1 N-000079 )
-  (    2 /pag2/Pixel_21 )
- )
- ( /4BE64AE4/4BE661BF $noname  D42 LED {Lib=LED}
-  (    1 N-000080 )
-  (    2 /pag2/Pixel_23 )
+ ( /4BE64992 $noname$ BT1 Rechar._Lithium_batt_3.7V_900mAh
+  ( 1 N-000041 )
+  ( 2 GND )
+ )
+ ( /4BE64937 $noname$ C1 100uF
+  ( 1 N-000054 )
+  ( 2 GND )
+ )
+ ( /4BE64987 SM0805_Opendous C2 4.7uF
+  ( 1 +3.3V )
+  ( 2 GND )
+ )
+ ( /4BE6498B $noname$ C3 47uF_low_ESR
+  ( 1 +3.3V )
+  ( 2 GND )
+ )
+ ( /4BE64942 SM0805 C4 100nF
+  ( 1 N-000039 )
+  ( 2 GND )
+ )
+ ( /4BE6497E SM0805 C5 10nF
+  ( 1 GND )
+  ( 2 N-000037 )
+ )
+ ( /4BE6493E SM0805_Opendous C6 4.7uF
+  ( 1 N-000054 )
+  ( 2 GND )
+ )
+ ( /4BE64979 SM0805 C7 33pF
+  ( 1 N-000061 )
+  ( 2 N-000056 )
+ )
+ ( /4BE64975 SM0805 C8 15pF
+  ( 1 GND )
+  ( 2 N-000057 )
+ )
+ ( /4BE6493C SM0805 C9 10nF
+  ( 1 N-000053 )
+  ( 2 GND )
+ )
+ ( /4BE64970 SM0805 C10 15pF
+  ( 1 GND )
+  ( 2 N-000068 )
+ )
+ ( /4BE6493B SM0805_Opendous C11 4.7uF
+  ( 1 +3.3V )
+  ( 2 GND )
+ )
+ ( /4BE6494D SM0805 C12 10pF
+  ( 1 N-000051 )
+  ( 2 GND )
+ )
+ ( /4BE6494E SM0805 C13 10pF
+  ( 1 N-000050 )
+  ( 2 GND )
+ )
+ ( /4BE6494B SM0805 C14 1nF
+  ( 1 N-000062 )
+  ( 2 GND )
+ )
+ ( /4BE64951 SM0805 C15 10nF
+  ( 1 N-000052 )
+  ( 2 GND )
+ )
+ ( /4BE6495A SM0805 C16 100nF
+  ( 1 +3.3V )
+  ( 2 GND )
+ )
+ ( /4BE6495B SM0805_Opendous C17 4.7uF
+  ( 1 +3.3V )
+  ( 2 GND )
+ )
+ ( /4BE6495E SM0805 C18 100nF
+  ( 1 +3.3V )
+  ( 2 GND )
+ )
+ ( /4BE64957 SM0805 C19 100nF
+  ( 1 +3.3V )
+  ( 2 GND )
+ )
+ ( /4BE64956 SM0805 C20 100nF
+  ( 1 +3.3V )
+  ( 2 GND )
+ )
+ ( /4BE64953 SM0805 C21 100nF
+  ( 1 +3.3V )
+  ( 2 GND )
+ )
+ ( /4BE64963 SM0805 C22 1nF
+  ( 1 VDD )
+  ( 2 GND )
+ )
+ ( /4BE64962 SM0805_Opendous C23 4.7uF
+  ( 1 VDD )
+  ( 2 GND )
+ )
+ ( /4BE6495F SM0805 C24 100nF
+  ( 1 VDD )
+  ( 2 GND )
+ )
+ ( /4BE64966 SM0805 C25 100nF
+  ( 1 VDD )
+  ( 2 GND )
+ )
+ ( /4BE64967 SM0805 C26 100nF
+  ( 1 VDD )
+  ( 2 GND )
+ )
+ ( /4BE6496A SM0805 C27 100nF
+  ( 1 VDD )
+  ( 2 GND )
+ )
+ ( /4BE64AE4/4BE661C3 LED-5MM D1 LED
+  ( 1 N-000130 )
+  ( 2 /pag2/Pixel_01 )
+ )
+ ( /4BE64AE4/4BE661C4 LED-5MM D2 LED
+  ( 1 N-000129 )
+  ( 2 /pag2/Pixel_02 )
+ )
+ ( /4BE64AE4/4BE661C5 LED-5MM D3 LED
+  ( 1 N-000127 )
+  ( 2 /pag2/Pixel_03 )
+ )
+ ( /4BE64AE4/4BE661C6 LED-5MM D4 LED
+  ( 1 N-000128 )
+  ( 2 /pag2/Pixel_04 )
+ )
+ ( /4BE64AE4/4BE661C7 LED-5MM D5 LED
+  ( 1 N-000123 )
+  ( 2 /pag2/Pixel_05 )
+ )
+ ( /4BE64AE4/4BE661C8 LED-5MM D6 LED
+  ( 1 N-000124 )
+  ( 2 /pag2/Pixel_06 )
+ )
+ ( /4BE64AE4/4BE661C9 LED-5MM D7 LED
+  ( 1 N-000126 )
+  ( 2 /pag2/Pixel_07 )
+ )
+ ( /4BE64AE4/4BE661CA LED-5MM D8 LED
+  ( 1 N-000125 )
+  ( 2 /pag2/Pixel_08 )
+ )
+ ( /4BE64AE4/4BE661CB LED-5MM D9 LED
+  ( 1 N-000094 )
+  ( 2 /pag2/Pixel_09 )
+ )
+ ( /4BE64AE4/4BE661CC LED-5MM D10 LED
+  ( 1 N-000092 )
+  ( 2 /pag2/Pixel_10 )
+ )
+ ( /4BE64AE4/4BE661CD LED-5MM D11 LED
+  ( 1 N-000090 )
+  ( 2 /pag2/Pixel_11 )
+ )
+ ( /4BE64AE4/4BE661CE LED-5MM D12 LED
+  ( 1 N-000088 )
+  ( 2 /pag2/Pixel_12 )
+ )
+ ( /4BE64AE4/4BE661CF LED-5MM D13 LED
+  ( 1 N-000086 )
+  ( 2 /pag2/Pixel_13 )
+ )
+ ( /4BE64AE4/4BE661D0 LED-5MM D14 LED
+  ( 1 N-000084 )
+  ( 2 /pag2/Pixel_14 )
+ )
+ ( /4BE64AE4/4BE661D1 LED-5MM D15 LED
+  ( 1 N-000083 )
+  ( 2 /pag2/Pixel_15 )
+ )
+ ( /4BE64AE4/4BE661D2 LED-5MM D16 LED
+  ( 1 N-000153 )
+  ( 2 /pag2/Pixel_16 )
+ )
+ ( /4BE64AE4/4BE661D3 LED-5MM D17 LED
+  ( 1 N-000152 )
+  ( 2 /pag2/Pixel_17 )
+ )
+ ( /4BE64AE4/4BE661D4 LED-5MM D18 LED
+  ( 1 N-000151 )
+  ( 2 /pag2/Pixel_18 )
+ )
+ ( /4BE64AE4/4BE661D5 LED-5MM D19 LED
+  ( 1 N-000150 )
+  ( 2 /pag2/Pixel_19 )
+ )
+ ( /4BE64AE4/4BE661D6 LED-5MM D20 LED
+  ( 1 N-000149 )
+  ( 2 /pag2/Pixel_20 )
+ )
+ ( /4BE64AE4/4BE661D7 LED-5MM D21 LED
+  ( 1 N-000148 )
+  ( 2 /pag2/Pixel_21 )
+ )
+ ( /4BE64AE4/4BE661D8 LED-5MM D22 LED
+  ( 1 N-000147 )
+  ( 2 /pag2/Pixel_22 )
+ )
+ ( /4BE64AE4/4BE661D9 LED-5MM D23 LED
+  ( 1 N-000146 )
+  ( 2 /pag2/Pixel_23 )
+ )
+ ( /4BE64AE4/4BE661DA LED-5MM D24 LED
+  ( 1 N-000145 )
+  ( 2 /pag2/Pixel_24 )
+ )
+ ( /4BE64AE4/4BE661DB LED-5MM D25 LED
+  ( 1 N-000143 )
+  ( 2 /pag2/Pixel_25 )
+ )
+ ( /4BE64AE4/4BE661DC LED-5MM D26 LED
+  ( 1 N-000141 )
+  ( 2 /pag2/Pixel_26 )
+ )
+ ( /4BE64AE4/4BE661DD LED-5MM D27 LED
+  ( 1 N-000139 )
+  ( 2 /pag2/Pixel_27 )
+ )
+ ( /4BE64AE4/4BE661DE LED-5MM D28 LED
+  ( 1 N-000137 )
+  ( 2 /pag2/Pixel_28 )
+ )
+ ( /4BE64AE4/4BE661DF LED-5MM D29 LED
+  ( 1 N-000171 )
+  ( 2 /pag2/Pixel_29 )
+ )
+ ( /4BE64AE4/4BE661E0 LED-5MM D30 LED
+  ( 1 N-000169 )
+  ( 2 /pag2/Pixel_30 )
+ )
+ ( /4BE64AE4/4BE661E1 LED-5MM D31 LED
+  ( 1 N-000167 )
+  ( 2 /pag2/Pixel_31 )
+ )
+ ( /4BE64AE4/4BE661E2 LED-5MM D32 LED
+  ( 1 N-000165 )
+  ( 2 /pag2/Pixel_32 )
+ )
+ ( /4BE64AE4/4BE661E3 LED-5MM D33 LED
+  ( 1 N-000164 )
+  ( 2 /pag2/Pixel_32 )
+ )
+ ( /4BE64AE4/4BE661E4 LED-5MM D34 LED
+  ( 1 N-000163 )
+  ( 2 /pag2/Pixel_31 )
+ )
+ ( /4BE64AE4/4BE661E5 LED-5MM D35 LED
+  ( 1 N-000162 )
+  ( 2 /pag2/Pixel_30 )
+ )
+ ( /4BE64AE4/4BE661E6 LED-5MM D36 LED
+  ( 1 N-000161 )
+  ( 2 /pag2/Pixel_29 )
+ )
+ ( /4BE64AE4/4BE661E7 LED-5MM D37 LED
+  ( 1 N-000160 )
+  ( 2 /pag2/Pixel_28 )
+ )
+ ( /4BE64AE4/4BE661E8 LED-5MM D38 LED
+  ( 1 N-000159 )
+  ( 2 /pag2/Pixel_27 )
+ )
+ ( /4BE64AE4/4BE661E9 LED-5MM D39 LED
+  ( 1 N-000158 )
+  ( 2 /pag2/Pixel_26 )
+ )
+ ( /4BE64AE4/4BE661EA LED-5MM D40 LED
+  ( 1 N-000157 )
+  ( 2 /pag2/Pixel_25 )
+ )
+ ( /4BE64AE4/4BE661EB LED-5MM D41 LED
+  ( 1 N-000155 )
+  ( 2 /pag2/Pixel_24 )
+ )
+ ( /4BE64AE4/4BE661BF LED-5MM D42 LED
+  ( 1 N-000080 )
+  ( 2 /pag2/Pixel_23 )
+ )
+ ( /4BE64AE4/4BE661EC LED-5MM D43 LED
+  ( 1 N-000122 )
+  ( 2 /pag2/Pixel_22 )
+ )
+ ( /4BE64AE4/4BE661C0 LED-5MM D44 LED
+  ( 1 N-000079 )
+  ( 2 /pag2/Pixel_21 )
+ )
+ ( /4BE64AE4/4BE661ED LED-5MM D45 LED
+  ( 1 N-000120 )
+  ( 2 /pag2/Pixel_20 )
+ )
+ ( /4BE64AE4/4BE661C1 LED-5MM D46 LED
+  ( 1 N-000078 )
+  ( 2 /pag2/Pixel_19 )
+ )
+ ( /4BE64AE4/4BE661EE LED-5MM D47 LED
+  ( 1 N-000118 )
+  ( 2 /pag2/Pixel_18 )
+ )
+ ( /4BE64AE4/4BE661C2 LED-5MM D48 LED
+  ( 1 N-000077 )
+  ( 2 /pag2/Pixel_17 )
+ )
+ ( /4BE64AE4/4BE661EF LED-5MM D49 LED
+  ( 1 N-000116 )
+  ( 2 /pag2/Pixel_16 )
+ )
+ ( /4BE64AE4/4BE661F0 LED-5MM D50 LED
+  ( 1 N-000114 )
+  ( 2 /pag2/Pixel_15 )
+ )
+ ( /4BE64AE4/4BE661F1 LED-5MM D51 LED
+  ( 1 N-000113 )
+  ( 2 /pag2/Pixel_14 )
+ )
+ ( /4BE64AE4/4BE661F2 LED-5MM D52 LED
+  ( 1 N-000112 )
+  ( 2 /pag2/Pixel_13 )
+ )
+ ( /4BE64AE4/4BE661F3 LED-5MM D53 LED
+  ( 1 N-000111 )
+  ( 2 /pag2/Pixel_12 )
+ )
+ ( /4BE64AE4/4BE661F4 LED-5MM D54 LED
+  ( 1 N-000110 )
+  ( 2 /pag2/Pixel_11 )
+ )
+ ( /4BE64AE4/4BE661F5 LED-5MM D55 LED
+  ( 1 N-000109 )
+  ( 2 /pag2/Pixel_10 )
+ )
+ ( /4BE64AE4/4BE661F6 LED-5MM D56 LED
+  ( 1 N-000107 )
+  ( 2 /pag2/Pixel_09 )
+ )
+ ( /4BE64AE4/4BE661F7 LED-5MM D57 LED
+  ( 1 N-000106 )
+  ( 2 /pag2/Pixel_08 )
+ )
+ ( /4BE64AE4/4BE661F8 LED-5MM D58 LED
+  ( 1 N-000105 )
+  ( 2 /pag2/Pixel_07 )
+ )
+ ( /4BE64AE4/4BE661F9 LED-5MM D59 LED
+  ( 1 N-000136 )
+  ( 2 /pag2/Pixel_06 )
+ )
+ ( /4BE64AE4/4BE661FA LED-5MM D60 LED
+  ( 1 N-000135 )
+  ( 2 /pag2/Pixel_05 )
+ )
+ ( /4BE64AE4/4BE661FB LED-5MM D61 LED
+  ( 1 N-000134 )
+  ( 2 /pag2/Pixel_04 )
+ )
+ ( /4BE64AE4/4BE661FC LED-5MM D62 LED
+  ( 1 N-000133 )
+  ( 2 /pag2/Pixel_03 )
+ )
+ ( /4BE64AE4/4BE661FD LED-5MM D63 LED
+  ( 1 N-000132 )
+  ( 2 /pag2/Pixel_02 )
+ )
+ ( /4BE64AE4/4BE661FE LED-5MM D64 LED
+  ( 1 N-000131 )
+  ( 2 /pag2/Pixel_01 )
+ )
+ ( /4BE6A09E SOT23_Opendous F1 2A
+  ( 1 N-000041 )
+  ( 2 +BATT )
+ )
+ ( /4BE6496E SOT23-6_Opendous IC1 AT45DBXX1
+  ( 1 N-000049 )
+  ( 2 N-000048 )
+  ( 3 +3.3V )
+  ( 4 N-000047 )
+  ( 5 +3.3V )
+  ( 6 +3.3V )
+  ( 7 GND )
+  ( 8 N-000042 )
+ )
+ ( /4BE6DB2D at91sam7sxxx-au-LQFP64 IC2 AT91SAM7S512/256/128/64/321-AU
+  ( 1 ? )
+  ( 2 GND )
+  ( 3 ? )
+  ( 4 ? )
+  ( 5 ? )
+  ( 6 ? )
+  ( 7 +3.3V )
+  ( 8 VDD )
+  ( 9 N-000044 )
+  ( 10 N-000064 )
+  ( 11 ? )
+  ( 12 VDD )
+  ( 13 ? )
+  ( 14 ? )
+  ( 15 ? )
+  ( 16 ? )
+  ( 17 GND )
+  ( 18 +3.3V )
+  ( 19 N-000069 )
+  ( 20 N-000043 )
+  ( 21 N-000048 )
+  ( 22 N-000042 )
+  ( 23 ? )
+  ( 24 VDD )
+  ( 25 ? )
+  ( 26 ? )
+  ( 27 N-000049 )
+  ( 28 N-000047 )
+  ( 29 ? )
+  ( 30 ? )
+  ( 31 ? )
+  ( 32 ? )
+  ( 33 /JTAG_TDI )
+  ( 34 ? )
+  ( 35 N-000066 )
+  ( 36 N-000039 )
+  ( 37 ? )
+  ( 38 ? )
+  ( 39 /RESET )
+  ( 40 N-000065 )
+  ( 41 ? )
+  ( 42 ? )
+  ( 43 N-000040 )
+  ( 44 ? )
+  ( 45 +3.3V )
+  ( 46 GND )
+  ( 47 ? )
+  ( 48 ? )
+  ( 49 /JTAG_TDO )
+  ( 50 ? )
+  ( 51 /JTAG_TMS )
+  ( 52 ? )
+  ( 53 /JTAG_TCK )
+  ( 54 VDD )
+  ( 55 ? )
+  ( 56 N-000057 )
+  ( 57 N-000068 )
+  ( 58 +3.3V )
+  ( 59 +3.3V )
+  ( 60 GND )
+  ( 61 N-000051 )
+  ( 62 N-000050 )
+  ( 63 N-000062 )
+  ( 64 VDD )
+ )
+ ( /4BE64997 SM0805 P1 CONN_2
+  ( 1 +3.3V )
+  ( 2 N-000065 )
+ )
+ ( /4BE6494A SOT23-3_Opendous Q1 BSH207
+  ( 1 +BATT )
+  ( 2 +BATT )
+  ( 3 GND )
+  ( 4 N-000055 )
+  ( 5 +BATT )
+  ( 6 +BATT )
+ )
+ ( /4BE64949 SOT23-3_Opendous Q2 BSH207
+  ( 1 N-000054 )
+  ( 2 N-000054 )
+  ( 3 N-000039 )
+  ( 4 N-000055 )
+  ( 5 N-000054 )
+  ( 6 N-000054 )
+ )
+ ( /4BE64947 SOT23-3_Opendous Q3 2N2002K
+  ( 1 N-000040 )
+  ( 2 GND )
+  ( 3 N-000039 )
+ )
+ ( /4BE69CBF SM0805 R1 2K
+  ( 1 VCC_USB )
+  ( 2 GND )
+ )
+ ( /4BE64981 SM0805 R2 47K
+  ( 1 N-000059 )
+  ( 2 +3.3V )
+ )
+ ( /4BE64982 SM0805 R3 47K
+  ( 1 /JTAG_TDI )
+  ( 2 +3.3V )
+ )
+ ( /4BE64983 SM0805 R4 47K
+  ( 1 /JTAG_TMS )
+  ( 2 +3.3V )
+ )
+ ( /4BE64946 SM0805 R5 1M
+  ( 1 N-000055 )
+  ( 2 N-000039 )
+ )
+ ( /4BE64984 SM0805 R6 47K
+  ( 1 /JTAG_TCK )
+  ( 2 +3.3V )
+ )
+ ( /4BE64985 SM0805 R7 47K
+  ( 1 /JTAG_TDO )
+  ( 2 +3.3V )
+ )
+ ( /4BE64945 SM0805 R8 1M
+  ( 1 N-000054 )
+  ( 2 N-000040 )
+ )
+ ( /4BE6497B SM0805 R9 1K5
+  ( 1 N-000061 )
+  ( 2 +3.3V )
+ )
+ ( /4BE64977 SM0805 R10 27R
+  ( 1 N-000056 )
+  ( 2 N-000057 )
+ )
+ ( /4BE64978 SM0805 R11 27R
+  ( 1 N-000061 )
+  ( 2 N-000068 )
+ )
+ ( /4BE64976 SM0805 R12 300K
+  ( 1 GND )
+  ( 2 N-000057 )
+ )
+ ( /4BE6496F SM0805 R13 300K
+  ( 1 GND )
+  ( 2 N-000068 )
+ )
+ ( /4BE64952 SM0805 R14 1K5
+  ( 1 N-000062 )
+  ( 2 N-000052 )
+ )
+ ( /4BE64AE4/4BE661FF SM0805 R15 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000130 )
+ )
+ ( /4BE64AE4/4BE66200 SM0805 R16 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000129 )
+ )
+ ( /4BE64AE4/4BE66202 SM0805 R17 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000127 )
+ )
+ ( /4BE64AE4/4BE66201 SM0805 R18 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000128 )
+ )
+ ( /4BE64AE4/4BE66206 SM0805 R19 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000123 )
+ )
+ ( /4BE64AE4/4BE66205 SM0805 R20 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000124 )
+ )
+ ( /4BE64AE4/4BE66203 SM0805 R21 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000126 )
+ )
+ ( /4BE64AE4/4BE66204 SM0805 R22 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000125 )
+ )
+ ( /4BE64AE4/4BE6620E SM0805 R23 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000094 )
+ )
+ ( /4BE64AE4/4BE6620D SM0805 R24 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000092 )
+ )
+ ( /4BE64AE4/4BE6620B SM0805 R25 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000090 )
+ )
+ ( /4BE64AE4/4BE6620C SM0805 R26 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000088 )
+ )
+ ( /4BE64AE4/4BE66207 SM0805 R27 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000086 )
+ )
+ ( /4BE64AE4/4BE66208 SM0805 R28 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000084 )
+ )
+ ( /4BE64AE4/4BE6620A SM0805 R29 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000083 )
+ )
+ ( /4BE64AE4/4BE66209 SM0805 R30 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000153 )
+ )
+ ( /4BE64AE4/4BE6621E SM0805 R31 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000152 )
+ )
+ ( /4BE64AE4/4BE6621D SM0805 R32 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000151 )
+ )
+ ( /4BE64AE4/4BE6621B SM0805 R33 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000150 )
+ )
+ ( /4BE64AE4/4BE6621C SM0805 R34 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000149 )
+ )
+ ( /4BE64AE4/4BE66217 SM0805 R35 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000148 )
+ )
+ ( /4BE64AE4/4BE66218 SM0805 R36 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000147 )
+ )
+ ( /4BE64AE4/4BE6621A SM0805 R37 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000146 )
+ )
+ ( /4BE64AE4/4BE66219 SM0805 R38 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000145 )
+ )
+ ( /4BE64AE4/4BE6620F SM0805 R39 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000143 )
+ )
+ ( /4BE64AE4/4BE66210 SM0805 R40 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000141 )
+ )
+ ( /4BE64AE4/4BE66212 SM0805 R41 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000139 )
+ )
+ ( /4BE64AE4/4BE66211 SM0805 R42 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000137 )
+ )
+ ( /4BE64AE4/4BE66216 SM0805 R43 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000171 )
+ )
+ ( /4BE64AE4/4BE66215 SM0805 R44 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000169 )
+ )
+ ( /4BE64AE4/4BE66213 SM0805 R45 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000167 )
+ )
+ ( /4BE64AE4/4BE66214 SM0805 R46 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000165 )
+ )
+ ( /4BE64AE4/4BE6623E SM0805 R47 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000164 )
+ )
+ ( /4BE64AE4/4BE6623D SM0805 R48 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000163 )
+ )
+ ( /4BE64AE4/4BE6623B SM0805 R49 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000162 )
+ )
+ ( /4BE64AE4/4BE6623C SM0805 R50 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000161 )
+ )
+ ( /4BE64AE4/4BE66237 SM0805 R51 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000160 )
+ )
+ ( /4BE64AE4/4BE66238 SM0805 R52 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000159 )
+ )
+ ( /4BE64AE4/4BE6623A SM0805 R53 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000158 )
+ )
+ ( /4BE64AE4/4BE66239 SM0805 R54 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000157 )
+ )
+ ( /4BE64AE4/4BE6622F SM0805 R55 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000155 )
+ )
+ ( /4BE64AE4/4BE66230 SM0805 R56 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000080 )
+ )
+ ( /4BE64AE4/4BE66232 SM0805 R57 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000122 )
+ )
+ ( /4BE64AE4/4BE66231 SM0805 R58 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000079 )
+ )
+ ( /4BE64AE4/4BE66236 SM0805 R59 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000120 )
+ )
+ ( /4BE64AE4/4BE66235 SM0805 R60 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000078 )
+ )
+ ( /4BE64AE4/4BE66233 SM0805 R61 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000118 )
+ )
+ ( /4BE64AE4/4BE66234 SM0805 R62 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000077 )
+ )
+ ( /4BE64AE4/4BE6621F SM0805 R63 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000116 )
+ )
+ ( /4BE64AE4/4BE66220 SM0805 R64 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000114 )
+ )
+ ( /4BE64AE4/4BE66222 SM0805 R65 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000113 )
+ )
+ ( /4BE64AE4/4BE66221 SM0805 R66 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000112 )
+ )
+ ( /4BE64AE4/4BE66226 SM0805 R67 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000111 )
+ )
+ ( /4BE64AE4/4BE66225 SM0805 R68 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000110 )
+ )
+ ( /4BE64AE4/4BE66223 SM0805 R69 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000109 )
+ )
+ ( /4BE64AE4/4BE66224 SM0805 R70 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000107 )
+ )
+ ( /4BE64AE4/4BE6622E SM0805 R71 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000106 )
+ )
+ ( /4BE64AE4/4BE6622D SM0805 R72 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000105 )
+ )
+ ( /4BE64AE4/4BE6622B SM0805 R73 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000136 )
+ )
+ ( /4BE64AE4/4BE6622C SM0805 R74 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000135 )
+ )
+ ( /4BE64AE4/4BE66227 SM0805 R75 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000134 )
+ )
+ ( /4BE64AE4/4BE66228 SM0805 R76 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000133 )
+ )
+ ( /4BE64AE4/4BE6622A SM0805 R77 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000132 )
+ )
+ ( /4BE64AE4/4BE66229 SM0805 R78 R_MINI
+  ( 1 +BATT )
+  ( 2 N-000131 )
+ )
+ ( /4BE64994 Switch_SMT_EVQ SW1 bootloader
+  ( 1 N-000039 )
+  ( 2 N-000039 )
+  ( 3 N-000046 )
+  ( 4 N-000046 )
+ )
+ ( /4BE6498E Memory_Card_microSD_3M_290805 U1 CONN_MICROSD
+  ( 1 ? )
+  ( 2 N-000047 )
+  ( 3 N-000042 )
+  ( 4 +3.3V )
+  ( 5 N-000048 )
+  ( 6 GND )
+  ( 7 N-000049 )
+  ( 8 ? )
+  ( 9 GND )
+  ( 10 ? )
+ )
+ ( /4BE69C20 $noname$ U2 MCP73811/2
+  ( 1 VCC_USB )
+  ( 2 GND )
+  ( 3 +BATT )
+  ( 4 VCC_USB )
+  ( 5 VCC_USB )
+ )
+ ( /4BE64991 CONN_5x2_1.27mm_0.5_inch U3 CONN_JTAG_ARM
+  ( 1 +3.3V )
+  ( 2 +3.3V )
+  ( 3 N-000059 )
+  ( 4 GND )
+  ( 5 /JTAG_TDI )
+  ( 6 GND )
+  ( 7 /JTAG_TMS )
+  ( 8 GND )
+  ( 9 /JTAG_TCK )
+  ( 10 GND )
+  ( 11 /JTAG_TCK )
+  ( 12 GND )
+  ( 13 /JTAG_TDO )
+  ( 14 GND )
+  ( 15 /RESET )
+  ( 16 GND )
+  ( 17 ? )
+  ( 18 GND )
+  ( 19 ? )
+  ( 20 GND )
+ )
+ ( /4BE684E1 CONN_USB2_MiniB_SMT U4 USBCONN
+  ( 1 VCC_USB )
+  ( 2 N-000056 )
+  ( 3 N-000061 )
+  ( 4 GND )
+  ( 5 N-000037 )
+ )
+ ( /4BE6DD62 $noname$ U5 AH173
+  ( 1 +3.3V )
+  ( 2 GND )
+  ( 3 N-000066 )
+ )
+ ( /4BE64940 $noname$ U6 FAN2502-XX
+  ( 1 N-000054 )
+  ( 2 GND )
+  ( 3 N-000054 )
+  ( 4 N-000053 )
+  ( 5 +3.3V )
+ )
+ ( /4BE64AE4/4BE66246 SOIC16_NB U7 74x595
+  ( 1 /pag2/Pixel_02 )
+  ( 2 /pag2/Pixel_03 )
+  ( 3 /pag2/Pixel_04 )
+  ( 4 /pag2/Pixel_05 )
+  ( 5 /pag2/Pixel_06 )
+  ( 6 /pag2/Pixel_07 )
+  ( 7 /pag2/Pixel_08 )
+  ( 8 GND )
+  ( 9 N-000073 )
+  ( 10 +3.3V )
+  ( 11 N-000069 )
+  ( 12 N-000043 )
+  ( 13 GND )
+  ( 14 N-000044 )
+  ( 15 /pag2/Pixel_01 )
+  ( 16 +3.3V )
+ )
+ ( /4BE64AE4/4BE66245 SOIC16_NB U8 74x595
+  ( 1 /pag2/Pixel_10 )
+  ( 2 /pag2/Pixel_11 )
+  ( 3 /pag2/Pixel_12 )
+  ( 4 /pag2/Pixel_13 )
+  ( 5 /pag2/Pixel_14 )
+  ( 6 /pag2/Pixel_15 )
+  ( 7 /pag2/Pixel_16 )
+  ( 8 GND )
+  ( 9 N-000173 )
+  ( 10 +3.3V )
+  ( 11 N-000069 )
+  ( 12 N-000043 )
+  ( 13 GND )
+  ( 14 N-000073 )
+  ( 15 /pag2/Pixel_09 )
+  ( 16 +3.3V )
+ )
+ ( /4BE64AE4/4BE66244 SOIC16_NB U9 74x595
+  ( 1 /pag2/Pixel_18 )
+  ( 2 /pag2/Pixel_19 )
+  ( 3 /pag2/Pixel_20 )
+  ( 4 /pag2/Pixel_21 )
+  ( 5 /pag2/Pixel_22 )
+  ( 6 /pag2/Pixel_23 )
+  ( 7 /pag2/Pixel_24 )
+  ( 8 GND )
+  ( 9 N-000072 )
+  ( 10 +3.3V )
+  ( 11 N-000069 )
+  ( 12 N-000043 )
+  ( 13 GND )
+  ( 14 N-000173 )
+  ( 15 /pag2/Pixel_17 )
+  ( 16 +3.3V )
+ )
+ ( /4BE64AE4/4BE66243 SOIC16_NB U10 74x595
+  ( 1 /pag2/Pixel_26 )
+  ( 2 /pag2/Pixel_27 )
+  ( 3 /pag2/Pixel_28 )
+  ( 4 /pag2/Pixel_29 )
+  ( 5 /pag2/Pixel_30 )
+  ( 6 /pag2/Pixel_31 )
+  ( 7 /pag2/Pixel_32 )
+  ( 8 GND )
+  ( 9 ? )
+  ( 10 +3.3V )
+  ( 11 N-000069 )
+  ( 12 N-000043 )
+  ( 13 GND )
+  ( 14 N-000072 )
+  ( 15 /pag2/Pixel_25 )
+  ( 16 +3.3V )
+ )
+ ( /4BE64AE4/4BE66242 SOIC16_NB U11 74x595
+  ( 1 /pag2/Pixel_31 )
+  ( 2 /pag2/Pixel_30 )
+  ( 3 /pag2/Pixel_29 )
+  ( 4 /pag2/Pixel_28 )
+  ( 5 /pag2/Pixel_27 )
+  ( 6 /pag2/Pixel_26 )
+  ( 7 /pag2/Pixel_25 )
+  ( 8 GND )
+  ( 9 N-000076 )
+  ( 10 +3.3V )
+  ( 11 N-000069 )
+  ( 12 N-000064 )
+  ( 13 GND )
+  ( 14 N-000044 )
+  ( 15 /pag2/Pixel_32 )
+  ( 16 +3.3V )
+ )
+ ( /4BE64AE4/4BE66241 SOIC16_NB U12 74x595
+  ( 1 /pag2/Pixel_23 )
+  ( 2 /pag2/Pixel_22 )
+  ( 3 /pag2/Pixel_21 )
+  ( 4 /pag2/Pixel_20 )
+  ( 5 /pag2/Pixel_19 )
+  ( 6 /pag2/Pixel_18 )
+  ( 7 /pag2/Pixel_17 )
+  ( 8 GND )
+  ( 9 N-000174 )
+  ( 10 +3.3V )
+  ( 11 N-000069 )
+  ( 12 N-000064 )
+  ( 13 GND )
+  ( 14 N-000076 )
+  ( 15 /pag2/Pixel_24 )
+  ( 16 +3.3V )
+ )
+ ( /4BE64AE4/4BE66240 SOIC16_NB U13 74x595
+  ( 1 /pag2/Pixel_15 )
+  ( 2 /pag2/Pixel_14 )
+  ( 3 /pag2/Pixel_13 )
+  ( 4 /pag2/Pixel_12 )
+  ( 5 /pag2/Pixel_11 )
+  ( 6 /pag2/Pixel_10 )
+  ( 7 /pag2/Pixel_09 )
+  ( 8 GND )
+  ( 9 N-000075 )
+  ( 10 +3.3V )
+  ( 11 N-000069 )
+  ( 12 N-000064 )
+  ( 13 GND )
+  ( 14 N-000174 )
+  ( 15 /pag2/Pixel_16 )
+  ( 16 +3.3V )
+ )
+ ( /4BE64AE4/4BE6623F SOIC16_NB U14 74x595
+  ( 1 /pag2/Pixel_07 )
+  ( 2 /pag2/Pixel_06 )
+  ( 3 /pag2/Pixel_05 )
+  ( 4 /pag2/Pixel_04 )
+  ( 5 /pag2/Pixel_03 )
+  ( 6 /pag2/Pixel_02 )
+  ( 7 /pag2/Pixel_01 )
+  ( 8 GND )
+  ( 9 ? )
+  ( 10 +3.3V )
+  ( 11 N-000069 )
+  ( 12 N-000064 )
+  ( 13 GND )
+  ( 14 N-000075 )
+  ( 15 /pag2/Pixel_08 )
+  ( 16 +3.3V )
+ )
+ ( /4BE6494F HC49-US X1 18.432_MHz
+  ( 1 N-000050 )
+  ( 2 N-000051 )
  )
 )
 *
 { Allowed footprints by component:
-$component R1
- R?
- SM0603
- SM0805
-$endlist
-$component R5
- R?
- SM0603
- SM0805
-$endlist
-$component R8
- R?
- SM0603
- SM0805
+$component C1
+ SM*
+ C?
+ C1-1
 $endlist
 $component C4
  SM*
@@ -1037,525 +1027,7 @@ $component C11
  C?
  C1-1
 $endlist
-$component C1
- SM*
- C?
- C1-1
-$endlist
-$component D64
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D63
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D62
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D61
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D60
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D59
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D58
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D57
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D56
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D55
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D54
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D53
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D52
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D51
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D50
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D49
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D47
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D45
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D43
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D41
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D40
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D39
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D38
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D37
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D36
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D35
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D34
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D33
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D32
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D31
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D30
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D29
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D28
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D27
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D26
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D25
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D24
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D23
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D22
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D21
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D20
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D19
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D18
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D17
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D16
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D15
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D14
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D13
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D12
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D11
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D10
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D9
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D8
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D7
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D6
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D5
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D4
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D3
+$component D1
  LED-3MM
  LED-5MM
  LED-10MM
@@ -1573,7 +1045,7 @@ $component D2
  LED-1206
  LEDV
 $endlist
-$component D1
+$component D3
  LED-3MM
  LED-5MM
  LED-10MM
@@ -1582,7 +1054,7 @@ $component D1
  LED-1206
  LEDV
 $endlist
-$component D48
+$component D4
  LED-3MM
  LED-5MM
  LED-10MM
@@ -1591,7 +1063,7 @@ $component D48
  LED-1206
  LEDV
 $endlist
-$component D46
+$component D5
  LED-3MM
  LED-5MM
  LED-10MM
@@ -1600,7 +1072,322 @@ $component D46
  LED-1206
  LEDV
 $endlist
-$component D44
+$component D6
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D7
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D8
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D9
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D10
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D11
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D12
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D13
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D14
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D15
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D16
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D17
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D18
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D19
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D20
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D21
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D22
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D23
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D24
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D25
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D26
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D27
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D28
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D29
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D30
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D31
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D32
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D33
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D34
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D35
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D36
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D37
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D38
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D39
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D40
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D41
  LED-3MM
  LED-5MM
  LED-10MM
@@ -1618,725 +1405,218 @@ $component D42
  LED-1206
  LEDV
 $endlist
+$component D43
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D44
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D45
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D46
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D47
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D48
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D49
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D50
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D51
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D52
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D53
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D54
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D55
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D56
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D57
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D58
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D59
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D60
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D61
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D62
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D63
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D64
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+$endlist
 $endfootprintlist
 }
-{ Pin List by Nets
-Net 11 "/JTAG TMS" "JTAG TMS"
- R4 1
- IC2 51
- U3 7
-Net 12 "GND" "GND"
- C23 2
- C22 2
- C25 2
- C5 1
- U14 13
- C26 2
- C27 2
- IC1 7
- R13 1
- C10 1
- C18 2
- C19 2
- C20 2
- C24 2
- C6 2
- Q3 2
- U7 8
- C9 2
- C1 2
- C11 2
- C21 2
- C15 2
- C8 1
- R12 1
- U14 8
- U6 2
- C4 2
- IC2 2
- U13 13
- IC2 60
- U13 8
- U12 13
- IC2 46
- IC2 17
- U12 8
- U5 2
- U2 2
- U11 8
- U4 4
- U11 13
- U9 8
- U8 13
- U9 13
- U8 8
- U3 4
- U10 13
- U3 6
- U3 8
- U3 10
- BT1 2
- C2 2
- U3 20
- U3 12
- U3 14
- U3 16
- U3 18
- C3 2
- R1 2
- C12 2
- U7 13
- C13 2
- C14 2
- U1 6
- U10 8
- Q1 3
- U1 9
- C16 2
- C17 2
-Net 32 "+3.3V" "+3.3V"
- R7 2
- R6 2
- C21 1
- U6 5
- U12 10
- U7 10
- C2 1
- U12 16
- C20 1
- C17 1
- C19 1
- C16 1
- U10 10
- U3 2
- U3 1
- U13 10
- IC2 7
- U10 16
- U9 10
- P1 1
- U14 16
- C18 1
- IC2 59
- IC1 3
- IC2 58
- IC1 5
- IC1 6
- R9 2
- IC2 45
- U14 10
- U8 10
- U9 16
- U1 4
- R4 2
- R3 2
- R2 2
- U11 10
- U7 16
- C11 1
- C3 1
- U5 1
- U8 16
- IC2 18
- U11 16
- U13 16
-Net 33 "/JTAG TDO" "JTAG TDO"
- U3 13
- IC2 49
- R7 1
-Net 36 "VCC_USB" "VCC_USB"
- U4 1
- U2 5
- R1 1
- U2 4
- U2 1
-Net 37 "" ""
- C5 2
- U4 5
-Net 38 "VDD" "VDD"
- C26 1
- C27 1
- IC2 12
- C24 1
- C23 1
- C22 1
- C25 1
- IC2 24
- IC2 54
- IC2 64
- IC2 8
-Net 39 "" ""
- SW1 1
- SW1 2
- C4 1
- R5 2
- Q3 3
- Q2 3
- IC2 36
-Net 40 "" ""
- Q3 1
- R8 2
- IC2 43
-Net 41 "" ""
- F1 1
- BT1 1
-Net 42 "" ""
- U1 3
- IC2 22
- IC1 8
-Net 43 "" ""
- U9 12
- U7 12
- IC2 20
- U8 12
- U10 12
-Net 44 "" ""
- IC2 9
- U7 14
- U11 14
-Net 45 "+BATT" "+BATT"
- R32 1
- R19 1
- R63 1
- R30 1
- R31 1
- R16 1
- R15 1
- R46 1
- R38 1
- R36 1
- R27 1
- R44 1
- R43 1
- R35 1
- R64 1
- R34 1
- R28 1
- R20 1
- R33 1
- R22 1
- R37 1
- R21 1
- R17 1
- R18 1
- R49 1
- R50 1
- R48 1
- R47 1
- R76 1
- R78 1
- R77 1
- R73 1
- R74 1
- R72 1
- R75 1
- R67 1
- R68 1
- R70 1
- R69 1
- U2 3
- F1 2
- Q1 1
- Q1 2
- Q1 5
- Q1 6
- R57 1
- R58 1
- R56 1
- R55 1
- R71 1
- R45 1
- R41 1
- R42 1
- R40 1
- R39 1
- R23 1
- R24 1
- R26 1
- R25 1
- R29 1
- R51 1
- R59 1
- R60 1
- R52 1
- R54 1
- R62 1
- R53 1
- R66 1
- R61 1
- R65 1
-Net 46 "" ""
- SW1 3
- SW1 4
-Net 47 "" ""
- IC2 28
- IC1 4
- U1 2
-Net 48 "" ""
- IC1 2
- IC2 21
- U1 5
-Net 49 "" ""
- U1 7
- IC2 27
- IC1 1
-Net 50 "" ""
- IC2 62
- X1 1
- C13 1
-Net 51 "" ""
- IC2 61
- C12 1
- X1 2
-Net 52 "" ""
- R14 2
- C15 1
-Net 53 "" ""
- U6 4
- C9 1
-Net 54 "" ""
- Q2 1
- Q2 2
- U6 3
- C6 1
- C1 1
- R8 1
- U6 1
- Q2 6
- Q2 5
-Net 55 "" ""
- Q2 4
- Q1 4
- R5 1
-Net 56 "" ""
- U4 2
- C7 2
- R10 1
-Net 57 "" ""
- IC2 56
- R10 2
- R12 2
- C8 2
-Net 58 "/JTAG TDI" "JTAG TDI"
- R3 1
- U3 5
- IC2 33
-Net 59 "" ""
- U3 3
- R2 1
-Net 61 "" ""
- R11 1
- C7 1
- R9 1
- U4 3
-Net 62 "" ""
- IC2 63
- C14 1
- R14 1
-Net 63 "/JTAG TCK" "JTAG TCK"
- IC2 53
- U3 9
- R6 1
- U3 11
-Net 64 "" ""
- U12 12
- U14 12
- U11 12
- IC2 10
- U13 12
-Net 65 "" ""
- P1 2
- IC2 40
-Net 66 "" ""
- IC2 35
- U5 3
-Net 68 "" ""
- IC2 57
- R11 2
- R13 2
- C10 2
-Net 69 "" ""
- U13 11
- U7 11
- U8 11
- U9 11
- U10 11
- U12 11
- U11 11
- IC2 19
- U14 11
-Net 70 "/RESET" "RESET"
- U3 15
- IC2 39
-Net 72 "" ""
- U10 14
- U9 9
-Net 73 "" ""
- U7 9
- U8 14
-Net 75 "" ""
- U14 14
- U13 9
-Net 76 "" ""
- U12 14
- U11 9
-Net 77 "" ""
- R62 2
- D48 1
-Net 78 "" ""
- D46 1
- R60 2
-Net 79 "" ""
- R58 2
- D44 1
-Net 80 "" ""
- R56 2
- D42 1
-Net 81 "/pag2/Pixel 01" "Pixel 01"
- D64 2
- U7 15
- D1 2
- U14 7
-Net 82 "/pag2/Pixel 02" "Pixel 02"
- D2 2
- U7 1
- D63 2
- U14 6
-Net 83 "" ""
- R29 2
- D15 1
-Net 84 "" ""
- D14 1
- R28 2
-Net 85 "/pag2/Pixel 14" "Pixel 14"
- D14 2
- U8 5
- U13 2
- D51 2
-Net 86 "" ""
- R27 2
- D13 1
-Net 87 "/pag2/Pixel 13" "Pixel 13"
- U8 4
- D13 2
- U13 3
- D52 2
-Net 88 "" ""
- D12 1
- R26 2
-Net 89 "/pag2/Pixel 12" "Pixel 12"
- D53 2
- U13 4
- D12 2
- U8 3
-Net 90 "" ""
- D11 1
- R25 2
-Net 91 "/pag2/Pixel 11" "Pixel 11"
- U13 5
- U8 2
- D54 2
- D11 2
-Net 92 "" ""
- R24 2
- D10 1
-Net 93 "/pag2/Pixel 10" "Pixel 10"
- D55 2
- U8 1
- U13 6
- D10 2
-Net 94 "" ""
- R23 2
- D9 1
-Net 95 "/pag2/Pixel 08" "Pixel 08"
- D8 2
- D57 2
- U14 15
- U7 7
-Net 96 "/pag2/Pixel 07" "Pixel 07"
- U7 6
- U14 1
- D7 2
- D58 2
-Net 97 "/pag2/Pixel 06" "Pixel 06"
- U14 2
- U7 5
- D59 2
- D6 2
-Net 98 "/pag2/Pixel 05" "Pixel 05"
- D60 2
- U7 4
- U14 3
- D5 2
-Net 99 "/pag2/Pixel 04" "Pixel 04"
- U14 4
- D4 2
- U7 3
- D61 2
-Net 100 "/pag2/Pixel 03" "Pixel 03"
- D3 2
- U14 5
- D62 2
- U7 2
-Net 101 "/pag2/Pixel 23" "Pixel 23"
- U9 6
- D23 2
- U12 1
- D42 2
-Net 102 "/pag2/Pixel 21" "Pixel 21"
- D21 2
- D44 2
- U12 3
- U9 4
-Net 103 "/pag2/Pixel 19" "Pixel 19"
- U9 2
- U12 5
- D19 2
- D46 2
-Net 104 "/pag2/Pixel 17" "Pixel 17"
- D48 2
- D17 2
- U12 7
- U9 15
-Net 105 "" ""
- D58 1
- R72 2
-Net 106 "" ""
- D57 1
- R71 2
-Net 107 "" ""
- R70 2
- D56 1
-Net 108 "/pag2/Pixel 09" "Pixel 09"
- D9 2
- D56 2
- U13 7
- U8 15
-Net 109 "" ""
- D55 1
- R69 2
-Net 110 "" ""
- D54 1
- R68 2
-Net 111 "" ""
- R67 2
- D53 1
-Net 112 "" ""
- D52 1
- R66 2
-Net 113 "" ""
- R65 2
- D51 1
-Net 114 "" ""
- D50 1
- R64 2
-Net 115 "/pag2/Pixel 15" "Pixel 15"
- D15 2
- U13 1
- U8 6
- D50 2
-Net 116 "" ""
- R63 2
- D49 1
-Net 117 "/pag2/Pixel 16" "Pixel 16"
- D16 2
- U13 15
- U8 7
- D49 2
-Net 118 "" ""
- R61 2
- D47 1
-Net 119 "/pag2/Pixel 18" "Pixel 18"
- U9 1
- U12 6
- D18 2
- D47 2
-Net 120 "" ""
- R59 2
- D45 1
-Net 121 "/pag2/Pixel 20" "Pixel 20"
- U12 4
- U9 3
- D20 2
- D45 2
-Net 122 "" ""
- D43 1
- R57 2
-Net 123 "" ""
- R19 2
- D5 1
-Net 124 "" ""
- D6 1
- R20 2
-Net 125 "" ""
- R22 2
- D8 1
-Net 126 "" ""
- R21 2
- D7 1
-Net 127 "" ""
- D3 1
- R17 2
-Net 128 "" ""
- D4 1
- R18 2
-Net 129 "" ""
- D2 1
- R16 2
-Net 130 "" ""
- R15 2
- D1 1
-Net 131 "" ""
- R78 2
- D64 1
-Net 132 "" ""
- R77 2
- D63 1
-Net 133 "" ""
- R76 2
- D62 1
-Net 134 "" ""
- R75 2
- D61 1
-Net 135 "" ""
- D60 1
- R74 2
-Net 136 "" ""
- D59 1
- R73 2
-Net 137 "" ""
- D28 1
- R42 2
-Net 138 "/pag2/Pixel 28" "Pixel 28"
- U10 3
- U11 4
- D37 2
- D28 2
-Net 139 "" ""
- R41 2
- D27 1
-Net 140 "/pag2/Pixel 27" "Pixel 27"
- D38 2
- U11 5
- U10 2
- D27 2
-Net 141 "" ""
- R40 2
- D26 1
-Net 142 "/pag2/Pixel 26" "Pixel 26"
- U10 1
- D39 2
- U11 6
- D26 2
-Net 143 "" ""
- R39 2
- D25 1
-Net 144 "/pag2/Pixel 25" "Pixel 25"
- U11 7
- D25 2
- D40 2
- U10 15
-Net 145 "" ""
- D24 1
- R38 2
-Net 146 "" ""
- D23 1
- R37 2
-Net 147 "" ""
- D22 1
- R36 2
-Net 148 "" ""
- R35 2
- D21 1
-Net 149 "" ""
- R34 2
- D20 1
-Net 150 "" ""
- R33 2
- D19 1
-Net 151 "" ""
- R32 2
- D18 1
-Net 152 "" ""
- R31 2
- D17 1
-Net 153 "" ""
- R30 2
- D16 1
-Net 154 "/pag2/Pixel 22" "Pixel 22"
- D22 2
- U12 2
- U9 5
- D43 2
-Net 155 "" ""
- R55 2
- D41 1
-Net 156 "/pag2/Pixel 24" "Pixel 24"
- D41 2
- U9 7
- U12 15
- D24 2
-Net 157 "" ""
- D40 1
- R54 2
-Net 158 "" ""
- D39 1
- R53 2
-Net 159 "" ""
- R52 2
- D38 1
-Net 160 "" ""
- R51 2
- D37 1
-Net 161 "" ""
- D36 1
- R50 2
-Net 162 "" ""
- R49 2
- D35 1
-Net 163 "" ""
- R48 2
- D34 1
-Net 164 "" ""
- R47 2
- D33 1
-Net 165 "" ""
- R46 2
- D32 1
-Net 166 "/pag2/Pixel 32" "Pixel 32"
- D32 2
- D33 2
- U10 7
- U11 15
-Net 167 "" ""
- D31 1
- R45 2
-Net 168 "/pag2/Pixel 31" "Pixel 31"
- U11 1
- D34 2
- D31 2
- U10 6
-Net 169 "" ""
- D30 1
- R44 2
-Net 170 "/pag2/Pixel 30" "Pixel 30"
- U10 5
- D30 2
- D35 2
- U11 2
-Net 171 "" ""
- R43 2
- D29 1
-Net 172 "/pag2/Pixel 29" "Pixel 29"
- D29 2
- D36 2
- U10 4
- U11 3
-Net 173 "" ""
- U9 14
- U8 9
-Net 174 "" ""
- U13 14
- U12 9
-}
-#End
