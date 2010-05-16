@@ -1,4 +1,4 @@
-EESchema-DOCLIB  Version 2.0  Date: 09-05-2010 4:55:39
+EESchema-DOCLIB  Version 2.0  Date: 15/05/2010 22:29:41
 #
 $CMP 2N2002K
 D 2N7002K
@@ -39,6 +39,11 @@ $ENDCMP
 #
 $CMP MPSA92
 F transistors/bipolar/mpsa92.pdf
+$ENDCMP
+#
+$CMP NTR417P
+D -30V -3,5A Mosfet-P SOT23
+F X:/Dropbox/Hardware_Box/componentes/ON_Semicondutor/DS_NTR4171P_ON-Semi_Mosfet-P_30V_3.5A_SOT23.PDF
 $ENDCMP
 #
 #End Doc Library
