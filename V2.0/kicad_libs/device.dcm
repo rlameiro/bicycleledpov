@@ -1,8 +1,13 @@
-EESchema-DOCLIB  Version 2.0  Date: 23/10/2009 13:34:12
+EESchema-DOCLIB  Version 2.0  Date: 15/05/2010 23:41:40
 #
 $CMP 7SEGM
 D Afficheur Leds 7 segments
 K DEV
+$ENDCMP
+#
+$CMP Battery Holder
+D AA Battery Holder PCB 
+F X:/Dropbox/Hardware_Box/componentes/Eagle_Plastic_Devices/DS_12BH311P-GR_eaglePlasticDevices_AA_Bat_Holder_PCB.pdf
 $ENDCMP
 #
 $CMP BI_LED
