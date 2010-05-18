@@ -1,32 +1,34 @@
-ref	value	footprint	Campo1	Campo2	Campo3	Campo4	Campo5	Campo6	Campo7	Campo8
-BT1	Rechar. Lithium batt 3.7V 900mAh									
-C1	100uF									
-C2	4.7uF									
+ref	value	footprint	Field1	Field2	Field3	Field4	Field5	Field6	Field7	Field8
+BT1	BATTERY_HOLDER		Rechargeable Lith. 3,7V							
+C1	4.7uF									
+C2	100nF									
 C3	47uF low ESR									
-C4	100nF									
-C5	10nF									
-C6	4.7uF									
-C7	33pF									
-C8	15pF									
-C9	10nF									
-C10	15pF									
-C11	4.7uF									
-C12	10pF									
-C13	10pF									
-C14	1nF									
-C15	10nF									
-C16	100nF									
-C17	4.7uF									
-C18	100nF									
-C19	100nF									
-C20	100nF									
-C21	100nF									
-C22	1nF									
-C23	4.7uF									
-C24	100nF									
-C25	100nF									
-C26	100nF									
-C27	100nF									
+C4	100nF	SM0805								
+C5	10nF	SM0805								
+C6	100uF									
+C7	33pF	SM0805								
+C8	4.7uF	SM0805								
+C9	15pF	SM0805								
+C10	15pF	SM0805								
+C11	10nF									
+C12	4.7uF	SM0805								
+C13	10pF	SM0805								
+C14	10pF	SM0805								
+C15	1nF	SM0805								
+C16	10nF	SM0805								
+C17	100nF									
+C18	4.7uF	SM0805								
+C19	100nF	SM0805								
+C20	100nF	SM0805								
+C21	100nF	SM0805								
+C22	100nF	SM0805								
+C23	1nF									
+C24	4.7uF	SM0805								
+C25	100nF	SM0805								
+C26	100nF	SM0805								
+C27	100nF	SM0805								
+C28	100nF									
+C29	100nF									
 D1	LED									
 D2	LED									
 D3	LED									
@@ -94,27 +96,29 @@ D64	LED
 F1	2A									
 IC1	AT45DBXX1		NA							
 IC2	AT91SAM7S512/256/128/64/321-AU	at91sam7sxxx-au-LQFP64								
-P1	CONN_2									
-Q1	BSH207	SOT457								
-Q2	BSH207	SOT457								
-Q3	2N2002K	SOT23								
-R1	2K		NA							
-R2	47K									
-R3	47K									
-R4	47K									
-R5	1M									
+J1	CONN_USB									
+J2	CONN_MICRO_SD									
+P1	CONN_2	SM0805								
+Q1	NTR417P	SM0805								
+Q2	NTR417P	SM0805								
+Q3	2N2002K	SM0805								
+R1	2K	SM0805	NA							
+R2	47K	SM0805								
+R3	47K	SM0805								
+R4	1M	SM0805								
+R5	47K									
 R6	47K									
 R7	47K									
-R8	1M									
-R9	1K5									
-R10	27R									
-R11	27R									
-R12	300K									
-R13	300K									
-R14	1K5									
-R15	82R									
-R16	82R									
-R17	82R									
+R8	1M	SM0805								
+R9	R	SM0805								
+R10	R									
+R11	1K5									
+R12	27R									
+R13	27R									
+R14	300K									
+R15	300K									
+R16	1K5									
+R17	1K									
 R18	82R									
 R19	82R									
 R20	82R									
@@ -176,13 +180,15 @@ R75	82R
 R76	82R									
 R77	82R									
 R78	82R									
+R79	82R									
+R80	82R									
+R81	82R									
 SW1	bootloader									
-U1	CONN_MICROSD									
-U2	MCP73811/2									
-U3	CONN_JTAG_ARM									
-U4	USBCONN									
-U5	AH173									
-U6	FAN2502-XX									
+U1	CONN_JTAG_ARM									
+U3	MCP73811/2									
+U4	AH173									
+U5	FAN2502-XX									
+U6	74x595									
 U7	74x595									
 U8	74x595									
 U9	74x595									
@@ -190,5 +196,4 @@ U10	74x595
 U11	74x595									
 U12	74x595									
 U13	74x595									
-U14	74x595									
 X1	18.432 MHz									
