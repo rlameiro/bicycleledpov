@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (20100406 SVN-R2508)-final date = 16/05/2010 01:47:03
+Cmp-Mod V01 Created by CvPCB (2010-05-05 BZR 2356)-stable date = 28/05/2010 02:19:05
 
 BeginCmp
 TimeStamp = /4BEF241F;
@@ -11,7 +11,7 @@ BeginCmp
 TimeStamp = /4BE64987;
 Reference = C1;
 ValeurCmp = 4.7uF;
-IdModule  = C1.5V8H;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
@@ -46,7 +46,7 @@ BeginCmp
 TimeStamp = /4BE64937;
 Reference = C6;
 ValeurCmp = 100uF;
-IdModule  = SM0805_Opendous;
+IdModule  = C1.5V8H;
 EndCmp
 
 BeginCmp
@@ -208,6 +208,13 @@ TimeStamp = /4BE6496A;
 Reference = C29;
 ValeurCmp = 100nF;
 IdModule  = SM0805_Opendous;
+EndCmp
+
+BeginCmp
+TimeStamp = /4BFBF8F7;
+Reference = C30;
+ValeurCmp = C;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
@@ -1286,6 +1293,20 @@ TimeStamp = /4BE64AE4/4BE66229;
 Reference = R81;
 ValeurCmp = 82R;
 IdModule  = SM0805_Opendous;
+EndCmp
+
+BeginCmp
+TimeStamp = /4BFBF902;
+Reference = R82;
+ValeurCmp = R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4BFBF8E2;
+Reference = R83;
+ValeurCmp = R;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
