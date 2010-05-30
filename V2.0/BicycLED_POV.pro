@@ -1,4 +1,4 @@
-update=26/05/2010 03:46:42
+update=28/05/2010 02:56:21
 last_client=pcbnew
 [eeschema]
 version=1
@@ -70,7 +70,7 @@ DrawLar=150
 EdgeLar=150
 TxtLar=120
 MSegLar=118
-LastNetListRead=
+LastNetListRead=BicycLED_POV.net
 [pcbnew/libraries]
 LibDir=kicad_libs
 LibName1=sockets
