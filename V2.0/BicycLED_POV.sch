@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 28/05/2010 02:56:11
+EESchema Schematic File Version 2  date 29/05/2010 05:31:03
 LIBS:regul
 LIBS:switch_FSM2JSMA
 LIBS:transistors
@@ -19,7 +19,7 @@ EELAYER END
 $Descr A4 11700 8267
 Sheet 1 2
 Title "   BicycLED POV"
-Date "28 may 2010"
+Date "29 may 2010"
 Rev "v 2.0"
 Comp "Hardware BOX                                http://code.google.com/p/bicycleledpov"
 Comment1 "                                                      Jorge Pinto & Francisco Mendes"
