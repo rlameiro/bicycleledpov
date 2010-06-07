@@ -1,4 +1,4 @@
-update=02/06/2010 17:18:56
+update=03/06/2010 20:35:43
 last_client=pcbnew
 [eeschema]
 version=1
@@ -56,8 +56,8 @@ NetIExt=net
 [pcbnew]
 version=1
 PadDrlX=0
-PadDimH=591
-PadDimV=106
+PadDimH=2283
+PadDimV=827
 BoardThickness=630
 SgPcb45=1
 TxtPcbV=800

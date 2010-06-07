@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 28/05/2010 02:56:11
+EESchema Schematic File Version 2  date 29/05/2010 05:31:03
 LIBS:regul
 LIBS:switch_FSM2JSMA
 LIBS:transistors
@@ -19,7 +19,7 @@ EELAYER END
 $Descr A4 11700 8267
 Sheet 2 2
 Title "   BicycLED POV"
-Date "28 may 2010"
+Date "29 may 2010"
 Rev "v 2.0"
 Comp "Hardware BOX                                http://code.google.com/p/bicycleledpov"
 Comment1 "                                                      Jorge Pinto & Francisco Mendes"
@@ -574,7 +574,6 @@ Wire Wire Line
 	900  5550 900  5300
 Connection ~ 4200 1850
 Connection ~ 2900 1850
-Connection ~ 5500 1850
 Connection ~ 9400 1850
 Wire Wire Line
 	8100 1850 8100 2100
