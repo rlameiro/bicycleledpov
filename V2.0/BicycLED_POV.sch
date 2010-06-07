@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 29/05/2010 05:31:03
+EESchema Schematic File Version 2  date 03/06/2010 20:35:50
 LIBS:regul
 LIBS:switch_FSM2JSMA
 LIBS:transistors
@@ -19,7 +19,7 @@ EELAYER END
 $Descr A4 11700 8267
 Sheet 1 2
 Title "   BicycLED POV"
-Date "29 may 2010"
+Date "3 jun 2010"
 Rev "v 2.0"
 Comp "Hardware BOX                                http://code.google.com/p/bicycleledpov"
 Comment1 "                                                      Jorge Pinto & Francisco Mendes"
@@ -714,7 +714,7 @@ JTAG_TDI
 Text GLabel 2900 5000 2    55   Input ~ 0
 JTAG_TMS
 Text GLabel 2900 5100 2    55   Input ~ 0
-JTAG_CLK
+JTAG_TCK
 Text GLabel 2900 5300 2    55   Input ~ 0
 JTAG_TDO
 Text GLabel 2900 5400 2    55   Input ~ 0
