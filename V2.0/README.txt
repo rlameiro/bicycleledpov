@@ -12,3 +12,8 @@ Kicad
 - Melhorias SW
 	- Para mudar da ferramenta Wire para Move é necessario fazer Esc.
 	- Mudança de layer
+	
+- Se definirmos as Net Rules com as dimensoes das pistas, quando iniarmos uma pista o Kicad usa a dimensao especificada nna regra. Podemos mudar manualmente a espessura da pista.
+Por exemplo quando desenhamos uma pista de alimentaçºao com 3mm, mas os pinos dos IC apenas tem 0,5mm, como fazer?
+- Qual a melhor tecnica para arranjar as pistas? Temos que arrastasr no a no?
+-  
