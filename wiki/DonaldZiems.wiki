@@ -2,9 +2,4 @@
 
 = Introduction =
 
-Hello, I'm Donald Ziems.  I'm 19 years old and majoring in Electrical Engineering at the University of Illinois at Urbana-Campaign.
-
-I'm still relatively new to the world of AVR and computer programming, so primarily what I hope to do is work on the schematic and PCB layout, though I will take a peek at the firmware every now and then.
-
-I haven't done a whole lot with electronics so far, but if you want to check out some of my work, Make: made mention of me in their blog.  My website no longer exists in its previous form, but you can kind of get an idea of what I did from the article.
-http://blog.makezine.com/archive/2007/02/mintyboost_ziem.html
+Hello, I'm Donald Ziems.  I'm 22 years old and a graduate of Electrical Engineering at the University of Illinois at Urbana-Campaign.
