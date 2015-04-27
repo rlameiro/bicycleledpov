@@ -1,0 +1,1 @@
+The current version for the schematic is on SVN: http://code.google.com/p/bicycleledpov/source/browse/#svn/trunk/V2.0

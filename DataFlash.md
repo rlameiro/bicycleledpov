@@ -1,0 +1,3 @@
+DataFlash ICs are a low pin-count serial interface flash memory ranging from 1Mb to 64Mb.
+
+_DataFlash generally has a higher capacity than EEPROM, and provides much faster access times. DataFlash capacities in small packages range from 128 kB to 8 MB, while SPI EEPROM capacities in similar packages range from 1 kB to 512 kB. Flash chips are tuned for page access, rather than the byte access used with EEPROM. However, AT45 series chips have commands that let their drivers act more like EEPROM drivers. Leveraging the SRAM buffers exposed by AT45 chips to do more than support EEPROM-like access requires specialized software_ - [DataFlash on Wikipedia](http://en.wikipedia.org/wiki/Dataflash).
